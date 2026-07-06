@@ -48,5 +48,8 @@
  "origin": {
   "bench": "DevTool"
  },
- "queued_utc": "2026-07-06T22:23:24Z"
+ "queued_utc": "2026-07-06T22:23:24Z",
+ "verdict": "info",
+ "reviewed_utc": "2026-07-06T22:28:41Z",
+ "reviewed_on": "bench-1"
 }
