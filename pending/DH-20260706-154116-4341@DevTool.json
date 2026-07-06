@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260706-154116-4341",
+  "started_utc": "2026-07-06T20:41:16Z",
+  "device_class": "Console",
+  "device_model": "PlayStation 4",
+  "tool": "ps4_uart",
+  "symptoms_user_input": [
+   "Console fault (errlog present)",
+   "No Boot",
+   "No Display"
+  ],
+  "telemetry": {
+   "uart_syscon_error_code": "80000002",
+   "errlog_codes": [
+    "00000000",
+    "80000002",
+    "80000004",
+    "80000005",
+    "80000006",
+    "80000009",
+    "80C00001",
+    "F0000001",
+    "FFFFFFFF"
+   ]
+  },
+  "ml_prediction": {
+   "predicted_fault": "APU BGA solder joint failure (thermal stress)\nCorrupted Syscon firmware or EEPROM data\nFaulty Southbridge (Aeolia/Belize) communication\nPower rail instability (specifically 1.8V or 2.5V rails feeding the APU/Southbridge)",
+   "source": "gemini",
+   "bench_steps": "Verify all secondary power rails (1.8V, 2.5V, 3.3V) are stable at the APU and Southbridge test points during the boot sequence; ripple or voltage drops here often trigger F0000001 errors.\nInspect the board for physical signs of APU stress or previous reflow attempts; perform a light pressure test on the APU die while powering on to see if the error code changes or the console progresses further.\nC",
+   "kb_used": false
+  },
+  "technician_verification": {
+   "probed_component": "APU/SoC",
+   "actual_fault_confirmed": true,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": false,
+   "fix": "Tried to reflow apu"
+  },
+  "notes": [],
+  "saved_utc": "2026-07-06T22:23:24Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "DevTool"
+ },
+ "queued_utc": "2026-07-06T22:23:24Z"
+}
