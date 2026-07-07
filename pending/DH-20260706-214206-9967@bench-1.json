@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260706-214206-9967",
+  "started_utc": "2026-07-07T02:42:06Z",
+  "device_class": "Console",
+  "device_model": "Nintendo Switch v1",
+  "tool": "quick_log",
+  "symptoms_user_input": [
+   "No Boot",
+   "No Power",
+   "Not Charging",
+   "boots to error code with charged battery",
+   "won't charge",
+   "won't turn on"
+  ],
+  "telemetry": {
+   "reported_error_codes": [
+    "2101-0001"
+   ]
+  },
+  "ml_prediction": {},
+  "technician_verification": {
+   "probed_component": "M92T36 charge IC",
+   "actual_fault_confirmed": true,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced the M92T36 charge IC."
+  },
+  "notes": [
+   "[web] When a nintendo switch v1, v2, lite, oled shows no signs of power or charging, check for port damage,then try a charged battery to see if the console turns on. If it does and you get error code: 2101-0001 the fault is likely the M92T"
+  ],
+  "saved_utc": "2026-07-07T02:45:30Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-07-07T02:45:30Z"
+}
