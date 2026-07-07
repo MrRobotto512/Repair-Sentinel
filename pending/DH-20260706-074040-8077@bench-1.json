@@ -1,0 +1,44 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260706-074040-8077",
+  "started_utc": "2026-07-06T12:40:40Z",
+  "device_class": "Phone",
+  "device_model": "SM-F731U",
+  "tool": "samsung_log",
+  "symptoms_user_input": [
+   "Intermittent",
+   "dsf"
+  ],
+  "telemetry": {
+   "log_depth": "Fast",
+   "log_lines_total": 6791,
+   "log_lines_critical": 47,
+   "log_lines_warning": 762,
+   "verdict_severity": "low"
+  },
+  "ml_prediction": {
+   "predicted_fault": "App-level issues only — phone looks OK",
+   "source": "rules"
+  },
+  "technician_verification": {
+   "input_source": "web",
+   "probed_component": "afd",
+   "actual_fault_confirmed": true
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "asd"
+  },
+  "notes": [
+   "[web] asd"
+  ],
+  "saved_utc": "2026-07-07T01:24:34Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-07-07T01:24:34Z"
+}
