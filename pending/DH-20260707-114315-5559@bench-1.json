@@ -1,0 +1,45 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260707-114315-5559",
+  "started_utc": "2026-07-07T16:43:15Z",
+  "device_class": "Console",
+  "device_model": "PlayStation 5",
+  "tool": "ps5_uart",
+  "symptoms_user_input": [
+   "Console fault (errlog present)",
+   "Console Wont Update"
+  ],
+  "telemetry": {
+   "errlog_codes": [
+    "808C3090",
+    "80000009",
+    "808C3F90",
+    "C0900303",
+    "808C4890",
+    "808C4290"
+   ],
+   "uart_syscon_error_code": "808C3090"
+  },
+  "ml_prediction": {},
+  "technician_verification": {
+   "probed_component": "MMC01X08",
+   "actual_fault_confirmed": true,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced MMC01X08."
+  },
+  "notes": [
+   "[web] Console failing update via any method, kept getting error code SU-101337-5, UART Codes pulled pointed to USB Type C error. We noticed only one of the front USB C ports would charge a phone. WE connected the Qianli iBridge A3 and confirmed one of the ports had bad pin readings. We changed the MMC01X08 and the console updated."
+  ],
+  "saved_utc": "2026-07-07T18:06:12Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-07-07T18:06:12Z"
+}
