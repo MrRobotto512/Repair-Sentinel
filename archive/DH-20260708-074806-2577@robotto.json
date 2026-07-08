@@ -44,5 +44,8 @@
  "origin": {
   "bench": "robotto"
  },
- "queued_utc": "2026-07-08T15:33:20Z"
+ "queued_utc": "2026-07-08T15:33:20Z",
+ "verdict": "reject",
+ "reviewed_utc": "2026-07-08T15:34:17Z",
+ "reviewed_on": "robotto"
 }
