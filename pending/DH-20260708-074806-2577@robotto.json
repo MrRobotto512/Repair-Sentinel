@@ -1,0 +1,48 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260708-074806-2577",
+  "started_utc": "2026-07-08T12:48:06Z",
+  "device_class": "Phone",
+  "device_model": "SM-F731U",
+  "tool": "samsung_log",
+  "symptoms_user_input": [
+   "No Boot",
+   "Not Charging",
+   "Overheats",
+   "overheating",
+   "not charging"
+  ],
+  "telemetry": {
+   "log_depth": "Fast",
+   "log_lines_total": 10799,
+   "log_lines_critical": 295,
+   "log_lines_warning": 1341,
+   "verdict_severity": "low"
+  },
+  "ml_prediction": {
+   "predicted_fault": "App-level issues only — phone looks OK",
+   "source": "rules"
+  },
+  "technician_verification": {
+   "probed_component": "USB-C Port",
+   "actual_fault_confirmed": false,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "removed long screw"
+  },
+  "notes": [
+   "[web] .4",
+   "[web] after repair phone got hot and stopped charging. We found a screw in the wrong hole that was causing a short."
+  ],
+  "saved_utc": "2026-07-08T15:33:20Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-07-08T15:33:20Z"
+}
