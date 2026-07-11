@@ -8,7 +8,7 @@
   "device_model": "Vivaan’s iPad (iPad6,12)",
   "tool": "ios_diag",
   "symptoms_user_input": [
-   "Missing battery screw"
+   "missing battery screw"
   ],
   "telemetry": {
    "verdict_severity": "high",
@@ -37,16 +37,17 @@
    "probed_component": "battery screw"
   },
   "outcome": {
-   "repaired": true
+   "repaired": true,
+   "fix": "Installed Missing Battery Screw"
   },
   "notes": [
    "[web] Missing Battery Screw"
   ],
-  "saved_utc": "2026-07-11T19:11:18Z",
+  "saved_utc": "2026-07-11T19:11:29Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-11T19:11:18Z"
+ "queued_utc": "2026-07-11T19:11:29Z"
 }
