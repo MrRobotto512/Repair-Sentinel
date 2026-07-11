@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260711-113344-1904",
+  "started_utc": "2026-07-11T16:33:44Z",
+  "device_class": "Tablet",
+  "device_model": "iPad 5",
+  "tool": "intake",
+  "symptoms_user_input": [
+   "Device came in the shop and would not power on and would not charge (pulled zero amps from the charger)\r\nAfter disassembling the device I installed a temporary battery. The device powers on with a charged battery but still does not charge. The device passes a Tristar Tester, but I still recommend replacing the Tristar Charging IC.",
+   "No Boot",
+   "No Display",
+   "No Power",
+   "Not Charging",
+   "no charging",
+   "no power",
+   "zero amp draw"
+  ],
+  "telemetry": {},
+  "ml_prediction": {},
+  "technician_verification": {
+   "probed_component": "Charge IC",
+   "actual_fault_confirmed": false,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced Tristar Charging IC, Replaced Charge Port"
+  },
+  "notes": [],
+  "saved_utc": "2026-07-11T19:37:37Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-07-11T19:37:37Z"
+}
