@@ -9,7 +9,7 @@
   "tool": "xbox_uart",
   "symptoms_user_input": [
    "Console fault (POST error)",
-   "Corrosion on FPC connector"
+   "Corrosion on power button board FPC connector"
   ],
   "telemetry": {
    "post_codes_recent": [
@@ -41,7 +41,7 @@
   "technician_verification": {
    "actual_fault_confirmed": false,
    "input_source": "web",
-   "probed_component": "Power button FPC connector"
+   "probed_component": "Power button board FPC connector"
   },
   "outcome": {
    "repaired": true,
@@ -50,11 +50,11 @@
   "notes": [
    "[web] Corrosion on the Power button board FPC Connector"
   ],
-  "saved_utc": "2026-07-14T20:37:15Z",
+  "saved_utc": "2026-07-14T20:37:23Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-14T20:37:15Z"
+ "queued_utc": "2026-07-14T20:37:23Z"
 }
