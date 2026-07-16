@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260716-130820-0896",
+  "started_utc": "2026-07-16T18:08:20Z",
+  "device_class": "Phone",
+  "device_model": "iOS device",
+  "tool": "ios_diag",
+  "symptoms_user_input": [
+   "No USB communication",
+   "Corrosion on charge port"
+  ],
+  "telemetry": {
+   "verdict_severity": "low",
+   "verdict_confidence": "LOW",
+   "count_kernel_panics": 0,
+   "count_watchdog_resets": 0,
+   "count_stackshots": 0,
+   "count_jetsam_pressure": 0,
+   "count_jetsam_routine": 0,
+   "count_system_proc_crashes": 0,
+   "count_thermal": 0,
+   "count_app_crashes": 0,
+   "count_apps_affected": 0,
+   "count_events_30d": 0,
+   "count_events_total": 0
+  },
+  "ml_prediction": {
+   "predicted_fault": "No diagnostic logs found",
+   "source": "rules"
+  },
+  "technician_verification": {
+   "actual_fault_confirmed": false,
+   "input_source": "web",
+   "probed_component": "USB charge port"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "New port, old one had corrosion on the 2 little fpc connections on the port"
+  },
+  "notes": [
+   "[web] Panic log did not show anything thru usb, we ran \"panic diagnoser\" and it recommended port repair. charge port had corrosion on the 2 little connections at the bottom of the port. cleans corrosion, changed port, issue solved."
+  ],
+  "saved_utc": "2026-07-16T22:21:16Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-07-16T22:21:16Z"
+}
