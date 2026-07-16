@@ -8,8 +8,10 @@
   "device_model": "iOS device",
   "tool": "ios_diag",
   "symptoms_user_input": [
-   "No USB communication",
-   "Corrosion on charge port"
+   "Corrosion on charge port",
+   "Random Reboot",
+   "panic logs would not pull via usb",
+   "had to use wifi"
   ],
   "telemetry": {
    "verdict_severity": "low",
@@ -33,20 +35,18 @@
   "technician_verification": {
    "actual_fault_confirmed": false,
    "input_source": "web",
-   "probed_component": "USB charge port"
+   "probed_component": "USB-C Port"
   },
   "outcome": {
    "repaired": true,
    "fix": "New port, old one had corrosion on the 2 little fpc connections on the port"
   },
-  "notes": [
-   "[web] Panic log did not show anything thru usb, we ran \"panic diagnoser\" and it recommended port repair. charge port had corrosion on the 2 little connections at the bottom of the port. cleans corrosion, changed port, issue solved."
-  ],
-  "saved_utc": "2026-07-16T22:21:16Z",
+  "notes": [],
+  "saved_utc": "2026-07-16T22:22:02Z",
   "share_requested": true
  },
  "origin": {
   "bench": "robotto"
  },
- "queued_utc": "2026-07-16T22:21:16Z"
+ "queued_utc": "2026-07-16T22:22:02Z"
 }
