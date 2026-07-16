@@ -10,8 +10,8 @@
   "symptoms_user_input": [
    "Corrosion on charge port",
    "Random Reboot",
-   "panic logs would not pull via usb",
-   "had to use wifi"
+   "had to use wifi",
+   "panic logs would not pull via usb"
   ],
   "telemetry": {
    "verdict_severity": "low",
@@ -33,7 +33,7 @@
    "source": "rules"
   },
   "technician_verification": {
-   "actual_fault_confirmed": false,
+   "actual_fault_confirmed": true,
    "input_source": "web",
    "probed_component": "USB-C Port"
   },
@@ -42,11 +42,11 @@
    "fix": "New port, old one had corrosion on the 2 little fpc connections on the port"
   },
   "notes": [],
-  "saved_utc": "2026-07-16T22:22:02Z",
+  "saved_utc": "2026-07-16T22:22:29Z",
   "share_requested": true
  },
  "origin": {
   "bench": "robotto"
  },
- "queued_utc": "2026-07-16T22:22:02Z"
+ "queued_utc": "2026-07-16T22:22:29Z"
 }
