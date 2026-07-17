@@ -49,7 +49,8 @@
   "bench": "robotto"
  },
  "queued_utc": "2026-07-16T22:22:40Z",
- "verdict": "info",
+ "verdict": "approve",
  "reviewed_utc": "2026-07-17T11:22:31Z",
- "reviewed_on": "robotto"
+ "reviewed_on": "robotto",
+ "moved_utc": "2026-07-17T11:23:35Z"
 }
