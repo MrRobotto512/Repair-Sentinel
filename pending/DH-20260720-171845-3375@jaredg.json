@@ -11,11 +11,11 @@
    "Console fault (errlog present)",
    "No Boot",
    "No Display",
-   "No Power",
-   "Single beep on power attempt",
-   "No fan spin",
    "No LED lights",
-   "No video output"
+   "No Power",
+   "No fan spin",
+   "No video output",
+   "Single beep on power attempt"
   ],
   "telemetry": {
    "errlog_codes": [
@@ -33,7 +33,7 @@
    "kb_used": false
   },
   "technician_verification": {
-   "probed_component": "F7xxx Fuse",
+   "probed_component": "F7001",
    "actual_fault_confirmed": true,
    "input_source": "web"
   },
@@ -41,15 +41,12 @@
    "repaired": true,
    "fix": "Replaced Faulty/Shorted Capacitor, Replaced Blown F7001 Fuse with a new one"
   },
-  "notes": [
-   "[web] Board Model: EDM-033",
-   "[web] Device Beeps one time when attempting to power on but does not show any other signs of life such as fan spin, LED lights, or image output to TV.\r\nAfter completing a UART Error Log pull, there were several codes that were pointing to a couple fuses there could be blown.\r\nFuse F7001 was verified to be BLOWN, but the remaining fuses checked out OK.\r\nInjected voltage downstream from the bad fuse and found a Capacitor shorted to ground on the opposite side of the board from fuse. Removing this cap removed the detected short."
-  ],
-  "saved_utc": "2026-07-21T01:57:59Z",
+  "notes": [],
+  "saved_utc": "2026-07-21T05:24:55Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-21T01:57:59Z"
+ "queued_utc": "2026-07-21T05:24:55Z"
 }
