@@ -4,10 +4,11 @@
   "schema_version": 1,
   "session_id": "DH-20260711-134711-9217",
   "started_utc": "2026-07-11T18:47:11Z",
-  "device_class": "Phone",
-  "device_model": "Vivaan’s iPad (iPad6,12)",
+  "device_class": "Tablet",
+  "device_model": "iPad 5",
   "tool": "ios_diag",
   "symptoms_user_input": [
+   "Not Charging",
    "missing battery screw"
   ],
   "telemetry": {
@@ -40,17 +41,15 @@
    "repaired": true,
    "fix": "Installed Missing Battery Screw"
   },
-  "notes": [
-   "[web] Missing Battery Screw"
-  ],
-  "saved_utc": "2026-07-11T19:11:29Z",
+  "notes": [],
+  "saved_utc": "2026-07-21T05:22:23Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-11T19:11:29Z",
+ "queued_utc": "2026-07-21T05:22:23Z",
  "verdict": "approve",
- "reviewed_utc": "2026-07-16T01:59:19Z",
+ "reviewed_utc": "2026-07-21T23:10:36Z",
  "reviewed_on": "robotto"
 }
