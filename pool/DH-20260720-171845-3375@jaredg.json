@@ -48,5 +48,8 @@
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-21T05:24:55Z"
+ "queued_utc": "2026-07-21T05:24:55Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-07-21T21:19:46Z",
+ "reviewed_on": "robotto"
 }
