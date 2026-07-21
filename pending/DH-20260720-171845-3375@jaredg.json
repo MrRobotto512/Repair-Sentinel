@@ -1,0 +1,55 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260720-171845-3375",
+  "started_utc": "2026-07-20T22:18:45Z",
+  "device_class": "Console",
+  "device_model": "PlayStation 5",
+  "tool": "ps5_uart",
+  "symptoms_user_input": [
+   "Console fault (errlog present)",
+   "No Boot",
+   "No Display",
+   "No Power",
+   "Beeps once when attempting to power on",
+   "No fan spin",
+   "No LED lights",
+   "No image output"
+  ],
+  "telemetry": {
+   "errlog_codes": [
+    "80870003",
+    "80000009",
+    "C0020303",
+    "B0088108"
+   ],
+   "uart_syscon_error_code": "80870003"
+  },
+  "ml_prediction": {
+   "predicted_fault": "Blown F7001/F3501/F7501 fuses, corrupted Southbridge firmware/NOR flash, or a physical break in the communication traces between the Southbridge and APU.",
+   "source": "gemini",
+   "bench_steps": "1. Verify continuity on fuses F7001, F3501, and F7501; if any are blown, check for shorts to ground on the downstream rails before replacing.\n2. Measure the 1.8V and 3.3V standby rails at the Southbridge and APU power delivery stages to ensure the logic board is receiving power before the boot sequence initiates.\n3. Inspect the Southbridge (Titania) and APU for signs of physical damage or liquid i",
+   "kb_used": false
+  },
+  "technician_verification": {
+   "probed_component": "F7xxx Fuse",
+   "actual_fault_confirmed": true,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced Faulty/Shorted Capacitor, Replaced Blown F7001 Fuse with a new one"
+  },
+  "notes": [
+   "[web] Board Model: EDM-033",
+   "[web] Device Beeps one time when attempting to power on but does not show any other signs of life such as fan spin, LED lights, or image output to TV.\r\nAfter completing a UART Error Log pull, there were several codes that were pointing to a couple fuses there could be blown.\r\nFuse F7001 was verified to be BLOWN, but the remaining fuses checked out OK.\r\nInjected voltage downstream from the bad fuse and found a Capacitor shorted to ground on the opposite side of the board from fuse. Removing this cap removed the detected short."
+  ],
+  "saved_utc": "2026-07-21T01:57:53Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-07-21T01:57:53Z"
+}
