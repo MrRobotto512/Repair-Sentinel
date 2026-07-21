@@ -12,10 +12,10 @@
    "No Boot",
    "No Display",
    "No Power",
-   "Beeps once when attempting to power on",
+   "Single beep on power attempt",
    "No fan spin",
    "No LED lights",
-   "No image output"
+   "No video output"
   ],
   "telemetry": {
    "errlog_codes": [
@@ -45,11 +45,11 @@
    "[web] Board Model: EDM-033",
    "[web] Device Beeps one time when attempting to power on but does not show any other signs of life such as fan spin, LED lights, or image output to TV.\r\nAfter completing a UART Error Log pull, there were several codes that were pointing to a couple fuses there could be blown.\r\nFuse F7001 was verified to be BLOWN, but the remaining fuses checked out OK.\r\nInjected voltage downstream from the bad fuse and found a Capacitor shorted to ground on the opposite side of the board from fuse. Removing this cap removed the detected short."
   ],
-  "saved_utc": "2026-07-21T01:57:53Z",
+  "saved_utc": "2026-07-21T01:57:59Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-21T01:57:53Z"
+ "queued_utc": "2026-07-21T01:57:59Z"
 }
