@@ -1,0 +1,58 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260714-141824-0975",
+  "started_utc": "2026-07-14T19:18:24Z",
+  "device_class": "Console",
+  "device_model": "Xbox Series X (Digital)",
+  "tool": "xbox_uart",
+  "symptoms_user_input": [
+   "Console fault (POST error)",
+   "Corrosion on power button board FPC connector"
+  ],
+  "telemetry": {
+   "post_codes_recent": [
+    "0X0249 UNKNOWN ×7",
+    "0X0300 2BL_BlCallAgesa_1 ×7",
+    "0X023B UNKNOWN ×5",
+    "0X024A UNKNOWN ×6",
+    "0X0207 UNKNOWN ×3",
+    "0XD626 UNKNOWN ×2",
+    "0XD646 UNKNOWN ×3",
+    "0XD666 UNKNOWN ×3",
+    "0X020C UNKNOWN ×3",
+    "0X0247 UNKNOWN ×2",
+    "0X0201 UNKNOWN ×2",
+    "0XE0D5 UNKNOWN"
+   ],
+   "uart_post_error_code": "0XE013",
+   "post_error_name": "UNKNOWN",
+   "post_error_last": "0XE0C1",
+   "post_error_last_name": "UNKNOWN",
+   "post_codes_captured": 58
+  },
+  "ml_prediction": {
+   "predicted_fault": "Corrupted SSD partition table, failing NVMe SSD, or mismatch between the SSD and the console's NOR flash firmware.",
+   "source": "gemini",
+   "bench_steps": "1. Remove the SSD and verify its health using a PC and CrystalDiskInfo to rule out physical NAND degradation.\n2. Attempt to re-image the SSD using the official Xbox recovery files or clone the first partition from a known-good donor drive to confirm if the issue is software corruption.\n3. If the SSD is healthy, inspect the M.2 connector for bent pins or debris and verify the 3.3V rail at the SSD c",
+   "kb_used": true
+  },
+  "technician_verification": {
+   "actual_fault_confirmed": false,
+   "input_source": "web",
+   "probed_component": "Power button board FPC connector"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Cleaned Corrosion from the power button board FPC Connector"
+  },
+  "notes": [],
+  "saved_utc": "2026-07-22T03:36:35Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-07-22T03:36:35Z"
+}
