@@ -9,7 +9,9 @@
   "tool": "xbox_uart",
   "symptoms_user_input": [
    "Console fault (POST error)",
-   "Corrosion on power button board FPC connector"
+   "Corrosion on power button board FPC connector",
+   "No Boot",
+   "No Power"
   ],
   "telemetry": {
    "post_codes_recent": [
@@ -47,12 +49,14 @@
    "repaired": true,
    "fix": "Cleaned Corrosion from the power button board FPC Connector"
   },
-  "notes": [],
-  "saved_utc": "2026-07-22T03:36:35Z",
+  "notes": [
+   "[web] Xbox Series X (Digital)"
+  ],
+  "saved_utc": "2026-07-22T03:37:28Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-22T03:36:35Z"
+ "queued_utc": "2026-07-22T03:37:28Z"
 }
