@@ -8,6 +8,7 @@
   "device_model": "Vanessa's iPhone (iPhone14,3)",
   "tool": "ios_diag",
   "symptoms_user_input": [
+   "Random Reboot",
    "Weak battery"
   ],
   "telemetry": {
@@ -42,14 +43,12 @@
    "repaired": true,
    "fix": "Replaced Battery"
   },
-  "notes": [
-   "[web] Weak Battery based on age and high cycle count"
-  ],
-  "saved_utc": "2026-07-24T02:49:35Z",
+  "notes": [],
+  "saved_utc": "2026-07-24T02:53:56Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-07-24T02:49:35Z"
+ "queued_utc": "2026-07-24T02:53:56Z"
 }
