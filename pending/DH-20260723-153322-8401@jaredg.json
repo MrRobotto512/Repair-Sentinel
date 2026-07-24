@@ -1,0 +1,55 @@
+{
+ "schema_version": 1,
+ "session": {
+  "schema_version": 1,
+  "session_id": "DH-20260723-153322-8401",
+  "started_utc": "2026-07-23T20:33:22Z",
+  "device_class": "Phone",
+  "device_model": "Vanessa's iPhone (iPhone14,3)",
+  "tool": "ios_diag",
+  "symptoms_user_input": [
+   "Weak battery"
+  ],
+  "telemetry": {
+   "verdict_severity": "medium",
+   "verdict_confidence": "MEDIUM",
+   "count_kernel_panics": 0,
+   "count_watchdog_resets": 0,
+   "count_stackshots": 0,
+   "count_jetsam_pressure": 1,
+   "count_jetsam_routine": 0,
+   "count_system_proc_crashes": 0,
+   "count_thermal": 0,
+   "count_app_crashes": 0,
+   "count_apps_affected": 0,
+   "count_events_30d": 1,
+   "count_events_total": 1,
+   "battery_health_pct": 87,
+   "battery_cycles": 869,
+   "storage_free_gb": 227.1
+  },
+  "ml_prediction": {
+   "predicted_fault": "The local verdict over-diagnoses a single isolated memory-pressure (Jetsam) event. One event over a 30-day period is not enough to explain ongoing random restar",
+   "source": "gemini",
+   "ai_agrees_with_rules": false
+  },
+  "technician_verification": {
+   "input_source": "web",
+   "actual_fault_confirmed": true,
+   "probed_component": "Battery"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced Battery"
+  },
+  "notes": [
+   "[web] Weak Battery based on age and high cycle count"
+  ],
+  "saved_utc": "2026-07-24T02:49:35Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-07-24T02:49:35Z"
+}
