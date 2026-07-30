@@ -9,12 +9,15 @@ technician actually found and fixed.
 ## Layout
 
 ```
-pending/   submitted, not yet reviewed        — do not consume
-pool/      ✔ APPROVED, human-verified entries — this is the dataset
-archive/   duplicates / rejected / needs-info — audit trail only
+pending/        submitted repair data, not yet reviewed   — do not consume
+pool/           ✔ APPROVED, human-verified entries        — this is the dataset
+archive/        duplicates / rejected / needs-info        — audit trail only
+apps_pending/   submitted COMMUNITY APPS (zips), unreviewed — do not run
+apps/           ✔ APPROVED community apps + index.json    — the app pool
 ```
 
-**Consume `pool/` only.** Everything in it was reviewed by a human.
+**Consume `pool/` and `apps/` only.** Everything in them was reviewed by
+a human.
 
 ## Entry format (one JSON file per repair)
 
@@ -53,6 +56,25 @@ above. A maintainer reviews every submission before it reaches `pool/`.
 House rules: real, bench-verified repairs only; no customer-identifying
 information anywhere (names, IMEIs, serials, phone numbers); one repair per
 file.
+
+## Community apps
+
+BenchTool users can build their own bench apps (see the BenchTool App SDK)
+and share them here. A shared app is one zip in `apps_pending/` — the app
+folder (app.json manifest + a Tkinter entry script, no bundled libs) —
+submitted automatically by a bench's SHARE button, or by pull request.
+A maintainer reviews the CODE of every submission
+(`sentinel_hub/review_apps.py` in the BenchTool repo: `list`, `show`,
+`approve`, `reject`); approval moves the zip to `apps/` and regenerates
+`apps/index.json`, which every bench's dashboard reads to offer one-tap
+installs.
+
+App house rules: single-screen Tkinter tools that follow the SDK contract;
+no secrets, keys, or shop/customer data in the zip; no network calls that
+exfiltrate anything; declare extra pip packages in the manifest's
+`requires` instead of bundling them. Approved apps still run unsandboxed
+on other people's benches — review is a real code review, not a rubber
+stamp.
 
 ## License
 
