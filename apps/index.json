@@ -1,4 +1,15 @@
 {
- "generated_utc": "2026-07-30T17:25:37Z",
- "apps": []
+ "generated_utc": "2026-07-30T19:07:22Z",
+ "apps": [
+  {
+   "file": "imei_check@bench-1.zip",
+   "name": "IMEI Check",
+   "subtitle": "sickw lookup · imei / serial",
+   "icon": "🔎",
+   "requires": [],
+   "type": "app",
+   "author": "bench-1",
+   "size": 33638
+  }
+ ]
 }
