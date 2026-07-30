@@ -1,14 +1,14 @@
 {
- "generated_utc": "2026-07-30T18:45:53Z",
+ "generated_utc": "2026-07-30T19:07:22Z",
  "apps": [
   {
-   "file": "imei_check@Robot.zip",
+   "file": "imei_check@bench-1.zip",
    "name": "IMEI Check",
    "subtitle": "sickw lookup · imei / serial",
    "icon": "🔎",
    "requires": [],
    "type": "app",
-   "author": "Robot",
+   "author": "bench-1",
    "size": 35386
   },
   {
@@ -16,10 +16,11 @@
    "name": "Inventor Quotes",
    "subtitle": "",
    "icon": "",
+
    "requires": [],
-   "type": "screensaver",
+   "type": "app",
    "author": "bench-1",
-   "size": 3754
+   "size": 33638
   }
  ]
 }
