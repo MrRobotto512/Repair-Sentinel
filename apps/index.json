@@ -1,22 +1,11 @@
 {
- "generated_utc": "2026-07-30T19:07:22Z",
+ "generated_utc": "2026-07-30T21:05:39Z",
  "apps": [
   {
    "file": "imei_check@bench-1.zip",
    "name": "IMEI Check",
    "subtitle": "sickw lookup · imei / serial",
    "icon": "🔎",
-   "requires": [],
-   "type": "app",
-   "author": "bench-1",
-   "size": 35386
-  },
-  {
-   "file": "inventor_screensaver@bench-1.zip",
-   "name": "Inventor Quotes",
-   "subtitle": "",
-   "icon": "",
-
    "requires": [],
    "type": "app",
    "author": "bench-1",
