@@ -8,9 +8,9 @@
   "device_model": "iPhone 16 Pro Max",
   "tool": "ios_diag",
   "symptoms_user_input": [
-   "non-functional display",
+   "3 minute restarts",
    "broken back glass",
-   "3 minute restarts"
+   "non-functional display"
   ],
   "telemetry": {
    "verdict_severity": "high",
@@ -176,14 +176,12 @@
    "repaired": true,
    "fix": "Replaced NFC Coil Flex with Rear Mic and Camera Flash"
   },
-  "notes": [
-   "[web] Device came in with non-functional display and broken back glass. After replacing those parts it was discovered that the device was performing 3 min restarts."
-  ],
-  "saved_utc": "2026-08-01T20:35:25Z",
+  "notes": [],
+  "saved_utc": "2026-08-01T20:37:28Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-08-01T20:35:25Z"
+ "queued_utc": "2026-08-01T20:37:28Z"
 }
