@@ -1,0 +1,187 @@
+{
+ "schema_version": 2,
+ "session": {
+  "schema_version": 2,
+  "session_id": "DH-20260801-133535-0962",
+  "started_utc": "2026-08-01T18:35:35Z",
+  "device_class": "Phone",
+  "device_model": "iPhone 16 Pro Max",
+  "tool": "ios_diag",
+  "symptoms_user_input": [
+   "3 minute restarts",
+   "broken back glass",
+   "non-functional display"
+  ],
+  "telemetry": {
+   "verdict_severity": "high",
+   "verdict_confidence": "HIGH",
+   "count_kernel_panics": 1,
+   "count_watchdog_resets": 0,
+   "count_stackshots": 0,
+   "count_jetsam_pressure": 0,
+   "count_jetsam_routine": 0,
+   "count_system_proc_crashes": 0,
+   "count_thermal": 0,
+   "count_app_crashes": 2,
+   "count_apps_affected": 1,
+   "count_events_30d": 3,
+   "count_events_total": 5,
+   "battery_health_pct": 93,
+   "battery_cycles": 757,
+   "storage_free_gb": 427.4
+  },
+  "observations": [
+   {
+    "id": "o1",
+    "key": "verdict_severity",
+    "value": "high",
+    "kind": "state",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o2",
+    "key": "verdict_confidence",
+    "value": "HIGH",
+    "kind": "state",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o3",
+    "key": "count_kernel_panics",
+    "value": 1,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o4",
+    "key": "count_watchdog_resets",
+    "value": 0,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o5",
+    "key": "count_stackshots",
+    "value": 0,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o6",
+    "key": "count_jetsam_pressure",
+    "value": 0,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o7",
+    "key": "count_jetsam_routine",
+    "value": 0,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o8",
+    "key": "count_system_proc_crashes",
+    "value": 0,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o9",
+    "key": "count_thermal",
+    "value": 0,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o10",
+    "key": "count_app_crashes",
+    "value": 2,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o11",
+    "key": "count_apps_affected",
+    "value": 1,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o12",
+    "key": "count_events_30d",
+    "value": 3,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o13",
+    "key": "count_events_total",
+    "value": 5,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o14",
+    "key": "battery_health_pct",
+    "value": 93,
+    "kind": "measurement",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z",
+    "unit": "%"
+   },
+   {
+    "id": "o15",
+    "key": "battery_cycles",
+    "value": 757,
+    "kind": "count",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z"
+   },
+   {
+    "id": "o16",
+    "key": "storage_free_gb",
+    "value": 427.4,
+    "kind": "measurement",
+    "source": "tool",
+    "at": "2026-08-01T18:35:35Z",
+    "unit": "GB"
+   }
+  ],
+  "ml_prediction": {
+   "predicted_fault": "I agree that the kernel panic indicates a hardware or power system fault rather than an app crash, but jumping straight to a motherboard PMIC failure is premature. The device has 757 battery cycles and was scanned at 4% charge. An aging battery at low charge is prone to sudden voltage dips under load, which triggers kernel panics (brownouts). Given there is only 1 panic in 30 days, an intermittent power drop from the battery or a flex cable sensor is much more likely than a dead chip on the board.",
+   "source": "gemini",
+   "ai_agrees_with_rules": true,
+   "predicted_role": "Battery"
+  },
+  "technician_verification": {
+   "actual_fault_confirmed": true,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced NFC Coil Flex with Rear Mic and Camera Flash"
+  },
+  "notes": [],
+  "saved_utc": "2026-08-01T20:37:43Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-08-01T20:37:43Z"
+}
