@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-01T20:50:26Z",
+ "generated_utc": "2026-08-05T13:31:42Z",
  "apps": [
   {
    "file": "imei_check@bench-1.zip",
@@ -10,6 +10,16 @@
    "type": "app",
    "author": "bench-1",
    "size": 33638
+  },
+  {
+   "file": "pc_intake_tester@judah.zip",
+   "name": "PC Intake Tester",
+   "subtitle": "windows intake · health report",
+   "icon": "🖥️",
+   "requires": [],
+   "type": "app",
+   "author": "judah",
+   "size": 23127
   }
  ]
 }
