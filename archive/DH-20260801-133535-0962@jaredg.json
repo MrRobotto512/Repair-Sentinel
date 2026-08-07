@@ -183,5 +183,8 @@
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-08-02T01:04:26Z"
+ "queued_utc": "2026-08-02T01:04:26Z",
+ "verdict": "duplicate",
+ "reviewed_utc": "2026-08-07T13:37:18Z",
+ "reviewed_on": "bench-1"
 }
