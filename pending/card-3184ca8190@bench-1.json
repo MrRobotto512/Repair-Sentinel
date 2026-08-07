@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "iPhone 16 Pro no power shorted VDD Main traced to CP3200B1G0 IC",
+  "source": {
+   "url": "https://www.youtube.com/watch?v=3ddyGvz3pQ8&t=182s",
+   "kind": "youtube",
+   "title": "I Think I Found the iPhone 16 Pro's Next Common Failure (And How To Fix It) — VCC Board Repairs - Jesse Cruz",
+   "ingested_utc": "2026-08-07T13:35:31Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16"
+  ],
+  "symptoms": [
+   "No Boot",
+   "no charge",
+   "dead",
+   "short on VDD Main"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A shorted CP3200B1G0 charging IC can pull VDD Main directly to ground on iPhone 16 series, causing a total no-power and no-charging fault.",
+    "evidence": "Applying 4.2V to the battery connector pulled 2.4-2.5A immediately; removing CP3200B1G0 cleared the short.",
+    "quote": "our fault was no power caused by a main short that happens to be on the charging IC... CP3200B1G0... all the 16 models will use this charging IC",
+    "at": "[19:20]"
+   },
+   {
+    "statement": "A Mechanic USB-C pin tester showing 0.07 diode mode readings instead of OL on outer pins indicates a charging circuit short on the iPhone 16 Pro.",
+    "evidence": "The faulty board showed 0.07 on outer pins while the known good donor board read OL.",
+    "quote": "0.07 is basically a short on the mechanic reader, and on the known good, it actually shows OL. So, we've already detected a fault right away.",
+    "at": "[02:04]"
+   },
+   {
+    "statement": "SN2012027 is a charging controller IC situated near the CP3200B1G0 charging IC under the board shield.",
+    "evidence": "The technician damaged and subsequently replaced the SN2012027 IC adjacent to CP3200B1G0.",
+    "quote": "The part number of this chip is SN2012027 and then on the bottom right 833.",
+    "at": "[26:38]"
+   }
+  ],
+  "procedure": [
+   "Test charging port pins using a USB-C breakout/tester in diode mode to check for abnormal low readings vs known-good OL.",
+   "Connect a DC power supply set to 4.2V directly to the battery connector to test for immediate current draw before prompt to boot.",
+   "Use a thermal camera while feeding 4.2V to identify shorted components or hot spots on the board.",
+   "Carefully remove or cut the metal shield covering the charging circuit area using wire cutters.",
+   "Apply flux and use hot air set to 380°C and 50% airflow to remove the shorted CP3200B1G0 IC.",
+   "Prep pads with 183°C leaded solder and wick them flat.",
+   "Align a new CP3200B1G0 IC to the orientation mark on the board and solder it with hot air.",
+   "Re-test power supply draw to ensure the VDD Main short is resolved before full reassembly."
+  ],
+  "measurements": [
+   {
+    "point": "Battery connector DC supply input (shorted)",
+    "expect": "2.4",
+    "unit": "A",
+    "context": "Immediate current draw at 4.2V before prompt to boot indicating short on VDD Main"
+   },
+   {
+    "point": "Mechanic USB-C tester outer pins (faulty)",
+    "expect": "0.07",
+    "unit": "",
+    "context": "Diode mode reading indicating short circuit on outer pins"
+   },
+   {
+    "point": "Mechanic USB-C tester outer pins (known good)",
+    "expect": "OL",
+    "unit": "",
+    "context": "Diode mode reading on working board"
+   }
+  ],
+  "tools": [
+   "Mechanic USB-C tester",
+   "DC power supply",
+   "Seek Compact Pro thermal camera",
+   "Hot air rework station",
+   "Wire cutters",
+   "Kester 63/37 solder",
+   "Amtech flux",
+   "Solder wick",
+   "UV mask",
+   "UV light"
+  ],
+  "cautions": [
+   "SOURCE RISK: Cutting or prying off shields with wire cutters can easily crush or chip adjacent micro-ICs such as the SN2012027 controller.",
+   "Applying excessive heat on double-layered sandwich boards risks separating interposer solder joints."
+  ],
+  "tags": [
+   "iphone 16 pro",
+   "iphone 16",
+   "cp3200b1g0",
+   "cp3200b1",
+   "sn2012027",
+   "vdd main",
+   "charging ic",
+   "no power",
+   "short circuit",
+   "mechanic usb tester"
+  ],
+  "confidence": "high",
+  "caveats": "A VDD Main short can be caused by any connected component or capacitor; replacing CP3200B1G0 only resolves the fault if thermal imaging or diode readings isolate the short to that specific IC."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-07T13:36:21Z"
+}
