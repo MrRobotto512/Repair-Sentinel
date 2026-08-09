@@ -1,0 +1,83 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 Panasonic MN864739 HDMI encoder voltage map",
+  "source": {
+   "url": "kb://img-1000132693-1786235393.jpg",
+   "kind": "image",
+   "title": "PS5 Panasonic MN864739 HDMI encoder voltage map",
+   "ingested_utc": "2026-08-09T23:15:00Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "MN864739"
+  ],
+  "claims": [
+   {
+    "statement": "HDMI encoder MN864739 area test points and expected voltages",
+    "evidence": "Annotated voltage values next to components and traces around the Panasonic MN864739 IC",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "HDMI pin 13",
+    "expect": "3.3V stdby",
+    "unit": "V",
+    "context": ""
+   },
+   {
+    "point": "HDMI pin 15",
+    "expect": "",
+    "unit": "",
+    "context": ""
+   },
+   {
+    "point": "HDMI pin 16",
+    "expect": "",
+    "unit": "",
+    "context": ""
+   },
+   {
+    "point": "HDMI pin 19",
+    "expect": "",
+    "unit": "",
+    "context": ""
+   },
+   {
+    "point": "HDMI pin 18",
+    "expect": "",
+    "unit": "",
+    "context": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "hdmi",
+   "encoder",
+   "voltage map",
+   "panasonic",
+   "mn864739",
+   "hdmi encoder",
+   "voltage rails",
+   "repair guide",
+   "hdmi ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Only voltage annotations visible for specific pins and surrounding components; individual pin numbers for all surrounding traces are not fully detailed. Values were machine-read from the image — verify against it before trusting."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-09T23:15:30Z"
+}

@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 Panasonic HDMI Encoder Side B Voltage Test Points",
+  "source": {
+   "url": "kb://img-1000132692-1786235359.jpg",
+   "kind": "image",
+   "title": "PS5 Panasonic HDMI Encoder Side B Voltage Test Points",
+   "ingested_utc": "2026-08-09T23:15:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Shows voltage rails on HDMI lines Side B for PS5 Panasonic HDMI Encoder",
+    "evidence": "Annotated voltage map with text labels for 5V, 3.3V, 1.8V, and 0.9V rails around the HDMI encoder area.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "5V stdby",
+    "expect": "5",
+    "unit": "V",
+    "context": "stby"
+   },
+   {
+    "point": "5V pwr",
+    "expect": "5",
+    "unit": "V",
+    "context": "pwr"
+   },
+   {
+    "point": "3.3V pwr",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "pwr"
+   },
+   {
+    "point": "3.3V stdby",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "stdby"
+   },
+   {
+    "point": "1.8V pwr",
+    "expect": "1.8",
+    "unit": "V",
+    "context": "pwr"
+   },
+   {
+    "point": "0.9V pwr",
+    "expect": "0.9",
+    "unit": "V",
+    "context": "pwr"
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "panasonic encoder",
+   "hdmi",
+   "voltages",
+   "panasonic",
+   "encoder",
+   "voltage",
+   "test points",
+   "side b",
+   "power rails"
+  ],
+  "confidence": "medium",
+  "caveats": "Does not show schematics or pin numbers, only visual locations and nominal voltage values. Values were machine-read from the image — verify against it before trusting."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-09T23:15:42Z"
+}
