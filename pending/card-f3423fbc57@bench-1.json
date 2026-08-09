@@ -1,0 +1,143 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "Nintendo Switch Diagnostics: Power, BQ24193, M92T36 & PI3USB30532 Checks",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786317543.txt",
+   "kind": "document",
+   "title": "Nintendo Switch Diagnostics",
+   "ingested_utc": "2026-08-09T23:36:04Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "won't turn on",
+   "blank screen",
+   "no charge",
+   "slow charging",
+   "no HDMI output",
+   "frozen"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A shorted capacitor behind the CPU on the back of the motherboard indicates a dead CPU/board.",
+    "evidence": "If one of those capacitors behind the CPU is shorted, the switch is trashed.",
+    "quote": "There is an area full of capacitor, right behind the CPU, if one of those capacitors is shorted, the switch is trashed.",
+    "at": ""
+   },
+   {
+    "statement": "M92T36 input pin 5 and output pin 6 should both measure between 3V and 6V DC when power is triggered.",
+    "evidence": "0V on pin 6 indicates M92T36 is bad, while 0V on pin 5 indicates a short on the input line.",
+    "quote": "In that pin you are supposed to have 3v to 6v. If you have 0v or less, you have a short on that line... 0v in pin 6 means M92T36 is bad.",
+    "at": ""
+   },
+   {
+    "statement": "BQ24193 pin 1 VBUS voltage depends on charger input and should read 5V to 15V DC.",
+    "evidence": "When plugging a charger into the switch, pin 1 VBus should read high 5V-15V.",
+    "quote": "Check the voltages on BQ24193 Pin 1 VBus should be high 5v-15v depending on charger",
+    "at": ""
+   },
+   {
+    "statement": "BQ24193 charging temperature circuit relies on critical 3.8k and 5.6k ohm resistor values.",
+    "evidence": "Replacing the 5.6k resistor with 10k causes BQ24193 to fail to charge due to out-of-range temperature sensing.",
+    "quote": "For example if you replace the 5.6kohm resistor with 10k ,bq 24193 will not charge the battery because the temp set for charghing will bee out of range.",
+    "at": ""
+   },
+   {
+    "statement": "PI3USB30532 handles USB 3.0 and DisplayPort 1.2 switching for dock HDMI output.",
+    "evidence": "PI3USB30532 is a 6:4 differential channel matrix switch routing USB 3.0 SuperSpeed and DP1.2 signals.",
+    "quote": "PI3USB30532, a \"6:4 differential channel bi-directional matrix switch solution for switching USB3.0 and/or DP1.2 signals through USB3.0 Type-C connector\"",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check USB charger fuse for continuity with battery disconnected.",
+   "Measure battery voltage on red cables before and after 30 minutes of charging to confirm BQ24193 operation.",
+   "Check all motherboard capacitors for shorts to ground using continuity mode with black probe on ground.",
+   "Connect battery, press power button, and measure DC voltage at pin 5 and pin 6 of M92T36 IC (expect 3V to 6V).",
+   "Visually inspect screen and backlight ribbon cables and connectors.",
+   "If non-booting or blank screen, attempt hard reset by holding power button for 15-20 seconds, waiting 4-10 seconds, then powering on.",
+   "If RCM payload injection fails and display shows no image, inspect PI3USB30532 IC, its pin pads, filters, and surrounding passive components."
+  ],
+  "measurements": [
+   {
+    "point": "USB Charger Fuse",
+    "expect": "continuity",
+    "unit": "",
+    "context": "Continuity mode across both sides of fuse with battery unplugged"
+   },
+   {
+    "point": "BQ24193 Pin 1 (VBus)",
+    "expect": "5-15",
+    "unit": "V",
+    "context": "DC voltage with charger plugged in"
+   },
+   {
+    "point": "BQ24193 Pin 3",
+    "expect": "0",
+    "unit": "V",
+    "context": "DC voltage with charger plugged in"
+   },
+   {
+    "point": "M92T36 Pin 5",
+    "expect": "3-6",
+    "unit": "V",
+    "context": "DC voltage after pressing power button with battery connected"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "expect": "3-6",
+    "unit": "V",
+    "context": "DC voltage after pressing power button with battery connected"
+   },
+   {
+    "point": "BQ24193 TS1/TS2 Resistor 1",
+    "expect": "3.8",
+    "unit": "kOhm",
+    "context": "Resistance for battery charging temperature range set"
+   },
+   {
+    "point": "BQ24193 TS1/TS2 Resistor 2",
+    "expect": "5.6",
+    "unit": "kOhm",
+    "context": "Resistance for battery charging temperature range set"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Fine-tip multimeter probe",
+   "Hot air soldering station",
+   "Soldering flux",
+   "RCM jig / Payload injector"
+  ],
+  "cautions": [
+   "Do not remove the eMMC chip during general short checking as it is difficult to reinstall.",
+   "Do not overheat the motherboard while replacing the USB-C port to prevent PCB bubbling.",
+   "SOURCE RISK: Third-party docks or incorrect charging cables can output improper voltages, damaging the ICs or bricking the console."
+  ],
+  "tags": [
+   "nintendo switch",
+   "bq24193",
+   "m92t36",
+   "pi3usb30532",
+   "max77620",
+   "max77621",
+   "usb-c",
+   "hdmi",
+   "short to ground",
+   "rcm mode",
+   "fuse"
+  ],
+  "confidence": "medium",
+  "caveats": "Measurements on TS1/TS2 resistors must be taken out of circuit for accurate resistance values."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-09T23:38:54Z"
+}
