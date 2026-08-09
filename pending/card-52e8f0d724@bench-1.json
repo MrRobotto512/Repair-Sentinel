@@ -1,0 +1,152 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PlayStation 5 Motherboard Component-Level Troubleshooting & Boot Sequence",
+  "source": {
+   "url": "https://www.youtube.com/watch?v=KBA9Pf1kaak&t=2961s",
+   "kind": "youtube",
+   "title": "PlayStation 5 Ultimate Troubleshooting Guide - Fixing Your Console Like a Pro — FixMyApp",
+   "ingested_utc": "2026-08-09T22:52:27Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Boot",
+   "BLOD",
+   "blue light of death",
+   "no power",
+   "turns on and off",
+   "no picture",
+   "white light no picture",
+   "three beeps",
+   "cant update update error"
+  ],
+  "codes": [
+   "CXD90006"
+  ],
+  "claims": [
+   {
+    "statement": "In a healthy PlayStation 5 standby mode, current draw should jump to 321 milliamps and then settle down between 7 and 10 milliamps.",
+    "evidence": "Monitored standby current draw on a lab power supply.",
+    "quote": "in a healthy PlayStation 5 the current draw should jump to 321 milliamps and then settle down between the 7 or 10 milliamps",
+    "at": "[16:40]"
+   },
+   {
+    "statement": "The resistance on the output coil of the gddr6 memory power regulators should be around 40 ohms.",
+    "evidence": "Multimeter resistance measurement on the RAM power rail inductor.",
+    "quote": "when you measure the resistance it should be around the 40 ohms if you see a lower value then that can indicate a problem with the memory banks",
+    "at": "[13:11]"
+   },
+   {
+    "statement": "The Dialog power management IC (DA9065) generates 1.9V standby, 3.3V standby, 1.5V, and 1.8V standby for the Southbridge.",
+    "evidence": "Probing specific pins on the DA9065 PMIC.",
+    "quote": "this IC is a dialogue power management IC a DA 9065 and this Powers the Southbridge IC and on pin 27 we can also find 1.8 volt standby on this IC",
+    "at": "[09:31]"
+   },
+   {
+    "statement": "The TPS53219A switching regulator converts 12V from the power supply into the 5V standby rail.",
+    "evidence": "Circuit analysis and pin measurements of the TPS53219A.",
+    "quote": "this power management IC is a TPS 53 219a this IC is responsible for generating the 5 vol",
+    "at": "[08:30]"
+   },
+   {
+    "statement": "A standby current draw of 175 milliamps jumping back to 10 milliamps indicates a potential short or bad SSD controller.",
+    "evidence": "Standby current draw diagnostics chart.",
+    "quote": "when the current draw starts at 175 milliamp and goes back to 10 milliamps then you have to check the SSD controller for shorts",
+    "at": "[19:29]"
+   },
+   {
+    "statement": "A standby current draw stuck at 315 to 350 milliamps points to a missing 3.3V power rail or a shorted Wi-Fi IC.",
+    "evidence": "Standby current draw diagnostics chart.",
+    "quote": "in a case that your curent draw is stuck at 350 milliamps and stays on 315 milliamps then you have to check the 3.3 power rail if it's present and also check for shorts near the Wi-Fi IC",
+    "at": "[19:50]"
+   },
+   {
+    "statement": "Each pin of the ethernet cable interface should measure approximately 0.45 volts in diode mode.",
+    "evidence": "Multimeter diode mode measurement across ethernet interface pins.",
+    "quote": "if you measure each pin with a multimeter in diet mode each pin should be around the 0.45 volt",
+    "at": "[32:05]"
+   },
+   {
+    "statement": "The Southbridge IC (CXD90006) provides the 32 kHz realtime clock signal and 25 MHz clock signal, and communicates with the BIOS IC.",
+    "evidence": "Oscilloscope checks on BIOS clock and data pins during boot.",
+    "quote": "the South Bridge also communicates with the BIOS IC and the South Bridge also generates the clock signal",
+    "at": "[24:13]"
+   }
+  ],
+  "procedure": [
+   "Connect the PlayStation 5 to a lab power supply set to 12V with a 2A current limit, attaching positive to the right side and negative to the left side of the power input connector.",
+   "[16:19]",
+   "Monitor the current draw in standby mode to check if it jumps to 321mA and settles to 7-10mA.",
+   "[16:40]",
+   "Isolate a 12V short by removing the main power rail coil and probing both sides in diode mode to determine if the short is on the input side or the APU/regulator side.",
+   "[10:32]",
+   "Check standby voltages on the DA9065 PMIC, TPS53219A regulator, and SBV IC.",
+   "[08:30]",
+   "Verify data input, data output, chip select, and clock signals on the BIOS IC using an oscilloscope during power-on.",
+   "[27:53]"
+  ],
+  "measurements": [
+   {
+    "point": "GDDR6 RAM coil output",
+    "expect": "40",
+    "unit": "ohms",
+    "context": "Resistance to ground on the memory power rail indicating normal impedance."
+   },
+   {
+    "point": "Ethernet cable interface pins",
+    "expect": "0.45",
+    "unit": "V",
+    "context": "Diode mode drop across interface pins."
+   },
+   {
+    "point": "Healthy standby current draw",
+    "expect": "321",
+    "unit": "mA",
+    "context": "Initial jump when plugging in power supply in standby mode before settling to 7-10mA."
+   },
+   {
+    "point": "DA9065 pin 27",
+    "expect": "1.8",
+    "unit": "V",
+    "context": "Standby voltage output to Southbridge."
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Oscilloscope",
+   "Lab power supply",
+   "Thermal camera",
+   "Soldering station",
+   "Isopropyl alcohol"
+  ],
+  "cautions": [
+   "SOURCE RISK: Inserting a long screw into a short screw hole can puncture and permanently damage the multi-layer PCB.",
+   "SOURCE RISK: Do not use a lab power supply incapable of delivering at least 30mA to attempt powering on the PS5."
+  ],
+  "tags": [
+   "playstation 5",
+   "ps5",
+   "blod",
+   "cxd90006",
+   "da9065",
+   "tps53219a",
+   "boot sequence",
+   "standby voltage",
+   "southbridge",
+   "apu",
+   "gddr6",
+   "hdmi encoder"
+  ],
+  "confidence": "high",
+  "caveats": "The APU, Southbridge, and disc drive board ICs are factory-paired to the board and cannot be simply swapped with replacements without specialized pairing solutions."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-09T22:54:06Z"
+}
