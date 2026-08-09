@@ -3,12 +3,12 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "Nintendo Switch No Boot, Charging, and Video Output Diagnostics",
+  "title": "Nintendo Switch power, charge, and HDMI diagnostics guide",
   "source": {
    "url": "kb://Nintendo-Switch-Checks-1786317543.txt",
    "kind": "document",
    "title": "Nintendo Switch Diagnostics",
-   "ingested_utc": "2026-08-09T23:19:11Z"
+   "ingested_utc": "2026-08-09T23:52:57Z"
   },
   "device_class": "Console",
   "models": [
@@ -18,135 +18,110 @@
    "No Boot",
    "no charge",
    "blank screen",
-   "no image on HDMI docking",
-   "frozen"
+   "no image",
+   "docking issue"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "The USB charger fuse can be tested with a multimeter in continuity mode; continuity means it is good, while no continuity requires replacement.",
-    "evidence": "Checking continuity across the fuse ends.",
-    "quote": "Unplug the battery. With a multimeter set to continuity mode, put one probe in one side of the fuse and the other probe in the other side of the fuse. If there is continuity, good, go to step 2, if not you will need to b",
+    "statement": "A faulty M92T36 IC causes both charging problems and failure to display HDMI video out.",
+    "evidence": "M92T36 negotiates USB-C power delivery and HDMI alternate mode routing.",
+    "quote": "M92T36 chip is responsible for negotiating power through the USB-C port, which happens to also be the port through which HDMI out video passes through.",
     "at": ""
    },
    {
-    "statement": "The BQ24193 charging IC can be evaluated by checking battery cable voltages before and after a 30-minute charge.",
-    "evidence": "Measuring voltage across battery red cables relative to black before and after charging.",
-    "quote": "After that plug the battery back in and, without touching the power button, put the switch charging for 30 minutes. After the 30 minutes, unplug it of the charger, redo everything that I said. If the voltage after 30 min",
+    "statement": "Pin 5 (input) and Pin 6 (output) on M92T36 should read between 3V and 6V DC when power is initiated.",
+    "evidence": "0V on Pin 6 indicates a dead M92T36 chip, while 0V on Pin 5 indicates an upstream line short.",
+    "quote": "In that pin you are supposed to have 3v to 6v. If you have 0v or less, you have a short on that line... 0v in pin 6 means M92T36 is bad.",
     "at": ""
    },
    {
-    "statement": "Pin 1 of the BQ24193 should read high (5V-15V) depending on the charger when plugged in.",
-    "evidence": "Voltage measurement on BQ24193 Pin 1.",
-    "quote": "Pin 1 VBus should be high 5v-15v depending on charger",
+    "statement": "Replacing temperature setting resistors on BQ24193 with incorrect values prevents battery charging.",
+    "evidence": "The 3.8k and 5.6k ohm resistors set the battery temperature range for BQ24193 charging logic.",
+    "quote": "For example if you replace the 5.6kohm resistor with 10k ,bq 24193 will not charge the battery because the temp set for charghing will bee out of range.",
     "at": ""
    },
    {
-    "statement": "Shorts on the motherboard can be identified by checking continuity to ground on capacitors, where continuity on both sides indicates a short to ground.",
-    "evidence": "Probing capacitors with a multimeter in continuity mode with black probe on ground.",
-    "quote": "with a multimeter set to continuity mode, put the black probe on a good ground(...) and with the red probe check every capacitor(little brown things). It's supposed to have continuity in one of the sides of the capacitor",
-    "at": ""
-   },
-   {
-    "statement": "M92T36 pin 5 input line should measure between 3V to 6V when the power button is pressed.",
-    "evidence": "DC voltage measurement on M92T36 pin 5 or its trace capacitor with black probe on ground.",
-    "quote": "touch the pin 5 of M92T36(...) In that pin you are supposed to have 3v to 6v. If you have 0v or less, you have a short on that line",
-    "at": ""
-   },
-   {
-    "statement": "M92T36 pin 6 output line should measure between 3V to 6V, and 0V indicates a bad M92T36 chip.",
-    "evidence": "DC voltage measurement on M92T36 pin 6 or its trace capacitor.",
-    "quote": "touch the pin 6 or the capacitor on the end of the trace(...) its suppose to have between 3v to 6v. 0v in pin 6 means M92T36 is bad.",
-    "at": ""
-   },
-   {
-    "statement": "Failure of the PI3USB30532 chip or associated filters can cause a lack of image on HDMI docking.",
-    "evidence": "Verification of PI3USB30532 power and filter continuity.",
-    "quote": "If no image on HDMI docking - Check 3v is getting to the PI3USB(...) If all turns out to be good, it HAS to be the filters. All it can be.",
-    "at": ""
-   },
-   {
-    "statement": "A blank screen on firmware 7.x.x can sometimes be bypassed by leaving it charging all night and entering recovery mode, or entering RCM mode to inject Hekate payload.",
-    "evidence": "Software recovery and payload injection methods for firmware-related blank screens.",
-    "quote": "If you know that your console is in version 7.x.x, sorry but for now the only thing that you can do is leave it charging all night and trying to put it to recovery mode(...) If you don't know the version or is below 7.x.",
+    "statement": "Shorted capacitors directly behind the CPU on the back of the PCB indicate an unrepairable board failure.",
+    "evidence": "Capacitors on the reverse side of the CPU power rail show short to ground when CPU is dead.",
+    "quote": "There is an area full of capacitor, right behind the CPU, if one of those capacitors is shorted, the switch is trashed.",
     "at": ""
    }
   ],
   "procedure": [
-   "{'point': 'Unplug the battery and check continuity across the USB charger fuse.', 'expect': '', 'unit': '', 'context': 'USB charger fuse test'}",
-   "{'point': 'Measure voltages on battery connector red cables relative to black, charge for 30 minutes, then recheck to verify charging functionality via BQ24193.', 'expect': '', 'unit': '', 'context': 'BQ24193 charge test'}",
-   "{'point': 'Check capacitors and M92T36 pins for shorts to ground using a multimeter in continuity mode with the battery unplugged.', 'expect': '', 'unit': '', 'context': 'Short circuit check'}",
-   "{'point': 'Connect the battery, power on, and measure DC voltage on M92T36 pin 5 (or its trace capacitor) to verify input voltage.', 'expect': '3v to 6v', 'unit': 'V', 'context': 'M92T36 Pin 5 input'}",
-   "{'point': 'Measure DC voltage on M92T36 pin 6 (or its trace capacitor) to verify output voltage.', 'expect': '3v to 6v', 'unit': 'V', 'context': 'M92T36 Pin 6 output'}",
-   "{'point': 'Inspect screen and backlight ribbon cables and connectors visually.', 'expect': '', 'unit': '', 'context': 'Visual inspection'}",
-   "{'point': 'Attempt to enter RCM mode and inject the Hekate payload, or boot into recovery mode if on firmware 7.x.x.', 'expect': '', 'unit': '', 'context': 'Software boot verification'}",
-   "{'point': 'Check PI3USB30532 power input (3V) and surrounding ferrite filters and passives if HDMI docking video output fails.', 'expect': '3', 'unit': 'V', 'context': 'PI3USB30532 HDMI output check'}"
+   "Check the USB C input fuse for continuity with multimeter.",
+   "Measure battery voltage at connector before and after 30 minutes on charger to confirm BQ24193 charge function.",
+   "Disconnect battery and accessories (except eMMC) and check all board capacitors and M92T36 pins for shorts to ground.",
+   "Connect battery, press power button, and measure DC voltage at M92T36 Pin 5 and Pin 6 (expect 3V to 6V).",
+   "Visually inspect display flex cables and motherboard FPC connectors.",
+   "If no display but console powers on, enter RCM mode and inject Hekate payload to test hardware versus firmware corruption.",
+   "Check PI3USB30532 chip, surrounding ferrite filters, 0201 caps, and filters if docked HDMI output fails."
   ],
   "measurements": [
    {
-    "point": "BQ24193 Pin 1 VBus",
-    "expect": "5v-15v",
-    "unit": "V",
-    "context": "depending on charger"
-   },
-   {
-    "point": "BQ24193 Pin 2",
-    "expect": "low",
+    "point": "USB charger fuse",
+    "expect": "continuity",
     "unit": "",
-    "context": "using Nintendo charger"
+    "context": "Continuity across input fuse"
    },
    {
-    "point": "BQ24193 Pin 3",
-    "expect": "0v",
+    "point": "BQ24193 Pin 1 VBUS",
+    "expect": "5 - 15",
     "unit": "V",
-    "context": ""
+    "context": "DC voltage when charger connected"
    },
    {
     "point": "M92T36 Pin 5",
-    "expect": "3v to 6v",
+    "expect": "3 - 6",
     "unit": "V",
-    "context": "Input line voltage with power button pressed"
+    "context": "DC voltage after pressing power button"
    },
    {
     "point": "M92T36 Pin 6",
-    "expect": "3v to 6v",
+    "expect": "3 - 6",
     "unit": "V",
-    "context": "Output line voltage"
+    "context": "DC voltage after pressing power button"
+   },
+   {
+    "point": "BQ24193 TS1 / TS2 resistors",
+    "expect": "3.8k / 5.6k",
+    "unit": "ohm",
+    "context": "Temperature setting resistors for charging"
    }
   ],
   "tools": [
-   "multimeter",
-   "soldering station",
-   "hot air soldering tool",
-   "soldering flux",
-   "LC tester",
-   "paper pin"
+   "Multimeter",
+   "Fine tip multimeter probes",
+   "Hot air station",
+   "Soldering iron",
+   "Flux"
   ],
   "cautions": [
-   "SOURCE RISK: Using third-party docks can cause charging ports to fail or brick consoles.",
-   "SOURCE RISK: Using non-official USB-C charging cables can result in permanent damage or slower charging cycles.",
-   "SOURCE RISK: Overheating the motherboard with hot air during charging port replacement can cause the board to bubble."
+   "Do not remove the eMMC chip during initial diagnostic checks as it is difficult to reinstall.",
+   "Ensure temperature setting resistors near BQ24193 match original exact values (3.8k and 5.6k) or charging will fail.",
+   "Avoid excessive heating of the motherboard during USB-C port replacement to prevent PCB blistering."
   ],
   "tags": [
    "nintendo switch",
-   "bq24193",
    "m92t36",
+   "bq24193",
    "pi3usb30532",
-   "no boot",
-   "blank screen",
-   "blod",
-   "short to ground",
-   "charging fuse",
-   "hdmi no signal"
+   "ssm6p49nu",
+   "max77620",
+   "max77621",
+   "no charge",
+   "no display",
+   "docking",
+   "rcm"
   ],
-  "confidence": "high",
-  "caveats": "Values measured in-circuit are for comparative reference only and may require components to be removed for accurate isolated testing."
+  "confidence": "medium",
+  "caveats": "The text contains compiled forum notes and informal diagnostic tips; resistor measurements must be taken out of circuit for accurate resistance values."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-09T23:19:16Z",
+ "queued_utc": "2026-08-09T23:54:19Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-09T23:19:21Z",
+ "reviewed_utc": "2026-08-09T23:54:24Z",
  "reviewed_on": "bench-1"
 }
