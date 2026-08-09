@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "iPhone 16 Pro no power/no charge traced to shorted CP3200B1 IC",
+  "source": {
+   "url": "https://www.youtube.com/watch?v=3ddyGvz3pQ8&t=182s",
+   "kind": "youtube",
+   "title": "I Think I Found the iPhone 16 Pro's Next Common Failure (And How To Fix It) — VCC Board Repairs - Jesse Cruz",
+   "ingested_utc": "2026-08-09T01:38:52Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro"
+  ],
+  "symptoms": [
+   "No Boot",
+   "no charge",
+   "dead"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An immediate high current draw (2.4A-2.5A) at 4.2V DC input prior to pressing the power button indicates a short circuit on a main power rail (VDD Main).",
+    "evidence": "Plugging the custom DC battery cable into the shorted iPhone 16 Pro board immediately pulled 2.4A-2.5A at 4.2V without prompting to boot.",
+    "quote": "Look at that. We actually have a huge current draw... 2.4 amp draw, 2.5 before prompt to boot. Meaning, I'm only connecting the battery to it and it's pulling current. That tells me there's a short on a main power rail.",
+    "at": "[07:16]"
+   },
+   {
+    "statement": "The CP3200B1 charging IC on iPhone 16 series boards can short to ground on VDD Main, causing total board failure and zero charging response.",
+    "evidence": "Thermal imaging identified CP3200B1 heating up under 4.2V DC input; removing CP3200B1 instantly cleared the 2.5A short on VDD Main.",
+    "quote": "It is the CP3200B1G0... CP3200B1 for the 16 series. So, basically all the 16 models will use this charging IC... our fault was no power caused by a main short that happens to be on the charging IC.",
+    "at": "[19:17]"
+   },
+   {
+    "statement": "Mechanic USB-C tester outer pin readings present as a 0.07 short value on a faulted charging/main circuit board versus OL on a known-good board.",
+    "evidence": "The customer board registered 0.07 on the outer pins of the Mechanic USB-C reader, whereas the working donor board showed OL.",
+    "quote": "If you notice, the readings are no longer 0.07, they're now OL. So, that's what known good readings should actually be... 0.07 is basically a short on the mechanic reader, and on the known good, it actually shows OL.",
+    "at": "[01:33]"
+   }
+  ],
+  "procedure": [
+   "Test charging port connector using a USB-C circuit tester to verify outer pin diode/short readings against a known-good donor board.",
+   "Connect 4.2V DC power supply to the battery connector using a custom battery boot cable to monitor initial current draw before pressing power button.",
+   "Carefully trim and pry the shield bracket near the charging controller section using wire cutters to expose the ICs.",
+   "Apply 4.2V current to the board and inspect under a macro thermal camera to pinpoint the component generating localized heat.",
+   "Apply Amtech flux and remove shorted IC CP3200B1 with hot air at 380°C and 50% air flow.",
+   "Prep pads with 183°C Kester 63/37 leaded solder and wick pads flat using hot air.",
+   "If adjacent solder mask was scraped or traces exposed, apply UV solder mask and cure with UV light and gentle heat.",
+   "Align new CP3200B1 IC to orientation mark and solder into place with hot air.",
+   "If secondary IC SN2012027 was mechanically damaged during shield removal, replace it with new SN2012027 IC.",
+   "Place board on steel block with cooling fan, then re-test DC power supply prompt-to-boot sequence and USB-C charging function."
+  ],
+  "measurements": [
+   {
+    "point": "DC power supply (battery connector)",
+    "expect": "2.4 to 2.5",
+    "unit": "A",
+    "context": "Current draw at 4.2V before prompt to boot on shorted VDD Main"
+   },
+   {
+    "point": "Mechanic USB-C tester outer pins (shorted board)",
+    "expect": "0.07",
+    "unit": "",
+    "context": "Short reading on faulted board charging port pins"
+   },
+   {
+    "point": "Mechanic USB-C tester outer pins (known-good board)",
+    "expect": "OL",
+    "unit": "",
+    "context": "Normal open loop reading on working board"
+   }
+  ],
+  "tools": [
+   "Mechanic USB-C tester",
+   "Seek Compact Pro thermal camera with macro lens",
+   "DC power supply",
+   "Custom battery boot cable",
+   "Amtech flux",
+   "Kester 63/37 183°C leaded solder",
+   "Solder wick",
+   "UV mask",
+   "UV light",
+   "Hot air rework station"
+  ],
+  "cautions": [
+   "SOURCE RISK: Prying off board shields with wire cutters can chip or crush adjacent micro ICs (e.g., SN2012027 charging controller).",
+   "Mark orientation dot before IC removal to ensure correct orientation during replacement.",
+   "Avoid excessive hot air duration on sandwich boards to prevent interposer solder separation."
+  ],
+  "tags": [
+   "iphone 16 pro",
+   "cp3200b1",
+   "cp3200b1g0",
+   "sn2012027",
+   "vdd main",
+   "short circuit",
+   "no power",
+   "no charge",
+   "mechanic tester"
+  ],
+  "confidence": "high",
+  "caveats": "A VDD Main short can be caused by many different capacitors or ICs across the iPhone board; CP3200B1 is one specific failure location."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-09T01:38:57Z"
+}
