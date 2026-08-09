@@ -145,5 +145,8 @@
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-09T23:19:16Z"
+ "queued_utc": "2026-08-09T23:19:16Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-09T23:19:21Z",
+ "reviewed_on": "bench-1"
 }
