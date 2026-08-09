@@ -1,0 +1,163 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 Power Rails, Standby Current Sequence & Hardware Diagnostics",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-09T23:13:57Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Power",
+   "BLOD",
+   "White Light of Death",
+   "2 Seconds of Death",
+   "Three Beeps",
+   "No Picture",
+   "Cannot Update Firmware"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A standby current reading stuck at 7mA requires checking Dialog IC voltages, Southbridge clock frequencies, and BIOS IC communication.",
+    "evidence": "Text states that if stuck at 7mA in standby, check Dialog IC voltages, 25MHz and 32kHz Southbridge clocks, and BIOS communication.",
+    "quote": "When console get’s standby power if it is stuck at 7mA. Check the voltages of Dialog ic and frequency of the 25Mhz clock and the 32Khz clock of the Southbridge IC.",
+    "at": ""
+   },
+   {
+    "statement": "A standby current pulse of 175mA dropping back to 10mA indicates a faulty SSD controller IC.",
+    "evidence": "Document cites 175mA to 10mA standby behavior as a failure mode of the SSD controller.",
+    "quote": "When you see a current draw in standby of 175 mA and then back to 10Ma. There can be a bad SSD controller IC.",
+    "at": ""
+   },
+   {
+    "statement": "The firmware update error 'Can't perform this action. Multiple USB drives are connected' indicates an unfixable APU failure.",
+    "evidence": "USB data lines route directly to the APU.",
+    "quote": "If the error message is: Can’t perform this action. Multiple USB drives are connected APU is faulty and not fixable",
+    "at": ""
+   },
+   {
+    "statement": "Flux remaining under the Southbridge BGA can disrupt 25MHz and 32kHz crystal oscillator operation.",
+    "evidence": "BGA contamination causes clock oscillation failure.",
+    "quote": "Flux under BGA can cause oscillator problems.",
+    "at": ""
+   },
+   {
+    "statement": "If 3.3V STBY is absent, the power button will not work.",
+    "evidence": "Southbridge, power button, WiFi, and encoder rely on standby power.",
+    "quote": "If 3.3V STBY is missing the power buttons will not work.",
+    "at": ""
+   },
+   {
+    "statement": "HDMI encoder failure can trigger BLOD, 2-second auto-shutdown, no power, or no picture.",
+    "evidence": "Document lists these symptoms under encoder failure modes.",
+    "quote": "If the Encoder IC fails, you can get • No Picture • No Power • blue light of death • Also 2 seconds of death",
+    "at": ""
+   },
+   {
+    "statement": "A high voltage drop across the 1k RTC battery resistor indicates a short draining the battery.",
+    "evidence": "Excessive voltage drop across the 1k resistor indicates excessive RTC rail current draw, possibly from Southbridge.",
+    "quote": "1k resistor Voltage drop must be low, else there is a short draining the clock battery, maybe southbridge is faulty.",
+    "at": ""
+   },
+   {
+    "statement": "RAM +1.35V power rail has an expected impedance of approximately 40 ohms.",
+    "evidence": "Text specifies RAM +1.35V switching regulator impedance.",
+    "quote": "RAM +1.35V Impedance +- 40Ohms",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "{'statement': 'Lift output coils on the Vcore circuit to isolate input and output side shorts when troubleshooting shorted VRM MOSFETs.'}",
+   "{'statement': 'Remove fuse F7520 and measure current in series across the fuse pads with a multimeter to verify SSD circuit consumption.'}",
+   "{'statement': 'Use a thermal camera during firmware updates to locate overheating RAM modules or SSD controller/memory ICs.'}"
+  ],
+  "measurements": [
+   {
+    "point": "RAM +1.35V rail",
+    "expect": "40",
+    "unit": "Ohm",
+    "context": "Power-on RAM rail impedance"
+   },
+   {
+    "point": "Standby stage 1 current",
+    "expect": "321",
+    "unit": "mA",
+    "context": "Normal initial standby boot sequence current"
+   },
+   {
+    "point": "Standby stage 2 current",
+    "expect": "7-10",
+    "unit": "mA",
+    "context": "Normal settled standby boot sequence current"
+   },
+   {
+    "point": "SSD circuit F7520 current",
+    "expect": "310",
+    "unit": "mA",
+    "context": "Normal current draw of good SSD circuit measured in series at F7520 pads"
+   },
+   {
+    "point": "HDMI Pins 1, 3, 4, 6, 7, 9, 10, 12",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Diode mode measurement"
+   },
+   {
+    "point": "HDMI Pins 13, 15, 16, 19",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "Diode mode measurement"
+   },
+   {
+    "point": "HDMI Pin 18",
+    "expect": "0.5",
+    "unit": "V",
+    "context": "Diode mode measurement"
+   },
+   {
+    "point": "Dialog DA9065 Pin 27",
+    "expect": "1.8",
+    "unit": "V",
+    "context": "Standby voltage output"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Oscilloscope",
+   "Thermal camera",
+   "DC Laboratory Power Supply"
+  ],
+  "cautions": [
+   "SOURCE RISK: DC bench power supply must be capable of supplying at least 30 Amps at +12V during startup.",
+   "Check thoroughly for liquid metal spills around and beneath APU foam seals."
+  ],
+  "tags": [
+   "playstation 5",
+   "ps5",
+   "da9065",
+   "tps53219a",
+   "cxd90061",
+   "w25q16jvsnim",
+   "tlv62090rgtt",
+   "f7520",
+   "blod",
+   "hdmi",
+   "vcore",
+   "ncp252160"
+  ],
+  "confidence": "high",
+  "caveats": "Diagrams combine functional information across motherboard locations without distinguishing specific PS5 board revision numbers (EDM-010, EDM-020, etc.)."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-09T23:14:26Z"
+}
