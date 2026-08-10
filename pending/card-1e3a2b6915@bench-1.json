@@ -1,0 +1,65 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 Blue Light of Death (BLOD) and Thermal Diagnostics",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=5",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-10T01:01:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "BLOD",
+   "Blue Light of Death",
+   "Turns off after 2 seconds",
+   "Hot spots"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Pulsating blue light of death indicates the system is continuously running hardware checks due to an unresolved fault.",
+    "evidence": "Behavior description of BLOD cycle.",
+    "quote": "Is keeps pulsating because it keeps running checks. Blue light and after 2 second it turns off is a common error of PS5.",
+    "at": ""
+   },
+   {
+    "statement": "Unexplained BLOD requires thermal camera inspection for hot spots and diode mode probing for shorts on power rails.",
+    "evidence": "Recommended diagnostic workflow for generic blue light failures.",
+    "quote": "Check board with thermal camera to check for shorts. Problem could be anything... Probe board in diode mode to find shorts.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check for liquid metal spills on the board and under APU seals.",
+   "Probe board power rails in diode mode for shorts.",
+   "Scan board with a thermal camera to identify abnormal heat dissipation."
+  ],
+  "measurements": [],
+  "tools": [
+   "Thermal camera",
+   "Multimeter",
+   "Diode mode tester"
+  ],
+  "cautions": [],
+  "tags": [
+   "blod",
+   "blue light",
+   "thermal",
+   "liquid metal",
+   "short",
+   "ps5"
+  ],
+  "confidence": "medium",
+  "caveats": "BLOD is a generic symptom that can originate from almost any subsystem."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T01:04:20Z"
+}

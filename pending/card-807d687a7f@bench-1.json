@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 HDMI Encoder Failure Symptoms and Diode Measurements",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=3",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-10T01:01:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Picture",
+   "No Power",
+   "BLOD",
+   "Blue Light of Death",
+   "2 seconds of death"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "HDMI encoder failure can cause multiple catastrophic symptoms including no picture, no power, blue light of death, or 2 seconds of death.",
+    "evidence": "Listing of encoder failure manifestations.",
+    "quote": "If the Encoder IC fails, you can get • No Picture • No Power • blue light of death • Also 2 seconds of death",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check HDMI port and nearby components, data lines, filters, and encoder IC.",
+   "Perform diode measurements on the HDMI port pins against ground."
+  ],
+  "measurements": [
+   {
+    "point": "HDMI Pin 12",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Diode mode measurement to ground"
+   },
+   {
+    "point": "HDMI Pin 13",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "Diode mode measurement to ground"
+   },
+   {
+    "point": "HDMI Pin 18",
+    "expect": "0.5",
+    "unit": "V",
+    "context": "Diode mode measurement to ground"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Diode mode probe"
+  ],
+  "cautions": [],
+  "tags": [
+   "hdmi",
+   "encoder",
+   "blod",
+   "diode",
+   "pins",
+   "ps5"
+  ],
+  "confidence": "high",
+  "caveats": "HDMI pin readings can vary slightly depending on meter calibration and board revision."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T01:04:20Z"
+}

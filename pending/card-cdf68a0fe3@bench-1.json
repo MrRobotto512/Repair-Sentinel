@@ -1,0 +1,71 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 Dialog Power Management IC DA9065 Pinout and Rails",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=2",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-10T01:01:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Boot",
+   "No Power",
+   "Missing Standby Rails"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The DA9065 PMIC generates crucial standby rails including +3.3V STBY, +1.15V, and +1.9V, with pin 27 outputting +1.8V STBY.",
+    "evidence": "Pinout and block specifications for DA9065.",
+    "quote": "OUT: +3.3V STBY OUT: +1.15V OUT: +1.9V PIN: 27 = +1.8V STBY",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "DA9065 Pin 1",
+    "expect": "1.15",
+    "unit": "V",
+    "context": "Standby pinout measurement"
+   },
+   {
+    "point": "DA9065 Pin 7",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "Standby pinout measurement"
+   },
+   {
+    "point": "DA9065 Pin 27",
+    "expect": "1.8",
+    "unit": "V",
+    "context": "Standby pinout measurement"
+   }
+  ],
+  "tools": [
+   "Multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "da9065",
+   "pmic",
+   "dialog",
+   "standby",
+   "rails",
+   "ps5"
+  ],
+  "confidence": "high",
+  "caveats": "No official datasheet is available; rely on documented reference points."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T01:04:20Z"
+}

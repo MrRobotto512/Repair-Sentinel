@@ -1,0 +1,65 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 SSD Controller Current Draw and Fuse Isolation Procedure",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=4",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-10T01:01:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Boot",
+   "Safe Mode loop",
+   "SSD communication failure"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A working SSD circuit draws 310mA; discrepancies indicate a faulty SSD controller IC.",
+    "evidence": "Current consumption measurement via fuse F7520 pads.",
+    "quote": "Good working SSD circuit draws: 310mA. If current is different on a faulty board change the SSD controller IC.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove fuse F7520 feeding voltage to the voltage regulator generating power for the SSD circuit.",
+   "Set a multimeter in current mode in series with the pads of the fuse.",
+   "Measure current draw to verify against the expected 310mA draw."
+  ],
+  "measurements": [
+   {
+    "point": "SSD Circuit Current",
+    "expect": "310",
+    "unit": "mA",
+    "context": "In-series measurement across removed fuse F7520"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Soldering station",
+   "Fuse F7520"
+  ],
+  "cautions": [],
+  "tags": [
+   "ssd",
+   "controller",
+   "f7520",
+   "current",
+   "fuse",
+   "ps5"
+  ],
+  "confidence": "high",
+  "caveats": "Ensure proper meter fusing before taking series current measurements."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T01:04:20Z"
+}
