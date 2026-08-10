@@ -1,0 +1,61 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS4 WLOD and HDMI Encoder Faults",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786317438.txt?topic=2",
+   "kind": "document",
+   "title": "PS4 Diagnostic Help",
+   "ingested_utc": "2026-08-10T01:05:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [
+   "No display",
+   "WLOD"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A faulty HDMI encoder IC is the most common cause of no display/WLOD.",
+    "evidence": "Observation of common failure points.",
+    "quote": "HDMI Encoder Is faulty most of the time when there is no picture",
+    "at": ""
+   },
+   {
+    "statement": "If the HDMI encoder is replaced and the issue persists, the replacement IC may be faulty from the factory.",
+    "evidence": "Repair experience.",
+    "quote": "If you replaced encoder IC and still you get a WLOD replace encoder IC again it could be broken from factory.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check hard drive health on a PC.",
+   "Inspect HDMI connector for physical damage.",
+   "Check HDMI filters and diodes near the HDMI circuit for continuity.",
+   "Replace HDMI encoder IC."
+  ],
+  "measurements": [],
+  "tools": [
+   "HDMI encoder IC",
+   "Multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "wlod",
+   "hdmi",
+   "encoder",
+   "no display"
+  ],
+  "confidence": "medium",
+  "caveats": "Diode measurements on the HDMI encoder often show no faults even when the IC is defective."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T01:08:28Z"
+}

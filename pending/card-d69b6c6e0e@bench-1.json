@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS4 BLOD Diagnosis and APU/RAM Issues",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786317438.txt?topic=3",
+   "kind": "document",
+   "title": "PS4 Diagnostic Help",
+   "ingested_utc": "2026-08-10T01:05:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4",
+   "PS4 1200 series"
+  ],
+  "symptoms": [
+   "BLOD",
+   "No Power",
+   "Random restarts"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A 6-second pulsing blue light or solid blue light often indicates a faulty Southbridge or missing +3.3V standby rail.",
+    "evidence": "Observation of LED behavior.",
+    "quote": "6 second BLOD it will pulsing blue light for 6 seconds or it will stay a solid blue light for indefinitely period Missing +3.3Vstby power rail – could be shorted or southbridge is bad",
+    "at": ""
+   },
+   {
+    "statement": "PS4 1200 series consoles are prone to RAM issues; inspect for burn marks or overheating.",
+    "evidence": "Known model-specific failure.",
+    "quote": "PS4 1200 series are know to have RAM problems. If you get the 1200 series check the physical state of the RAM IC, look for burn marks.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Disconnect hard drive to test if console enters safe mode.",
+   "Check USB +5V rail.",
+   "Apply pressure to APU clamp to test for BGA connection issues.",
+   "Check RAM modules for overheating using thermal camera or alcohol."
+  ],
+  "measurements": [],
+  "tools": [
+   "Thermal camera",
+   "Multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "blod",
+   "apu",
+   "ram",
+   "1200 series",
+   "southbridge"
+  ],
+  "confidence": "medium",
+  "caveats": "BLOD is a generic symptom and can be caused by multiple subsystems including PSU, APU, RAM, or Southbridge."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T01:08:28Z"
+}
