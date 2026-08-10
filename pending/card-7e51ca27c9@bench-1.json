@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PlayStation 5 Standby Boot Sequence Current Draw Diagnostics",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=1",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-10T02:30:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Boot",
+   "No Power",
+   "Standby Lockup",
+   "Boot Loop"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Console stuck at 7mA in standby requires checking Dialog IC voltages, 25MHz and 32kHz clocks, and BIOS communication.",
+    "evidence": "Table of standby boot sequence current draws and corresponding fault areas.",
+    "quote": "When console get’s standby power if it is stuck at 7mA. Check the voltages of Dialog ic and frequency of the 25Mhz clock and the 32Khz clock of the Southbridge IC.",
+    "at": ""
+   },
+   {
+    "statement": "A current draw of 175 mA dropping back to 10 mA indicates a potential short or failure in the SSD controller.",
+    "evidence": "Current draw behavior during standby boot sequence monitoring.",
+    "quote": "Check SSD Controller for shorts",
+    "at": ""
+   },
+   {
+    "statement": "A standby current draw of 315 mA with no power button response points to a missing 3.3V STBY rail or a shorted WiFi IC.",
+    "evidence": "Current monitoring during initial standby state.",
+    "quote": "Check 3.3V STBY power rail present, check for shorts Wifi IC",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Monitor current draw on a DC power supply during standby and power-on phases.",
+   "Compare observed current draw against known good boot sequence milestones (e.g., 7mA, 7-27mA, 175mA).",
+   "Inspect and test specific subsystem rails indicated by the current draw milestone."
+  ],
+  "measurements": [],
+  "tools": [
+   "Multimeter",
+   "Oscilloscope",
+   "DC Power Supply"
+  ],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "boot sequence",
+   "current draw",
+   "dialog ic",
+   "southbridge",
+   "bios",
+   "ssd controller"
+  ],
+  "confidence": "high",
+  "caveats": "Current draw steps are indicators only and must be verified with scope and multimeter measurements."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:31:20Z"
+}

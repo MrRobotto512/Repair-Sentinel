@@ -1,0 +1,172 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PlayStation 5 HDMI Port Diode Mode Measurements",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=3",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-10T02:30:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Display",
+   "Black Screen",
+   "No Signal",
+   "WLOD"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "HDMI connector pins have specific expected diode mode values ranging from ground to 0.8V.",
+    "evidence": "Diode mode measurements taken across HDMI pins.",
+    "quote": "PIN 17: GND PIN 13: 0.6V PIN 12: 0.8V PIN 18: 0.5V PIN 11: GND PIN 16: 0.6V PIN 19: 0.6V PIN 10: 0.8V PIN 15: 0.6V PIN 14: NC PIN 9: 0.8V PIN 8: GND PIN 7: 0.8V PIN 2: GND PIN 4: 0.8V PIN 6: 0.8V PIN 1: 0.8V PIN 3: 0.8V ",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Set multimeter to diode mode.",
+   "Place red probe on ground and black probe on each HDMI connector pin.",
+   "Compare readings against known good diode values."
+  ],
+  "measurements": [
+   {
+    "point": "HDMI PIN 1",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 2",
+    "expect": "0",
+    "unit": "V diode mode",
+    "context": "GND pin"
+   },
+   {
+    "point": "HDMI PIN 3",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 4",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 5",
+    "expect": "0",
+    "unit": "V diode mode",
+    "context": "GND pin"
+   },
+   {
+    "point": "HDMI PIN 6",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 7",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 8",
+    "expect": "0",
+    "unit": "V diode mode",
+    "context": "GND pin"
+   },
+   {
+    "point": "HDMI PIN 9",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 10",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 11",
+    "expect": "0",
+    "unit": "V diode mode",
+    "context": "GND pin"
+   },
+   {
+    "point": "HDMI PIN 12",
+    "expect": "0.8",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 13",
+    "expect": "0.6",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 14",
+    "expect": "0",
+    "unit": "V diode mode",
+    "context": "NC / open"
+   },
+   {
+    "point": "HDMI PIN 15",
+    "expect": "0.6",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 16",
+    "expect": "0.6",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 17",
+    "expect": "0",
+    "unit": "V diode mode",
+    "context": "GND pin"
+   },
+   {
+    "point": "HDMI PIN 18",
+    "expect": "0.5",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI PIN 19",
+    "expect": "0.6",
+    "unit": "V diode mode",
+    "context": "diode measurement"
+   }
+  ],
+  "tools": [
+   "Multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "hdmi",
+   "diode mode",
+   "pinout",
+   "no display",
+   "wlod"
+  ],
+  "confidence": "high",
+  "caveats": "Diode mode values can vary slightly depending on meter model and temperature."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:31:20Z"
+}
