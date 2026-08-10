@@ -3,12 +3,12 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS5 Panasonic HDMI Encoder Side B Voltage Test Points",
+  "title": "PS5 Panasonic HDMI Encoder Side B Voltage Map",
   "source": {
    "url": "kb://img-1000132692-1786235359.jpg",
    "kind": "image",
    "title": "PS5 Panasonic HDMI Encoder Side B Voltage Test Points",
-   "ingested_utc": "2026-08-09T23:15:38Z"
+   "ingested_utc": "2026-08-10T00:27:26Z"
   },
   "device_class": "Console",
   "models": [
@@ -18,8 +18,8 @@
   "codes": [],
   "claims": [
    {
-    "statement": "Shows voltage rails on HDMI lines Side B for PS5 Panasonic HDMI Encoder",
-    "evidence": "Annotated voltage map with text labels for 5V, 3.3V, 1.8V, and 0.9V rails around the HDMI encoder area.",
+    "statement": "The image identifies voltage rails on the underside of the PS5 HDMI encoder area.",
+    "evidence": "Color-coded overlays on the PCB traces with voltage labels.",
     "quote": "",
     "at": ""
    }
@@ -27,50 +27,49 @@
   "procedure": [],
   "measurements": [
    {
-    "point": "5V stdby",
-    "expect": "5",
-    "unit": "V",
-    "context": "stby"
-   },
-   {
     "point": "5V pwr",
     "expect": "5",
     "unit": "V",
-    "context": "pwr"
+    "context": ""
+   },
+   {
+    "point": "5V stdby",
+    "expect": "5",
+    "unit": "V",
+    "context": ""
    },
    {
     "point": "3.3V pwr",
     "expect": "3.3",
     "unit": "V",
-    "context": "pwr"
+    "context": ""
    },
    {
     "point": "3.3V stdby",
     "expect": "3.3",
     "unit": "V",
-    "context": "stdby"
+    "context": ""
    },
    {
     "point": "1.8V pwr",
     "expect": "1.8",
     "unit": "V",
-    "context": "pwr"
+    "context": ""
    },
    {
     "point": "0.9V pwr",
     "expect": "0.9",
     "unit": "V",
-    "context": "pwr"
+    "context": ""
    }
   ],
   "tools": [],
   "cautions": [],
   "tags": [
    "ps5",
-   "panasonic encoder",
    "hdmi",
-   "voltages",
    "panasonic",
+   "voltage map",
    "encoder",
    "voltage",
    "test points",
@@ -78,13 +77,13 @@
    "power rails"
   ],
   "confidence": "medium",
-  "caveats": "Does not show schematics or pin numbers, only visual locations and nominal voltage values. Values were machine-read from the image — verify against it before trusting."
+  "caveats": "The image does not specify if these voltages are present in standby mode or active operation mode. Values were machine-read from the image — verify against it before trusting."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-09T23:15:42Z",
+ "queued_utc": "2026-08-10T00:27:35Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-09T23:15:55Z",
+ "reviewed_utc": "2026-08-10T00:27:43Z",
  "reviewed_on": "bench-1"
 }
