@@ -3,12 +3,12 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS5 Standby Current Draw Diagnostics and Fault Isolation",
+  "title": "PlayStation 5 Standby Boot Sequence Current Draw Diagnostics",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=1",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-10T01:01:38Z"
+   "ingested_utc": "2026-08-10T02:30:14Z"
   },
   "device_class": "Console",
   "models": [
@@ -16,78 +16,60 @@
   ],
   "symptoms": [
    "No Boot",
-   "Standby current stuck",
-   "Boot loop",
-   "3 beeps and no power"
+   "No Power",
+   "Standby Lockup",
+   "Boot Loop"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "A working board draws around 321mA in standby before returning to 4mA to 10mA.",
-    "evidence": "Standby boot sequence measurement table.",
-    "quote": "WORKING / GOOD +- 0 mA +- 0 mA Check BIOS and fuses, +12V power supply, Check for short on the +12V input",
-    "at": ""
-   },
-   {
-    "statement": "Stuck current at 7mA indicates checking Dialog IC voltages, 25MHz and 32KHz clocks, and BIOS communication.",
-    "evidence": "Current draw behavior analysis.",
+    "statement": "Console stuck at 7mA in standby requires checking Dialog IC voltages, 25MHz and 32kHz clocks, and BIOS communication.",
+    "evidence": "Table of standby boot sequence current draws and corresponding fault areas.",
     "quote": "When console get’s standby power if it is stuck at 7mA. Check the voltages of Dialog ic and frequency of the 25Mhz clock and the 32Khz clock of the Southbridge IC.",
     "at": ""
    },
    {
-    "statement": "Current draw going to 175mA and dropping back to 10mA points to a bad SSD controller.",
-    "evidence": "Standby current anomaly linked to SSD circuit.",
-    "quote": "When you see a current draw in standby of 175 mA and then back to 10Ma. There can be a bad SSD controller IC.",
+    "statement": "A current draw of 175 mA dropping back to 10 mA indicates a potential short or failure in the SSD controller.",
+    "evidence": "Current draw behavior during standby boot sequence monitoring.",
+    "quote": "Check SSD Controller for shorts",
+    "at": ""
+   },
+   {
+    "statement": "A standby current draw of 315 mA with no power button response points to a missing 3.3V STBY rail or a shorted WiFi IC.",
+    "evidence": "Current monitoring during initial standby state.",
+    "quote": "Check 3.3V STBY power rail present, check for shorts Wifi IC",
     "at": ""
    }
   ],
   "procedure": [
-   "Check for short on the +12V input if current draw is 0mA.",
-   "Verify Dialog IC voltages and clock frequencies if stuck at 7mA standby current.",
-   "Inspect SSD controller and measure current draw through fuse pads if current behavior shows 175mA dropping to 10mA."
+   "Monitor current draw on a DC power supply during standby and power-on phases.",
+   "Compare observed current draw against known good boot sequence milestones (e.g., 7mA, 7-27mA, 175mA).",
+   "Inspect and test specific subsystem rails indicated by the current draw milestone."
   ],
-  "measurements": [
-   {
-    "point": "Dialog IC Pin 1",
-    "expect": "1.15",
-    "unit": "V",
-    "context": "Dialog PMIC pinout standby"
-   },
-   {
-    "point": "Dialog IC Pin 5",
-    "expect": "5",
-    "unit": "V",
-    "context": "Dialog PMIC pinout standby (F7003)"
-   },
-   {
-    "point": "Dialog IC Pin 27",
-    "expect": "1.8",
-    "unit": "V",
-    "context": "Dialog PMIC pinout standby"
-   }
-  ],
+  "measurements": [],
   "tools": [
    "Multimeter",
    "Oscilloscope",
-   "Bench power supply"
+   "DC Power Supply"
   ],
   "cautions": [],
   "tags": [
    "ps5",
-   "standby",
-   "current",
-   "dialog",
-   "da9065",
-   "fuses"
+   "boot sequence",
+   "current draw",
+   "dialog ic",
+   "southbridge",
+   "bios",
+   "ssd controller"
   ],
   "confidence": "high",
-  "caveats": "Current draws are diagnostic guides and require verification with scope and thermal imaging."
+  "caveats": "Current draw steps are indicators only and must be verified with scope and multimeter measurements."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T01:04:20Z",
+ "queued_utc": "2026-08-10T02:31:20Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-10T02:04:49Z",
+ "reviewed_utc": "2026-08-10T02:32:51Z",
  "reviewed_on": "bench-1"
 }
