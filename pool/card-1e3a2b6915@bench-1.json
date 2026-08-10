@@ -3,66 +3,66 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS5 Blue Light of Death (BLOD) and Thermal Diagnostics",
+  "title": "PlayStation 5 SSD Controller Current Isolation Procedure",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=5",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-10T01:01:38Z"
+   "ingested_utc": "2026-08-10T02:30:14Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 5"
   ],
   "symptoms": [
-   "BLOD",
-   "Blue Light of Death",
-   "Turns off after 2 seconds",
-   "Hot spots"
+   "No Boot",
+   "Current Draw Spike",
+   "SSD Failure"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "Pulsating blue light of death indicates the system is continuously running hardware checks due to an unresolved fault.",
-    "evidence": "Behavior description of BLOD cycle.",
-    "quote": "Is keeps pulsating because it keeps running checks. Blue light and after 2 second it turns off is a common error of PS5.",
-    "at": ""
-   },
-   {
-    "statement": "Unexplained BLOD requires thermal camera inspection for hot spots and diode mode probing for shorts on power rails.",
-    "evidence": "Recommended diagnostic workflow for generic blue light failures.",
-    "quote": "Check board with thermal camera to check for shorts. Problem could be anything... Probe board in diode mode to find shorts.",
+    "statement": "A faulty SSD controller can be diagnosed by lifting fuse F7520 and measuring current draw in series using a multimeter.",
+    "evidence": "Current consumption testing method for the SSD power circuit.",
+    "quote": "Remove fuse F7520 that feeds the voltage on the back to the voltage regulator that generates power for the SSD circuit. Set a multimeter in current mode in series with the pads of the fuse and measure the current draw. G",
     "at": ""
    }
   ],
   "procedure": [
-   "Check for liquid metal spills on the board and under APU seals.",
-   "Probe board power rails in diode mode for shorts.",
-   "Scan board with a thermal camera to identify abnormal heat dissipation."
+   "Locate and remove fuse F7520 feeding the SSD voltage regulator.",
+   "Connect a multimeter set to current measurement mode in series across the fuse pads.",
+   "Power on the board and verify if current draw matches the normal 310mA working expectation."
   ],
-  "measurements": [],
+  "measurements": [
+   {
+    "point": "SSD circuit current draw",
+    "expect": "310",
+    "unit": "mA",
+    "context": "normal working SSD circuit current draw measured across F7520 pads"
+   }
+  ],
   "tools": [
-   "Thermal camera",
    "Multimeter",
-   "Diode mode tester"
+   "Soldering Station",
+   "Hot Air Rework Station"
   ],
   "cautions": [],
   "tags": [
-   "blod",
-   "blue light",
-   "thermal",
-   "liquid metal",
-   "short",
-   "ps5"
+   "ps5",
+   "ssd controller",
+   "f7520",
+   "fuse",
+   "current measurement",
+   "repair procedure"
   ],
-  "confidence": "medium",
-  "caveats": "BLOD is a generic symptom that can originate from almost any subsystem."
+  "confidence": "high",
+  "caveats": "Ensure meter leads are securely connected in series to prevent voltage drop or blown meter fuse."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T01:04:20Z",
+ "queued_utc": "2026-08-10T02:31:20Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-10T02:04:46Z",
+ "reviewed_utc": "2026-08-10T02:32:46Z",
  "reviewed_on": "bench-1"
 }
