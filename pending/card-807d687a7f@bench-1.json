@@ -1,0 +1,89 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "PS5 Power Rails, Regulators, and Component Short Diagnostics",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=3",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-10T00:40:22Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Power",
+   "Short Circuit",
+   "BLOD",
+   "Random Reboots"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The TPS53219A single buck controller generates the +5V STBY rail from the +12V power supply.",
+    "evidence": "Schematic block function analysis.",
+    "quote": "This power regulator will generate +5v STBY. It is created from the +12V power supply.",
+    "at": ""
+   },
+   {
+    "statement": "If the real-time clock battery voltage drop is abnormal or 1k resistor drops incorrectly, a short is draining the clock battery, potentially indicating a faulty Southbridge.",
+    "evidence": "RTC battery circuit resistance and voltage drop checks.",
+    "quote": "Voltage drop must be low, else there is a short draining the clock battery, maybe southbridge is faulty.",
+    "at": ""
+   },
+   {
+    "statement": "RAM or SSD module issues can cause update errors or reboots during or after the update process.",
+    "evidence": "Behavioral correlation with RAM/SSD faults during software updates.",
+    "quote": "When you can’t update PS5 and during the update process or after the update it reboots then the cause can be RAM related.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Isolate Vcore circuit by lifting output coils to find shorted MOSFETs.",
+   "Check capacitors and fuses across 12V input, 1.9V power rail, 1.1V power rail, and WiFi IC for shorts.",
+   "Verify working SSD circuit current draw against expected 310mA benchmark."
+  ],
+  "measurements": [
+   {
+    "point": "RAM +1.35V rail",
+    "expect": "40",
+    "unit": "Ohms",
+    "context": "Impedance measurement"
+   },
+   {
+    "point": "Working SSD circuit",
+    "expect": "310",
+    "unit": "mA",
+    "context": "Current draw measurement"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Lab power supply",
+   "Soldering iron",
+   "Thermal camera"
+  ],
+  "cautions": [
+   "SOURCE RISK: Isolating power rails by lifting coils requires careful thermal management to avoid lifting board pads."
+  ],
+  "tags": [
+   "ps5",
+   "vcore",
+   "tps53219a",
+   "da9065",
+   "pmic",
+   "short-circuit",
+   "ram",
+   "ssd-controller"
+  ],
+  "confidence": "high",
+  "caveats": "Always verify input power supplies can deliver necessary startup amperage (such as 30 Amps on 12V rail) before diagnosing downstream drops."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T00:42:58Z"
+}
