@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "Nintendo Switch Short Circuit Detection and M92T36 Power Management Checks",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786317543.txt?topic=2",
+   "kind": "document",
+   "title": "Nintendo Switch Diagnostics",
+   "ingested_utc": "2026-08-10T02:20:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "No Boot",
+   "won't turn on",
+   "blank screen"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Continuity on both sides of a capacitor when checked against ground indicates a short to ground.",
+    "evidence": "Checking capacitors with a multimeter set to continuity mode with black probe on a good ground.",
+    "quote": "with a multimeter set to continuity mode, put the black probe on a good ground... and with the red probe check every capacitor... continuity in both sides of the capacitor means short to ground.",
+    "at": ""
+   },
+   {
+    "statement": "Pin 5 of the M92T36 is an input line that should read 3V to 6V, and Pin 6 is an output line that should read between 3V and 6V when the power button is pressed.",
+    "evidence": "DC voltage measurement on M92T36 pins 5 and 6 or their respective trace capacitors.",
+    "quote": "touch the pin 5 of M92T36... In that pin you are supposed to have 3v to 6v. If you have 0v or less, you have a short on that line... touch the pin 6 or the capacitor on the end of the trace and its suppose to have betwee",
+    "at": ""
+   },
+   {
+    "statement": "M92T36 handles power negotiation via USB-C and video out; damage causes charging and HDMI video output failures.",
+    "evidence": "M92T36 failure symptoms and pin function analysis.",
+    "quote": "M92T36 chip is responsible for negotiating power through the USB-C port, which happens to also be the port through which HDMI out video passes through. When damaged, the negotiations fail, causing both charging problems ",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug the battery and remove components on top of the motherboard except the eMMC chip.",
+   "Set multimeter to continuity mode, place black probe on ground (metal shield or USB-C port), and probe both sides of capacitors across the front and back of the motherboard.",
+   "Inspect M92T36 pins for shorts to ground.",
+   "Reinstall the motherboard into the frame with the battery connected, press the power button, set multimeter to DC voltage, and test M92T36 Pin 5 and Pin 6 (or their corresponding trace capacitors)."
+  ],
+  "measurements": [
+   {
+    "point": "M92T36 Pin 5",
+    "expect": "3 to 6",
+    "unit": "V",
+    "context": "Input line voltage"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "expect": "3 to 6",
+    "unit": "V",
+    "context": "Output line voltage"
+   }
+  ],
+  "tools": [
+   "Multimeter with fine probe tip or soldered paper pin",
+   "Hot air soldering station"
+  ],
+  "cautions": [
+   "SOURCE RISK: Probing live pins with standard thick multimeter probes can easily slip and cause accidental shorts."
+  ],
+  "tags": [
+   "nintendo switch",
+   "m92t36",
+   "short to ground",
+   "continuity",
+   "pmic",
+   "no power"
+  ],
+  "confidence": "high",
+  "caveats": "Finding a shorted capacitor near a chip does not automatically prove the chip is dead; remove the capacitor to verify if the short clears."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:21:49Z"
+}

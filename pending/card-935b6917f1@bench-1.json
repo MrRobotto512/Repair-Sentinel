@@ -1,0 +1,63 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "Nintendo Switch Software Recovery, RCM, and Payload Injection",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786317543.txt?topic=4",
+   "kind": "document",
+   "title": "Nintendo Switch Diagnostics",
+   "ingested_utc": "2026-08-10T02:20:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "No Boot",
+   "blank screen",
+   "firmware brick"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "For consoles on firmware version 7.x.x with a blank screen, leave the unit charging overnight and attempt to enter recovery mode for 2 or more hours.",
+    "evidence": "Firmware-specific recovery procedure.",
+    "quote": "If you know that your console is in version 7.x.x, sorry but for now the only thing that you can do is leave it charging all night and trying to put it to recovery mode and leave it there for 2 hours or more.",
+    "at": ""
+   },
+   {
+    "statement": "If the console boots directly to the Hekate payload in RCM mode, the hardware and firmware are mismatched or corrupted rather than a complete hardware failure.",
+    "evidence": "Attempting RCM payload injection on units below version 7.x.x or of unknown version.",
+    "quote": "If you don't know the version or is below 7.x.x, you can put it in RCM mode and try to inject hekate latest payload... If the screen turns right on with hekate payload, your console is fine, the firmware is not",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Leave the console charging overnight if running version 7.x.x, then attempt to enter recovery mode.",
+   "For unknown or lower firmware versions, put the console into RCM mode and inject the latest Hekate payload.",
+   "If payload injection fails, check for a faulty PI3USB30532 or severe CPU damage."
+  ],
+  "measurements": [],
+  "tools": [
+   "RCM jig",
+   "Payload injector / PC with software"
+  ],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "rcm",
+   "hekate",
+   "payload",
+   "recovery mode",
+   "firmware"
+  ],
+  "confidence": "medium",
+  "caveats": "Payload injection only works on unpatched units with an RCM vulnerability."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:21:50Z"
+}

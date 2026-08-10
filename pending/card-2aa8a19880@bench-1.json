@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "Nintendo Switch PI3USB30532 Video Out and Docking Diagnostics",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786317543.txt?topic=3",
+   "kind": "document",
+   "title": "Nintendo Switch Diagnostics",
+   "ingested_utc": "2026-08-10T02:20:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no image on hdmi",
+   "docking failed",
+   "no video out"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The PI3USB30532 is a 6:4 differential channel bi-directional matrix switch used for routing USB 3.0 and DP1.2 signals through the USB Type-C connector.",
+    "evidence": "Chip identification and application description.",
+    "quote": "PI3USB30532, a '6:4 differential channel bi-directional matrix switch solution for switching USB3.0 and/or DP1.2 signals through USB3.0 Type-C connector'",
+    "at": ""
+   },
+   {
+    "statement": "If HDMI video output to a dock fails, verify that 3V power is reaching the PI3USB30532 and check its surrounding passives and ferrite filters.",
+    "evidence": "Testing pin pads, continuity of coils in parallel vs cross, and impedance of ferrite filters.",
+    "quote": "If no image on HDMI - Check 3v is getting to the PI3USB... Check around the passives around PI3USB. In particular the ferrite filters. These aren’t the strongest! Bell them with a meter / check impedance / continuity is ",
+    "at": ""
+   },
+   {
+    "statement": "Small 0201 capacitors (100nF and 100pF) near the PI3USB smooth power rails and VBUS; if damaged, the Switch may be recognized when docked but show no image.",
+    "evidence": "Capacitor placement and function observation.",
+    "quote": "These marked are CAPS – 0201. Red box on left 100nF x 2. The other 100pF. They smooth the signal between the power rails and VBUS and if you get the Switch recognized while docked but then you don’t see image, they are p",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check if pin pads on the PI3USB30532 are blown and verify mass connections.",
+   "Check that coils have continuity in parallel but not in cross.",
+   "Verify 3V power delivery to the PI3USB30532.",
+   "Test ferrite filters and surrounding 0201 capacitors for uniform continuity and impedance."
+  ],
+  "measurements": [
+   {
+    "point": "PI3USB30532 VCC",
+    "expect": "3",
+    "unit": "V",
+    "context": "Power input check"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "LC tester"
+  ],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "pi3usb30532",
+   "hdmi",
+   "docking",
+   "no image",
+   "video out"
+  ],
+  "confidence": "medium",
+  "caveats": "Make sure the dock and official AC adapter are tested first before condemning board-level multiplexer chips."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:21:49Z"
+}

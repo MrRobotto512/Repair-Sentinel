@@ -1,0 +1,104 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "Nintendo Switch USB Charger Fuse and BQ24193 Charging Diagnostics",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786317543.txt?topic=1",
+   "kind": "document",
+   "title": "Nintendo Switch Diagnostics",
+   "ingested_utc": "2026-08-10T02:20:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "No Boot",
+   "no charge",
+   "won't turn on"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The USB charger fuse protects power from the USB-C port to the battery chip and can be replaced with a Matsuo R-rated equivalent such as the Littelfuse 0438035WRA.",
+    "evidence": "Checking continuity across the fuse with a multimeter in continuity mode.",
+    "quote": "Lets check the fuse that lets power from USB C reach the battery chip. Unplug the battery. With a multimeter set to continuity mode, put one probe in one side of the fuse and the other probe in the other side of the fuse",
+    "at": ""
+   },
+   {
+    "statement": "If the battery voltage increases after 30 minutes of charging, the BQ24193 charging IC is functioning.",
+    "evidence": "Measuring battery cable voltages before and after 30 minutes on charge.",
+    "quote": "After the 30 minutes, unplug it of the charger, redo everything that I said. If the voltage after 30 minutes is higher than it was, you can assume that your console is charging so the BQ24193 is fine.",
+    "at": ""
+   },
+   {
+    "statement": "When a charger is plugged in, BQ24193 Pin 1 should read 5V-15V, Pin 2 should be low, Pin 3 should be 0V, and Pin 4 should be low during charge or high when complete.",
+    "evidence": "Voltage checks on BQ24193 pins during charging.",
+    "quote": "Pin 1 VBus should be high 5v-15v depending on charger pin 2 if using the nintendo charger this pin should read low pin 3 Should be low 0v pin 4 should be low if charge in progress, if this pin is high charge is complete ",
+    "at": ""
+   },
+   {
+    "statement": "Thermal set resistor values (such as 3.8k and 5.6k) connected to the BQ24193 are critical for setting charging parameters relative to battery temperature.",
+    "evidence": "Deviating from specific resistance values causes charging to be disabled out of range.",
+    "quote": "So the 3.8 k and 5.6 k values are critical and its used to set the charghing related to temperature of the battery. (bq 24193 tipical aplication recommend 2.2 k and 6.86k for ts1 and ts2 pins)",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug the battery and set the multimeter to continuity mode to check the USB charger fuse.",
+   "Unplug the battery and measure initial DC voltages on the exposed copper of the battery connector red cables using the black probe on a black cable.",
+   "Plug the battery back in, connect the charger for 30 minutes without pressing the power button, unplug, and re-measure the red cable voltages to confirm the battery is accepting a charge.",
+   "Check voltages on BQ24193 pins 1 through 4 with a charger plugged in."
+  ],
+  "measurements": [
+   {
+    "point": "BQ24193 Pin 1 (VBus)",
+    "expect": "5V to 15V",
+    "unit": "V",
+    "context": "Depending on the charger"
+   },
+   {
+    "point": "BQ24193 Pin 2",
+    "expect": "Low",
+    "unit": "V",
+    "context": "Using Nintendo charger"
+   },
+   {
+    "point": "BQ24193 Pin 3",
+    "expect": "0",
+    "unit": "V",
+    "context": "Ground level"
+   },
+   {
+    "point": "BQ24193 Pin 4",
+    "expect": "Low",
+    "unit": "V",
+    "context": "Charge in progress"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Littelfuse 0438035WRA",
+   "Soldering station"
+  ],
+  "cautions": [
+   "SOURCE RISK: Matsuo R-rated fuses have a 0.315A rating which is far too low; ensure proper replacement ratings."
+  ],
+  "tags": [
+   "nintendo switch",
+   "bq24193",
+   "fuse",
+   "charging",
+   "no charge",
+   "usb-c"
+  ],
+  "confidence": "high",
+  "caveats": "Always measure in-circuit values as a comparative baseline only."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:21:49Z"
+}

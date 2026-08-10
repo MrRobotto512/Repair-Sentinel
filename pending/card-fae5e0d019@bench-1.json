@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "Nintendo Switch DIY USB-C Charging Port Replacement Procedure",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786317543.txt?topic=5",
+   "kind": "document",
+   "title": "Nintendo Switch Diagnostics",
+   "ingested_utc": "2026-08-10T02:20:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "charging port won't work",
+   "no charge",
+   "bent pins"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A broken charging port with twisted or broken pins requires removal and replacement using a hot air soldering station and flux.",
+    "evidence": "Physical inspection of port pins and procedural steps for replacement.",
+    "quote": "If the charge port on your system is broken, which you can determine by looking inside and finding broken or twisted pins and the console won’t charge or turn on, there is a DIY fix to it.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove the back case of the Switch by taking out all securing screws.",
+   "Remove the motherboard from the console housing.",
+   "Apply soldering flux to all connection points of the charging port.",
+   "Carefully heat the charging port connection points using a hot air tool until the port can be gently lifted off, taking care not to overheat and bubble the motherboard.",
+   "Clean the pads, apply fresh solder/flux, and heat the pins to attach the new replacement USB-C charging port.",
+   "Reinstall the motherboard into the console and attach the back cover."
+  ],
+  "measurements": [],
+  "tools": [
+   "Hot air soldering station",
+   "Soldering iron",
+   "Soldering flux",
+   "Precision screwdrivers"
+  ],
+  "cautions": [
+   "SOURCE RISK: Excessive heat from a hot air station can bubble the motherboard or damage surrounding components if temperature and airflow are not properly controlled."
+  ],
+  "tags": [
+   "nintendo switch",
+   "usb-c port",
+   "charging port",
+   "soldering",
+   "hot air",
+   "repair procedure"
+  ],
+  "confidence": "high",
+  "caveats": "This process is advanced and should not be attempted by beginners without prior micro-soldering experience."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:21:50Z"
+}
