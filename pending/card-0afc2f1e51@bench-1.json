@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 1,
+  "title": "iPhone 15 Pro/Pro Max Random Restarts Traced to Panic Logs and Flex Sensors",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_15_Pro_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 15 Pro That Randomly Restarts - Repair Wiki",
+   "ingested_utc": "2026-08-10T02:37:04Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15 Pro",
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "After a back glass repair, the iPhone will restart on its ow",
+   "After a hard drop, the iPhone will restart every 3 minutes",
+   "After a screen repair, the iPhone will bootloop every 3 minu",
+   "After replacing the charging port flex, the device will auto",
+   "The iPhone will reboot randomly when using it",
+   "The iPhone will seem to freeze and restart every 2-5 minutes"
+  ],
+  "codes": [
+   "0X200000",
+   "2097152",
+   "0X300000",
+   "0X100000",
+   "3145728",
+   "1048576",
+   "0X400000",
+   "4194304",
+   "0X600000",
+   "6291456"
+  ],
+  "claims": [
+   {
+    "statement": "Unplugged or defective proximity flex causes restarts associated with panic log error 0x200000.",
+    "evidence": "OS panic log file indicates SMC PANIC - ASSERTION FAILED referencing the sensor array.",
+    "quote": "0x200000 (or 2097152)- It's the Proximity Flex",
+    "at": ""
+   },
+   {
+    "statement": "Charging port flex issues trigger panic log errors 0x300000 or 0x100000.",
+    "evidence": "Device restarts every 3 minutes if the charging port flex is unplugged or damaged.",
+    "quote": "0x300000 / 0x100000 (or 3145728 / 1048576) - It's the Charging Port Flex",
+    "at": ""
+   },
+   {
+    "statement": "Wireless charging flex on the back glass being unplugged or damaged causes panic log error 0x400000.",
+    "evidence": "Panic log generated when the wireless charging flex is disconnected.",
+    "quote": "0x400000 (and or 4194304) - It's the Wireless Charging Flex on the Back Glass",
+    "at": ""
+   },
+   {
+    "statement": "Simultaneous proximity flex and wireless charging flex faults trigger panic log error 0x600000.",
+    "evidence": "Panic log indicates sensor array assertion failure covering multiple disconnected or damaged peripherals.",
+    "quote": "0x600000 (or 6291456)- It's 2 problems, the Proximity Flex and Wireless Charging Flex",
+    "at": ""
+   },
+   {
+    "statement": "Combined charging port flex and wireless charging flex issues result in panic log error 0x700000.",
+    "evidence": "Both flex cables cause a multi-sensor assertion failure in the panic log.",
+    "quote": "0x700000 (or 7340032)- It's 2 problems: Charging Port Flex and Wireless Charging Flex",
+    "at": ""
+   },
+   {
+    "statement": "Battery data issues or defective batteries trigger panic log error 0xa1.",
+    "evidence": "Symptoms include fluctuating battery percentage, non-genuine battery messages, and 3-minute restart loops.",
+    "quote": "0xa1 (or 161) - It's a battery data issue.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Navigate to Settings, Privacy, Analytics & Improvements, and Analytics Data on the device.",
+   "Locate and open the most recent panic-full log file.",
+   "Scan the panic log text for SMC PANIC - ASSERTION FAILED and check the hexadecimal error code.",
+   "Inspect the corresponding flex cable or battery connector for damage, liquid damage, or improper seating.",
+   "Perform diode mode measurements on the FPC connectors or battery connector pins to check for faults against a known good board."
+  ],
+  "measurements": [],
+  "tools": [
+   "Screwdrivers",
+   "Spudger",
+   "Known good parts",
+   "iDevice Panic Log Analyzer",
+   "Multimeter"
+  ],
+  "cautions": [
+   "SOURCE RISK: Do not attempt to test the device with essential flex cables unplugged, as the phone will continuously restart by design."
+  ],
+  "tags": [
+   "iphone 15 pro",
+   "iphone 15 pro max",
+   "reboot loop",
+   "random restart",
+   "panic log",
+   "0x200000",
+   "0x300000",
+   "0x400000",
+   "0x600000",
+   "0x700000",
+   "0xa1",
+   "charging port flex"
+  ],
+  "confidence": "high",
+  "caveats": "Panic log analysis tools only provide suggestions and are not infallible official diagnostic lists from Apple."
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-10T02:37:37Z"
+}
