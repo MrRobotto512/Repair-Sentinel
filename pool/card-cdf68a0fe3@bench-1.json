@@ -3,50 +3,131 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS5 Dialog Power Management IC DA9065 Pinout and Rails",
+  "title": "PlayStation 5 Dialog DA9065 PMIC Pinout and Standby Rails",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=2",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-10T01:01:38Z"
+   "ingested_utc": "2026-08-10T02:30:14Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 5"
   ],
   "symptoms": [
-   "No Boot",
    "No Power",
-   "Missing Standby Rails"
+   "No Standby Power",
+   "Missing Rails"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "The DA9065 PMIC generates crucial standby rails including +3.3V STBY, +1.15V, and +1.9V, with pin 27 outputting +1.8V STBY.",
-    "evidence": "Pinout and block specifications for DA9065.",
-    "quote": "OUT: +3.3V STBY OUT: +1.15V OUT: +1.9V PIN: 27 = +1.8V STBY",
+    "statement": "The Dialog DA9065 PMIC generates critical standby rails including +3.3V STBY, +1.15V, +1.9V, and +1.8V STBY on pin 27.",
+    "evidence": "DA9065 pinout and specifications mapping.",
+    "quote": "OUT: +3,3V STBY OUT: +1.15V OUT: +1,9V PIN: 27 = +1.8V STBY",
     "at": ""
    }
   ],
-  "procedure": [],
+  "procedure": [
+   "Measure voltages on DA9065 pins to verify correct standby rail generation.",
+   "Check fuses connected to DA9065 output pins for continuity."
+  ],
   "measurements": [
    {
-    "point": "DA9065 Pin 1",
+    "point": "PIN 1",
     "expect": "1.15",
     "unit": "V",
-    "context": "Standby pinout measurement"
+    "context": "DA9065 output"
    },
    {
-    "point": "DA9065 Pin 7",
+    "point": "PIN 2",
+    "expect": "1.15",
+    "unit": "V",
+    "context": "DA9065 output"
+   },
+   {
+    "point": "PIN 5",
+    "expect": "5",
+    "unit": "V",
+    "context": "F7003 fuse connection"
+   },
+   {
+    "point": "PIN 7",
     "expect": "3.3",
     "unit": "V",
-    "context": "Standby pinout measurement"
+    "context": "DA9065 output"
    },
    {
-    "point": "DA9065 Pin 27",
+    "point": "PIN 8",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "DA9065 output"
+   },
+   {
+    "point": "PIN 10",
+    "expect": "5",
+    "unit": "V",
+    "context": "F7003 fuse connection"
+   },
+   {
+    "point": "PIN 11",
+    "expect": "5",
+    "unit": "V",
+    "context": "F7003 fuse connection"
+   },
+   {
+    "point": "PIN 17",
+    "expect": "5",
+    "unit": "V",
+    "context": "F7003 fuse connection"
+   },
+   {
+    "point": "PIN 22",
+    "expect": "2",
+    "unit": "V",
+    "context": "DA9065 output"
+   },
+   {
+    "point": "PIN 23",
+    "expect": "5",
+    "unit": "V",
+    "context": "F7003 fuse connection"
+   },
+   {
+    "point": "PIN 24",
+    "expect": "2",
+    "unit": "V",
+    "context": "DA9065 output"
+   },
+   {
+    "point": "PIN 25",
+    "expect": "1.15",
+    "unit": "V",
+    "context": "DA9065 output"
+   },
+   {
+    "point": "PIN 26",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "DA9065 output"
+   },
+   {
+    "point": "PIN 27",
     "expect": "1.8",
     "unit": "V",
-    "context": "Standby pinout measurement"
+    "context": "DA9065 STBY"
+   },
+   {
+    "point": "PIN 28",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "DA9065 output"
+   },
+   {
+    "point": "PIN 29",
+    "expect": "1.15",
+    "unit": "V",
+    "context": "DA9065 output"
    }
   ],
   "tools": [
@@ -54,21 +135,21 @@
   ],
   "cautions": [],
   "tags": [
+   "ps5",
    "da9065",
    "pmic",
    "dialog",
-   "standby",
-   "rails",
-   "ps5"
+   "standby rails",
+   "pinout"
   ],
   "confidence": "high",
-  "caveats": "No official datasheet is available; rely on documented reference points."
+  "caveats": "Always verify revision differences before swapping PMICs."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T01:04:20Z",
+ "queued_utc": "2026-08-10T02:31:20Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-10T02:04:57Z",
+ "reviewed_utc": "2026-08-10T02:32:58Z",
  "reviewed_on": "bench-1"
 }
