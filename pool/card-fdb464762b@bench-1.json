@@ -3,66 +3,66 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS5 SSD Controller Current Draw and Fuse Isolation Procedure",
+  "title": "PlayStation 5 Blue Light of Death (BLOD) and APU Diagnostics",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=4",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-10T01:01:38Z"
+   "ingested_utc": "2026-08-10T02:30:14Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 5"
   ],
   "symptoms": [
-   "No Boot",
-   "Safe Mode loop",
-   "SSD communication failure"
+   "BLOD",
+   "Blue Light of Death",
+   "2 Seconds of Death",
+   "Random Restarts"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "A working SSD circuit draws 310mA; discrepancies indicate a faulty SSD controller IC.",
-    "evidence": "Current consumption measurement via fuse F7520 pads.",
-    "quote": "Good working SSD circuit draws: 310mA. If current is different on a faulty board change the SSD controller IC.",
+    "statement": "Pulsating blue light of death indicates the console is stuck running hardware checks, frequently pointing to APU, RAM, or shorted power rails.",
+    "evidence": "Diagnostic behavior pattern of BLOD on PS5.",
+    "quote": "Check board with thermal camera to check for shorts. Problem could be anything. It is like a generic error code. Is keeps pulsating because it keeps running checks.",
+    "at": ""
+   },
+   {
+    "statement": "A console that beeps once every 5-10 seconds when pressing the power button can indicate a short on the board.",
+    "evidence": "Acoustic symptom correlated with hardware shorts.",
+    "quote": "1 beep every 5-10 seconds when pressing power button can indicate a short.",
     "at": ""
    }
   ],
   "procedure": [
-   "Remove fuse F7520 feeding voltage to the voltage regulator generating power for the SSD circuit.",
-   "Set a multimeter in current mode in series with the pads of the fuse.",
-   "Measure current draw to verify against the expected 310mA draw."
+   "Inspect the mainboard and APU for liquid metal spills or displacement under seals.",
+   "Probe all power rails in diode mode to identify dead shorts.",
+   "Use a thermal camera during power-on to locate hot spots or failing components."
   ],
-  "measurements": [
-   {
-    "point": "SSD Circuit Current",
-    "expect": "310",
-    "unit": "mA",
-    "context": "In-series measurement across removed fuse F7520"
-   }
-  ],
+  "measurements": [],
   "tools": [
+   "Thermal Camera",
    "Multimeter",
-   "Soldering station",
-   "Fuse F7520"
+   "Diode Probe"
   ],
   "cautions": [],
   "tags": [
-   "ssd",
-   "controller",
-   "f7520",
-   "current",
-   "fuse",
-   "ps5"
+   "ps5",
+   "blod",
+   "blue light of death",
+   "liquid metal",
+   "thermal camera",
+   "short circuit"
   ],
   "confidence": "high",
-  "caveats": "Ensure proper meter fusing before taking series current measurements."
+  "caveats": "BLOD is a generic symptom; further electrical measurements are always required."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T01:04:20Z",
+ "queued_utc": "2026-08-10T02:31:20Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-10T02:05:00Z",
+ "reviewed_utc": "2026-08-10T02:33:01Z",
  "reviewed_on": "bench-1"
 }
