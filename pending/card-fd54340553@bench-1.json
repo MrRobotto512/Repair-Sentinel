@@ -3,12 +3,12 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PlayStation 5 Troubleshooting Guide: Rails, Sequencers, and Faults",
+  "title": "PS5 Power Rail, Standby Current, PMIC Pinout and Diagnostic Guide",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-09T23:54:56Z"
+   "ingested_utc": "2026-08-10T00:15:07Z"
   },
   "device_class": "Console",
   "models": [
@@ -16,158 +16,131 @@
   ],
   "symptoms": [
    "No Boot",
+   "No Power",
    "BLOD",
-   "Blue Light Of Death",
-   "White light of death",
-   "Turns off",
-   "Three beeps",
-   "No sound",
-   "Can’t perform this action. Multiple USB drives are connected",
-   "No online gaming after update",
-   "Reboots during update"
+   "White Light of Death",
+   "Three Beeps",
+   "Can't Update Console"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "When the console gets standby power and is stuck at 7mA draw, check the voltages of the Dialog IC, the frequency of the 25MHz and 32KHz clocks of the Southbridge IC, and whether the Southbridge is accessing the BIOS IC.",
-    "evidence": "Standby boot sequence current draw behavior analysis.",
-    "quote": "When console get’s standby power if it is stuck at 7mA. Check the voltages of Dialog ic and frequency of the 25Mhz clock and the 32Khz clock of the Southbridge IC. If that is working, try to see if the Southbridge is acc",
+    "statement": "If a PS5 is stuck at 7mA standby current, check the Dialog DA9065 PMIC voltages and the 25MHz and 32kHz Southbridge clock signals.",
+    "evidence": "Standby current chart indicates testing DA9065 output voltages and Southbridge crystal clocks when current remains at 7mA.",
+    "quote": "When console get’s standby power if it is stuck at 7mA. Check the voltages of Dialog ic and frequency of the 25Mhz clock and the 32Khz clock of the Southbridge IC.",
     "at": ""
    },
    {
-    "statement": "If the error message during a USB firmware update states that multiple USB drives are connected when only one is, the APU is faulty and unfixable.",
-    "evidence": "USB data lines go direct to the APU.",
-    "quote": "If the error message is: Can’t perform this action. Multiple USB drives are connected APU is faulty and not fixable Connect USB drive to update console USB data lines go direct to the APU",
+    "statement": "Residual flux left under the Southbridge BGA can disrupt the 25MHz and 32kHz crystal oscillator signals.",
+    "evidence": "Source notes state that flux under the Southbridge BGA causes oscillator failure.",
+    "quote": "Flux under BGA can cause oscillator problems.",
     "at": ""
    },
    {
-    "statement": "To diagnose a faulty SSD controller when seeing a standby current draw of 175mA dropping back to 10mA, remove fuse F7520 and measure current draw in series with the pads using a multimeter.",
-    "evidence": "A good working SSD circuit draws 310mA.",
-    "quote": "When you see a current draw in standby of 175 mA and then back to 10Ma. There can be a bad SSD controller IC. Remove fuse F7520 that feeds the voltage on the back to the voltage regulator that generates power for the SSD",
+    "statement": "A firmware update error reading 'Can’t perform this action. Multiple USB drives are connected' indicates an unfixable APU defect.",
+    "evidence": "USB data lines route directly to the APU, making this update error a directly diagnosed APU failure.",
+    "quote": "If the error message is: Can’t perform this action. Multiple USB drives are connected APU is faulty and not fixable",
     "at": ""
    },
    {
-    "statement": "If the HDMI Encoder IC fails, it can cause no picture, no power, blue light of death, or 2 seconds of death symptoms.",
-    "evidence": "Encoder IC failure modes.",
-    "quote": "If the Encoder IC fails, you can get • No Picture • No Power • blue light of death • Also 2 seconds of death",
+    "statement": "To test SSD circuit current draw, measure across the pads of fuse F7520 in series using a multimeter in current mode; healthy draw is 310mA.",
+    "evidence": "Removing fuse F7520 isolates the SSD power regulator for direct current measurement.",
+    "quote": "Remove fuse F7520 that feeds the voltage on the back to the voltage regulator that generates power for the SSD circuit. Set a multimeter in current mode in series with the pads of the fuse and measure the current draw. G",
     "at": ""
    },
    {
-    "statement": "If 3.3V STBY is missing, the power buttons will not work.",
-    "evidence": "Power requirements for the Southbridge, Encoder IC, switching regulator, Dialog PMIC, and WiFi IC.",
-    "quote": "If 3.3V STBY is missing the power buttons will not work. Southbridge, Encoder IC, a switching regulator, Dialog Power management IC, WiFi IC needs 3.3V to operate.",
+    "statement": "The RAM +1.35V switching regulator line has a normal impedance of approximately 40 Ohms.",
+    "evidence": "Diagram specifies 40 Ohms impedance on the RAM power rail.",
+    "quote": "RAM +1.35V Impedance +- 40Ohms",
     "at": ""
    },
    {
-    "statement": "When the console beeps 3 times and does not power on while all voltages are OK, it could be a BIOS corruption.",
-    "evidence": "Behavior observed during 3-beep non-boot conditions.",
+    "statement": "If the PS5 beeps 3 times upon pressing power but does not turn on while all rail voltages are normal, suspect BIOS firmware corruption.",
+    "evidence": "Flowchart and diagnosis guide associate 3 beeps with intact voltages but corrupt BIOS.",
     "quote": "When console beep 3 times but not powers on check all voltages if all ok it could be a BIOS corruption.",
-    "at": ""
-   },
-   {
-    "statement": "The disc drive board is paired or married to the APU; replacing it can cause issues like no online gaming after update, inability to update, or no disc drive support.",
-    "evidence": "System pairing architecture.",
-    "quote": "Disc drive board is paired / married to ps5 console No online gaming after update Can’t update console No disc drive support Paired to the APU",
     "at": ""
    }
   ],
   "procedure": [
-   "{'step': 'Check for liquid metal spills on the mainboard, APU seals, and under the APU.'}",
-   "{'step': 'Probe the board in diode mode to find shorts across power rails.'}",
-   "{'step': 'Check the board with a thermal camera to locate hot spots or abnormalities indicating shorts.'}",
-   "{'step': 'Remove fuse F7520 to isolate the SSD circuit when investigating abnormal standby current drops.'}",
-   "{'step': 'Measure current draw in series with fuse F7520 pads using a multimeter set to current mode.'}"
+   "{'step': 'Remove fuse F7520 on the back of the board feeding voltage to the SSD regulator.'}",
+   "{'step': 'Set a multimeter to current measurement mode.'}",
+   "{'step': 'Place the multimeter probes in series across the pads of fuse F7520.'}",
+   "{'step': 'Measure standby current draw and compare against the expected 310mA reading.'}",
+   "{'step': 'If current draw differs significantly, replace the SSD controller IC.'}"
   ],
   "measurements": [
    {
-    "point": "RAM +1.35V",
+    "point": "RAM +1.35V rail",
     "expect": "40",
-    "unit": "Ohms",
-    "context": "Impedance measurement"
+    "unit": "Ω",
+    "context": "Impedance check on RAM switching regulator"
    },
    {
-    "point": "Dialog PMIC PIN 1",
-    "expect": "1.15",
-    "unit": "V",
-    "context": "Pinout voltage measurement"
+    "point": "Fuse F7520 pads",
+    "expect": "310",
+    "unit": "mA",
+    "context": "SSD circuit current draw in series"
    },
    {
-    "point": "Dialog PMIC PIN 2",
-    "expect": "1.15",
-    "unit": "V",
-    "context": "Pinout voltage measurement"
-   },
-   {
-    "point": "Dialog PMIC PIN 5",
-    "expect": "5",
-    "unit": "V",
-    "context": "Pinout voltage measurement (F7003)"
-   },
-   {
-    "point": "Dialog PMIC PIN 7",
-    "expect": "3.3",
-    "unit": "V",
-    "context": "Pinout voltage measurement"
-   },
-   {
-    "point": "Dialog PMIC PIN 8",
-    "expect": "3.3",
-    "unit": "V",
-    "context": "Pinout voltage measurement"
-   },
-   {
-    "point": "Dialog PMIC PIN 10",
-    "expect": "5",
-    "unit": "V",
-    "context": "Pinout voltage measurement (F7003)"
-   },
-   {
-    "point": "Dialog PMIC PIN 27",
+    "point": "Dialog DA9065 PIN 27",
     "expect": "1.8",
     "unit": "V",
-    "context": "Standby voltage measurement"
+    "context": "+1.8V STBY output"
    },
    {
-    "point": "HDMI Pin 13",
-    "expect": "0.6",
+    "point": "Dialog DA9065 PIN 7",
+    "expect": "3.3",
     "unit": "V",
-    "context": "Diode measurement"
+    "context": "+3.3V STBY output"
    },
    {
-    "point": "HDMI Pin 12",
+    "point": "HDMI PIN 4, 6, 7, 9, 10, 12",
     "expect": "0.8",
     "unit": "V",
-    "context": "Diode measurement"
+    "context": "Diode mode measurement"
+   },
+   {
+    "point": "HDMI PIN 18",
+    "expect": "0.5",
+    "unit": "V",
+    "context": "Diode mode measurement"
+   },
+   {
+    "point": "HDMI PIN 13, 15, 16, 19",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "Diode mode measurement"
    }
   ],
   "tools": [
-   "Multimeter",
-   "Thermal camera",
    "Oscilloscope",
+   "Thermal camera",
+   "Multimeter",
    "Lab power supply",
-   "USB stick"
+   "USB drive"
   ],
   "cautions": [
-   "SOURCE RISK: Checking for shorts by injecting power or probing blindly without verifying rail states can cause further damage.",
-   "Watch out for liquid metal spills under seals or under the APU causing shorts or hot spots."
+   "SOURCE RISK: A bench lab power supply used to run a PS5 must be capable of supplying at least 30 Amps at +12V during startup.",
+   "Flux under BGA components can compromise crystal oscillator frequency operation."
   ],
   "tags": [
    "ps5",
-   "blod",
+   "cxd90061",
    "da9065",
    "tps53219a",
-   "cxd90061",
-   "w25q16jv",
+   "w25q16jvsnim",
    "f7520",
-   "vcore",
-   "southbridge",
-   "hdmi encoder"
+   "blod",
+   "hdmi",
+   "ssd",
+   "ram",
+   "standby"
   ],
-  "confidence": "medium",
-  "caveats": "A blue light of death or multi-beep condition can stem from virtually any subsystem failure; always verify rail measurements and current draws rather than guessing."
+  "confidence": "high",
+  "caveats": "Ensure board state (standby vs power-on) matches the rail diagram context when taking diode and voltage measurements."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-09T23:56:51Z"
+ "queued_utc": "2026-08-10T00:17:05Z"
 }
