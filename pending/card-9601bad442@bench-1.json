@@ -3,59 +3,85 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS4 Southbridge Diagnosis via Standby Current",
+  "title": "PlayStation 4 Standby Current Draw & Boot Sequence Analysis",
   "source": {
    "url": "kb://155238_How_to_analyse_Playstation_4-1-1786317438.txt?topic=1",
    "kind": "document",
    "title": "PS4 Diagnostic Help",
-   "ingested_utc": "2026-08-10T01:05:38Z"
+   "ingested_utc": "2026-08-10T01:41:52Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 4"
   ],
   "symptoms": [
-   "No Boot",
-   "No Power"
+   "No power",
+   "No boot"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "If the console stays at 99mA current draw with no boot, the Southbridge is likely faulty.",
-    "evidence": "Current draw observation during standby boot sequence.",
-    "quote": "If it stays at 99mA with no boot it could mean that the southbridge is bad. Check the 32Khz crystal if it oscillates. If the 32Khz signal is missing, then replace the southbridge",
+    "statement": "Connect PIN 1 and PIN 4 of the 5Vstby connector to the positive terminal of a bench power supply set to +5V to monitor current draw during the standby boot sequence.",
+    "evidence": "The normal standby current sequence is 23mA, then 125mA, then 30mA.",
+    "quote": "Connect PIN 1 and 4 to the positive terminal of your power supply. Set the voltage to +5V and monitor the current draw. The normal boot sequence should be: 1e = 23mA 2e = 125mA 3e = 30mA",
     "at": ""
    },
    {
-    "statement": "If the console stays at 7mA current draw, the Southbridge may be failing to send a control signal to the transistor.",
-    "evidence": "Current draw observation during standby boot sequence.",
+    "statement": "If current draw stays at 99mA with no boot, the southbridge may be bad or the 32Khz crystal is not oscillating.",
+    "evidence": "A 99mA stuck draw indicates a potential bad southbridge or missing clock signal.",
+    "quote": "If it stays at 99mA with no boot it could mean that the southbridge is bad. Check the 32Khz crystal if it oscillates. If the 32Khz signal is missing, then replace the southbridge clean flux of the board.",
+    "at": ""
+   },
+   {
+    "statement": "If current draw stays at 7mA with no boot, the southbridge is not working or failing to send a control signal to the transistor.",
+    "evidence": "A 7mA stuck draw points to southbridge control failure.",
     "quote": "If it stays at 7mA with no boot it could mean that the southbridge is not working or sending a control signal to the transistor",
     "at": ""
    }
   ],
   "procedure": [
-   "Connect PIN 1 and 4 of the power supply connector to a +5V power supply.",
-   "Monitor current draw during the boot sequence.",
-   "Check for 32kHz oscillation on the crystal if current is stuck at 99mA."
+   "Connect PIN 1 and PIN 4 of the +5Vstby connector to a bench power supply set to +5V.",
+   "Monitor current draw to verify the normal boot sequence stages (23mA, 125mA, 30mA).",
+   "Check the 32Khz crystal for oscillation if current draw is stuck at 99mA."
   ],
-  "measurements": [],
+  "measurements": [
+   {
+    "point": "PIN 1 +5Vstby connector",
+    "expect": "5",
+    "unit": "V",
+    "context": "standby power"
+   },
+   {
+    "point": "PIN 4 +5Vstby connector",
+    "expect": "5",
+    "unit": "V",
+    "context": "standby enable"
+   },
+   {
+    "point": "PIN 3 +5Vstby connector",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "power good goes high after power button pressed"
+   }
+  ],
   "tools": [
-   "Power supply",
+   "Bench power supply",
    "Oscilloscope"
   ],
   "cautions": [],
   "tags": [
+   "ps4",
+   "standby",
+   "boot sequence",
    "southbridge",
    "32khz",
-   "standby",
-   "current draw",
-   "boot sequence"
+   "current draw"
   ],
   "confidence": "high",
-  "caveats": "Current draw values are specific to the standby boot sequence."
+  "caveats": "Stuck current draws are generalized indicators and require corroborating measurements."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T01:08:28Z"
+ "queued_utc": "2026-08-10T01:42:39Z"
 }

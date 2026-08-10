@@ -3,59 +3,87 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS4 WLOD and HDMI Encoder Faults",
+  "title": "PlayStation 4 WLOD (White Light Of Death) & HDMI Encoder Diagnosis",
   "source": {
    "url": "kb://155238_How_to_analyse_Playstation_4-1-1786317438.txt?topic=2",
    "kind": "document",
    "title": "PS4 Diagnostic Help",
-   "ingested_utc": "2026-08-10T01:05:38Z"
+   "ingested_utc": "2026-08-10T01:41:52Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 4"
   ],
   "symptoms": [
+   "WLOD",
    "No display",
-   "WLOD"
+   "No picture"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "A faulty HDMI encoder IC is the most common cause of no display/WLOD.",
-    "evidence": "Observation of common failure points.",
-    "quote": "HDMI Encoder Is faulty most of the time when there is no picture",
+    "statement": "The HDMI encoder IC is the most common cause of no picture or White Light Of Death (WLOD) and often cannot be diagnosed via standard diode readings.",
+    "evidence": "Experience shows encoder failure presents with normal diode measurements but no display.",
+    "quote": "Most common fault is a bad HDMI encoder IC is bad most of the time you can’t measure any faults by reading diode measurements",
     "at": ""
    },
    {
-    "statement": "If the HDMI encoder is replaced and the issue persists, the replacement IC may be faulty from the factory.",
-    "evidence": "Repair experience.",
+    "statement": "Check HDMI filter continuity and inspect for shorted capacitors or diodes near the HDMI circuit.",
+    "evidence": "Damaged filters or shorted components around the encoder cause display failures.",
+    "quote": "Check continuity filters ... Check diodes and capacitors near the HDMI circuit",
+    "at": ""
+   },
+   {
+    "statement": "If a replaced HDMI encoder IC still results in WLOD, replace the encoder IC again as it may be defective from the factory.",
+    "evidence": "Factory defects in replacement encoder ICs can perpetuate the fault.",
     "quote": "If you replaced encoder IC and still you get a WLOD replace encoder IC again it could be broken from factory.",
     "at": ""
    }
   ],
   "procedure": [
-   "Check hard drive health on a PC.",
-   "Inspect HDMI connector for physical damage.",
-   "Check HDMI filters and diodes near the HDMI circuit for continuity.",
-   "Replace HDMI encoder IC."
+   "Check the hard drive by connecting to a PC.",
+   "Inspect the physical state of the HDMI connector and filters.",
+   "Check diode and capacitor measurements near the HDMI circuit.",
+   "Replace the HDMI encoder IC if no other fault is found."
   ],
-  "measurements": [],
+  "measurements": [
+   {
+    "point": "HDMI Pin SDA",
+    "expect": "6.8",
+    "unit": "kohm",
+    "context": "resistance"
+   },
+   {
+    "point": "HDMI Pin Clock",
+    "expect": "0.60",
+    "unit": "V",
+    "context": "diode measurement"
+   },
+   {
+    "point": "HDMI Pin CEC",
+    "expect": "0.61",
+    "unit": "V",
+    "context": "diode measurement"
+   }
+  ],
   "tools": [
-   "HDMI encoder IC",
-   "Multimeter"
+   "Multimeter",
+   "Hot air station"
   ],
   "cautions": [],
   "tags": [
+   "ps4",
    "wlod",
    "hdmi",
    "encoder",
-   "no display"
+   "mn864729",
+   "filters"
   ],
-  "confidence": "medium",
-  "caveats": "Diode measurements on the HDMI encoder often show no faults even when the IC is defective."
+  "confidence": "high",
+  "caveats": "Diode mode measurements on a bad HDMI encoder can read completely normal."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T01:08:28Z"
+ "queued_utc": "2026-08-10T01:42:39Z"
 }

@@ -3,62 +3,92 @@
  "kind": "knowledge_card",
  "card": {
   "schema_version": 1,
-  "title": "PS4 BLOD Diagnosis and APU/RAM Issues",
+  "title": "PlayStation 4 BLOD (Blue Light Of Death) & APU/RAM/Flash Diagnostics",
   "source": {
    "url": "kb://155238_How_to_analyse_Playstation_4-1-1786317438.txt?topic=3",
    "kind": "document",
    "title": "PS4 Diagnostic Help",
-   "ingested_utc": "2026-08-10T01:05:38Z"
+   "ingested_utc": "2026-08-10T01:41:52Z"
   },
   "device_class": "Console",
   "models": [
-   "PlayStation 4",
-   "PS4 1200 series"
+   "PlayStation 4"
   ],
   "symptoms": [
    "BLOD",
-   "No Power",
-   "Random restarts"
+   "Blue Light Of Death",
+   "Console turns off after 1 second",
+   "6 second BLOD",
+   "Long pulsating blue light"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "A 6-second pulsing blue light or solid blue light often indicates a faulty Southbridge or missing +3.3V standby rail.",
-    "evidence": "Observation of LED behavior.",
-    "quote": "6 second BLOD it will pulsing blue light for 6 seconds or it will stay a solid blue light for indefinitely period Missing +3.3Vstby power rail – could be shorted or southbridge is bad",
+    "statement": "A 1-second BLOD (turns on then off instantly) indicates a bad APU, shorted capacitors near the APU, bad solder joints under the APU, or a bad power supply.",
+    "evidence": "Observed symptom correlation with APU rail shorts and power supply 12V generation failure.",
+    "quote": "1 second then off Bad APU - Check capacitors near APU for shorts Bad solder joint under the APU - Reflow or reball the APU. Bad power supply – Check if +12Von is created by the power supply",
     "at": ""
    },
    {
-    "statement": "PS4 1200 series consoles are prone to RAM issues; inspect for burn marks or overheating.",
-    "evidence": "Known model-specific failure.",
-    "quote": "PS4 1200 series are know to have RAM problems. If you get the 1200 series check the physical state of the RAM IC, look for burn marks.",
+    "statement": "A 6-second BLOD where the fan does not spin or stops spinning indicates a faulty southbridge.",
+    "evidence": "Fan behavior tied directly to southbridge initialization failure during boot.",
+    "quote": "6 second BLOD it will pulsing blue light for 6 seconds or it will stay a solid blue light for indefinitely period When fan is not spinning then the southbridge is faulty or if it spins and then stops spinning",
+    "at": ""
+   },
+   {
+    "statement": "Corrupted NOR flash memory can cause BLOD and can be validated and rebuilt using the PS4 NOR Validator software after desoldering the chip.",
+    "evidence": "NOR integrity is critical for boot initialization and software validation confirms data corruption.",
+    "quote": "Corrupted NOR software. Desolder NOR chip, validate or rebuild the software using The PS4 NOR Validator software. The PS4 NOR Validator verifies the integrity of the NOR flash memory",
     "at": ""
    }
   ],
   "procedure": [
-   "Disconnect hard drive to test if console enters safe mode.",
-   "Check USB +5V rail.",
-   "Apply pressure to APU clamp to test for BGA connection issues.",
-   "Check RAM modules for overheating using thermal camera or alcohol."
+   "Check capacitors near APU for shorts.",
+   "Test power supply +12Von output.",
+   "Disconnect hard drive to test if it forces safe mode.",
+   "Desolder NOR flash chip and validate integrity using PS4 NOR Validator software if software corruption is suspected."
   ],
-  "measurements": [],
+  "measurements": [
+   {
+    "point": "APU +1,0 Vgpu capacitor",
+    "expect": "1 to 2.5",
+    "unit": "ohm",
+    "context": "impedance"
+   },
+   {
+    "point": "APU +0,93 Vcpu capacitor",
+    "expect": "1.3",
+    "unit": "ohm",
+    "context": "impedance"
+   },
+   {
+    "point": "RAM module",
+    "expect": "56",
+    "unit": "ohm",
+    "context": "impedance"
+   }
+  ],
   "tools": [
    "Thermal camera",
-   "Multimeter"
+   "Alcohol",
+   "Hot air station",
+   "Programmer"
   ],
   "cautions": [],
   "tags": [
+   "ps4",
    "blod",
    "apu",
+   "nor",
+   "flash",
    "ram",
-   "1200 series",
-   "southbridge"
+   "power supply"
   ],
-  "confidence": "medium",
-  "caveats": "BLOD is a generic symptom and can be caused by multiple subsystems including PSU, APU, RAM, or Southbridge."
+  "confidence": "high",
+  "caveats": "Reflowing or reballing the APU should only be performed after verifying rail shorts and NOR integrity."
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T01:08:28Z"
+ "queued_utc": "2026-08-10T01:42:39Z"
 }
