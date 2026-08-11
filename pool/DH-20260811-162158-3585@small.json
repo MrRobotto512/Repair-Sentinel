@@ -403,5 +403,8 @@
  "origin": {
   "bench": "small"
  },
- "queued_utc": "2026-08-11T21:44:05Z"
+ "queued_utc": "2026-08-11T21:44:05Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-11T22:59:01Z",
+ "reviewed_on": "robotto"
 }
