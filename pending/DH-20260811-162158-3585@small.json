@@ -1,0 +1,407 @@
+{
+ "schema_version": 2,
+ "session": {
+  "schema_version": 2,
+  "session_id": "DH-20260811-162158-3585",
+  "started_utc": "2026-08-11T21:21:58Z",
+  "device_class": "Console",
+  "device_model": "PlayStation 5",
+  "tool": "ps5_uart",
+  "symptoms_user_input": [
+   "Console fault (errlog present)",
+   "powers on for 1 second",
+   "blue light"
+  ],
+  "telemetry": {
+   "errlog_codes": [
+    "80050000",
+    "80810001",
+    "80000009",
+    "C0020303"
+   ],
+   "uart_syscon_error_code": "80050000",
+   "temp_env_c": 25.25
+  },
+  "observations": [
+   {
+    "id": "o1",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o2",
+    "key": "uart_syscon_error_code",
+    "value": "80050000",
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o3",
+    "key": "temp_env_c",
+    "value": 25.25,
+    "kind": "measurement",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z",
+    "unit": "°C"
+   },
+   {
+    "id": "o4",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o5",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o6",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o7",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o8",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o9",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:58Z"
+   },
+   {
+    "id": "o10",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:59Z"
+   },
+   {
+    "id": "o11",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:59Z"
+   },
+   {
+    "id": "o12",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:59Z"
+   },
+   {
+    "id": "o13",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:59Z"
+   },
+   {
+    "id": "o14",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:59Z"
+   },
+   {
+    "id": "o15",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:59Z"
+   },
+   {
+    "id": "o16",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:21:59Z"
+   },
+   {
+    "id": "o17",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:00Z"
+   },
+   {
+    "id": "o18",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:00Z"
+   },
+   {
+    "id": "o19",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:00Z"
+   },
+   {
+    "id": "o20",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:00Z"
+   },
+   {
+    "id": "o21",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:00Z"
+   },
+   {
+    "id": "o22",
+    "key": "errlog_codes",
+    "value": [
+     "80050000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:00Z"
+   },
+   {
+    "id": "o23",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:01Z"
+   },
+   {
+    "id": "o24",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:01Z"
+   },
+   {
+    "id": "o25",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:01Z"
+   },
+   {
+    "id": "o26",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:01Z"
+   },
+   {
+    "id": "o27",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:01Z"
+   },
+   {
+    "id": "o28",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:01Z"
+   },
+   {
+    "id": "o29",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:01Z"
+   },
+   {
+    "id": "o30",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:02Z"
+   },
+   {
+    "id": "o31",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:02Z"
+   },
+   {
+    "id": "o32",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:02Z"
+   },
+   {
+    "id": "o33",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009",
+     "C0020303"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:02Z"
+   },
+   {
+    "id": "o34",
+    "key": "errlog_codes",
+    "value": [
+     "80050000",
+     "80810001",
+     "80000009",
+     "C0020303"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-08-11T21:22:02Z"
+   }
+  ],
+  "ml_prediction": {},
+  "technician_verification": {
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Changed power supply, issue fixed."
+  },
+  "notes": [
+   "[web] Device would power on for 1 second, blue light."
+  ],
+  "saved_utc": "2026-08-11T21:44:05Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "small"
+ },
+ "queued_utc": "2026-08-11T21:44:05Z"
+}
