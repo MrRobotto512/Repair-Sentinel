@@ -1,155 +1,215 @@
 {
- "schema_version": 1,
+ "schema_version": 2,
  "kind": "knowledge_card",
  "card": {
-  "schema_version": 1,
-  "title": "PlayStation 5 Dialog DA9065 PMIC Pinout and Standby Rails",
+  "schema_version": 2,
+  "title": "PS5 Dialog DA9065 PMIC Standby Voltages and Pinout",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=2",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-10T02:30:14Z"
+   "ingested_utc": "2026-08-12T17:30:22Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 5"
   ],
   "symptoms": [
-   "No Power",
-   "No Standby Power",
-   "Missing Rails"
+   "no power",
+   "No Boot"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "The Dialog DA9065 PMIC generates critical standby rails including +3.3V STBY, +1.15V, +1.9V, and +1.8V STBY on pin 27.",
-    "evidence": "DA9065 pinout and specifications mapping.",
-    "quote": "OUT: +3,3V STBY OUT: +1.15V OUT: +1,9V PIN: 27 = +1.8V STBY",
+    "statement": "The Dialog DA9065 PMIC takes a +5V STBY input and generates +3.3V STBY, +1.9V, +1.15V, and +1.8V STBY rails primarily for the Southbridge IC.",
+    "evidence": "Document labels IN: +5V STBY and outputs +3.3V STBY, +1.15V, +1.9V, and +1.8V STBY on pin 27.",
+    "quote": "DA9065 is a power management integrated circuit (PMIC). This IC has different buck converters to generate different power rails. The most important power rails will go the Southbridge IC.",
+    "at": ""
+   },
+   {
+    "statement": "Pins 5, 10, 11, 17, 23, 30, and 31 of the DA9065 PMIC route to or connect with +5V STBY fuse F7003.",
+    "evidence": "Pinout diagram lists PIN 5, 10, 11, 17, 23 as '+- 5V (F7003)' and PIN 30, 31 as 'Goes to fuse F7003'.",
+    "quote": "PIN 5 = +- 5V (F7003) ... PIN 30 = Goes to fuse F7003 PIN 31 = Goes to fuse F7003",
     "at": ""
    }
   ],
-  "procedure": [
-   "Measure voltages on DA9065 pins to verify correct standby rail generation.",
-   "Check fuses connected to DA9065 output pins for continuity."
-  ],
+  "procedure": [],
   "measurements": [
    {
-    "point": "PIN 1",
+    "point": "DA9065 Pin 1",
     "expect": "1.15",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "Standby voltage output",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 2",
+    "point": "DA9065 Pin 2",
     "expect": "1.15",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "Standby voltage output",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 5",
+    "point": "DA9065 Pin 5",
     "expect": "5",
     "unit": "V",
-    "context": "F7003 fuse connection"
+    "context": "Input from F7003",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 7",
+    "point": "DA9065 Pin 7",
     "expect": "3.3",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "+3.3V STBY rail",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 8",
+    "point": "DA9065 Pin 8",
     "expect": "3.3",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "+3.3V STBY rail",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 10",
-    "expect": "5",
-    "unit": "V",
-    "context": "F7003 fuse connection"
-   },
-   {
-    "point": "PIN 11",
-    "expect": "5",
-    "unit": "V",
-    "context": "F7003 fuse connection"
-   },
-   {
-    "point": "PIN 17",
-    "expect": "5",
-    "unit": "V",
-    "context": "F7003 fuse connection"
-   },
-   {
-    "point": "PIN 22",
+    "point": "DA9065 Pin 22",
     "expect": "2",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "+2V rail",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 23",
-    "expect": "5",
-    "unit": "V",
-    "context": "F7003 fuse connection"
-   },
-   {
-    "point": "PIN 24",
-    "expect": "2",
-    "unit": "V",
-    "context": "DA9065 output"
-   },
-   {
-    "point": "PIN 25",
+    "point": "DA9065 Pin 25",
     "expect": "1.15",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "+1.15V rail",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 26",
-    "expect": "3.3",
-    "unit": "V",
-    "context": "DA9065 output"
-   },
-   {
-    "point": "PIN 27",
+    "point": "DA9065 Pin 27",
     "expect": "1.8",
     "unit": "V",
-    "context": "DA9065 STBY"
+    "context": "+1.8V STBY rail",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 28",
+    "point": "DA9065 Pin 28",
     "expect": "3.3",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "+3.3V STBY rail",
+    "mode": "voltage"
    },
    {
-    "point": "PIN 29",
+    "point": "DA9065 Pin 29",
     "expect": "1.15",
     "unit": "V",
-    "context": "DA9065 output"
+    "context": "+1.15V rail",
+    "mode": "voltage"
    }
   ],
   "tools": [
-   "Multimeter"
+   "multimeter"
   ],
   "cautions": [],
   "tags": [
+   "playstation 5",
    "ps5",
    "da9065",
    "pmic",
-   "dialog",
-   "standby rails",
-   "pinout"
+   "standby",
+   "pinout",
+   "f7003",
+   "3.3v stby",
+   "1.8v stby"
   ],
   "confidence": "high",
-  "caveats": "Always verify revision differences before swapping PMICs."
+  "caveats": "No official datasheet exists for the DA9065; measurements and pin listings are reverse-engineered.",
+  "component": "DA9065",
+  "part_numbers": [
+   "DA9065"
+  ],
+  "readings": [
+   {
+    "point": "DA9065 Pin 1",
+    "mode": "voltage",
+    "expect_lo": 1.15,
+    "expect_hi": 1.15,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 2",
+    "mode": "voltage",
+    "expect_lo": 1.15,
+    "expect_hi": 1.15,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 5",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 7",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 8",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 22",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 25",
+    "mode": "voltage",
+    "expect_lo": 1.15,
+    "expect_hi": 1.15,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 27",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 28",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 Pin 29",
+    "mode": "voltage",
+    "expect_lo": 1.15,
+    "expect_hi": 1.15,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=2",
+  "provenance": "absorbed"
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T02:31:20Z",
+ "queued_utc": "2026-08-12T17:50:05Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-10T02:32:58Z",
+ "reviewed_utc": "2026-08-12T17:54:01Z",
  "reviewed_on": "bench-1"
 }
