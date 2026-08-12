@@ -1,68 +1,206 @@
 {
- "schema_version": 1,
+ "schema_version": 2,
  "kind": "knowledge_card",
  "card": {
-  "schema_version": 1,
-  "title": "PlayStation 5 SSD Controller Current Isolation Procedure",
+  "schema_version": 2,
+  "title": "PS5 HDMI Port Diode Mode Reference Measurements",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=5",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-10T02:30:14Z"
+   "ingested_utc": "2026-08-12T17:32:01Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 5"
   ],
   "symptoms": [
-   "No Boot",
-   "Current Draw Spike",
-   "SSD Failure"
+   "No Picture",
+   "WLOD"
   ],
   "codes": [],
   "claims": [
    {
-    "statement": "A faulty SSD controller can be diagnosed by lifting fuse F7520 and measuring current draw in series using a multimeter.",
-    "evidence": "Current consumption testing method for the SSD power circuit.",
-    "quote": "Remove fuse F7520 that feeds the voltage on the back to the voltage regulator that generates power for the SSD circuit. Set a multimeter in current mode in series with the pads of the fuse and measure the current draw. G",
+    "statement": "HDMI port pins have specific expected diode mode readings to verify line integrity and ESD suppression components.",
+    "evidence": "Reference diode voltage measurements provided for PS5 HDMI pins 1 through 19.",
+    "quote": "HDMI PIN DIODE MEASUREMENTS",
     "at": ""
    }
   ],
-  "procedure": [
-   "Locate and remove fuse F7520 feeding the SSD voltage regulator.",
-   "Connect a multimeter set to current measurement mode in series across the fuse pads.",
-   "Power on the board and verify if current draw matches the normal 310mA working expectation."
-  ],
+  "procedure": [],
   "measurements": [
    {
-    "point": "SSD circuit current draw",
-    "expect": "310",
-    "unit": "mA",
-    "context": "normal working SSD circuit current draw measured across F7520 pads"
+    "point": "HDMI Pin 1",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 3",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 4",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 6",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 7",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 9",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 13",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "Control line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 15",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "SCL line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 18",
+    "expect": "0.5",
+    "unit": "V",
+    "context": "+5V Power line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 19",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "Hot Plug Detect line",
+    "mode": "diode"
    }
   ],
   "tools": [
-   "Multimeter",
-   "Soldering Station",
-   "Hot Air Rework Station"
+   "multimeter"
   ],
   "cautions": [],
   "tags": [
+   "playstation 5",
    "ps5",
-   "ssd controller",
-   "f7520",
-   "fuse",
-   "current measurement",
-   "repair procedure"
+   "hdmi",
+   "diode mode",
+   "dz2705600l",
+   "no picture"
   ],
   "confidence": "high",
-  "caveats": "Ensure meter leads are securely connected in series to prevent voltage drop or blown meter fuse."
+  "caveats": "Diode mode readings may vary slightly depending on the specific multimeter used.",
+  "component": "HDMI Port",
+  "part_numbers": [
+   "DZ2705600L"
+  ],
+  "readings": [
+   {
+    "point": "HDMI Pin 1",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 3",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 4",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 6",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 7",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 9",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 13",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 15",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 18",
+    "mode": "diode",
+    "expect_lo": 0.5,
+    "expect_hi": 0.5,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 19",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=5",
+  "provenance": "absorbed"
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T02:31:20Z",
+ "queued_utc": "2026-08-12T17:50:05Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-10T02:32:46Z",
+ "reviewed_utc": "2026-08-12T17:53:20Z",
  "reviewed_on": "bench-1"
 }
