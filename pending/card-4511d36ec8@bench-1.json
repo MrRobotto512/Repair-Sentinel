@@ -1,0 +1,63 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 +1.0V Vcore VRM Short Isolation via Coil Lifting & NCP252160",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=7",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-12T17:32:20Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Power",
+   "Short Circuit"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A shorted MOSFET on the +1.0V Vcore circuit can be isolated by lifting output coils and measuring input versus output.",
+    "evidence": "Lifting the main output coils separates the APU load from the VRM MOSFET drivers.",
+    "quote": "To find shorted mosfet isolate Vcore circuit by lifting the output coils and measuring input and output",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Lift the Vcore output coils to separate the VRM driver side from the APU side.",
+   "Measure input and output rails relative to ground to determine if the short lies on the APU side or the VRM MOSFET driver side."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "playstation 5",
+   "ps5",
+   "vcore",
+   "ncp252160",
+   "vrm",
+   "mosfet",
+   "short circuit"
+  ],
+  "confidence": "high",
+  "caveats": "Lifting coils isolates whether the short is on the power generation side or the APU side, but does not identify individual failed MOSFETs without further probing.",
+  "component": "MOSFET (power rail)",
+  "part_numbers": [
+   "NCP252160"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=7",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

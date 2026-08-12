@@ -1,0 +1,203 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 HDMI Port Diode Mode Reference Measurements",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=5",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-12T17:32:01Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Picture",
+   "WLOD"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "HDMI port pins have specific expected diode mode readings to verify line integrity and ESD suppression components.",
+    "evidence": "Reference diode voltage measurements provided for PS5 HDMI pins 1 through 19.",
+    "quote": "HDMI PIN DIODE MEASUREMENTS",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "HDMI Pin 1",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 3",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 4",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 6",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 7",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 9",
+    "expect": "0.8",
+    "unit": "V",
+    "context": "Data line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 13",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "Control line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 15",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "SCL line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 18",
+    "expect": "0.5",
+    "unit": "V",
+    "context": "+5V Power line",
+    "mode": "diode"
+   },
+   {
+    "point": "HDMI Pin 19",
+    "expect": "0.6",
+    "unit": "V",
+    "context": "Hot Plug Detect line",
+    "mode": "diode"
+   }
+  ],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "playstation 5",
+   "ps5",
+   "hdmi",
+   "diode mode",
+   "dz2705600l",
+   "no picture"
+  ],
+  "confidence": "high",
+  "caveats": "Diode mode readings may vary slightly depending on the specific multimeter used.",
+  "component": "HDMI Port",
+  "part_numbers": [
+   "DZ2705600L"
+  ],
+  "readings": [
+   {
+    "point": "HDMI Pin 1",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 3",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 4",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 6",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 7",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 9",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 13",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 15",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 18",
+    "mode": "diode",
+    "expect_lo": 0.5,
+    "expect_hi": 0.5,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI Pin 19",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=5",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:05Z"
+}

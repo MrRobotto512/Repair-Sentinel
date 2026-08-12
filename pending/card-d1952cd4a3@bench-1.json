@@ -1,0 +1,148 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Front Power On Voltages and Diagnostic Points",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=6",
+   "kind": "document",
+   "title": "PS5 Front Power On Voltages and Main Rails",
+   "ingested_utc": "2026-08-12T17:41:06Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "EDM-010",
+   "F7001",
+   "F5401",
+   "F7003",
+   "F7502",
+   "F3501",
+   "F7501"
+  ],
+  "claims": [
+   {
+    "statement": "The main 12V coil can be separated to isolate shorts on the APU side or other side.",
+    "evidence": "Annotation pointing to the main 12V coil area.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The system requires 30 Amps at start-up.",
+    "evidence": "Annotation near the 12V input connector.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "APU Core",
+    "expect": "+1",
+    "unit": "V",
+    "context": "Power On",
+    "mode": ""
+   },
+   {
+    "point": "RAM",
+    "expect": "+1.35",
+    "unit": "V",
+    "context": "Switching regulator",
+    "mode": ""
+   },
+   {
+    "point": "RAM",
+    "expect": "+- 40",
+    "unit": "ohms",
+    "context": "Impedance",
+    "mode": ""
+   },
+   {
+    "point": "Switching regulator",
+    "expect": "+2.0",
+    "unit": "V",
+    "context": "Power On",
+    "mode": ""
+   },
+   {
+    "point": "GDDR6",
+    "expect": "+1.35",
+    "unit": "V",
+    "context": "Switching",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "Ensure lab power supply can deliver 30 Amps for start-up."
+  ],
+  "tags": [
+   "ps5",
+   "power rails",
+   "voltage map",
+   "edm-010"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not provide specific test point locations for all rails, only general areas. The RAM impedance value is noted as an approximation.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "APU Core",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "RAM",
+    "mode": "voltage",
+    "expect_lo": 1.35,
+    "expect_hi": 1.35,
+    "unit": "V"
+   },
+   {
+    "point": "RAM",
+    "mode": "resistance",
+    "expect_lo": 40.0,
+    "expect_hi": 40.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Switching regulator",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   },
+   {
+    "point": "GDDR6",
+    "mode": "voltage",
+    "expect_lo": 1.35,
+    "expect_hi": 1.35,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010",
+   "F7001",
+   "F5401",
+   "F7003",
+   "F7502",
+   "F3501",
+   "F7501"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=6",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

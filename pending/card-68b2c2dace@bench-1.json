@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 EDM-010 mainboard component layout and back architecture",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=3",
+   "kind": "document",
+   "title": "PlayStation 5 Mainboard Component Layout and Back Architecture",
+   "ingested_utc": "2026-08-12T17:40:52Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "EDM-010",
+   "100889021",
+   "F7002",
+   "101216221",
+   "EDL-020"
+  ],
+  "claims": [
+   {
+    "statement": "The image identifies key components on the PS5 EDM-010 mainboard.",
+    "evidence": "Labels pointing to APU, Southbridge, GDDR6, power regulators, SSD, NAND flash, and other connectors.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The image identifies the PS5 back architecture components.",
+    "evidence": "Images of the back architecture board with ribbon cable.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "playstation 5",
+   "mainboard",
+   "layout",
+   "architecture"
+  ],
+  "confidence": "high",
+  "caveats": "This image is a component identification map and does not provide voltage, resistance, or signal measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010",
+   "100889021",
+   "F7002",
+   "101216221",
+   "EDL-020"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=3",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

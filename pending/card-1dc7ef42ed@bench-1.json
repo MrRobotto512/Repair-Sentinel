@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "GST5009S Ethernet transformer diode mode measurements and schematic",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=18",
+   "kind": "document",
+   "title": "PS5 Ethernet Port GST5009S Diode Readings and Pinout",
+   "ingested_utc": "2026-08-12T17:43:00Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "GST5009S"
+  ],
+  "claims": [
+   {
+    "statement": "All pins on the GST5009S Ethernet transformer should measure approximately 0.45V in diode mode.",
+    "evidence": "Annotation pointing to the pins with text 'All PINS +- 0,45' and 'DIODE MEASUREMENT'",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "All PINS",
+    "expect": "0,45",
+    "unit": "V",
+    "context": "diode mode",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ethernet",
+   "lan",
+   "transformer",
+   "diode mode",
+   "ps5"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not specify the reference ground point for the diode measurement or the state of the motherboard (powered/unpowered).",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "All PINS",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "GST5009S"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=18",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:07Z"
+}

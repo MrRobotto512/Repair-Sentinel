@@ -1,0 +1,50 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Fuse Amperage Rating Marking Code Reference Table",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=37",
+   "kind": "document",
+   "title": "Fuse Part Marking System Reference Table",
+   "ingested_utc": "2026-08-12T17:45:14Z"
+  },
+  "device_class": "Generic",
+  "models": [],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Surface-mount fuses can be identified by their printed marking codes corresponding to specific amperage ratings.",
+    "evidence": "The table maps 'Amp Code' values to their respective 'Marking Code' visual representations.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "fuses",
+   "identification",
+   "amperage",
+   "marking codes"
+  ],
+  "confidence": "high",
+  "caveats": "This table provides a mapping for marking codes to amperage ratings but does not specify the manufacturer or physical package type of the fuses.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=37",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:09Z"
+}

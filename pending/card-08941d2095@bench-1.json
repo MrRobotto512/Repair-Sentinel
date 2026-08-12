@@ -1,0 +1,58 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 EDM-010 Mainboard Component Architecture Map",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=2",
+   "kind": "document",
+   "title": "PS5 Front Architecture Component Map",
+   "ingested_utc": "2026-08-12T17:40:47Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5",
+   "EDM-010"
+  ],
+  "symptoms": [],
+  "codes": [
+   "EDM-010"
+  ],
+  "claims": [
+   {
+    "statement": "The image identifies the physical location of major components on the PS5 EDM-010 motherboard.",
+    "evidence": "Labels point to specific silicon and connector areas including APU, Southbridge, Power Management, and memory controllers.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "edm-010",
+   "mainboard",
+   "architecture",
+   "component layout"
+  ],
+  "confidence": "high",
+  "caveats": "This image is a component identification map and does not provide voltage, resistance, or signal measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=2",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

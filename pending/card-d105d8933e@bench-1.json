@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Troubleshooting PS5 RAM related update failures",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=35",
+   "kind": "document",
+   "title": "PS5 GDDR6 RAM Troubleshooting and BGA Pad Layout",
+   "ingested_utc": "2026-08-12T17:45:09Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [
+   "Cannot update",
+   "Reboots during update",
+   "Reboots after update"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Update failures or reboots during/after update can be caused by faulty RAM modules.",
+    "evidence": "Text description under 'Troubleshooting RAM'",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Overheating RAM modules can be identified using a thermal camera.",
+    "evidence": "Text description under 'Troubleshooting RAM'",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [
+   "Reflow or replace RAM modules if they are found to be overheating or faulty."
+  ],
+  "tags": [
+   "ps5",
+   "ram",
+   "gddr6",
+   "update failure",
+   "reflow",
+   "reballing"
+  ],
+  "confidence": "high",
+  "caveats": "Does not provide specific voltage or resistance values for testing.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=35",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:09Z"
+}

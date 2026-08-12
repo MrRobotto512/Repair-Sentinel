@@ -1,0 +1,61 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 RTC Battery and 32kHz Clock Drain Troubleshooting",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=9",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-12T17:32:24Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Boot",
+   "No Power",
+   "RTC drain"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The 3V real-time clock battery runs the 32kHz oscillator for the Southbridge.",
+    "evidence": "Voltage drop across the 1k resistor must be low; otherwise, a short is draining the clock battery, which may indicate a faulty Southbridge.",
+    "quote": "Battery +3V Battery for real time clock it runs the 32Khz oscillator for the southbridge If battery is empty 1k resistor Voltage drop must be low, else there is a short draining the clock battery, maybe southbridge is fa",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [
+   "Multimeter",
+   "Oscilloscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "playstation 5",
+   "rtc battery",
+   "32khz clock",
+   "southbridge",
+   "short circuit",
+   "voltage drop"
+  ],
+  "confidence": "medium",
+  "caveats": "Always verify the voltage drop across the 1k resistor to detect any short circuit conditions draining the clock battery.",
+  "component": "IC (other)",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=9",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

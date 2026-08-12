@@ -1,0 +1,63 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 TPS53219A buck controller converts +12V to +5V STBY",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=3",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-12T17:30:33Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The TPS53219A single buck controller converts the +12V power supply input into +5V STBY.",
+    "evidence": "Source diagram labels TPS53219A as generating +5V STBY from the +12V power supply.",
+    "quote": "This power regulator will generate +5v STBY. It is created from the +12V power supply.",
+    "at": ""
+   },
+   {
+    "statement": "The +5V STBY rail is used to create other standby power rails on the motherboard.",
+    "evidence": "Source states that additional power rails are derived from +5V STBY.",
+    "quote": "The +5V STBY is used to create other power rails",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "playstation 5",
+   "ps5",
+   "tps53219a",
+   "+5v stby",
+   "buck controller",
+   "standby",
+   "+12v"
+  ],
+  "confidence": "high",
+  "caveats": "The source labels TPS53219A as the +5V STBY controller but does not detail pinout voltages or measurements.",
+  "component": "TPS53219A",
+  "part_numbers": [
+   "TPS53219A"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=3",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:05Z"
+}

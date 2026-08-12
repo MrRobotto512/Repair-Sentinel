@@ -1,0 +1,145 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Front Standby Voltages and Power Rail Map",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=4",
+   "kind": "document",
+   "title": "PS5 Front Standby Voltages Board Map",
+   "ingested_utc": "2026-08-12T17:40:57Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5",
+   "EDM-010"
+  ],
+  "symptoms": [],
+  "codes": [
+   "TPS53219A",
+   "DA9065"
+  ],
+  "claims": [
+   {
+    "statement": "The +5V STBY rail generates other power rails.",
+    "evidence": "Annotation pointing to the +5V STBY area.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The +12V rail requires 30 Amps at start-up.",
+    "evidence": "Annotation near the +12V power input connector.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The DA9065 IC powers the Southbridge and requires +1.8V STBY on pin 27.",
+    "evidence": "Annotation pointing to the DA9065 IC.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "F5402",
+    "expect": "+3,3",
+    "unit": "V",
+    "context": "OUT",
+    "mode": ""
+   },
+   {
+    "point": "F700",
+    "expect": "+1.15",
+    "unit": "V",
+    "context": "OUT",
+    "mode": ""
+   },
+   {
+    "point": "F700",
+    "expect": "+5",
+    "unit": "V",
+    "context": "IN",
+    "mode": ""
+   },
+   {
+    "point": "F7502",
+    "expect": "+2,0",
+    "unit": "V",
+    "context": "Switching regulator",
+    "mode": ""
+   },
+   {
+    "point": "DA9065 PIN 27",
+    "expect": "+1.8",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "Main 12V coil should be tested separately to isolate shorts on the APU side or other side."
+  ],
+  "tags": [
+   "ps5",
+   "standby",
+   "voltage map",
+   "power rails"
+  ],
+  "confidence": "high",
+  "caveats": "Does not provide ground reference points or diode mode values.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "F5402",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   },
+   {
+    "point": "F700",
+    "mode": "voltage",
+    "expect_lo": 1.15,
+    "expect_hi": 1.15,
+    "unit": "V"
+   },
+   {
+    "point": "F700",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "F7502",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   },
+   {
+    "point": "DA9065 PIN 27",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "TPS53219A",
+   "DA9065"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=4",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

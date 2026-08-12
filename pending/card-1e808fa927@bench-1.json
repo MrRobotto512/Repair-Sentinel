@@ -1,0 +1,186 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Back Power On Voltages",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=7",
+   "kind": "document",
+   "title": "PS5 Back Power On Voltages Board Map",
+   "ingested_utc": "2026-08-12T17:41:22Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "EDM-010",
+   "F7002"
+  ],
+  "claims": [
+   {
+    "statement": "The board shows key power-on voltage rails on the back side of the EDM-010 motherboard.",
+    "evidence": "Annotated voltage labels pointing to specific components and test points on the PCB.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Southbridge power",
+    "expect": "+1,1",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "IN",
+    "expect": "+2,5",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "OUT",
+    "expect": "+0,8",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "vCore output",
+    "expect": "+1",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "vReg input",
+    "expect": "+12",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "RAM power",
+    "expect": "+1,35",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "unlabeled point near RAM",
+    "expect": "+12",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "unlabeled point near bottom center",
+    "expect": "+5",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "unlabeled point bottom right",
+    "expect": "+12",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "voltage map",
+   "power rail",
+   "edm-010"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not provide ground reference points or specific component designators for all measured rails.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Southbridge power",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "IN",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   },
+   {
+    "point": "OUT",
+    "mode": "voltage",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "vCore output",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "vReg input",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   },
+   {
+    "point": "RAM power",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "unlabeled point near RAM",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   },
+   {
+    "point": "unlabeled point near bottom center",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "unlabeled point bottom right",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010",
+   "F7002"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=7",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

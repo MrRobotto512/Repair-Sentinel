@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 APU layout and data line routing overview",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=33",
+   "kind": "document",
+   "title": "PlayStation 5 APU Trace Routing and Data Lines",
+   "ingested_utc": "2026-08-12T17:45:02Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The APU is not replaceable",
+    "evidence": "Annotation pointing to the APU die labeled 'Not replaceable'",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Specific board traces connect to RAM data lines",
+    "evidence": "Arrow pointing from the APU area to traces labeled 'RAM data lines'",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Specific board traces connect to SSD / NAND data lines",
+    "evidence": "Arrow pointing from the APU area to traces labeled 'SSD / NAND data lines'",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [
+   "APU is not replaceable"
+  ],
+  "tags": [
+   "apu",
+   "ram",
+   "ssd",
+   "nand",
+   "data lines"
+  ],
+  "confidence": "high",
+  "caveats": "This image provides a conceptual layout of data line routing and does not provide specific electrical measurements, pinouts, or diagnostic procedures.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=33",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:09Z"
+}

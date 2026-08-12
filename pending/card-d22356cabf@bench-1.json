@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 3.3V and 5V standby voltage rail locations",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=17",
+   "kind": "document",
+   "title": "PS5 Standby Voltage Regulator Test Points",
+   "ingested_utc": "2026-08-12T17:42:58Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [
+   "Power buttons will not work"
+  ],
+  "codes": [
+   "CXD90061GG",
+   "A1TAB88.00-1C"
+  ],
+  "claims": [
+   {
+    "statement": "If 3.3V STBY is missing the power buttons will not work.",
+    "evidence": "Text annotation pointing to the 3.3V STBY trace.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Southbridge, Encoder IC, a switching regulator, Dialog Power management IC, WiFi IC needs 3.3V to operate.",
+    "evidence": "Text annotation on the right side of the image.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "3.3V STBY",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "standby",
+    "mode": ""
+   },
+   {
+    "point": "+- 5V STBY",
+    "expect": "5",
+    "unit": "V",
+    "context": "standby",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "standby voltage",
+   "power rail",
+   "motherboard"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not provide specific test point coordinates or component reference designators (e.g., Rxxx, Cxxx) for the measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "3.3V STBY",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "+- 5V STBY",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "CXD90061GG",
+   "A1TAB88.00-1C"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=17",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:07Z"
+}

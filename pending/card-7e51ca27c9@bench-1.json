@@ -1,0 +1,182 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Standby Boot Sequence Current Draw & Fault Diagnostics",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=1",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-12T17:30:11Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Boot",
+   "No Power",
+   "Stuck in Standby"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A normal PS5 standby boot sequence draws approximately 321 mA initially before settling to 7–10 mA.",
+    "evidence": "Table lists WORKING / GOOD first stage as +- 321 mA and second stage as +- 7 – 10 mA.",
+    "quote": "+- 321 mA +- 7 – 10 mA WORKING / GOOD",
+    "at": ""
+   },
+   {
+    "statement": "A 0 mA standby current draw indicates missing +12V input, blown fuses, power supply failure, or a BIOS issue.",
+    "evidence": "Diagnostic table maps 0 mA / 0 mA draw to +12V input shorts, power supply, fuse, and BIOS checks.",
+    "quote": "+- 0 mA +- 0 mA Check BIOS and fuses, +12V power supply, Check for short on the +12V input",
+    "at": ""
+   },
+   {
+    "statement": "A PS5 stuck at 7 mA standby current requires checking Dialog PMIC voltages, Southbridge 25 MHz/32 kHz clocks, and BIOS communication.",
+    "evidence": "Troubleshooting step specifies checking Dialog IC voltages, Southbridge clocks, and BIOS IC communication if stuck at 7mA.",
+    "quote": "When console get’s standby power if it is stuck at 7mA. Check the voltages of Dialog ic and frequency of the 25Mhz clock and the 32Khz clock of the Southbridge IC.",
+    "at": ""
+   },
+   {
+    "statement": "A standby boot loop cycling between 7 mA and 12 mA indicates a short on the 1.1V power rail.",
+    "evidence": "Diagnostic table maps 7 mA (boot loop) to 12 mA to a shorted 1.1V rail.",
+    "quote": "+- 7 mA (boot loop) +- 12 mA Check for short on the 1.1V power rail",
+    "at": ""
+   },
+   {
+    "statement": "A continuous 35 mA standby draw points to a short on the 1.9V power rail.",
+    "evidence": "Diagnostic table correlates 35 mA / 35 mA current draw with 1.9V rail shorts.",
+    "quote": "+- 35 mA +- 35 mA Check for shorts on the 1.9V power rail",
+    "at": ""
+   },
+   {
+    "statement": "A 315 mA standby draw requires checking the 3.3V STBY rail and inspecting the Wi-Fi IC for shorts.",
+    "evidence": "Diagnostic table maps 315 mA / 315 mA current draw to 3.3V STBY and Wi-Fi IC short checks.",
+    "quote": "+- 315 mA +- 315 mA Check 3.3V STBY power rail present, check for shorts Wifi IC",
+    "at": ""
+   },
+   {
+    "statement": "Standby draw spikes of 175 mA or 225 mA that drop back to 7–10 mA indicate a faulty or shorted SSD controller.",
+    "evidence": "Diagnostic table maps 175 mA -> 10 mA and 225 mA -> 7 mA to SSD controller shorts.",
+    "quote": "+- 175 mA +- 10 mA Check SSD Controller for shorts",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "{'step': 'Connect the PS5 mainboard to a laboratory power supply supplying 12V.'}",
+   "{'step': 'Observe the initial standby current draw (Stage 1) before pressing any buttons.'}",
+   "{'step': 'Observe the secondary settled standby current draw (Stage 2).'}",
+   "{'step': 'Compare current readings against standby boot diagnostic thresholds to isolate the faulty rail, IC, or shorted line.'}"
+  ],
+  "measurements": [
+   {
+    "point": "Normal Standby Stage 1",
+    "expect": "321",
+    "unit": "mA",
+    "context": "Initial standby current draw on normal board",
+    "mode": "current"
+   },
+   {
+    "point": "Normal Standby Stage 2",
+    "expect": "7 - 10",
+    "unit": "mA",
+    "context": "Settled standby current draw on normal board",
+    "mode": "current"
+   },
+   {
+    "point": "Southbridge 1.1V Rail",
+    "expect": "1.1",
+    "unit": "V",
+    "context": "Standby voltage rail check when boot looping 7mA to 12mA",
+    "mode": "voltage"
+   },
+   {
+    "point": "1.9V Power Rail",
+    "expect": "1.9",
+    "unit": "V",
+    "context": "Standby rail check when current draw is fixed at 35mA",
+    "mode": "voltage"
+   },
+   {
+    "point": "3.3V STBY Rail",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "Standby rail check when current draw is fixed at 315mA",
+    "mode": "voltage"
+   }
+  ],
+  "tools": [
+   "DC Power Supply",
+   "Oscilloscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "playstation 5",
+   "standby",
+   "boot sequence",
+   "current draw",
+   "da9065",
+   "cxd90061",
+   "southbridge",
+   "1.1v rail",
+   "1.9v rail",
+   "3.3v stby"
+  ],
+  "confidence": "high",
+  "caveats": "Current draw measurements apply specifically to standby state prior to pressing the power button.",
+  "component": "Southbridge",
+  "part_numbers": [
+   "DA9065",
+   "CXD90061"
+  ],
+  "readings": [
+   {
+    "point": "Normal Standby Stage 1",
+    "mode": "current",
+    "expect_lo": 0.321,
+    "expect_hi": 0.321,
+    "unit": "A"
+   },
+   {
+    "point": "Normal Standby Stage 2",
+    "mode": "current",
+    "expect_lo": 0.007,
+    "expect_hi": 0.01,
+    "unit": "A"
+   },
+   {
+    "point": "Southbridge 1.1V Rail",
+    "mode": "voltage",
+    "expect_lo": 1.1,
+    "expect_hi": 1.1,
+    "unit": "V"
+   },
+   {
+    "point": "1.9V Power Rail",
+    "mode": "voltage",
+    "expect_lo": 1.9,
+    "expect_hi": 1.9,
+    "unit": "V"
+   },
+   {
+    "point": "3.3V STBY Rail",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=1",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:05Z"
+}

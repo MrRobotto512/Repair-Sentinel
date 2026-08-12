@@ -1,0 +1,129 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "DA9065 Power Management IC voltage rails and block diagram",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=11",
+   "kind": "document",
+   "title": "DA9065 Power Management IC Voltage Rails and Pinout",
+   "ingested_utc": "2026-08-12T17:41:48Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "DA9065",
+   "DA9062"
+  ],
+  "claims": [
+   {
+    "statement": "DA9065 is a power management integrated circuit (PMIC) that generates different power rails.",
+    "evidence": "Text description and block diagram provided.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "OUT",
+    "expect": "+3.3",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "OUT",
+    "expect": "+1.15",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   },
+   {
+    "point": "OUT",
+    "expect": "+1.9",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   },
+   {
+    "point": "IN",
+    "expect": "+5",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "PIN: 27",
+    "expect": "+1.8",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "pmic",
+   "power rail",
+   "voltage map"
+  ],
+  "confidence": "high",
+  "caveats": "The block diagram provided is for the DA9062, while the board photo and text refer to the DA9065.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "OUT",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "OUT",
+    "mode": "voltage",
+    "expect_lo": 1.15,
+    "expect_hi": 1.15,
+    "unit": "V"
+   },
+   {
+    "point": "OUT",
+    "mode": "voltage",
+    "expect_lo": 1.9,
+    "expect_hi": 1.9,
+    "unit": "V"
+   },
+   {
+    "point": "IN",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "PIN: 27",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "DA9065",
+   "DA9062"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=11",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:07Z"
+}

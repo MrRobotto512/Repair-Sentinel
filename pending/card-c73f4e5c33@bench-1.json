@@ -1,0 +1,60 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 disc drive board is paired to the APU",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=36",
+   "kind": "document",
+   "title": "PS5 Disc Drive Controller Board Pairing",
+   "ingested_utc": "2026-08-12T17:45:12Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [
+   "No online gaming after update",
+   "Can't update console",
+   "No disc drive support"
+  ],
+  "codes": [
+   "UHN-020"
+  ],
+  "claims": [
+   {
+    "statement": "The disc drive board is paired/married to the PS5 console",
+    "evidence": "Annotation pointing to the controller chip on the disc drive board stating 'Paired to the APU'",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "disc drive",
+   "pairing",
+   "apu"
+  ],
+  "confidence": "high",
+  "caveats": "Does not provide instructions on how to perform the pairing or bypass the restriction.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "UHN-020"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=36",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:09Z"
+}

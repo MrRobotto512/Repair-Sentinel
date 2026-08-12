@@ -1,0 +1,184 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Back Standby Voltages Map",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=5",
+   "kind": "document",
+   "title": "PS5 Back Standby Voltages Map",
+   "ingested_utc": "2026-08-12T17:41:02Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "EDM-010"
+  ],
+  "claims": [
+   {
+    "statement": "The image identifies the locations and expected voltage values for standby power rails on the back of the PS5 EDM-010 motherboard.",
+    "evidence": "Annotated arrows pointing to specific components and test points with voltage labels.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "OUT",
+    "expect": "+3,3",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "IN",
+    "expect": "+5",
+    "unit": "V",
+    "context": "STBY at F7002",
+    "mode": ""
+   },
+   {
+    "point": "Component near F7002",
+    "expect": "+5",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "Component near F7002",
+    "expect": "+3,3",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "Component near SBV IC",
+    "expect": "+5",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "Component near SBV IC",
+    "expect": "+1,9",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "Inductors/Caps area",
+    "expect": "+12",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   },
+   {
+    "point": "Bottom right area",
+    "expect": "+3,3",
+    "unit": "V",
+    "context": "STB",
+    "mode": ""
+   },
+   {
+    "point": "Bottom right area",
+    "expect": "+12",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "standby voltage",
+   "motherboard",
+   "voltage map"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not specify the ground reference point or the state of the console (e.g., plugged in vs. standby mode) required to measure these voltages.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "OUT",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   },
+   {
+    "point": "IN",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Component near F7002",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Component near F7002",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   },
+   {
+    "point": "Component near SBV IC",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Component near SBV IC",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "Inductors/Caps area",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom right area",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom right area",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=5",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 EDM-010 motherboard component overview",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=1",
+   "kind": "document",
+   "title": "PlayStation 5 Motherboard Component Overview",
+   "ingested_utc": "2026-08-12T17:40:43Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "EDM-010"
+  ],
+  "symptoms": [],
+  "codes": [
+   "EDM-010",
+   "F7001",
+   "F5401",
+   "F5402",
+   "F7003",
+   "F3501",
+   "F7501",
+   "CR2032"
+  ],
+  "claims": [
+   {
+    "statement": "The image identifies key components and test points on the PS5 EDM-010 motherboard.",
+    "evidence": "The image highlights specific areas including fuses, the CMOS battery, and connectors with colored boxes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "motherboard",
+   "components",
+   "edm-010"
+  ],
+  "confidence": "high",
+  "caveats": "The image provides a visual overview of component locations but does not provide specific voltage, resistance, or signal measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010",
+   "F7001",
+   "F5401",
+   "F5402",
+   "F7003",
+   "F3501",
+   "F7501",
+   "CR2032"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=1",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

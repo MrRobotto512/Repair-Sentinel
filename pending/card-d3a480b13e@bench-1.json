@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Memory (RAM) & Firmware Update Troubleshooting",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=10",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-12T17:32:27Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "update reboot loops",
+   "failed update installation",
+   "cannot update console"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Firmware update reboot loops or failures can be caused by faulty RAM or SSD controllers.",
+    "evidence": "Checking RAM modules with a thermal camera or checking for hot RAM modules can identify faulty components.",
+    "quote": "When you can’t update PS5 and during the update process or after the update it reboots then the cause can be RAM related. Check all ram modules you can use a thermal camera to see the temperature and check if a RAM modul",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check all RAM modules using a thermal camera to see temperatures.",
+   "Identify if any RAM module gets excessively hot.",
+   "Reflow or replace the faulty RAM modules or SSD controller if the problem persists."
+  ],
+  "measurements": [],
+  "tools": [
+   "thermal camera",
+   "soldering station"
+  ],
+  "cautions": [],
+  "tags": [
+   "playstation 5",
+   "ps5",
+   "ram",
+   "memory",
+   "update loop",
+   "reboot",
+   "ssd controller",
+   "firmware update"
+  ],
+  "confidence": "medium",
+  "caveats": "Ensure you verify other update error causes if thermal imaging shows normal RAM temperatures.",
+  "component": "RAM (GDDR)",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=10",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z"
+}

@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 motherboard standby and switching regulator voltage test points",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=22",
+   "kind": "document",
+   "title": "Standby and Power Voltages Map",
+   "ingested_utc": "2026-08-12T17:44:16Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The standby voltage rail is +5V",
+    "evidence": "Label '+5V STBY' pointing to a capacitor",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The switching regulator output is +2.0V",
+    "evidence": "Label 'Switching regulator +2.0V' pointing to a capacitor",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "+5V STBY",
+    "expect": "5",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   },
+   {
+    "point": "Switching regulator",
+    "expect": "2.0",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "voltage",
+   "standby",
+   "regulator"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not specify the ground reference point or the operational state of the console required to measure these voltages.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "+5V STBY",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Switching regulator",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=22",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:08Z"
+}

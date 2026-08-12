@@ -1,0 +1,69 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 USB firmware update error diagnosis",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=26",
+   "kind": "document",
+   "title": "PS5 USB Data Lines to APU Routing and Firmware Error Diagnostics",
+   "ingested_utc": "2026-08-12T17:44:30Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5",
+   "EDM-010"
+  ],
+  "symptoms": [
+   "Can't perform this action.",
+   "Multiple USB drives are connected"
+  ],
+  "codes": [
+   "EDM-010",
+   "GST5009S"
+  ],
+  "claims": [
+   {
+    "statement": "USB data lines go direct to the APU",
+    "evidence": "Blue arrow tracing lines from USB ports to the APU chip",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "APU is faulty and not fixable if error message is 'Multiple USB drives are connected'",
+    "evidence": "Text annotation next to the error message list",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "usb",
+   "firmware",
+   "apu",
+   "edm-010"
+  ],
+  "confidence": "high",
+  "caveats": "Does not provide specific voltage or resistance measurements for troubleshooting.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010",
+   "GST5009S"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=26",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:08Z"
+}

@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "W25Q16JVSNIM BIOS IC Pinout and Oscilloscope Measurement Guide",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=15",
+   "kind": "document",
+   "title": "W25Q16JVSNIM BIOS IC Pin Configuration and Description",
+   "ingested_utc": "2026-08-12T17:42:29Z"
+  },
+  "device_class": "Generic",
+  "models": [
+   "W25Q16JVSNIM"
+  ],
+  "symptoms": [],
+  "codes": [
+   "W25Q16JVSNIM"
+  ],
+  "claims": [
+   {
+    "statement": "If communication is present at the DI pin but there is no communication going out at pin DO then firmware / IC could be faulty.",
+    "evidence": "Text description in the top right corner of the image.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "VCC",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   },
+   {
+    "point": "VCC",
+    "expect": "2.7 to 3.6",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "Check bios pins with oscilloscope and see if there is communication going into the BIOS and also out of the BIOS.",
+   "Check if the clock signal is present.",
+   "Test signals in standby mode and power on mode."
+  ],
+  "tags": [
+   "bios",
+   "ic",
+   "pinout",
+   "oscilloscope",
+   "firmware"
+  ],
+  "confidence": "high",
+  "caveats": "The image provides general pinout and diagnostic methodology for the W25Q16JVSNIM IC, but does not provide specific board-level schematics or component values for a particular device.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "VCC",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "VCC",
+    "mode": "voltage",
+    "expect_lo": 2.7,
+    "expect_hi": 3.6,
+    "unit": "V"
+   }
+  ],
+  "device_family": "",
+  "error_codes": [
+   "W25Q16JVSNIM"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=15",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:07Z"
+}

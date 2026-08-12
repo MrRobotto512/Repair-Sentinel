@@ -1,0 +1,116 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Southbridge and BIOS IC diagnostic and repair information",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=14",
+   "kind": "document",
+   "title": "Southbridge IC and BIOS IC Locations and Diagnostic Notes",
+   "ingested_utc": "2026-08-12T17:42:27Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [
+   "no power",
+   "beep 3 times"
+  ],
+  "codes": [
+   "CXD90061",
+   "W25Q16JVSNIM",
+   "F5401",
+   "F5402"
+  ],
+  "claims": [
+   {
+    "statement": "Flux under BGA can cause oscillator problems",
+    "evidence": "Text annotation on image",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If 3.3V STBY is missing the power buttons will not work",
+    "evidence": "Text description on right side",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If you press power button the power rail +1.1V must be generated for the Southbridge IC",
+    "evidence": "Text description on right side",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "When console beep 3 times but not powers on check all voltages if all ok it could be a BIOS corruption",
+    "evidence": "Text description on right side",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "BIOS IC",
+    "expect": "0 to +-321",
+    "unit": "mA",
+    "context": "Good bios current draw",
+    "mode": ""
+   },
+   {
+    "point": "BIOS IC",
+    "expect": "+-4mA - +-10mA",
+    "unit": "mA",
+    "context": "Good bios current draw",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "Flux under BGA can cause oscillator problems"
+  ],
+  "tags": [
+   "ps5",
+   "southbridge",
+   "bios",
+   "power rail",
+   "oscillator"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not provide specific board locations for measuring the 3.3V STBY or 1.1V power rails.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "BIOS IC",
+    "mode": "current",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "A"
+   },
+   {
+    "point": "BIOS IC",
+    "mode": "current",
+    "expect_lo": -0.004,
+    "expect_hi": -0.004,
+    "unit": "A"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "CXD90061",
+   "W25Q16JVSNIM",
+   "F5401",
+   "F5402"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=14",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:07Z"
+}

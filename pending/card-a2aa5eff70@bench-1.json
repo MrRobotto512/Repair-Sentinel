@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Voltage regulator +5V to 3.3V standby circuit on EDM-010 motherboard",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=21",
+   "kind": "document",
+   "title": "PlayStation 5 +5V to +3.3V Voltage Regulator Circuit Map",
+   "ingested_utc": "2026-08-12T17:44:12Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "EDM-010",
+   "F7002"
+  ],
+  "claims": [
+   {
+    "statement": "The circuit converts +5V STBY to +3.3V STBY",
+    "evidence": "Labels 'IN: +5V STBY' and 'OUT: +3,3V STBY' pointing to the regulator area",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "IN",
+    "expect": "+5",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "OUT",
+    "expect": "+3,3",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "edm-010",
+   "voltage regulator",
+   "standby"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not provide specific pinout diagrams or component part numbers for the regulator IC itself.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "IN",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "OUT",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010",
+   "F7002"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=21",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:08Z"
+}

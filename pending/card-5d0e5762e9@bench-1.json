@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "TLV62090RGTT standby voltage regulator pinout and application schematic",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=20",
+   "kind": "document",
+   "title": "TLV62090RGTT Voltage Regulator Schematic, Pinout, and Board Location",
+   "ingested_utc": "2026-08-12T17:43:08Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   "TLV62090RGTT"
+  ],
+  "claims": [
+   {
+    "statement": "The TLV62090RGTT IC provides standby voltages on the PS5 board.",
+    "evidence": "Board photo showing IC labeled 'SBV IC' with arrows pointing to '+5V STBY' and '+1.9V STBY' test points.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Vin",
+    "expect": "2.5V to 5.5V",
+    "unit": "V",
+    "context": "Typical Application Schematic",
+    "mode": ""
+   },
+   {
+    "point": "Vout",
+    "expect": "1.8V/3A",
+    "unit": "V",
+    "context": "Typical Application Schematic",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "voltage regulator",
+   "standby",
+   "schematic",
+   "pinout"
+  ],
+  "confidence": "high",
+  "caveats": "The image shows a typical application schematic for the TLV62090RGTT, not necessarily the exact circuit implementation on the PS5 motherboard.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Vin",
+    "mode": "voltage",
+    "expect_lo": 2.5,
+    "expect_hi": 2.5,
+    "unit": "V"
+   },
+   {
+    "point": "Vout",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "TLV62090RGTT"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=20",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:08Z"
+}

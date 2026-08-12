@@ -1,0 +1,61 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 warranty seal inspection and screw identification guide",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=8",
+   "kind": "document",
+   "title": "PS5 Warranty Seal Location and Screw Assembly Guide",
+   "ingested_utc": "2026-08-12T17:41:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Check if someone already opened console",
+    "evidence": "Arrow pointing to the warranty seal location on the PS5 chassis",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check if all screws are present and the correct size screws are in the right hole",
+    "evidence": "Image showing a collection of various PS5 screws and an arrow pointing to screw holes on the console",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [
+   "Verify warranty seal integrity to determine if the console has been previously opened",
+   "Ensure all screws are present and placed in their correct locations during reassembly"
+  ],
+  "tags": [
+   "ps5",
+   "disassembly",
+   "warranty seal",
+   "screws"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not provide a specific screw map or torque specifications for the individual screw holes.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=8",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:07Z"
+}
