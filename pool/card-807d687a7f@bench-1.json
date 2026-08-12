@@ -1,175 +1,66 @@
 {
- "schema_version": 1,
+ "schema_version": 2,
  "kind": "knowledge_card",
  "card": {
-  "schema_version": 1,
-  "title": "PlayStation 5 HDMI Port Diode Mode Measurements",
+  "schema_version": 2,
+  "title": "PS5 TPS53219A buck controller converts +12V to +5V STBY",
   "source": {
    "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=3",
    "kind": "document",
    "title": "PS5 Repair Tips",
-   "ingested_utc": "2026-08-10T02:30:14Z"
+   "ingested_utc": "2026-08-12T17:30:33Z"
   },
   "device_class": "Console",
   "models": [
    "PlayStation 5"
   ],
-  "symptoms": [
-   "No Display",
-   "Black Screen",
-   "No Signal",
-   "WLOD"
-  ],
+  "symptoms": [],
   "codes": [],
   "claims": [
    {
-    "statement": "HDMI connector pins have specific expected diode mode values ranging from ground to 0.8V.",
-    "evidence": "Diode mode measurements taken across HDMI pins.",
-    "quote": "PIN 17: GND PIN 13: 0.6V PIN 12: 0.8V PIN 18: 0.5V PIN 11: GND PIN 16: 0.6V PIN 19: 0.6V PIN 10: 0.8V PIN 15: 0.6V PIN 14: NC PIN 9: 0.8V PIN 8: GND PIN 7: 0.8V PIN 2: GND PIN 4: 0.8V PIN 6: 0.8V PIN 1: 0.8V PIN 3: 0.8V ",
+    "statement": "The TPS53219A single buck controller converts the +12V power supply input into +5V STBY.",
+    "evidence": "Source diagram labels TPS53219A as generating +5V STBY from the +12V power supply.",
+    "quote": "This power regulator will generate +5v STBY. It is created from the +12V power supply.",
+    "at": ""
+   },
+   {
+    "statement": "The +5V STBY rail is used to create other standby power rails on the motherboard.",
+    "evidence": "Source states that additional power rails are derived from +5V STBY.",
+    "quote": "The +5V STBY is used to create other power rails",
     "at": ""
    }
   ],
-  "procedure": [
-   "Set multimeter to diode mode.",
-   "Place red probe on ground and black probe on each HDMI connector pin.",
-   "Compare readings against known good diode values."
-  ],
-  "measurements": [
-   {
-    "point": "HDMI PIN 1",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 2",
-    "expect": "0",
-    "unit": "V diode mode",
-    "context": "GND pin"
-   },
-   {
-    "point": "HDMI PIN 3",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 4",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 5",
-    "expect": "0",
-    "unit": "V diode mode",
-    "context": "GND pin"
-   },
-   {
-    "point": "HDMI PIN 6",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 7",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 8",
-    "expect": "0",
-    "unit": "V diode mode",
-    "context": "GND pin"
-   },
-   {
-    "point": "HDMI PIN 9",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 10",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 11",
-    "expect": "0",
-    "unit": "V diode mode",
-    "context": "GND pin"
-   },
-   {
-    "point": "HDMI PIN 12",
-    "expect": "0.8",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 13",
-    "expect": "0.6",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 14",
-    "expect": "0",
-    "unit": "V diode mode",
-    "context": "NC / open"
-   },
-   {
-    "point": "HDMI PIN 15",
-    "expect": "0.6",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 16",
-    "expect": "0.6",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 17",
-    "expect": "0",
-    "unit": "V diode mode",
-    "context": "GND pin"
-   },
-   {
-    "point": "HDMI PIN 18",
-    "expect": "0.5",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   },
-   {
-    "point": "HDMI PIN 19",
-    "expect": "0.6",
-    "unit": "V diode mode",
-    "context": "diode measurement"
-   }
-  ],
-  "tools": [
-   "Multimeter"
-  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
   "cautions": [],
   "tags": [
+   "playstation 5",
    "ps5",
-   "hdmi",
-   "diode mode",
-   "pinout",
-   "no display",
-   "wlod"
+   "tps53219a",
+   "+5v stby",
+   "buck controller",
+   "standby",
+   "+12v"
   ],
   "confidence": "high",
-  "caveats": "Diode mode values can vary slightly depending on meter model and temperature."
+  "caveats": "The source labels TPS53219A as the +5V STBY controller but does not detail pinout voltages or measurements.",
+  "component": "TPS53219A",
+  "part_numbers": [
+   "TPS53219A"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=3",
+  "provenance": "absorbed"
  },
  "origin": {
   "bench": "bench-1"
  },
- "queued_utc": "2026-08-10T02:31:20Z",
+ "queued_utc": "2026-08-12T17:50:05Z",
  "verdict": "approve",
- "reviewed_utc": "2026-08-10T02:32:54Z",
+ "reviewed_utc": "2026-08-12T17:53:56Z",
  "reviewed_on": "bench-1"
 }
