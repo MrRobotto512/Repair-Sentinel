@@ -1,0 +1,63 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "TPS53219A single buck controller pinout and function reference",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=13",
+   "kind": "document",
+   "title": "TPS53219A Pinout and Pin Functions Table",
+   "ingested_utc": "2026-08-12T17:41:56Z"
+  },
+  "device_class": "Generic",
+  "models": [],
+  "symptoms": [],
+  "codes": [
+   "TPS53219A"
+  ],
+  "claims": [
+   {
+    "statement": "The TPS53219A generates +5V STBY from a +12V power supply.",
+    "evidence": "Text in top right corner: 'This power regulator will generate +5v STBY. It is created from the +12V power supply.'",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "EN, SW, and VDD are the most important pins to measure for troubleshooting.",
+    "evidence": "Blue arrows pointing to EN, SW, and VDD pins in the table with a green highlight box labeled 'Most important pins to measure'.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "buck controller",
+   "pinout",
+   "tps53219a",
+   "power regulator"
+  ],
+  "confidence": "high",
+  "caveats": "This image provides a pinout and functional description but does not provide specific voltage or resistance measurement values for troubleshooting.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "",
+  "error_codes": [
+   "TPS53219A"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=13",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:07Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-12T23:15:11Z",
+ "reviewed_on": "robotto"
+}

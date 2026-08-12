@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 SSD voltage regulator input and output voltages during power on",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=29",
+   "kind": "document",
+   "title": "SSD Voltage Regulator Power On Measurements",
+   "ingested_utc": "2026-08-12T17:44:47Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The SSD voltage regulator input voltage is +2.5V during power on.",
+    "evidence": "Arrow pointing to input capacitor labeled 'IN: +2.5V power on'",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The SSD voltage regulator output voltage is +0.8V during power on.",
+    "evidence": "Arrow pointing to output inductor labeled 'OUT: +0.8V power on'",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Input capacitor",
+    "expect": "+2.5",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "Output inductor",
+    "expect": "+0.8",
+    "unit": "V",
+    "context": "power on",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "ssd",
+   "voltage regulator",
+   "power on"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not identify the specific IC part number or board revision.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Input capacitor",
+    "mode": "voltage",
+    "expect_lo": 2.5,
+    "expect_hi": 2.5,
+    "unit": "V"
+   },
+   {
+    "point": "Output inductor",
+    "mode": "voltage",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=29",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:08Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-12T23:15:11Z",
+ "reviewed_on": "robotto"
+}

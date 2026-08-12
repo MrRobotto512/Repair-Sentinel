@@ -1,0 +1,103 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 SSD Controller Current Draw & Fuse F7520 Diagnostics",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=8",
+   "kind": "document",
+   "title": "PS5 Repair Tips",
+   "ingested_utc": "2026-08-12T17:32:23Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "No Boot",
+   "Standby Boot Loop"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A working SSD circuit draws 310mA across fuse F7520.",
+    "evidence": "Measurement across the fuse pads in current mode on a good board.",
+    "quote": "Good working SSD circuit draws: 310mA.",
+    "at": ""
+   },
+   {
+    "statement": "Remove fuse F7520 that feeds voltage to the voltage regulator generating power for the SSD circuit to measure current draw in series.",
+    "evidence": "Procedure for isolating and measuring SSD circuit current.",
+    "quote": "Remove fuse F7520 that feeds the voltage on the back to the voltage regulator that generates power for the SSD circuit. Set a multimeter in current mode in series with the pads of the fuse and measure the current draw.",
+    "at": ""
+   },
+   {
+    "statement": "A standby current draw of 175 mA dropping back to 10 mA can indicate a bad SSD controller IC.",
+    "evidence": "Current draw profile observed during standby boot sequence.",
+    "quote": "When you see a current draw in standby of 175 mA and then back to 10Ma. There can be a bad SSD controller IC.",
+    "at": ""
+   },
+   {
+    "statement": "If the current draw is different on a faulty board compared to the expected working value, replace the SSD controller IC.",
+    "evidence": "Diagnosis based on current draw anomaly across fuse F7520.",
+    "quote": "If current is different on a faulty board change the SSD controller IC.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove fuse F7520 that feeds voltage to the voltage regulator for the SSD circuit.",
+   "Set a multimeter to current mode.",
+   "Place the multimeter probes in series with the pads of fuse F7520.",
+   "Measure the current draw and compare it against the expected 310mA value.",
+   "Replace the SSD controller IC if the measured current draw is abnormal."
+  ],
+  "measurements": [
+   {
+    "point": "F7520",
+    "expect": "310",
+    "unit": "mA",
+    "context": "Good working SSD circuit current draw",
+    "mode": "current"
+   }
+  ],
+  "tools": [
+   "Multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "playstation 5",
+   "ps5",
+   "f7520",
+   "ssd controller",
+   "current draw",
+   "fuse",
+   "standby current"
+  ],
+  "confidence": "high",
+  "caveats": "Ensure the meter is wired strictly in series across the fuse pads to avoid shorting or misreading current.",
+  "component": "SSD/NAND",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "F7520",
+    "mode": "current",
+    "expect_lo": 0.31,
+    "expect_hi": 0.31,
+    "unit": "A"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?topic=8",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:06Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-12T23:15:11Z",
+ "reviewed_on": "robotto"
+}

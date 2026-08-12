@@ -1,0 +1,65 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 EDM-010 USB TPS2001D Power-Distribution Switch Pinout and Function",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=27",
+   "kind": "document",
+   "title": "PlayStation 5 USB Power Switch TPS2001D Location and Pinout",
+   "ingested_utc": "2026-08-12T17:44:35Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5",
+   "EDM-010"
+  ],
+  "symptoms": [],
+  "codes": [
+   "TPS2001D",
+   "EDM-010",
+   "F7001"
+  ],
+  "claims": [
+   {
+    "statement": "The TPS2001D is used as a USB power-distribution switch on the PS5 EDM-010 board.",
+    "evidence": "Image shows the TPS2001D IC located on the EDM-010 motherboard with an arrow pointing to its pinout diagram.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "usb",
+   "power-distribution switch",
+   "tps2001d",
+   "pinout"
+  ],
+  "confidence": "high",
+  "caveats": "This image provides component pinout and functional descriptions but does not provide specific voltage or resistance measurements for troubleshooting.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "TPS2001D",
+   "EDM-010",
+   "F7001"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=27",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:08Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-12T23:15:11Z",
+ "reviewed_on": "robotto"
+}

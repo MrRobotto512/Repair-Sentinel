@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "SSD controller circuit current draw troubleshooting via fuse F7520",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=32",
+   "kind": "document",
+   "title": "PS5 SSD Controller Fuse and Current Measurement",
+   "ingested_utc": "2026-08-12T17:44:59Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [
+   "current draw in standby of 175 mA and then back to 10Ma"
+  ],
+  "codes": [
+   "F7520"
+  ],
+  "claims": [
+   {
+    "statement": "A current draw in standby of 175 mA and then back to 10Ma indicates a potentially bad SSD controller IC.",
+    "evidence": "Text description in the image.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A good working SSD circuit draws 310mA.",
+    "evidence": "Text description in the image.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "F7520",
+    "expect": "310",
+    "unit": "mA",
+    "context": "Good working SSD circuit",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "Remove fuse F7520 that feeds the voltage on the back to the voltage regulator that generates power for the SSD circuit before measuring current."
+  ],
+  "tags": [
+   "ssd",
+   "fuse",
+   "current draw",
+   "controller"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not specify the exact voltage or standby conditions required to achieve the 310mA reading, other than it being a 'good working SSD circuit'.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "F7520",
+    "mode": "current",
+    "expect_lo": 0.31,
+    "expect_hi": 0.31,
+    "unit": "A"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "F7520"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=32",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:09Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-12T23:15:11Z",
+ "reviewed_on": "robotto"
+}

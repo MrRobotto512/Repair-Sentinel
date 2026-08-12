@@ -1,0 +1,117 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Standby power voltage test points",
+  "source": {
+   "url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=24",
+   "kind": "document",
+   "title": "PS5 Standby Power Rails Voltage Map",
+   "ingested_utc": "2026-08-12T17:44:23Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS5"
+  ],
+  "symptoms": [],
+  "codes": [
+   ">EP GW<"
+  ],
+  "claims": [
+   {
+    "statement": "The board has specific test points for standby power rails.",
+    "evidence": "Arrows pointing to components and traces with associated voltage labels.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Top left component",
+    "expect": "+5.0",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "Top right component",
+    "expect": "+5.0",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "Bottom left component",
+    "expect": "+3.3",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   },
+   {
+    "point": "Bottom right trace",
+    "expect": "+1.8",
+    "unit": "V",
+    "context": "STBY",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps5",
+   "standby",
+   "voltage",
+   "power"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not specify the exact component pins or pads to probe, only general areas.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Top left component",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top right component",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom left component",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom right trace",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   ">EP GW<"
+  ],
+  "license": "unknown",
+  "source_url": "kb://How-to-repair-Playstation-5-1786316166.txt?figure=24",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-12T17:50:08Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-12T23:15:11Z",
+ "reviewed_on": "robotto"
+}
