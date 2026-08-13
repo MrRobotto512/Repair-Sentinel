@@ -1,0 +1,133 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Main Power Rail Low Resistance Diagnosed as Shorted High-Side MOSFET",
+  "source": {
+   "url": "https://www.youtube.com/watch?v=mlMJnWlkGo4",
+   "kind": "youtube",
+   "title": "Stop Injecting Voltage Until You Check This! — nanofix",
+   "ingested_utc": "2026-08-13T14:21:53Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "Low resistance on main power rail",
+   "Suspicious non-zero short resistance (e.g., 0.4 ohms to 15 o"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A low resistance or apparent short on the main 12V power rail is often caused by a shorted high-side MOSFET in a buck regulator rather than a direct short to ground.",
+    "evidence": "Resistance measurements between the main power rail and buck regulator outputs show continuity through a failed dual MOSFET.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Injecting voltage into the main power rail when a high-side MOSFET is shorted will feed 12V directly into sensitive components like the SOC.",
+    "evidence": "The high-side MOSFET shorts drain to source, bridging the 12V input directly to the switching node and the SOC rail.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check the resistance between the main power rail and the outputs of downstream buck regulator inductors to safely identify a shorted MOSFET before injecting voltage.",
+    "evidence": "Checking inductor outputs reveals whether the low resistance originates from a buck converter stage rather than a standard ground short.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A shorted high-side MOSFET can sometimes allow 12V to reach the SOC without permanently destroying it if protective measures or shut-downs occurred in time.",
+    "evidence": "Replacing the shorted MOSFET and the shorted South Bridge restored full functionality to the console.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "{'step': 'Measure the resistance on the main power rail to determine if a low resistance or dead short is present.'}",
+   "{'step': 'Check the resistance between the main power rail and the output side of known downstream buck regulator inductors.'}",
+   "{'step': 'Verify if there is direct continuity or very low resistance between the 12V input and the switching node of the dual MOSFETs.'}",
+   "{'step': 'Identify and replace any shorted dual MOSFETs or associated damaged ICs (such as the South Bridge) before applying power or voltage.'}"
+  ],
+  "measurements": [
+   {
+    "point": "Main power rail to ground (resistance mode)",
+    "expect": "0.4 to 15",
+    "unit": "ohms",
+    "context": "Apparent dead short or low resistance",
+    "mode": "resistance"
+   },
+   {
+    "point": "Main power rail to ground (diode mode)",
+    "expect": "0.0005",
+    "unit": "V",
+    "context": "Voltage drop showing apparent dead short",
+    "mode": "diode"
+   },
+   {
+    "point": "Main power rail to buck regulator output inductor",
+    "expect": "0.07",
+    "unit": "ohms",
+    "context": "Checking for high-side MOSFET short",
+    "mode": "resistance"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Bench power supply",
+   "Thermal camera"
+  ],
+  "cautions": [
+   "SOURCE RISK: Injecting voltage directly onto the main power rail without checking for a shorted high-side MOSFET can feed 12V into the SOC and permanently destroy the board."
+  ],
+  "tags": [
+   "ps5",
+   "buck-regulator",
+   "mosfet",
+   "short-circuit",
+   "voltage-injection",
+   "main-power-rail",
+   "soc",
+   "south-bridge"
+  ],
+  "confidence": "high",
+  "caveats": "A low resistance reading on a main power rail does not automatically mean a direct short to ground; always verify downstream buck converter outputs first.",
+  "component": "MOSFET (power rail)",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Main power rail to ground (resistance mode)",
+    "mode": "resistance",
+    "expect_lo": 0.4,
+    "expect_hi": 15.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Main power rail to ground (diode mode)",
+    "mode": "diode",
+    "expect_lo": 0.0005,
+    "expect_hi": 0.0005,
+    "unit": "V"
+   },
+   {
+    "point": "Main power rail to buck regulator output inductor",
+    "mode": "resistance",
+    "expect_lo": 0.07,
+    "expect_hi": 0.07,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "youtube-no-redistribution",
+  "source_url": "https://www.youtube.com/watch?v=mlMJnWlkGo4",
+  "provenance": "absorbed",
+  "quotes_stripped": 4
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T14:24:44Z"
+}
