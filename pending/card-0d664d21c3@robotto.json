@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch PCB Reverse Side overview",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=16",
+   "kind": "document",
+   "title": "Nintendo Switch Mainboard Reverse Side Overview",
+   "ingested_utc": "2026-08-13T16:06:13Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "HAC-CPU-01",
+   "KLMBG2JENB",
+   "THGBMHG8C2LBAIL",
+   "MAX77621",
+   "ALC5639",
+   "PI3USB30532"
+  ],
+  "claims": [
+   {
+    "statement": "The reverse side of the PCB includes a Maxim MAX77621 DC/DC converter, a Realtek ALC5639 audio codec, and a Pericom PI3USB30532 USB 3.0/DP1.2 3:2 matrix switch.",
+    "evidence": "Text description and board photo showing PCB Reverse Side",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Storage board can feature either Samsung KLMBG2JENB 32 GB eMMC or Toshiba THGBMHG8C2LBAIL 32 GB eMMC NAND Flash IC.",
+    "evidence": "Text description referencing iFixit findings",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "pcb",
+   "reverse side",
+   "motherboard",
+   "components"
+  ],
+  "confidence": "high",
+  "caveats": "Image is a top-down photographic overview showing component layout, not a schematic, voltage map, or diode reading chart.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "HAC-CPU-01",
+   "KLMBG2JENB",
+   "THGBMHG8C2LBAIL",
+   "MAX77621",
+   "ALC5639",
+   "PI3USB30532"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=16",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:42Z"
+}

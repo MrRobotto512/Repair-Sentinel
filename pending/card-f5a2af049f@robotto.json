@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Annotated circuit board layout showing key ICs, ports, and power management components for Nintendo Switch troubleshooti",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=11",
+   "kind": "document",
+   "title": "Nintendo Switch Component Identification Board Map",
+   "ingested_utc": "2026-08-13T16:05:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "BQ24072",
+   "P411TRA",
+   "NFCBEA",
+   "BCM20734",
+   "LSM6DS3",
+   "TLV62130",
+   "M92T36",
+   "MX25L512E",
+   "STDP2650",
+   "MX25V2006E"
+  ],
+  "claims": [
+   {
+    "statement": "Identifies component locations and part numbers on Nintendo Switch circuit boards.",
+    "evidence": "Annotated callouts pointing to specific ICs and ports on the board photos.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "boardview",
+   "component layout",
+   "ic identification"
+  ],
+  "confidence": "high",
+  "caveats": "This is a layout/identification reference and does not contain schematic voltage or resistance measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "BQ24072",
+   "P411TRA",
+   "NFCBEA",
+   "BCM20734",
+   "LSM6DS3",
+   "TLV62130",
+   "M92T36",
+   "MX25L512E",
+   "STDP2650",
+   "MX25V2006E"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=11",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:42Z"
+}

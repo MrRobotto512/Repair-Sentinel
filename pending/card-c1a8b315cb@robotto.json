@@ -1,0 +1,118 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Motherboard Pinouts and Component Specifications",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=8",
+   "kind": "document",
+   "title": "Nintendo Switch Checks",
+   "ingested_utc": "2026-08-13T15:58:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "blank screen",
+   "won't wake up from sleep mode",
+   "not charging",
+   "no turn on"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Resetting the official Nintendo AC adapter can fix a blank screen or a Switch that won't wake up from sleep mode.",
+    "evidence": "Unplugging the AC adapter for 30 seconds and plugging the USB-C directly into the Switch after replacing Joycons.",
+    "quote": "Nintendo recommends the following procedure if your Switch has a blank screen or won’t wake up from sleep mode: replace the Joycons into your Switch, unplug the AC adapter for at least 30 seconds, and plug the USB-C from",
+    "at": ""
+   },
+   {
+    "statement": "The dual channel MOSFET used as a buck regulator for the VBUS voltage is part number SSM6P49NU.",
+    "evidence": "Identified as a dc~dc converter to turn vbus voltage to 5v max.",
+    "quote": "UPDATE: So it's a dual channel MOSFET. SSM6P49NU",
+    "at": ""
+   },
+   {
+    "statement": "Replacing the charge port requires removing the back case, removing the motherboard, and using a hot air soldering tool with flux.",
+    "evidence": "Outlined in the DIY charge port replacement steps.",
+    "quote": "The Switch’s motherboard must then be removed from the console. The motherboard is the where the charging port is located and, once the board is removed from the system, you can replace the broken charging port.",
+    "at": ""
+   },
+   {
+    "statement": "Values measured in circuit on the pinouts must be removed and tested again for comparison.",
+    "evidence": "Stated in the notes regarding in-circuit measurements.",
+    "quote": "Attention the values in the picture are measured in circuit, can only be used for comparison of the values on board, so must by removed and tested again.",
+    "at": ""
+   },
+   {
+    "statement": "Changing the 5.6kohm resistor to 10k causes the bq24193 to fail to charge the battery because the charging temperature set point is out of range.",
+    "evidence": "Explanation of temperature setting resistors for charging.",
+    "quote": "For example if you replace the 5.6kohm resistor with 10k ,bq 24193 will not charge the battery because the temp set for charghing will bee out of range.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace the Joycons into your Nintendo Switch.",
+   "Unplug the AC adapter for at least 30 seconds.",
+   "Plug the USB-C cable from the AC adapter directly into the Switch.",
+   "Remove the back case of the Switch by taking out all the screws.",
+   "Remove the motherboard from the console.",
+   "Add soldering flux to all connection points of the broken charging port.",
+   "Carefully heat up the charging port connection points with a hot air soldering tool until the port can be gently pulled up.",
+   "Heat up the pins on the motherboard to melt the solder and attach the new charging port.",
+   "Replace the motherboard into the Nintendo Switch.",
+   "Re-attach the back cover on the console."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering station",
+   "hot air soldering tool",
+   "soldering flux",
+   "multimeter",
+   "USB-C to USB-C charging cable"
+  ],
+  "cautions": [
+   "SOURCE RISK: Be careful not to let the motherboard bubble from overheating when using hot air on the charge port.",
+   "Values measured in circuit can only be used for comparison and must be removed to be tested accurately."
+  ],
+  "tags": [
+   "nintendo switch",
+   "pinouts",
+   "ssm6p49nu",
+   "bq24193",
+   "m92t36",
+   "charge port",
+   "motherboard",
+   "pmic",
+   "max77621",
+   "alc5639"
+  ],
+  "confidence": "high",
+  "caveats": "In-circuit measurements provided in pinout tables are for comparison only and components must be removed for accurate testing.",
+  "component": "USB-C Port",
+  "part_numbers": [
+   "SSM6P49NU",
+   "ALC5639",
+   "M92T36",
+   "BQ24193",
+   "KLMBG2JENB",
+   "THGBMHG8C2LBAIL",
+   "MAX77621",
+   "PI3USB30532",
+   "FT9CJ",
+   "ODNX02-A2"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=8",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:41Z"
+}

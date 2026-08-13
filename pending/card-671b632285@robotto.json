@@ -1,0 +1,64 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Motherboard Top Side Component Identification",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=17",
+   "kind": "document",
+   "title": "Nintendo Switch Motherboard Component Identification",
+   "ingested_utc": "2026-08-13T16:06:40Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "ODNX02-A2",
+   "K4F6E304HB-MGCH",
+   "BCM4356",
+   "MAX77621AEWI+T",
+   "M92T36"
+  ],
+  "claims": [
+   {
+    "statement": "The motherboard features an NVIDIA ODNX02-A2 SoC, Samsung K4F6E304HB-MGCH DRAM, Broadcom/Cypress BCM4356 wireless IC, Maxim Integrated MAX77621AEWI+T buck regulator, and M92T36 power management IC.",
+    "evidence": "Annotated top side view of the motherboard and accompanying text list.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "motherboard",
+   "ic layout",
+   "components",
+   "top side"
+  ],
+  "confidence": "high",
+  "caveats": "The image shows component locations and identification but does not provide voltage, resistance, or diode measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "ODNX02-A2",
+   "K4F6E304HB-MGCH",
+   "BCM4356",
+   "MAX77621AEWI+T",
+   "M92T36"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=17",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:42Z"
+}

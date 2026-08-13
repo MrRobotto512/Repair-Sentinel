@@ -1,0 +1,175 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Motherboard Short Circuit and M92T36 Diagnostic Procedure",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=3",
+   "kind": "document",
+   "title": "Nintendo Switch Checks",
+   "ingested_utc": "2026-08-13T15:58:17Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "No Boot",
+   "no charge",
+   "No Image",
+   "blank screen"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The USB charger fuse can be tested for continuity with a multimeter to verify power path to the battery chip.",
+    "evidence": "Continuity across both sides of the fuse indicates a good fuse; lack of continuity means it must be replaced.",
+    "quote": "Lets check the fuse that lets power from USB C reach the battery chip. Unplug the battery. With a multimeter set to continuity mode, put one probe in one side of the fuse and the other probe in the other side of the fuse",
+    "at": ""
+   },
+   {
+    "statement": "BQ24193 charge controller operation can be verified by checking battery voltage rise after 30 minutes of charging.",
+    "evidence": "If battery voltage increases after 30 minutes on the charger, the BQ24193 is functioning.",
+    "quote": "If the voltage after 30 minutes is higher than it was, you can assume that your console is charging so the BQ24193 is fine.",
+    "at": ""
+   },
+   {
+    "statement": "Capacitors shorted to ground on both sides indicate a shorted rail or bad component.",
+    "evidence": "Checking capacitors with a multimeter in continuity mode against ground shows continuity on only one side normally; continuity on both sides indicates a short.",
+    "quote": "It's supposed to have continuity in one of the sides of the capacitor, continuity in both sides of the capacitor means short to ground.",
+    "at": ""
+   },
+   {
+    "statement": "Pin 5 and Pin 6 of the M92T36 chip can be tested for input and output voltages using DC voltage mode.",
+    "evidence": "Pin 5 and Pin 6 should read between 3v to 6v; 0v on pin 6 indicates a bad M92T36 chip.",
+    "quote": "Put the main board back in the switch frame... touch the pin 5 of M92T36... In that pin you are supposed to have 3v to 6v... 0v in pin 6 means M92T36 is bad.",
+    "at": ""
+   },
+   {
+    "statement": "A faulty PI3USB30532 or dead CPU can cause the console to fail payload injection into RCM mode if the firmware/screen is otherwise okay.",
+    "evidence": "If Hekate payload fails via RCM, the PI3USB30532 may be bad or the CPU is dead.",
+    "quote": "If even the payload method failed, you probably will have a PI3USB30532 bad or the CPU is just dead af.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug the battery and check the USB-C fuse for continuity using a multimeter.",
+   "Test BQ24193 voltages or monitor battery voltage increase after 30 minutes of charging.",
+   "Check capacitors and M92T36 pins for shorts to ground using a multimeter in continuity mode with the black probe on a good ground.",
+   "Test M92T36 pin 5 and pin 6 input/output voltages using a multimeter set to DC voltage.",
+   "Visually inspect the screen and backlight ribbon cables and connectors.",
+   "Attempt to boot into RCM mode and inject the latest Hekate payload if the screen remains black."
+  ],
+  "measurements": [
+   {
+    "point": "USB Charger Fuse",
+    "expect": "Continuity",
+    "unit": "",
+    "context": "Continuity check across fuse",
+    "mode": "continuity"
+   },
+   {
+    "point": "BQ24193 Pin 1 (VBus)",
+    "expect": "5v-15v",
+    "unit": "V",
+    "context": "Depending on charger",
+    "mode": "voltage"
+   },
+   {
+    "point": "BQ24193 Pin 2",
+    "expect": "low",
+    "unit": "",
+    "context": "Using Nintendo charger",
+    "mode": ""
+   },
+   {
+    "point": "BQ24193 Pin 3",
+    "expect": "0v",
+    "unit": "V",
+    "context": "Should be low",
+    "mode": "voltage"
+   },
+   {
+    "point": "M92T36 Pin 5",
+    "expect": "3v to 6v",
+    "unit": "V",
+    "context": "Input voltage line",
+    "mode": "voltage"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "expect": "3v to 6v",
+    "unit": "V",
+    "context": "Output voltage line",
+    "mode": "voltage"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Fine-tip multimeter probe or soldered paper pin",
+   "Soldering station"
+  ],
+  "cautions": [
+   "SOURCE RISK: Using third-party docks or non-standard USB-C cables can damage the charging port or brick the console."
+  ],
+  "tags": [
+   "nintendo switch",
+   "m92t36",
+   "bq24193",
+   "pi3usb30532",
+   "short circuit",
+   "charging issue",
+   "no power",
+   "rcm mode"
+  ],
+  "confidence": "high",
+  "caveats": "If capacitors behind the CPU show a short to ground, the board is likely unrepairable.",
+  "component": "Charge IC",
+  "part_numbers": [
+   "BQ24193",
+   "PI3USB30532",
+   "SSM6P49NU",
+   "0438035WRA"
+  ],
+  "readings": [
+   {
+    "point": "BQ24193 Pin 1 (VBus)",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "BQ24193 Pin 3",
+    "mode": "voltage",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "M92T36 Pin 5",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=3",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:40Z"
+}
