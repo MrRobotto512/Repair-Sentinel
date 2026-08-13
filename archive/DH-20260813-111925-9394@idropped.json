@@ -90,5 +90,8 @@
  "origin": {
   "bench": "idropped"
  },
- "queued_utc": "2026-08-13T17:08:05Z"
+ "queued_utc": "2026-08-13T17:08:05Z",
+ "verdict": "info",
+ "reviewed_utc": "2026-08-13T21:39:55Z",
+ "reviewed_on": "robotto"
 }
