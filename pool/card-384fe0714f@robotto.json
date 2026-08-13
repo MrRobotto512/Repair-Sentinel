@@ -129,5 +129,8 @@
  "origin": {
   "bench": "robotto"
  },
- "queued_utc": "2026-08-13T14:24:44Z"
+ "queued_utc": "2026-08-13T14:24:44Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T14:24:55Z",
+ "reviewed_on": "robotto"
 }
