@@ -1,0 +1,63 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Top view of HAC-EMMC-01 board with Samsung KLMBG2JENB 32 GB eMMC storage chip",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=15",
+   "kind": "document",
+   "title": "Nintendo Switch HAC-EMMC-01 Board with Samsung eMMC Chip",
+   "ingested_utc": "2026-08-13T16:05:51Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "HAC-EMMC-01",
+   "KLMBG2JENB"
+  ],
+  "claims": [
+   {
+    "statement": "The HAC-EMMC-01 board contains the Samsung KLMBG2JENB 32 GB eMMC storage chip used in Nintendo Switch.",
+    "evidence": "Board text shows 'HAC-EMMC-01' and IC markings show 'SEC 640 B041 KLMBG2JENB S4V32MGFS'.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "emmc",
+   "hac-emmc-01",
+   "samsung",
+   "klmbg2jenb",
+   "storage"
+  ],
+  "confidence": "high",
+  "caveats": "This is a component identification view showing top side of the board and IC markings. No voltage or diode measurement values are shown.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "HAC-EMMC-01",
+   "KLMBG2JENB"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=15",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:42Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

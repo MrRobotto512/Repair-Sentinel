@@ -1,0 +1,64 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Mainboard Annotated Test Points and Connector Pinouts",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=8",
+   "kind": "document",
+   "title": "Nintendo Switch Mainboard Test Points and Connectors",
+   "ingested_utc": "2026-08-13T16:05:32Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "HAC-CPU-01",
+   "THGBMHG8C2LBAIL",
+   "M92T36"
+  ],
+  "claims": [
+   {
+    "statement": "The mainboard features multiple numbered test point regions and connector pinouts labeled with letters and numbers.",
+    "evidence": "Red rectangular callouts enclosing numbered points such as 1 through 7 across various sections of the board.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "mainboard",
+   "test points",
+   "pinouts",
+   "boardview"
+  ],
+  "confidence": "high",
+  "caveats": "The image shows locations and pin numbering for various connectors and test regions but does not provide voltage or resistance values.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "HAC-CPU-01",
+   "THGBMHG8C2LBAIL",
+   "M92T36"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=8",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:42Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

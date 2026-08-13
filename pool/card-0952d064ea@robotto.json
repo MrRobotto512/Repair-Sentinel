@@ -1,0 +1,190 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Charging, Power, and M92T36/PI3USB Diagnostic & Repair Guide",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=7",
+   "kind": "document",
+   "title": "Nintendo Switch Checks",
+   "ingested_utc": "2026-08-13T15:58:35Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "No Boot",
+   "No Charge",
+   "No Display",
+   "Blank Screen",
+   "Freezes",
+   "No HDMI Output"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "If the USB charger fuse has no continuity across it, it must be replaced.",
+    "evidence": "Continuity test across the fuse shows an open circuit.",
+    "quote": "With a multimeter set to continuity mode, put one probe in one side of the fuse and the other probe in the other side of the fuse. If there is continuity, good, go to step 2, if not you will need to buy that fuse and rep",
+    "at": ""
+   },
+   {
+    "statement": "Pin 1 of BQ24193 VBus should read high between 5V and 15V depending on the charger.",
+    "evidence": "Voltage measurement on BQ24193 pin 1 when connected to a charger.",
+    "quote": "Pin 1 VBus should be high 5v-15v depending on charger",
+    "at": ""
+   },
+   {
+    "statement": "Continuity on both sides of a capacitor when checked against ground indicates a short to ground.",
+    "evidence": "Multimeter in continuity mode showing beeps or 0 ohms on both terminals relative to ground.",
+    "quote": "continuity in both sides of the capacitor means short to ground.",
+    "at": ""
+   },
+   {
+    "statement": "M92T36 pin 5 input line should measure between 3V and 6V when the battery is connected and power button clicked.",
+    "evidence": "DC voltage measurement with black probe on ground and red probe on pin 5 or its trace capacitor.",
+    "quote": "In that pin you are supposed to have 3v to 6v. If you have 0v or less, you have a short on that line, since pin 5 is an input line, the short comes back from that line.",
+    "at": ""
+   },
+   {
+    "statement": "M92T36 pin 6 output voltage should measure between 3V and 6V; 0V indicates a bad M92T36 chip.",
+    "evidence": "DC voltage measurement on pin 6 or its trace capacitor.",
+    "quote": "its suppose to have between 3v to 6v. 0v in pin 6 means M92T36 is bad.",
+    "at": ""
+   },
+   {
+    "statement": "If payload injection via RCM mode fails to boot hekate and screen remains black, the PI3USB30532 is likely bad or the CPU is dead.",
+    "evidence": "Attempting RCM injection on units below firmware 7.x.x.",
+    "quote": "If even the payload method failed, you probably will have a PI3USB30532 bad or the CPU is dead af.",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug the battery before checking the USB charger fuse with a multimeter in continuity mode.",
+   "Measure battery cable voltages to determine if the BQ24193 is charging the battery after leaving it plugged in for 30 minutes.",
+   "Unplug the battery, remove motherboard peripherals, and check capacitors and M92T36 pins for shorts to ground using a multimeter in continuity mode.",
+   "Check M92T36 pin 5 and pin 6 (or their corresponding trace capacitors) for 3V to 6V DC voltage with the battery connected and power button pressed.",
+   "Remove the broken USB-C charging port using a hot air soldering tool and flux, taking care not to overheat the motherboard.",
+   "Attach the new charging port onto the pins by slowly heating the solder on the board."
+  ],
+  "measurements": [
+   {
+    "point": "BQ24193 Pin 1 (VBus)",
+    "expect": "5 to 15",
+    "unit": "V",
+    "context": "Depending on charger",
+    "mode": "voltage"
+   },
+   {
+    "point": "BQ24193 Pin 2",
+    "expect": "low",
+    "unit": "",
+    "context": "Using Nintendo charger",
+    "mode": ""
+   },
+   {
+    "point": "BQ24193 Pin 3",
+    "expect": "0",
+    "unit": "V",
+    "context": "Should be low",
+    "mode": "voltage"
+   },
+   {
+    "point": "M92T36 Pin 5",
+    "expect": "3 to 6",
+    "unit": "V",
+    "context": "Input line voltage with battery connected and power clicked",
+    "mode": "voltage"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "expect": "3 to 6",
+    "unit": "V",
+    "context": "Output line voltage with battery connected and power clicked",
+    "mode": "voltage"
+   }
+  ],
+  "tools": [
+   "Multimeter",
+   "Hot air soldering station",
+   "Soldering flux",
+   "Fine-tip multimeter probe"
+  ],
+  "cautions": [
+   "SOURCE RISK: Using third-party docks or non-standard USB-C cables can cause charging port failure or brick the console.",
+   "SOURCE RISK: Overheating the motherboard with hot air during USB-C port removal can cause the board to bubble.",
+   "SOURCE RISK: Changing resistor values around the BQ24193 (such as replacing a 5.6k ohm resistor with 10k) will put the charging temperature set out of range."
+  ],
+  "tags": [
+   "nintendo switch",
+   "m92t36",
+   "bq24193",
+   "pi3usb30532",
+   "usb-c",
+   "no charge",
+   "short to ground",
+   "fuse",
+   "charging port",
+   "max77621"
+  ],
+  "confidence": "high",
+  "caveats": "In-circuit measurements can only be used for comparison; components may need to be removed to obtain true standalone test values.",
+  "component": "USB-C Port",
+  "part_numbers": [
+   "0438035WRA",
+   "BQ24193",
+   "M92T36",
+   "PI3USB30532",
+   "MAX77621",
+   "ALC5639",
+   "MAX77620",
+   "FT9CJ",
+   "KLMBG2JENB",
+   "THGBMHG8C2LBAIL"
+  ],
+  "readings": [
+   {
+    "point": "BQ24193 Pin 1 (VBus)",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 15.0,
+    "unit": "V"
+   },
+   {
+    "point": "BQ24193 Pin 3",
+    "mode": "voltage",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "M92T36 Pin 5",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 6.0,
+    "unit": "V"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 6.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=7",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:41Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

@@ -1,0 +1,128 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch M92T36 IC surrounding components and voltage rails",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=9",
+   "kind": "document",
+   "title": "Nintendo Switch M92T36 area schematic and voltage test points",
+   "ingested_utc": "2026-08-13T16:05:35Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "HAC-CPU-01",
+   "M92T36"
+  ],
+  "claims": [
+   {
+    "statement": "Board features specific voltage test points including 3.3v, 1.8v, 4v permanent, and 5v.",
+    "evidence": "Color-coded legend at top-left with corresponding dots on the motherboard image",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Surrounding components of the M92T36 IC have specified values and may not be fitted on all variants.",
+    "evidence": "Zoomed-in callout with component value labels pointing to specific passives around the M92T36 IC",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "3.3v",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "voltage rail",
+    "mode": ""
+   },
+   {
+    "point": "1.8v",
+    "expect": "1.8",
+    "unit": "V",
+    "context": "voltage rail",
+    "mode": ""
+   },
+   {
+    "point": "4v permanent",
+    "expect": "4",
+    "unit": "V",
+    "context": "voltage rail",
+    "mode": ""
+   },
+   {
+    "point": "5v",
+    "expect": "5",
+    "unit": "V",
+    "context": "voltage rail",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "Layout may differ slightly between variant / board version"
+  ],
+  "tags": [
+   "nintendo switch",
+   "m92t36",
+   "voltage",
+   "boardview",
+   "power"
+  ],
+  "confidence": "high",
+  "caveats": "Exact schematic connections are not detailed beyond component values and general voltage rail locations.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "3.3v",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "1.8v",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "4v permanent",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   },
+   {
+    "point": "5v",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "HAC-CPU-01",
+   "M92T36"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=9",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:42Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

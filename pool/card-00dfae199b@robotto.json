@@ -1,0 +1,148 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch PI3USB30532 and M92T36 Diagnostic and Repair Guide",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=5",
+   "kind": "document",
+   "title": "Nintendo Switch Checks",
+   "ingested_utc": "2026-08-13T15:58:26Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "No Boot",
+   "no charge",
+   "no image on HDMI docking",
+   "screen blank",
+   "system freezes"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Pin 5 of M92T36 is an input line that should measure between 3V to 6V, and 0V or less indicates a short on that line.",
+    "evidence": "Voltage measurement on pin 5 or its connecting capacitor.",
+    "quote": "In that pin you are supposed to have 3v to 6v. If you have 0v or less, you have a short on that line, since pin 5 is an input line, the short comes back from that line.",
+    "at": ""
+   },
+   {
+    "statement": "Pin 6 of M92T36 is the output voltage line and should measure between 3V to 6V, and 0V indicates a bad M92T36 chip.",
+    "evidence": "Voltage measurement on pin 6 or its connecting capacitor.",
+    "quote": "Now you need to check the output voltage that is pin 6... and its suppose to have between 3v to 6v. 0v in pin 6 means M92T36 is bad.",
+    "at": ""
+   },
+   {
+    "statement": "The M92T36 chip negotiates power through the USB-C port, which handles charging and HDMI video out.",
+    "evidence": "Functional description of chip behavior.",
+    "quote": "M92T36 chip is responsible for negotiating power through the USB-C port, which happens to also be the port through which HDMI out video passes through.",
+    "at": ""
+   },
+   {
+    "statement": "Pin 2 of the M92T36 (VSTR/ATST2) measures battery voltage and charge; failing to receive an analog signal can cause the system to freeze in a loop.",
+    "evidence": "Observed behavior when pin reads unknown values.",
+    "quote": "pin 2 of the chip labelled VSTR/ATST2 is responsible for \"Analog TEST/ Debug Pin2\", it looks like this pin s responsible for measuring the battery voltage and thus its charge.",
+    "at": ""
+   },
+   {
+    "statement": "If payload injection via hekate fails, the PI3USB30532 is likely bad or the CPU is dead.",
+    "evidence": "Troubleshooting outcomes following RCM payload attempts.",
+    "quote": "If even the payload method failed, you probably will have a PI3USB30532 bad or the CPU is just dead af.",
+    "at": ""
+   },
+   {
+    "statement": "Ferrite filters and passives around the PI3USB30532 must be checked for uniform continuity and impedance when troubleshooting dock video output issues.",
+    "evidence": "Continuity and impedance checks with a meter.",
+    "quote": "Check around the passives around PI3USB. In particular the ferrite filters. These aren’t the strongest! Bell them with a meter / check impedance / continuity is uniform with all of them",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Put the main board back in the switch frame and connect the battery.",
+   "Set the multimeter to DC Voltage.",
+   "Place the black probe to a ground and touch pin 5 or its connected capacitor of the M92T36 to verify 3V to 6V.",
+   "Check output voltage on pin 6 or its connected capacitor to verify 3V to 6V.",
+   "Visually inspect the screen ribbon cable, backlight ribbon cable, and connectors.",
+   "Attempt to enter RCM mode and inject the latest hekate payload if the console does not display image.",
+   "Inspect the PI3USB30532 chip pin pads and check coil continuity in parallel but not in cross.",
+   "Remove the back case and motherboard using hot air soldering tools with flux when replacing a broken charging port."
+  ],
+  "measurements": [
+   {
+    "point": "M92T36 Pin 5",
+    "expect": "3 to 6",
+    "unit": "V",
+    "context": "Input line voltage",
+    "mode": "voltage"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "expect": "3 to 6",
+    "unit": "V",
+    "context": "Output line voltage",
+    "mode": "voltage"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "fine tip probe",
+   "hot air soldering tool",
+   "soldering flux",
+   "LC tester"
+  ],
+  "cautions": [
+   "SOURCE RISK: Probing live pins with standard thick multimeter probes risks slipping and causing shorts; use fine tips or a soldered paper pin."
+  ],
+  "tags": [
+   "nintendo switch",
+   "pi3usb30532",
+   "m92t36",
+   "no boot",
+   "no charge",
+   "hdmi out",
+   "rcm",
+   "hekate",
+   "charging port"
+  ],
+  "confidence": "high",
+  "caveats": "Console behavior and version-specific workarounds like firmware 7.x.x procedures apply strictly based on software state.",
+  "component": "PI3USB30532",
+  "part_numbers": [
+   "PI3USB30532",
+   "M92T36",
+   "ALC5639",
+   "SSM6P49NU"
+  ],
+  "readings": [
+   {
+    "point": "M92T36 Pin 5",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 6.0,
+    "unit": "V"
+   },
+   {
+    "point": "M92T36 Pin 6",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 6.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?topic=5",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:41Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

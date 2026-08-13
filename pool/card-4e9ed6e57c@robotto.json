@@ -1,0 +1,65 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Motherboard Component Identification and Capacitor Specifications",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=5",
+   "kind": "document",
+   "title": "Nintendo Switch Motherboard Component Identification Map",
+   "ingested_utc": "2026-08-13T16:05:06Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "ODN002-A2",
+   "HAC-CPU-01",
+   "503566-1100"
+  ],
+  "claims": [
+   {
+    "statement": "The charging port (Molex 503566-1100) is soldered onto the motherboard and requires a hot air soldering tool for replacement.",
+    "evidence": "Text description and annotated charging port connector.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "motherboard",
+   "components",
+   "charging port",
+   "capacitors",
+   "resistors"
+  ],
+  "confidence": "high",
+  "caveats": "The image shows component callouts and text instructions for replacing the charging port, but does not provide voltage or resistance measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "ODN002-A2",
+   "HAC-CPU-01",
+   "503566-1100"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=5",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:41Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

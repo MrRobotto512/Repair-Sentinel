@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Cluster L Pinout and Trace Map for Nintendo Switch SD Card Reader",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=6",
+   "kind": "document",
+   "title": "Nintendo Switch SD Card Reader Pinout and Trace Map",
+   "ingested_utc": "2026-08-13T16:05:28Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [],
+  "codes": [
+   "HAC-SD",
+   "CLUSTER L"
+  ],
+  "claims": [
+   {
+    "statement": "Pad 3 of Cluster L should have 3v",
+    "evidence": "Pad 3 Comment column states 'Should have 3v'",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Pad 4 holds steady @ 0, looks like a decoupled isolated ground",
+    "evidence": "Pad 4 Comment column states 'Holds steady @ 0, looks like a decoupled isolated ground'",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Pad 5 has a frequency of <1 Hz and Duty cycle ~0%",
+    "evidence": "Pad 5 Frequency column states '<1 Hz' and Comment column states 'Duty cycle ~0%'",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "3",
+    "expect": "3",
+    "unit": "V",
+    "context": "Li-Ion Batt Vdd",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "sd card",
+   "connector",
+   "pinout",
+   "voltage",
+   "trace map",
+   "cluster l"
+  ],
+  "confidence": "high",
+  "caveats": "TODO: Update diagram note is present at the top.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "3",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "HAC-SD",
+   "CLUSTER L"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=6",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:41Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch SSM6P49NU buck regulator and charging troubleshooting guide",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=4",
+   "kind": "document",
+   "title": "Identification of SSM6P49NU MOSFET on Nintendo Switch motherboard",
+   "ingested_utc": "2026-08-13T16:05:03Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "blank screen",
+   "won't wake up from sleep mode",
+   "not charging"
+  ],
+  "codes": [
+   "SSM6P49NU"
+  ],
+  "claims": [
+   {
+    "statement": "Nintendo recommends resetting the official AC adapter by unplugging it for at least 30 seconds and plugging the USB-C directly into the Switch if there is a blank screen or it won't wake up from sleep mode.",
+    "evidence": "Text at the top of the image detailing the reset procedure.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The SSM6P49NU is a dual channel MOSFET acting as a dc-dc converter/buck regulator to step down vbus voltage (20v max) to 5v max on that rail.",
+    "evidence": "Text next to the green board close-up referencing the pointed IC and stating 'UPDATE: So it's a dual channel MOSFET. SSM6P49NU'.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "charging",
+   "buck regulator",
+   "mosfet",
+   "ssm6p49nu",
+   "vbus"
+  ],
+  "confidence": "high",
+  "caveats": "Does not show explicit pinout measurements or schematic diagrams for the SSM6P49NU.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "SSM6P49NU"
+  ],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=4",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:41Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}

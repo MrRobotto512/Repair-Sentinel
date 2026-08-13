@@ -1,0 +1,77 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch charging port and power issues guide with capacitor identification",
+  "source": {
+   "url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=3",
+   "kind": "document",
+   "title": "Nintendo Switch video filter and capacitor identification",
+   "ingested_utc": "2026-08-13T16:05:01Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "Nintendo Switch won't turn on",
+   "screen is blank",
+   "Switch recognized while docked but then you don't see image",
+   "charging port won't work"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Red box on left 100nF x 2 for marked CAPS - 0201",
+    "evidence": "Annotated board photo with red boxes on capacitors",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The other 100pF",
+    "evidence": "Annotated board photo",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "They smooth the signal between the power rails and VBUS and if you get the Switch recognized while docked but then you don't see image, they are probably the issue",
+    "evidence": "Text description next to the board photo",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [
+   "Third-party docks can cause charging ports to fail or brick consoles",
+   "Use of any USB-C cable that isn't the one included with the console, the pro controller, or the Joycon charging grip can result in permanent damage or a slower charging cycle"
+  ],
+  "tags": [
+   "nintendo switch",
+   "charging",
+   "power",
+   "capacitors",
+   "0201",
+   "filters"
+  ],
+  "confidence": "high",
+  "caveats": "Exact schematic pinout and precise circuit diagram are not fully displayed.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://Nintendo-Switch-Checks-1786636678.txt?figure=3",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T16:14:41Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T16:33:03Z",
+ "reviewed_on": "robotto"
+}
