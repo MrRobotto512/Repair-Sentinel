@@ -1,0 +1,125 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Three transistors voltage and resistance measurements on PlayStation 4 motherboard",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=35",
+   "kind": "document",
+   "title": "PlayStation 4 Transistor Voltage and Resistance Measurement Map",
+   "ingested_utc": "2026-08-13T15:34:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4",
+   "PlayStation 4"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Expected measurements for three transistors on the PlayStation 4 motherboard",
+    "evidence": "Image shows three transistors with pointed arrows indicating expected voltage and resistance measurements.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "top center transistor",
+    "expect": "+35",
+    "unit": "kohm",
+    "context": "resistance measurement",
+    "mode": ""
+   },
+   {
+    "point": "top center transistor",
+    "expect": "+3,3",
+    "unit": "Von",
+    "context": "voltage measurement",
+    "mode": ""
+   },
+   {
+    "point": "bottom left transistor",
+    "expect": "+9",
+    "unit": "kohm",
+    "context": "resistance measurement",
+    "mode": ""
+   },
+   {
+    "point": "bottom middle transistor",
+    "expect": "+9",
+    "unit": "kohm",
+    "context": "resistance measurement",
+    "mode": ""
+   },
+   {
+    "point": "bottom right transistor",
+    "expect": "+9",
+    "unit": "kohm",
+    "context": "resistance measurement",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps4",
+   "transistor",
+   "voltage",
+   "resistance"
+  ],
+  "confidence": "high",
+  "caveats": "Does not show component designators for the transistors.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "top center transistor",
+    "mode": "resistance",
+    "expect_lo": 35000.0,
+    "expect_hi": 35000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "top center transistor",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "Von"
+   },
+   {
+    "point": "bottom left transistor",
+    "mode": "resistance",
+    "expect_lo": 9000.0,
+    "expect_hi": 9000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "bottom middle transistor",
+    "mode": "resistance",
+    "expect_lo": 9000.0,
+    "expect_hi": 9000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "bottom right transistor",
+    "mode": "resistance",
+    "expect_lo": 9000.0,
+    "expect_hi": 9000.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=35",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:37Z"
+}

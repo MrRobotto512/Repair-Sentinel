@@ -1,0 +1,134 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "S25FL256L NOR flash memory measurements and signals",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=25",
+   "kind": "document",
+   "title": "S25FL256L NOR Flash Memory Measurement and Pinout Guide",
+   "ingested_utc": "2026-08-13T15:24:23Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "S25FL256L",
+   "FL256LAIF01",
+   "CXD90046GG"
+  ],
+  "claims": [
+   {
+    "statement": "Check nor / bios pins with oscilloscope and see if there is communication going into the BIOS and also out of the BIOS.",
+    "evidence": "Text instructions on the left",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "CS#",
+    "expect": "+20",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "SO / IO1",
+    "expect": "+60",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "VCC",
+    "expect": "+15",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "SI / IO0",
+    "expect": "+60",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "VCC pin",
+    "expect": "+3,3",
+    "unit": "V",
+    "context": "voltage",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "nor flash",
+   "bios",
+   "oscilloscope",
+   "diode",
+   "voltage",
+   "resistance"
+  ],
+  "confidence": "high",
+  "caveats": "Not all pin-level diode values are legible on the chip package.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "CS#",
+    "mode": "resistance",
+    "expect_lo": 20000.0,
+    "expect_hi": 20000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "SO / IO1",
+    "mode": "resistance",
+    "expect_lo": 60000.0,
+    "expect_hi": 60000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "VCC",
+    "mode": "resistance",
+    "expect_lo": 15000.0,
+    "expect_hi": 15000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "SI / IO0",
+    "mode": "resistance",
+    "expect_lo": 60000.0,
+    "expect_hi": 60000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "VCC pin",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "S25FL256L",
+   "FL256LAIF01",
+   "CXD90046GG"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=25",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z"
+}

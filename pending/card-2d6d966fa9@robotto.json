@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS4 +1.1Vcpu voltage rail measurement",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=19",
+   "kind": "document",
+   "title": "+1.1Vcpu Phase Capacitors and Resistance",
+   "ingested_utc": "2026-08-13T15:19:58Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "76APV P",
+   "018"
+  ],
+  "claims": [
+   {
+    "statement": "+1.1Vcpu comes from a separate phase (1 of the 6 phases)",
+    "evidence": "Red text box with arrow pointing to the components and text \"+1,1 Vcpu comes from a seperate phase (1 of the 6 phases)\"",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Test point near the capacitors",
+    "expect": "1,9",
+    "unit": "ohm",
+    "context": "Resistance measurement",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "cpu voltage",
+   "vrm",
+   "phase"
+  ],
+  "confidence": "high",
+  "caveats": "The specific test point is not explicitly labeled with a code, but is indicated by a blue arrow. The components are labeled with codes, but their exact function is inferred from the title and technician's description.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Test point near the capacitors",
+    "mode": "resistance",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "76APV P",
+   "018"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=19",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z"
+}

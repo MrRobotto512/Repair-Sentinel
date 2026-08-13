@@ -1,0 +1,106 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 4 Standby Boot Sequence Current Draw Diagnostics",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=2",
+   "kind": "document",
+   "title": "PS4 Troubleshooting and Diagnostic info",
+   "ingested_utc": "2026-08-13T15:08:23Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [
+   "No Boot",
+   "No Power"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The normal standby boot sequence current draw goes from 23mA to 125mA and then to 30mA when pins 1 and 4 of the +5Vstby connector are connected to a power supply.",
+    "evidence": "Monitoring current draw during standby boot sequence.",
+    "quote": "The normal boot sequence should be: 1e = 23mA 2e = 125mA 3e = 30mA",
+    "at": ""
+   },
+   {
+    "statement": "If the current draw stays at 99mA with no boot, it could mean that the southbridge is bad, and the 32Khz crystal should be checked for oscillation.",
+    "evidence": "Current draw stuck at 99mA.",
+    "quote": "If it stays at 99mA with no boot it could mean that the southbridge is bad. Check the 32Khz crystal if it oscillates. If the 32Khz signal is missing, then replace the southbridge clean flux of the board.",
+    "at": ""
+   },
+   {
+    "statement": "If the current draw stays at 7mA with no boot, it could mean that the southbridge is not working or sending a control signal to the transistor.",
+    "evidence": "Current draw stuck at 7mA.",
+    "quote": "If it stays at 7mA with no boot it could mean that the southbridge is not working or sending a control signal to the transistor",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Connect PIN 1 and 4 of the +5Vstby connector to the positive terminal of your power supply.",
+   "Set the voltage to +5V and monitor the current draw.",
+   "Compare the observed current draw against the normal boot sequence values to diagnose southbridge or crystal faults."
+  ],
+  "measurements": [
+   {
+    "point": "PIN 1 (+5VSB)",
+    "expect": "+5",
+    "unit": "V",
+    "context": "standby connector",
+    "mode": "voltage"
+   },
+   {
+    "point": "PIN 4 (+5VSB enable)",
+    "expect": "+5",
+    "unit": "V",
+    "context": "standby connector",
+    "mode": "voltage"
+   }
+  ],
+  "tools": [
+   "DC power supply"
+  ],
+  "cautions": [],
+  "tags": [
+   "playstation 4",
+   "ps4",
+   "current draw",
+   "boot sequence",
+   "southbridge",
+   "32khz crystal",
+   "standby"
+  ],
+  "confidence": "high",
+  "caveats": "Current draw values must be observed precisely during the initial standby stages to correctly identify southbridge or oscillator faults.",
+  "component": "Southbridge",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "PIN 1 (+5VSB)",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "PIN 4 (+5VSB enable)",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=2",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:34Z"
+}

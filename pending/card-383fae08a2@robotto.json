@@ -1,0 +1,161 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "APU Decoupling Capacitor Impedance Measurement on PS4",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=18",
+   "kind": "document",
+   "title": "PlayStation 4 APU Impedance Measurement Map",
+   "ingested_utc": "2026-08-13T15:19:40Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Measure the impedance of the capacitors to check health of the APU.",
+    "evidence": "Green text box on the right side of the image.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "One side of the capacitor measurement should be GND.",
+    "evidence": "Green text box on the right side of the image.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The other side of the capacitor measurement should be between 1 and 2.5 ohm.",
+    "evidence": "Green text box on the right side of the image.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Expected voltage for Vcpu is +0.93V.",
+    "evidence": "Red label '+0,93 Vcpu' pointing to a capacitor.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Expected resistance for a Vcpu rail is 16 ohm.",
+    "evidence": "Purple label '16 ohm' pointing to a capacitor.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Expected voltage for Vgpu is +1.0V.",
+    "evidence": "Red label '+1,0 Vgpu' pointing to multiple capacitors.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Expected resistance for a Vgpu rail is 1.3 ohm.",
+    "evidence": "Purple label '1,3 ohm' pointing to a capacitor.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Vcpu rail",
+    "expect": "0.93",
+    "unit": "V",
+    "context": "Voltage measurement",
+    "mode": ""
+   },
+   {
+    "point": "Vcpu rail",
+    "expect": "16",
+    "unit": "ohm",
+    "context": "Resistance measurement",
+    "mode": ""
+   },
+   {
+    "point": "Vgpu rail",
+    "expect": "1.0",
+    "unit": "V",
+    "context": "Voltage measurement",
+    "mode": ""
+   },
+   {
+    "point": "Vgpu rail",
+    "expect": "1.3",
+    "unit": "ohm",
+    "context": "Resistance measurement",
+    "mode": ""
+   },
+   {
+    "point": "Capacitors",
+    "expect": "1-2.5",
+    "unit": "ohm",
+    "context": "Impedance measurement (one side GND)",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "apu",
+   "capacitors",
+   "impedance",
+   "ps4",
+   "troubleshooting"
+  ],
+  "confidence": "high",
+  "caveats": "The specific IC or board codes are not visible in the image. The exact location of the '45' marker is not specified.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Vcpu rail",
+    "mode": "voltage",
+    "expect_lo": 0.93,
+    "expect_hi": 0.93,
+    "unit": "V"
+   },
+   {
+    "point": "Vcpu rail",
+    "mode": "resistance",
+    "expect_lo": 16.0,
+    "expect_hi": 16.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Vgpu rail",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "Vgpu rail",
+    "mode": "resistance",
+    "expect_lo": 1.3,
+    "expect_hi": 1.3,
+    "unit": "Ω"
+   },
+   {
+    "point": "Capacitors",
+    "mode": "resistance",
+    "expect_lo": 1.0,
+    "expect_hi": 2.5,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=18",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z"
+}

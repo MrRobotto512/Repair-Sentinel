@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 4 diagnostic flowchart based on LED status and screen output",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=1",
+   "kind": "document",
+   "title": "PS4 Troubleshooting and Diagnostic info",
+   "ingested_utc": "2026-08-13T15:08:06Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [
+   "No Power",
+   "BLOD",
+   "WLOD",
+   "No Display",
+   "No Sound"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "If the PS4 shows no power light upon pressing the power button, check standby voltages, SMPS power supply output, and the Southbridge boot sequence.",
+    "evidence": "The diagnostic flowchart routes no light symptoms to checking standby voltages, SMPS, and Southbridge boot sequence.",
+    "quote": "Press power button ... Check stand-by voltages ... SMPS Power supply good? ... Check boot sequence by Southbridge IC",
+    "at": ""
+   },
+   {
+    "statement": "If the PS4 powers down immediately after a beep, inspect power-on voltages.",
+    "evidence": "The diagnostic flowchart directs checking power-on voltages when the console turns off after a beep.",
+    "quote": "Press power button ... Turns off After a beep ... Check power on voltages",
+    "at": ""
+   },
+   {
+    "statement": "If the PS4 LED stays solid blue, inspect the RAM modules and the APU.",
+    "evidence": "A solid blue light (BLOD) maps to checking RAM and APU in the diagnostic diagram.",
+    "quote": "Is LED blue? ... Stays on ... Check RAM ... Check APU",
+    "at": ""
+   },
+   {
+    "statement": "If the PS4 shows a white LED but no image on screen, inspect the HDMI circuit, encoder IC, and sound IC.",
+    "evidence": "White light with missing picture directs troubleshooting to HDMI, sound, and encoder circuit elements.",
+    "quote": "Is LED white? ... Picture on screen? ... Check HDMI / Sound / Encoder",
+    "at": ""
+   },
+   {
+    "statement": "If screen display is working but there is no sound output, check the Southbridge IC.",
+    "evidence": "The diagnostic flowchart routes no sound issues under active display to the Southbridge IC.",
+    "quote": "Picture on screen? ... No sound ... Check Southbridge IC",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Press the power button and observe the LED status and system response.",
+   "If no light turns on, check standby voltages, verify SMPS power output, and trace the Southbridge boot sequence.",
+   "If the console turns off after a beep, check all power-on rail voltages.",
+   "If the LED stays solid blue, inspect the APU and RAM modules for faults.",
+   "If the LED turns white with no display output, inspect the HDMI port, HDMI encoder IC, and audio circuit.",
+   "If display output is present but audio is missing, inspect the Southbridge IC."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "playstation 4",
+   "ps4",
+   "flowchart",
+   "blod",
+   "wlod",
+   "no power",
+   "no display",
+   "no sound",
+   "southbridge",
+   "encoder"
+  ],
+  "confidence": "high",
+  "caveats": "This flowchart provides high-level diagnostic routing based on symptoms and requires component-level testing to locate the exact point of failure.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=1",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:34Z"
+}

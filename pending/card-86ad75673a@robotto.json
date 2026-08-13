@@ -1,0 +1,70 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 4 BGA Reflow and Removal Thermal Profile Settings",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=12",
+   "kind": "document",
+   "title": "PS4 Troubleshooting and Diagnostic info",
+   "ingested_utc": "2026-08-13T15:09:21Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Profile 1 is used to remove or reflow BGA with leaded or unleaded solder, focusing on temperature measurements and time rather than a specific reflow pattern.",
+    "evidence": "Profile settings and parameters specified in the source text for BGA work.",
+    "quote": "Profile 1is used to remove or reflow BGA with leaded / unleaded solder. There is no specific reflow pattern for XBOX, PS5, Switch it’s al about temperature measurements and time!",
+    "at": ""
+   },
+   {
+    "statement": "The thermal profile uses specific stages including preheat, soak, reflow, and cool.",
+    "evidence": "Ramp rates (R), temperature levels (L), and dwell/duration times (D) are provided for 6 zones.",
+    "quote": "R1 = 1.0 R2 = 1.0 R3 = 1.0 R4 = 1.0 R5 = 1.0 R6 = 1.0 L1 = 0 L2 = 190 L3 = 200 L4 = 210 L5 = 220 L6 = 228 D1 = 480 D2 = 76 D3 = 46 D4 = 32 D5 = 35 D6 = 300",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "{'step': 'Set the bottom heater to 185 degrees.'}",
+   "{'step': 'Turn on the top heater.'}",
+   "{'step': 'Follow the custom profile parameters for preheat, soak, reflow, and cool.'}",
+   "{'step': 'Stop the program manually if performing BGA removal, reflowing, or a BGA nudge test.'}"
+  ],
+  "measurements": [],
+  "tools": [
+   "Bottom heater",
+   "Top heater"
+  ],
+  "cautions": [
+   "SOURCE RISK: This is a custom profile, please customize your own profile, I am not responsible for damage of your PCB board."
+  ],
+  "tags": [
+   "playstation 4",
+   "bga",
+   "reflow",
+   "removal",
+   "thermal profile",
+   "solder"
+  ],
+  "confidence": "high",
+  "caveats": "This is a custom profile provided by the author; technicians should customize their own profile to avoid PCB damage.",
+  "component": "IC (other)",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=12",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:34Z"
+}

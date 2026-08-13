@@ -1,0 +1,314 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS4 HDMI Port Breakout Board Pinout and Diode Measurements",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=13",
+   "kind": "document",
+   "title": "HDMI Port Pinout and Diode Measurement Guide",
+   "ingested_utc": "2026-08-13T15:15:00Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [
+   "video issues"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Measure pins with diode readings",
+    "evidence": "GREEN = DIODE MEASUREMENT legend and green text values on test points",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Each pair should give the same measurement the length of the trace is the same length because of signal timing",
+    "evidence": "Text box at bottom left: Each pair should give the same measurement the length of the trace is the same length because of signal timing",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If result are differerent there can be an issue with the filters or encoder IC",
+    "evidence": "Text box at bottom left: If result are differerent there can be an issue with the filters or encoder IC",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "19",
+    "expect": "6,8",
+    "unit": "kohm",
+    "context": "Hot Plug Detect",
+    "mode": ""
+   },
+   {
+    "point": "19",
+    "expect": "0,60",
+    "unit": "",
+    "context": "Hot Plug Detect diode",
+    "mode": ""
+   },
+   {
+    "point": "18",
+    "expect": "0,61",
+    "unit": "",
+    "context": "+5V power",
+    "mode": ""
+   },
+   {
+    "point": "17",
+    "expect": "GND",
+    "unit": "",
+    "context": "GND",
+    "mode": ""
+   },
+   {
+    "point": "16",
+    "expect": "0,60",
+    "unit": "",
+    "context": "SDA",
+    "mode": ""
+   },
+   {
+    "point": "15",
+    "expect": "0,60",
+    "unit": "",
+    "context": "SCL",
+    "mode": ""
+   },
+   {
+    "point": "14",
+    "expect": "O.L.",
+    "unit": "",
+    "context": "RESERVED",
+    "mode": ""
+   },
+   {
+    "point": "13",
+    "expect": "0,46",
+    "unit": "",
+    "context": "CEC",
+    "mode": ""
+   },
+   {
+    "point": "12",
+    "expect": "0,49",
+    "unit": "",
+    "context": "TMDS Clock -",
+    "mode": ""
+   },
+   {
+    "point": "11",
+    "expect": "GND",
+    "unit": "",
+    "context": "GND",
+    "mode": ""
+   },
+   {
+    "point": "10",
+    "expect": "0,49",
+    "unit": "",
+    "context": "TMDS Clock +",
+    "mode": ""
+   },
+   {
+    "point": "20",
+    "expect": "GND",
+    "unit": "",
+    "context": "GND",
+    "mode": ""
+   },
+   {
+    "point": "1",
+    "expect": "0,48",
+    "unit": "",
+    "context": "TMDS2 +",
+    "mode": ""
+   },
+   {
+    "point": "2",
+    "expect": "GND",
+    "unit": "",
+    "context": "TMDS2 GND",
+    "mode": ""
+   },
+   {
+    "point": "3",
+    "expect": "0,48",
+    "unit": "",
+    "context": "TMDS2 -",
+    "mode": ""
+   },
+   {
+    "point": "4",
+    "expect": "0,48",
+    "unit": "",
+    "context": "TMDS1 +",
+    "mode": ""
+   },
+   {
+    "point": "5",
+    "expect": "GND",
+    "unit": "",
+    "context": "TMDS1 GND",
+    "mode": ""
+   },
+   {
+    "point": "6",
+    "expect": "0,48",
+    "unit": "",
+    "context": "TMDS1 -",
+    "mode": ""
+   },
+   {
+    "point": "7",
+    "expect": "0,48",
+    "unit": "",
+    "context": "TMDS0 +",
+    "mode": ""
+   },
+   {
+    "point": "8",
+    "expect": "GND",
+    "unit": "",
+    "context": "TMDS0 GND",
+    "mode": ""
+   },
+   {
+    "point": "9",
+    "expect": "0,48",
+    "unit": "",
+    "context": "TMDS0 -",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "hdmi",
+   "ps4",
+   "diode measurements",
+   "breakout board",
+   "pinout"
+  ],
+  "confidence": "high",
+  "caveats": "Pin numbers correspond to the breakout board layout shown in the image.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "19",
+    "mode": "resistance",
+    "expect_lo": 6000.0,
+    "expect_hi": 6000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "19",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "18",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "16",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "15",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "13",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "12",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "10",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "1",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "3",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "4",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "6",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "7",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "9",
+    "mode": "",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=13",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:35Z"
+}

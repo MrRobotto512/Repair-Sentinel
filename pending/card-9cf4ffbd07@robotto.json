@@ -1,0 +1,155 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Syscon chip diode measurements",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=32",
+   "kind": "document",
+   "title": "PlayStation 4 Syscon Chip A05-COL2 Diode Measurement Map",
+   "ingested_utc": "2026-08-13T15:33:31Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "A05-COL2"
+  ],
+  "claims": [
+   {
+    "statement": "Syscon chip A05-COL2 pin diode measurements",
+    "evidence": "Annotated green values on each pin of the A05-COL2 chip in the image",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Top row left-most pin",
+    "expect": "0,44",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row GND pin",
+    "expect": "GND",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row pin right of GND",
+    "expect": "0,67",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row pin",
+    "expect": "0,42",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row pin",
+    "expect": "0,42",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row pin",
+    "expect": "0,44",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row GND pin",
+    "expect": "GND",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row right-most pin",
+    "expect": "0,67",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "syscon",
+   "apu",
+   "diode measurement"
+  ],
+  "confidence": "high",
+  "caveats": "Only top row and visible pins have been listed; full array requires careful inspection of the image.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Top row left-most pin",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row pin right of GND",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row pin",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row pin",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row pin",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row right-most pin",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "A05-COL2"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=32",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z"
+}

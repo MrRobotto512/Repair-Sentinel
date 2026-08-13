@@ -1,0 +1,284 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "BD7764MUV Motor Drive Controller Diode Mode Measurements",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=30",
+   "kind": "document",
+   "title": "BD7764MUV Motor Drive Controller Diode Measurement Map",
+   "ingested_utc": "2026-08-13T15:32:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4",
+   "PlayStation 4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "BD7764MUV"
+  ],
+  "claims": [
+   {
+    "statement": "Diode measurement values around the BD7764MUV motor drive controller IC on the PlayStation 4 motherboard",
+    "evidence": "Green text overlay showing numeric values adjacent to IC pins and surrounding components",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Top left pin area",
+    "expect": "0,53",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top pin area",
+    "expect": "0,44",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top pin area",
+    "expect": "0,44",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top right pin area",
+    "expect": "0,42",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top right component",
+    "expect": "0,67",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Right side component",
+    "expect": "0,32",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Right side near resistor",
+    "expect": "0,65",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Bottom right component",
+    "expect": "0,44",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Bottom pin area",
+    "expect": "0,45",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Bottom pin area",
+    "expect": "0,45",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Bottom pin area",
+    "expect": "0,54",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Bottom pin area",
+    "expect": "0,54",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Bottom pin area",
+    "expect": "0,54",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Bottom left trace area",
+    "expect": "0,43",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Left trace area",
+    "expect": "0,44",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Left pin area",
+    "expect": "0,66",
+    "unit": "V",
+    "context": "Diode measurement",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps4",
+   "motor drive controller",
+   "blu-ray",
+   "diode measurement",
+   "bd7764muv"
+  ],
+  "confidence": "high",
+  "caveats": "Only partial specific pin numbers are explicitly labeled; most measurements are shown as point-to-point overlay values without pin indices.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Top left pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top right pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top right component",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Right side component",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Right side near resistor",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom right component",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bottom left trace area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Left trace area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Left pin area",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "BD7764MUV"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=30",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z"
+}
