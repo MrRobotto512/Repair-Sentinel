@@ -1,0 +1,99 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "TPS5319A +5 Von buck controller circuit values",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=10",
+   "kind": "document",
+   "title": "TPS5319A +5V Buck Controller Circuit Measurements and Component Map",
+   "ingested_utc": "2026-08-13T15:14:51Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "TPS5319A",
+   "AON6794"
+  ],
+  "claims": [
+   {
+    "statement": "+5V (Von) circuit has a resistance of +1,9 kohm",
+    "evidence": "Pointer arrow from +1,9 kohm / +5V (Von) to test vias",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "+12V (Von) circuit has a resistance of +2 kohm",
+    "evidence": "Pointer arrow from +12V (Von) / +2 kohm to test point near ceramic capacitors",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "+5V (Von)",
+    "expect": "+1,9",
+    "unit": "kohm",
+    "context": "resistance measurement",
+    "mode": ""
+   },
+   {
+    "point": "+12V (Von)",
+    "expect": "+2",
+    "unit": "kohm",
+    "context": "resistance measurement",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps4",
+   "tps5319a",
+   "buck controller",
+   "mosfet",
+   "resistance",
+   "voltage"
+  ],
+  "confidence": "high",
+  "caveats": "Does not show live operating voltages, only resistance and voltage point annotations.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "+5V (Von)",
+    "mode": "resistance",
+    "expect_lo": 1000.0,
+    "expect_hi": 1000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "+12V (Von)",
+    "mode": "resistance",
+    "expect_lo": 2000.0,
+    "expect_hi": 2000.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "TPS5319A",
+   "AON6794"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=10",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:35Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

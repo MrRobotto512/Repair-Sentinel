@@ -1,0 +1,255 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS4 HDMI connector bottom side diode and voltage reference points",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=16",
+   "kind": "document",
+   "title": "PlayStation 4 HDMI Circuit Measurement and Voltage Map",
+   "ingested_utc": "2026-08-13T15:17:22Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [
+   "NO DISPLAY"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Check diodes and fuses near HDMI circuit for no display issues",
+    "evidence": "Text annotation with blue arrow pointing to HDMI circuit components",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "diode left",
+    "expect": "0,60",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode left lower",
+    "expect": "0,60",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode middle left",
+    "expect": "0,61",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode trace",
+    "expect": "0,46",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "voltage point",
+    "expect": "+3.6",
+    "unit": "V",
+    "context": "Vstb",
+    "mode": ""
+   },
+   {
+    "point": "voltage point",
+    "expect": "+3.3",
+    "unit": "V",
+    "context": "Vstb",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "2,1",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "0,26",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "0,61",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "0,61",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "0,52",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "0,54",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "0,37",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode point",
+    "expect": "0,26",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "hdmi",
+   "ps4",
+   "diode mode",
+   "voltage"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not specify the exact multimeter settings or reference ground used for these measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "diode left",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode left lower",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode middle left",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode trace",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "voltage point",
+    "mode": "voltage",
+    "expect_lo": 3.6,
+    "expect_hi": 3.6,
+    "unit": "V"
+   },
+   {
+    "point": "voltage point",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "diode point",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=16",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:35Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

@@ -1,0 +1,211 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Vcpu power stage driver measurements and voltages",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=29",
+   "kind": "document",
+   "title": "PlayStation 4 Vcpu Power Stage Driver Measurement Guide",
+   "ingested_utc": "2026-08-13T15:32:09Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "3E 4F 602",
+   "6414A",
+   "6A7832",
+   "R68X",
+   "35216 V724P EC42"
+  ],
+  "claims": [
+   {
+    "statement": "Vcpu power stage driver circuit has specific diode measurements, voltages, and impedance values as shown.",
+    "evidence": "Annotated board view showing green diode measurements, red voltage callouts, and purple impedance callouts.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "IC pin (top left area)",
+    "expect": "0,65",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "IC pin (bottom left area)",
+    "expect": "0,54",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "IC pin (bottom left corner)",
+    "expect": "0,54",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Test point (right of IC)",
+    "expect": "0,43",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Test point (upper right)",
+    "expect": "0,65",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Capacitor pad",
+    "expect": "+5V",
+    "unit": "V",
+    "context": "voltage",
+    "mode": ""
+   },
+   {
+    "point": "IC pins (top right)",
+    "expect": "+5 Vstby",
+    "unit": "V",
+    "context": "voltage",
+    "mode": ""
+   },
+   {
+    "point": "IC pins (top right)",
+    "expect": "+12 Von",
+    "unit": "V",
+    "context": "voltage",
+    "mode": ""
+   },
+   {
+    "point": "Vcpu inductor",
+    "expect": "19",
+    "unit": "ohms",
+    "context": "Impedance cpu",
+    "mode": ""
+   },
+   {
+    "point": "Vcpu inductor",
+    "expect": "0,96",
+    "unit": "V",
+    "context": "Vcpu voltage",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps4",
+   "vcpu",
+   "power stage driver",
+   "diode",
+   "voltage",
+   "impedance"
+  ],
+  "confidence": "high",
+  "caveats": "Not all pins or components on the board are measured or labeled.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "IC pin (top left area)",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "IC pin (bottom left area)",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "IC pin (bottom left corner)",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Test point (right of IC)",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Test point (upper right)",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Capacitor pad",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "IC pins (top right)",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "IC pins (top right)",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   },
+   {
+    "point": "Vcpu inductor",
+    "mode": "resistance",
+    "expect_lo": 19.0,
+    "expect_hi": 19.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Vcpu inductor",
+    "mode": "voltage",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "3E 4F 602",
+   "6414A",
+   "6A7832",
+   "R68X",
+   "35216 V724P EC42"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=29",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

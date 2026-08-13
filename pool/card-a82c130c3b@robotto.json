@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS4 Standby boot sequence and current draw troubleshooting",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=4",
+   "kind": "document",
+   "title": "PlayStation 4 Standby Boot Sequence and Current Analysis",
+   "ingested_utc": "2026-08-13T15:14:10Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [
+   "no power button is pressed",
+   "no boot"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "First stage +- 125 mA (from 23mA), Second stage +- 30mA indicates WORKING / GOOD",
+    "evidence": "Table row 1: First stage +- 125 mA (from 23mA), Second stage +- 30mA, Cause WORKING / GOOD",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "First stage +- 21 mA, Second stage +- 21 mA indicates Bad southbridge",
+    "evidence": "Table row 2: First stage +- 21 mA, Second stage +- 21 mA, Cause Bad southbridge",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If it stays at 99mA with no boot it could mean that the southbridge is bad. Check the 32Khz crystal if it oscillates. If the 32Khz signal is missing, then replace the southbridge clean flux of the board.",
+    "evidence": "Table row 3: First stage +- 99mA, Second stage +- 99mA",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If it stays at 7mA with no boot it could mean that the southbridge is not working or sending a control signal to the transistor",
+    "evidence": "Table row 4: First stage +- 7mA, Second stage +- 7mA",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "PIN 1",
+    "expect": "+5VSB",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   },
+   {
+    "point": "PIN 4",
+    "expect": "+5VSB (enable)",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "standby",
+   "boot sequence",
+   "current draw",
+   "southbridge"
+  ],
+  "confidence": "high",
+  "caveats": "The image shows current draw stages and causes, but does not provide schematics for the southbridge internal logic.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=4",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:35Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

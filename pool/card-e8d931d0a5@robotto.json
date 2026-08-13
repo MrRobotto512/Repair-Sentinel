@@ -1,0 +1,199 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS4 +0.95V and +1.8V Power Rail Voltage and Resistance Measurements",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=20",
+   "kind": "document",
+   "title": "PlayStation 4 +0.95V and +1.8V Power Rail Measurement Points",
+   "ingested_utc": "2026-08-13T15:20:20Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "AV718 504X"
+  ],
+  "claims": [
+   {
+    "statement": "The +0.95V power rail has a resistance of 70 ohms.",
+    "evidence": "Label showing '+0,95 Von' and '70 ohm' with an arrow pointing to a test point.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The +1.8V power rail has a resistance of 2.6 kohm.",
+    "evidence": "Label showing '+1,8 Von' and '2,6 kohm' with an arrow pointing to a test point.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A voltage of +5.0 Vstb is present with a resistance of > 500 ohm.",
+    "evidence": "Label showing '+5,0 Vstb' and '> 500 ohm' with an arrow pointing to a test point.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A voltage of +1.9 Vstb is present with a resistance of 36 kohm.",
+    "evidence": "Label showing '+1,9 Vstb' and '36 kohm' with an arrow pointing to a test point.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A voltage of +3.3 Von is present with a resistance of 9 kohm.",
+    "evidence": "Label showing '+3,3 Von' and '9 kohm' with an arrow pointing to a test point.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A voltage of +3.3 Von is present with a resistance of 10 kohm.",
+    "evidence": "Label showing '+3,3 Von' and '10 kohm' with an arrow pointing to a test point.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A voltage of +5.0 Von is present with a resistance of 1.8 kohm.",
+    "evidence": "Label showing '+5,0 Von' and '1,8 kohm' with an arrow pointing to a test point.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Test point for +0.95V rail",
+    "expect": "70",
+    "unit": "ohm",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "Test point for +1.8V rail",
+    "expect": "2,6",
+    "unit": "kohm",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "Test point for +5.0 Vstb",
+    "expect": "> 500",
+    "unit": "ohm",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "Test point for +1.9 Vstb",
+    "expect": "36",
+    "unit": "kohm",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "Test point for +3.3 Von (left IC)",
+    "expect": "9",
+    "unit": "kohm",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "Test point for +3.3 Von (right IC)",
+    "expect": "10",
+    "unit": "kohm",
+    "context": "power on",
+    "mode": ""
+   },
+   {
+    "point": "Test point for +5.0 Von",
+    "expect": "1,8",
+    "unit": "kohm",
+    "context": "power on",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "GREEN = DIODE MEASUREMENT",
+   "RED = VOLTAGE",
+   "PURPLE = RESISTANCE"
+  ],
+  "tags": [
+   "power rail",
+   "voltage",
+   "resistance",
+   "motherboard"
+  ],
+  "confidence": "high",
+  "caveats": "The image does not explicitly state the device model, but the context implies it is a PS4. The specific IC part number is visible as 'AV718 504X'.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Test point for +0.95V rail",
+    "mode": "resistance",
+    "expect_lo": 70.0,
+    "expect_hi": 70.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Test point for +1.8V rail",
+    "mode": "resistance",
+    "expect_lo": 2000.0,
+    "expect_hi": 2000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Test point for +5.0 Vstb",
+    "mode": "resistance",
+    "expect_lo": 500.0,
+    "expect_hi": 500.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Test point for +1.9 Vstb",
+    "mode": "resistance",
+    "expect_lo": 36000.0,
+    "expect_hi": 36000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Test point for +3.3 Von (left IC)",
+    "mode": "resistance",
+    "expect_lo": 9000.0,
+    "expect_hi": 9000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Test point for +3.3 Von (right IC)",
+    "mode": "resistance",
+    "expect_lo": 10000.0,
+    "expect_hi": 10000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Test point for +5.0 Von",
+    "mode": "resistance",
+    "expect_lo": 1000.0,
+    "expect_hi": 1000.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "AV718 504X"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=20",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

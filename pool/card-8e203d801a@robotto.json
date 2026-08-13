@@ -1,0 +1,76 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 4 IR35218 PWM Controller Pinout and Measurements",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=9",
+   "kind": "document",
+   "title": "PS4 Troubleshooting and Diagnostic info",
+   "ingested_utc": "2026-08-13T15:09:12Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [
+   "No Power",
+   "BLOD",
+   "WLOD",
+   "No Display"
+  ],
+  "codes": [
+   "SU-41283-8",
+   "CE-35888-2"
+  ],
+  "claims": [
+   {
+    "statement": "Measure reference voltages, PWM signals, and diode readings on the IR35218 multi-phase buck controller.",
+    "evidence": "Diode and voltage values mapped across IR35218 pins.",
+    "quote": "Multi-phase buck controller– IR35218",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "{'step': 'Check reference voltages and diode readings on the IR35218 PWM controller pins.'}",
+   "{'step': 'Verify PWM signals generated to phase drivers.'}",
+   "{'step': 'Check power good and enable signals.'}"
+  ],
+  "measurements": [],
+  "tools": [
+   "Multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "playstation 4",
+   "ir35218",
+   "pwm controller",
+   "buck controller",
+   "pinout",
+   "measurements"
+  ],
+  "confidence": "high",
+  "caveats": "Ensure board is completely unpowered before taking resistance or diode measurements.",
+  "component": "IR35218",
+  "part_numbers": [
+   "IR35218"
+  ],
+  "readings": [],
+  "device_family": "playstation4",
+  "error_codes": [
+   "SU-41283-8",
+   "CE-35888-2"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?topic=9",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:34Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

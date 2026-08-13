@@ -1,0 +1,188 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Controller chip - Blu-ray diode mode measurements",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=31",
+   "kind": "document",
+   "title": "PlayStation 4 Blu-ray Controller IC Diode Measurement Map",
+   "ingested_utc": "2026-08-13T15:33:23Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "MT1965AU"
+  ],
+  "claims": [
+   {
+    "statement": "This chip orchestrates the entire operation of the blu-ray drive",
+    "evidence": "Callout text pointing to the MediaTek IC",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Top row left-to-right",
+    "expect": "0,75",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "0,75",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "0,34",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "GND",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "0,35",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "O.L.",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "0,43",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "0,43",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "0,46",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Top row",
+    "expect": "0,43",
+    "unit": "V",
+    "context": "diode measurement",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "playstation 4",
+   "blu-ray",
+   "mediatek",
+   "mt1965au",
+   "diode mode"
+  ],
+  "confidence": "high",
+  "caveats": "Only a subset of pin measurements are explicitly mapped or legible in the provided reference image.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Top row left-to-right",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Top row",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "MT1965AU"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=31",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

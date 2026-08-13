@@ -1,0 +1,203 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS4 Vmem power stage driver measurements and signals",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=28",
+   "kind": "document",
+   "title": "PS4 Vmem power stage driver measurement points",
+   "ingested_utc": "2026-08-13T15:31:42Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "F5105",
+   "6414A",
+   "GA7S32",
+   "718 504X",
+   "IOR",
+   "35218",
+   "V724P",
+   "EC42"
+  ],
+  "claims": [
+   {
+    "statement": "Vmem power stage driver area measurements including diode readings, voltages, and impedance.",
+    "evidence": "Annotated board photo showing diode values, +5V, +5 Vstby, +12 Von, and Impedance RAM = 56 ohm.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "diode test point top",
+    "expect": "0,54",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode test point middle",
+    "expect": "0,42",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode test point bottom left",
+    "expect": "0,00",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "diode test point bottom right",
+    "expect": "0,66",
+    "unit": "",
+    "context": "diode measurement",
+    "mode": ""
+   },
+   {
+    "point": "Impedance RAM",
+    "expect": "56",
+    "unit": "ohms",
+    "context": "RAM impedance",
+    "mode": ""
+   },
+   {
+    "point": "Vram",
+    "expect": "1,5",
+    "unit": "V",
+    "context": "voltage",
+    "mode": ""
+   },
+   {
+    "point": "+5 Vstby",
+    "expect": "+5",
+    "unit": "V",
+    "context": "standby voltage",
+    "mode": ""
+   },
+   {
+    "point": "+12 Von",
+    "expect": "+12",
+    "unit": "V",
+    "context": "on voltage",
+    "mode": ""
+   },
+   {
+    "point": "+5V",
+    "expect": "+5",
+    "unit": "V",
+    "context": "voltage",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps4",
+   "vmem",
+   "power stage driver",
+   "voltage",
+   "diode mode",
+   "resistance"
+  ],
+  "confidence": "high",
+  "caveats": "Feedback signal is marked with a question mark; values are indicative of specific board revisions shown.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "diode test point top",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "diode test point middle",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "diode test point bottom left",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "diode test point bottom right",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": ""
+   },
+   {
+    "point": "Impedance RAM",
+    "mode": "resistance",
+    "expect_lo": 56.0,
+    "expect_hi": 56.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Vram",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "+5 Vstby",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "+12 Von",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   },
+   {
+    "point": "+5V",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "F5105",
+   "6414A",
+   "GA7S32",
+   "718 504X",
+   "IOR",
+   "35218",
+   "V724P",
+   "EC42"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=28",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:36Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

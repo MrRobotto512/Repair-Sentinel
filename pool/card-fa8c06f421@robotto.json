@@ -1,0 +1,196 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "USB 3.0 HUB Controller resistance and power supply values",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=11",
+   "kind": "document",
+   "title": "PlayStation 4 USB 3.0 Hub Controller Resistance and Voltage Map",
+   "ingested_utc": "2026-08-13T15:14:54Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [],
+  "codes": [
+   "CS8736AM",
+   "T260",
+   "MFQ2"
+  ],
+  "claims": [
+   {
+    "statement": "Data signals goes directly to Southbridge",
+    "evidence": "Arrow pointing from data traces to Southbridge",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "26 Mhz Crystal",
+    "evidence": "Arrow pointing to crystal component labeled T260 MFQ2",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "+3,3 VDD - Power supply",
+    "evidence": "Arrow pointing to power supply trace/pin on CS8736AM",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "CS8736AM No schematics",
+    "evidence": "Text box pointing to CS8736AM IC",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "Trace near top",
+    "expect": "+50",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "Trace near top",
+    "expect": "+50",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "Trace near top right",
+    "expect": "+50",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "Trace near crystal",
+    "expect": "+26",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "Trace left side",
+    "expect": "+50",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "Trace left side",
+    "expect": "+29",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "Trace bottom left",
+    "expect": "+50",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   },
+   {
+    "point": "Trace bottom left",
+    "expect": "+50",
+    "unit": "kohm",
+    "context": "resistance",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "ps4",
+   "usb 3.0",
+   "hub controller",
+   "southbridge",
+   "crystal"
+  ],
+  "confidence": "high",
+  "caveats": "Only partial board view showing USB 3.0 HUB Controller area; full schematic is noted as not available.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Trace near top",
+    "mode": "resistance",
+    "expect_lo": 50000.0,
+    "expect_hi": 50000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Trace near top",
+    "mode": "resistance",
+    "expect_lo": 50000.0,
+    "expect_hi": 50000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Trace near top right",
+    "mode": "resistance",
+    "expect_lo": 50000.0,
+    "expect_hi": 50000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Trace near crystal",
+    "mode": "resistance",
+    "expect_lo": 26000.0,
+    "expect_hi": 26000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Trace left side",
+    "mode": "resistance",
+    "expect_lo": 50000.0,
+    "expect_hi": 50000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Trace left side",
+    "mode": "resistance",
+    "expect_lo": 29000.0,
+    "expect_hi": 29000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Trace bottom left",
+    "mode": "resistance",
+    "expect_lo": 50000.0,
+    "expect_hi": 50000.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Trace bottom left",
+    "mode": "resistance",
+    "expect_lo": 50000.0,
+    "expect_hi": 50000.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "CS8736AM",
+   "T260",
+   "MFQ2"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=11",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:35Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}

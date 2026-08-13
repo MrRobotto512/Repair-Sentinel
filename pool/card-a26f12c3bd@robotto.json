@@ -1,0 +1,113 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Panasonic MN864729 HDMI transmitter diode and voltage reference",
+  "source": {
+   "url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=15",
+   "kind": "document",
+   "title": "PlayStation 4 Panasonic MN864729 HDMI Transmitter Measurement Map",
+   "ingested_utc": "2026-08-13T15:15:59Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PS4"
+  ],
+  "symptoms": [
+   "NO DISPLAY",
+   "blue light of death"
+  ],
+  "codes": [
+   "MN864729",
+   "714Z050J"
+  ],
+  "claims": [
+   {
+    "statement": "HDMI Encoder is faulty most of the time when there is no picture",
+    "evidence": "Annotation pointing to the Panasonic MN864729 IC",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Diode if shorted it can cause blue light of death",
+    "evidence": "Annotation pointing to the diode near the HDMI connector",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Data comes from APU",
+    "evidence": "Annotation pointing to the traces entering the IC from the right",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [
+   {
+    "point": "+3.3V",
+    "expect": "3.3",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   },
+   {
+    "point": "+2.5V Von",
+    "expect": "2.5",
+    "unit": "V",
+    "context": "",
+    "mode": ""
+   }
+  ],
+  "tools": [],
+  "cautions": [
+   "Check HDMI connector",
+   "Check southbridge IC",
+   "Check HDMI filters",
+   "Check continuity filters"
+  ],
+  "tags": [
+   "hdmi",
+   "panasonic",
+   "ps4",
+   "transmitter",
+   "diode mode",
+   "voltage"
+  ],
+  "confidence": "high",
+  "caveats": "The image provides diode mode values (green text) but does not specify the reference ground or meter settings used for these measurements.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "+3.3V",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   },
+   {
+    "point": "+2.5V Von",
+    "mode": "voltage",
+    "expect_lo": 2.5,
+    "expect_hi": 2.5,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "MN864729",
+   "714Z050J"
+  ],
+  "license": "unknown",
+  "source_url": "kb://155238_How_to_analyse_Playstation_4-1-1786631274.txt?figure=15",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "robotto"
+ },
+ "queued_utc": "2026-08-13T15:40:35Z",
+ "verdict": "approve",
+ "reviewed_utc": "2026-08-13T15:51:48Z",
+ "reviewed_on": "robotto"
+}
