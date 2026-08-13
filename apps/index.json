@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-08-05T13:31:42Z",
+ "generated_utc": "2026-08-13T22:21:18Z",
  "apps": [
+  {
+   "file": "fleet_maintenance@judah.zip",
+   "name": "Fleet Maintenance",
+   "subtitle": "fleet tune-ups + sentinel ai",
+   "icon": "🛠️",
+   "requires": [],
+   "type": "app",
+   "author": "judah",
+   "size": 43361
+  },
   {
    "file": "imei_check@bench-1.zip",
    "name": "IMEI Check",
