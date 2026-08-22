@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-22T15:18:05Z",
+ "generated_utc": "2026-08-22T15:36:20Z",
  "apps": [
   {
    "file": "fleet_maintenance@judah.zip",
@@ -10,6 +10,16 @@
    "type": "app",
    "author": "judah",
    "size": 43361
+  },
+  {
+   "file": "google_review_qr@bench-1.zip",
+   "name": "Google Review QR",
+   "subtitle": "review qr from shop info",
+   "icon": "⭐",
+   "requires": [],
+   "type": "app",
+   "author": "bench-1",
+   "size": 5962
   },
   {
    "file": "imei_check@bench-1.zip",
