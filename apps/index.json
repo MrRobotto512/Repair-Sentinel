@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-22T15:36:20Z",
+ "generated_utc": "2026-08-22T16:15:43Z",
  "apps": [
   {
    "file": "fleet_maintenance@judah.zip",
@@ -30,6 +30,18 @@
    "type": "app",
    "author": "bench-1",
    "size": 33638
+  },
+  {
+   "file": "ios_quick_activate@bench-1.zip",
+   "name": "iOS Quick Activate",
+   "subtitle": "batch activate for testing",
+   "icon": "🍏",
+   "requires": [
+    "pymobiledevice3"
+   ],
+   "type": "app",
+   "author": "bench-1",
+   "size": 16665
   },
   {
    "file": "ios_quick_activate@robotto.zip",
