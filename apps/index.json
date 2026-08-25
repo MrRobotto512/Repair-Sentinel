@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-22T16:15:43Z",
+ "generated_utc": "2026-08-25T23:29:40Z",
  "apps": [
   {
    "file": "fleet_maintenance@judah.zip",
@@ -9,7 +9,9 @@
    "requires": [],
    "type": "app",
    "author": "judah",
-   "size": 43361
+   "size": 43361,
+   "version": "2.3.1",
+   "sha256": "8613d7c209a1279162f9a0a29f360f3707f9051eb2495384200ab7002f7bb22f"
   },
   {
    "file": "google_review_qr@bench-1.zip",
@@ -19,7 +21,9 @@
    "requires": [],
    "type": "app",
    "author": "bench-1",
-   "size": 5962
+   "size": 5962,
+   "version": "",
+   "sha256": "ce0629ccea6ebf8e2ca703fe732ddb52c5f1ffbe8b3edb7c1c83ceba89348bfd"
   },
   {
    "file": "imei_check@bench-1.zip",
@@ -29,7 +33,9 @@
    "requires": [],
    "type": "app",
    "author": "bench-1",
-   "size": 33638
+   "size": 33638,
+   "version": "",
+   "sha256": "b085e61cdeafbdb3e60ebee2e8ad673f9e03057d21fd38882acba3674e6dcc09"
   },
   {
    "file": "ios_quick_activate@bench-1.zip",
@@ -41,19 +47,9 @@
    ],
    "type": "app",
    "author": "bench-1",
-   "size": 16665
-  },
-  {
-   "file": "ios_quick_activate@robotto.zip",
-   "name": "iOS Quick Activate",
-   "subtitle": "batch activate for testing",
-   "icon": "🍏",
-   "requires": [
-    "pymobiledevice3"
-   ],
-   "type": "app",
-   "author": "robotto",
-   "size": 13857
+   "size": 16665,
+   "version": "",
+   "sha256": "d48d43a37bbba34596330ce11c03d52d5e3b58842ccaf1222835b8154ba78ac6"
   },
   {
    "file": "pc_intake_tester@judah.zip",
@@ -63,7 +59,9 @@
    "requires": [],
    "type": "app",
    "author": "judah",
-   "size": 23127
+   "size": 23127,
+   "version": "",
+   "sha256": "5ac07015cb25821a7044db2d209f815d778def6d34fa56bc495ce093fe77191d"
   }
  ]
 }
