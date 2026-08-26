@@ -1,0 +1,82 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "iPhone 14 Pro / 14 Pro Max Logic A board layout and component identification",
+  "source": {
+   "url": "kb://img-Screenshot-2026-08-25-174128-1787697800.png",
+   "kind": "image",
+   "title": "iPhone 14 Pro / 14 Pro Max Logic A board layout",
+   "ingested_utc": "2026-08-25T23:31:29Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14 Pro",
+   "iPhone 14 Pro Max"
+  ],
+  "symptoms": [],
+  "codes": [
+   "J11200",
+   "J10900",
+   "JUAT1",
+   "J11100",
+   "U5300",
+   "U_WLAN_W",
+   "J10500",
+   "JLAT",
+   "J10500",
+   "J10800"
+  ],
+  "claims": [
+   {
+    "statement": "Shows component and connector locations for iPhone 14 Pro / 14 Pro Max Logic A",
+    "evidence": "Annotated board photo with labels for J11200, J10900, U5300, U3000, etc.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "iphone 14 pro",
+   "iphone 14 pro max",
+   "logic a",
+   "boardview",
+   "layout",
+   "connectors",
+   "fpc",
+   "board view",
+   "u5300",
+   "u3000",
+   "u4200"
+  ],
+  "confidence": "medium",
+  "caveats": "This image shows component layout and labels only; no voltage, resistance, or diode measurements are provided. Values were machine-read from the image — verify against it before trusting.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "",
+  "error_codes": [
+   "J11200",
+   "J10900",
+   "JUAT1",
+   "J11100",
+   "U5300",
+   "U_WLAN_W",
+   "J10500",
+   "JLAT",
+   "J10500",
+   "J10800"
+  ],
+  "license": "unknown",
+  "source_url": "kb://img-Screenshot-2026-08-25-174128-1787697800.png",
+  "provenance": "absorbed"
+ },
+ "origin": {
+  "bench": "bench-1"
+ },
+ "queued_utc": "2026-08-26T14:44:35Z"
+}
