@@ -1,6 +1,18 @@
 {
- "generated_utc": "2026-08-25T23:29:40Z",
+ "generated_utc": "2026-08-31T01:04:06Z",
  "apps": [
+  {
+   "file": "automaton_flasher@bench-1.zip",
+   "name": "Keystroke Flasher",
+   "subtitle": "flash keyboard macros over usb",
+   "icon": "⌨",
+   "requires": [],
+   "type": "app",
+   "author": "bench-1",
+   "size": 36195,
+   "version": "1.1",
+   "sha256": "0db4c190cdde793c72d6292f5debc03defb750968e011ba3e819852f2317c981"
+  },
   {
    "file": "fleet_maintenance@judah.zip",
    "name": "Fleet Maintenance",
