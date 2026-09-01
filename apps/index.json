@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-01T20:29:21Z",
+ "generated_utc": "2026-09-01T21:38:54Z",
  "apps": [
   {
    "file": "automaton_flasher@bench-1.zip",
@@ -9,9 +9,9 @@
    "requires": [],
    "type": "app",
    "author": "bench-1",
-   "size": 39507,
+   "size": 40090,
    "version": "1.2",
-   "sha256": "734a98e7087c88f912fbfb9b32c3f391efa4c04cf95b5b6f783331a45035d010"
+   "sha256": "6fcea97c67f5677ca949c8046697b23c888832bf25896f679c616c72e9ebee22"
   },
   {
    "file": "fleet_maintenance@judah.zip",
