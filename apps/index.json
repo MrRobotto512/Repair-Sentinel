@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-02T01:08:44Z",
+ "generated_utc": "2026-09-02T16:02:08Z",
  "apps": [
   {
    "file": "automaton_flasher@bench-1.zip",
@@ -74,6 +74,18 @@
    "size": 23127,
    "version": "",
    "sha256": "5ac07015cb25821a7044db2d209f815d778def6d34fa56bc495ce093fe77191d"
+  },
+  {
+   "file": "thermal_cam@bench-1.zip",
+   "name": "Thermal Cam P3",
+   "subtitle": "thermal master p3 · live pcb view",
+   "icon": "🔥",
+   "requires": [],
+   "type": "app",
+   "author": "bench-1",
+   "size": 12722,
+   "version": "1.0",
+   "sha256": "fd431b2d8bbe9c6dfb15496c87aba8ab096f99255d7b4d0d92916947a8c339b2"
   }
  ]
 }
