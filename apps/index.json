@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-02T16:02:08Z",
+ "generated_utc": "2026-09-10T20:04:39Z",
  "apps": [
   {
    "file": "automaton_flasher@bench-1.zip",
@@ -62,6 +62,20 @@
    "size": 16665,
    "version": "",
    "sha256": "d48d43a37bbba34596330ce11c03d52d5e3b58842ccaf1222835b8154ba78ac6"
+  },
+  {
+   "file": "ios_quick_activate@robot.zip",
+   "name": "iOS Quick Activate",
+   "subtitle": "batch activate for testing",
+   "icon": "🍏",
+   "requires": [
+    "pymobiledevice3"
+   ],
+   "type": "app",
+   "author": "robot",
+   "size": 19247,
+   "version": "",
+   "sha256": "99ad3c6e4d8d405c6ddd15a0bf2b997d094ab7e07ed10ad742a13bd3b29287d6"
   },
   {
    "file": "pc_intake_tester@judah.zip",
