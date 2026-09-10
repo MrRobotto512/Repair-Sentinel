@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-10T20:50:29Z",
+ "generated_utc": "2026-09-10T20:54:06Z",
  "apps": [
   {
    "file": "automaton_flasher@bench-1.zip",
@@ -76,6 +76,18 @@
    "size": 19247,
    "version": "",
    "sha256": "99ad3c6e4d8d405c6ddd15a0bf2b997d094ab7e07ed10ad742a13bd3b29287d6"
+  },
+  {
+   "file": "parts_pricer@robot.zip",
+   "name": "Parts Pricer",
+   "subtitle": "mobilesentrix cost → customer price",
+   "icon": "💲",
+   "requires": [],
+   "type": "app",
+   "author": "robot",
+   "size": 58740,
+   "version": "1.2",
+   "sha256": "7812ad9d639320c8e146cab621a657f79dfc50cee6876446414f88ff4c95f8fc"
   },
   {
    "file": "pc_intake_tester@judah.zip",
