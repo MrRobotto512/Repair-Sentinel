@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-11T14:59:04Z",
+ "generated_utc": "2026-09-11T15:12:15Z",
  "apps": [
   {
    "file": "automaton_flasher@robot.zip",
@@ -9,9 +9,9 @@
    "requires": [],
    "type": "app",
    "author": "robot",
-   "size": 44090,
-   "version": "1.5",
-   "sha256": "0200e2d2411e2fdb6e243d76776e5576d92727b0ed8608c688979a66060944f1"
+   "size": 41391,
+   "version": "1.6",
+   "sha256": "4cb9da49dbd35d18a169560949effa6fe5b13061f19f0ea1cc6b6802ff83c8da"
   },
   {
    "file": "fleet_maintenance@judah.zip",
