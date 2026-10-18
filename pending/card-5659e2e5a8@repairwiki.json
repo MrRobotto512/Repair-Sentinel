@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 That Is Randomly Restarting",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Is_Randomly_Restarting",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 That Is Randomly Restarting",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3215,
+   "last_edited_utc": "2024-01-25T06:39:16Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "restarts every 3 minutes",
+   "battery % erratic or stuck at 0-1%",
+   "battery health shows Service",
+   "no battery data"
+  ],
+  "codes": [
+   "TG0B",
+   "TIGRIS_BATTERY_SWI_CONN"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 restarting every 3 minutes with erratic battery %, Service in Battery Health and no battery data cannot talk to the battery over TIGRIS_BATTERY_SWI_CONN; panic logs show Missing sensors TG0B.",
+    "evidence": "Problem description and solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Most often the battery connector's centre pins are pushed in or the connector is damaged; otherwise Tigris, Tristar or a line under them is at fault.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm TG0B in the panic log.",
+   "Inspect/realign battery connector centre pins or replace the connector.",
+   "Replace Tigris if needed.",
+   "Diode-check pads under Tigris and Tristar for shorts/opens and trace them.",
+   "Test with a stopwatch beyond 3 min, a long video and USB charge current."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery connector",
+   "battery swi",
+   "iphone 7",
+   "random restart",
+   "repair.wiki",
+   "tg0b",
+   "tigris"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery connector / Tigris",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [
+   "TG0B",
+   "TIGRIS_BATTERY_SWI_CONN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 That Is Randomly Restarting\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Is_Randomly_Restarting, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Is_Randomly_Restarting",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

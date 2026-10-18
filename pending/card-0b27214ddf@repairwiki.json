@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 With No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_With_No_Touch",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 With No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3151,
+   "last_edited_utc": "2024-01-22T08:59:25Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "J4502"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 no-touch is usually pry damage near LCD connector J4502 to a filter/resistor such as FL3917, FL3910 or R3923; trace an OL or short along the touch line to find it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If all readings are normal, the connector's four ground pins may be pushed in (from repeated screen swaps or fitting an 8/8 Plus screen); bend them out or replace the connector.",
+    "evidence": "Another solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check J4502 for OL or shorted touch lines.",
+   "Inspect FL3917, FL3910, R3923; trace along the line.",
+   "If readings normal, bend out the LCD/home button connector ground pins.",
+   "Replace the LCD connector if still no touch."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope",
+   "fine tweezers"
+  ],
+  "cautions": [],
+  "tags": [
+   "fl3910",
+   "fl3917",
+   "iphone 7",
+   "j4502",
+   "no touch",
+   "pry damage",
+   "r3923",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "LCD connector / touch filters",
+  "part_numbers": [
+   "FL3917",
+   "FL3910",
+   "R3923"
+  ],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [
+   "J4502"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 With No Touch\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_With_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_With_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,94 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Steam Deck",
+  "source": {
+   "url": "https://repair.wiki/w/Steam_Deck",
+   "kind": "web",
+   "title": "Steam Deck",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14286,
+   "last_edited_utc": "2026-10-10T07:11:51Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Steam Deck",
+   "Steam Deck OLED"
+  ],
+  "symptoms": [
+   "reference"
+  ],
+  "codes": [
+   "MAX77958",
+   "MAX77961",
+   "CS35L41",
+   "PI3USB102",
+   "ANX7580"
+  ],
+  "claims": [
+   {
+    "statement": "Steam Deck key ICs: MAX77958 USB-C PD controller, MAX77961 USB-C charging IC, CS35L41 audio amp, PI3USB102 USB 2.0 switch, ANX7580 display bridge; headphone jack PJ-203B.",
+    "evidence": "External sources section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Controller boards with the Renesas RA4E1 MCU are identical on OLED and LCD.",
+    "evidence": "External sources section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Valve publishes official CAD; corrupt BIOS can be recovered via Crisis Mode.",
+    "evidence": "External sources section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "anx7580",
+   "bios crisis mode",
+   "cs35l41",
+   "max77958",
+   "max77961",
+   "repair.wiki",
+   "steam deck"
+  ],
+  "confidence": "medium",
+  "caveats": "Reference diode readings are images only. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "MAX77958",
+   "MAX77961",
+   "CS35L41",
+   "PI3USB102",
+   "ANX7580",
+   "PJ-203B"
+  ],
+  "readings": [],
+  "device_family": "steamdeck",
+  "error_codes": [
+   "MAX77958",
+   "MAX77961",
+   "CS35L41",
+   "PI3USB102",
+   "ANX7580"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Steam Deck\", https://repair.wiki/w/Steam_Deck, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Steam_Deck",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

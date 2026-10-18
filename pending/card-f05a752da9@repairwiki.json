@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Air 4 Stuck on recovery mode",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Air_4_Stuck_on_recovery_mode",
+   "kind": "web",
+   "title": "IPad Air 4 Stuck on recovery mode",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9837,
+   "last_edited_utc": "2025-08-03T19:41:33Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air 4"
+  ],
+  "symptoms": [
+   "stuck in recovery after successful restore"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPad Air 4 that restores successfully but reboots straight back into recovery mode can have a faulty power button flex; it boots normally with that flex unplugged.",
+    "evidence": "Problem description and diagnostics.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm restore succeeds but loops to recovery.",
+   "Unplug the power button flex and boot.",
+   "Replace the power button flex."
+  ],
+  "measurements": [],
+  "tools": [
+   "heat pad",
+   "opening picks"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad air 4",
+   "power button flex",
+   "recovery mode loop",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power button flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadair4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Air 4 Stuck on recovery mode\", https://repair.wiki/w/IPad_Air_4_Stuck_on_recovery_mode, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Air_4_Stuck_on_recovery_mode",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

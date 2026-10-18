@@ -1,0 +1,118 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 3 Error 8002F1F9",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_3_Error_8002F1F9",
+   "kind": "web",
+   "title": "Playstation 3 Error 8002F1F9",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14296,
+   "last_edited_utc": "2026-10-15T21:38:37Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 3 Slim",
+   "PlayStation 3 Super Slim"
+  ],
+  "symptoms": [
+   "error 8002F1F9 on update",
+   "no Wi-Fi or Bluetooth"
+  ],
+  "codes": [
+   "8002F1F9"
+  ],
+  "claims": [
+   {
+    "statement": "PS3 Slim/Super Slim error 8002F1F9 means the Wi-Fi/BT module isn't detected, usually because the always-on 1.8 V switching regulator overheated and failed (sometimes shorting 5 V onto 1.8 V).",
+    "evidence": "Problem description and solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With the console in standby the regulator needs 5 V and 3.3 V inputs and should output 1.8 V at its coil.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: replace with a compatible 6-WDFN regulator (e.g. RT8057) or, more reliably, install an AMS1117-1.8 LDO (CECH-30xx also needs a 10 nF 6.3 V MLCC); confirm 1.8 V on its middle pin.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure regulator 5 V and 3.3 V inputs and 1.8 V output (standby).",
+   "Remove the failed regulator.",
+   "Fit RT8057 or AMS1117-1.8 (+10 nF on CECH-30xx).",
+   "Verify 1.8 V; test update, Bluetooth pairing and Wi-Fi."
+  ],
+  "measurements": [
+   {
+    "point": "Regulator inputs",
+    "expect": "5 / 3.3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Standby"
+   },
+   {
+    "point": "Regulator output at coil",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Standby"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "AMS1117-1.8",
+   "RT8057"
+  ],
+  "cautions": [],
+  "tags": [
+   "1.8v regulator",
+   "8002f1f9",
+   "ams1117",
+   "bluetooth",
+   "ps3 slim",
+   "ps3 super slim",
+   "repair.wiki",
+   "rt8057",
+   "wifi"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "1.8 V switching regulator",
+  "part_numbers": [
+   "RT8057",
+   "AMS1117-1.8"
+  ],
+  "readings": [
+   {
+    "point": "Regulator output at coil",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation3slim",
+  "error_codes": [
+   "8002F1F9"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 3 Error 8002F1F9\", https://repair.wiki/w/Playstation_3_Error_8002F1F9, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_3_Error_8002F1F9",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

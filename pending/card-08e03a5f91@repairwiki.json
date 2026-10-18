@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch No touch screen after Game cartridge replacement Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_No_touch_screen_after_Game_cartridge_replacement_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch No touch screen after Game cartridge replacement Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2220,
+   "last_edited_utc": "2024-01-13T16:31:31Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no touch after game card reader replacement"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "After swapping the game card board, touch can stop working: on a hackable console run Hekate touch calibration; on patched consoles try a different card reader revision (CV, DN, DM) or calibrate it on a hacked unit.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Run Hekate touch calibration if possible.",
+   "Otherwise try another cartridge reader revision."
+  ],
+  "measurements": [],
+  "tools": [
+   "Hekate"
+  ],
+  "cautions": [],
+  "tags": [
+   "calibration",
+   "game card reader",
+   "hekate",
+   "nintendo switch",
+   "no touch",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Game card board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch No touch screen after Game cartridge replacement Repair\", https://repair.wiki/w/Nintendo_Switch_No_touch_screen_after_Game_cartridge_replacement_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_No_touch_screen_after_Game_cartridge_replacement_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

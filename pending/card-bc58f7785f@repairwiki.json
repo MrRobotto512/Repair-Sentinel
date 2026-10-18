@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 8 Stuck in Searching or No Service Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_8_Stuck_in_Searching_or_No_Service_Repair",
+   "kind": "web",
+   "title": "IPhone 8 Stuck in Searching or No Service Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3203,
+   "last_edited_utc": "2024-01-24T18:42:48Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "no service",
+   "searching",
+   "no IMEI",
+   "modem firmware blank"
+  ],
+  "codes": [
+   "PMB 6848",
+   "PMD 9655"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 8 / 8 Plus baseband faults (never repaired before): Intel models—reball BBPMU_K (PMB 6848); Qualcomm models—replace U_PMIC_E / BBPMU (PMD 9655).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After repair, update (do not restore) if still searching.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm Searching without SIM, no IMEI, blank modem firmware.",
+   "Intel: reball BBPMU_K; Qualcomm: replace U_PMIC_E.",
+   "Update and recheck IMEI."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband pmu",
+   "intel",
+   "iphone 8",
+   "iphone 8 plus",
+   "no service",
+   "pmb 6848",
+   "pmd 9655",
+   "qualcomm",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband PMU",
+  "part_numbers": [
+   "PMB 6848",
+   "PMD 9655"
+  ],
+  "readings": [],
+  "device_family": "iphone8",
+  "error_codes": [
+   "PMB 6848",
+   "PMD 9655"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 8 Stuck in Searching or No Service Repair\", https://repair.wiki/w/IPhone_8_Stuck_in_Searching_or_No_Service_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_8_Stuck_in_Searching_or_No_Service_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

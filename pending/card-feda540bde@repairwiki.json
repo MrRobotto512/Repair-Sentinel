@@ -1,0 +1,105 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 14 Pro Max No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_14_Pro_Max_No_Touch",
+   "kind": "web",
+   "title": "IPhone 14 Pro Max No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13831,
+   "last_edited_utc": "2026-02-03T07:36:59Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14 Pro",
+   "iPhone 14 Pro Max"
+  ],
+  "symptoms": [
+   "no touch",
+   "display works"
+  ],
+  "codes": [
+   "C9201",
+   "U9200",
+   "PP_5V1_TOUCH_VDDTX_S2"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 14 Pro / Pro Max no touch with normal connector readings is usually a faulty touch boost capacitor C9201, which must be replaced.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "To check the boost, power the board at 3.8–4.2 V, inject 1.8 V into enable pin #31 (JC Drawing) and measure output pin #44; replace U9200 if the short persists.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check the display connector.",
+   "Force-enable the touch boost and measure its output.",
+   "Split the board; replace C9201.",
+   "Replace U9200 if needed."
+  ],
+  "measurements": [
+   {
+    "point": "Boost enable injection",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Lowest current, pin #31 (JC Drawing)"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "JC Drawing",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "c9201",
+   "iphone 14 pro",
+   "no touch",
+   "repair.wiki",
+   "touch boost",
+   "u9200"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch boost capacitor",
+  "part_numbers": [
+   "C9201",
+   "U9200"
+  ],
+  "readings": [
+   {
+    "point": "Boost enable injection",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone14pro",
+  "error_codes": [
+   "C9201",
+   "U9200",
+   "PP_5V1_TOUCH_VDDTX_S2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 14 Pro Max No Touch\", https://repair.wiki/w/IPhone_14_Pro_Max_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_14_Pro_Max_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

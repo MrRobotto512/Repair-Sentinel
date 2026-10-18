@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR is bootlooping and fails itunes update with error 4013",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_is_bootlooping_and_fails_itunes_update_with_error_4013",
+   "kind": "web",
+   "title": "IPhone XR is bootlooping and fails itunes update with error 4013",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6708,
+   "last_edited_utc": "2025-05-14T18:48:26Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "bootloop",
+   "green flash",
+   "error 4013"
+  ],
+  "codes": [
+   "4013"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR 4013 bootloops are almost always the earpiece flex (liquid on flood illuminator/ALS); unplug all flexes to confirm, and repair rather than replace to keep Face ID.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug all flexes; test with known-good parts.",
+   "Repair or replace the earpiece flex.",
+   "Exit recovery and update."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "earpiece flex",
+   "error 4013",
+   "iphone xr",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Earpiece flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "4013"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR is bootlooping and fails itunes update with error 4013\", https://repair.wiki/w/IPhone_XR_is_bootlooping_and_fails_itunes_update_with_error_4013, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_is_bootlooping_and_fails_itunes_update_with_error_4013",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

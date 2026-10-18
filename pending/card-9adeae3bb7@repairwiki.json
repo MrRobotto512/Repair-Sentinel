@@ -1,0 +1,76 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix Nintendo Switch OLED With No HDMI Output",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_Nintendo_Switch_OLED_With_No_HDMI_Output",
+   "kind": "web",
+   "title": "How To Fix Nintendo Switch OLED With No HDMI Output",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4069,
+   "last_edited_utc": "2024-06-13T11:44:16Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch OLED"
+  ],
+  "symptoms": [
+   "no HDMI output",
+   "dock not working"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch OLED with no TV output whose HDMI reader (Mechanic) shows pins 8 and 17 as OL usually has a blown choke on the bottom side above the USB-C port.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "All four legs of the choke should give diode readings; OL on the port side but readings on the top side means it's bad. Replacement chokes come from other Switches or similar parts near phone display connectors.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the port with an HDMI/USB-C reader; look for OL on pins 8 and 17.",
+   "Check continuity/diode on all four choke legs.",
+   "Replace the choke; re-read and test docked."
+  ],
+  "measurements": [],
+  "tools": [
+   "Mechanic reader",
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "choke",
+   "dock",
+   "nintendo switch oled",
+   "no hdmi",
+   "repair.wiki",
+   "usb-c"
+  ],
+  "confidence": "medium",
+  "caveats": "Known-good reader values are in an image on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Choke above USB-C port",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitcholed",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix Nintendo Switch OLED With No HDMI Output\", https://repair.wiki/w/How_To_Fix_Nintendo_Switch_OLED_With_No_HDMI_Output, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_Nintendo_Switch_OLED_With_No_HDMI_Output",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

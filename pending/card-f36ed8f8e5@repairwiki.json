@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Series X powers off during gameplay repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Series_X_powers_off_during_gameplay_repair",
+   "kind": "web",
+   "title": "Xbox Series X powers off during gameplay repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2713,
+   "last_edited_utc": "2024-01-16T11:42:18Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Series X"
+  ],
+  "symptoms": [
+   "turns off after starting gameplay"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Xbox Series X shutting off once gameplay starts usually has a failing SSD; clone the original M.2 to a new drive.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Series X internal SSDs only work in another Series X if cloned, and not in a Series S.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clone the internal SSD to a replacement M.2.",
+   "Fit and test."
+  ],
+  "measurements": [],
+  "tools": [
+   "TR8 Torx",
+   "M.2 USB enclosure or cloner"
+  ],
+  "cautions": [],
+  "tags": [
+   "clone",
+   "repair.wiki",
+   "shuts off during games",
+   "ssd",
+   "xbox series x"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "SSD",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxseriesx",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Series X powers off during gameplay repair\", https://repair.wiki/w/Xbox_Series_X_powers_off_during_gameplay_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Series_X_powers_off_during_gameplay_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

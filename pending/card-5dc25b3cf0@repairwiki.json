@@ -1,0 +1,92 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_Not_Charging",
+   "kind": "web",
+   "title": "IPhone XS Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7652,
+   "last_edited_utc": "2025-06-13T23:30:28Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "not charging"
+  ],
+  "codes": [
+   "U3300"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XS not charging: rule out the earpiece flex (liquid on flood illuminator/ALS), then most cases are fixed by replacing Yangtze U3300 (on the bottom side of the top board); test top board only—about 0.006 A suggests Yangtze. Rarely Hydra.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug all but screen, port, battery.",
+   "Inspect earpiece flex for corrosion.",
+   "Split and test top board; replace Yangtze U3300; then Hydra."
+  ],
+  "measurements": [
+   {
+    "point": "USB charge draw (fault)",
+    "expect": "0.006",
+    "unit": "A",
+    "mode": "current",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "USB meter",
+   "preheater",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "hydra",
+   "iphone xs",
+   "not charging",
+   "repair.wiki",
+   "u3300",
+   "yangtze"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Yangtze U3300",
+  "part_numbers": [
+   "U3300"
+  ],
+  "readings": [
+   {
+    "point": "USB charge draw (fault)",
+    "mode": "current",
+    "expect_lo": 0.006,
+    "expect_hi": 0.006,
+    "unit": "A"
+   }
+  ],
+  "device_family": "iphonexs",
+  "error_codes": [
+   "U3300"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS Not Charging\", https://repair.wiki/w/IPhone_XS_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

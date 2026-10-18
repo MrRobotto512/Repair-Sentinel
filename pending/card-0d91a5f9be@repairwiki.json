@@ -1,0 +1,92 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix iPhone 11 stuck in recovery mode with failed at Rose Error -1",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_iPhone_11_stuck_in_recovery_mode_with_failed_at_Rose_Error_-1",
+   "kind": "web",
+   "title": "How to fix iPhone 11 stuck in recovery mode with failed at Rose Error -1",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12056,
+   "last_edited_utc": "2025-09-24T13:17:06Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11",
+   "iPhone 11 Pro",
+   "iPhone 11 Pro Max"
+  ],
+  "symptoms": [
+   "stuck in recovery mode",
+   "restore fails at 90%"
+  ],
+  "codes": [
+   "-1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 11 / 11 Pro stuck in recovery, failing a 3uTools flash around 90% with error -1, is usually the Rose IC not being detected.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On iPhone 11 (non-Pro) Rose is on the bottom board, so sandwich separation can cause it; test the split boards in an iSocket: if flashing succeeds, reball the interposer; if not, replace Rose.",
+    "evidence": "iSocket test.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On 11 Pro / Pro Max Rose sits on the top board, so the fault is almost always the IC itself.",
+    "evidence": "Model note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for liquid, warping or layer separation.",
+   "Confirm the -1 failure at ~90%.",
+   "Non-Pro: separate layers and test in iSocket; reball interposer if it then flashes.",
+   "Otherwise replace Rose IC with a donor; restore and test Wi-Fi, LTE, Face ID."
+  ],
+  "measurements": [],
+  "tools": [
+   "iSocket fixture",
+   "preheater",
+   "reball stencil",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "error -1",
+   "interposer",
+   "iphone 11",
+   "iphone 11 pro",
+   "isocket",
+   "recovery mode",
+   "repair.wiki",
+   "rose ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Rose IC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone11",
+  "error_codes": [
+   "-1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix iPhone 11 stuck in recovery mode with failed at Rose Error -1\", https://repair.wiki/w/How_to_fix_iPhone_11_stuck_in_recovery_mode_with_failed_at_Rose_Error_-1, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_iPhone_11_stuck_in_recovery_mode_with_failed_at_Rose_Error_-1",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

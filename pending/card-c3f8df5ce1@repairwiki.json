@@ -1,0 +1,180 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 12 Pro Max No IMEI and missing Modem Firmware",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_12_Pro_Max_No_IMEI_and_missing_Modem_Firmware",
+   "kind": "web",
+   "title": "IPhone 12 Pro Max No IMEI and missing Modem Firmware",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7243,
+   "last_edited_utc": "2025-05-31T23:27:23Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "no IMEI",
+   "modem firmware missing"
+  ],
+  "codes": [
+   "PP_0V75_SMPS1_6",
+   "PP_1V22_SMPS2",
+   "PP_0V82_SMPS3",
+   "PP_1V9_SMPS4"
+  ],
+  "claims": [
+   {
+    "statement": "No IMEI and no modem firmware means the baseband CPU isn't talking to the CPU; the usual cause on iPhone 12 Pro Max is top/bottom board disconnection.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Baseband PMU outputs (phone on): SMPS1_6 0.752 V, SMPS2 1.224 V, SMPS3 0.824 V, SMPS4 1.88 V, SMPS5 0.752 V, SMPS7 0.752 V.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A missing PMU voltage isn't necessarily a bad PMU; test in an iSocket first because a top-board signal may be missing.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure the six BB PMU rails with phone on.",
+   "Split and inspect for ripped pads.",
+   "Test in iSocket; reball sandwich if IMEI returns.",
+   "Diode-check lines to the BB CPU; reball BB CPU/PMU if open under them."
+  ],
+  "measurements": [
+   {
+    "point": "PP_0V75_SMPS1_6",
+    "expect": "0.752",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Phone on"
+   },
+   {
+    "point": "PP_1V22_SMPS2",
+    "expect": "1.224",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Phone on"
+   },
+   {
+    "point": "PP_0V82_SMPS3",
+    "expect": "0.824",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Phone on"
+   },
+   {
+    "point": "PP_1V9_SMPS4",
+    "expect": "1.88",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Phone on"
+   },
+   {
+    "point": "PP_0V75_SMPS5",
+    "expect": "0.752",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Phone on"
+   },
+   {
+    "point": "PP_0V75_SMPS7",
+    "expect": "0.752",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Phone on"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "iSocket",
+   "preheater",
+   "ZXW"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband pmu",
+   "iphone 12 pro max",
+   "no imei",
+   "repair.wiki",
+   "sandwich",
+   "smps"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband / sandwich",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "PP_0V75_SMPS1_6",
+    "mode": "voltage",
+    "expect_lo": 0.752,
+    "expect_hi": 0.752,
+    "unit": "V"
+   },
+   {
+    "point": "PP_1V22_SMPS2",
+    "mode": "voltage",
+    "expect_lo": 1.224,
+    "expect_hi": 1.224,
+    "unit": "V"
+   },
+   {
+    "point": "PP_0V82_SMPS3",
+    "mode": "voltage",
+    "expect_lo": 0.824,
+    "expect_hi": 0.824,
+    "unit": "V"
+   },
+   {
+    "point": "PP_1V9_SMPS4",
+    "mode": "voltage",
+    "expect_lo": 1.88,
+    "expect_hi": 1.88,
+    "unit": "V"
+   },
+   {
+    "point": "PP_0V75_SMPS5",
+    "mode": "voltage",
+    "expect_lo": 0.752,
+    "expect_hi": 0.752,
+    "unit": "V"
+   },
+   {
+    "point": "PP_0V75_SMPS7",
+    "mode": "voltage",
+    "expect_lo": 0.752,
+    "expect_hi": 0.752,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone12promax",
+  "error_codes": [
+   "PP_0V75_SMPS1_6",
+   "PP_1V22_SMPS2",
+   "PP_0V82_SMPS3",
+   "PP_1V9_SMPS4"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 12 Pro Max No IMEI and missing Modem Firmware\", https://repair.wiki/w/IPhone_12_Pro_Max_No_IMEI_and_missing_Modem_Firmware, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_12_Pro_Max_No_IMEI_and_missing_Modem_Firmware",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

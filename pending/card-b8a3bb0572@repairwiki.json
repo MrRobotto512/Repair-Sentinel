@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch, No image on TV when Docked Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch,_No_image_on_TV_when_Docked_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch, No image on TV when Docked Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2228,
+   "last_edited_utc": "2024-01-13T16:35:25Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no image on TV when docked"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Docked no-image: check/replace the port (loose or poorly soldered), replace PI3USB, check and replace all ferrite chokes and caps between PI3USB and the port even if they look fine; M92T36 can also cause it, especially with one-side charging.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect/reflow/replace the port.",
+   "Replace PI3USB.",
+   "Replace chokes and caps between PI3USB and port.",
+   "Replace M92T36 if charging is also affected."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "chokes",
+   "dock",
+   "m92t36",
+   "nintendo switch",
+   "no hdmi",
+   "pi3usb",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PI3USB / chokes",
+  "part_numbers": [
+   "PI3USB30532",
+   "M92T36"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch, No image on TV when Docked Repair\", https://repair.wiki/w/Nintendo_Switch,_No_image_on_TV_when_Docked_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch,_No_image_on_TV_when_Docked_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,84 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone SE 2020 That Does Not Turn On, Stuck at 0.043 Amps",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_That_Does_Not_Turn_On,_Stuck_at_0.043_Amps",
+   "kind": "web",
+   "title": "How To Fix an iPhone SE 2020 That Does Not Turn On, Stuck at 0.043 Amps",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3129,
+   "last_edited_utc": "2024-01-21T06:22:45Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone SE (2nd generation, 2020)"
+  ],
+  "symptoms": [
+   "no power",
+   "stuck at 43 mA after power-on"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone SE 2020 that draws nothing before power-on and sits at about 43 mA after prompting boot: look for absent rails and for coils near the CPU/PMIC that have come loose.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm the 43 mA stall on a DC supply.",
+   "Check rails and inspect/probe coils around CPU and PMIC."
+  ],
+  "measurements": [
+   {
+    "point": "Stalled boot draw",
+    "expect": "43",
+    "unit": "mA",
+    "mode": "current",
+    "context": "DC supply after power-on"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "microscope",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "43ma",
+   "iphone se 2020",
+   "loose coils",
+   "no power",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Very short page; the specific rail is not identified. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power rails / coils",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Stalled boot draw",
+    "mode": "current",
+    "expect_lo": 43.0,
+    "expect_hi": 43.0,
+    "unit": "mA"
+   }
+  ],
+  "device_family": "iphonese",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone SE 2020 That Does Not Turn On, Stuck at 0.043 Amps\", https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_That_Does_Not_Turn_On,_Stuck_at_0.043_Amps, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_That_Does_Not_Turn_On,_Stuck_at_0.043_Amps",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

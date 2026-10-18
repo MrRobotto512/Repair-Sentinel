@@ -1,0 +1,99 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to Repair iPad Pro 10.5 not charging or not detected by pc",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_Repair_iPad_Pro_10.5_not_charging_or_not_detected_by_pc",
+   "kind": "web",
+   "title": "How to Repair iPad Pro 10.5 not charging or not detected by pc",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13944,
+   "last_edited_utc": "2026-02-12T08:17:46Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 10.5"
+  ],
+  "symptoms": [
+   "not charging",
+   "not detected by PC"
+  ],
+  "codes": [
+   "U3500"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 10.5 not charging and not seen by a PC, with a good dock flex, is usually Tristar U3500 (compatible with iPhone 7 / 7 Plus Tristar 610A3B).",
+    "evidence": "Problem description and note.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Initial draw at power-on should be under about 100 mA; abnormal draw plus failed dock test points to U3500.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check power-on draw on DCPS.",
+   "Swap in known-good dock flex.",
+   "Remove shield, replace U3500; test charging and PC detection."
+  ],
+  "measurements": [
+   {
+    "point": "Initial power-on draw",
+    "expect": "100",
+    "unit": "mA",
+    "mode": "current",
+    "context": "Should be below this"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "610a3b",
+   "ipad pro 10.5",
+   "not charging",
+   "repair.wiki",
+   "tristar",
+   "u3500"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Tristar U3500",
+  "part_numbers": [
+   "U3500",
+   "610A3B"
+  ],
+  "readings": [
+   {
+    "point": "Initial power-on draw",
+    "mode": "current",
+    "expect_lo": 100.0,
+    "expect_hi": 100.0,
+    "unit": "mA"
+   }
+  ],
+  "device_family": "ipadpro105",
+  "error_codes": [
+   "U3500"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to Repair iPad Pro 10.5 not charging or not detected by pc\", https://repair.wiki/w/How_to_Repair_iPad_Pro_10.5_not_charging_or_not_detected_by_pc, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_Repair_iPad_Pro_10.5_not_charging_or_not_detected_by_pc",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix iPhone 14 Error 9 with failed Rose",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_iPhone_14_Error_9_with_failed_Rose",
+   "kind": "web",
+   "title": "How to fix iPhone 14 Error 9 with failed Rose",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13939,
+   "last_edited_utc": "2026-02-12T04:26:16Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14",
+   "iPhone 14 Plus"
+  ],
+  "symptoms": [
+   "restore fails with error 9",
+   "stuck in recovery or DFU"
+  ],
+  "codes": [
+   "9",
+   "U200_R"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 14 restores that fail with error 9 part-way, regardless of cable, computer or DFU, and whose restore logs show ROSE communication failure, need ROSE IC (U200_R) replacement.",
+    "evidence": "Problem description and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The repair requires splitting the sandwich; excess force destroys interposer pads.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm consistent error 9 and ROSE errors in restore logs.",
+   "Rule out cable, charge port and low battery.",
+   "Split the board with controlled preheat.",
+   "Replace ROSE IC U200_R; inspect joints.",
+   "Re-stack, restore and verify boot."
+  ],
+  "measurements": [],
+  "tools": [
+   "preheater",
+   "hot air",
+   "reball stencil",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Excessive force when splitting the sandwich can rip interposer pads."
+  ],
+  "tags": [
+   "error 9",
+   "iphone 14",
+   "repair.wiki",
+   "restore failure",
+   "rose ic",
+   "u200_r"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "ROSE IC U200_R",
+  "part_numbers": [
+   "U200_R"
+  ],
+  "readings": [],
+  "device_family": "iphone14",
+  "error_codes": [
+   "9",
+   "U200_R"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix iPhone 14 Error 9 with failed Rose\", https://repair.wiki/w/How_to_fix_iPhone_14_Error_9_with_failed_Rose, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_iPhone_14_Error_9_with_failed_Rose",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

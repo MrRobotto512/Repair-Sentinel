@@ -1,0 +1,117 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone SE 2020 That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone SE 2020 That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3073,
+   "last_edited_utc": "2024-01-19T22:23:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone SE (2nd generation, 2020)"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes",
+   "0% charging"
+  ],
+  "codes": [
+   "TG0B",
+   "TG0V",
+   "Mic1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone SE 2020 Missing sensors TG0B/TG0V = battery path: check MOSFETs Q3200/Q3201 and diode-check I2C3_SMC_TO_GG_SCL_CONN / I2C3_SMC_BI_GG_SDA_CONN.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Mic1 can be a bad charging port flex (iPhone 8 port flexes fitted to SE 2020 often cause restarts) or the common board defect where I2C1_AP_SDA / I2C1_AP_SCL break under the SIM tray.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Board-defect fix: jumper R6610 to charging port FPC pin 13 (SCL) and R6611 to pin 15 (SDA); each should then read about 0.329 in diode mode.",
+    "evidence": "Mic1 jumper notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read Missing sensors.",
+   "TG0B/TG0V: battery, Q3200/Q3201, SMC-to-gas-gauge lines.",
+   "Mic1: known-good SE 2020 charge port flex.",
+   "Diode-check I2C1_AP_SDA/SCL at the port FPC; jumper around the break if OL."
+  ],
+  "measurements": [
+   {
+    "point": "I2C1_AP_SCL / I2C1_AP_SDA at charge port FPC",
+    "expect": "0.329",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Good reading"
+   }
+  ],
+  "tools": [
+   "known-good flexes",
+   "multimeter",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone se 2020",
+   "mic1",
+   "panic log",
+   "q3200",
+   "q3201",
+   "r6610",
+   "r6611",
+   "random restart",
+   "repair.wiki",
+   "tg0b"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery / charge port flex / I2C1 lines",
+  "part_numbers": [
+   "Q3200",
+   "Q3201",
+   "R6610",
+   "R6611"
+  ],
+  "readings": [
+   {
+    "point": "I2C1_AP_SCL / I2C1_AP_SDA at charge port FPC",
+    "mode": "diode",
+    "expect_lo": 0.329,
+    "expect_hi": 0.329,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphonese",
+  "error_codes": [
+   "TG0B",
+   "TG0V",
+   "Mic1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone SE 2020 That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

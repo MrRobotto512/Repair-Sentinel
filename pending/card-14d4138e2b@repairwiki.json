@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair PS5 Controller Not Working in Normal Mode but Works in Safe Mode",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_PS5_Controller_Not_Working_in_Normal_Mode_but_Works_in_Safe_Mode",
+   "kind": "web",
+   "title": "How To Repair PS5 Controller Not Working in Normal Mode but Works in Safe Mode",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13982,
+   "last_edited_utc": "2026-02-18T02:27:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "PlayStation 5 Slim",
+   "PlayStation 5 Pro"
+  ],
+  "symptoms": [
+   "controller works only in Safe Mode",
+   "controller won't pair in normal mode"
+  ],
+  "codes": [
+   "BDM-010",
+   "EDM-020",
+   "EDM-032",
+   "EDM-033",
+   "EDM-040",
+   "EDM-044",
+   "VSM-010"
+  ],
+  "claims": [
+   {
+    "statement": "A DualSense that works in PS5 Safe Mode (via USB) but not in normal mode, after reset and firmware update and testing on another console, points to a faulty Wi-Fi/Bluetooth module on the main board.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix is replacing the board's Wi-Fi/BT module with an exact match.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Reset the controller; test via USB in Safe Mode and normal mode.",
+   "Test the controller on another PS5; update firmware.",
+   "Inspect around the RF module.",
+   "Replace the Wi-Fi/BT module."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "bluetooth",
+   "controller",
+   "ps5",
+   "ps5 pro",
+   "ps5 slim",
+   "repair.wiki",
+   "safe mode",
+   "wifi module"
+  ],
+  "confidence": "medium",
+  "caveats": "Module locations per board revision are shown only in images. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi/Bluetooth module",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "BDM-010",
+   "EDM-020",
+   "EDM-032",
+   "EDM-033",
+   "EDM-040",
+   "EDM-044",
+   "VSM-010"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair PS5 Controller Not Working in Normal Mode but Works in Safe Mode\", https://repair.wiki/w/How_To_Repair_PS5_Controller_Not_Working_in_Normal_Mode_but_Works_in_Safe_Mode, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_PS5_Controller_Not_Working_in_Normal_Mode_but_Works_in_Safe_Mode",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

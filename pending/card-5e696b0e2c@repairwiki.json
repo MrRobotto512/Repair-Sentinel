@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch No Fan Spin Voltage Injection Method",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_No_Fan_Spin_Voltage_Injection_Method",
+   "kind": "web",
+   "title": "Nintendo Switch No Fan Spin Voltage Injection Method",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2182,
+   "last_edited_utc": "2024-01-13T14:18:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "fan not spinning"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "With the console on, tapping 2.5–3.5 V into the fan's VCC pin for 1–2 s a few times can revive the open MOSFET that feeds fan and Joy-Con rails (credited to TheCod3r).",
+    "evidence": "Method.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replace a fan that resists, grinds or whines before trying this.",
+    "evidence": "Method.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm the fan never spins under load.",
+   "Check the fan spins freely.",
+   "With console on, tap 2.5–3.5 V into fan VCC for 1–2 s, repeat.",
+   "Stop when it spins; check Joy-Con charging; replace MOSFET if no luck."
+  ],
+  "measurements": [
+   {
+    "point": "Fan VCC injection",
+    "expect": "2.5-3.5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Console on, 1-2 s taps"
+   }
+  ],
+  "tools": [
+   "DC power supply"
+  ],
+  "cautions": [],
+  "tags": [
+   "mosfet",
+   "nintendo switch",
+   "no fan",
+   "repair.wiki",
+   "voltage injection"
+  ],
+  "confidence": "medium",
+  "caveats": "Community method; source claims high success. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Fan/Joy-Con MOSFET",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Fan VCC injection",
+    "mode": "voltage",
+    "expect_lo": 2.5,
+    "expect_hi": 3.5,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch No Fan Spin Voltage Injection Method\", https://repair.wiki/w/Nintendo_Switch_No_Fan_Spin_Voltage_Injection_Method, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_No_Fan_Spin_Voltage_Injection_Method",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

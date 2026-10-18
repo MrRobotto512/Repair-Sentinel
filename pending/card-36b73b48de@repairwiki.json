@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Not_Charging",
+   "kind": "web",
+   "title": "Nintendo Switch Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2287,
+   "last_edited_utc": "2024-01-13T20:30:27Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "not charging",
+   "charges one orientation only",
+   "no fast charge"
+  ],
+  "codes": [
+   "RCM",
+   "autoRCM"
+  ],
+  "claims": [
+   {
+    "statement": "The Switch's two main charging failure points are M92T36 (custom Rohm USB-C PMIC) and PI3USB (video IC that also matters for charging); both often die with port or cable damage and may not show obvious shorts.",
+    "evidence": "Page summary.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "When replacing a port, check caps around both ICs; if a short remains after removing the chip, suspect the CPU. Also check the fuse above the port.",
+    "evidence": "Port replacement notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After repair a USB-C meter should show 15 V; around 0.5 A draw is expected—if not, try a new battery and check autoRCM, which can drain the battery below where the brick can charge it.",
+    "evidence": "Port replacement notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check caps around M92T36 and PI3USB; remove chips to isolate shorts.",
+   "Check the fuse above the port.",
+   "Confirm 15 V negotiation and ~0.5 A draw.",
+   "If no image, recheck PI3USB and check for RCM with Hekate."
+  ],
+  "measurements": [
+   {
+    "point": "Charger negotiation",
+    "expect": "15",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Working"
+   },
+   {
+    "point": "Charge draw",
+    "expect": "0.5",
+    "unit": "A",
+    "mode": "current",
+    "context": "Approximate"
+   }
+  ],
+  "tools": [
+   "USB-C meter",
+   "multimeter",
+   "Hekate"
+  ],
+  "cautions": [],
+  "tags": [
+   "autorcm",
+   "fuse",
+   "m92t36",
+   "nintendo switch",
+   "not charging",
+   "pi3usb",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "M92T36 / PI3USB",
+  "part_numbers": [
+   "M92T36",
+   "PI3USB30532"
+  ],
+  "readings": [
+   {
+    "point": "Charger negotiation",
+    "mode": "voltage",
+    "expect_lo": 15.0,
+    "expect_hi": 15.0,
+    "unit": "V"
+   },
+   {
+    "point": "Charge draw",
+    "mode": "current",
+    "expect_lo": 0.5,
+    "expect_hi": 0.5,
+    "unit": "A"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "RCM",
+   "autoRCM"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Not Charging\", https://repair.wiki/w/Nintendo_Switch_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

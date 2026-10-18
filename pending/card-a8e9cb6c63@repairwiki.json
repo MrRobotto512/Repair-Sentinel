@@ -1,0 +1,78 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo 3DS",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_3DS",
+   "kind": "web",
+   "title": "Nintendo 3DS",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9854,
+   "last_edited_utc": "2025-08-03T21:06:50Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo 3DS",
+   "Nintendo 2DS"
+  ],
+  "symptoms": [
+   "power-up sequence reference"
+  ],
+  "codes": [
+   "CTR"
+  ],
+  "claims": [
+   {
+    "statement": "On 3DS, applying battery/charger power boots the MCU, which initialises I2C, reads config resistors, configures regulators, detects charger and runs battery rejection—before any power button press.",
+    "evidence": "Power-up sequence.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On power button press the MCU re-checks the battery (emergency shutdown if rejected), fades in the LED, powers the SoC and releases resets; the bootroms then find a boot device or show the blue screen.",
+    "evidence": "Soft start.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Original 3DS differs significantly from the New 3DS; the 2DS shares nearly all original 3DS parts.",
+    "evidence": "About section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "2ds",
+   "boot",
+   "mcu",
+   "nintendo 3ds",
+   "power sequence",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Reference card, no fault procedure. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendo3ds",
+  "error_codes": [
+   "CTR"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo 3DS\", https://repair.wiki/w/Nintendo_3DS, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_3DS",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

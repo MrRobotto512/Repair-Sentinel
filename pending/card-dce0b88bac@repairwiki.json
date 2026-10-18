@@ -1,0 +1,130 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair Samsung Galaxy Z Fold 4 Fake Charing",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_Samsung_Galaxy_Z_Fold_4_Fake_Charing",
+   "kind": "web",
+   "title": "How To Repair Samsung Galaxy Z Fold 4 Fake Charing",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12789,
+   "last_edited_utc": "2025-11-20T16:05:29Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy Z Fold 4"
+  ],
+  "symptoms": [
+   "fake charging",
+   "stuck on charging logo",
+   "won't boot"
+  ],
+  "codes": [
+   "V_BATT",
+   "ASL01"
+  ],
+  "claims": [
+   {
+    "statement": "Galaxy Z Fold 4 stuck on the charging animation with a dead short (about 0.09 Ω) on V_BATT is usually a failed ASL01 charging IC next to the battery connector FPC.",
+    "evidence": "Problem description and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With ASL01 removed V_BATT read about 19 MΩ; after fitting a new one about 2.16 kΩ / 0.469 in diode mode (normal).",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure V_BATT near the FPC connectors.",
+   "Inject 1 V (1–2 A) with rosin; ASL01 heats.",
+   "Remove ASL01; confirm short clears.",
+   "Fit new ASL01; re-measure; test boot and charge."
+  ],
+  "measurements": [
+   {
+    "point": "V_BATT (shorted)",
+    "expect": "0.09",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "Fault"
+   },
+   {
+    "point": "V_BATT after repair",
+    "expect": "0.469",
+    "unit": "V",
+    "mode": "diode",
+    "context": "About 2.16 kΩ"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "1-2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "rosin",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "asl01",
+   "charging ic",
+   "fake charging",
+   "galaxy z fold 4",
+   "repair.wiki",
+   "v_batt"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "ASL01 charging IC",
+  "part_numbers": [
+   "ASL01"
+  ],
+  "readings": [
+   {
+    "point": "V_BATT (shorted)",
+    "mode": "resistance",
+    "expect_lo": 0.09,
+    "expect_hi": 0.09,
+    "unit": "Ω"
+   },
+   {
+    "point": "V_BATT after repair",
+    "mode": "diode",
+    "expect_lo": 0.469,
+    "expect_hi": 0.469,
+    "unit": "V"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxyzfold4",
+  "error_codes": [
+   "V_BATT",
+   "ASL01"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair Samsung Galaxy Z Fold 4 Fake Charing\", https://repair.wiki/w/How_To_Repair_Samsung_Galaxy_Z_Fold_4_Fake_Charing, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_Samsung_Galaxy_Z_Fold_4_Fake_Charing",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

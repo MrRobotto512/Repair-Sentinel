@@ -1,0 +1,70 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 12 Screen Stays Dim and Can't Increase Brightness Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_12_Screen_Stays_Dim_and_Can%27t_Increase_Brightness_Repair",
+   "kind": "web",
+   "title": "IPhone 12 Screen Stays Dim and Can't Increase Brightness Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3070,
+   "last_edited_utc": "2024-01-19T22:21:40Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12",
+   "iPhone 12 mini",
+   "iPhone 12 Pro",
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "screen dims after boot",
+   "brightness won't increase"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone 12 that's bright at the logo but goes very dim at the home screen needs the earpiece flex connected (it carries the light sensor); if connected, that flex may be bad—a new one loses Face ID.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Make sure the earpiece flex is connected.",
+   "Try a new earpiece flex (Face ID lost)."
+  ],
+  "measurements": [],
+  "tools": [
+   "screwdrivers"
+  ],
+  "cautions": [],
+  "tags": [
+   "ambient light sensor",
+   "brightness",
+   "dim screen",
+   "earpiece flex",
+   "iphone 12",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Earpiece flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone12",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 12 Screen Stays Dim and Can't Increase Brightness Repair\", https://repair.wiki/w/IPhone_12_Screen_Stays_Dim_and_Can%27t_Increase_Brightness_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_12_Screen_Stays_Dim_and_Can%27t_Increase_Brightness_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

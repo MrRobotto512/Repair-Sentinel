@@ -1,0 +1,129 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 13 Pro and 13 Pro Max No Touch Problem",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_13_Pro_and_13_Pro_Max_No_Touch_Problem",
+   "kind": "web",
+   "title": "IPhone 13 Pro and 13 Pro Max No Touch Problem",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13908,
+   "last_edited_utc": "2026-02-09T05:24:25Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 13 Pro",
+   "iPhone 13 Pro Max"
+  ],
+  "symptoms": [
+   "no touch",
+   "display works"
+  ],
+  "codes": [
+   "C8901",
+   "C8903",
+   "U8900",
+   "PP5V1_TOUCH_VDDTX_S2"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 13 Pro / Pro Max no touch with normal connector readings is usually a faulty capacitor on the touch boost line: C8901 (plus C8903 on Pro Max).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "To check the boost output, power the board at 3.8–4.2 V, inject 1.8 V at minimal current into the boost IC enable pin (#49 per JC Drawing) and measure output pin #54; no output = proceed.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The shorted cap must be replaced (not just removed); if the short remains, replace U8900 too.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check the display connector.",
+   "Force-enable the touch boost and measure its output.",
+   "Split the board; check/replace C8901 (and C8903 on Pro Max).",
+   "Replace U8900 if the short doesn't clear."
+  ],
+  "measurements": [
+   {
+    "point": "Board supply for test",
+    "expect": "3.8-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "DCPS or battery"
+   },
+   {
+    "point": "Boost enable injection",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Lowest current, pin #49 (JC Drawing)"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "JC Drawing",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "c8901",
+   "c8903",
+   "iphone 13 pro",
+   "no touch",
+   "repair.wiki",
+   "touch boost",
+   "u8900"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch boost capacitor",
+  "part_numbers": [
+   "C8901",
+   "C8903",
+   "U8900"
+  ],
+  "readings": [
+   {
+    "point": "Board supply for test",
+    "mode": "voltage",
+    "expect_lo": 3.8,
+    "expect_hi": 4.2,
+    "unit": "V"
+   },
+   {
+    "point": "Boost enable injection",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone13pro",
+  "error_codes": [
+   "C8901",
+   "C8903",
+   "U8900",
+   "PP5V1_TOUCH_VDDTX_S2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 13 Pro and 13 Pro Max No Touch Problem\", https://repair.wiki/w/IPhone_13_Pro_and_13_Pro_Max_No_Touch_Problem, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_13_Pro_and_13_Pro_Max_No_Touch_Problem",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

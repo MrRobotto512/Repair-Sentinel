@@ -1,0 +1,82 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to Repair iPhone Air Error 4010",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_Repair_iPhone_Air_Error_4010",
+   "kind": "web",
+   "title": "How to Repair iPhone Air Error 4010",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12574,
+   "last_edited_utc": "2025-11-03T15:58:37Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone Air (iPhone 17 Air)"
+  ],
+  "symptoms": [
+   "restore fails with error 4010"
+  ],
+  "codes": [
+   "4010"
+  ],
+  "claims": [
+   {
+    "statement": "On iPhone Air, restore error 4010 midway (progress bar visible) means the small upper interposer board is missing, misaligned or badly soldered, usually after previous board work.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: clean pads, reball the lower layer with 148/158 paste and reflow the small board aligned under a microscope, without pressing it.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for the upper small board and its joints.",
+   "Clean pads; reball lower layer (148/158).",
+   "Align and reflow the small board.",
+   "Restore and verify IMEI, Wi-Fi, serial."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "148/158 solder paste",
+   "stencil",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Pressing on the board during reflow can sink pads."
+  ],
+  "tags": [
+   "error 4010",
+   "interposer",
+   "iphone air",
+   "repair.wiki",
+   "restore failure"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Interposer small board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphoneair",
+  "error_codes": [
+   "4010"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to Repair iPhone Air Error 4010\", https://repair.wiki/w/How_to_Repair_iPhone_Air_Error_4010, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_Repair_iPhone_Air_Error_4010",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

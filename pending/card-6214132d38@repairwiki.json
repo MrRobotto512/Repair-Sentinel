@@ -1,0 +1,130 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 That Does Not Turn On",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Does_Not_Turn_On",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 That Does Not Turn On",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 1605,
+   "last_edited_utc": "2023-12-20T21:33:42Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no power",
+   "does not charge",
+   "2 A draw before power-on"
+  ],
+  "codes": [
+   "PP_VDD_MAIN"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 pulling about 2 A or more on a DC supply before power-on usually has a shorted capacitor, most often on PP_VDD_MAIN, then PP_VDD_BOOST, backlight anodes, or PP_SPKR1_VBOOST.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Inject 4 V / 2 A into the shorted line and find the cap with freeze spray or thermal camera; the shorted cap can simply be removed.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Common liquid-damage areas for a VDD_MAIN short include around BBPMU_RF (C5625_RF, C5622_RF), the back top arm (C2609–C2612), backlight caps (C3725, C3705, C4602, C4612), near WLAN (C7610_RF, C2527, C3002) and above the CPU (C3313, C3327, C3328).",
+    "evidence": "Liquid damage notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "When injecting through the battery connector, Tigris MOSFET Q2101 heats instantly because PP_BATT_VCC feeds VDD_MAIN through it; it is not the short.",
+    "evidence": "Caution note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for liquid damage (under stickers and foam).",
+   "Measure VDD_MAIN, VDD_BOOST, backlight anodes, SPKR1_VBOOST for shorts.",
+   "Inject 4 V / 2 A and locate the hot capacitor.",
+   "Remove the shorted capacitor."
+  ],
+  "measurements": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "expect": "2",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "freeze spray",
+   "thermal camera",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 7",
+   "no power",
+   "q2101",
+   "repair.wiki",
+   "tigris",
+   "vdd_boost",
+   "vdd_main short",
+   "water damage"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PP_VDD_MAIN capacitors",
+  "part_numbers": [
+   "Q2101"
+  ],
+  "readings": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "mode": "current",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "A"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone7",
+  "error_codes": [
+   "PP_VDD_MAIN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 That Does Not Turn On\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Does_Not_Turn_On, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Does_Not_Turn_On",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

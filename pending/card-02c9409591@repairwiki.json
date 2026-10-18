@@ -1,0 +1,76 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone X With No WiFi. Grayed Out Button",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_X_With_No_WiFi._Grayed_Out_Button",
+   "kind": "web",
+   "title": "How To Fix iPhone X With No WiFi. Grayed Out Button",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3408,
+   "last_edited_utc": "2024-02-12T07:57:31Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "Wi-Fi greyed out"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone X greyed-out Wi-Fi usually needs a bottom board swap because the bottom layer and interposer crack near the SIM tray.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Confirm by pairing the top board with a working bottom board using the same modem type after unbinding Wi-Fi; swap BB CPU, BB EEPROM, optionally NFC, and the Wi-Fi IC.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check for bending near the SIM slot.",
+   "Split and test in iSocket.",
+   "Test with known-good bottom board.",
+   "Swap paired chips and verify Wi-Fi, touch and 'No SIM'."
+  ],
+  "measurements": [],
+  "tools": [
+   "iSocket jig",
+   "JC EEPROM reader",
+   "iRepair P10"
+  ],
+  "cautions": [],
+  "tags": [
+   "bottom board swap",
+   "interposer",
+   "iphone x",
+   "repair.wiki",
+   "sim tray",
+   "wifi greyed out"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Bottom board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonex",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone X With No WiFi. Grayed Out Button\", https://repair.wiki/w/How_To_Fix_iPhone_X_With_No_WiFi._Grayed_Out_Button, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_X_With_No_WiFi._Grayed_Out_Button",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

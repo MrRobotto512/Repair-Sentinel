@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix iPhone 8 with Grayed Out Speaker Button During Phone Call",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_iPhone_8_with_Grayed_Out_Speaker_Button_During_Phone_Call",
+   "kind": "web",
+   "title": "How to fix iPhone 8 with Grayed Out Speaker Button During Phone Call",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3340,
+   "last_edited_utc": "2024-02-09T08:42:49Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "speaker button greyed out in calls",
+   "voice memo will not record"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Unlike iPhone 7 audio disease, a greyed-out speaker button on iPhone 8 is usually a corroded front camera flex (ALS/proximity); replacing that flex loses True Tone.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug the front camera flex and test.",
+   "Clean or replace the flex (True Tone will be lost if replaced)."
+  ],
+  "measurements": [],
+  "tools": [
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "front camera flex",
+   "greyed out speaker",
+   "iphone 8",
+   "repair.wiki",
+   "true tone"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Front camera flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone8",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix iPhone 8 with Grayed Out Speaker Button During Phone Call\", https://repair.wiki/w/How_to_fix_iPhone_8_with_Grayed_Out_Speaker_Button_During_Phone_Call, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_iPhone_8_with_Grayed_Out_Speaker_Button_During_Phone_Call",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

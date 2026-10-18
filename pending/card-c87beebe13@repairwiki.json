@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Sony Dualshock 4 Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/Sony_Dualshock_4_Not_Charging",
+   "kind": "web",
+   "title": "Sony Dualshock 4 Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13169,
+   "last_edited_utc": "2025-12-09T20:57:54Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "DualShock 4"
+  ],
+  "symptoms": [
+   "not charging"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "DualShock 4 not charging is more often the charging port board than the battery; check the battery connector for shorts and current draw on a bench PSU, then shorts around the PMIC.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace the charging port board.",
+   "Check battery connector draw/shorts on bench PSU.",
+   "Trace shorts to PMIC caps or PMIC."
+  ],
+  "measurements": [],
+  "tools": [
+   "bench PSU",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "charge port board",
+   "dualshock 4",
+   "not charging",
+   "ps4 controller",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charge port board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "dualshock4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Sony Dualshock 4 Not Charging\", https://repair.wiki/w/Sony_Dualshock_4_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Sony_Dualshock_4_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 4 Not turning on repair",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_4_Not_turning_on_repair",
+   "kind": "web",
+   "title": "PlayStation 4 Not turning on repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6543,
+   "last_edited_utc": "2025-05-12T21:50:19Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [
+   "no power"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "PS4 no power: check the PSU outputs +5 V standby and 12 V at the board connector, check for shorts around the southbridge, and check for blown fuses.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure 5 V standby and 12 V at the PSU connector.",
+   "Check southbridge area for shorts.",
+   "Check fuses."
+  ],
+  "measurements": [
+   {
+    "point": "PSU standby",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "+5V_STBY"
+   },
+   {
+    "point": "PSU main",
+    "expect": "12",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "fuse",
+   "no power",
+   "ps4",
+   "psu",
+   "repair.wiki",
+   "southbridge"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PSU / southbridge",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "PSU standby",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "PSU main",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 4 Not turning on repair\", https://repair.wiki/w/PlayStation_4_Not_turning_on_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_4_Not_turning_on_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,163 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 Standby Boot Sequence & Consumption Analysis",
+  "source": {
+   "url": "https://repair.wiki/w/PS5_Standby_Boot_Sequence_%26_Consumption_Analysis",
+   "kind": "web",
+   "title": "PS5 Standby Boot Sequence & Consumption Analysis",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12839,
+   "last_edited_utc": "2025-11-23T07:51:29Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "PlayStation 5 Slim",
+   "PlayStation 5 Pro"
+  ],
+  "symptoms": [
+   "no power",
+   "standby draw diagnosis"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Feed 12 V / 2 A into the PS5's 12 V rail and watch 10–15 s: healthy is about 321 mA briefly, then 7–10 mA.",
+    "evidence": "Connection and healthy readings.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "0 mA throughout: check BIOS, fuses, 12 V input short. ~15 mA steady or 7→27 mA: shorts near southbridge. ~5 mA steady: shorts near HDMI encoder.",
+    "evidence": "Consumption table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Stuck at 7 mA: check the Dialog IC voltages, the southbridge 25 MHz and 32 kHz clocks and whether it accesses the BIOS—reflash/replace BIOS or southbridge. 7 mA boot-looping to 12 mA: short on 1.1 V. ~35 mA steady: short on 1.9 V.",
+    "evidence": "Consumption table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "175 or 225 mA then 7–10 mA: check SSD controller for shorts. ~270 mA dropping on power press with a beep: shorts near Wi-Fi IC. Stuck at ~315 mA: check 3.3 V standby present and Wi-Fi IC shorts.",
+    "evidence": "Consumption table.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Set DCPS 12 V / 2 A, off; clip to the 12 V prongs; switch on.",
+   "Record first-stage and settled current.",
+   "Match to the table and inspect the indicated area."
+  ],
+  "measurements": [
+   {
+    "point": "Healthy first stage",
+    "expect": "321",
+    "unit": "mA",
+    "mode": "current",
+    "context": "12 V input"
+   },
+   {
+    "point": "Healthy settled",
+    "expect": "7-10",
+    "unit": "mA",
+    "mode": "current",
+    "context": "12 V input"
+   },
+   {
+    "point": "SSD controller short pattern",
+    "expect": "175-225",
+    "unit": "mA",
+    "mode": "current",
+    "context": "Then 7-10 mA"
+   },
+   {
+    "point": "3.3 V standby / Wi-Fi short",
+    "expect": "315",
+    "unit": "mA",
+    "mode": "current",
+    "context": "Steady"
+   },
+   {
+    "point": "1.9 V rail short",
+    "expect": "35",
+    "unit": "mA",
+    "mode": "current",
+    "context": "Steady"
+   }
+  ],
+  "tools": [
+   "bench power supply"
+  ],
+  "cautions": [],
+  "tags": [
+   "321ma",
+   "dcps",
+   "power draw",
+   "ps5",
+   "repair.wiki",
+   "southbridge",
+   "ssd controller",
+   "standby current",
+   "wifi ic"
+  ],
+  "confidence": "high",
+  "caveats": "Data credited to FixMyApp research; agrees with an existing YouTube-sourced pool card. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Healthy first stage",
+    "mode": "current",
+    "expect_lo": 321.0,
+    "expect_hi": 321.0,
+    "unit": "mA"
+   },
+   {
+    "point": "Healthy settled",
+    "mode": "current",
+    "expect_lo": 7.0,
+    "expect_hi": 10.0,
+    "unit": "mA"
+   },
+   {
+    "point": "SSD controller short pattern",
+    "mode": "current",
+    "expect_lo": 175.0,
+    "expect_hi": 225.0,
+    "unit": "mA"
+   },
+   {
+    "point": "3.3 V standby / Wi-Fi short",
+    "mode": "current",
+    "expect_lo": 315.0,
+    "expect_hi": 315.0,
+    "unit": "mA"
+   },
+   {
+    "point": "1.9 V rail short",
+    "mode": "current",
+    "expect_lo": 35.0,
+    "expect_hi": 35.0,
+    "unit": "mA"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PS5 Standby Boot Sequence & Consumption Analysis\", https://repair.wiki/w/PS5_Standby_Boot_Sequence_%26_Consumption_Analysis, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PS5_Standby_Boot_Sequence_%26_Consumption_Analysis",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,70 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone Upper-Layer Compatibility Guide (Sandwich Logic Boards)",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_Upper-Layer_Compatibility_Guide_(Sandwich_Logic_Boards)",
+   "kind": "web",
+   "title": "IPhone Upper-Layer Compatibility Guide (Sandwich Logic Boards)",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13740,
+   "last_edited_utc": "2026-01-19T22:39:38Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X–iPhone 17 Pro Max"
+  ],
+  "symptoms": [
+   "upper layer swap compatibility"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The upper (CPU/NAND/EEPROM) layer can be swapped only between the same model for X, 11, 12 series and 13 series; XS and XS Max only with themselves (PMIC-specific).",
+    "evidence": "Compatibility table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With a Board ID resistor mod, upper layers swap between 11 Pro ↔ 11 Pro Max, 14 ↔ 14 Plus, 14 Pro ↔ 14 Pro Max, 15 ↔ 15 Plus, 15 Pro ↔ 15 Pro Max, 16 Pro ↔ 16 Pro Max and 17 Pro ↔ 17 Pro Max.",
+    "evidence": "Compatibility table.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check the table before sourcing a donor upper layer.",
+   "Apply the Board ID resistor change for cross-model swaps."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "board id",
+   "data recovery",
+   "iphone",
+   "repair.wiki",
+   "sandwich board",
+   "upper layer swap"
+  ],
+  "confidence": "medium",
+  "caveats": "16, 16 Plus and 17 base entries are blank on the source. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Upper logic board layer",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexiphone17promax",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone Upper-Layer Compatibility Guide (Sandwich Logic Boards)\", https://repair.wiki/w/IPhone_Upper-Layer_Compatibility_Guide_(Sandwich_Logic_Boards), CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_Upper-Layer_Compatibility_Guide_(Sandwich_Logic_Boards)",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,102 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 16 Pro That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_16_Pro_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 16 Pro That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9208,
+   "last_edited_utc": "2025-07-28T20:27:57Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "3145728",
+   "2097152",
+   "0x300000",
+   "0x200000",
+   "169"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 16 Pro / Pro Max Sensor Array 3145728 or 2097152 (0x300000 / 0x200000) points to the charging port flex or the bottom mic / air pressure sensor module.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If water damaged, also check the Taptic Engine (can test unplugged), the air pressure sensor module and the FPC for corrosion.",
+    "evidence": "Code mapping notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Sensor value 169 = battery data line: try a new battery, check connector, diode-check and measure data lines; replacing U4000 and U4200 is listed as the board fix.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the Sensor Array value.",
+   "3145728/2097152: known-good charge port flex; ensure air pressure sensor connected; check Taptic and FPC corrosion.",
+   "169: new battery, inspect connector, check data lines; replace U4000/U4200 if needed."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "169",
+   "2097152",
+   "3145728",
+   "air pressure sensor",
+   "iphone 16 pro",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "sensor array",
+   "u4000",
+   "u4200"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charge port flex / air sensor / battery data",
+  "part_numbers": [
+   "U4000",
+   "U4200"
+  ],
+  "readings": [],
+  "device_family": "iphone16pro",
+  "error_codes": [
+   "3145728",
+   "2097152",
+   "0x300000",
+   "0x200000",
+   "169"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 16 Pro That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_16_Pro_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_16_Pro_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

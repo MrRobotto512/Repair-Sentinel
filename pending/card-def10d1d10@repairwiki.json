@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone That Is Bootlooping. iTunes Error Code 9",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_That_Is_Bootlooping._iTunes_Error_Code_9",
+   "kind": "web",
+   "title": "How To Fix iPhone That Is Bootlooping. iTunes Error Code 9",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3213,
+   "last_edited_utc": "2024-01-25T06:34:37Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "bootloop",
+   "restore fails",
+   "stuck in recovery"
+  ],
+  "codes": [
+   "9"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 bootloop with 3uTools Easy Flash failing at 19–20% and error 9 on iTunes flash needs a NAND replacement.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "NANDs from iPhone 6S, 6S Plus, SE (1st gen), iPad Pro 9.7, 10.5, 12.9 gen 1/2 and iPad 5th–7th gen are interchangeable with iPhone 7 / 7 Plus.",
+    "evidence": "Compatible NANDs.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Without original data, recover SN/MACs via GSX, MagicCFG after a checkra1n jailbreak, or JCID Drawing with JC P7 factory code query.",
+    "evidence": "Missing data section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with known-good screen/port/battery and cable; flash with Easy Flash and iTunes Flash.",
+   "Read original NAND data (SN, Wi-Fi, BT).",
+   "Program a compatible NAND with JC P7 or iRepair P10.",
+   "Install and restore; recover data via query if needed."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC P7",
+   "iRepair P10",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "error 9",
+   "iphone 7",
+   "nand replacement",
+   "repair.wiki",
+   "syscfg"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [
+   "9"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone That Is Bootlooping. iTunes Error Code 9\", https://repair.wiki/w/How_To_Fix_iPhone_That_Is_Bootlooping._iTunes_Error_Code_9, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_That_Is_Bootlooping._iTunes_Error_Code_9",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

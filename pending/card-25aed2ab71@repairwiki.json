@@ -1,0 +1,77 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A33 5G No Display",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A33_5G_No_Display",
+   "kind": "web",
+   "title": "Galaxy A33 5G No Display",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13818,
+   "last_edited_utc": "2026-02-02T01:05:19Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A33 5G"
+  ],
+  "symptoms": [
+   "no display",
+   "touch works",
+   "boots normally"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Galaxy A33 with no image but working touch, unfixed by a new screen, is typically a missing VDD_LCD_ELAVDD_7P6 supply from a burned connector pin/pad.",
+    "evidence": "Solution text.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check diode readings at the display connector to find the pin missing its reading, then check the burned capacitor; if its reading is good, jumper it to the pin.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-test the display connector for a missing reading.",
+   "Check the burned capacitor's reading.",
+   "Jumper capacitor to the dead pin; test; UV mask."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "7p6",
+   "elavdd",
+   "galaxy a33",
+   "jumper",
+   "no display",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display supply",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxya335g",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A33 5G No Display\", https://repair.wiki/w/Galaxy_A33_5G_No_Display, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A33_5G_No_Display",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

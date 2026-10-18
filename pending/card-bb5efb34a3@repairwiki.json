@@ -1,0 +1,118 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 8 Not Charging After Screen Repair. Stuck at 0% Battery Level",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_8_Not_Charging_After_Screen_Repair._Stuck_at_0%25_Battery_Level",
+   "kind": "web",
+   "title": "How To Fix iPhone 8 Not Charging After Screen Repair. Stuck at 0% Battery Level",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3296,
+   "last_edited_utc": "2024-02-04T10:25:10Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "not charging after screen repair",
+   "stuck at 0% or 1%",
+   "restart every 3 minutes",
+   "battery health shows Service"
+  ],
+  "codes": [
+   "Q3200",
+   "Q3201"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 8 / 8 Plus stuck at 0–1% and not charging after a screen repair usually has pry damage to battery data MOSFETs Q3200 (I2C0_SMC_BI_GG_SDA_CONN) or Q3201 (I2C0_SMC_TO_GG_SCL_CONN); part number RV3C002UNT2CL.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The two small battery connector data pins should read about 0.665 in diode mode; OL means a damaged MOSFET or ripped pad needing a jumper.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Other causes: pushed-in battery connector centre pins, then Tigris (on iPhone 8 and later Tigris, not Tristar, causes these charge faults), then Hydra or lines under them.",
+    "evidence": "Possible solutions.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test known-good screen, port, battery and OEM charger.",
+   "Inspect battery connector pins; replace connector if smashed.",
+   "Diode-check the two small data pins (~0.665).",
+   "Replace Q3200/Q3201 or jumper ripped pads.",
+   "Then try Tigris, then Hydra; verify with stopwatch past 3 min and USB charge current."
+  ],
+  "measurements": [
+   {
+    "point": "Battery connector data pins",
+    "expect": "0.665",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Good reading"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "microscope",
+   "hot air",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "0%",
+   "battery mosfet",
+   "iphone 8",
+   "iphone 8 plus",
+   "not charging",
+   "q3200",
+   "q3201",
+   "repair.wiki",
+   "rv3c002unt2cl",
+   "tigris"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery data MOSFETs Q3200/Q3201",
+  "part_numbers": [
+   "RV3C002UNT2CL",
+   "Q3200",
+   "Q3201"
+  ],
+  "readings": [
+   {
+    "point": "Battery connector data pins",
+    "mode": "diode",
+    "expect_lo": 0.665,
+    "expect_hi": 0.665,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone8",
+  "error_codes": [
+   "Q3200",
+   "Q3201"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 8 Not Charging After Screen Repair. Stuck at 0% Battery Level\", https://repair.wiki/w/How_To_Fix_iPhone_8_Not_Charging_After_Screen_Repair._Stuck_at_0%25_Battery_Level, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_8_Not_Charging_After_Screen_Repair._Stuck_at_0%25_Battery_Level",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

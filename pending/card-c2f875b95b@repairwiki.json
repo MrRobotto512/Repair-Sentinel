@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Replace iPhone Front Camera Without Loosing FACE ID",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Replace_iPhone_Front_Camera_Without_Loosing_FACE_ID",
+   "kind": "web",
+   "title": "How To Replace iPhone Front Camera Without Loosing FACE ID",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12693,
+   "last_edited_utc": "2025-11-13T05:25:39Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X",
+   "iPhone XS",
+   "iPhone 11",
+   "iPhone 12",
+   "iPhone 13",
+   "iPhone 14",
+   "iPhone 15",
+   "iPhone 16"
+  ],
+  "symptoms": [
+   "front camera not working",
+   "Face ID still works"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Only the dot projector and IR camera of TrueDepth are paired; if just the front camera module fails, it can be replaced by cutting open its metal cage without losing Face ID.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If the new front camera doesn't work, flashing an update often brings it up.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm Face ID works and only the front camera fails.",
+   "Cut the shield over the front camera (no direct heat).",
+   "Swap the camera module only.",
+   "Reassemble; test camera, portrait, Face ID; flash an update if needed."
+  ],
+  "measurements": [],
+  "tools": [
+   "mini dremel or precision cutter",
+   "tweezers"
+  ],
+  "cautions": [
+   "SOURCE RISK: Heat or damage to the dot projector or IR camera kills Face ID."
+  ],
+  "tags": [
+   "dot projector",
+   "face id",
+   "front camera",
+   "iphone",
+   "repair.wiki",
+   "truedepth"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Front camera module",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonex",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Replace iPhone Front Camera Without Loosing FACE ID\", https://repair.wiki/w/How_To_Replace_iPhone_Front_Camera_Without_Loosing_FACE_ID, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Replace_iPhone_Front_Camera_Without_Loosing_FACE_ID",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,93 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 8 No Backlight or Dark Spot On Screen Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_8_No_Backlight_or_Dark_Spot_On_Screen_Repair",
+   "kind": "web",
+   "title": "IPhone 8 No Backlight or Dark Spot On Screen Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3209,
+   "last_edited_utc": "2024-01-25T00:09:53Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "no backlight",
+   "dark spot in corner"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 8 / 8 Plus no backlight is usually blown backlight filters: R5733, R5734, R5735 on iPhone 8; R5730–R5733 and R5735 on 8 Plus.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Liquid damage at the Taptic Engine can kill backlight, since it is wired through the charge port flex; test with the charge port unplugged.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Never jumper a filter; replace with the same value.",
+    "evidence": "Caution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm board fault; test with charge port unplugged.",
+   "Diode-check backlight pins on LCD connector against boardview.",
+   "Find and replace the blown filter."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "ZXW"
+  ],
+  "cautions": [
+   "SOURCE RISK: Jumpering a filter removes surge protection."
+  ],
+  "tags": [
+   "iphone 8",
+   "iphone 8 plus",
+   "no backlight",
+   "r5733",
+   "r5734",
+   "r5735",
+   "repair.wiki",
+   "taptic engine"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight filters",
+  "part_numbers": [
+   "R5730",
+   "R5731",
+   "R5732",
+   "R5733",
+   "R5734",
+   "R5735"
+  ],
+  "readings": [],
+  "device_family": "iphone8",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 8 No Backlight or Dark Spot On Screen Repair\", https://repair.wiki/w/IPhone_8_No_Backlight_or_Dark_Spot_On_Screen_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_8_No_Backlight_or_Dark_Spot_On_Screen_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox 360 controller",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_360_controller",
+   "kind": "web",
+   "title": "Xbox 360 controller",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3060,
+   "last_edited_utc": "2024-01-18T21:34:20Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox 360 Controller"
+  ],
+  "symptoms": [
+   "identification",
+   "PC connection"
+  ],
+  "codes": [
+   "045E:028E",
+   "045E:0719"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox 360 wired controller USB ID 045E:028E; the wireless receiver for Windows is 045E:0719 (wireless pads only work through it on PC).",
+    "evidence": "Technical information.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Front has a 2.5 mm TRS headset jack plus a split proprietary accessory connector (Chatpad).",
+    "evidence": "Device notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "045e:028e",
+   "repair.wiki",
+   "usb id",
+   "wireless receiver",
+   "xbox 360 controller"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xbox360controller",
+  "error_codes": [
+   "045E:028E",
+   "045E:0719"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox 360 controller\", https://repair.wiki/w/Xbox_360_controller, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_360_controller",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

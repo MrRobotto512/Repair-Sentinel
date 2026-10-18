@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy Note 10 Lite Wi-Fi Grayed Out",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_Note_10_Lite_Wi-Fi_Grayed_Out",
+   "kind": "web",
+   "title": "Galaxy Note 10 Lite Wi-Fi Grayed Out",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13802,
+   "last_edited_utc": "2026-02-01T19:33:36Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy Note 10 Lite"
+  ],
+  "symptoms": [
+   "Wi-Fi greyed out",
+   "Wi-Fi will not turn on",
+   "Bluetooth will not turn on",
+   "no Wi-Fi list"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On the Galaxy Note 10 Lite, Wi-Fi and Bluetooth refusing to enable has three usual causes: cold solder under the Wi-Fi IC, a failed Wi-Fi IC, or a CPU-side fault.",
+    "evidence": "Solution section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If pad diode readings are normal after removing the Wi-Fi IC, reball and refit it first; if no change, fit a known-good donor IC and trace any OL pads.",
+    "evidence": "Escalation order.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If an open line leads back to the CPU, or all lines test good but Wi-Fi still fails after IC work, reballing the CPU is the remaining fix.",
+    "evidence": "CPU problem notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect and check for shorts around the Wi-Fi IC.",
+   "Remove the Wi-Fi IC and diode-check its pads.",
+   "Reball and refit; test.",
+   "Swap in a known-good donor Wi-Fi IC; trace OL pads.",
+   "Reball the CPU if lines are open on the CPU side or nothing else works."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "reball stencil",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "bluetooth",
+   "cpu reball",
+   "galaxy note 10 lite",
+   "repair.wiki",
+   "wifi greyed out",
+   "wifi ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Diode values under the IC are in an image on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi IC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxynote10lite",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy Note 10 Lite Wi-Fi Grayed Out\", https://repair.wiki/w/Galaxy_Note_10_Lite_Wi-Fi_Grayed_Out, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_Note_10_Lite_Wi-Fi_Grayed_Out",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

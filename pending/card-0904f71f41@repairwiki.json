@@ -1,0 +1,99 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 11 Always Searching for Network IMEI Present",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_11_Always_Searching_for_Network_IMEI_Present",
+   "kind": "web",
+   "title": "IPhone 11 Always Searching for Network IMEI Present",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7212,
+   "last_edited_utc": "2025-05-29T21:56:07Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "always searching",
+   "IMEI present"
+  ],
+  "codes": [
+   "VFE_HI_3V15"
+  ],
+  "claims": [
+   {
+    "statement": "If an iPhone 11 shows its IMEI and modem firmware but is always searching, the baseband CPU and PMU are working; the fault lies in the RF path.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After splitting, check for ripped pads and compare diode readings around network chips; on the top board VFE_HI_3V15 is commonly shorted—inject 1 V and thermal-camera it.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm IMEI and modem firmware present.",
+   "Split the board; check ripped pads.",
+   "Diode-check RF lines on both boards.",
+   "Inject 1 V into VFE_HI_3V15 and replace the hot part.",
+   "Test in iSocket, reball, test signal and calls."
+  ],
+  "measurements": [
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "preheater",
+   "thermal camera",
+   "iSocket",
+   "ZXW"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 11",
+   "no service",
+   "repair.wiki",
+   "rf",
+   "searching",
+   "vfe_hi_3v15"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "RF front-end",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone11",
+  "error_codes": [
+   "VFE_HI_3V15"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 11 Always Searching for Network IMEI Present\", https://repair.wiki/w/IPhone_11_Always_Searching_for_Network_IMEI_Present, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_11_Always_Searching_for_Network_IMEI_Present",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

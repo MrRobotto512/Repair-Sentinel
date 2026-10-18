@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Series X",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Series_X",
+   "kind": "web",
+   "title": "Xbox Series X",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13897,
+   "last_edited_utc": "2026-02-08T21:40:23Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Series X"
+  ],
+  "symptoms": [
+   "reference",
+   "no boot",
+   "turns on then off",
+   "no video"
+  ],
+  "codes": [
+   "NB7N621M",
+   "TPCC8131",
+   "U21"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox Series X part numbers: NB7N621M HDMI retimer/redriver, M1087810 HDMI connector, 20535-010E-02 I-PEX 'nexus' FPC connector, M1094652-005 power/eject FFC, M1094651-009 USB/bind FFC, M1105938-001 USB/bind front connector; U21 is the HDMI ESD booster IC.",
+    "evidence": "Part numbers section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Overheating/overvoltage can damage 12 V (TPCC8131) and 5 V components; the HDMI port is mechanically weak.",
+    "evidence": "More information section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "esd booster",
+   "hdmi",
+   "nb7n621m",
+   "parts list",
+   "repair.wiki",
+   "tpcc8131",
+   "u21",
+   "xbox series x"
+  ],
+  "confidence": "medium",
+  "caveats": "HDMI diode reference values are in an image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "NB7N621M",
+   "M1087810",
+   "20535-010E-02",
+   "M1094652-005",
+   "M1094651-009",
+   "M1105938-001",
+   "TPCC8131"
+  ],
+  "readings": [],
+  "device_family": "xboxseriesx",
+  "error_codes": [
+   "NB7N621M",
+   "TPCC8131",
+   "U21"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Series X\", https://repair.wiki/w/Xbox_Series_X, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Series_X",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

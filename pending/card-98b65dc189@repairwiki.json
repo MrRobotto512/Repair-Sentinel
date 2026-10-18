@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Error codes: 2107-0445 and 2110-1115 Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Error_codes:_2107-0445_and_2110-1115_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Error codes: 2107-0445 and 2110-1115 Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2212,
+   "last_edited_utc": "2024-01-13T16:25:26Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "errors 2107-0445 and 2110-1115",
+   "games stop after ~30 min"
+  ],
+  "codes": [
+   "2107-0445",
+   "2110-1115"
+  ],
+  "claims": [
+   {
+    "statement": "Switch errors 2107-0445 and 2110-1115 are fixed by replacing the Wi-Fi/Bluetooth chip; reflow/reball is not always successful.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace the Wi-Fi/BT chip (BCM4356)."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "2107-0445",
+   "2110-1115",
+   "bluetooth",
+   "nintendo switch",
+   "repair.wiki",
+   "wifi"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi/BT chip",
+  "part_numbers": [
+   "BCM4356XKUBG"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "2107-0445",
+   "2110-1115"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Error codes: 2107-0445 and 2110-1115 Repair\", https://repair.wiki/w/Nintendo_Switch_Error_codes:_2107-0445_and_2110-1115_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Error_codes:_2107-0445_and_2110-1115_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

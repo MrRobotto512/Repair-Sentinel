@@ -1,0 +1,70 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 7 Unable To Activate Issue",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_7_Unable_To_Activate_Issue",
+   "kind": "web",
+   "title": "How To Fix iPhone 7 Unable To Activate Issue",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3141,
+   "last_edited_utc": "2024-01-22T08:36:22Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "unable to activate",
+   "stuck at Hello screen after restore"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone 7 restored with an existing board fault that then shows Unable to Activate has either a baseband fault or an NFC fault (reball or replace NFC_RF).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check baseband (IMEI / modem firmware).",
+   "If baseband fine, reball or replace NFC_RF."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband",
+   "iphone 7",
+   "nfc",
+   "repair.wiki",
+   "unable to activate"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband / NFC_RF",
+  "part_numbers": [
+   "NFC_RF"
+  ],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 7 Unable To Activate Issue\", https://repair.wiki/w/How_To_Fix_iPhone_7_Unable_To_Activate_Issue, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_7_Unable_To_Activate_Issue",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9 3rd Gen Not Charging Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9_3rd_Gen_Not_Charging_Repair",
+   "kind": "web",
+   "title": "IPad Pro 12.9 3rd Gen Not Charging Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3091,
+   "last_edited_utc": "2024-01-20T02:35:34Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 3rd Gen"
+  ],
+  "symptoms": [
+   "not charging",
+   "draws 0.01-0.15 A"
+  ],
+  "codes": [
+   "CD3215C00",
+   "610A3C",
+   "343S00235"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 12.9 (3rd gen) not charging: the USB-C port often fails from physical or liquid damage; board suspects are CD3215C00 (most common), Tristar 610A3C and charging IC 343S00235.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect port contact pins; replace port flex if damaged.",
+   "Check for shorts around CD3215C00, 610A3C, 343S00235.",
+   "Inject low voltage to find the shorted part."
+  ],
+  "measurements": [
+   {
+    "point": "Charger draw (fault)",
+    "expect": "0.01-0.15",
+    "unit": "A",
+    "mode": "current",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "USB meter",
+   "DC power supply",
+   "thermal camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "343s00235",
+   "610a3c",
+   "cd3215c00",
+   "ipad pro 12.9",
+   "not charging",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CD3215C00",
+  "part_numbers": [
+   "CD3215C00",
+   "610A3C",
+   "343S00235"
+  ],
+  "readings": [
+   {
+    "point": "Charger draw (fault)",
+    "mode": "current",
+    "expect_lo": 0.01,
+    "expect_hi": 0.15,
+    "unit": "A"
+   }
+  ],
+  "device_family": "ipadpro1293rdgen",
+  "error_codes": [
+   "CD3215C00",
+   "610A3C",
+   "343S00235"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9 3rd Gen Not Charging Repair\", https://repair.wiki/w/IPad_Pro_12.9_3rd_Gen_Not_Charging_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9_3rd_Gen_Not_Charging_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

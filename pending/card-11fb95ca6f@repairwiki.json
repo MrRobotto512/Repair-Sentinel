@@ -1,0 +1,112 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 11 with half backlight on display",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_11_with_half_backlight_on_display",
+   "kind": "web",
+   "title": "IPhone 11 with half backlight on display",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7226,
+   "last_edited_utc": "2025-05-31T14:29:37Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "dark spot in bottom corner",
+   "half backlight"
+  ],
+  "codes": [
+   "U5650",
+   "U5660",
+   "LM3539A1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 11 has two backlight circuits, so a dark bottom-left or bottom-right corner points to one of them.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Most common: a blown 0 Ω 0201 output resistor; also shorts on PP_DISPLAY_BL12_ANODE or BL34_ANODE that can destroy coils, caps, diodes and the IC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Backlight ICs U5650 / U5660 are LM3539A1 and readily available.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new display.",
+   "Diode-check backlight lines at the LCD FPC.",
+   "Check output resistors (0 Ω 0201) under the top-board shield.",
+   "Rebuild the affected circuit if an anode is shorted; replace LM3539A1."
+  ],
+  "measurements": [
+   {
+    "point": "Output resistor",
+    "expect": "0",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "0201"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "ZXW",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "dark corner",
+   "half backlight",
+   "iphone 11",
+   "lm3539a1",
+   "repair.wiki",
+   "u5650",
+   "u5660"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [
+   "LM3539A1",
+   "U5650",
+   "U5660"
+  ],
+  "readings": [
+   {
+    "point": "Output resistor",
+    "mode": "resistance",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "iphone11",
+  "error_codes": [
+   "U5650",
+   "U5660",
+   "LM3539A1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 11 with half backlight on display\", https://repair.wiki/w/IPhone_11_with_half_backlight_on_display, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_11_with_half_backlight_on_display",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

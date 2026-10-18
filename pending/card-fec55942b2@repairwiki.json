@@ -1,0 +1,135 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Diagnosing HDMI Port issues using Pairs and Patterns technique",
+  "source": {
+   "url": "https://repair.wiki/w/Diagnosing_HDMI_Port_issues_using_Pairs_and_Patterns_technique",
+   "kind": "web",
+   "title": "Diagnosing HDMI Port issues using Pairs and Patterns technique",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12834,
+   "last_edited_utc": "2025-11-23T07:18:46Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "PlayStation 5 Slim",
+   "PlayStation 5 Pro",
+   "PlayStation 4",
+   "PlayStation 4 Slim",
+   "PlayStation 4 Pro",
+   "Xbox One S",
+   "Xbox One X",
+   "Xbox Series S",
+   "Xbox Series X"
+  ],
+  "symptoms": [
+   "no image",
+   "HDMI port damage"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Console HDMI diode readings split into a 'pairs' side and a 'patterns' side; the method applies to all these consoles' HDMI circuits.",
+    "evidence": "Author's method using a Mechanic T-824 HDMI reader.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Pairs side: four pairs of identical diode readings, each pair separated by a ground reading; the two readings of a pair should match within about ±0.01 V.",
+    "evidence": "Example 0.85 / ground / 0.85.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Patterns side: readings do not need to match each other but should sit roughly between 0.50 and 0.70 V.",
+    "evidence": "Example 0.70 and 0.56 both counted as good.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Diode readings roughly in the 0.00–0.30 or 0.90–1.00 zones are usually a sign of a fault, though not always.",
+    "evidence": "General range guidance in the guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On Xbox One X, Series S and Series X, board pin 14 (pin 17 on the reader) shows a diode reading rather than OL; Series X shows OL there until the top board is attached.",
+    "evidence": "Model-specific exception noted in the guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The pairs side runs straight to the encoder/retimer through filters or bidirectional diodes and carries the picture; the patterns side passes a handoff IC (Xbox) or diodes/resistors (PlayStation) and handles negotiation.",
+    "evidence": "Circuit overview section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Plug the HDMI reader in and note orientation (pairs may start at the bottom right).",
+   "Check the four pairs from one end: identical within ±0.01 V with ground between.",
+   "Check the patterns from the other end (starting at line 22): each within about 0.50–0.70 V.",
+   "Treat readings near ground or near 0.9–1.0/OL as suspect."
+  ],
+  "measurements": [
+   {
+    "point": "HDMI pairs (each line of a pair)",
+    "expect": "matching within 0.01",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Pair readings equal, e.g. 0.85 and 0.85"
+   },
+   {
+    "point": "HDMI patterns lines",
+    "expect": "0.50-0.70",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Rhythm side, values vary within range"
+   }
+  ],
+  "tools": [
+   "Mechanic T-824 HDMI reader",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "diode mode",
+   "hdmi",
+   "pairs and patterns",
+   "ps4",
+   "ps5",
+   "repair.wiki",
+   "t-824",
+   "xbox one",
+   "xbox series x"
+  ],
+  "confidence": "medium",
+  "caveats": "Ranges are a technician's rule of thumb; compare with a known-good board of the same revision when possible. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "HDMI port",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "HDMI patterns lines",
+    "mode": "diode",
+    "expect_lo": 0.5,
+    "expect_hi": 0.7,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Diagnosing HDMI Port issues using Pairs and Patterns technique\", https://repair.wiki/w/Diagnosing_HDMI_Port_issues_using_Pairs_and_Patterns_technique, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Diagnosing_HDMI_Port_issues_using_Pairs_and_Patterns_technique",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

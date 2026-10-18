@@ -1,0 +1,82 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 11in 3rd Gen No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_11in_3rd_Gen_No_Touch",
+   "kind": "web",
+   "title": "IPad Pro 11in 3rd Gen No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12041,
+   "last_edited_utc": "2025-09-24T00:15:59Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 11 3rd Gen"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "BCM15900B0"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 11 (3rd gen) touch circuit is very similar to the 2018 model and uses the same touch ICs (BCM15900B0); compare connector readings against the 2018 values.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Last resort: reball or replace both BCM15900B0 touch ICs; no schematics exist for this model.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a known-good screen.",
+   "Inspect and diode-check both touch connectors.",
+   "Check filters and shorts around the touch ICs.",
+   "Reball/replace both BCM15900B0."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bcm15900b0",
+   "ipad pro 11",
+   "no touch",
+   "repair.wiki",
+   "touch ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch ICs",
+  "part_numbers": [
+   "BCM15900B0"
+  ],
+  "readings": [],
+  "device_family": "ipadpro113rdgen",
+  "error_codes": [
+   "BCM15900B0"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 11in 3rd Gen No Touch\", https://repair.wiki/w/IPad_Pro_11in_3rd_Gen_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_11in_3rd_Gen_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

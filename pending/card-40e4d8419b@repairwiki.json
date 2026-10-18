@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to Fix an iPhone 8 Plus boot looping on apple logo and random charging",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_Fix_an_iPhone_8_Plus_boot_looping_on_apple_logo_and_random_charging",
+   "kind": "web",
+   "title": "How to Fix an iPhone 8 Plus boot looping on apple logo and random charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11470,
+   "last_edited_utc": "2025-09-08T22:27:19Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "Apple logo bootloop",
+   "random charging"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Normal iPhone 8 / 8 Plus pre-boot draw ramps about 0.020 → 0.080 → 0.200 A; jumping straight to 0.200 A suggests a fault in the Hydra / Tristar / PMIC path.",
+    "evidence": "DCPS analysis.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With logo loops and erratic charging and a warm Hydra USB IC, test the charge port flex and front camera first, then replace Hydra.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect around Hydra, Tristar and the battery connector.",
+   "Watch DCPS boot ramp.",
+   "Swap charge port flex and front camera.",
+   "Replace Hydra if issue persists; confirm normal ramp and charging."
+  ],
+  "measurements": [
+   {
+    "point": "Pre-boot ramp (normal)",
+    "expect": "0.020-0.200",
+    "unit": "A",
+    "mode": "current",
+    "context": "0.020 then 0.080 then 0.200 A"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "charging",
+   "hydra",
+   "iphone 8",
+   "iphone 8 plus",
+   "repair.wiki",
+   "tristar"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Hydra USB IC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Pre-boot ramp (normal)",
+    "mode": "current",
+    "expect_lo": 0.02,
+    "expect_hi": 0.2,
+    "unit": "A"
+   }
+  ],
+  "device_family": "iphone8",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to Fix an iPhone 8 Plus boot looping on apple logo and random charging\", https://repair.wiki/w/How_to_Fix_an_iPhone_8_Plus_boot_looping_on_apple_logo_and_random_charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_Fix_an_iPhone_8_Plus_boot_looping_on_apple_logo_and_random_charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

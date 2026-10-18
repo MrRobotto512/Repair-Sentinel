@@ -1,0 +1,80 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix An iPhone 13 with No Audio No Vibration and Slow Camera Response",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_An_iPhone_13_with_No_Audio_No_Vibration_and_Slow_Camera_Response",
+   "kind": "web",
+   "title": "How To Fix An iPhone 13 with No Audio No Vibration and Slow Camera Response",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12743,
+   "last_edited_utc": "2025-11-18T21:18:45Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 13"
+  ],
+  "symptoms": [
+   "no ringer",
+   "no bottom speaker",
+   "no vibration",
+   "camera app slow or freezes"
+  ],
+  "codes": [
+   "U8400"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 13 with no bottom speaker, no Taptic vibration and a laggy camera app, unchanged by known-good parts or a restore, is commonly a failing U8400 IC.",
+    "evidence": "Problem description and diagnostics.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect U8400 for cracks, burns or impact marks.",
+   "Test known-good speaker and Taptic Engine.",
+   "Replace U8400 (flux, gentle heat, clean pads, reball, align by boardview).",
+   "Test ringer, vibration, camera and haptics."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "reball stencil",
+   "microscope",
+   "boardview"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 13",
+   "no audio",
+   "no vibration",
+   "repair.wiki",
+   "taptic engine",
+   "u8400"
+  ],
+  "confidence": "medium",
+  "caveats": "Source does not state U8400's function; based on field reports. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "U8400",
+  "part_numbers": [
+   "U8400"
+  ],
+  "readings": [],
+  "device_family": "iphone13",
+  "error_codes": [
+   "U8400"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix An iPhone 13 with No Audio No Vibration and Slow Camera Response\", https://repair.wiki/w/How_To_Fix_An_iPhone_13_with_No_Audio_No_Vibration_and_Slow_Camera_Response, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_An_iPhone_13_with_No_Audio_No_Vibration_and_Slow_Camera_Response",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

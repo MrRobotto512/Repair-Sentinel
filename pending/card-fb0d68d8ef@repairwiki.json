@@ -1,0 +1,92 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Error Code 2134-0501 Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Error_Code_2134-0501_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Error Code 2134-0501 Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6052,
+   "last_edited_utc": "2025-03-24T18:47:08Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "error 2134-0501"
+  ],
+  "codes": [
+   "2134-0501"
+  ],
+  "claims": [
+   {
+    "statement": "Switch 21xx-xxxx errors are boot self-check failures, most often M92T36; for 2134-0501 also check MAX77620 rails (especially 1.05 V) and, if good, replace the MAX17050 fuel gauge.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace M92T36 with known-good.",
+   "Check MAX77620 voltages (1.05 V rail).",
+   "Replace MAX17050 if rails good."
+  ],
+  "measurements": [
+   {
+    "point": "MAX77620 rail",
+    "expect": "1.05",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "2134-0501",
+   "m92t36",
+   "max17050",
+   "max77620",
+   "nintendo switch",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "M92T36 / MAX17050",
+  "part_numbers": [
+   "M92T36",
+   "MAX77620",
+   "MAX17050"
+  ],
+  "readings": [
+   {
+    "point": "MAX77620 rail",
+    "mode": "voltage",
+    "expect_lo": 1.05,
+    "expect_hi": 1.05,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "2134-0501"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Error Code 2134-0501 Repair\", https://repair.wiki/w/Nintendo_Switch_Error_Code_2134-0501_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Error_Code_2134-0501_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,172 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "SNES Super Nintendo Entertainment System",
+  "source": {
+   "url": "https://repair.wiki/w/SNES_Super_Nintendo_Entertainment_System",
+   "kind": "web",
+   "title": "SNES Super Nintendo Entertainment System",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3399,
+   "last_edited_utc": "2024-02-11T21:03:33Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Super Nintendo (SNES / Super Famicom)"
+  ],
+  "symptoms": [
+   "no power",
+   "no video",
+   "no audio",
+   "garbled sprites",
+   "noise bar",
+   "left audio missing",
+   "RF not working",
+   "reset not working",
+   "colour banding"
+  ],
+  "codes": [
+   "U3",
+   "U7",
+   "U8",
+   "U18",
+   "C59",
+   "R30"
+  ],
+  "claims": [
+   {
+    "statement": "SNES no power: check the adapter (9 V DC or AC; Super Famicom barrel is centre-ground/outer-positive, US/EU centre-positive), the floating fuse near the power jack, the 7805 output and the input choke; discharge the main cap before working inside.",
+    "evidence": "Guides table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Black screen with signal: check /RESET at CIC U8 pin 10 / PPU2 U3 pin 34 is high; /RESOUT0 (PPU2 pin 33) and /RESOUT1 (pin 28) low while /RESET high = replace PPU2; no RGB/CSYNC on PPU2 pins 95–97/100 = PPU2, else S-ENC U7.",
+    "evidence": "Guides table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Garbled sprites or burn-in test OAM / OBJ L OVER failures = replace PPU1; HV TIMER failure = replace CPU; no audio = PPU2 (per source).",
+    "evidence": "Guides and burn-in table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Left audio dead is commonly leaking C59 eating the trace under the C59/C60 labels: bodge R70 to the C66 test point and replace C59 with 10 µF 50 V non-polarised (or omit it, losing only 12 V on the AV port).",
+    "evidence": "Guides table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "S-ENC comes in Nintendo-branded and BA6592F variants that aren't drop-in interchangeable; banding with tinted colours means replace S-ENC.",
+    "evidence": "Guides table.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for leaks and corrosion; discharge the main cap.",
+   "Check adapter, fuse, 7805 and choke for no-power.",
+   "Use a burn-in test cart to classify chip faults.",
+   "Follow reset/PPU/S-ENC signal checks for video faults.",
+   "Repair C59 trace for left-audio faults."
+  ],
+  "measurements": [
+   {
+    "point": "Power adapter",
+    "expect": "9",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "DC or AC"
+   },
+   {
+    "point": "RF output frequency (PAL)",
+    "expect": "55.55",
+    "unit": "MHz",
+    "mode": "frequency",
+    "context": ""
+   },
+   {
+    "point": "C59 replacement",
+    "expect": "10",
+    "unit": "µF",
+    "mode": "capacitance",
+    "context": "50 V non-polarised"
+   }
+  ],
+  "tools": [
+   "Gamebit screwdriver",
+   "multimeter",
+   "oscilloscope",
+   "SNES burn-in test cart"
+  ],
+  "cautions": [
+   "SOURCE RISK: The main filter cap stays charged; discharge it before working inside."
+  ],
+  "tags": [
+   "7805",
+   "burn-in test",
+   "c59",
+   "cic",
+   "ppu1",
+   "ppu2",
+   "repair.wiki",
+   "s-enc",
+   "snes",
+   "super famicom",
+   "super nintendo"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "7805",
+   "BA6592F"
+  ],
+  "readings": [
+   {
+    "point": "Power adapter",
+    "mode": "voltage",
+    "expect_lo": 9.0,
+    "expect_hi": 9.0,
+    "unit": "V"
+   },
+   {
+    "point": "RF output frequency (PAL)",
+    "mode": "frequency",
+    "expect_lo": 55.55,
+    "expect_hi": 55.55,
+    "unit": "MHz"
+   },
+   {
+    "point": "C59 replacement",
+    "mode": "capacitance",
+    "expect_lo": 10.0,
+    "expect_hi": 10.0,
+    "unit": "µF"
+   }
+  ],
+  "device_family": "supernintendo",
+  "error_codes": [
+   "U3",
+   "U7",
+   "U8",
+   "U18",
+   "C59",
+   "R30"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"SNES Super Nintendo Entertainment System\", https://repair.wiki/w/SNES_Super_Nintendo_Entertainment_System, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/SNES_Super_Nintendo_Entertainment_System",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

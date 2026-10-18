@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to Fix iPhone 15 Rear Camera Not Switching Lenses Intermittent Camera",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_Fix_iPhone_15_Rear_Camera_Not_Switching_Lenses_Intermittent_Camera",
+   "kind": "web",
+   "title": "How to Fix iPhone 15 Rear Camera Not Switching Lenses Intermittent Camera",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10139,
+   "last_edited_utc": "2025-08-11T02:11:37Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15"
+  ],
+  "symptoms": [
+   "camera stuck on 0.5x",
+   "lens switching slow or intermittent"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 15 rear camera stuck on ultra-wide or switching lenses intermittently is often caused by two camera power capacitors near the rear camera connector with cold joints or failure.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Rule out software and the camera module first; then remove the factory glue and reflow both capacitors.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test in stock and third-party camera apps, update and hard reset.",
+   "Inspect/clean the rear camera connector.",
+   "Test a known-good rear camera.",
+   "Scrape glue, flux and reflow the two capacitors; clean and test."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "soldering iron",
+   "hot air",
+   "Kapton tape"
+  ],
+  "cautions": [],
+  "tags": [
+   "0.5x",
+   "camera",
+   "capacitors",
+   "cold solder",
+   "iphone 15",
+   "lens switching",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Capacitor designators are only shown in an image on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Camera power capacitors",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone15",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to Fix iPhone 15 Rear Camera Not Switching Lenses Intermittent Camera\", https://repair.wiki/w/How_to_Fix_iPhone_15_Rear_Camera_Not_Switching_Lenses_Intermittent_Camera, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_Fix_iPhone_15_Rear_Camera_Not_Switching_Lenses_Intermittent_Camera",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

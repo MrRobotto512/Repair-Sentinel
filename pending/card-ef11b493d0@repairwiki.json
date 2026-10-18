@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to Fix an iPad Pro 10.5 That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_Fix_an_iPad_Pro_10.5_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How to Fix an iPad Pro 10.5 That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2957,
+   "last_edited_utc": "2024-01-17T16:09:37Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 10.5"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restarts every 60 seconds after screen repair",
+   "restarts after drop"
+  ],
+  "codes": [
+   "TG0B"
+  ],
+  "claims": [
+   {
+    "statement": "On iPad Pro 10.5 random restarts, look in the panic-full log for a thermalmonitord check-in failure listing missing sensors.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Missing sensor TG0B points to the battery or its connector (check the battery screw is tight and connector pins are intact).",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A defective display can make the iPad restart about every 60 seconds even if it appears to work.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With no panic log, inspect coils around the PMIC for missing or loose parts; they should not move when pushed sideways.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Open the latest panic-full log and find the missing sensors list.",
+   "TG0B: tighten battery screw, inspect connector, try known-good battery.",
+   "Try a known-good display.",
+   "If no panic logs, inspect and push-test coils around the PMIC; replace loose ones."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good battery",
+   "known-good display",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad pro 10.5",
+   "loose coils",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "tg0b",
+   "thermalmonitord"
+  ],
+  "confidence": "medium",
+  "caveats": "The display's sensor code is not identified on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery / display / coils",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadpro105",
+  "error_codes": [
+   "TG0B"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to Fix an iPad Pro 10.5 That Randomly Restarts\", https://repair.wiki/w/How_to_Fix_an_iPad_Pro_10.5_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_Fix_an_iPad_Pro_10.5_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

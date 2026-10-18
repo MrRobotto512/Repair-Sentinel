@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 14 Pro Max – No Modem Firmware After RF Layer Swap",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_14_Pro_Max_%E2%80%93_No_Modem_Firmware_After_RF_Layer_Swap",
+   "kind": "web",
+   "title": "IPhone 14 Pro Max – No Modem Firmware After RF Layer Swap",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9565,
+   "last_edited_utc": "2025-07-31T13:00:16Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14 Pro",
+   "iPhone 14 Pro Max"
+  ],
+  "symptoms": [
+   "modem firmware missing after RF board swap",
+   "no IMEI"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "After swapping the RF (bottom) layer on an iPhone 14 Pro, modem firmware can disappear because the donor layer's Board ID, Platform ID and SKU ID configuration resistors don't match the original.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Transfer the config resistors from the original RF board to the donor to restore modem firmware.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm modem firmware blank and RF layer swapped.",
+   "Compare Board/SKU/Platform ID resistors using boardview.",
+   "Move the original resistors to the donor layer.",
+   "Check modem firmware, IMEI and signal."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "boardview",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "board id",
+   "iphone 14 pro",
+   "modem firmware",
+   "platform id",
+   "repair.wiki",
+   "rf board swap",
+   "sku id"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Board config resistors",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone14pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 14 Pro Max – No Modem Firmware After RF Layer Swap\", https://repair.wiki/w/IPhone_14_Pro_Max_%E2%80%93_No_Modem_Firmware_After_RF_Layer_Swap, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_14_Pro_Max_%E2%80%93_No_Modem_Firmware_After_RF_Layer_Swap",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

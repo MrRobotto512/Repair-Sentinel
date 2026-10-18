@@ -1,0 +1,146 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 That Suddenly Developed a No Service Issue. Baseband Repair",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Suddenly_Developed_a_No_Service_Issue._Baseband_Repair",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 That Suddenly Developed a No Service Issue. Baseband Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3142,
+   "last_edited_utc": "2024-01-22T08:36:51Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no service",
+   "searching",
+   "no IMEI",
+   "modem firmware blank"
+  ],
+  "codes": [
+   "*#06#",
+   "6826"
+  ],
+  "claims": [
+   {
+    "statement": "A never-repaired iPhone 7 showing Searching/No Service without a SIM (instead of No SIM), no IMEI and blank modem firmware has a baseband fault.",
+    "evidence": "Symptoms.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Intel models: the BBPMU_RF (part 6826) has failed and is replaced.",
+    "evidence": "Solution, Intel.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Qualcomm models: check for shorts around BBPMU; if none, replace it and jumper corner ground pads 98, 93, 88, 83 to the ground layer. A short on PP_0V9_LDO3 points at XCVR0_RF / XCVR1_RF.",
+    "evidence": "Solution, Qualcomm.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PP_1V0_SMPS5 reading about 0.100–0.125 in diode mode is a partial short that can be bypassed with a 1K resistor from C5701_RF and a jumper to C5627_RF (PP_1V2_LDO2); 0.000 means internal baseband CPU short, which is not fixable because it is paired.",
+    "evidence": "Solution, Qualcomm.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Restoring a phone with a baseband fault erases the IMEI; fix the board then restore again. After repair, flash an update (not restore) if still searching.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check No SIM vs Searching, *#06#, and modem firmware field.",
+   "Intel: replace BBPMU_RF (6826).",
+   "Qualcomm: check shorts around BBPMU; replace it and ground the corner pads.",
+   "Check PP_0V9_LDO3 and PP_1V0_SMPS5 diode values; apply XCVR or resistor workaround as applicable.",
+   "Update (not restore) and recheck IMEI."
+  ],
+  "measurements": [
+   {
+    "point": "PP_1V0_SMPS5 (partial short)",
+    "expect": "0.100-0.125",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Workaround possible"
+   },
+   {
+    "point": "PP_1V0_SMPS5 (full short)",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Baseband CPU dead, not fixable"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "microscope",
+   "1K resistor",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband",
+   "bbpmu",
+   "intel",
+   "iphone 7",
+   "no imei",
+   "no service",
+   "pp_1v0_smps5",
+   "qualcomm",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband PMU",
+  "part_numbers": [
+   "6826",
+   "BBPMU_RF",
+   "XCVR0_RF",
+   "XCVR1_RF",
+   "C5701_RF",
+   "C5627_RF"
+  ],
+  "readings": [
+   {
+    "point": "PP_1V0_SMPS5 (partial short)",
+    "mode": "diode",
+    "expect_lo": 0.1,
+    "expect_hi": 0.125,
+    "unit": "V"
+   },
+   {
+    "point": "PP_1V0_SMPS5 (full short)",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone7",
+  "error_codes": [
+   "*#06#",
+   "6826"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 That Suddenly Developed a No Service Issue. Baseband Repair\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Suddenly_Developed_a_No_Service_Issue._Baseband_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Suddenly_Developed_a_No_Service_Issue._Baseband_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

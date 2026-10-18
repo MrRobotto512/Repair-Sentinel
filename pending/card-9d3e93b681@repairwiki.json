@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 7 That Is Stuck Always Searching or No Service After Audio IC Repair Attempt",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_7_That_Is_Stuck_Always_Searching_or_No_Service_After_Audio_IC_Repair_Attempt",
+   "kind": "web",
+   "title": "How To Fix iPhone 7 That Is Stuck Always Searching or No Service After Audio IC Repair Attempt",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3135,
+   "last_edited_utc": "2024-01-22T08:22:19Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no service after audio IC repair",
+   "no IMEI"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "No service / no IMEI after an audio IC repair attempt usually means excess heat floated the underfilled baseband CPU; reballing the baseband PMU first is also worth trying.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Reballing the baseband CPU next to the main CPU is high risk; afterwards flash an update rather than restoring.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try reballing the baseband PMU.",
+   "Reball the baseband CPU if needed.",
+   "Update (not restore) and check IMEI."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "reball stencil"
+  ],
+  "cautions": [
+   "SOURCE RISK: Too much heat on the audio IC can disturb the baseband CPU and main CPU."
+  ],
+  "tags": [
+   "audio ic",
+   "baseband cpu",
+   "bbpmu",
+   "iphone 7",
+   "no service",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband CPU",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 7 That Is Stuck Always Searching or No Service After Audio IC Repair Attempt\", https://repair.wiki/w/How_To_Fix_iPhone_7_That_Is_Stuck_Always_Searching_or_No_Service_After_Audio_IC_Repair_Attempt, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_7_That_Is_Stuck_Always_Searching_or_No_Service_After_Audio_IC_Repair_Attempt",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,125 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A15 5G Does not Charge",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A15_5G_Does_not_Charge",
+   "kind": "web",
+   "title": "Galaxy A15 5G Does not Charge",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11535,
+   "last_edited_utc": "2025-09-13T21:10:47Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A15 5G"
+  ],
+  "symptoms": [
+   "not charging"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Prove the charge port flex, main FPC and battery good before board work; the main FPC is shared across many Galaxy A models (A12, A13 5G, A23 5G, A32, A42 5G, A52, A53 5G, A54 5G, A72, A15 5G).",
+    "evidence": "Parts-first steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Charging path: 5 V from the charger, through the OVP, into SM5461, then into the SM5714A IF PMIC which charges the battery.",
+    "evidence": "Circuit walk-through.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If CC1/CC2 lines are suspect, their expected diode value is about 0.660.",
+    "evidence": "CC line check.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Most common causes: damaged FPC, blown OVP, faulty IF PMIC.",
+    "evidence": "Summary.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Swap charge port flex, FPC and battery.",
+   "Check 5 V input on the board with charger connected.",
+   "Check 5 V after the OVP; replace OVP if missing.",
+   "Check 5 V into SM5461; replace if missing at its output.",
+   "Replace SM5714A if 5 V present but no charge.",
+   "Diode-check CC1/CC2 (about 0.660)."
+  ],
+  "measurements": [
+   {
+    "point": "CC1 / CC2 lines",
+    "expect": "0.660",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Charger input",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "With charger connected"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "cc lines",
+   "fpc",
+   "galaxy a15",
+   "not charging",
+   "ovp",
+   "repair.wiki",
+   "sm5461",
+   "sm5714a"
+  ],
+  "confidence": "medium",
+  "caveats": "Test point locations are shown in images on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charging circuit",
+  "part_numbers": [
+   "SM5714A",
+   "SM5461"
+  ],
+  "readings": [
+   {
+    "point": "CC1 / CC2 lines",
+    "mode": "diode",
+    "expect_lo": 0.66,
+    "expect_hi": 0.66,
+    "unit": "V"
+   },
+   {
+    "point": "Charger input",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxya155g",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A15 5G Does not Charge\", https://repair.wiki/w/Galaxy_A15_5G_Does_not_Charge, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A15_5G_Does_not_Charge",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

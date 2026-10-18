@@ -1,0 +1,93 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Fingerprint Calibration After Screen Replacement",
+  "source": {
+   "url": "https://repair.wiki/w/Fingerprint_Calibration_After_Screen_Replacement",
+   "kind": "web",
+   "title": "Fingerprint Calibration After Screen Replacement",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13500,
+   "last_edited_utc": "2026-01-01T20:40:44Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Mi 11 Ultra",
+   "Mi 10 Ultra",
+   "Xiaomi 12",
+   "Xiaomi 12X",
+   "Xiaomi 12T"
+  ],
+  "symptoms": [
+   "fingerprint not working after screen replacement"
+  ],
+  "codes": [
+   "1517",
+   "1503",
+   "1531"
+  ],
+  "claims": [
+   {
+    "statement": "Xiaomi phones with in-display fingerprint need FOD calibration after a screen replacement.",
+    "evidence": "Calibration via the CIT hidden menu with a three-piece rubber tool.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "CIT is reached by tapping Kernel version 4 times in Settings > My Device > Detailed info and specs, then Additional Tools > FOD Fingerprint Calibration.",
+    "evidence": "Menu path in the guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Calibration error 1517 means the textured pad is not aligned horizontally; 1503 means the sensor was not fully covered; 1531 (polar degree) is usually pressure, worn grooves or dirt.",
+    "evidence": "Error meanings collected by the author.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove any screen protector.",
+   "Open CIT and start FOD Fingerprint Calibration.",
+   "Use the plain white pad, then the black pad, then the textured white pad aligned with horizontal lines.",
+   "On failure restart the sequence; a thumb pressed vertically may pass the last step.",
+   "Restart the phone after Test Finished and enroll a fingerprint."
+  ],
+  "measurements": [],
+  "tools": [
+   "Xiaomi fingerprint calibration pad kit"
+  ],
+  "cautions": [],
+  "tags": [
+   "cit menu",
+   "fingerprint",
+   "fod calibration",
+   "repair.wiki",
+   "screen replacement",
+   "xiaomi"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display / in-screen fingerprint",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "mi11ultra",
+  "error_codes": [
+   "1517",
+   "1503",
+   "1531"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Fingerprint Calibration After Screen Replacement\", https://repair.wiki/w/Fingerprint_Calibration_After_Screen_Replacement, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Fingerprint_Calibration_After_Screen_Replacement",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

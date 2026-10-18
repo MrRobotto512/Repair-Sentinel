@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Overheating And Joycon Issues Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Overheating_And_Joycon_Issues_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Overheating And Joycon Issues Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2283,
+   "last_edited_utc": "2024-01-13T20:28:42Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "overheating",
+   "Joy-Con not charging/connecting"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch fan and Joy-Con rail power share a small MOSFET above M92T36; when it fails open the fan and Joy-Con charging stop. Tapping ~3 V into the fan line 2–3 times (console on, no Joy-Cons attached) usually revives it.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Otherwise suspect the fan, rail damage or corrosion; replace the MOSFET if injection fails.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Detach Joy-Cons; power on.",
+   "Tap ~3 V into the fan line briefly 2–3 times.",
+   "Replace MOSFET if no effect."
+  ],
+  "measurements": [
+   {
+    "point": "Fan line injection",
+    "expect": "3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Brief taps"
+   }
+  ],
+  "tools": [
+   "bench power supply"
+  ],
+  "cautions": [],
+  "tags": [
+   "fan",
+   "joy-con",
+   "mosfet",
+   "nintendo switch",
+   "overheating",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Fan/Joy-Con MOSFET",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Fan line injection",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Overheating And Joycon Issues Repair\", https://repair.wiki/w/Nintendo_Switch_Overheating_And_Joycon_Issues_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Overheating_And_Joycon_Issues_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

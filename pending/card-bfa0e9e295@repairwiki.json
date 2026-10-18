@@ -1,0 +1,122 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 14 Pro That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_14_Pro_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 14 Pro That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13966,
+   "last_edited_utc": "2026-02-17T05:26:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14 Pro",
+   "iPhone 14 Pro Max"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "0x80000",
+   "0x40000",
+   "0x100000",
+   "0xc0000",
+   "0x180000",
+   "0x140000",
+   "0x1c0000",
+   "0x20000",
+   "0xa0000",
+   "0x41"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 14 Pro / Pro Max SMC panic Sensor Array values: 0x80000 (524288) = proximity flex; 0x40000 (262144) = charging port flex; 0x100000 (1048576) = power button flex.",
+    "evidence": "Code mapping on the source page.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Combined values add up: 0xc0000 = prox + charge port; 0x180000 = prox + power button; 0x140000 = power button + charge port; 0x1c0000 = all three.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "0x20000 (131072) = sandwich separation: gyro U7300 not detected; check its pads 542, 543, 544, 545, 546, 6 and 248; needs sandwich reball or bottom board swap. 0xa0000 = sandwich + prox flex.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "0x41 (65) = battery data issue (fluctuating % or non-genuine message): check connector pins, compare diode readings, known-good battery, replace connector.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the Sensor Array value from the SMC panic in panic-full.",
+   "Decode bits: prox 0x80000, charge port 0x40000, power button 0x100000, gyro/sandwich 0x20000.",
+   "Test with known-good OEM flexes for each flagged part; diode-check their FPCs.",
+   "For 0x20000 inspect gyro U7300 pads and reball the sandwich.",
+   "For 0x41 work the battery data path."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "0x100000",
+   "0x20000",
+   "0x40000",
+   "0x41",
+   "0x80000",
+   "gyro",
+   "iphone 14 pro",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "sandwich",
+   "sensor array",
+   "u7300"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Prox / charge port / power button flex / sandwich",
+  "part_numbers": [
+   "U7300"
+  ],
+  "readings": [],
+  "device_family": "iphone14pro",
+  "error_codes": [
+   "0x80000",
+   "0x40000",
+   "0x100000",
+   "0xc0000",
+   "0x180000",
+   "0x140000",
+   "0x1c0000",
+   "0x20000",
+   "0xa0000",
+   "0x41"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 14 Pro That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_14_Pro_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_14_Pro_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

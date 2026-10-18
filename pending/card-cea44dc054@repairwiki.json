@@ -1,0 +1,93 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Series X powers off shortly after powering on repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Series_X_powers_off_shortly_after_powering_on_repair",
+   "kind": "web",
+   "title": "Xbox Series X powers off shortly after powering on repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4532,
+   "last_edited_utc": "2024-07-30T18:14:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Series X"
+  ],
+  "symptoms": [
+   "powers off shortly after power-on"
+  ],
+  "codes": [
+   "U82",
+   "STMPS2151STR"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox Series X shutdown within 3 s = short on 12 V rails; within 3 s with no 12 V/5 V short = possibly bad SSD (stays on with SSD removed—clone boot partition to a donor); within 10 s = short on APU rails.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Shorts on rail capacitors are usually caused by a nearby chip; remove surrounding chips one at a time.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On-then-off after an HDMI port job: check for bridged pins and check U82 (SOT-23-5, STMPS2151STR; TPS2065DBVR or AP2151D substitute) on the back of the HDMI board.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Time the shutdown (3 s vs 10 s).",
+   "Check 12 V, 5 V and APU rails for shorts.",
+   "Remove SSD to test; clone boot partition if needed.",
+   "After HDMI work check bridges and U82."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "thermal camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "12v short",
+   "apu short",
+   "repair.wiki",
+   "ssd",
+   "stmps2151",
+   "turns on then off",
+   "u82",
+   "xbox series x"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Rails / SSD / U82",
+  "part_numbers": [
+   "STMPS2151STR",
+   "TPS2065DBVR",
+   "AP2151D"
+  ],
+  "readings": [],
+  "device_family": "xboxseriesx",
+  "error_codes": [
+   "U82",
+   "STMPS2151STR"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Series X powers off shortly after powering on repair\", https://repair.wiki/w/Xbox_Series_X_powers_off_shortly_after_powering_on_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Series_X_powers_off_shortly_after_powering_on_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

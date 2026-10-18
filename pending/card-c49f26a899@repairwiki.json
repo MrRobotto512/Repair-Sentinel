@@ -1,0 +1,137 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy XCover 6 Pro Backlight Not Working",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_XCover_6_Pro_Backlight_Not_Working",
+   "kind": "web",
+   "title": "Galaxy XCover 6 Pro Backlight Not Working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7635,
+   "last_edited_utc": "2025-06-13T07:54:05Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy XCover 6 Pro"
+  ],
+  "symptoms": [
+   "no backlight",
+   "faint image with flashlight"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "XCover 6 Pro backlight output LED_A_24P runs from coil L9001 (10 µH) through diode D9000, smoothing caps, then L9032 to the display.",
+    "evidence": "Schematic walk-through.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A burnt open L9001 is rarely the root cause; check D9000 (should read one way only) and the six smoothing caps C9004, C9005, C9020, C9021, C9030, C9031 for shorts to ground.",
+    "evidence": "Repair section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "An iPad 5 backlight diode can substitute for D9000; a same-size backlight coil from another Samsung LCD model can replace L9001.",
+    "evidence": "Parts substitution notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The backlight circuit sits under a large shield on the back near the SIM flex; cutting the shield is safer than lifting it because the CPU is directly opposite.",
+    "evidence": "Access method.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Find a shorted cap by injecting about 1 V at 2–3 A and watching a thermal camera or freeze spray.",
+    "evidence": "Short-finding step.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test a known-good screen and inspect the display FPC connector.",
+   "Cut open the shield over the backlight circuit.",
+   "Check L9001 continuity; replace if open.",
+   "Diode-test D9000 both directions; replace if equal both ways.",
+   "Diode-check C9004/C9005/C9020/C9021/C9030/C9031 to ground; inject 1 V to find the short and remove it.",
+   "Re-test with a known-good screen."
+  ],
+  "measurements": [
+   {
+    "point": "L9001 coil",
+    "expect": "10",
+    "unit": "µH",
+    "mode": "inductance",
+    "context": "Rated value for replacement"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2-3 A limit"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "freeze spray",
+   "grinder",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: Lifting the whole shield with hot air risks floating the CPU on the other side."
+  ],
+  "tags": [
+   "d9000",
+   "galaxy xcover 6 pro",
+   "l9001",
+   "led_a_24p",
+   "no backlight",
+   "repair.wiki",
+   "shorted capacitor"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [
+   "L9001",
+   "D9000",
+   "L9032"
+  ],
+  "readings": [
+   {
+    "point": "L9001 coil",
+    "mode": "inductance",
+    "expect_lo": 10.0,
+    "expect_hi": 10.0,
+    "unit": "µH"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxyxcover6pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy XCover 6 Pro Backlight Not Working\", https://repair.wiki/w/Galaxy_XCover_6_Pro_Backlight_Not_Working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_XCover_6_Pro_Backlight_Not_Working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 15 Pro Max Dead and Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_15_Pro_Max_Dead_and_Not_Charging",
+   "kind": "web",
+   "title": "IPhone 15 Pro Max Dead and Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11456,
+   "last_edited_utc": "2025-09-08T21:13:32Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15 Pro",
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "appears dead",
+   "not charging",
+   "boots on DC supply"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone 15 Pro / Pro Max that seems dead on battery but boots on a DC supply (drawing 0.105–0.130 A before power-on) with the charging IC heating has a failed charging IC.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The charging IC location differs between the US and international variants.",
+    "evidence": "Figures note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check DCPS pre-boot draw (0.105–0.130 A).",
+   "Find the hot charging IC (thermal camera/rosin).",
+   "Split the board; replace the charging IC.",
+   "Verify normal draw and charging."
+  ],
+  "measurements": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "expect": "0.105-0.130",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "rosin",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "charging ic",
+   "dead",
+   "iphone 15 pro",
+   "not charging",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charging IC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "mode": "current",
+    "expect_lo": 0.105,
+    "expect_hi": 0.13,
+    "unit": "A"
+   }
+  ],
+  "device_family": "iphone15pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 15 Pro Max Dead and Not Charging\", https://repair.wiki/w/IPhone_15_Pro_Max_Dead_and_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_15_Pro_Max_Dead_and_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

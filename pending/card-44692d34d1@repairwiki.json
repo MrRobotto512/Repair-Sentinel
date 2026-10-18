@@ -1,0 +1,105 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Recover Original Sysconfig Data from iPhone",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Recover_Original_Sysconfig_Data_from_iPhone",
+   "kind": "web",
+   "title": "How To Recover Original Sysconfig Data from iPhone",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11980,
+   "last_edited_utc": "2025-09-21T11:44:22Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 6",
+   "iPhone 6S",
+   "iPhone 6S Plus",
+   "iPhone 7",
+   "iPhone 7 Plus",
+   "iPhone 8",
+   "iPhone 8 Plus",
+   "iPhone X",
+   "iPhone XS",
+   "iPhone XS Max",
+   "iPhone 11",
+   "iPhone 11 Pro",
+   "iPhone 11 Pro Max"
+  ],
+  "symptoms": [
+   "fails activation after NAND replacement",
+   "serial shows XXXXXXXX",
+   "random MAC addresses"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "After replacing a dead NAND, activation fails until the original SysConfig (serial number, Wi-Fi MAC, Bluetooth MAC) is written to the new NAND.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Method: flash once with the new NAND, remove it, run JCID Query Code/Unbind (can take up to 30 min) to retrieve the original values, write them, refit and clean flash.",
+    "evidence": "Method 1.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On iPhone 8–X, iRepair P10 Purple Mode 'Recover SysCfg' can pull and write the data without desoldering the NAND again.",
+    "evidence": "Faster method.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Rule out baseband or NFC faults first, as they also cause activation failure.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Install new NAND and flash; confirm activation fails.",
+   "Check baseband/NFC are OK.",
+   "Remove NAND; Query Code in JCID software; note SN/Wi-Fi/BT.",
+   "Write values, refit NAND, clean flash, activate.",
+   "On 8–X optionally use iRepair P10 Purple Mode instead."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC V1S Pro or P13/P15",
+   "JCID software",
+   "iRepair P10",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "activation",
+   "iphone",
+   "nand replacement",
+   "purple mode",
+   "query code",
+   "repair.wiki",
+   "syscfg"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND SysConfig",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone6",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Recover Original Sysconfig Data from iPhone\", https://repair.wiki/w/How_To_Recover_Original_Sysconfig_Data_from_iPhone, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Recover_Original_Sysconfig_Data_from_iPhone",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

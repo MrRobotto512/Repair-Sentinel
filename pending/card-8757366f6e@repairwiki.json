@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone XS or Max Black Screen After Apple Logo",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_XS_or_Max_Black_Screen_After_Apple_Logo",
+   "kind": "web",
+   "title": "How To Fix iPhone XS or Max Black Screen After Apple Logo",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12846,
+   "last_edited_utc": "2025-11-24T06:09:06Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "black screen after Apple logo",
+   "touch works",
+   "detected by PC"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone XS / XS Max that shows the Apple logo then goes black at SpringBoard handoff, while touch and PC detection work and a restore doesn't help, can have corrupted system configuration in the NAND rather than a display-circuit fault.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: remove and read the NAND (JC BGA110), build a clean configuration for the model keeping the original SN and Wi-Fi/BT MACs (same capacity), write, reball, refit and do a full restore.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm logo then black with a known-good aftermarket screen.",
+   "Confirm it boots to activation via PC.",
+   "Check display rails (normal).",
+   "Remove and read NAND; extract SN, Wi-Fi MAC, BT MAC.",
+   "Write a clean config with original data; reball, refit, restore."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC BGA110 adapter",
+   "NAND programmer",
+   "preheater",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: Avoid overheating the CPU when refitting NAND."
+  ],
+  "tags": [
+   "black screen after logo",
+   "iphone xs",
+   "iphone xs max",
+   "nand",
+   "repair.wiki",
+   "syscfg"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND configuration",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexs",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone XS or Max Black Screen After Apple Logo\", https://repair.wiki/w/How_To_Fix_iPhone_XS_or_Max_Black_Screen_After_Apple_Logo, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_XS_or_Max_Black_Screen_After_Apple_Logo",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

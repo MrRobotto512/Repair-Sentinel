@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 8 That Restarts When You Make A Phone Call",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_8_That_Restarts_When_You_Make_A_Phone_Call",
+   "kind": "web",
+   "title": "How To Fix iPhone 8 That Restarts When You Make A Phone Call",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3342,
+   "last_edited_utc": "2024-02-09T08:44:52Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "restarts when making a call"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 8 restarting as a call starts is usually a corroded ALS/proximity sensor on the front camera flex; confirm by unplugging it, then replace or clean it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug the front camera flex and test a call.",
+   "Replace or clean the flex."
+  ],
+  "measurements": [],
+  "tools": [
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "front camera flex",
+   "iphone 8",
+   "proximity sensor",
+   "repair.wiki",
+   "restart on call"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Front camera / proximity flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone8",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 8 That Restarts When You Make A Phone Call\", https://repair.wiki/w/How_To_Fix_iPhone_8_That_Restarts_When_You_Make_A_Phone_Call, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_8_That_Restarts_When_You_Make_A_Phone_Call",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

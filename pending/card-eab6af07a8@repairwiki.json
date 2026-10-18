@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 12 That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_12_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 12 That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4700,
+   "last_edited_utc": "2024-08-26T18:33:58Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12",
+   "iPhone 12 mini",
+   "iPhone 12 Pro",
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1",
+   "Eiger"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 12 series Missing sensors TG0B/TG0V = battery; diode-check I2C2_SMC_SDA_1V8 / I2C2_SMC_SCL_1V8 and look for missing R2472, R2473, R2475 near the battery connector.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Prs0, Mic1 or Eiger in Missing sensors point to the charging port flex.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read Missing sensors in panic-full.",
+   "TG0B/TG0V: battery swap, data pins, R2472/R2473/R2475.",
+   "Prs0/Mic1/Eiger: known-good charge port flex, diode-check FPC."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "eiger",
+   "iphone 12",
+   "panic log",
+   "prs0",
+   "r2472",
+   "r2473",
+   "r2475",
+   "random restart",
+   "repair.wiki",
+   "tg0b"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery / charge port flex",
+  "part_numbers": [
+   "R2472",
+   "R2473",
+   "R2475"
+  ],
+  "readings": [],
+  "device_family": "iphone12",
+  "error_codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1",
+   "Eiger"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 12 That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_12_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_12_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,115 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR not charging",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_not_charging",
+   "kind": "web",
+   "title": "IPhone XR not charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6704,
+   "last_edited_utc": "2025-05-14T18:36:04Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "not charging",
+   "won't boot",
+   "charges at 0.013 A",
+   "82 mA before power-on"
+  ],
+  "codes": [
+   "U3300"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR charging at 0.013 A and drawing about 82 mA before power-on on a DC supply usually needs Yangtze U3300 (charging IC) replaced; a liquid-damaged earpiece flex can also cause it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The shield over Yangtze is very tough; add 138 °C low-melt solder to its edges; baseband and WTR under it can float.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with earpiece flex unplugged.",
+   "Remove shield with low-melt solder.",
+   "Replace Yangtze U3300; confirm the 82 mA draw is gone."
+  ],
+  "measurements": [
+   {
+    "point": "USB charge draw (fault)",
+    "expect": "0.013",
+    "unit": "A",
+    "mode": "current",
+    "context": ""
+   },
+   {
+    "point": "Pre-boot draw (fault)",
+    "expect": "82",
+    "unit": "mA",
+    "mode": "current",
+    "context": "DC supply"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "138C low melt solder",
+   "DC power supply"
+  ],
+  "cautions": [
+   "SOURCE RISK: Removing the shield can float the baseband or WTR underneath."
+  ],
+  "tags": [
+   "iphone xr",
+   "not charging",
+   "repair.wiki",
+   "u3300",
+   "yangtze"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Yangtze U3300",
+  "part_numbers": [
+   "U3300"
+  ],
+  "readings": [
+   {
+    "point": "USB charge draw (fault)",
+    "mode": "current",
+    "expect_lo": 0.013,
+    "expect_hi": 0.013,
+    "unit": "A"
+   },
+   {
+    "point": "Pre-boot draw (fault)",
+    "mode": "current",
+    "expect_lo": 82.0,
+    "expect_hi": 82.0,
+    "unit": "mA"
+   }
+  ],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "U3300"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR not charging\", https://repair.wiki/w/IPhone_XR_not_charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_not_charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

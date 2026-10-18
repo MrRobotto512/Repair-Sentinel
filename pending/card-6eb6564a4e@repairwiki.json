@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Overheating and Shutting down",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_Overheating_and_Shutting_down",
+   "kind": "web",
+   "title": "PlayStation 5 Overheating and Shutting down",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13018,
+   "last_edited_utc": "2025-12-02T23:45:35Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "PlayStation 5 Slim",
+   "PlayStation 5 Pro"
+  ],
+  "symptoms": [
+   "overheating",
+   "shuts down while playing",
+   "fan at max",
+   "'Your PS5 is too hot'"
+  ],
+  "codes": [
+   "CFI-1200"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 overheating is usually dust build-up or oxidised/dry liquid metal on the APU; clean with IPA-soaked swabs and only add Conductonaut if much was lost; don't remove the black foam barrier.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On CFI-1200 the heatsink often separates from its metal shield; replace it or re-bond with J-B Weld 8265SPA and let it cure fully.",
+    "evidence": "Faulty heatsink section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "EDM-010 boards need some force to separate from the heatsink due to a large thermal pad.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check the fan spins; clean dust.",
+   "Remove board; inspect APU and heatsink liquid metal.",
+   "Clean oxidation; re-spread/add liquid metal carefully.",
+   "On CFI-1200 inspect heatsink-to-shield bond.",
+   "Test under load."
+  ],
+  "measurements": [],
+  "tools": [
+   "air compressor",
+   "isopropyl alcohol",
+   "Conductonaut",
+   "J-B Weld 8265SPA"
+  ],
+  "cautions": [
+   "SOURCE RISK: Liquid metal is conductive—don't spill it on the board."
+  ],
+  "tags": [
+   "cfi-1200",
+   "dust",
+   "heatsink",
+   "liquid metal",
+   "overheating",
+   "ps5",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Cooling",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "CFI-1200"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 Overheating and Shutting down\", https://repair.wiki/w/PlayStation_5_Overheating_and_Shutting_down, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_Overheating_and_Shutting_down",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

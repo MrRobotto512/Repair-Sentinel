@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii System cant connect to wifi",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_System_cant_connect_to_wifi",
+   "kind": "web",
+   "title": "Nintendo Wii System cant connect to wifi",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13235,
+   "last_edited_utc": "2025-12-13T22:40:49Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "can't connect to Wi-Fi"
+  ],
+  "codes": [
+   "IOS36",
+   "IOS58",
+   "IOS80"
+  ],
+  "claims": [
+   {
+    "statement": "Wii Wi-Fi failure: check antennas; a dead Wi-Fi chip gives a black screen instead, so board replacement is rarely the fix; RVLoader Wi-Fi patches can be removed by reinstalling IOS36/58/80.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check antennas.",
+   "Reinstall default IOS if RVLoader was used."
+  ],
+  "measurements": [],
+  "tools": [
+   "NUS Downloader"
+  ],
+  "cautions": [],
+  "tags": [
+   "antenna",
+   "nintendo wii",
+   "repair.wiki",
+   "rvloader",
+   "wifi"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Antennas / IOS",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendowii",
+  "error_codes": [
+   "IOS36",
+   "IOS58",
+   "IOS80"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii System cant connect to wifi\", https://repair.wiki/w/Nintendo_Wii_System_cant_connect_to_wifi, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_System_cant_connect_to_wifi",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

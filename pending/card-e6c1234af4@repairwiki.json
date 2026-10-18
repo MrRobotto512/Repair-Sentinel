@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 7 That Has No Backlight or Dark Spot On Screen",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_7_That_Has_No_Backlight_or_Dark_Spot_On_Screen",
+   "kind": "web",
+   "title": "How To Fix iPhone 7 That Has No Backlight or Dark Spot On Screen",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3145,
+   "last_edited_utc": "2024-01-22T08:44:19Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no backlight",
+   "dark screen",
+   "dark spot in corner"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 7 no backlight is usually a blown backlight filter: FL3901, FL3902, FL3903 on iPhone 7; FL3901, FL3902, FL3903, FL4601, FL4602 on 7 Plus.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Find a backlight pin at the LCD connector reading OL (PP_LCM_BL_CAT1/CAT2/ANODE_CONN, plus BL34 lines on 7 Plus); a good filter has continuity and equal readings on both sides.",
+    "evidence": "Diagnosis.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Never replace a filter with a jumper wire; use the same value part.",
+    "evidence": "Caution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm board fault (known-good screen, charge current, flashlight).",
+   "Diode-check LCD connector backlight pins against boardview (±5–10%).",
+   "Test filters for continuity; replace blown ones with the correct value.",
+   "Re-check the pin reading and test."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "ZXW boardview",
+   "soldering iron"
+  ],
+  "cautions": [
+   "SOURCE RISK: Jumpering a filter removes surge protection and can permanently damage the phone."
+  ],
+  "tags": [
+   "backlight filter",
+   "fl3901",
+   "fl3902",
+   "fl3903",
+   "fl4601",
+   "fl4602",
+   "iphone 7",
+   "iphone 7 plus",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight filters",
+  "part_numbers": [
+   "FL3901",
+   "FL3902",
+   "FL3903",
+   "FL4601",
+   "FL4602"
+  ],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 7 That Has No Backlight or Dark Spot On Screen\", https://repair.wiki/w/How_To_Fix_iPhone_7_That_Has_No_Backlight_or_Dark_Spot_On_Screen, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_7_That_Has_No_Backlight_or_Dark_Spot_On_Screen",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

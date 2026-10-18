@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Steam Deck - dump/modify controller board firmware",
+  "source": {
+   "url": "https://repair.wiki/w/Steam_Deck_-_dump/modify_controller_board_firmware",
+   "kind": "web",
+   "title": "Steam Deck - dump/modify controller board firmware",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14285,
+   "last_edited_utc": "2026-10-09T07:02:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Steam Deck (controller board rev. B)"
+  ],
+  "symptoms": [
+   "need to back up or edit controller firmware",
+   "lost serial data after MCU swap"
+  ],
+  "codes": [
+   "R7FA4E10B2CFM",
+   "R7FA4E10D2CFM"
+  ],
+  "claims": [
+   {
+    "statement": "The Steam Deck controller MCU (Renesas RA4E1) firmware can be dumped in USB boot mode with SteamOS's rfp-cli (or the steamdeck-controller-collect tool); bootloader first, application at 0x00008000–0x00040000, calibration/provisioning incl. both serial numbers at 0x08000000–0x08002000.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Edited regions need a recalculated CRC-32 (IEEE, little endian) with an extra final XOR; the serial block CRC covers 0x08000004–0x080000FF and is stored in the first 4 bytes at 0x08000000.",
+    "evidence": "Edit section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Without serials the Deck still runs, but automatic firmware/BIOS updates may not.",
+    "evidence": "Edit section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Put the MCU in USB boot mode (MD to ground).",
+   "Dump with rfp-cli or steamdeck-controller-collect; keep backups.",
+   "Edit in a hex editor; recompute region CRCs.",
+   "Write back with rfp-cli."
+  ],
+  "measurements": [],
+  "tools": [
+   "SteamOS rfp-cli",
+   "HxD",
+   "BatCtrl"
+  ],
+  "cautions": [
+   "SOURCE RISK: Firmware modification can damage the controller board or Deck."
+  ],
+  "tags": [
+   "controller board",
+   "firmware dump",
+   "renesas ra4e1",
+   "repair.wiki",
+   "rfp-cli",
+   "serial number",
+   "steam deck"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Controller MCU",
+  "part_numbers": [
+   "R7FA4E10B2CFM",
+   "R7FA4E10D2CFM"
+  ],
+  "readings": [],
+  "device_family": "steamdeck",
+  "error_codes": [
+   "R7FA4E10B2CFM",
+   "R7FA4E10D2CFM"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Steam Deck - dump/modify controller board firmware\", https://repair.wiki/w/Steam_Deck_-_dump/modify_controller_board_firmware, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Steam_Deck_-_dump/modify_controller_board_firmware",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix an iPad Air that shows the low battery screen but will not charge",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_an_iPad_Air_that_shows_the_low_battery_screen_but_will_not_charge",
+   "kind": "web",
+   "title": "How to fix an iPad Air that shows the low battery screen but will not charge",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2994,
+   "last_edited_utc": "2024-01-17T22:01:04Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air"
+  ],
+  "symptoms": [
+   "low battery screen but will not charge",
+   "dies when charger removed"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPad Air that shows the low-battery screen on the charger but never charges and goes blank when unplugged most commonly needs a new battery.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace the battery and retest charging."
+  ],
+  "measurements": [],
+  "tools": [
+   "pry tools",
+   "heat mat"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery",
+   "ipad air",
+   "low battery screen",
+   "not charging",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Short page; rule out the charge port first. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadair",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix an iPad Air that shows the low battery screen but will not charge\", https://repair.wiki/w/How_to_fix_an_iPad_Air_that_shows_the_low_battery_screen_but_will_not_charge, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_an_iPad_Air_that_shows_the_low_battery_screen_but_will_not_charge",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

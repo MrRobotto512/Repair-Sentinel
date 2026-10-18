@@ -1,0 +1,75 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Pixel 6a Vibration and Haptics Not Working",
+  "source": {
+   "url": "https://repair.wiki/w/Pixel_6a_Vibration_and_Haptics_Not_Working",
+   "kind": "web",
+   "title": "Pixel 6a Vibration and Haptics Not Working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12212,
+   "last_edited_utc": "2025-10-02T04:38:38Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Pixel 6a"
+  ],
+  "symptoms": [
+   "vibration/haptics stop working",
+   "returns after reboot then dies"
+  ],
+  "codes": [
+   "cs40l26"
+  ],
+  "claims": [
+   {
+    "statement": "Pixel 6a haptics dying after quick key presses (logs show cs40l26 polling errors / Vibrator HAL failures) is often weak spring contacts between the board and vibrator; gently bend the board pins up (and vibrator pins down) for firmer contact.",
+    "evidence": "Diagnosis and hardware solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Hard reset (power + volume up 30 s) to confirm it returns then fails.",
+   "Remove screen and midframe.",
+   "Gently bend the board contacts up / vibrator contacts down.",
+   "Reassemble; check for tension when screwing the midframe."
+  ],
+  "measurements": [],
+  "tools": [
+   "screwdrivers",
+   "spudger",
+   "tweezers"
+  ],
+  "cautions": [],
+  "tags": [
+   "cs40l26",
+   "haptics",
+   "pixel 6a",
+   "repair.wiki",
+   "spring contacts",
+   "vibration"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Vibrator contacts",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "pixel6a",
+  "error_codes": [
+   "cs40l26"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Pixel 6a Vibration and Haptics Not Working\", https://repair.wiki/w/Pixel_6a_Vibration_and_Haptics_Not_Working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Pixel_6a_Vibration_and_Haptics_Not_Working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

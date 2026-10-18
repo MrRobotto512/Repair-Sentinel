@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Sony Dualshock 4 Taking 3.4+ amps rather than 3 amps",
+  "source": {
+   "url": "https://repair.wiki/w/Sony_Dualshock_4_Taking_3.4%2B_amps_rather_than_3_amps",
+   "kind": "web",
+   "title": "Sony Dualshock 4 Taking 3.4+ amps rather than 3 amps",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13168,
+   "last_edited_utc": "2025-12-09T20:57:43Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "DualShock 4"
+  ],
+  "symptoms": [
+   "won't turn on",
+   "draws 3.4+ A instead of 3 A"
+  ],
+  "codes": [
+   "JDS-030",
+   "JDS-011"
+  ],
+  "claims": [
+   {
+    "statement": "A DualShock 4 drawing 3.4 A+ and not turning on often has the wrong ribbon cable—10, 12 and 14-pin versions exist depending on board revision (e.g. JDS-030, JDS-011).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Identify the board revision.",
+   "Fit the correct-pin ribbon (or wire it)."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "dualshock 4",
+   "jds-011",
+   "jds-030",
+   "repair.wiki",
+   "wrong ribbon"
+  ],
+  "confidence": "low",
+  "caveats": "Source's '3.4 A vs 3 A' units look questionable. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Ribbon cable",
+  "part_numbers": [
+   "JDS-030",
+   "JDS-011"
+  ],
+  "readings": [],
+  "device_family": "dualshock4",
+  "error_codes": [
+   "JDS-030",
+   "JDS-011"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Sony Dualshock 4 Taking 3.4+ amps rather than 3 amps\", https://repair.wiki/w/Sony_Dualshock_4_Taking_3.4%2B_amps_rather_than_3_amps, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Sony_Dualshock_4_Taking_3.4%2B_amps_rather_than_3_amps",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

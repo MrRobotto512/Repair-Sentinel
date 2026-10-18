@@ -1,0 +1,92 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Poco X3 Pro No Touch (common fault)",
+  "source": {
+   "url": "https://repair.wiki/w/Poco_X3_Pro_No_Touch_(common_fault)",
+   "kind": "web",
+   "title": "Poco X3 Pro No Touch (common fault)",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8955,
+   "last_edited_utc": "2025-07-22T20:35:49Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Poco X3 Pro"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "TOUCH_SPI"
+  ],
+  "claims": [
+   {
+    "statement": "Poco X3 Pro no touch after drops or careless repair usually has damaged TOUCH_SPI lines; they read about 0.500–0.700 in diode mode.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A missing 20 Ω resistor on these lines can be jumpered; a missing 1 kΩ one must be replaced.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check TOUCH_SPI lines.",
+   "Replace missing 1 kΩ resistors; jumper missing 20 Ω ones."
+  ],
+  "measurements": [
+   {
+    "point": "TOUCH_SPI lines",
+    "expect": "0.500-0.700",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "no touch",
+   "poco x3 pro",
+   "repair.wiki",
+   "resistor",
+   "touch_spi"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch SPI lines",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "TOUCH_SPI lines",
+    "mode": "diode",
+    "expect_lo": 0.5,
+    "expect_hi": 0.7,
+    "unit": "V"
+   }
+  ],
+  "device_family": "pocox3pro",
+  "error_codes": [
+   "TOUCH_SPI"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Poco X3 Pro No Touch (common fault)\", https://repair.wiki/w/Poco_X3_Pro_No_Touch_(common_fault), CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Poco_X3_Pro_No_Touch_(common_fault)",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

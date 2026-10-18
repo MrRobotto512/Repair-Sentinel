@@ -1,0 +1,84 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9 3rd Gen No Backlight",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9_3rd_Gen_No_Backlight",
+   "kind": "web",
+   "title": "IPad Pro 12.9 3rd Gen No Backlight",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8890,
+   "last_edited_utc": "2025-07-20T22:01:04Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 3rd Gen"
+  ],
+  "symptoms": [
+   "no backlight"
+  ],
+  "codes": [
+   "PPLED_OUT",
+   "U8100"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 12.9 (3rd gen) backlight: a shorted cap on PPLED_OUT usually damages the three diodes on that line too; replace them all.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If connector, filters, caps and diodes are fine, replace U8100.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a working screen.",
+   "Inspect and diode-check FPC connectors.",
+   "Check backlight caps (PPLED_OUT) and the three diodes.",
+   "Replace U8100 last."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "backlight diodes",
+   "ipad pro 12.9",
+   "no backlight",
+   "ppled_out",
+   "repair.wiki",
+   "u8100"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [
+   "U8100"
+  ],
+  "readings": [],
+  "device_family": "ipadpro1293rdgen",
+  "error_codes": [
+   "PPLED_OUT",
+   "U8100"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9 3rd Gen No Backlight\", https://repair.wiki/w/IPad_Pro_12.9_3rd_Gen_No_Backlight, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9_3rd_Gen_No_Backlight",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

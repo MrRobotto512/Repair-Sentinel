@@ -1,0 +1,160 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 15 With Touch Not Working",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_15_With_Touch_Not_Working",
+   "kind": "web",
+   "title": "How To Fix an iPhone 15 With Touch Not Working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12747,
+   "last_edited_utc": "2025-11-19T00:44:56Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15",
+   "iPhone 15 Plus"
+  ],
+  "symptoms": [
+   "no touch",
+   "display works"
+  ],
+  "codes": [
+   "C9202",
+   "PP5V1_TOUCH_VDDTX_S2_CONN"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 15 / 15 Plus with no touch on any screen is commonly a short on PP5V1_TOUCH_VDDTX_S2_CONN caused by capacitor C9202 under an EMI shield.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "At the display connector that rail normally reads about 0.571 in diode mode; 0.00 and 0–1 Ω to ground confirms the short.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Injecting 1–2 V shows no heat until the shield flap over C9202 is cut; with rosin applied, C9202 heats up.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replace C9202 with a 10 µF capacitor of the same package size.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check PP5V1_TOUCH_VDDTX_S2_CONN at the display FPC (good ~0.571).",
+   "Measure resistance to ground.",
+   "Cut only the shield flap over C9202.",
+   "Apply rosin and inject 1–2 V to confirm.",
+   "Replace C9202 with 10 µF; clean and test touch."
+  ],
+  "measurements": [
+   {
+    "point": "PP5V1_TOUCH_VDDTX_S2_CONN",
+    "expect": "0.571",
+    "unit": "V",
+    "mode": "diode",
+    "context": "At display connector, good board"
+   },
+   {
+    "point": "PP5V1_TOUCH_VDDTX_S2_CONN (shorted)",
+    "expect": "0-1",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "Hard short"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "1-2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "C9202 replacement",
+    "expect": "10",
+    "unit": "µF",
+    "mode": "capacitance",
+    "context": "Same package size"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "rosin",
+   "micro shears or mini drill",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "c9202",
+   "emi shield",
+   "iphone 15",
+   "no touch",
+   "pp5v1_touch_vddtx",
+   "repair.wiki",
+   "short"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "C9202",
+  "part_numbers": [
+   "C9202"
+  ],
+  "readings": [
+   {
+    "point": "PP5V1_TOUCH_VDDTX_S2_CONN",
+    "mode": "diode",
+    "expect_lo": 0.571,
+    "expect_hi": 0.571,
+    "unit": "V"
+   },
+   {
+    "point": "PP5V1_TOUCH_VDDTX_S2_CONN (shorted)",
+    "mode": "resistance",
+    "expect_lo": 0.0,
+    "expect_hi": 1.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   },
+   {
+    "point": "C9202 replacement",
+    "mode": "capacitance",
+    "expect_lo": 10.0,
+    "expect_hi": 10.0,
+    "unit": "µF"
+   }
+  ],
+  "device_family": "iphone15",
+  "error_codes": [
+   "C9202",
+   "PP5V1_TOUCH_VDDTX_S2_CONN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 15 With Touch Not Working\", https://repair.wiki/w/How_To_Fix_an_iPhone_15_With_Touch_Not_Working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_15_With_Touch_Not_Working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

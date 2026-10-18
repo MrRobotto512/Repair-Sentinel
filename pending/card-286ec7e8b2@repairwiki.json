@@ -1,0 +1,116 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Pro No Power",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_Pro_No_Power",
+   "kind": "web",
+   "title": "PlayStation 5 Pro No Power",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9549,
+   "last_edited_utc": "2025-07-30T22:26:45Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5 Pro"
+  ],
+  "symptoms": [
+   "no power",
+   "no signs of life"
+  ],
+  "codes": [
+   "F7002",
+   "CXD90069GG"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 Pro no power: check 12 V, then 5 V at the coil, then southbridge PMIC outputs (1.15 V and 3.3 V), then all F-numbered fuses, then shorts behind the southbridge; finally the southbridge (CXD90069GG, same as Slim) itself.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With the PSU removed, the board's 12 V input should read about 0.400–0.500 in diode mode; 0.000 is a short.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Missing 1.15 V/3.3 V with 5 V input present means the PMIC; a short on its 5 V input opens fuse F7002.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check 12 V from PSU.",
+   "Check 5 V at the coil; look for shorted caps beside it.",
+   "Check PMIC 1.15 V and 3.3 V.",
+   "Check all fuses for continuity.",
+   "Check shorts behind southbridge; replace CXD90069GG."
+  ],
+  "measurements": [
+   {
+    "point": "12 V input (PSU removed)",
+    "expect": "0.400-0.500",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Southbridge PMIC outputs",
+    "expect": "1.15 / 3.3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "cxd90069gg",
+   "f7002",
+   "no power",
+   "pmic",
+   "ps5 pro",
+   "repair.wiki",
+   "southbridge"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power path",
+  "part_numbers": [
+   "CXD90069GG",
+   "F7002"
+  ],
+  "readings": [
+   {
+    "point": "12 V input (PSU removed)",
+    "mode": "diode",
+    "expect_lo": 0.4,
+    "expect_hi": 0.5,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5pro",
+  "error_codes": [
+   "F7002",
+   "CXD90069GG"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 Pro No Power\", https://repair.wiki/w/PlayStation_5_Pro_No_Power, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_Pro_No_Power",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

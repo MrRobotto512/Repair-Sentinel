@@ -1,0 +1,86 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A12 No Backlight",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A12_No_Backlight",
+   "kind": "web",
+   "title": "Galaxy A12 No Backlight",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7859,
+   "last_edited_utc": "2025-06-21T21:09:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A12"
+  ],
+  "symptoms": [
+   "no backlight",
+   "dim screen visible with flashlight"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On Galaxy A12, rule out the display and the main FPC (often broken on A-series) before diagnosing the board backlight circuit.",
+    "evidence": "Parts-first approach in guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The backlight output coil leaking 'oil' usually indicates a short on the backlight output line; a blown capacitor in the circuit is the most common fault.",
+    "evidence": "Coil leak and shorted cap shown in guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Shorted backlight lines frequently take out the backlight IC as well; repair kits with caps, controller, coil and diode are available.",
+    "evidence": "Repair section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new display.",
+   "Inspect the main FPC; replace if damaged.",
+   "Diode-mode the backlight circuit components (CPU side) for shorts.",
+   "Replace shorted capacitor and leaking coil; replace backlight IC/diode if needed.",
+   "Use low heat near the CPU."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "soldering iron",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Excess heat near the backlight circuit can damage the nearby CPU."
+  ],
+  "tags": [
+   "backlight coil",
+   "galaxy a12",
+   "no backlight",
+   "repair.wiki",
+   "shorted capacitor"
+  ],
+  "confidence": "medium",
+  "caveats": "Expected diode values are in an image on the source page, not transcribed. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxya12",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A12 No Backlight\", https://repair.wiki/w/Galaxy_A12_No_Backlight, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A12_No_Backlight",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

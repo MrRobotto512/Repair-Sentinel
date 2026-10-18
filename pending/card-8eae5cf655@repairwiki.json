@@ -1,0 +1,86 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Parts that are serialized on iPhones",
+  "source": {
+   "url": "https://repair.wiki/w/Parts_that_are_serialized_on_iPhones",
+   "kind": "web",
+   "title": "Parts that are serialized on iPhones",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12330,
+   "last_edited_utc": "2025-10-17T12:57:26Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 5S–iPhone 16e"
+  ],
+  "symptoms": [
+   "parts pairing reference",
+   "non-genuine part message",
+   "Touch ID / Face ID lost after part swap"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 5S to 8 Plus: only the home button is paired; replacing it loses Touch ID; on 7/7 Plus/8/8 Plus the click also stops working.",
+    "evidence": "Generation tables.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPhone X onward: dot projector and IR camera can't be replaced without losing Face ID (dot projector can be repaired); proximity/flood illuminator pairing applies X–12 series; screen swap loses True Tone on X/XS/XR unless data is copied.",
+    "evidence": "Generation tables.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Battery pairing ('unable to determine if genuine') starts with XS/XR and SE 2020/2022; iPhone 11 adds the non-genuine display message; iPhone 12 adds rear camera pairing; Pro models also pair LiDAR (needs JCID programming).",
+    "evidence": "Generation tables.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPhone 13 stopped pairing the proximity/flood illuminator; from iPhone 16 on, swapping the IR camera and dot projector is supported, leaving screen, battery, rear camera and LiDAR serialized.",
+    "evidence": "Generation tables.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Look up the model's paired parts before quoting.",
+   "Warn customers about lost Touch ID/Face ID/True Tone or genuine-part messages."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "face id",
+   "iphone",
+   "non-genuine",
+   "parts pairing",
+   "repair.wiki",
+   "serialized parts",
+   "touch id",
+   "true tone"
+  ],
+  "confidence": "medium",
+  "caveats": "The source table is inconsistent in places (e.g. some 13–15 rows still mention prox/flood pairing). Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone5siphone16e",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Parts that are serialized on iPhones\", https://repair.wiki/w/Parts_that_are_serialized_on_iPhones, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Parts_that_are_serialized_on_iPhones",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

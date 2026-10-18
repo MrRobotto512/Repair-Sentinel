@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPad Pro 12.9 1st gen Bootlooping Every 10 to 15 Seconds",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPad_Pro_12.9_1st_gen_Bootlooping_Every_10_to_15_Seconds",
+   "kind": "web",
+   "title": "How To Fix iPad Pro 12.9 1st gen Bootlooping Every 10 to 15 Seconds",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12945,
+   "last_edited_utc": "2025-12-01T03:22:32Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 1st Gen (A1584)"
+  ],
+  "symptoms": [
+   "reboots every 10-15 seconds"
+  ],
+  "codes": [
+   "userspace watchdog timeout",
+   "SpringBoard"
+  ],
+  "claims": [
+   {
+    "statement": "An iPad Pro 12.9 (1st gen) looping every 10–15 s with panic logs of a userspace watchdog timeout because SpringBoard fails to check in is almost always software, not hardware.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After ruling out liquid, shorts and flexes, a full DFU restore (Restore in Finder or Clean Flash in 3uTools, not Update) fixes it.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read panic log for watchdog / SpringBoard check-in failure.",
+   "Unplug non-essential flexes to rule out hardware.",
+   "Enter DFU and restore the latest signed IPSW (not update).",
+   "Idle 5–10 minutes to confirm."
+  ],
+  "measurements": [],
+  "tools": [
+   "PC with Finder or 3uTools",
+   "IPSW file"
+  ],
+  "cautions": [
+   "SOURCE RISK: A restore erases user data."
+  ],
+  "tags": [
+   "a1584",
+   "bootloop",
+   "ipad pro 12.9",
+   "repair.wiki",
+   "restore",
+   "software",
+   "springboard",
+   "watchdog"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Software",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadpro1291stgen",
+  "error_codes": [
+   "userspace watchdog timeout",
+   "SpringBoard"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPad Pro 12.9 1st gen Bootlooping Every 10 to 15 Seconds\", https://repair.wiki/w/How_To_Fix_iPad_Pro_12.9_1st_gen_Bootlooping_Every_10_to_15_Seconds, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPad_Pro_12.9_1st_gen_Bootlooping_Every_10_to_15_Seconds",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

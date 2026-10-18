@@ -1,0 +1,147 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 8 With No Image. Turns on but nothing shows on the screen",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_8_With_No_Image._Turns_on_but_nothing_shows_on_the_screen",
+   "kind": "web",
+   "title": "How To Fix an iPhone 8 With No Image. Turns on but nothing shows on the screen",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3277,
+   "last_edited_utc": "2024-01-30T06:43:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "no image",
+   "turns on",
+   "black screen"
+  ],
+  "codes": [
+   "J5700",
+   "U5600",
+   "FL5705"
+  ],
+  "claims": [
+   {
+    "statement": "On iPhone 8 / 8 Plus no-image, the most common fault is pry damage to filter FL5705 (240 Ω, 0201) at LCD connector J5700; replacing it usually fixes it.",
+    "evidence": "LCD connector section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Other J5700 faults: PP5V7_DISPLAY_AVDDH_CONN, PP5V7_MESON_AVDDH_CONN or PN5V7_DISPLAY_MESON_AVDDN_CONN shorted; good lines read about 200–700 mV in diode mode. Inject only 2–3 V (max 5.7 V).",
+    "evidence": "LCD connector section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If the connector reads fine, check Chestnut U5600: C5600 must have no continuity across it; check for corrosion under U5600, then replace it.",
+    "evidence": "Chestnut section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out screen, DFU and backlight-only faults.",
+   "Diode-check J5700; inspect and replace FL5705.",
+   "Find shorts on AVDDH/AVDDN lines with 2–3 V injection.",
+   "Check FL3906 if PP1V8_LCM_CONN is OL.",
+   "Check C5600 and under U5600; replace U5600."
+  ],
+  "measurements": [
+   {
+    "point": "J5700 LCD connector lines (normal)",
+    "expect": "0.200-0.700",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "FL5705 filter",
+    "expect": "240",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "0201 package rating"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "2-3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Do not exceed 5.7 V"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "c5600",
+   "chestnut",
+   "fl5705",
+   "iphone 8",
+   "iphone 8 plus",
+   "j5700",
+   "no image",
+   "repair.wiki",
+   "u5600"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "FL5705 / Chestnut U5600",
+  "part_numbers": [
+   "FL5705",
+   "U5600",
+   "C5600",
+   "J5700"
+  ],
+  "readings": [
+   {
+    "point": "J5700 LCD connector lines (normal)",
+    "mode": "diode",
+    "expect_lo": 0.2,
+    "expect_hi": 0.7,
+    "unit": "V"
+   },
+   {
+    "point": "FL5705 filter",
+    "mode": "resistance",
+    "expect_lo": 240.0,
+    "expect_hi": 240.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone8",
+  "error_codes": [
+   "J5700",
+   "U5600",
+   "FL5705"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 8 With No Image. Turns on but nothing shows on the screen\", https://repair.wiki/w/How_To_Fix_an_iPhone_8_With_No_Image._Turns_on_but_nothing_shows_on_the_screen, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_8_With_No_Image._Turns_on_but_nothing_shows_on_the_screen",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

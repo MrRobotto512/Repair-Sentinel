@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Series X No Video Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Series_X_No_Video_Repair",
+   "kind": "web",
+   "title": "Xbox Series X No Video Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4321,
+   "last_edited_utc": "2024-07-15T07:26:41Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Series X"
+  ],
+  "symptoms": [
+   "no video output"
+  ],
+  "codes": [
+   "U21"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox Series X no video: try low-resolution mode and another HDMI cable, then check the port, EMI filters below it, the HDMI encoder/retimer, the ESD protection/booster IC (U21, underside; can be bypassed for diagnosis) and the 2151 5 V switch (replaceable with a similar part from an original Xbox One Ethernet circuit).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacement ESD booster options include the original BGA IC or third-party solder-in boards/flexes.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Enter low-resolution mode; try another cable.",
+   "Inspect port and EMI filters.",
+   "Check retimer and U21 ESD booster (bypass to test).",
+   "Check the 2151 5 V switch."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "2151",
+   "esd booster",
+   "hdmi",
+   "no video",
+   "repair.wiki",
+   "u21",
+   "xbox series x"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "HDMI path",
+  "part_numbers": [
+   "2151"
+  ],
+  "readings": [],
+  "device_family": "xboxseriesx",
+  "error_codes": [
+   "U21"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Series X No Video Repair\", https://repair.wiki/w/Xbox_Series_X_No_Video_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Series_X_No_Video_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

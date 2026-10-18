@@ -1,0 +1,78 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Air 5",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Air_5",
+   "kind": "web",
+   "title": "IPad Air 5",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13729,
+   "last_edited_utc": "2026-01-19T05:04:25Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air 5"
+  ],
+  "symptoms": [
+   "Apple logo flashing on and off"
+  ],
+  "codes": [
+   "A2588",
+   "A2589",
+   "A2591"
+  ],
+  "claims": [
+   {
+    "statement": "On iPad Air 5 a flashing Apple logo is fixed by disconnecting (then replacing) the power button flex.",
+    "evidence": "Guides section of device page.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPad Air 5 model numbers: A2588 Wi-Fi only; A2589 and A2591 Wi-Fi + Cellular.",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Disconnect the power button flex and retest boot."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "a2588",
+   "a2589",
+   "a2591",
+   "bootloop",
+   "ipad air 5",
+   "power button flex",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Connector diode readings on the source page are images only. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power button flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadair5",
+  "error_codes": [
+   "A2588",
+   "A2589",
+   "A2591"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Air 5\", https://repair.wiki/w/IPad_Air_5, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Air_5",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

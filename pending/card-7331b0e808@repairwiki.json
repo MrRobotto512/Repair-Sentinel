@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair an iPhone 15 Pro Max Error 9 Caused Due To Aftermarket BackGlass",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_an_iPhone_15_Pro_Max_Error_9_Caused_Due_To_Aftermarket_BackGlass",
+   "kind": "web",
+   "title": "How To Repair an iPhone 15 Pro Max Error 9 Caused Due To Aftermarket BackGlass",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12388,
+   "last_edited_utc": "2025-10-20T11:42:09Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15 Pro",
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "restore fails with error 9",
+   "disconnects during restore"
+  ],
+  "codes": [
+   "9"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 15 Pro / Pro Max restores failing with error 9 can be caused by an aftermarket back glass wireless charging flex interfering with USB-C data; restoring succeeds with that flex unplugged.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Aftermarket flexes often have lighter/golden traces, thinner copper and no Apple labels; fit an OEM pulled flex.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm back glass was replaced; inspect the flex.",
+   "Restore with the wireless charging flex disconnected.",
+   "Fit an OEM wireless charging flex; test charging, NFC, MagSafe."
+  ],
+  "measurements": [],
+  "tools": [
+   "opening tools"
+  ],
+  "cautions": [],
+  "tags": [
+   "aftermarket back glass",
+   "error 9",
+   "iphone 15 pro",
+   "repair.wiki",
+   "restore",
+   "wireless charging flex"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Back glass wireless charging flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone15pro",
+  "error_codes": [
+   "9"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair an iPhone 15 Pro Max Error 9 Caused Due To Aftermarket BackGlass\", https://repair.wiki/w/How_To_Repair_an_iPhone_15_Pro_Max_Error_9_Caused_Due_To_Aftermarket_BackGlass, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_an_iPhone_15_Pro_Max_Error_9_Caused_Due_To_Aftermarket_BackGlass",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

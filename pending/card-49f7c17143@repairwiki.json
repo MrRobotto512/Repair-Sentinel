@@ -1,0 +1,81 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 6 No Display Backlight Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_6_No_Display_Backlight_Repair",
+   "kind": "web",
+   "title": "IPad 6 No Display Backlight Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3079,
+   "last_edited_utc": "2024-01-20T01:52:21Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 6"
+  ],
+  "symptoms": [
+   "no backlight",
+   "intermittent display loss"
+  ],
+  "codes": [
+   "5662"
+  ],
+  "claims": [
+   {
+    "statement": "iPad 6 backlight: two backlight filters by the LCD connector (under a black sticker) blow if the LCD is connected with the battery attached.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Intermittent or total loss of display/backlight is common on iPad 6 from the 5662 backlight IC failing over time; replacing it fixes it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove the black sticker and inspect the two filters.",
+   "Replace blown filters.",
+   "Replace the 5662 backlight IC for intermittent loss."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "5662",
+   "backlight ic",
+   "filters",
+   "ipad 6",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight IC 5662",
+  "part_numbers": [
+   "5662"
+  ],
+  "readings": [],
+  "device_family": "ipad6",
+  "error_codes": [
+   "5662"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 6 No Display Backlight Repair\", https://repair.wiki/w/IPad_6_No_Display_Backlight_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_6_No_Display_Backlight_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

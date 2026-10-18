@@ -1,0 +1,107 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Short Circuits - Repair Basics",
+  "source": {
+   "url": "https://repair.wiki/w/Short_Circuits_-_Repair_Basics",
+   "kind": "web",
+   "title": "Short Circuits - Repair Basics",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4381,
+   "last_edited_utc": "2024-07-17T14:29:10Z"
+  },
+  "device_class": "Generic",
+  "models": [
+   "General electronics"
+  ],
+  "symptoms": [
+   "shorted rail",
+   "rail stuck at 0 V"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Confirm a short with the black probe on ground (diode or resistance mode); reversed probes can read low through IC protection diodes. CPU/GPU core rails can legitimately read 0–1 Ω.",
+    "evidence": "Detecting a short.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Locate shorts by visual inspection first, then feeling for hot parts, then voltage injection (start at about 1 V, never above the rail's rated voltage/current) with a thermal camera, freeze spray or IPA.",
+    "evidence": "Locating a short.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If nothing heats, the short may be very low impedance (solder bridge, MOSFET, diode, big cap) or on a rail derived from the suspect rail; recheck after removing any jumpers.",
+    "evidence": "Locating a short.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Supplies protect against shorts via series resistors, fuses (incl. polyfuses) or active current limiting; supplies that shut off and retry cause 'clicking'/cycling voltage.",
+    "evidence": "Short circuit protection section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect visually.",
+   "Measure rail to ground with black probe on ground.",
+   "Power up briefly and feel for hot parts.",
+   "Inject ~1 V and use thermal camera / freeze spray / IPA.",
+   "Remove the hot part and re-measure."
+  ],
+  "measurements": [
+   {
+    "point": "Initial injection voltage",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Safe starting point for most rails"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "freeze spray"
+  ],
+  "cautions": [],
+  "tags": [
+   "diode mode",
+   "ocp",
+   "repair basics",
+   "repair.wiki",
+   "short circuit",
+   "voltage injection"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Initial injection voltage",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "generalelectronics",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Short Circuits - Repair Basics\", https://repair.wiki/w/Short_Circuits_-_Repair_Basics, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Short_Circuits_-_Repair_Basics",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

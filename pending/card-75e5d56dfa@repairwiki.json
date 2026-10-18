@@ -1,0 +1,68 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Wireless Controller",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Wireless_Controller",
+   "kind": "web",
+   "title": "Xbox Wireless Controller",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6535,
+   "last_edited_utc": "2025-05-12T16:40:48Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Wireless Controller (Model 1914)"
+  ],
+  "symptoms": [
+   "identification"
+  ],
+  "codes": [
+   "1914",
+   "045E:0B12",
+   "045E:0B13"
+  ],
+  "claims": [
+   {
+    "statement": "The Series X|S controller is Model 1914 (USB-C, Share button, BLE), USB ID 045E:0B12 (USB) / 045E:0B13 (Bluetooth); its rechargeable kit is physically the same battery as the Xbox One kit with a USB-C cable.",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "model 1914",
+   "repair.wiki",
+   "usb id",
+   "usb-c",
+   "xbox wireless controller"
+  ],
+  "confidence": "medium",
+  "caveats": "USB-C diode readings are in an image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxwirelesscontroller",
+  "error_codes": [
+   "1914",
+   "045E:0B12",
+   "045E:0B13"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Wireless Controller\", https://repair.wiki/w/Xbox_Wireless_Controller, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Wireless_Controller",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

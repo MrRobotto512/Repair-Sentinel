@@ -1,0 +1,104 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 No Image and No Sound",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_No_Image_and_No_Sound",
+   "kind": "web",
+   "title": "PlayStation 5 No Image and No Sound",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6918,
+   "last_edited_utc": "2025-05-18T12:38:56Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "solid white light, no picture or sound"
+  ],
+  "codes": [
+   "MN864739",
+   "L3001",
+   "L3002",
+   "L3003",
+   "L3004"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 no image/sound: check the HDMI port (T-824 readings), the four chokes L3001–L3004 between encoder and port (8 lines, each needs continuity), and the MN864739 encoder.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The HDMI encoder circuit needs 5 V, 3.3 V, 1.8 V and 0.9 V present.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect port; compare T-824 readings.",
+   "Check L3001–L3004 continuity.",
+   "Check MN864739 for damage, shorts and its 5/3.3/1.8/0.9 V supplies.",
+   "Hot-swap port, replace chokes or encoder (preheat).",
+   "Test 4K and HDR output."
+  ],
+  "measurements": [
+   {
+    "point": "HDMI encoder supplies",
+    "expect": "5 / 3.3 / 1.8 / 0.9",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Console on"
+   }
+  ],
+  "tools": [
+   "Mechanic T-824",
+   "hot air",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "chokes",
+   "hdmi",
+   "l3001",
+   "mn864739",
+   "no image",
+   "ps5",
+   "repair.wiki"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "HDMI port / encoder",
+  "part_numbers": [
+   "MN864739",
+   "L3001",
+   "L3002",
+   "L3003",
+   "L3004"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "MN864739",
+   "L3001",
+   "L3002",
+   "L3003",
+   "L3004"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 No Image and No Sound\", https://repair.wiki/w/PlayStation_5_No_Image_and_No_Sound, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_No_Image_and_No_Sound",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

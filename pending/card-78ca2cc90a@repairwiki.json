@@ -1,0 +1,118 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 13 Pro No Power or No IMEI After Backglass Repair",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_13_Pro_No_Power_or_No_IMEI_After_Backglass_Repair",
+   "kind": "web",
+   "title": "How To Fix iPhone 13 Pro No Power or No IMEI After Backglass Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13026,
+   "last_edited_utc": "2025-12-03T06:39:26Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 13 Pro",
+   "iPhone 13 Pro Max"
+  ],
+  "symptoms": [
+   "no IMEI",
+   "modem firmware N/A",
+   "no service",
+   "dead after back glass repair"
+  ],
+  "codes": [
+   "*#06#"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 13 Pro / Pro Max with no IMEI, no modem firmware or no power after a back glass job often has a cracked BB_PMU from the glass-cracking tool hitting the baseband area (also common on 14 Pro / Pro Max).",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Look for hairline cracks on BB_PMU and a dent in the board; a high current jump on DCPS indicates a short around it.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: split the sandwich at about 160–180 °C, remove underfill and the cracked BB_PMU, fit a reballed new one, rejoin the boards.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If the phone has data, update rather than restore; a baseband-faulty phone that is restored may get stuck at activation and must be restored again after repair.",
+    "evidence": "Symptoms note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect BB_PMU for cracks and dents.",
+   "Check *#06# and Modem Firmware.",
+   "DCPS test the lower board; check for shorts around BB_PMU.",
+   "Split board (160–180 °C), replace BB_PMU, rejoin.",
+   "Verify boot current, IMEI, modem firmware, cellular."
+  ],
+  "measurements": [
+   {
+    "point": "Sandwich separation preheat",
+    "expect": "160-180",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "board preheater",
+   "hot air",
+   "reball stencils",
+   "DC power supply",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Back-glass cracking tools used over the baseband area can crack BB_PMU."
+  ],
+  "tags": [
+   "back glass repair",
+   "baseband",
+   "bb_pmu",
+   "iphone 13 pro",
+   "no imei",
+   "no service",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "BB_PMU",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Sandwich separation preheat",
+    "mode": "temperature",
+    "expect_lo": 160.0,
+    "expect_hi": 180.0,
+    "unit": "°C"
+   }
+  ],
+  "device_family": "iphone13pro",
+  "error_codes": [
+   "*#06#"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 13 Pro No Power or No IMEI After Backglass Repair\", https://repair.wiki/w/How_To_Fix_iPhone_13_Pro_No_Power_or_No_IMEI_After_Backglass_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_13_Pro_No_Power_or_No_IMEI_After_Backglass_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

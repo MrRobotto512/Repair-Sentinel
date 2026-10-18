@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 4 Pro No Image and No Sound",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_4_Pro_No_Image_and_No_Sound",
+   "kind": "web",
+   "title": "Playstation 4 Pro No Image and No Sound",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7785,
+   "last_edited_utc": "2025-06-18T21:22:49Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4 Pro",
+   "PlayStation 4 Slim"
+  ],
+  "symptoms": [
+   "no image",
+   "no sound"
+  ],
+  "codes": [
+   "MN864729"
+  ],
+  "claims": [
+   {
+    "statement": "PS4 Pro no image/sound is most often the HDMI port or the MN864729 HDMI encoder; check the port (T-824 readings) and the 4 chokes between port and encoder (each carries 2 lines; continuity parallel, not across).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PS4 Slim and Pro share the same HDMI port, chokes and MN864729 encoder.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect port and solder joints; compare T-824 readings.",
+   "Check the four chokes.",
+   "Check MN864729 for damage, shorts and missing voltages.",
+   "Hot-swap the port, replace chokes or encoder (preheat).",
+   "Test resolutions incl. 4K60."
+  ],
+  "measurements": [],
+  "tools": [
+   "Mechanic T-824",
+   "mozzwald HDMI adapter",
+   "hot air",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "chokes",
+   "hdmi",
+   "mn864729",
+   "no image",
+   "ps4 pro",
+   "ps4 slim",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Encoder voltages are only shown in an image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "HDMI port / encoder",
+  "part_numbers": [
+   "MN864729"
+  ],
+  "readings": [],
+  "device_family": "playstation4pro",
+  "error_codes": [
+   "MN864729"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 4 Pro No Image and No Sound\", https://repair.wiki/w/Playstation_4_Pro_No_Image_and_No_Sound, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_4_Pro_No_Image_and_No_Sound",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

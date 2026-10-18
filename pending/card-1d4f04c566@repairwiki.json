@@ -1,0 +1,84 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 5 not turning on repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_5_not_turning_on_repair",
+   "kind": "web",
+   "title": "IPad 5 not turning on repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3030,
+   "last_edited_utc": "2024-01-17T22:50:33Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 5"
+  ],
+  "symptoms": [
+   "no power"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPad 5 drawing zero amps from the charger commonly has a bad Tristar; a VCC_MAIN short can also prevent power-on.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check charger draw.",
+   "Replace Tristar if zero draw.",
+   "Check VCC_MAIN for shorts."
+  ],
+  "measurements": [
+   {
+    "point": "Charger draw",
+    "expect": "0-0.6",
+    "unit": "A",
+    "mode": "current",
+    "context": "Symptom range"
+   }
+  ],
+  "tools": [
+   "USB meter",
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad 5",
+   "no power",
+   "repair.wiki",
+   "tristar",
+   "vcc_main"
+  ],
+  "confidence": "low",
+  "caveats": "Short page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Tristar",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Charger draw",
+    "mode": "current",
+    "expect_lo": 0.0,
+    "expect_hi": 0.6,
+    "unit": "A"
+   }
+  ],
+  "device_family": "ipad5",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 5 not turning on repair\", https://repair.wiki/w/IPad_5_not_turning_on_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_5_not_turning_on_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

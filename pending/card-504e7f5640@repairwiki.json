@@ -1,0 +1,81 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A125(Mediatek) No Graphics",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A125(Mediatek)_No_Graphics",
+   "kind": "web",
+   "title": "Galaxy A125(Mediatek) No Graphics",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7939,
+   "last_edited_utc": "2025-06-22T21:10:08Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A12 (A125, MediaTek)"
+  ],
+  "symptoms": [
+   "no image",
+   "no backlight",
+   "phone works otherwise"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A Galaxy A125 that boots, vibrates and charges but shows nothing even with a torch can be missing a PMIC graphics supply because pad A17 under the PMIC has torn after drops.",
+    "evidence": "Repair description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check the diode value on the relevant pin first; OL or high indicates the fault, then lift the PMIC and jumper pad A17 to the nearest component on that net.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-test the graphics supply pin (high/OL = suspect).",
+   "Lift the PMIC and check pad A17.",
+   "Run a jumper from A17 to the nearest component on the same net and verify continuity.",
+   "UV-mask, reball and refit the PMIC."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "jumper wire",
+   "UV mask"
+  ],
+  "cautions": [],
+  "tags": [
+   "a125",
+   "galaxy a12",
+   "jumper",
+   "mediatek",
+   "no graphics",
+   "pad a17",
+   "pmic",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PMIC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxya12",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A125(Mediatek) No Graphics\", https://repair.wiki/w/Galaxy_A125(Mediatek)_No_Graphics, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A125(Mediatek)_No_Graphics",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

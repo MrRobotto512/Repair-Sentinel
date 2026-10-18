@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Not turning on at all Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Not_turning_on_at_all_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Not turning on at all Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2305,
+   "last_edited_utc": "2024-01-13T20:38:54Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no power"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch with no power: suspects are M92T36, PI3USB, BQ24193, MAX17050, MAX77620 and nearby parts; check continuity of the coil near BQ24193 and the fuse above the port.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check coil near BQ24193 and port fuse continuity.",
+   "Check for shorts around the listed ICs; replace faulty part."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "bq24193",
+   "m92t36",
+   "max17050",
+   "max77620",
+   "nintendo switch",
+   "no power",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power path",
+  "part_numbers": [
+   "M92T36",
+   "BQ24193",
+   "MAX17050",
+   "MAX77620"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Not turning on at all Repair\", https://repair.wiki/w/Nintendo_Switch_Not_turning_on_at_all_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Not_turning_on_at_all_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

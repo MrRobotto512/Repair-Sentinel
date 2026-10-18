@@ -1,0 +1,82 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 7 No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_7_No_Touch",
+   "kind": "web",
+   "title": "IPad 7 No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7102,
+   "last_edited_utc": "2025-05-25T21:47:24Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 7"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "SPI_GRAPE_SCLK"
+  ],
+  "claims": [
+   {
+    "statement": "iPad 7 no touch: test a new digitizer, inspect both touch connectors, diode-check against reference values and check filters and shorts near the touch IC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A low (near 0) diode reading on SPI_GRAPE_SCLK means a CPU-to-board disconnection needing a CPU reball.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new digitizer.",
+   "Inspect and diode-check both touch connectors.",
+   "Check filters; find shorts with voltage injection.",
+   "Check SPI_GRAPE_SCLK; reball CPU if low.",
+   "Reball or replace touch IC last."
+  ],
+  "measurements": [],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "cpu reball",
+   "ipad 7",
+   "no touch",
+   "repair.wiki",
+   "spi_grape_sclk",
+   "touch ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Expected SPI_GRAPE_SCLK value is in an image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch circuit",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipad7",
+  "error_codes": [
+   "SPI_GRAPE_SCLK"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 7 No Touch\", https://repair.wiki/w/IPad_7_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_7_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

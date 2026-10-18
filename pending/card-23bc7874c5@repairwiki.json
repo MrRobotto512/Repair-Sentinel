@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Not turning on, draws 0.2A @ 15V from charger and slowly drops Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Not_turning_on,_draws_0.2A_@_15V_from_charger_and_slowly_drops_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Not turning on, draws 0.2A @ 15V from charger and slowly drops Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2197,
+   "last_edited_utc": "2024-01-13T14:34:35Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no power",
+   "0.2 A at 15 V slowly dropping"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch drawing ~0.2 A at 15 V that slowly drops (~0.275 A with battery unplugged) likely has a dead CPU; check the CPU caps by M92T36 and by the SOT-323-6 IC near MAX17050—both shorted means the board is unrecoverable.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure charger draw with/without battery.",
+   "Check the two CPU capacitors for shorts.",
+   "Check for corrosion near MAX17050."
+  ],
+  "measurements": [
+   {
+    "point": "Charger draw",
+    "expect": "0.2",
+    "unit": "A",
+    "mode": "current",
+    "context": "At 15 V, dropping"
+   },
+   {
+    "point": "Charger draw, battery unplugged",
+    "expect": "0.275",
+    "unit": "A",
+    "mode": "current",
+    "context": "At 15 V"
+   }
+  ],
+  "tools": [
+   "USB-C meter",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "cpu capacitors",
+   "dead cpu",
+   "nintendo switch",
+   "no power",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Charger draw",
+    "mode": "current",
+    "expect_lo": 0.2,
+    "expect_hi": 0.2,
+    "unit": "A"
+   },
+   {
+    "point": "Charger draw, battery unplugged",
+    "mode": "current",
+    "expect_lo": 0.275,
+    "expect_hi": 0.275,
+    "unit": "A"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Not turning on, draws 0.2A @ 15V from charger and slowly drops Repair\", https://repair.wiki/w/Nintendo_Switch_Not_turning_on,_draws_0.2A_@_15V_from_charger_and_slowly_drops_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Not_turning_on,_draws_0.2A_@_15V_from_charger_and_slowly_drops_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

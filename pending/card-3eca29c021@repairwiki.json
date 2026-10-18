@@ -1,0 +1,69 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 16 Pro Max Restarting When Opening Camera App",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_16_Pro_Max_Restarting_When_Opening_Camera_App",
+   "kind": "web",
+   "title": "IPhone 16 Pro Max Restarting When Opening Camera App",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13416,
+   "last_edited_utc": "2025-12-27T19:38:28Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "restarts when opening camera"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 16 Pro rebooting as soon as the camera starts, despite restore and new camera modules, has been traced to a damaged or missing crystal capacitor under the CPU, needing CPU removal to repair.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check panic logs; reproduce.",
+   "Test known-good camera modules.",
+   "Remove CPU; replace the damaged/missing crystal capacitor; refit."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "solder paste"
+  ],
+  "cautions": [],
+  "tags": [
+   "cpu",
+   "crystal capacitor",
+   "iphone 16 pro",
+   "repair.wiki",
+   "restart on camera"
+  ],
+  "confidence": "low",
+  "caveats": "Specialist CPU-level repair; designator not given. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Crystal capacitor under CPU",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone16pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 16 Pro Max Restarting When Opening Camera App\", https://repair.wiki/w/IPhone_16_Pro_Max_Restarting_When_Opening_Camera_App, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_16_Pro_Max_Restarting_When_Opening_Camera_App",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

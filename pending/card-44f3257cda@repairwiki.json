@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Blue screen of death Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Blue_screen_of_death_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Blue screen of death Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8796,
+   "last_edited_utc": "2025-07-16T20:01:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "blue screen of death",
+   "bent frame"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch blue screen is usually cracked solder balls or broken traces under the CPU or RAM from the thin board bending.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Press on the bowed IC while powering/charging (both RAM chips if needed); a Nintendo logo identifies the chip. Brief low heat (150–200 °C, 10–20 s) on each IC can also reveal it.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A reflow (375–450 °C, no nozzle, until the IC nudges and springs back) is a quick but often temporary fix; a reball (magnetic stencil recommended for the CPU) is the lasting fix; occasionally eMMC is the cause.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replace thermal paste between CPU and shield and between shield and heatsink on reassembly.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Look for board bowing over CPU/RAM.",
+   "Press on each chip while powering to find the culprit.",
+   "Remove shield, clean thermal paste.",
+   "Reflow, or remove, rebuild ripped pads and reball the chip.",
+   "Reassemble with fresh thermal paste."
+  ],
+  "measurements": [
+   {
+    "point": "Reflow hot air",
+    "expect": "375-450",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": "No nozzle, medium airflow"
+   },
+   {
+    "point": "Diagnostic warm-up",
+    "expect": "150-200",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": "10-20 s per IC"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "reball stencil (magnetic for CPU)",
+   "solder paste",
+   "UV mask"
+  ],
+  "cautions": [
+   "SOURCE RISK: Heat while the board is in the frame can damage the plastic and LCD."
+  ],
+  "tags": [
+   "blue screen",
+   "bsod",
+   "cpu reball",
+   "nintendo switch",
+   "ram reball",
+   "reflow",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU / RAM solder joints",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Reflow hot air",
+    "mode": "temperature",
+    "expect_lo": 375.0,
+    "expect_hi": 450.0,
+    "unit": "°C"
+   },
+   {
+    "point": "Diagnostic warm-up",
+    "mode": "temperature",
+    "expect_lo": 150.0,
+    "expect_hi": 200.0,
+    "unit": "°C"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Blue screen of death Repair\", https://repair.wiki/w/Nintendo_Switch_Blue_screen_of_death_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Blue_screen_of_death_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

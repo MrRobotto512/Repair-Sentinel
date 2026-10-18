@@ -1,0 +1,122 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 7 Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_7_Not_Charging",
+   "kind": "web",
+   "title": "IPad 7 Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10672,
+   "last_edited_utc": "2025-08-25T21:41:16Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 7"
+  ],
+  "symptoms": [
+   "not charging",
+   "charges only when off",
+   "charges only one cable orientation"
+  ],
+  "codes": [
+   "U1700",
+   "610A3B",
+   "F3700",
+   "F3750",
+   "Q8550"
+  ],
+  "claims": [
+   {
+    "statement": "iPad 7 charge path: 5 V at the input filter, then through filters F3700/F3750 to a MOSFET (Q8550 with DZ8550/R8550), then Tristar U1700.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Less than 5 V (e.g. 2 V) at the MOSFET means F3700/F3750 are faulty.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Tristar U1700 (610A3B) failure, often from poor cables, shows as charging only when off or only in one plug orientation; it is not underfilled.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test a new battery; inspect the port.",
+   "Measure 5 V at the input filter; replace port flex if missing.",
+   "Measure at MOSFET; replace F3700/F3750 if low.",
+   "Check MOSFET output (Q8550/DZ8550/R8550).",
+   "Replace Tristar U1700."
+  ],
+  "measurements": [
+   {
+    "point": "Charger input at board",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "610a3b",
+   "f3700",
+   "f3750",
+   "ipad 7",
+   "not charging",
+   "q8550",
+   "repair.wiki",
+   "tristar",
+   "u1700"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Tristar U1700",
+  "part_numbers": [
+   "U1700",
+   "610A3B",
+   "F3700",
+   "F3750",
+   "Q8550"
+  ],
+  "readings": [
+   {
+    "point": "Charger input at board",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipad7",
+  "error_codes": [
+   "U1700",
+   "610A3B",
+   "F3700",
+   "F3750",
+   "Q8550"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 7 Not Charging\", https://repair.wiki/w/IPad_7_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_7_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

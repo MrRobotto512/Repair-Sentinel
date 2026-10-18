@@ -1,0 +1,81 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 16 Pro Face ID and All Cameras Not Working",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_16_Pro_Face_ID_and_All_Cameras_Not_Working",
+   "kind": "web",
+   "title": "How To Fix iPhone 16 Pro Face ID and All Cameras Not Working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12795,
+   "last_edited_utc": "2025-11-21T17:51:16Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "all cameras black",
+   "front camera not working",
+   "Face ID unavailable",
+   "camera app crashes"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On iPhone 16 Pro / Pro Max, a shorted front camera (TrueDepth) module can take down every camera and Face ID because of a shared rail/I2C; a known-good module makes the cameras initialise.",
+    "evidence": "Problem description and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPhone 16 series can pair a used replacement front camera through Settings > General > About > Parts & Service History > Restart & Finish Repair.",
+    "evidence": "Pairing section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm all lenses black and Face ID unavailable.",
+   "Inspect the front camera flex.",
+   "Test with a known-good front camera.",
+   "Fit replacement module and pair it via Parts & Service History.",
+   "Test all lenses, flashlight, Face ID enrolment."
+  ],
+  "measurements": [],
+  "tools": [
+   "opening tools",
+   "replacement front camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "all cameras not working",
+   "face id",
+   "front camera",
+   "iphone 16 pro",
+   "parts pairing",
+   "repair assistant",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Front camera / TrueDepth module",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone16pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 16 Pro Face ID and All Cameras Not Working\", https://repair.wiki/w/How_To_Fix_iPhone_16_Pro_Face_ID_and_All_Cameras_Not_Working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_16_Pro_Face_ID_and_All_Cameras_Not_Working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

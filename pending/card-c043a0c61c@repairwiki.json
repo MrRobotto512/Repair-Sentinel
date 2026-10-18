@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Sony Dualshock 4 not connecting/charging through USB",
+  "source": {
+   "url": "https://repair.wiki/w/Sony_Dualshock_4_not_connecting/charging_through_USB",
+   "kind": "web",
+   "title": "Sony Dualshock 4 not connecting/charging through USB",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13170,
+   "last_edited_utc": "2025-12-09T20:58:06Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "DualShock 4"
+  ],
+  "symptoms": [
+   "won't charge or sync over USB"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "DualShock 4 not connecting/charging via USB: check the USB port and ribbon, an open fuse (charging) or a shorted D+/D- protection part (data) on the USB board.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect USB port and ribbon.",
+   "Check fuse continuity and D+/D- protection part."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "d+ d-",
+   "dualshock 4",
+   "fuse",
+   "not syncing",
+   "repair.wiki",
+   "usb"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "USB board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "dualshock4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Sony Dualshock 4 not connecting/charging through USB\", https://repair.wiki/w/Sony_Dualshock_4_not_connecting/charging_through_USB, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Sony_Dualshock_4_not_connecting/charging_through_USB",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

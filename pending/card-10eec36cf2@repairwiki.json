@@ -1,0 +1,129 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Error Code: 2101-0001 Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Error_Code:_2101-0001_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Error Code: 2101-0001 Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2288,
+   "last_edited_utc": "2024-01-13T20:31:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "error 2101-0001"
+  ],
+  "codes": [
+   "2101-0001"
+  ],
+  "claims": [
+   {
+    "statement": "Switch error 2101-0001 is an I2C error with M92T36 (USB-C PD controller), almost always both a port and M92T36 fault, often from bad cables, angled insertion or poor third-party accessories.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Lift the USB-C port (it has a hidden row of pins—trace damage is easy); check M92T36 caps for shorts and replace M92T36 even if it looks fine; check PI3USB's top cap on the other side and replace PI3USB if shorted.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Port removal used: no nozzle, 480 °C, ~40% airflow straight down, ~60 s, tap until free, wait 5–10 s more, then lift.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After repair test 15 V Nintendo and 5 V chargers on both cable orientations, docking and fast charge; advise replacing the customer's cable.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove the USB-C port carefully.",
+   "Check M92T36 caps; replace M92T36.",
+   "Check PI3USB top cap; replace PI3USB if shorted.",
+   "Fit new port; clean flux.",
+   "Test 15 V/5 V both sides, dock, fast charge, full system."
+  ],
+  "measurements": [
+   {
+    "point": "Port removal hot air",
+    "expect": "480",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": "No nozzle, ~40% air"
+   },
+   {
+    "point": "Nintendo charger",
+    "expect": "15",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "hot air",
+   "multimeter",
+   "new USB-C port"
+  ],
+  "cautions": [
+   "SOURCE RISK: The Switch USB-C port has a hidden pin row; forcing it off rips traces."
+  ],
+  "tags": [
+   "2101-0001",
+   "i2c",
+   "m92t36",
+   "nintendo switch",
+   "pi3usb",
+   "repair.wiki",
+   "usb-c port"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "M92T36 + USB-C port",
+  "part_numbers": [
+   "M92T36",
+   "PI3USB30532"
+  ],
+  "readings": [
+   {
+    "point": "Port removal hot air",
+    "mode": "temperature",
+    "expect_lo": 480.0,
+    "expect_hi": 480.0,
+    "unit": "°C"
+   },
+   {
+    "point": "Nintendo charger",
+    "mode": "voltage",
+    "expect_lo": 15.0,
+    "expect_hi": 15.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "2101-0001"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Error Code: 2101-0001 Repair\", https://repair.wiki/w/Nintendo_Switch_Error_Code:_2101-0001_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Error_Code:_2101-0001_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

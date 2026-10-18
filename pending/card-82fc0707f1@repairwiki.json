@@ -1,0 +1,115 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy Z Fold 4 5g not powering on, not charging, and/or bootlooping",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_Z_Fold_4_5g_not_powering_on,_not_charging,_and/or_bootlooping",
+   "kind": "web",
+   "title": "Galaxy Z Fold 4 5g not powering on, not charging, and/or bootlooping",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6877,
+   "last_edited_utc": "2025-05-17T00:33:20Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy Z Fold 4"
+  ],
+  "symptoms": [
+   "bootloop",
+   "not charging",
+   "fake charging",
+   "no power",
+   "works only when folded or unfolded"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Symptoms that change when a Galaxy Z Fold 4 is opened or closed (bootloop, no charge, ~0.2 A fake charging, no power) usually come from a damaged hinge flex.",
+    "evidence": "Problem description; applies to many folding phones.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A new hinge flex can be plugged in without installing it to confirm the diagnosis; dry-fitting also enables data recovery.",
+    "evidence": "Diagnostic step and option 1.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacing only the hinge flex requires removing the fragile inner OLED; an in-frame inner display comes with the flex preinstalled and is lower risk but expensive.",
+    "evidence": "Repair options.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "For bootloops, flash firmware via download mode using HOME_CSC to keep data, and try safe mode to rule out software.",
+    "evidence": "Software checks.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Dry-fit a new hinge flex to confirm.",
+   "For charge-only issues test the port with a USB-C tester or known-good port and test both batteries.",
+   "For bootloops try safe mode and a HOME_CSC firmware flash.",
+   "Choose data-only recovery (dry fit), in-frame inner display, or inner display removal and flex swap.",
+   "Avoid crimping the new flex under the hinge shield; reflash if updated while faulty."
+  ],
+  "measurements": [
+   {
+    "point": "Fake charging draw",
+    "expect": "0.2",
+    "unit": "A",
+    "mode": "current",
+    "context": "USB meter, fault symptom"
+   }
+  ],
+  "tools": [
+   "heat mat",
+   "isopropyl alcohol",
+   "thin pry tools",
+   "USB-C tester",
+   "Odin"
+  ],
+  "cautions": [
+   "SOURCE RISK: Removing the inner display risks tearing the OLED panel and its flex cables.",
+   "SOURCE RISK: Use HOME_CSC, not CSC, in Odin unless data loss is acceptable."
+  ],
+  "tags": [
+   "bootloop",
+   "data recovery",
+   "fake charging",
+   "foldable",
+   "galaxy z fold 4",
+   "hinge flex",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Hinge flex",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Fake charging draw",
+    "mode": "current",
+    "expect_lo": 0.2,
+    "expect_hi": 0.2,
+    "unit": "A"
+   }
+  ],
+  "device_family": "galaxyzfold4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy Z Fold 4 5g not powering on, not charging, and/or bootlooping\", https://repair.wiki/w/Galaxy_Z_Fold_4_5g_not_powering_on,_not_charging,_and/or_bootlooping, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_Z_Fold_4_5g_not_powering_on,_not_charging,_and/or_bootlooping",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

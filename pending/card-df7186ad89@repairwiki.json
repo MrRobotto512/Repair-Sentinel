@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR No display. Phone boots but without image",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_No_display._Phone_boots_but_without_image",
+   "kind": "web",
+   "title": "IPhone XR No display. Phone boots but without image",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6695,
+   "last_edited_utc": "2025-05-14T18:14:30Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "no image",
+   "boots normally"
+  ],
+  "codes": [
+   "C5600",
+   "PP_CHESNUT_CP"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR no image: after the screen and pry damage, a short on the 5V7 line (caps mostly beside the NAND on the back) is the fixable case.",
+    "evidence": "Common issues.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "C5600 on PP_CHESNUT_CP has no ground leg; continuity across it means replace it.",
+    "evidence": "Common issues.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Commonly the fault is cracked traces under the CPU from drops (often the CPU shield broken near the Wi-Fi IC); replacing Chestnut only helps temporarily. Clamping the CPU can give image for a data backup.",
+    "evidence": "Common issues.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out screen and pry damage.",
+   "Diode-check for 5V7 shorts.",
+   "Check C5600 for continuity across it.",
+   "For CPU-related cases, treat as data recovery."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "5v7 short",
+   "c5600",
+   "chestnut",
+   "cpu",
+   "iphone xr",
+   "no image",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display supply / CPU",
+  "part_numbers": [
+   "C5600"
+  ],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "C5600",
+   "PP_CHESNUT_CP"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR No display. Phone boots but without image\", https://repair.wiki/w/IPhone_XR_No_display._Phone_boots_but_without_image, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_No_display._Phone_boots_but_without_image",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

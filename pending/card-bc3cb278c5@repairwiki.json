@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 6 boots to Apple logo and turns back off fix",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_6_boots_to_Apple_logo_and_turns_back_off_fix",
+   "kind": "web",
+   "title": "IPhone 6 boots to Apple logo and turns back off fix",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4106,
+   "last_edited_utc": "2024-06-27T19:35:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 6"
+  ],
+  "symptoms": [
+   "Apple logo then turns off after ~2 minutes",
+   "serial shows NA in DFU"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone 6 that shows the logo for about 2 min 10 s then shuts off (not looping), and only appears in DFU with serial NA, can be recovered by holding Home on the charger until recovery mode appears (may take minutes) and then restoring/updating.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Plug in to power on.",
+   "Hold Home until the recovery screen appears.",
+   "Restore or update in iTunes."
+  ],
+  "measurements": [],
+  "tools": [
+   "computer with iTunes"
+  ],
+  "cautions": [],
+  "tags": [
+   "boots then off",
+   "iphone 6",
+   "recovery mode",
+   "repair.wiki",
+   "software"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Software",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone6",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 6 boots to Apple logo and turns back off fix\", https://repair.wiki/w/IPhone_6_boots_to_Apple_logo_and_turns_back_off_fix, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_6_boots_to_Apple_logo_and_turns_back_off_fix",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

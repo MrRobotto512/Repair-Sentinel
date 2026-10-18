@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 That Does Not Turn On, urrent jumps back and forth from 0 A to 320 mA, then 0 A to 1.4 A, then 0 A to 500 mA, and so on",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Does_Not_Turn_On,_urrent_jumps_back_and_forth_from_0_A_to_320_mA,_then_0_A_to_1.4_A,_then_0_A_to_500_mA,_and_so_on",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 That Does Not Turn On, urrent jumps back and forth from 0 A to 320 mA, then 0 A to 1.4 A, then 0 A to 500 mA, and so on",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3113,
+   "last_edited_utc": "2024-01-20T20:57:53Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no power",
+   "current jumps 0 A to various values after power-on"
+  ],
+  "codes": [
+   "PP3V0_NAND",
+   "PP0V9_NAND",
+   "PP1V8_SDRAM",
+   "PP1V1_SDRAM"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 with no draw before power-on, then current bouncing between 0 A and values like 320 mA, 1.4 A, 500 mA, usually has a shorted cap on PP3V0_NAND or PP0V9_NAND.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PMIC U1801 heats when injecting through the battery connector but is not the cause.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The same pattern with PP1V8_SDRAM or PP1V1_SDRAM shorted and heat above the CPU indicates a RAM short requiring RAM replacement (advanced).",
+    "evidence": "Another possible cause.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check NAND rails PP3V0_NAND / PP0V9_NAND for shorts.",
+   "Inject voltage to find the shorted cap and remove it.",
+   "If SDRAM rails are shorted with heat above the CPU, plan RAM replacement."
+  ],
+  "measurements": [],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 7",
+   "nand short",
+   "no power",
+   "repair.wiki",
+   "sdram short",
+   "u1801"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND rail capacitors",
+  "part_numbers": [
+   "U1801"
+  ],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [
+   "PP3V0_NAND",
+   "PP0V9_NAND",
+   "PP1V8_SDRAM",
+   "PP1V1_SDRAM"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 That Does Not Turn On, urrent jumps back and forth from 0 A to 320 mA, then 0 A to 1.4 A, then 0 A to 500 mA, and so on\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Does_Not_Turn_On,_urrent_jumps_back_and_forth_from_0_A_to_320_mA,_then_0_A_to_1.4_A,_then_0_A_to_500_mA,_and_so_on, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Does_Not_Turn_On,_urrent_jumps_back_and_forth_from_0_A_to_320_mA,_then_0_A_to_1.4_A,_then_0_A_to_500_mA,_and_so_on",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

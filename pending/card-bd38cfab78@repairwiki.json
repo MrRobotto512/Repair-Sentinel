@@ -1,0 +1,129 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Program ROM Chip for iPads with CD3217",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Program_ROM_Chip_for_iPads_with_CD3217",
+   "kind": "web",
+   "title": "How To Program ROM Chip for iPads with CD3217",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13537,
+   "last_edited_utc": "2026-01-01T22:19:23Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 4th Gen",
+   "iPad Pro 12.9 5th Gen",
+   "iPad Pro 12.9 6th Gen",
+   "iPad Pro 11 2nd Gen",
+   "iPad Pro 11 3rd Gen",
+   "iPad Pro 11 4th Gen",
+   "iPad Air 4",
+   "iPad Air 5",
+   "iPad 10",
+   "iPad mini 6"
+  ],
+  "symptoms": [
+   "not charging",
+   "stuck at 5 V",
+   "new CD3217 still won't charge"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPads with the CD3217 USB-C controller that sit at 5 V instead of negotiating 15 V often have both the CD3217 and its adjacent ACE ROM damaged; a new CD3217 alone won't work.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The CD3217 and ROM are not paired, but the ROM holds firmware the CD3217 needs; fit a new CD3217 plus a ROM programmed from JC V1S Pro server files or a same-model donor dump.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A Wylie SPI programmer is a cheaper alternative to the JCID tool for writing the ROM.",
+    "evidence": "Alternative method.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check negotiation on a USB-C meter (5 V = fault).",
+   "Inspect for corrosion/burn around CD3217 and ROM.",
+   "Remove both chips.",
+   "Program a blank ACE SPI flash (JC V1S Pro server file or donor dump).",
+   "Fit new CD3217 and programmed ROM; verify 15 V charging."
+  ],
+  "measurements": [
+   {
+    "point": "USB-C negotiation (fault)",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "About 0.744 A"
+   },
+   {
+    "point": "USB-C negotiation (working)",
+    "expect": "15",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "JC V1S Pro with ROM module",
+   "USB-C power meter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "5v",
+   "ace rom",
+   "cd3217",
+   "ipad",
+   "not charging",
+   "repair.wiki",
+   "spi flash",
+   "usb-c"
+  ],
+  "confidence": "high",
+  "caveats": "Contradicts the separate iPad Pro 11 4th Gen page on whether CD3217 and ROM are 'paired'; both agree the ROM must come with or be programmed for the new chip. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CD3217 and ACE ROM",
+  "part_numbers": [
+   "CD3217"
+  ],
+  "readings": [
+   {
+    "point": "USB-C negotiation (fault)",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "USB-C negotiation (working)",
+    "mode": "voltage",
+    "expect_lo": 15.0,
+    "expect_hi": 15.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipadpro1294thgen",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Program ROM Chip for iPads with CD3217\", https://repair.wiki/w/How_To_Program_ROM_Chip_for_iPads_with_CD3217, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Program_ROM_Chip_for_iPads_with_CD3217",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

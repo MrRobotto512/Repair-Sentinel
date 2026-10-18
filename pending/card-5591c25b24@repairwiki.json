@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 12 and Above WiFi IC Replacement & Activation",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_12_and_Above_WiFi_IC_Replacement_%26_Activation",
+   "kind": "web",
+   "title": "IPhone 12 and Above WiFi IC Replacement & Activation",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10436,
+   "last_edited_utc": "2025-08-20T19:09:03Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12",
+   "iPhone 13",
+   "iPhone 14",
+   "iPhone 15",
+   "iPhone 16"
+  ],
+  "symptoms": [
+   "Wi-Fi greyed out",
+   "Wi-Fi address N/A",
+   "Bluetooth spins forever"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "From iPhone 12 on the Wi-Fi IC is paired; replacing it requires removing the NAND and running JC Query Code/Unbind, then activating a JC programmable Wi-Fi IC on the V1S Pro.",
+    "evidence": "Problem description and steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Where the Wi-Fi IC is on the lower board, power the board in an iSocket to activate.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out shorts and interposer breaks.",
+   "Remove the Wi-Fi IC and NAND.",
+   "Query Code/Unbind the NAND; refit NAND.",
+   "Activate a JC Wi-Fi IC with the phone connected.",
+   "Install and test."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC V1S Pro",
+   "JC Wi-Fi IC",
+   "iSocket",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 12",
+   "iphone 14 pro max",
+   "jcid",
+   "repair.wiki",
+   "unbind",
+   "wifi greyed out",
+   "wifi ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi IC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone12",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 12 and Above WiFi IC Replacement & Activation\", https://repair.wiki/w/IPhone_12_and_Above_WiFi_IC_Replacement_%26_Activation, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_12_and_Above_WiFi_IC_Replacement_%26_Activation",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

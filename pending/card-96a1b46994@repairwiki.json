@@ -1,0 +1,127 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy A13 5G(A137) Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_A13_5G(A137)_Not_Charging",
+   "kind": "web",
+   "title": "Samsung Galaxy A13 5G(A137) Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10632,
+   "last_edited_utc": "2025-08-24T19:23:20Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A13 5G (A137)"
+  ],
+  "symptoms": [
+   "not charging",
+   "no PC connection",
+   "burnt charge port"
+  ],
+  "codes": [
+   "OVP",
+   "VBUS",
+   "VPH",
+   "BOOTCAP"
+  ],
+  "claims": [
+   {
+    "statement": "Galaxy A13 5G not charging after a bad charger: check 5 V at VBUS IN, then at VBUS IF FL (bypassable coil); missing there usually means a blown OVP IC—replace it or bypass it (higher future risk).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "VPH coil should hold a stable 3.7–4.2 V; unstable with good diode reading suggests the charging IC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Bootcap: 3.7–4.2 V one side and roughly double on the other; otherwise faulty bootcap (fake charging) or charging IC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check charge FPC (no power).",
+   "With charger only: VBUS IN, VBUS IF FL.",
+   "Replace or bypass OVP.",
+   "Check VPH coil and bootcap voltages; replace charging IC if needed."
+  ],
+  "measurements": [
+   {
+    "point": "VBUS IN",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Charger only"
+   },
+   {
+    "point": "VPH coil",
+    "expect": "3.7-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Stable"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "jumper wire"
+  ],
+  "cautions": [
+   "SOURCE RISK: Bypassing OVP raises the risk of charging IC damage from bad chargers."
+  ],
+  "tags": [
+   "bootcap",
+   "charging ic",
+   "galaxy a13 5g",
+   "not charging",
+   "ovp",
+   "repair.wiki",
+   "vph"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "OVP / charging IC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "VBUS IN",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "VPH coil",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 4.2,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxya135g",
+  "error_codes": [
+   "OVP",
+   "VBUS",
+   "VPH",
+   "BOOTCAP"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy A13 5G(A137) Not Charging\", https://repair.wiki/w/Samsung_Galaxy_A13_5G(A137)_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_A13_5G(A137)_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

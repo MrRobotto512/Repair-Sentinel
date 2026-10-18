@@ -1,0 +1,102 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 15 That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_15_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 15 That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13914,
+   "last_edited_utc": "2026-02-11T00:17:33Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15",
+   "iPhone 15 Plus"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "0x200000",
+   "0x80000",
+   "0x100000",
+   "0x280000",
+   "0x380000",
+   "0xa1"
+  ],
+  "claims": [
+   {
+    "statement": "On iPhone 15 / 15 Plus the bit meanings differ from the Pro: 0x200000 (2097152) = wireless charging flex on the back glass; 0x100000 (1048576) = proximity flex.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "0x80000 (524288) = charging port flex and/or air pressure sensor (must be plugged in).",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "0x280000 = wireless + charge port; 0x380000 = all three; 0xa1 (161) = battery data issue.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the Sensor Array value; decode with the iPhone 15 (non-Pro) mapping.",
+   "Check the air pressure sensor is connected for 0x80000.",
+   "Test flagged parts with known-good OEM parts; diode-check FPCs.",
+   "For 0xa1 work the battery and connector."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "0x100000",
+   "0x200000",
+   "0x80000",
+   "0xa1",
+   "air pressure sensor",
+   "iphone 15",
+   "iphone 15 plus",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "sensor array"
+  ],
+  "confidence": "medium",
+  "caveats": "Same hex value means different parts on different iPhone models. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Back glass / charge port / prox flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone15",
+  "error_codes": [
+   "0x200000",
+   "0x80000",
+   "0x100000",
+   "0x280000",
+   "0x380000",
+   "0xa1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 15 That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_15_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_15_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

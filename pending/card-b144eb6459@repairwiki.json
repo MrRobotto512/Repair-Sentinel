@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix Poco X3 Pro Dead or Camera Not Working or No Audio Issue",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_Poco_X3_Pro_Dead_or_Camera_Not_Working_or_No_Audio_Issue",
+   "kind": "web",
+   "title": "How To Fix Poco X3 Pro Dead or Camera Not Working or No Audio Issue",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13875,
+   "last_edited_utc": "2026-02-08T01:13:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Poco X3 Pro",
+   "Poco X3 NFC"
+  ],
+  "symptoms": [
+   "no power",
+   "cameras not working",
+   "no audio",
+   "stuck at 0.150 A"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Poco X3 / X3 Pro with no power, dead cameras and no audio that stalls at about 0.150 A on a DC supply after power-on has a known CPU solder-joint failure from thermal stress and board flex.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After ruling out rail shorts, PMIC, battery and display, the fix is a CPU reball.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "DCPS test: confirm ~0.150 A stall.",
+   "Check main rails for shorts; rule out PMIC/battery/display.",
+   "Preheat, remove CPU, clean, reball, refit."
+  ],
+  "measurements": [
+   {
+    "point": "Stalled boot draw",
+    "expect": "0.150",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply after power-on"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "preheater",
+   "hot air",
+   "CPU stencil"
+  ],
+  "cautions": [],
+  "tags": [
+   "0.150a",
+   "cpu reball",
+   "no power",
+   "poco x3 nfc",
+   "poco x3 pro",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Stalled boot draw",
+    "mode": "current",
+    "expect_lo": 0.15,
+    "expect_hi": 0.15,
+    "unit": "A"
+   }
+  ],
+  "device_family": "pocox3pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix Poco X3 Pro Dead or Camera Not Working or No Audio Issue\", https://repair.wiki/w/How_To_Fix_Poco_X3_Pro_Dead_or_Camera_Not_Working_or_No_Audio_Issue, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_Poco_X3_Pro_Dead_or_Camera_Not_Working_or_No_Audio_Issue",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

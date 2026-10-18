@@ -1,0 +1,115 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone X That Does Not Charge",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Does_Not_Charge",
+   "kind": "web",
+   "title": "How To Fix iPhone X That Does Not Charge",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3404,
+   "last_edited_utc": "2024-02-12T07:49:09Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "not charging",
+   "0.006 A on USB meter",
+   "fake charging"
+  ],
+  "codes": [
+   "U3300",
+   "L3340",
+   "L3341"
+  ],
+  "claims": [
+   {
+    "statement": "Liquid on the iPhone X earpiece flex (flood illuminator and ALS) can short data lines and cause no charging or bootloops; the flex is paired for Face ID, so clean or transfer the sensors to keep Face ID.",
+    "evidence": "Troubleshooting.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Most iPhone X no-charge cases are fixed by replacing Tigris U3300; test with only top board, battery, port and screen.",
+    "evidence": "Troubleshooting.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If still not charging, replace Tigris coils L3340 and L3341; rarely Hydra is the cause.",
+    "evidence": "Troubleshooting.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug all but screen, port and battery; test known-good parts.",
+   "Inspect earpiece flex sensors for corrosion.",
+   "Split the sandwich; test top board alone.",
+   "Replace Tigris U3300, then L3340/L3341, then Hydra."
+  ],
+  "measurements": [
+   {
+    "point": "USB meter draw (fault)",
+    "expect": "0.006",
+    "unit": "A",
+    "mode": "current",
+    "context": "Tigris symptom"
+   }
+  ],
+  "tools": [
+   "USB power meter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "flood illuminator",
+   "hydra",
+   "iphone x",
+   "l3340",
+   "l3341",
+   "not charging",
+   "repair.wiki",
+   "tigris",
+   "u3300"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Tigris U3300",
+  "part_numbers": [
+   "U3300",
+   "L3340",
+   "L3341"
+  ],
+  "readings": [
+   {
+    "point": "USB meter draw (fault)",
+    "mode": "current",
+    "expect_lo": 0.006,
+    "expect_hi": 0.006,
+    "unit": "A"
+   }
+  ],
+  "device_family": "iphonex",
+  "error_codes": [
+   "U3300",
+   "L3340",
+   "L3341"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone X That Does Not Charge\", https://repair.wiki/w/How_To_Fix_iPhone_X_That_Does_Not_Charge, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Does_Not_Charge",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Air No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Air_No_Touch",
+   "kind": "web",
+   "title": "IPad Air No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9101,
+   "last_edited_utc": "2025-07-27T21:57:39Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "J6620",
+   "J6640",
+   "BCM5976"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Air (1st gen) touch needs PP5V25_GRAPE (from PMIC 8100, underfilled) and PP1V8_GRAPE_SW (from U6500).",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If supplies and connector readings are good, replace both Cumulus touch ICs (BCM5976), also found on iPhone 6/6 Plus, iPad mini 1–4 and iPad 5.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new digitizer; inspect touch FPCs J6620/J6640.",
+   "Diode-check the FPCs.",
+   "Measure PP5V25_GRAPE and PP1V8_GRAPE_SW.",
+   "Replace U6500 or PMIC if a supply is missing.",
+   "Replace both BCM5976 ICs (protect FPCs with Kapton)."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "Kapton tape"
+  ],
+  "cautions": [],
+  "tags": [
+   "bcm5976",
+   "cumulus",
+   "ipad air",
+   "no touch",
+   "pp5v25_grape",
+   "repair.wiki",
+   "u6500"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Cumulus touch ICs",
+  "part_numbers": [
+   "BCM5976",
+   "U6500"
+  ],
+  "readings": [],
+  "device_family": "ipadair",
+  "error_codes": [
+   "J6620",
+   "J6640",
+   "BCM5976"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Air No Touch\", https://repair.wiki/w/IPad_Air_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Air_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

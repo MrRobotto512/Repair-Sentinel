@@ -1,0 +1,65 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox One Controller does not turn on repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_One_Controller_does_not_turn_on_repair",
+   "kind": "web",
+   "title": "Xbox One Controller does not turn on repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2991,
+   "last_edited_utc": "2024-01-17T21:49:24Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox One Wireless Controller"
+  ],
+  "symptoms": [
+   "won't turn on"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Xbox One controller dead: check battery contacts for corrosion, try new batteries and USB; then measure voltages on the board-to-board connector and around the PCB.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect/clean battery contacts; new batteries.",
+   "Try USB power.",
+   "Measure board-to-board connector voltages."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery contacts",
+   "repair.wiki",
+   "won't turn on",
+   "xbox one controller"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxonewirelesscontroller",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox One Controller does not turn on repair\", https://repair.wiki/w/Xbox_One_Controller_does_not_turn_on_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_One_Controller_does_not_turn_on_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,81 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix iPhone 16 pro or pro max boot looping on Apple logo",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_iPhone_16_pro_or_pro_max_boot_looping_on_Apple_logo",
+   "kind": "web",
+   "title": "How to fix iPhone 16 pro or pro max boot looping on Apple logo",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10705,
+   "last_edited_utc": "2025-08-26T07:26:32Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "Apple logo bootloop",
+   "not charging",
+   "unstable boot"
+  ],
+  "codes": [
+   "Analog_BATT_VCELL_POS_CONN",
+   "U4200"
+  ],
+  "claims": [
+   {
+    "statement": "An iPhone 16 Pro bootlooping despite a new battery and reflash had Analog_BATT_VCELL_POS_CONN open (OL) at the battery connector; its only other connection is U4200 (USB/charging IC), and replacing U4200 fixed it.",
+    "evidence": "Case write-up.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a known-good battery and a DFU flash.",
+   "Diode-check Analog_BATT_VCELL_POS_CONN at the battery connector.",
+   "Trace through the layers; if OL to U4200, replace U4200.",
+   "Re-measure and test boot and charging."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery vcell",
+   "bootloop",
+   "iphone 16 pro",
+   "not charging",
+   "repair.wiki",
+   "u4200"
+  ],
+  "confidence": "medium",
+  "caveats": "Single case write-up. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "U4200 USB/charging IC",
+  "part_numbers": [
+   "U4200"
+  ],
+  "readings": [],
+  "device_family": "iphone16pro",
+  "error_codes": [
+   "Analog_BATT_VCELL_POS_CONN",
+   "U4200"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix iPhone 16 pro or pro max boot looping on Apple logo\", https://repair.wiki/w/How_to_fix_iPhone_16_pro_or_pro_max_boot_looping_on_Apple_logo, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_iPhone_16_pro_or_pro_max_boot_looping_on_Apple_logo",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

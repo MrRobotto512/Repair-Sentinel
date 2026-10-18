@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 17 Air That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_17_Air_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 17 Air That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11885,
+   "last_edited_utc": "2025-09-20T06:22:22Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone Air (iPhone 17 Air)"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "33554432",
+   "0x2000000",
+   "58720256",
+   "0x3800000"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone Air Sensor Array 33554432 (0x2000000) = wireless charging flex on the back glass.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "58720256 (0x3800000) = charging port flex (also check the air pressure sensor is connected).",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the Sensor Array value.",
+   "Test the flagged flex with a known-good OEM part; diode-check FPC.",
+   "Check air pressure sensor connection for 0x3800000."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "33554432",
+   "58720256",
+   "iphone 17 air",
+   "iphone air",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "sensor array",
+   "wireless charging flex"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wireless flex / charge port flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphoneair",
+  "error_codes": [
+   "33554432",
+   "0x2000000",
+   "58720256",
+   "0x3800000"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 17 Air That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_17_Air_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_17_Air_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

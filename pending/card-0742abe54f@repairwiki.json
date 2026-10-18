@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A515 Black Screen After 1st logo",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A515_Black_Screen_After_1st_logo",
+   "kind": "web",
+   "title": "Galaxy A515 Black Screen After 1st logo",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10065,
+   "last_edited_utc": "2025-08-05T22:59:05Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A51 (A515)"
+  ],
+  "symptoms": [
+   "black screen after first logo",
+   "boots without screen connected"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A Galaxy A515 that stops on a black screen after the first boot logo (no second logo, no bootloop) yet boots fully with the screen unplugged usually has a liquid-damaged display.",
+    "evidence": "Diagnosis in guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Besides replacing the display, it can be repaired by jumpering display FPC pads 5 and 7 with fine wire.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm the device boots fully with the screen disconnected.",
+   "Replace the display, or pretin pads 5 and 7 and bridge them with 0.02 mm wire; UV-cure."
+  ],
+  "measurements": [],
+  "tools": [
+   "0.02 mm jumper wire",
+   "UV mask"
+  ],
+  "cautions": [],
+  "tags": [
+   "a515",
+   "black screen",
+   "display",
+   "galaxy a51",
+   "repair.wiki",
+   "water damage"
+  ],
+  "confidence": "medium",
+  "caveats": "Applies only when every listed symptom matches. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxya51",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A515 Black Screen After 1st logo\", https://repair.wiki/w/Galaxy_A515_Black_Screen_After_1st_logo, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A515_Black_Screen_After_1st_logo",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

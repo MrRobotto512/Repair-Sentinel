@@ -1,0 +1,103 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Lite Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Lite_Not_Charging",
+   "kind": "web",
+   "title": "Nintendo Switch Lite Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9235,
+   "last_edited_utc": "2025-07-28T22:02:45Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch Lite"
+  ],
+  "symptoms": [
+   "not charging"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On Switch Lite, pins 8 and 17 reading OL on a T-824 USB-C reader is normal (no video out, so no PI3USB).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With an original charger the meter should show 15 V; only 5 V means M92T36 isn't negotiating—check its caps, then replace it. Last resort: BQ24193.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Beware fake M92T36 chips from disreputable sellers.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new battery and charger.",
+   "Inspect port; read it with a T-824.",
+   "Check the USB-C fuse.",
+   "Check negotiation (15 V); replace M92T36; then BQ24193.",
+   "Test both cable orientations."
+  ],
+  "measurements": [
+   {
+    "point": "Charger negotiation (original charger)",
+    "expect": "15",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "Mechanic T-824",
+   "USB-C meter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bq24193",
+   "m92t36",
+   "nintendo switch lite",
+   "not charging",
+   "repair.wiki",
+   "t-824",
+   "usb-c"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "M92T36 / BQ24193",
+  "part_numbers": [
+   "M92T36",
+   "BQ24193"
+  ],
+  "readings": [
+   {
+    "point": "Charger negotiation (original charger)",
+    "mode": "voltage",
+    "expect_lo": 15.0,
+    "expect_hi": 15.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitchlite",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Lite Not Charging\", https://repair.wiki/w/Nintendo_Switch_Lite_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Lite_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

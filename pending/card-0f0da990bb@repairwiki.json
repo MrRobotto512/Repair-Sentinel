@@ -1,0 +1,78 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Steam Deck - Power Button: Middle pad ripped off",
+  "source": {
+   "url": "https://repair.wiki/w/Steam_Deck_-_Power_Button:_Middle_pad_ripped_off",
+   "kind": "web",
+   "title": "Steam Deck - Power Button: Middle pad ripped off",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 5120,
+   "last_edited_utc": "2024-10-24T17:52:56Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Steam Deck LCD"
+  ],
+  "symptoms": [
+   "power button pad ripped"
+  ],
+  "codes": [
+   "IT5570VG"
+  ],
+  "claims": [
+   {
+    "statement": "The Steam Deck LCD power switch pads rip easily during swaps; the outer pins are ground and the middle pin goes to the ITE IT5570VG EC, but its trace dives to an inner layer with no known test point.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Compatible switches are sold as Steam Deck / Xbox 360 pair / Nintendo DS switches (same as the shoulder switch).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Use a compatible switch and low-stress soldering.",
+   "For a ripped middle pad, trace to the inner layer (see linked repair attempt)."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "it5570vg",
+   "power button",
+   "repair.wiki",
+   "ripped pad",
+   "steam deck"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power switch",
+  "part_numbers": [
+   "IT5570VG"
+  ],
+  "readings": [],
+  "device_family": "steamdecklcd",
+  "error_codes": [
+   "IT5570VG"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Steam Deck - Power Button: Middle pad ripped off\", https://repair.wiki/w/Steam_Deck_-_Power_Button:_Middle_pad_ripped_off, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Steam_Deck_-_Power_Button:_Middle_pad_ripped_off",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

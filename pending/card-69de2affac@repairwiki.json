@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Turn On iPhone 14 to 16 Plus lower layer",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Turn_On_iPhone_14_to_16_Plus_lower_layer",
+   "kind": "web",
+   "title": "How To Turn On iPhone 14 to 16 Plus lower layer",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10938,
+   "last_edited_utc": "2025-08-30T17:56:52Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14",
+   "iPhone 14 Plus",
+   "iPhone 15",
+   "iPhone 15 Plus",
+   "iPhone 16",
+   "iPhone 16 Plus",
+   "iPhone 16e"
+  ],
+  "symptoms": [
+   "need to test lower board alone"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On iPhone 14–16 base/Plus the CPU is on the lower layer; after clearing a short on a split board you can boot the lower board alone by feeding 4.2 V into VDD_MAIN/VDD_BATT and briefly shorting the power button pin on the interposer connector to ground.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Connect DCPS 4.2 V to VDD_MAIN/VDD_BATT on lower board and ground.",
+   "Short the interposer power-button pin to ground with tweezers.",
+   "Watch DCPS draw for a full boot."
+  ],
+  "measurements": [
+   {
+    "point": "DCPS into VDD_MAIN / VDD_BATT",
+    "expect": "4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Lower board only"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "tweezers"
+  ],
+  "cautions": [],
+  "tags": [
+   "boot test",
+   "iphone 14",
+   "iphone 15",
+   "iphone 16",
+   "lower board",
+   "repair.wiki",
+   "split board"
+  ],
+  "confidence": "medium",
+  "caveats": "Power button pin location is shown only in images. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Lower logic board",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "DCPS into VDD_MAIN / VDD_BATT",
+    "mode": "voltage",
+    "expect_lo": 4.2,
+    "expect_hi": 4.2,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone14",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Turn On iPhone 14 to 16 Plus lower layer\", https://repair.wiki/w/How_To_Turn_On_iPhone_14_to_16_Plus_lower_layer, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Turn_On_iPhone_14_to_16_Plus_lower_layer",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

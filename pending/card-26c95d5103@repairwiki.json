@@ -1,0 +1,99 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Redmi Note 13 4G Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/Redmi_Note_13_4G_Not_Charging",
+   "kind": "web",
+   "title": "Redmi Note 13 4G Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14187,
+   "last_edited_utc": "2026-03-21T20:20:41Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Redmi Note 13 4G"
+  ],
+  "symptoms": [
+   "not charging",
+   "charge not detected",
+   "0 A on meter"
+  ],
+  "codes": [
+   "OVP"
+  ],
+  "claims": [
+   {
+    "statement": "Redmi Note 13 4G that works but won't detect charging usually has a blown OVP IC from a faulty charger/cable; with only the charger connected, check VBUS 5 V, then OVP in and out.",
+    "evidence": "Solution and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If OVP output is missing, remove the OVP, confirm its pads aren't shorted, jumper VBUS_OVP_INPUT to VBUS_OVP_OUTPUT and mask; recommend replacing the charger and cable.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check charge FPC.",
+   "Measure VBUS 5 V, OVP in/out (charger only).",
+   "Remove OVP; check pads; bridge in to out; mask.",
+   "Advise new charger/cable."
+  ],
+  "measurements": [
+   {
+    "point": "VBUS / OVP in/out",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Charger only"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "jumper wire"
+  ],
+  "cautions": [
+   "SOURCE RISK: Bypassing the OVP removes over-voltage protection; the customer should replace their charger."
+  ],
+  "tags": [
+   "not charging",
+   "ovp",
+   "redmi note 13",
+   "repair.wiki",
+   "vbus"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "OVP IC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "VBUS / OVP in/out",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "redminote134g",
+  "error_codes": [
+   "OVP"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Redmi Note 13 4G Not Charging\", https://repair.wiki/w/Redmi_Note_13_4G_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Redmi_Note_13_4G_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

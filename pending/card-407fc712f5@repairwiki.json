@@ -1,0 +1,103 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 EMC error codes: GDDR6 RAM (8080110x–8080111F)",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_EMC_Errlogs",
+   "kind": "web",
+   "title": "PlayStation 5 EMC Errlogs",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13468,
+   "last_edited_utc": "2026-01-01T17:34:12Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "PlayStation 5 Slim",
+   "PlayStation 5 Pro"
+  ],
+  "symptoms": [
+   "no boot",
+   "beep then off",
+   "UART RAM error"
+  ],
+  "codes": [
+   "80801101",
+   "80801102",
+   "80801104",
+   "80801108",
+   "80801110",
+   "8080111F",
+   "808011A0",
+   "80000024"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 errors 80801101–8080111F flag GDDR6 RAM chips as a bitmask in the last digits: bit 1 = RAM 1 (…01), 2 = RAM 2 (…02), 4 = RAM 3 (…04), 8 = RAM 4 (…08), 0x10 = RAM 5 (…10); e.g. 80801103 = RAM 1 and 2, 8080111F = RAM 1–5.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "808011A0 = GDDR6 banks 6 and 8, seen with a single beep, 1 s blue light, then off.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "80000024 is listed as a MEMIO(2) init failure on the SoC (uncertain).",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Decode the low bits of 808011xx to the flagged RAM chip(s).",
+   "Check those RAM chips' rails/joints; reball or replace."
+  ],
+  "measurements": [],
+  "tools": [
+   "USB-TTL adapter",
+   "Console Service Tool"
+  ],
+  "cautions": [],
+  "tags": [
+   "80801101",
+   "808011a0",
+   "bitmask",
+   "emc",
+   "gddr6",
+   "ps5",
+   "ram error",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Bitmask decoding inferred from the listed sequence; chip numbering follows the source. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "GDDR6 RAM",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "80801101",
+   "80801102",
+   "80801104",
+   "80801108",
+   "80801110",
+   "8080111F",
+   "808011A0",
+   "80000024"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 EMC Errlogs\", https://repair.wiki/w/PlayStation_5_EMC_Errlogs, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_EMC_Errlogs",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

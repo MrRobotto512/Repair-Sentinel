@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair Nintendo Switch WiFi Not Working",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_Nintendo_Switch_WiFi_Not_Working",
+   "kind": "web",
+   "title": "How To Repair Nintendo Switch WiFi Not Working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12845,
+   "last_edited_utc": "2025-11-23T12:46:09Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch Lite"
+  ],
+  "symptoms": [
+   "Wi-Fi greyed out",
+   "no networks",
+   "error 2110-1118",
+   "Bluetooth affected"
+  ],
+  "codes": [
+   "2110-1118"
+  ],
+  "claims": [
+   {
+    "statement": "Switch Lite Wi-Fi failure (2110-1118, missing toggle) is commonly a failed Broadcom Wi-Fi IC or resistors beside the USB-C port that were dislodged during earlier work.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A replacement Wi-Fi IC must be an original pulled from a donor Switch Lite.",
+    "evidence": "Case 1.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Four tiny resistors near the USB-C port are often lost when desoldering the port; replace with values from a donor.",
+    "evidence": "Case 2.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out software (reset cache / initialise).",
+   "Inspect resistors near USB-C and the Wi-Fi IC.",
+   "Replace missing resistors, or swap in a donor Switch Lite Wi-Fi IC.",
+   "Test Wi-Fi."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "preheater",
+   "reball stencil",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "2110-1118",
+   "broadcom",
+   "nintendo switch lite",
+   "repair.wiki",
+   "usb-c resistors",
+   "wifi"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi IC / resistors near USB-C",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitchlite",
+  "error_codes": [
+   "2110-1118"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair Nintendo Switch WiFi Not Working\", https://repair.wiki/w/How_To_Repair_Nintendo_Switch_WiFi_Not_Working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_Nintendo_Switch_WiFi_Not_Working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

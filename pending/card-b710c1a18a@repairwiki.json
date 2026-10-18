@@ -1,0 +1,86 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Meta Quest 3 Tracking Not Working and Travel Mode Won't Turn Off",
+  "source": {
+   "url": "https://repair.wiki/w/Meta_Quest_3_Tracking_Not_Working_and_Travel_Mode_Won%27t_Turn_Off",
+   "kind": "web",
+   "title": "Meta Quest 3 Tracking Not Working and Travel Mode Won't Turn Off",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14241,
+   "last_edited_utc": "2026-03-31T18:17:09Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Meta Quest 3"
+  ],
+  "symptoms": [
+   "tracking lost",
+   "stuck in Travel Mode",
+   "boundary won't set",
+   "view jitters"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A Quest 3 that keeps reverting to Travel Mode and won't track is usually a front tracking camera fault: replace the depth camera if passthrough works, or the front cameras (and possibly depth camera) if passthrough fails.",
+    "evidence": "Solution and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Don't factory reset as a test: if the cameras are faulty, setup needs tracking and the headset soft-bricks.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacement cameras need new thermal putty; front cover removal can damage sensors.",
+    "evidence": "Repair notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Force Travel Mode off; restart; clear boundary data.",
+   "Test passthrough.",
+   "Open front cover carefully.",
+   "Replace depth camera or front cameras; reapply thermal putty."
+  ],
+  "measurements": [],
+  "tools": [
+   "opening tools",
+   "thermal putty"
+  ],
+  "cautions": [
+   "SOURCE RISK: Factory reset with faulty tracking cameras can leave the headset unable to complete setup."
+  ],
+  "tags": [
+   "depth camera",
+   "front camera",
+   "meta quest 3",
+   "repair.wiki",
+   "tracking",
+   "travel mode"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Tracking cameras",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "metaquest3",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Meta Quest 3 Tracking Not Working and Travel Mode Won't Turn Off\", https://repair.wiki/w/Meta_Quest_3_Tracking_Not_Working_and_Travel_Mode_Won%27t_Turn_Off, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Meta_Quest_3_Tracking_Not_Working_and_Travel_Mode_Won%27t_Turn_Off",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch When both Joycons are docked A Joycon disconnects Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_When_both_Joycons_are_docked_A_Joycon_disconnects_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch When both Joycons are docked A Joycon disconnects Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2314,
+   "last_edited_utc": "2024-01-13T20:43:57Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "one Joy-Con disconnects when the other is used"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "If one docked Joy-Con disconnects when the other gets input (and shows a wireless icon while docked), replace that side's rail; check for liquid on the rail/ribbon and clean with IPA first.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Identify which side shows wireless while docked.",
+   "Clean rail contacts/ribbon.",
+   "Replace that side rail."
+  ],
+  "measurements": [],
+  "tools": [
+   "screwdrivers",
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "joy-con disconnect",
+   "nintendo switch",
+   "repair.wiki",
+   "side rail"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Joy-Con side rail",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch When both Joycons are docked A Joycon disconnects Repair\", https://repair.wiki/w/Nintendo_Switch_When_both_Joycons_are_docked_A_Joycon_disconnects_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_When_both_Joycons_are_docked_A_Joycon_disconnects_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

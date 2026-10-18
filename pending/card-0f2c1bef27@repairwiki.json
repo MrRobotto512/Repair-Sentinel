@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch No Backlight Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_No_Backlight_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch No Backlight Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2225,
+   "last_edited_utc": "2024-01-13T16:33:54Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no backlight"
+  ],
+  "codes": [
+   "TPS61163A"
+  ],
+  "claims": [
+   {
+    "statement": "Switch no backlight: confirm the image with a flashlight, check the backlight connector for corrosion, and check TPS61163A (back side) for corrosion/shorts.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Flashlight test.",
+   "Inspect/replace the backlight connector.",
+   "Replace TPS61163A if corroded or shorted."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "no backlight",
+   "repair.wiki",
+   "tps61163a"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "TPS61163A",
+  "part_numbers": [
+   "TPS61163A"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "TPS61163A"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch No Backlight Repair\", https://repair.wiki/w/Nintendo_Switch_No_Backlight_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_No_Backlight_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

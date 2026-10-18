@@ -1,0 +1,92 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Disk to Digital Conversion",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_Disk_to_Digital_Conversion",
+   "kind": "web",
+   "title": "PlayStation 5 Disk to Digital Conversion",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7020,
+   "last_edited_utc": "2025-05-23T00:08:42Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5 (disc edition, original)"
+  ],
+  "symptoms": [
+   "can't reinstall firmware without paired drive",
+   "SU-101312-8",
+   "Renesas chip failed"
+  ],
+  "codes": [
+   "SU-101312-8",
+   "0x1C7011",
+   "0x1C7038"
+  ],
+  "claims": [
+   {
+    "statement": "The PS5 disc drive is paired to the board; if the drive's Renesas chip fails or a disc board lacks its drive, firmware updates fail (e.g. SU-101312-8); as of May 2025 a new drive can't be paired.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The fix on original (fat) PS5 is converting the NOR to Digital: at offset 0x1C7011 change 02 to 03 and at 0x1C7038 change 89 to 8D, then write back and reinstall firmware.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove and dump the 25Q16JVNIM BIOS; back it up.",
+   "In a hex editor set 0x1C7011 = 03 and 0x1C7038 = 8D.",
+   "Write the modified dump and resolder.",
+   "Reinstall PS5 system software; test PSN and a digital game."
+  ],
+  "measurements": [],
+  "tools": [
+   "CH341A",
+   "SOP8 adapter",
+   "HxD hex editor",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: Keep an untouched backup of the original NOR dump."
+  ],
+  "tags": [
+   "disc to digital",
+   "nor edit",
+   "paired disc drive",
+   "ps5",
+   "renesas",
+   "repair.wiki",
+   "su-101312-8"
+  ],
+  "confidence": "high",
+  "caveats": "Only valid for the original (fat) PS5 per the source. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "BIOS NOR",
+  "part_numbers": [
+   "25Q16JVNIM"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "SU-101312-8",
+   "0x1C7011",
+   "0x1C7038"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 Disk to Digital Conversion\", https://repair.wiki/w/PlayStation_5_Disk_to_Digital_Conversion, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_Disk_to_Digital_Conversion",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

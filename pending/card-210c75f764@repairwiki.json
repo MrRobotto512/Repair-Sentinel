@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS Freezes When Last Digit of Pin Code is Entered",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_Freezes_When_Last_Digit_of_Pin_Code_is_Entered",
+   "kind": "web",
+   "title": "IPhone XS Freezes When Last Digit of Pin Code is Entered",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7663,
+   "last_edited_utc": "2025-06-14T00:14:21Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "freezes at last passcode digit then restarts"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On iPhone XS / XS Max the passcode freeze is usually a sandwich issue: reball or bottom board swap; without transferring NFC expect a 10–20 min 'Attempting Data Recovery'.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Reball sandwich or swap bottom board.",
+   "Allow data recovery screen to finish."
+  ],
+  "measurements": [],
+  "tools": [
+   "preheater",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "freeze on passcode",
+   "iphone xs",
+   "nfc",
+   "repair.wiki",
+   "sandwich"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Sandwich / NFC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexs",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS Freezes When Last Digit of Pin Code is Entered\", https://repair.wiki/w/IPhone_XS_Freezes_When_Last_Digit_of_Pin_Code_is_Entered, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_Freezes_When_Last_Digit_of_Pin_Code_is_Entered",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,2022 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Steam Deck Mainboard Testing Points",
+  "source": {
+   "url": "https://repair.wiki/w/Steam_Deck_Mainboard_Testing_Points",
+   "kind": "web",
+   "title": "Steam Deck Mainboard Testing Points",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 5173,
+   "last_edited_utc": "2024-11-03T18:16:16Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Steam Deck LCD (mainboard rev. G)"
+  ],
+  "symptoms": [
+   "reference readings",
+   "no power",
+   "board diagnosis"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Reference diode-mode and resistance-to-ground readings for test points on the front of a working Steam Deck LCD mainboard rev. G, grouped by board sector (A1–F4); measured with red probe on ground (battery connector housing).",
+    "evidence": "Table 1 on the source page.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Several points sit near ground by design (e.g. D3-01/02 ~0.033 V / 17–20 Ω, C3-05 0.01 V / 0.7 Ω), so a low reading there is not automatically a short.",
+    "evidence": "Table values.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Locate the sector on the source page's annotated image.",
+   "Compare your reading against the matching sector/point."
+  ],
+  "measurements": [
+   {
+    "point": "Mainboard rev G front F1-01",
+    "expect": "0.277",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 3300 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F1-02",
+    "expect": "0.06",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 90.9 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F2-01",
+    "expect": "0.06",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 90.9 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F2-02",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front F3-01",
+    "expect": "OL",
+    "unit": "",
+    "mode": "diode",
+    "context": "Resistance to ground OL"
+   },
+   {
+    "point": "Mainboard rev G front F3-02",
+    "expect": "0.66",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 100000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F3-03",
+    "expect": "0.65",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 100000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F3-04",
+    "expect": "OL",
+    "unit": "",
+    "mode": "diode",
+    "context": "Resistance to ground OL"
+   },
+   {
+    "point": "Mainboard rev G front F3-05",
+    "expect": "0.65",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 100000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F4-01",
+    "expect": "0.55",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 277000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F4-02",
+    "expect": "0.392",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 21000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F4-03",
+    "expect": "0.422",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 80000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F4-04",
+    "expect": "0.692",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 39000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F4-05",
+    "expect": "0.545",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 23000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F4-06",
+    "expect": "0.742",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 17000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front F4-07",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front F4-08",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front E1-01",
+    "expect": "0.585",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground OL"
+   },
+   {
+    "point": "Mainboard rev G front E1-02",
+    "expect": "0.5",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 2588 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-03",
+    "expect": "0.85",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 158600 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-04",
+    "expect": "0.73",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 24500000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-05",
+    "expect": "0.85",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 24500000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-06",
+    "expect": "0.85",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 658000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-07",
+    "expect": "0.82",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 9380 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-08",
+    "expect": "0.345",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 529 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-09",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front E1-10",
+    "expect": "0.277",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 3300 Ω"
+   },
+   {
+    "point": "Mainboard rev G front E1-11",
+    "expect": "0.477",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 6430 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-01",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front D1-02",
+    "expect": "0.48",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 9520 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-03",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front D1-04",
+    "expect": "0.48",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 64500 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-05",
+    "expect": "0.365",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 1221 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-06",
+    "expect": "0.48",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19980 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-07",
+    "expect": "0.38",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 1188 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-08",
+    "expect": "0.827",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 71000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-09",
+    "expect": "0.363",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 1222 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-10",
+    "expect": "0.48",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19700 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-11",
+    "expect": "0.477",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19800 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-12",
+    "expect": "0.38",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 1190 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-13",
+    "expect": "0.755",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 978000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-14",
+    "expect": "0.8",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 5800000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-15",
+    "expect": "0.8",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 2300000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-16",
+    "expect": "0.755",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 10000000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-17",
+    "expect": "0.466",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 2060 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-18",
+    "expect": "0.48",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 24000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-19",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front D1-20",
+    "expect": "0.48",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 24000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-21",
+    "expect": "0.545",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 10900 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-22",
+    "expect": "0.454",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 22000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-23",
+    "expect": "0.728",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 69000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D1-24",
+    "expect": "0.847",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 29200 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D2-01",
+    "expect": "0.847",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 29480 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D3-01",
+    "expect": "0.033",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 17 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D3-02",
+    "expect": "0.033",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19.6 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D3-03",
+    "expect": "0.461",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 2655 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D3-04",
+    "expect": "0.458",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 2637 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D3-05",
+    "expect": "0.053",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 24 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D4-01",
+    "expect": "0.458",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 2614 Ω"
+   },
+   {
+    "point": "Mainboard rev G front D4-02",
+    "expect": "0.118",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 358 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-01",
+    "expect": "0.428",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 22700 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-02",
+    "expect": "0.428",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 23000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-03",
+    "expect": "0.428",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 30000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-04",
+    "expect": "0.6",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground OL"
+   },
+   {
+    "point": "Mainboard rev G front C1-05",
+    "expect": "0.545",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 623000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-06",
+    "expect": "0.425",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 5836 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-07",
+    "expect": "0.6",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 3700000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-08",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front C1-09",
+    "expect": "0.55",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 10990 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C1-10",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front C2-01",
+    "expect": "0.031",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 15.4 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-02",
+    "expect": "0.848",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 29460 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-03",
+    "expect": "0.56",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-04",
+    "expect": "0.474",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 14610 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-05",
+    "expect": "0.56",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19730 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-06",
+    "expect": "0.474",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 14780 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-07",
+    "expect": "0.442",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 400000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-08",
+    "expect": "0.474",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 14780 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-09",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front C2-10",
+    "expect": "0.052",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 24.7 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C2-11",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front C2-12",
+    "expect": "0.55",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 12350 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C3-01",
+    "expect": "0.03",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 17.6 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C3-02",
+    "expect": "0.03",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 17.4 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C3-03",
+    "expect": "0.052",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 24.9 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C3-04",
+    "expect": "0.651",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 10000000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C3-05",
+    "expect": "0.01",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 0.7 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C3-06",
+    "expect": "0.647",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 20000000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C4-01",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front C4-02",
+    "expect": "0.378",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 11300 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C4-03",
+    "expect": "0.378",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 11240 Ω"
+   },
+   {
+    "point": "Mainboard rev G front C4-04",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front C4-05",
+    "expect": "0.118",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 347.3 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B1-01",
+    "expect": "0.735",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 83000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B1-02",
+    "expect": "0.395",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 20000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-01",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front B2-02",
+    "expect": "0.595",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 1172 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-03",
+    "expect": "0.382",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 10930 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-04",
+    "expect": "0.24",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 1600 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-05",
+    "expect": "0.585",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 62000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-06",
+    "expect": "0.585",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 62000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-07",
+    "expect": "0.512",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 200000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-08",
+    "expect": "0.389",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 9120 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-09",
+    "expect": "0.832",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 22350 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-10",
+    "expect": "0.832",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 22350 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-11",
+    "expect": "0.475",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19820 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B2-12",
+    "expect": "0.277",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 3350 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B3-01",
+    "expect": "0.392",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 20000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B3-02",
+    "expect": "0.63",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 32000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B3-03",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front B4-01",
+    "expect": "0.647",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground OL"
+   },
+   {
+    "point": "Mainboard rev G front B4-02",
+    "expect": "0.422",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 82000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B4-03",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front B4-04",
+    "expect": "0.548",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 278000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B4-05",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front B4-06",
+    "expect": "0.6",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 730000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B4-07",
+    "expect": "0.362",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 200000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B4-08",
+    "expect": "0.6",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 12000000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front B4-09",
+    "expect": "0.43",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 105500 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A1-01",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front A1-02",
+    "expect": "0.54",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 11800 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A1-03",
+    "expect": "0.4",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 20420 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A1-04",
+    "expect": "0.4",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 20370 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A1-05",
+    "expect": "0.424",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 5800 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A2-01",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front A2-02",
+    "expect": "0.528",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 970000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A2-03",
+    "expect": "0.548",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground OL"
+   },
+   {
+    "point": "Mainboard rev G front A2-04",
+    "expect": "0.765",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 19600 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A2-05",
+    "expect": "0.564",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 29200 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A2-06",
+    "expect": "0.392",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 14280 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A2-07",
+    "expect": "0.535",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 15300 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A3-01",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front A3-02",
+    "expect": "0.645",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground OL"
+   },
+   {
+    "point": "Mainboard rev G front A4-01",
+    "expect": "0.422",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 82000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A4-02",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front A4-03",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Ground point"
+   },
+   {
+    "point": "Mainboard rev G front A4-04",
+    "expect": "0.416",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 16000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A4-05",
+    "expect": "0.516",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 3000000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A4-06",
+    "expect": "0.42",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 82000 Ω"
+   },
+   {
+    "point": "Mainboard rev G front A4-07",
+    "expect": "0.39",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Resistance to ground 16250 Ω"
+   }
+  ],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "diode mode",
+   "reference readings",
+   "repair.wiki",
+   "rev g",
+   "steam deck",
+   "test points"
+  ],
+  "confidence": "medium",
+  "caveats": "Point locations are only identifiable from the annotated photo on the source page; readings from one VC99 meter. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Mainboard rev G front F1-01",
+    "mode": "diode",
+    "expect_lo": 0.277,
+    "expect_hi": 0.277,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F1-02",
+    "mode": "diode",
+    "expect_lo": 0.06,
+    "expect_hi": 0.06,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F2-01",
+    "mode": "diode",
+    "expect_lo": 0.06,
+    "expect_hi": 0.06,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F2-02",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F3-02",
+    "mode": "diode",
+    "expect_lo": 0.66,
+    "expect_hi": 0.66,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F3-03",
+    "mode": "diode",
+    "expect_lo": 0.65,
+    "expect_hi": 0.65,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F3-05",
+    "mode": "diode",
+    "expect_lo": 0.65,
+    "expect_hi": 0.65,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-01",
+    "mode": "diode",
+    "expect_lo": 0.55,
+    "expect_hi": 0.55,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-02",
+    "mode": "diode",
+    "expect_lo": 0.392,
+    "expect_hi": 0.392,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-03",
+    "mode": "diode",
+    "expect_lo": 0.422,
+    "expect_hi": 0.422,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-04",
+    "mode": "diode",
+    "expect_lo": 0.692,
+    "expect_hi": 0.692,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-05",
+    "mode": "diode",
+    "expect_lo": 0.545,
+    "expect_hi": 0.545,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-06",
+    "mode": "diode",
+    "expect_lo": 0.742,
+    "expect_hi": 0.742,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-07",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front F4-08",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-01",
+    "mode": "diode",
+    "expect_lo": 0.585,
+    "expect_hi": 0.585,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-02",
+    "mode": "diode",
+    "expect_lo": 0.5,
+    "expect_hi": 0.5,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-03",
+    "mode": "diode",
+    "expect_lo": 0.85,
+    "expect_hi": 0.85,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-04",
+    "mode": "diode",
+    "expect_lo": 0.73,
+    "expect_hi": 0.73,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-05",
+    "mode": "diode",
+    "expect_lo": 0.85,
+    "expect_hi": 0.85,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-06",
+    "mode": "diode",
+    "expect_lo": 0.85,
+    "expect_hi": 0.85,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-07",
+    "mode": "diode",
+    "expect_lo": 0.82,
+    "expect_hi": 0.82,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-08",
+    "mode": "diode",
+    "expect_lo": 0.345,
+    "expect_hi": 0.345,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-09",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-10",
+    "mode": "diode",
+    "expect_lo": 0.277,
+    "expect_hi": 0.277,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front E1-11",
+    "mode": "diode",
+    "expect_lo": 0.477,
+    "expect_hi": 0.477,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-01",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-02",
+    "mode": "diode",
+    "expect_lo": 0.48,
+    "expect_hi": 0.48,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-03",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-04",
+    "mode": "diode",
+    "expect_lo": 0.48,
+    "expect_hi": 0.48,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-05",
+    "mode": "diode",
+    "expect_lo": 0.365,
+    "expect_hi": 0.365,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-06",
+    "mode": "diode",
+    "expect_lo": 0.48,
+    "expect_hi": 0.48,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-07",
+    "mode": "diode",
+    "expect_lo": 0.38,
+    "expect_hi": 0.38,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-08",
+    "mode": "diode",
+    "expect_lo": 0.827,
+    "expect_hi": 0.827,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-09",
+    "mode": "diode",
+    "expect_lo": 0.363,
+    "expect_hi": 0.363,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-10",
+    "mode": "diode",
+    "expect_lo": 0.48,
+    "expect_hi": 0.48,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-11",
+    "mode": "diode",
+    "expect_lo": 0.477,
+    "expect_hi": 0.477,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-12",
+    "mode": "diode",
+    "expect_lo": 0.38,
+    "expect_hi": 0.38,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-13",
+    "mode": "diode",
+    "expect_lo": 0.755,
+    "expect_hi": 0.755,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-14",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-15",
+    "mode": "diode",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-16",
+    "mode": "diode",
+    "expect_lo": 0.755,
+    "expect_hi": 0.755,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-17",
+    "mode": "diode",
+    "expect_lo": 0.466,
+    "expect_hi": 0.466,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-18",
+    "mode": "diode",
+    "expect_lo": 0.48,
+    "expect_hi": 0.48,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-19",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-20",
+    "mode": "diode",
+    "expect_lo": 0.48,
+    "expect_hi": 0.48,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-21",
+    "mode": "diode",
+    "expect_lo": 0.545,
+    "expect_hi": 0.545,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-22",
+    "mode": "diode",
+    "expect_lo": 0.454,
+    "expect_hi": 0.454,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-23",
+    "mode": "diode",
+    "expect_lo": 0.728,
+    "expect_hi": 0.728,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D1-24",
+    "mode": "diode",
+    "expect_lo": 0.847,
+    "expect_hi": 0.847,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D2-01",
+    "mode": "diode",
+    "expect_lo": 0.847,
+    "expect_hi": 0.847,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D3-01",
+    "mode": "diode",
+    "expect_lo": 0.033,
+    "expect_hi": 0.033,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D3-02",
+    "mode": "diode",
+    "expect_lo": 0.033,
+    "expect_hi": 0.033,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D3-03",
+    "mode": "diode",
+    "expect_lo": 0.461,
+    "expect_hi": 0.461,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D3-04",
+    "mode": "diode",
+    "expect_lo": 0.458,
+    "expect_hi": 0.458,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D3-05",
+    "mode": "diode",
+    "expect_lo": 0.053,
+    "expect_hi": 0.053,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D4-01",
+    "mode": "diode",
+    "expect_lo": 0.458,
+    "expect_hi": 0.458,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front D4-02",
+    "mode": "diode",
+    "expect_lo": 0.118,
+    "expect_hi": 0.118,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-01",
+    "mode": "diode",
+    "expect_lo": 0.428,
+    "expect_hi": 0.428,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-02",
+    "mode": "diode",
+    "expect_lo": 0.428,
+    "expect_hi": 0.428,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-03",
+    "mode": "diode",
+    "expect_lo": 0.428,
+    "expect_hi": 0.428,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-04",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-05",
+    "mode": "diode",
+    "expect_lo": 0.545,
+    "expect_hi": 0.545,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-06",
+    "mode": "diode",
+    "expect_lo": 0.425,
+    "expect_hi": 0.425,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-07",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-08",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-09",
+    "mode": "diode",
+    "expect_lo": 0.55,
+    "expect_hi": 0.55,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C1-10",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-01",
+    "mode": "diode",
+    "expect_lo": 0.031,
+    "expect_hi": 0.031,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-02",
+    "mode": "diode",
+    "expect_lo": 0.848,
+    "expect_hi": 0.848,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-03",
+    "mode": "diode",
+    "expect_lo": 0.56,
+    "expect_hi": 0.56,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-04",
+    "mode": "diode",
+    "expect_lo": 0.474,
+    "expect_hi": 0.474,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-05",
+    "mode": "diode",
+    "expect_lo": 0.56,
+    "expect_hi": 0.56,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-06",
+    "mode": "diode",
+    "expect_lo": 0.474,
+    "expect_hi": 0.474,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-07",
+    "mode": "diode",
+    "expect_lo": 0.442,
+    "expect_hi": 0.442,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-08",
+    "mode": "diode",
+    "expect_lo": 0.474,
+    "expect_hi": 0.474,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-09",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-10",
+    "mode": "diode",
+    "expect_lo": 0.052,
+    "expect_hi": 0.052,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-11",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C2-12",
+    "mode": "diode",
+    "expect_lo": 0.55,
+    "expect_hi": 0.55,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C3-01",
+    "mode": "diode",
+    "expect_lo": 0.03,
+    "expect_hi": 0.03,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C3-02",
+    "mode": "diode",
+    "expect_lo": 0.03,
+    "expect_hi": 0.03,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C3-03",
+    "mode": "diode",
+    "expect_lo": 0.052,
+    "expect_hi": 0.052,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C3-04",
+    "mode": "diode",
+    "expect_lo": 0.651,
+    "expect_hi": 0.651,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C3-05",
+    "mode": "diode",
+    "expect_lo": 0.01,
+    "expect_hi": 0.01,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C3-06",
+    "mode": "diode",
+    "expect_lo": 0.647,
+    "expect_hi": 0.647,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C4-01",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C4-02",
+    "mode": "diode",
+    "expect_lo": 0.378,
+    "expect_hi": 0.378,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C4-03",
+    "mode": "diode",
+    "expect_lo": 0.378,
+    "expect_hi": 0.378,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C4-04",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front C4-05",
+    "mode": "diode",
+    "expect_lo": 0.118,
+    "expect_hi": 0.118,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B1-01",
+    "mode": "diode",
+    "expect_lo": 0.735,
+    "expect_hi": 0.735,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B1-02",
+    "mode": "diode",
+    "expect_lo": 0.395,
+    "expect_hi": 0.395,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-01",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-02",
+    "mode": "diode",
+    "expect_lo": 0.595,
+    "expect_hi": 0.595,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-03",
+    "mode": "diode",
+    "expect_lo": 0.382,
+    "expect_hi": 0.382,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-04",
+    "mode": "diode",
+    "expect_lo": 0.24,
+    "expect_hi": 0.24,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-05",
+    "mode": "diode",
+    "expect_lo": 0.585,
+    "expect_hi": 0.585,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-06",
+    "mode": "diode",
+    "expect_lo": 0.585,
+    "expect_hi": 0.585,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-07",
+    "mode": "diode",
+    "expect_lo": 0.512,
+    "expect_hi": 0.512,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-08",
+    "mode": "diode",
+    "expect_lo": 0.389,
+    "expect_hi": 0.389,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-09",
+    "mode": "diode",
+    "expect_lo": 0.832,
+    "expect_hi": 0.832,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-10",
+    "mode": "diode",
+    "expect_lo": 0.832,
+    "expect_hi": 0.832,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-11",
+    "mode": "diode",
+    "expect_lo": 0.475,
+    "expect_hi": 0.475,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B2-12",
+    "mode": "diode",
+    "expect_lo": 0.277,
+    "expect_hi": 0.277,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B3-01",
+    "mode": "diode",
+    "expect_lo": 0.392,
+    "expect_hi": 0.392,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B3-02",
+    "mode": "diode",
+    "expect_lo": 0.63,
+    "expect_hi": 0.63,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B3-03",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-01",
+    "mode": "diode",
+    "expect_lo": 0.647,
+    "expect_hi": 0.647,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-02",
+    "mode": "diode",
+    "expect_lo": 0.422,
+    "expect_hi": 0.422,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-03",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-04",
+    "mode": "diode",
+    "expect_lo": 0.548,
+    "expect_hi": 0.548,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-05",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-06",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-07",
+    "mode": "diode",
+    "expect_lo": 0.362,
+    "expect_hi": 0.362,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-08",
+    "mode": "diode",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front B4-09",
+    "mode": "diode",
+    "expect_lo": 0.43,
+    "expect_hi": 0.43,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A1-01",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A1-02",
+    "mode": "diode",
+    "expect_lo": 0.54,
+    "expect_hi": 0.54,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A1-03",
+    "mode": "diode",
+    "expect_lo": 0.4,
+    "expect_hi": 0.4,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A1-04",
+    "mode": "diode",
+    "expect_lo": 0.4,
+    "expect_hi": 0.4,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A1-05",
+    "mode": "diode",
+    "expect_lo": 0.424,
+    "expect_hi": 0.424,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A2-01",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A2-02",
+    "mode": "diode",
+    "expect_lo": 0.528,
+    "expect_hi": 0.528,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A2-03",
+    "mode": "diode",
+    "expect_lo": 0.548,
+    "expect_hi": 0.548,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A2-04",
+    "mode": "diode",
+    "expect_lo": 0.765,
+    "expect_hi": 0.765,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A2-05",
+    "mode": "diode",
+    "expect_lo": 0.564,
+    "expect_hi": 0.564,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A2-06",
+    "mode": "diode",
+    "expect_lo": 0.392,
+    "expect_hi": 0.392,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A2-07",
+    "mode": "diode",
+    "expect_lo": 0.535,
+    "expect_hi": 0.535,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A3-01",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A3-02",
+    "mode": "diode",
+    "expect_lo": 0.645,
+    "expect_hi": 0.645,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A4-01",
+    "mode": "diode",
+    "expect_lo": 0.422,
+    "expect_hi": 0.422,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A4-02",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A4-03",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A4-04",
+    "mode": "diode",
+    "expect_lo": 0.416,
+    "expect_hi": 0.416,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A4-05",
+    "mode": "diode",
+    "expect_lo": 0.516,
+    "expect_hi": 0.516,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A4-06",
+    "mode": "diode",
+    "expect_lo": 0.42,
+    "expect_hi": 0.42,
+    "unit": "V"
+   },
+   {
+    "point": "Mainboard rev G front A4-07",
+    "mode": "diode",
+    "expect_lo": 0.39,
+    "expect_hi": 0.39,
+    "unit": "V"
+   }
+  ],
+  "device_family": "steamdecklcd",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Steam Deck Mainboard Testing Points\", https://repair.wiki/w/Steam_Deck_Mainboard_Testing_Points, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Steam_Deck_Mainboard_Testing_Points",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

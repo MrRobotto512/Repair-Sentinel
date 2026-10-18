@@ -1,0 +1,86 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 8 With No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_8_With_No_Touch",
+   "kind": "web",
+   "title": "How To Fix iPhone 8 With No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3280,
+   "last_edited_utc": "2024-01-30T14:27:52Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "J5700"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 8 no touch is usually pry damage near LCD connector J5700 to FL5776, FL5762 or R5772; trace the OL/short along the touch line.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If readings are normal, bend out the four connector ground pins or replace the connector.",
+    "evidence": "Another solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check J5700.",
+   "Inspect FL5776, FL5762, R5772.",
+   "Bend out ground pins on LCD and home button connectors.",
+   "Replace the LCD connector if needed."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope",
+   "fine tweezers"
+  ],
+  "cautions": [],
+  "tags": [
+   "fl5762",
+   "fl5776",
+   "iphone 8",
+   "j5700",
+   "no touch",
+   "r5772",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Source lists 'RR5772', read here as R5772. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "LCD connector / touch filters",
+  "part_numbers": [
+   "FL5776",
+   "FL5762",
+   "R5772"
+  ],
+  "readings": [],
+  "device_family": "iphone8",
+  "error_codes": [
+   "J5700"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 8 With No Touch\", https://repair.wiki/w/How_To_Fix_iPhone_8_With_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_8_With_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,76 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair an iPhone 14 Bootlooping due to IR Camera",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_an_iPhone_14_Bootlooping_due_to_IR_Camera",
+   "kind": "web",
+   "title": "How To Repair an iPhone 14 Bootlooping due to IR Camera",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12404,
+   "last_edited_utc": "2025-10-21T04:21:50Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14"
+  ],
+  "symptoms": [
+   "bootloop",
+   "auto powers on with DC supply"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone 14 that powers on by itself on a DC supply and loops can have a shorted IR camera in the TrueDepth assembly; it boots normally with the front camera flex unplugged.",
+    "evidence": "Problem description and isolation test.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacing the module fixes the loop, but Face ID stays disabled unless re-paired through authorised calibration.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect the front camera flex near the IR sensor.",
+   "Watch DCPS for auto-boot and looping.",
+   "Unplug the front camera flex and test boot.",
+   "Replace the TrueDepth/IR module."
+  ],
+  "measurements": [],
+  "tools": [
+   "DC power supply",
+   "opening tools"
+  ],
+  "cautions": [],
+  "tags": [
+   "auto power on",
+   "bootloop",
+   "iphone 14",
+   "ir camera",
+   "repair.wiki",
+   "truedepth"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Front IR camera",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone14",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair an iPhone 14 Bootlooping due to IR Camera\", https://repair.wiki/w/How_To_Repair_an_iPhone_14_Bootlooping_due_to_IR_Camera, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_an_iPhone_14_Bootlooping_due_to_IR_Camera",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

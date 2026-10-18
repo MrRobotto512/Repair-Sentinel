@@ -1,0 +1,104 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Wifi IC Compatibility and Replacement Guide",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Wifi_IC_Compatibility_and_Replacement_Guide",
+   "kind": "web",
+   "title": "IPad Wifi IC Compatibility and Replacement Guide",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12777,
+   "last_edited_utc": "2025-11-19T20:54:05Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 6",
+   "iPad 7",
+   "iPad 8",
+   "iPad 9"
+  ],
+  "symptoms": [
+   "Wi-Fi greyed out",
+   "no Wi-Fi MAC",
+   "new Wi-Fi IC not detected"
+  ],
+  "codes": [
+   "339S00446",
+   "339S00445",
+   "339S00448"
+  ],
+  "claims": [
+   {
+    "statement": "Wi-Fi-only and cellular iPad boards use different Wi-Fi ICs that are not cross-compatible; the wrong one gives no Wi-Fi and no MAC.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPad 6 Wi-Fi (A1893) uses 339S00446; iPad 6 cellular (A1954) 339S00445.",
+    "evidence": "Compatibility chart.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPad 7 (A2197), iPad 8 (A2270) and iPad 9 (A2602) Wi-Fi models use 339S00448; their cellular models (iPad 7 A2198/A2200, iPad 8 A2428/A2429/A2430, iPad 9 A2603/A2604/A2605) use 339S00445.",
+    "evidence": "Compatibility chart.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check the A-number on the back housing.",
+   "Confirm the Wi-Fi IC part number in boardview.",
+   "Check rails near the Wi-Fi IC for shorts.",
+   "Replace with the exact same part number from a same-variant donor."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "preheater",
+   "reball stencil",
+   "boardview"
+  ],
+  "cautions": [],
+  "tags": [
+   "339s00445",
+   "339s00446",
+   "339s00448",
+   "compatibility",
+   "ipad 6",
+   "ipad 7",
+   "ipad 8",
+   "ipad 9",
+   "repair.wiki",
+   "wifi ic"
+  ],
+  "confidence": "high",
+  "caveats": "The guide also mentions iPad 10 but gives no part number for it. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi IC",
+  "part_numbers": [
+   "339S00446",
+   "339S00445",
+   "339S00448"
+  ],
+  "readings": [],
+  "device_family": "ipad6",
+  "error_codes": [
+   "339S00446",
+   "339S00445",
+   "339S00448"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Wifi IC Compatibility and Replacement Guide\", https://repair.wiki/w/IPad_Wifi_IC_Compatibility_and_Replacement_Guide, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Wifi_IC_Compatibility_and_Replacement_Guide",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

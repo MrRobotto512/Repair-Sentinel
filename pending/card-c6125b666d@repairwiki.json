@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 4 Slim",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_4_Slim",
+   "kind": "web",
+   "title": "Playstation 4 Slim",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12543,
+   "last_edited_utc": "2025-11-02T20:45:55Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4 Slim"
+  ],
+  "symptoms": [
+   "reference"
+  ],
+  "codes": [
+   "SAE-003",
+   "SAD-002",
+   "SAE-004",
+   "SAF-005",
+   "ADP-160CR"
+  ],
+  "claims": [
+   {
+    "statement": "PS4 Slim board revisions pictured: SAD-002, SAE-003, SAE-004, SAF-005; PSU is ADP-160CR.",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "adp-160cr",
+   "board revisions",
+   "ps4 slim",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Mostly images. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "ADP-160CR"
+  ],
+  "readings": [],
+  "device_family": "playstation4slim",
+  "error_codes": [
+   "SAE-003",
+   "SAD-002",
+   "SAE-004",
+   "SAF-005",
+   "ADP-160CR"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 4 Slim\", https://repair.wiki/w/Playstation_4_Slim, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_4_Slim",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

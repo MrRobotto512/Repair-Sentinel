@@ -1,0 +1,153 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone X That Has No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Has_No_Touch",
+   "kind": "web",
+   "title": "How To Fix iPhone X That Has No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3411,
+   "last_edited_utc": "2024-02-12T17:57:24Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "no touch",
+   "intermittent touch",
+   "ghost touch"
+  ],
+  "codes": [
+   "J5800",
+   "PP5V25_TOUCH_VDDH",
+   "C5645"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone X no touch is most often sandwich separation between top layer and interposer: OL lines at touch connector J5800 point to it; test in an iSocket and reball.",
+    "evidence": "Troubleshooting.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Sometimes the bottom board is damaged (often near the SIM slot); a bottom board swap requires moving the baseband CPU, the baseband EEPROM (copy with JC module reader; losing it kills cellular forever), optionally NFC, and unbinding Wi-Fi via Purple Mode.",
+    "evidence": "Bottom board swap.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PP5V25_TOUCH_VDDH should read about 0.643 in diode mode; a low reading like 0.235 or a short often means C5645 (4 µF 6.3 V 0201) needs replacing.",
+    "evidence": "Final check.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Qualcomm (A1865) and Intel (A1901, A1902) boards must not be mixed when swapping bottom boards.",
+    "evidence": "Version note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with only screen, port and battery connected.",
+   "Diode-check J5800 for OL lines.",
+   "Split sandwich; test in iSocket; reball if touch returns.",
+   "Pair it with a working bottom board that has the same modem type; swap paired parts if needed.",
+   "Check PP5V25_TOUCH_VDDH (~0.643); replace C5645 if low."
+  ],
+  "measurements": [
+   {
+    "point": "PP5V25_TOUCH_VDDH",
+    "expect": "0.643",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Good reading"
+   },
+   {
+    "point": "PP5V25_TOUCH_VDDH (partial short)",
+    "expect": "0.235",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Fault example"
+   },
+   {
+    "point": "C5645",
+    "expect": "4",
+    "unit": "µF",
+    "mode": "capacitance",
+    "context": "6.3 V X5R 0201"
+   }
+  ],
+  "tools": [
+   "iSocket jig",
+   "preheater",
+   "JC module EEPROM reader",
+   "iRepair P10",
+   "multimeter"
+  ],
+  "cautions": [
+   "SOURCE RISK: Overwriting or losing the baseband EEPROM data permanently kills cellular."
+  ],
+  "tags": [
+   "baseband eeprom",
+   "bottom board swap",
+   "c5645",
+   "iphone x",
+   "j5800",
+   "no touch",
+   "pp5v25_touch_vddh",
+   "repair.wiki",
+   "sandwich separation"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Sandwich / touch power",
+  "part_numbers": [
+   "J5800",
+   "C5645"
+  ],
+  "readings": [
+   {
+    "point": "PP5V25_TOUCH_VDDH",
+    "mode": "diode",
+    "expect_lo": 0.643,
+    "expect_hi": 0.643,
+    "unit": "V"
+   },
+   {
+    "point": "PP5V25_TOUCH_VDDH (partial short)",
+    "mode": "diode",
+    "expect_lo": 0.235,
+    "expect_hi": 0.235,
+    "unit": "V"
+   },
+   {
+    "point": "C5645",
+    "mode": "capacitance",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "µF"
+   }
+  ],
+  "device_family": "iphonex",
+  "error_codes": [
+   "J5800",
+   "PP5V25_TOUCH_VDDH",
+   "C5645"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone X That Has No Touch\", https://repair.wiki/w/How_To_Fix_iPhone_X_That_Has_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Has_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

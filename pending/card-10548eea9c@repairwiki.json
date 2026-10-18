@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9 4th Gen Not Charging Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9_4th_Gen_Not_Charging_Repair",
+   "kind": "web",
+   "title": "IPad Pro 12.9 4th Gen Not Charging Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3086,
+   "last_edited_utc": "2024-01-20T02:16:38Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 4th Gen"
+  ],
+  "symptoms": [
+   "not charging",
+   "draws 0.01-0.14 A"
+  ],
+  "codes": [
+   "CD3217B12"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 12.9 (4th gen) charge port pins wear and bend easily; inspect them first. Otherwise check for shorts around the CD3217B12 controller (some caps are under the shield).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect port pins; replace port flex if worn.",
+   "Check for shorts around CD3217B12."
+  ],
+  "measurements": [
+   {
+    "point": "Charger draw (fault)",
+    "expect": "0.01-0.14",
+    "unit": "A",
+    "mode": "current",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "USB meter",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "cd3217b12",
+   "charge port",
+   "ipad pro 12.9",
+   "not charging",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charge port / CD3217B12",
+  "part_numbers": [
+   "CD3217B12"
+  ],
+  "readings": [
+   {
+    "point": "Charger draw (fault)",
+    "mode": "current",
+    "expect_lo": 0.01,
+    "expect_hi": 0.14,
+    "unit": "A"
+   }
+  ],
+  "device_family": "ipadpro1294thgen",
+  "error_codes": [
+   "CD3217B12"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9 4th Gen Not Charging Repair\", https://repair.wiki/w/IPad_Pro_12.9_4th_Gen_Not_Charging_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9_4th_Gen_Not_Charging_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

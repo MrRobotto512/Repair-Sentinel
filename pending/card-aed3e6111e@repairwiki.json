@@ -1,0 +1,121 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Gameboy Advance No Audio",
+  "source": {
+   "url": "https://repair.wiki/w/Gameboy_Advance_No_Audio",
+   "kind": "web",
+   "title": "Gameboy Advance No Audio",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8706,
+   "last_edited_utc": "2025-07-12T21:18:55Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Game Boy Advance"
+  ],
+  "symptoms": [
+   "no audio from speaker",
+   "audio only on headphones"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The GBA audio amp receives two signals from the CPU at R30 and R3, each about 1 V with the console on.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Pin 10 of the audio amp should swing from about 0.5 V to 3 V when the volume wheel is turned; if not, replace the potentiometer.",
+    "evidence": "Volume check.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Missing 3 V at the amp can be jumpered from the battery connector; headphone-only audio is commonly a corroded headphone jack.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Very quiet audio can be fixed by replacing the 100 µF 4 V capacitor behind the audio jack.",
+    "evidence": "Repair note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with headphones, then a new speaker.",
+   "Measure about 1 V on R30 and R3 (CPU audio signals).",
+   "Check amp supply voltages; jumper 3 V from battery connector if missing.",
+   "Measure amp pin 10 while moving volume (0.5–3 V).",
+   "Clean a corroded headphone jack; replace the 100 µF cap if quiet."
+  ],
+  "measurements": [
+   {
+    "point": "R30 / R3 (CPU audio signals)",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Console on"
+   },
+   {
+    "point": "Audio amp pin 10",
+    "expect": "0.5-3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Varies with volume wheel"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "microscope",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "audio amp",
+   "game boy advance",
+   "gba",
+   "headphone jack",
+   "no audio",
+   "repair.wiki",
+   "volume potentiometer"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Audio amplifier",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "R30 / R3 (CPU audio signals)",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   },
+   {
+    "point": "Audio amp pin 10",
+    "mode": "voltage",
+    "expect_lo": 0.5,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "gameboyadvance",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Gameboy Advance No Audio\", https://repair.wiki/w/Gameboy_Advance_No_Audio, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Gameboy_Advance_No_Audio",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,65 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Elite Controller Series 2 RB or LB is only registering clicks when certain parts of the bumper are pressed or when the button is pressed with too much force repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Elite_Controller_Series_2_RB_or_LB_is_only_registering_clicks_when_certain_parts_of_the_bumper_are_pressed_or_when_the_button_is_pressed_with_too_much_force_repair",
+   "kind": "web",
+   "title": "Xbox Elite Controller Series 2 RB or LB is only registering clicks when certain parts of the bumper are pressed or when the button is pressed with too much force repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2913,
+   "last_edited_utc": "2024-01-17T01:23:54Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Elite Wireless Controller Series 2"
+  ],
+  "symptoms": [
+   "RB/LB registers only on part of the bumper or with force"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "If RB or LB only clicks on part of the bumper or with excess force, replace that switch on the blue board.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace the RB/LB switch."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "bumper",
+   "lb",
+   "rb",
+   "repair.wiki",
+   "switch",
+   "xbox elite series 2"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Bumper switch",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxelitewirelesscontrollerseries2",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Elite Controller Series 2 RB or LB is only registering clicks when certain parts of the bumper are pressed or when the button is pressed with too much force repair\", https://repair.wiki/w/Xbox_Elite_Controller_Series_2_RB_or_LB_is_only_registering_clicks_when_certain_parts_of_the_bumper_are_pressed_or_when_the_button_is_pressed_with_too_much_force_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Elite_Controller_Series_2_RB_or_LB_is_only_registering_clicks_when_certain_parts_of_the_bumper_are_pressed_or_when_the_button_is_pressed_with_too_much_force_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

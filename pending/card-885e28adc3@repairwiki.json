@@ -1,0 +1,117 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone X That Does Not Power On",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Does_Not_Power_On",
+   "kind": "web",
+   "title": "How To Fix iPhone X That Does Not Power On",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3402,
+   "last_edited_utc": "2024-02-12T07:26:44Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "no power",
+   "no signs of life"
+  ],
+  "codes": [
+   "PP_VDD_MAIN"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone X short before power-on: check PP_VDD_MAIN, PP_VDD_BOOST, PP_SPKRAMP_TOP_VBOOST; inject 4 V / 2 A and remove the shorted cap (sandwich split usually required).",
+    "evidence": "Short before prompt to boot.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Short after power-on (bouncing current): PP3V0_NAND, PP0V9_NAND, PP1V8_IO; RAM short if PP1V8_S2 / PP1V1_S2 shorted with heat above CPU. Q3350 and U2700 heating during injection are not the fault.",
+    "evidence": "Short after prompt to boot.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for liquid damage.",
+   "Split sandwich carefully.",
+   "Find short on VDD_MAIN / VDD_BOOST / SPKRAMP_TOP_VBOOST or NAND/IO rails.",
+   "Inject voltage, locate and remove the shorted cap."
+  ],
+  "measurements": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "expect": "2",
+    "unit": "A",
+    "mode": "current",
+    "context": ""
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "preheater"
+  ],
+  "cautions": [
+   "SOURCE RISK: Incorrect sandwich splitting can permanently damage the board."
+  ],
+  "tags": [
+   "iphone x",
+   "nand short",
+   "no power",
+   "q3350",
+   "repair.wiki",
+   "u2700",
+   "vdd_main short"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Shorted capacitors",
+  "part_numbers": [
+   "Q3350",
+   "U2700"
+  ],
+  "readings": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "mode": "current",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "A"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphonex",
+  "error_codes": [
+   "PP_VDD_MAIN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone X That Does Not Power On\", https://repair.wiki/w/How_To_Fix_iPhone_X_That_Does_Not_Power_On, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Does_Not_Power_On",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

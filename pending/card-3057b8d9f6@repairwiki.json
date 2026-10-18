@@ -1,0 +1,109 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Fan not working",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_Fan_not_working",
+   "kind": "web",
+   "title": "PlayStation 5 Fan not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12631,
+   "last_edited_utc": "2025-11-09T22:33:03Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "fan doesn't spin"
+  ],
+  "codes": [
+   "CXD90061GG",
+   "CXD90069GG"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 fan not spinning: try a new fan first (common failure), then check the fan FPC (often ripped) and its diode readings; 12 V must be present if the console turns on.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The fan PWM signal comes straight from the southbridge (CXD90061GG or CXD90069GG); no reading means a PCB crack, a bad ball under the southbridge, or a failed southbridge; a short means replace the southbridge.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacement southbridges must match type (61GG vs 69GG); remove the CMOS battery and preheat when replacing.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new fan.",
+   "Inspect/re-solder the fan FPC.",
+   "Diode-check FPC incl. PWM line.",
+   "Replace southbridge (matching type) if PWM shorted/open."
+  ],
+  "measurements": [
+   {
+    "point": "Fan supply",
+    "expect": "12",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Main rail"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "cxd90061gg",
+   "cxd90069gg",
+   "fan fpc",
+   "fan not working",
+   "ps5",
+   "pwm",
+   "repair.wiki",
+   "southbridge"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Fan / southbridge",
+  "part_numbers": [
+   "CXD90061GG",
+   "CXD90069GG"
+  ],
+  "readings": [
+   {
+    "point": "Fan supply",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "CXD90061GG",
+   "CXD90069GG"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 Fan not working\", https://repair.wiki/w/PlayStation_5_Fan_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_Fan_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 6 No Service Modem Firmware OK",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_6_No_Service_Modem_Firmware_OK",
+   "kind": "web",
+   "title": "IPhone 6 No Service Modem Firmware OK",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8595,
+   "last_edited_utc": "2025-07-07T22:25:49Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 6"
+  ],
+  "symptoms": [
+   "no service",
+   "IMEI and modem firmware present"
+  ],
+  "codes": [
+   "V1",
+   "U1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 6 no service with IMEI and modem firmware present usually means two broken pads, V1 and U1, under the baseband CPU (which is not underfilled on this model).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Remove the shield and baseband CPU, jumper V1 and U1, mask, then reball and refit the original baseband CPU (it cannot be replaced).",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm modem firmware and IMEI present.",
+   "Remove baseband shield and baseband CPU.",
+   "Clean pads; jumper V1 and U1; UV mask.",
+   "Reball and refit the original BB CPU; test service and calls."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "jumper wire",
+   "UV mask"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband cpu",
+   "iphone 6",
+   "no service",
+   "pads v1 u1",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband CPU pads",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone6",
+  "error_codes": [
+   "V1",
+   "U1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 6 No Service Modem Firmware OK\", https://repair.wiki/w/IPhone_6_No_Service_Modem_Firmware_OK, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_6_No_Service_Modem_Firmware_OK",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy A13 5G(A137) No fast Charging and Not connecting to PC",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_A13_5G(A137)_No_fast_Charging_and_Not_connecting_to_PC",
+   "kind": "web",
+   "title": "Samsung Galaxy A13 5G(A137) No fast Charging and Not connecting to PC",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10615,
+   "last_edited_utc": "2025-08-24T13:18:40Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A13 5G (A137)"
+  ],
+  "symptoms": [
+   "no fast charge (5 V only)",
+   "no PC connection",
+   "OTG not detected",
+   "works from one plug orientation only"
+  ],
+  "codes": [
+   "DP",
+   "DM",
+   "CC1",
+   "CC2"
+  ],
+  "claims": [
+   {
+    "statement": "Galaxy A13 5G data/fast-charge faults come from the DP/DM data lines or the CC1/CC2 lines (fast charge negotiation); fast charge on one side only plus data both sides points at CC.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "DP and DM should read about the same in diode mode, as should CC1 and CC2; OL/low DP/DM can be jumpered to the CPU; a short may mean a bad CPU; CC faults mean reball/replace the charging IC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If board readings are fine but a tail-plug tester shows OL, replace the port, then the screen (the main flex runs through it) or sub board, or jumper board to sub board.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test the port with a tail-plug tester.",
+   "Diode-compare DP vs DM and CC1 vs CC2 at the main connector.",
+   "Jumper open DP/DM; reball/replace charging IC for CC faults.",
+   "Replace port, screen or sub board as indicated."
+  ],
+  "measurements": [],
+  "tools": [
+   "tail plug tester",
+   "multimeter",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "cc1 cc2",
+   "dp dm",
+   "galaxy a13 5g",
+   "no fast charge",
+   "not connecting to pc",
+   "otg",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Reference values in images; measured with a DT-17N. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "USB data / CC lines",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxya135g",
+  "error_codes": [
+   "DP",
+   "DM",
+   "CC1",
+   "CC2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy A13 5G(A137) No fast Charging and Not connecting to PC\", https://repair.wiki/w/Samsung_Galaxy_A13_5G(A137)_No_fast_Charging_and_Not_connecting_to_PC, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_A13_5G(A137)_No_fast_Charging_and_Not_connecting_to_PC",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

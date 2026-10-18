@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair iPhone 13 to 16 pro max Proximity sensor not working",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_iPhone_13_to_16_pro_max_Proximity_sensor_not_working",
+   "kind": "web",
+   "title": "How To Repair iPhone 13 to 16 pro max Proximity sensor not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11180,
+   "last_edited_utc": "2025-09-02T05:34:24Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 13",
+   "iPhone 14",
+   "iPhone 15",
+   "iPhone 16",
+   "iPhone 16e"
+  ],
+  "symptoms": [
+   "proximity not working",
+   "screen stays on in calls",
+   "auto-brightness toggle missing"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On iPhone 13–16, a liquid-damaged or non-programmed replacement proximity/ambient light flex removes proximity and auto-brightness (the toggle disappears).",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: JC Repair Assistant Brushing unbind with IPSW flash, then test and 'Activate FPC' on a JCID photosensitive sensor so its ECID matches, then install.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm proximity failure and missing auto-brightness toggle.",
+   "Download the IPSW; run Brushing with both unbind options.",
+   "Reflash in 3uTools when it lands in recovery.",
+   "Test and Activate the JCID sensor; confirm ECID match.",
+   "Install and test."
+  ],
+  "measurements": [],
+  "tools": [
+   "JCID V1SE / V1S Pro",
+   "JCID photosensitive board",
+   "JC Repair Assistant",
+   "3uTools"
+  ],
+  "cautions": [
+   "SOURCE RISK: The unbind flash erases the device."
+  ],
+  "tags": [
+   "ambient light sensor",
+   "auto-brightness",
+   "iphone",
+   "jcid",
+   "proximity sensor",
+   "repair.wiki",
+   "unbind"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Proximity / ALS flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone13",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair iPhone 13 to 16 pro max Proximity sensor not working\", https://repair.wiki/w/How_To_Repair_iPhone_13_to_16_pro_max_Proximity_sensor_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_iPhone_13_to_16_pro_max_Proximity_sensor_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

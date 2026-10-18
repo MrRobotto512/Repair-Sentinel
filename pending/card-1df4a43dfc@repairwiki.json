@@ -1,0 +1,149 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 3",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_3",
+   "kind": "web",
+   "title": "Playstation 3",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14293,
+   "last_edited_utc": "2026-10-15T19:06:05Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 3"
+  ],
+  "symptoms": [
+   "YLOD",
+   "RLOD",
+   "freezing",
+   "8002F14E",
+   "8002F1F9",
+   "overheating"
+  ],
+  "codes": [
+   "8002F14E",
+   "8002F1F9",
+   "CECHA",
+   "CECHL",
+   "CECH-20xx",
+   "CECH-40xx"
+  ],
+  "claims": [
+   {
+    "statement": "PS3 model reference: CECHA/B have full PS2 hardware; CECHC/E partial; CECHG is the last NAND-firmware model and CECHH the first NOR; CECHJ introduced the 65 nm RSX and CECHL a revised 65 nm RSX (CXD2991GB) and new board layout.",
+    "evidence": "Model tables.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Slim and Super Slim board revisions: CECH-20xx DYN-001, 21xx SUR-001, 25xx JTP/JSD-001, 30xx KTE-001; 40xx MPX/MSX/NPX-001, 42xx NPX/PPX/PQX-001, 43xx RTX/REX-001.",
+    "evidence": "Model tables.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "8002F14E / dead Blu-ray: check the Blu-ray drive IC, daughterboard and nearby fuses; laggy XMB/freezes usually means a failing HDD (check SMART on a direct SATA port).",
+    "evidence": "General issues.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "YLOD can be a bad RSX (bumps or solder balls, mostly 90 nm), or bad NEC/Tokin capacitors; read syscon error codes via UART before repairing. Bump failures need an RSX replacement—consider a 40 nm RSX.",
+    "evidence": "General issues and YLOD section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacing NEC/Tokins: 0E128 use 470 µF ×4 each, 0E108 use 330 µF ×4 each (MacBook 820-2850 caps suggested); jumper positive ends if all four are replaced because the originals bridge internally.",
+    "evidence": "YLOD section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Identify model/board from the CECH number.",
+   "For YLOD, solder UART to syscon and read error codes.",
+   "Power errors: replace NEC/Tokins; RSX errors: reflow/reball or replace RSX."
+  ],
+  "measurements": [
+   {
+    "point": "NEC/Tokin 0E128 replacement",
+    "expect": "470",
+    "unit": "µF",
+    "mode": "capacitance",
+    "context": "4 per NEC/Tokin"
+   },
+   {
+    "point": "NEC/Tokin 0E108 replacement",
+    "expect": "330",
+    "unit": "µF",
+    "mode": "capacitance",
+    "context": "4 per NEC/Tokin"
+   }
+  ],
+  "tools": [
+   "UART adapter",
+   "hot air",
+   "GSmartControl"
+  ],
+  "cautions": [],
+  "tags": [
+   "board revisions",
+   "cech models",
+   "nec tokin",
+   "ps3",
+   "repair.wiki",
+   "rlod",
+   "rsx",
+   "syscon",
+   "uart",
+   "ylod"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "CXD2982GB",
+   "CXD2991GB"
+  ],
+  "readings": [
+   {
+    "point": "NEC/Tokin 0E128 replacement",
+    "mode": "capacitance",
+    "expect_lo": 470.0,
+    "expect_hi": 470.0,
+    "unit": "µF"
+   },
+   {
+    "point": "NEC/Tokin 0E108 replacement",
+    "mode": "capacitance",
+    "expect_lo": 330.0,
+    "expect_hi": 330.0,
+    "unit": "µF"
+   }
+  ],
+  "device_family": "playstation3",
+  "error_codes": [
+   "8002F14E",
+   "8002F1F9",
+   "CECHA",
+   "CECHL",
+   "CECH-20xx",
+   "CECH-40xx"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 3\", https://repair.wiki/w/Playstation_3, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_3",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

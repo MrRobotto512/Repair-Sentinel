@@ -1,0 +1,114 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox One S No Power",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_One_S_No_Power",
+   "kind": "web",
+   "title": "Xbox One S No Power",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8125,
+   "last_edited_utc": "2025-06-29T22:45:57Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox One S"
+  ],
+  "symptoms": [
+   "no power"
+  ],
+  "codes": [
+   "U4C3",
+   "U4D4",
+   "U3D6",
+   "U4C2"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox One S no power: check standby rails in order—12 V from PSU, then 5 V (often shorted), 1.1 V, 1.8 V, 3.3 V.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Missing but unshorted rails map to: 12 V = PSU; 5 V = U4C3; 1.1 V = U4D4; 1.8 V = U3D6 (source also lists U4C2).",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure 12 V, 5 V, 1.1 V, 1.8 V, 3.3 V standby.",
+   "Inject into shorted rails and find the hot part.",
+   "Replace the regulator for a missing unshorted rail."
+  ],
+  "measurements": [
+   {
+    "point": "PSU input",
+    "expect": "12",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Standby rails",
+    "expect": "5 / 3.3 / 1.8 / 1.1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "no power",
+   "repair.wiki",
+   "standby rails",
+   "u3d6",
+   "u4c3",
+   "u4d4",
+   "xbox one s"
+  ],
+  "confidence": "medium",
+  "caveats": "Source lists 1.8 V twice with different ICs; the 3.3 V regulator is likely the second. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Standby regulators",
+  "part_numbers": [
+   "U4C3",
+   "U4D4",
+   "U3D6",
+   "U4C2"
+  ],
+  "readings": [
+   {
+    "point": "PSU input",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "xboxones",
+  "error_codes": [
+   "U4C3",
+   "U4D4",
+   "U3D6",
+   "U4C2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox One S No Power\", https://repair.wiki/w/Xbox_One_S_No_Power, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_One_S_No_Power",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

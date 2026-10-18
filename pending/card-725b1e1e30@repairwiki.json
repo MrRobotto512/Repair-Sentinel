@@ -1,0 +1,132 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPad Pro 11in 4th Gen That Does Not Charge, CD3217 Solution",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPad_Pro_11in_4th_Gen_That_Does_Not_Charge,_CD3217_Solution",
+   "kind": "web",
+   "title": "How To Fix an iPad Pro 11in 4th Gen That Does Not Charge, CD3217 Solution",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3304,
+   "last_edited_utc": "2024-02-04T13:59:31Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 11 4th Gen"
+  ],
+  "symptoms": [
+   "not charging",
+   "appears dead with flat battery",
+   "stuck at 5 V"
+  ],
+  "codes": [
+   "A2759",
+   "A2761",
+   "A2435",
+   "A2762"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 11 (4th gen) not charging, with a USB meter stuck at about 5 V / 0.62 A instead of negotiating 15 V, is normally a faulty CD3217 USB-C controller.",
+    "evidence": "Problem description and symptoms.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check for shorts on the three large caps by CD3217: PP_LDO_CORE, PP3V3_ACE_LDO (usually the shorted one) and PP3V3_S2_ACE.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A replacement CD3217 must come from a donor board together with its paired ROM chip (U3890 on this model, usually marked 8Nxxxx); without the ROM the new chip will not work.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out no-power with a charged battery or power supply.",
+   "Test with a known-good charge port.",
+   "Diode-check PP_LDO_CORE, PP3V3_ACE_LDO, PP3V3_S2_ACE.",
+   "Remove CD3217 and confirm shorts clear.",
+   "Fit donor CD3217 plus its paired ROM (U3890) from the same board.",
+   "Confirm 15 V charging on a USB meter."
+  ],
+  "measurements": [
+   {
+    "point": "USB-C input, faulty CD3217",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "About 0.62 A, never negotiates higher"
+   },
+   {
+    "point": "USB-C input, working",
+    "expect": "15",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Normal fast-charge negotiation"
+   }
+  ],
+  "tools": [
+   "USB-C power meter",
+   "hot air",
+   "microscope",
+   "donor board"
+  ],
+  "cautions": [],
+  "tags": [
+   "cd3217",
+   "ipad pro 11",
+   "not charging",
+   "pp3v3_ace_ldo",
+   "repair.wiki",
+   "rom pairing",
+   "u3890",
+   "usb-c"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CD3217 USB-C controller",
+  "part_numbers": [
+   "CD3217",
+   "U3890"
+  ],
+  "readings": [
+   {
+    "point": "USB-C input, faulty CD3217",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "USB-C input, working",
+    "mode": "voltage",
+    "expect_lo": 15.0,
+    "expect_hi": 15.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipadpro114thgen",
+  "error_codes": [
+   "A2759",
+   "A2761",
+   "A2435",
+   "A2762"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPad Pro 11in 4th Gen That Does Not Charge, CD3217 Solution\", https://repair.wiki/w/How_To_Fix_an_iPad_Pro_11in_4th_Gen_That_Does_Not_Charge,_CD3217_Solution, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPad_Pro_11in_4th_Gen_That_Does_Not_Charge,_CD3217_Solution",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

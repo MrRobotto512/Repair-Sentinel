@@ -1,0 +1,75 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 8 Stuck In DFU Mode. Error 4014",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_8_Stuck_In_DFU_Mode._Error_4014",
+   "kind": "web",
+   "title": "How To Fix iPhone 8 Stuck In DFU Mode. Error 4014",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3344,
+   "last_edited_utc": "2024-02-09T08:47:28Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "stuck in DFU",
+   "no image",
+   "restore fails at 19%"
+  ],
+  "codes": [
+   "4014"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 8 stuck in DFU with error 4014 (3uTools ~19%) usually means NAND not detected: check NAND caps for shorts, otherwise read the NAND on a JC P13; unreadable = replace, readable = reball and refit.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check capacitors around NAND for shorts.",
+   "Pull NAND and test on JC P13.",
+   "Replace or reball NAND."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC P13 programmer",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "dfu",
+   "error 4014",
+   "iphone 8",
+   "nand",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone8",
+  "error_codes": [
+   "4014"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 8 Stuck In DFU Mode. Error 4014\", https://repair.wiki/w/How_To_Fix_iPhone_8_Stuck_In_DFU_Mode._Error_4014, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_8_Stuck_In_DFU_Mode._Error_4014",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

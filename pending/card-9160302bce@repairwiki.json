@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone Panic Bitmask (13 and up)",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_Panic_Bitmask_(13_and_up)",
+   "kind": "web",
+   "title": "IPhone Panic Bitmask (13 and up)",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7777,
+   "last_edited_utc": "2025-06-17T21:01:30Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 13–iPhone 16"
+  ],
+  "symptoms": [
+   "random restarts",
+   "panic log sensor codes"
+  ],
+  "codes": [
+   "0x400000",
+   "0x200000",
+   "0x600000"
+  ],
+  "claims": [
+   {
+    "statement": "From iPhone 13 on, SMC panic sensor values are bitmasks: each bit is one sensor, and combinations produce new values (e.g. on iPhone 14, 0x400000 wireless flex + 0x200000 prox = 0x600000).",
+    "evidence": "Page explanation.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPhone 13–15 report the value in hexadecimal; iPhone 16 reports it in decimal; iPhone 12 and older report sensor names (e.g. mic1).",
+    "evidence": "Page explanation.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Decoding the value into individual bits (e.g. via a hex-to-binary converter) shows which sensors are flagged.",
+    "evidence": "Page explanation.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Convert the reported value to binary.",
+   "Map each set bit to the model's sensor list.",
+   "Treat undocumented combinations as multiple simultaneous faults."
+  ],
+  "measurements": [],
+  "tools": [
+   "hex/binary converter"
+  ],
+  "cautions": [],
+  "tags": [
+   "bitmask",
+   "decimal",
+   "hex",
+   "iphone",
+   "panic log",
+   "repair.wiki",
+   "sensor array"
+  ],
+  "confidence": "medium",
+  "caveats": "The source page itself says its codes need verification and lists wrong decimal values (0x400000 is 4194304, 0x200000 is 2097152, 0x600000 is 6291456); corrected here. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone13iphone16",
+  "error_codes": [
+   "0x400000",
+   "0x200000",
+   "0x600000"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone Panic Bitmask (13 and up)\", https://repair.wiki/w/IPhone_Panic_Bitmask_(13_and_up), CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_Panic_Bitmask_(13_and_up)",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

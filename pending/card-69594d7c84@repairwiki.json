@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR SIM Card is not being detected",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_SIM_Card_is_not_being_detected",
+   "kind": "web",
+   "title": "IPhone XR SIM Card is not being detected",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6569,
+   "last_edited_utc": "2025-05-13T08:17:42Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR",
+   "iPhone 11",
+   "iPhone 12"
+  ],
+  "symptoms": [
+   "No SIM with working SIM"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On iPhone XR/11/12 the SIM reader is modular; replace it first when 'No SIM' shows but IMEI and modem firmware are present.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Chinese dual physical SIM readers can be swapped between these models.",
+    "evidence": "Tip.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm IMEI and modem firmware present.",
+   "Replace the SIM reader."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "iphone 11",
+   "iphone 12",
+   "iphone xr",
+   "no sim",
+   "repair.wiki",
+   "sim reader"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "SIM reader",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR SIM Card is not being detected\", https://repair.wiki/w/IPhone_XR_SIM_Card_is_not_being_detected, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_SIM_Card_is_not_being_detected",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,154 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy A32 5G Not Turning On Diagnose",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_A32_5G_Not_Turning_On_Diagnose",
+   "kind": "web",
+   "title": "Samsung Galaxy A32 5G Not Turning On Diagnose",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9711,
+   "last_edited_utc": "2025-08-02T13:33:12Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A32 5G (A326)"
+  ],
+  "symptoms": [
+   "not turning on",
+   "dead"
+  ],
+  "codes": [
+   "VBAT",
+   "VPH_PWR",
+   "SYSTEM_RESET_B",
+   "WATCHDOG"
+  ],
+  "claims": [
+   {
+    "statement": "Galaxy A32 5G DCPS patterns: full short on plugging the boot cable = VBAT short (often charging IC); 0.050–0.070 A before pressing power with no response = VPH_PWR short; 0.100–0.200 A stuck after power = CPU running but not reaching UFS (cold joints, ripped pads, dead UFS); 0 A before and after = not triggering (power key line, power IC or crystal).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With the charger in, VPH_PWR should be stable 3.0–4.2 V; diode value near the charging IC should be 0.250+.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "1.8 V on SYSTEM_RESET_B means the power IC section is OK; 1.8 V on WATCHDOG means the CPU is powered and talking; a MediaTek USB port in Device Manager suggests CPU/UFS joint faults or a dead UFS (test with EasyJTAG, Medusa, JCID U15 etc.).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Watch DCPS draw on boot cable and power press.",
+   "Check charging IC: VBUS in, VPH_PWR out and stable.",
+   "Check power IC buck coils and shorts.",
+   "Measure SYSTEM_RESET_B and WATCHDOG (1.8 V).",
+   "Check for MTK port; reball CPU/UFS or test UFS."
+  ],
+  "measurements": [
+   {
+    "point": "VPH_PWR short pattern",
+    "expect": "0.050-0.070",
+    "unit": "A",
+    "mode": "current",
+    "context": "Before power press"
+   },
+   {
+    "point": "CPU-UFS fault pattern",
+    "expect": "0.100-0.200",
+    "unit": "A",
+    "mode": "current",
+    "context": "After power press"
+   },
+   {
+    "point": "VPH_PWR",
+    "expect": "3.0-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Charger in, stable"
+   },
+   {
+    "point": "SYSTEM_RESET_B / WATCHDOG",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "multimeter",
+   "UFS programmer"
+  ],
+  "cautions": [],
+  "tags": [
+   "a326",
+   "galaxy a32 5g",
+   "mediatek",
+   "no power",
+   "repair.wiki",
+   "ufs",
+   "vph_pwr",
+   "watchdog"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power / CPU / UFS",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "VPH_PWR short pattern",
+    "mode": "current",
+    "expect_lo": 0.05,
+    "expect_hi": 0.07,
+    "unit": "A"
+   },
+   {
+    "point": "CPU-UFS fault pattern",
+    "mode": "current",
+    "expect_lo": 0.1,
+    "expect_hi": 0.2,
+    "unit": "A"
+   },
+   {
+    "point": "VPH_PWR",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 4.2,
+    "unit": "V"
+   },
+   {
+    "point": "SYSTEM_RESET_B / WATCHDOG",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxya325g",
+  "error_codes": [
+   "VBAT",
+   "VPH_PWR",
+   "SYSTEM_RESET_B",
+   "WATCHDOG"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy A32 5G Not Turning On Diagnose\", https://repair.wiki/w/Samsung_Galaxy_A32_5G_Not_Turning_On_Diagnose, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_A32_5G_Not_Turning_On_Diagnose",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,76 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Elite Wireless Controller Series 2",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Elite_Wireless_Controller_Series_2",
+   "kind": "web",
+   "title": "Xbox Elite Wireless Controller Series 2",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11327,
+   "last_edited_utc": "2025-09-06T14:33:34Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Elite Wireless Controller Series 2 (Model 1797)"
+  ],
+  "symptoms": [
+   "identification"
+  ],
+  "codes": [
+   "1797",
+   "045E:0B00",
+   "045E:0B05",
+   "045E:0B22"
+  ],
+  "claims": [
+   {
+    "statement": "Elite Series 2 is Model 1797 with USB-C, internal battery, Bluetooth; USB ID 045E:0B00 (USB), 045E:0B05 (Bluetooth), 045E:0B22 (BLE); its charging dock is Model 1924.",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Most accessories (sticks, paddles) are not interchangeable with the Series 1 Elite.",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "model 1797",
+   "repair.wiki",
+   "usb id",
+   "usb-c",
+   "xbox elite series 2"
+  ],
+  "confidence": "medium",
+  "caveats": "USB-C diode values are only in an image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxelitewirelesscontrollerseries2",
+  "error_codes": [
+   "1797",
+   "045E:0B00",
+   "045E:0B05",
+   "045E:0B22"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Elite Wireless Controller Series 2\", https://repair.wiki/w/Xbox_Elite_Wireless_Controller_Series_2, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Elite_Wireless_Controller_Series_2",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

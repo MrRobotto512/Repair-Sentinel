@@ -1,0 +1,100 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 14 Not Charging due to open i2c line at battery connector",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_14_Not_Charging_due_to_open_i2c_line_at_battery_connector",
+   "kind": "web",
+   "title": "How To Fix iPhone 14 Not Charging due to open i2c line at battery connector",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14058,
+   "last_edited_utc": "2026-02-22T02:49:33Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14",
+   "iPhone 14 Plus"
+  ],
+  "symptoms": [
+   "not charging",
+   "battery % stuck"
+  ],
+  "codes": [
+   "I2C2_SMC_CHARGER_BI_GG_SDA_1V8"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 14 that powers on but won't charge can have an open I2C2_SMC_CHARGER_BI_GG_SDA_1V8 line at the battery connector; it should read about 0.350 in diode mode, not OL.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix by tracing to a test point/via on the opposite side with the correct reading and running a fine jumper to the battery connector pin.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out cable, brick and dock flex.",
+   "Diode-check the SDA pin at the battery connector (~0.350).",
+   "Check continuity to its opposite-side pad.",
+   "Jumper from the good point to the pin; check for shorts."
+  ],
+  "measurements": [
+   {
+    "point": "I2C2_SMC_CHARGER_BI_GG_SDA_1V8 at battery connector",
+    "expect": "0.350",
+    "unit": "V",
+    "mode": "diode",
+    "context": "OL = open line"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "soldering iron",
+   "jumper wire",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery connector",
+   "gas gauge",
+   "i2c open line",
+   "iphone 14",
+   "jumper",
+   "not charging",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery connector I2C line",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "I2C2_SMC_CHARGER_BI_GG_SDA_1V8 at battery connector",
+    "mode": "diode",
+    "expect_lo": 0.35,
+    "expect_hi": 0.35,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone14",
+  "error_codes": [
+   "I2C2_SMC_CHARGER_BI_GG_SDA_1V8"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 14 Not Charging due to open i2c line at battery connector\", https://repair.wiki/w/How_To_Fix_iPhone_14_Not_Charging_due_to_open_i2c_line_at_battery_connector, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_14_Not_Charging_due_to_open_i2c_line_at_battery_connector",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

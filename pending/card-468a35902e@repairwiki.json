@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 11\" Fast battery drain (2% per minute) repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_11%22_Fast_battery_drain_(2%25_per_minute)_repair",
+   "kind": "web",
+   "title": "IPad Pro 11\" Fast battery drain (2% per minute) repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3301,
+   "last_edited_utc": "2024-02-04T13:58:25Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 11 1st Gen"
+  ],
+  "symptoms": [
+   "fast battery drain (about 2% per minute)"
+  ],
+  "codes": [
+   "U8500"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 11 (2018) draining about 2% per minute usually has power IC U8500 running hot; locate with thermal camera or freeze spray and replace.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Thermal-scan the board.",
+   "Replace U8500 if hot."
+  ],
+  "measurements": [],
+  "tools": [
+   "thermal camera",
+   "freeze spray",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery drain",
+   "ipad pro 11",
+   "repair.wiki",
+   "u8500"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "U8500",
+  "part_numbers": [
+   "U8500"
+  ],
+  "readings": [],
+  "device_family": "ipadpro111stgen",
+  "error_codes": [
+   "U8500"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 11\" Fast battery drain (2% per minute) repair\", https://repair.wiki/w/IPad_Pro_11%22_Fast_battery_drain_(2%25_per_minute)_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_11%22_Fast_battery_drain_(2%25_per_minute)_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

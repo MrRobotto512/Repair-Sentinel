@@ -1,0 +1,70 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Elite Controller Series 2 RB or LB is sometimes registering clicks fine, sometimes is held down or sometimes does not register clicks at all",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Elite_Controller_Series_2_RB_or_LB_is_sometimes_registering_clicks_fine,_sometimes_is_held_down_or_sometimes_does_not_register_clicks_at_all",
+   "kind": "web",
+   "title": "Xbox Elite Controller Series 2 RB or LB is sometimes registering clicks fine, sometimes is held down or sometimes does not register clicks at all",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2915,
+   "last_edited_utc": "2024-01-17T01:27:31Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Elite Wireless Controller Series 2"
+  ],
+  "symptoms": [
+   "RB/LB intermittent, stuck held or dead"
+  ],
+  "codes": [
+   "PCAL6416AHF"
+  ],
+  "claims": [
+   {
+    "statement": "Erratic RB/LB on Elite Series 2 (sometimes fine, sometimes stuck or dead) is usually the IO expander marked 'NXP L16A' (PCAL6416AHF) on the blue board, not the switches.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace PCAL6416AHF on the blue board."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bumper",
+   "io expander",
+   "pcal6416ahf",
+   "repair.wiki",
+   "xbox elite series 2"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "IO expander PCAL6416AHF",
+  "part_numbers": [
+   "PCAL6416AHF"
+  ],
+  "readings": [],
+  "device_family": "xboxelitewirelesscontrollerseries2",
+  "error_codes": [
+   "PCAL6416AHF"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Elite Controller Series 2 RB or LB is sometimes registering clicks fine, sometimes is held down or sometimes does not register clicks at all\", https://repair.wiki/w/Xbox_Elite_Controller_Series_2_RB_or_LB_is_sometimes_registering_clicks_fine,_sometimes_is_held_down_or_sometimes_does_not_register_clicks_at_all, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Elite_Controller_Series_2_RB_or_LB_is_sometimes_registering_clicks_fine,_sometimes_is_held_down_or_sometimes_does_not_register_clicks_at_all",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

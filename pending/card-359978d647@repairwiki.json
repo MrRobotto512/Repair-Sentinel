@@ -1,0 +1,121 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Wireless Controller for Xbox One",
+  "source": {
+   "url": "https://repair.wiki/w/Wireless_Controller_for_Xbox_One",
+   "kind": "web",
+   "title": "Wireless Controller for Xbox One",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2967,
+   "last_edited_utc": "2024-01-17T17:21:26Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox One / Series Wireless Controller"
+  ],
+  "symptoms": [
+   "model identification",
+   "PC connection"
+  ],
+  "codes": [
+   "1537",
+   "1697",
+   "1708",
+   "1914",
+   "045E:02D1",
+   "045E:02DD",
+   "045E:02EA",
+   "045E:0B12",
+   "045E:0B13"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox controller models: 1537 (launch, no 3.5 mm jack), 1697 (adds 3.5 mm jack and wireless firmware updates), 1708 (Xbox One S, adds Bluetooth), 1914 (Series X|S, USB-C, Share button).",
+    "evidence": "Controller variations.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "USB IDs: 1537 = 045E:02D1; 1697 = 045E:02DD; 1708 = 045E:02EA (USB), 02E0/02FD (BT), 0B20 (BLE); 1914 = 045E:0B12 (USB), 0B13 (BT). Wireless adapters 1713 = 045E:02E6, 1790 = 045E:02FE.",
+    "evidence": "Technical information.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Only Model 1708 and later have Bluetooth; firmware updates need the Xbox Accessories app on Windows or a console.",
+    "evidence": "Connections and firmware sections.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Play and Charge Kit battery is 1400 mAh at 3.0 V (4.2 Wh).",
+    "evidence": "Accessories section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Identify the model from the battery compartment label or USB ID."
+  ],
+  "measurements": [
+   {
+    "point": "Play & Charge battery",
+    "expect": "1400",
+    "unit": "mAh",
+    "mode": "capacity",
+    "context": "3.0 V"
+   }
+  ],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "hwid",
+   "model 1537",
+   "model 1697",
+   "model 1708",
+   "model 1914",
+   "repair.wiki",
+   "usb id",
+   "xbox controller",
+   "xbox one controller"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Play & Charge battery",
+    "mode": "capacity",
+    "expect_lo": 1400.0,
+    "expect_hi": 1400.0,
+    "unit": "mAh"
+   }
+  ],
+  "device_family": "xboxoneserieswirelesscontroller",
+  "error_codes": [
+   "1537",
+   "1697",
+   "1708",
+   "1914",
+   "045E:02D1",
+   "045E:02DD",
+   "045E:02EA",
+   "045E:0B12",
+   "045E:0B13"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Wireless Controller for Xbox One\", https://repair.wiki/w/Wireless_Controller_for_Xbox_One, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Wireless_Controller_for_Xbox_One",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,130 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 16 That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_16_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 16 That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13853,
+   "last_edited_utc": "2026-02-06T16:52:02Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16",
+   "iPhone 16 Plus"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes",
+   "stuck at 1% or 0%"
+  ],
+  "codes": [
+   "1572864",
+   "524288",
+   "2097152",
+   "169",
+   "3670016"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 16 / 16 Plus Sensor Array 1572864 or 524288 = charging port flex or the bottom mic / air pressure sensor module (often water damage; also check the Taptic Engine and FPC corrosion).",
+    "evidence": "Code mapping; the base iPhone 16 differs from the 16 Pro.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "2097152 = wireless charging flex on the back glass (its small IC is the important part).",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "169 = battery data line (usually stuck at 1% or showing 0% on charger): new battery, check connector, data line diode/voltage, replace U4000 and U4200 if needed.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "3670016 = charging port plus wireless flex, or sandwich/CPU separation; a test point on that line should read about 0.350 in diode mode, OL means separation.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the Sensor Array value.",
+   "1572864/524288: known-good charge flex; air pressure sensor connected; check Taptic and corrosion.",
+   "2097152: known-good back glass wireless flex.",
+   "169: battery, connector, data lines, U4000/U4200.",
+   "3670016: check both flexes, then diode-check the sandwich test point (~0.350, OL = separation)."
+  ],
+  "measurements": [
+   {
+    "point": "Sandwich line test point (3670016 case)",
+    "expect": "0.350",
+    "unit": "V",
+    "mode": "diode",
+    "context": "OL indicates sandwich or CPU separation"
+   }
+  ],
+  "tools": [
+   "known-good flexes",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "1572864",
+   "169",
+   "2097152",
+   "3670016",
+   "524288",
+   "air pressure sensor",
+   "iphone 16",
+   "iphone 16 plus",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "sensor array",
+   "u4000",
+   "u4200"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charge port flex / air sensor / wireless flex / battery data",
+  "part_numbers": [
+   "U4000",
+   "U4200"
+  ],
+  "readings": [
+   {
+    "point": "Sandwich line test point (3670016 case)",
+    "mode": "diode",
+    "expect_lo": 0.35,
+    "expect_hi": 0.35,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone16",
+  "error_codes": [
+   "1572864",
+   "524288",
+   "2097152",
+   "169",
+   "3670016"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 16 That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_16_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_16_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

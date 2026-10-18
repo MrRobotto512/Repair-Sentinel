@@ -1,0 +1,77 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 12 Stuck on the Apple Logo Error 4013 Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_12_Stuck_on_the_Apple_Logo_Error_4013_Repair",
+   "kind": "web",
+   "title": "IPhone 12 Stuck on the Apple Logo Error 4013 Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3072,
+   "last_edited_utc": "2024-01-19T22:23:02Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12",
+   "iPhone 12 mini",
+   "iPhone 12 Pro",
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "bootloop at Apple logo",
+   "green flash",
+   "restore fails at 19%"
+  ],
+  "codes": [
+   "4013"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 12 logo loops with error 4013 are almost always the earpiece flex (liquid on flood illuminator/ALS); unplug all flexes to confirm. Keep Face ID by cleaning or moving those parts.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug all flexes; test with known-good screen, battery, port.",
+   "Repair or replace the earpiece flex.",
+   "Exit recovery with 3uTools; update."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "3uTools"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "earpiece flex",
+   "error 4013",
+   "flood illuminator",
+   "iphone 12",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Earpiece flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone12",
+  "error_codes": [
+   "4013"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 12 Stuck on the Apple Logo Error 4013 Repair\", https://repair.wiki/w/IPhone_12_Stuck_on_the_Apple_Logo_Error_4013_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_12_Stuck_on_the_Apple_Logo_Error_4013_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

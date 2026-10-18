@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Single beep from power button every 30 seconds repair",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_Single_beep_from_power_button_every_30_seconds_repair",
+   "kind": "web",
+   "title": "PlayStation 5 Single beep from power button every 30 seconds repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6904,
+   "last_edited_utc": "2025-05-18T00:21:55Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "single beep every 30 seconds",
+   "no power"
+  ],
+  "codes": [
+   "F7002",
+   "F7502",
+   "F7003",
+   "TLV62090RGTR"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 beeping once every 30 s: check fuse F7002 and the TLV62090RGTR 5 V→3.3 V converter opposite it (it and its cap commonly fail), liquid metal spills around the APU, caps behind the Wi-Fi/BT module, and around fuses F7502 and F7003.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Continuity-test F7002, F7502.",
+   "Check TLV62090RGTR and its cap for shorts.",
+   "Inspect for liquid metal spills.",
+   "Check caps behind Wi-Fi/BT module and around F7003/F7502."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "beep every 30 seconds",
+   "f7002",
+   "f7003",
+   "f7502",
+   "liquid metal",
+   "ps5",
+   "repair.wiki",
+   "tlv62090"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "3.3 V converter / fuses",
+  "part_numbers": [
+   "TLV62090RGTR",
+   "F7002",
+   "F7502",
+   "F7003"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "F7002",
+   "F7502",
+   "F7003",
+   "TLV62090RGTR"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 Single beep from power button every 30 seconds repair\", https://repair.wiki/w/PlayStation_5_Single_beep_from_power_button_every_30_seconds_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_Single_beep_from_power_button_every_30_seconds_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,86 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone XS That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_XS_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone XS That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 687,
+   "last_edited_utc": "2023-11-05T17:00:03Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes",
+   "0% charging"
+  ],
+  "codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XS / XS Max Missing sensors TG0B/TG0V = battery path: check Q3200/Q3201 and the I2C0_SMC_TO_GG lines; Prs0 or Mic1 = charging port flex.",
+    "evidence": "Code mapping (same as iPhone X).",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read Missing sensors.",
+   "TG0B/TG0V: battery, Q3200/Q3201, gas gauge lines.",
+   "Prs0/Mic1: known-good charge port flex."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone xs",
+   "iphone xs max",
+   "mic1",
+   "panic log",
+   "prs0",
+   "random restart",
+   "repair.wiki",
+   "tg0b"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery / charge port flex",
+  "part_numbers": [
+   "Q3200",
+   "Q3201"
+  ],
+  "readings": [],
+  "device_family": "iphonexs",
+  "error_codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone XS That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_XS_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_XS_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

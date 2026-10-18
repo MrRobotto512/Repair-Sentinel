@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR with half backlight on display",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_with_half_backlight_on_display",
+   "kind": "web",
+   "title": "IPhone XR with half backlight on display",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7237,
+   "last_edited_utc": "2025-05-31T22:16:57Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "dark spot at bottom corner",
+   "half backlight"
+  ],
+  "codes": [
+   "U5650",
+   "U5660",
+   "LM3539A1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR has two backlight circuits; a dark bottom corner points to one of them.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With only the battery connected (phone off) the two backlight test points read about 4 V; with phone on and screen connected about 17 V and 25 V. No 4 V = input coil/diode; unchanged when on = IC not running; low (e.g. 7 V) = output coil.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Backlight ICs U5650/U5660 are LM3539A1.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new display.",
+   "Diode-check backlight lines.",
+   "Measure test points off (~4 V) and on (~17 V / ~25 V).",
+   "Replace coil, diode or LM3539A1 as indicated."
+  ],
+  "measurements": [
+   {
+    "point": "Backlight test points (phone off, battery only)",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Backlight boost outputs (phone on)",
+    "expect": "17-25",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "One point ~17 V, other ~25 V"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "ZXW"
+  ],
+  "cautions": [],
+  "tags": [
+   "half backlight",
+   "iphone xr",
+   "lm3539a1",
+   "repair.wiki",
+   "u5650",
+   "u5660"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [
+   "LM3539A1",
+   "U5650",
+   "U5660"
+  ],
+  "readings": [
+   {
+    "point": "Backlight test points (phone off, battery only)",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   },
+   {
+    "point": "Backlight boost outputs (phone on)",
+    "mode": "voltage",
+    "expect_lo": 17.0,
+    "expect_hi": 25.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "U5650",
+   "U5660",
+   "LM3539A1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR with half backlight on display\", https://repair.wiki/w/IPhone_XR_with_half_backlight_on_display, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_with_half_backlight_on_display",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

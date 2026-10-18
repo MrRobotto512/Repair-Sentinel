@@ -1,0 +1,178 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone Charging Circuit Diagnostics Guide",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_Charging_Circuit_Diagnostics_Guide",
+   "kind": "web",
+   "title": "IPhone Charging Circuit Diagnostics Guide",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13444,
+   "last_edited_utc": "2025-12-29T06:10:10Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 6–iPhone 14 (Lightning and USB-C)"
+  ],
+  "symptoms": [
+   "not charging",
+   "intermittent charging",
+   "charges only wirelessly"
+  ],
+  "codes": [
+   "PP_VAR_USB_RVP",
+   "PWR_GATE_EN_VBUS_1_VALID",
+   "CHG_BOOT"
+  ],
+  "claims": [
+   {
+    "statement": "Expected input: PP_5V0_USB and PP_TRISTAR_PIN at 5 V on Tristar models; PP_VBUS1_E75 at 5 V on Hydra (up to iPhone 11) and Kraken (iPhone 12–14) models.",
+    "evidence": "Supported models section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The charging IC doesn't validate the cable; the USB controller does. If it can't, cable charging fails but wireless still works, pointing at the USB controller/RVP path.",
+    "evidence": "USB verification logic.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The 10 Ω resistor on PP_VAR_USB_RVP (iPhone 8/X and 13/14) should show ~5 V on both pads; one side only = open resistor or downstream fault.",
+    "evidence": "Step 4.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PWR_GATE_EN_VBUS_1_VALID at 3.7–5 V (any voltage above 0) means the USB IC is working; 0 V means it's faulty or unpowered.",
+    "evidence": "Step 5.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "USB IC part numbers: NXP 1610A2 (iPhone 6/6 Plus), 1610A3 (6s/6s Plus/SE 1st gen), 1610A3B (7/7 Plus), 1612A1 (8/8 Plus/X/XR/XS/XS Max), 1614A1 (12 series), 1616A0 (13 series), 1618A0 (14 series).",
+    "evidence": "Compatibility table.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check 5 V at the cap before the charging IC.",
+   "If missing, check PP_VAR_USB_RVP and its 10 Ω resistor (5 V both sides).",
+   "Measure PWR_GATE_EN_VBUS_1_VALID (>0 V = USB IC OK).",
+   "Compare wired vs wireless charging.",
+   "If 5 V present but no charge, check charging IC output (~3.7 V) and CHG_BOOT cap."
+  ],
+  "measurements": [
+   {
+    "point": "PP_5V0_USB / PP_TRISTAR_PIN / PP_VBUS1_E75",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Charger connected"
+   },
+   {
+    "point": "RVP 10 Ω resistor",
+    "expect": "10",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "~5 V on both pads"
+   },
+   {
+    "point": "PWR_GATE_EN_VBUS_1_VALID",
+    "expect": "3.7-5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "USB IC working"
+   },
+   {
+    "point": "Charging IC output",
+    "expect": "3.7",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Buck from 5 V"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "USB meter",
+   "wireless charger"
+  ],
+  "cautions": [],
+  "tags": [
+   "1610a3b",
+   "1612a1",
+   "1614a1",
+   "1616a0",
+   "1618a0",
+   "hydra",
+   "iphone",
+   "kraken",
+   "not charging",
+   "repair.wiki",
+   "rvp",
+   "tristar",
+   "wireless charging"
+  ],
+  "confidence": "medium",
+  "caveats": "The table's placement of iPhone 11 / SE 2020 is garbled on the source (listed under 1610A3B, but images group them with the 1612A1 models); verify by boardview. CHG_BOOT diode values on the source ('~9 V'/'~4 V') look like voltages and are not carried into readings. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "USB controller / charge path",
+  "part_numbers": [
+   "1610A2",
+   "1610A3",
+   "1610A3B",
+   "1612A1",
+   "1614A1",
+   "1616A0",
+   "1618A0"
+  ],
+  "readings": [
+   {
+    "point": "PP_5V0_USB / PP_TRISTAR_PIN / PP_VBUS1_E75",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "RVP 10 Ω resistor",
+    "mode": "resistance",
+    "expect_lo": 10.0,
+    "expect_hi": 10.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "PWR_GATE_EN_VBUS_1_VALID",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Charging IC output",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 3.7,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone6iphone14",
+  "error_codes": [
+   "PP_VAR_USB_RVP",
+   "PWR_GATE_EN_VBUS_1_VALID",
+   "CHG_BOOT"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone Charging Circuit Diagnostics Guide\", https://repair.wiki/w/IPhone_Charging_Circuit_Diagnostics_Guide, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_Charging_Circuit_Diagnostics_Guide",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 8 With Error 9. Bootlooping At Apple Logo",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_8_With_Error_9._Bootlooping_At_Apple_Logo",
+   "kind": "web",
+   "title": "How To Fix iPhone 8 With Error 9. Bootlooping At Apple Logo",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3297,
+   "last_edited_utc": "2024-02-04T13:49:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "bootloop",
+   "flashing Apple logo",
+   "restore fails"
+  ],
+  "codes": [
+   "9"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 8 bootlooping where 3uTools Easy Flash fails at 19–20% and iTunes flash gives error 9 needs a NAND replacement.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "NANDs from iPhone X, XS, XS Max, 11, 11 Pro, 11 Pro Max and SE 2020 are interchangeable with iPhone 8 / 8 Plus.",
+    "evidence": "Compatible NANDs.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The original serial number, Wi-Fi MAC and Bluetooth MAC must be written to the new NAND or it will not activate; region and colour should also be set.",
+    "evidence": "NAND programming.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Without the original data, JC P13 'Query Code' after a failed activation can recover SN/Wi-Fi/BT, or a GSX report.",
+    "evidence": "Missing data section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm failure at 19–20% / error 9.",
+   "Read SN, Wi-Fi and BT MACs from the original NAND.",
+   "Program a compatible NAND (JC P13 or iRepair P10).",
+   "Install and restore; if data was missing, use Query Code then reprogram."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC P13",
+   "iRepair P10",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "error 9",
+   "iphone 8",
+   "nand replacement",
+   "query code",
+   "repair.wiki",
+   "syscfg"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone8",
+  "error_codes": [
+   "9"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 8 With Error 9. Bootlooping At Apple Logo\", https://repair.wiki/w/How_To_Fix_iPhone_8_With_Error_9._Bootlooping_At_Apple_Logo, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_8_With_Error_9._Bootlooping_At_Apple_Logo",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,125 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo DS Lite not turning on",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_DS_Lite_not_turning_on",
+   "kind": "web",
+   "title": "Nintendo DS Lite not turning on",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2183,
+   "last_edited_utc": "2024-01-13T14:18:58Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo DS Lite"
+  ],
+  "symptoms": [
+   "won't turn on",
+   "no power LED"
+  ],
+  "codes": [
+   "SW13",
+   "F1",
+   "F2",
+   "EM10"
+  ],
+  "claims": [
+   {
+    "statement": "DS Lite: charges but won't turn on with green flash = check screen ribbons and Wi-Fi module (startup test fails without them), fuse F2, Wi-Fi module.",
+    "evidence": "Diagnostic table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Doesn't charge or turn on = check fuses F1 and F2, filter EM10 by the charge port, and the power connector.",
+    "evidence": "Diagnostic table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Power switch SW13: pins 2–3 shorted at rest; pin 1 shorts to 2/3 when pressed.",
+    "evidence": "Power switch check.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replace fuses with proper 0603 fuses (about 0.5 A, unverified), not wire.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with a known-good battery.",
+   "Check SW13 continuity.",
+   "Check ribbons and Wi-Fi module seating.",
+   "Check F1, F2, EM10 and the power connector.",
+   "Replace failed parts."
+  ],
+  "measurements": [
+   {
+    "point": "Fuse F1/F2 rating",
+    "expect": "0.5",
+    "unit": "A",
+    "mode": "current",
+    "context": "0603, unverified"
+   }
+  ],
+  "tools": [
+   "tri-wing screwdriver",
+   "multimeter",
+   "soldering iron"
+  ],
+  "cautions": [
+   "SOURCE RISK: Bridging a fuse with wire can cause more damage."
+  ],
+  "tags": [
+   "em10",
+   "f1",
+   "f2",
+   "nintendo ds lite",
+   "no power",
+   "repair.wiki",
+   "sw13",
+   "wifi module"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power path",
+  "part_numbers": [
+   "SW13",
+   "F1",
+   "F2",
+   "EM10"
+  ],
+  "readings": [
+   {
+    "point": "Fuse F1/F2 rating",
+    "mode": "current",
+    "expect_lo": 0.5,
+    "expect_hi": 0.5,
+    "unit": "A"
+   }
+  ],
+  "device_family": "nintendodslite",
+  "error_codes": [
+   "SW13",
+   "F1",
+   "F2",
+   "EM10"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo DS Lite not turning on\", https://repair.wiki/w/Nintendo_DS_Lite_not_turning_on, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_DS_Lite_not_turning_on",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

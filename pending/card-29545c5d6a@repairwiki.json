@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 16 Pro / Pro Max – No Touch Fix",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_16_Pro_/_Pro_Max_%E2%80%93_No_Touch_Fix",
+   "kind": "web",
+   "title": "IPhone 16 Pro / Pro Max – No Touch Fix",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10207,
+   "last_edited_utc": "2025-08-14T06:45:09Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "no touch",
+   "display works"
+  ],
+  "codes": [
+   "IO_AP_TOUCH_BSYNC1",
+   "J11800",
+   "C11727"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 16 Pro / Pro Max no touch can be IO_AP_TOUCH_BSYNC1 at display connector J11800 reading OL (open) or near 0 (shorted inside the CPU).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix in both cases is a jumper from IO_AOP_TO_ALS_BSYNC2_CONN on the front prox connector J11100 to the display side of the line (isolating the shorted pad if shorted).",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check IO_AP_TOUCH_BSYNC1 at J11800.",
+   "If OL: jumper from IO_AOP_TO_ALS_BSYNC2_CONN (J11100) to the filter pad output.",
+   "If shorted: isolate the J11800 pad, jumper from J11100 to J11800."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "jumper wire",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "bsync",
+   "io_ap_touch_bsync1",
+   "iphone 16 pro",
+   "j11100",
+   "j11800",
+   "jumper",
+   "no touch",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Source labels the prox connector as both C11147 and J11100. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch BSYNC line",
+  "part_numbers": [
+   "J11800",
+   "J11100",
+   "C11727"
+  ],
+  "readings": [],
+  "device_family": "iphone16pro",
+  "error_codes": [
+   "IO_AP_TOUCH_BSYNC1",
+   "J11800",
+   "C11727"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 16 Pro / Pro Max – No Touch Fix\", https://repair.wiki/w/IPhone_16_Pro_/_Pro_Max_%E2%80%93_No_Touch_Fix, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_16_Pro_/_Pro_Max_%E2%80%93_No_Touch_Fix",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

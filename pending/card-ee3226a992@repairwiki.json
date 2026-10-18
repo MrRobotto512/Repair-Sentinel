@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 8 Plus with Grayed Out WiFi",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_8_Plus_with_Grayed_Out_WiFi",
+   "kind": "web",
+   "title": "How To Fix iPhone 8 Plus with Grayed Out WiFi",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3295,
+   "last_edited_utc": "2024-02-04T10:24:35Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8 Plus",
+   "iPhone 8"
+  ],
+  "symptoms": [
+   "Wi-Fi greyed out"
+  ],
+  "codes": [
+   "WLAN_W"
+  ],
+  "claims": [
+   {
+    "statement": "A greyed-out Wi-Fi toggle is a board fault, not an antenna fault; on iPhone 8 Plus it's usually ripped corner pads under the WLAN_W chip, fixed by jumpering pins 19, 20, 22 and 23 to their traces and reballing the original IC.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If the Wi-Fi IC itself is damaged it can be replaced, but it must be unpaired via the NAND, e.g. iRepair P10 in Purple Mode over USB.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove the WLAN_W IC and inspect corner pads.",
+   "Jumper pins 19, 20, 22, 23; UV mask.",
+   "Reball and refit the original IC (or replace and unbind with iRepair P10)."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "jumper wire",
+   "iRepair P10"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 8 plus",
+   "purple mode",
+   "repair.wiki",
+   "ripped pads",
+   "wifi greyed out",
+   "wlan_w"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi IC WLAN_W",
+  "part_numbers": [
+   "WLAN_W"
+  ],
+  "readings": [],
+  "device_family": "iphone8plus",
+  "error_codes": [
+   "WLAN_W"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 8 Plus with Grayed Out WiFi\", https://repair.wiki/w/How_To_Fix_iPhone_8_Plus_with_Grayed_Out_WiFi, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_8_Plus_with_Grayed_Out_WiFi",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

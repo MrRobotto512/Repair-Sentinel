@@ -1,0 +1,70 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR freezes at the last digit of the pin code",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_freezes_at_the_last_digit_of_the_pin_code",
+   "kind": "web",
+   "title": "IPhone XR freezes at the last digit of the pin code",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6700,
+   "last_edited_utc": "2025-05-14T18:23:58Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "freezes at last passcode digit then restarts"
+  ],
+  "codes": [
+   "U_NFC_S"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR freezing at the last passcode digit usually has a hairline-cracked NFC chip U_NFC_S above the CPU; after replacing it the phone goes through a 'swipe to recover' / Attempting Data Recovery step (10–20 min).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect/replace U_NFC_S.",
+   "Let the data recovery screen complete."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "freeze on passcode",
+   "iphone xr",
+   "nfc",
+   "repair.wiki",
+   "u_nfc_s"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NFC IC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "U_NFC_S"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR freezes at the last digit of the pin code\", https://repair.wiki/w/IPhone_XR_freezes_at_the_last_digit_of_the_pin_code, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_freezes_at_the_last_digit_of_the_pin_code",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

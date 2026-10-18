@@ -1,0 +1,125 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Lite No Backlight",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Lite_No_Backlight",
+   "kind": "web",
+   "title": "Nintendo Switch Lite No Backlight",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10625,
+   "last_edited_utc": "2025-08-24T14:14:08Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch Lite"
+  ],
+  "symptoms": [
+   "no backlight"
+  ],
+  "codes": [
+   "TPS61163"
+  ],
+  "claims": [
+   {
+    "statement": "Switch Lite backlight: test display, sub-board and its flex first; then check test points for shorts and voltages (display plugged in, console on): 3.6 V VIN, 1.8 V enable from the APU, about 17 V output.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If 3.6 V and 1.8 V are present but no 17 V, replace backlight controller TPS61163.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try new display, sub-board and flex.",
+   "Inspect sub-board flex connector.",
+   "Check test points for shorts.",
+   "Measure 3.6 V VIN, 1.8 V EN, 17 V out.",
+   "Replace TPS61163 (protect FPC with Kapton)."
+  ],
+  "measurements": [
+   {
+    "point": "Backlight controller VIN",
+    "expect": "3.6",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Console on"
+   },
+   {
+    "point": "Backlight enable (from APU)",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Backlight output",
+    "expect": "17",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Working circuit"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "Kapton tape"
+  ],
+  "cautions": [],
+  "tags": [
+   "nintendo switch lite",
+   "no backlight",
+   "repair.wiki",
+   "tps61163"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight controller TPS61163",
+  "part_numbers": [
+   "TPS61163"
+  ],
+  "readings": [
+   {
+    "point": "Backlight controller VIN",
+    "mode": "voltage",
+    "expect_lo": 3.6,
+    "expect_hi": 3.6,
+    "unit": "V"
+   },
+   {
+    "point": "Backlight enable (from APU)",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "Backlight output",
+    "mode": "voltage",
+    "expect_lo": 17.0,
+    "expect_hi": 17.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitchlite",
+  "error_codes": [
+   "TPS61163"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Lite No Backlight\", https://repair.wiki/w/Nintendo_Switch_Lite_No_Backlight, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Lite_No_Backlight",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

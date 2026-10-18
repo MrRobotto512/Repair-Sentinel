@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A127(exynos) Earpiece and Mic Not Working",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A127(exynos)_Earpiece_and_Mic_Not_Working",
+   "kind": "web",
+   "title": "Galaxy A127(exynos) Earpiece and Mic Not Working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7890,
+   "last_edited_utc": "2025-06-22T12:38:48Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A12 (A127, Exynos)"
+  ],
+  "symptoms": [
+   "no earpiece",
+   "no microphone in calls"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Earpiece and main mic dead on Galaxy A127 after heavy drop or bending near the shield can be broken inner-layer traces between CPU and PMIC under the shield, even when FPC and earpiece diode readings are normal.",
+    "evidence": "Diagnostic notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Signs are a dent at the shield, torn ground pad, and bubbling/delamination when the outer ground layer is scraped.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect the shield area for impact damage and torn ground pad.",
+   "Scrape the outer ground layer; look for delamination.",
+   "Expose and pretin the second-layer audio traces to the PMIC.",
+   "Rebuild with fine jumper wire; clean; UV mask."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "0.007 mm jumper wire",
+   "UV mask"
+  ],
+  "cautions": [],
+  "tags": [
+   "a127",
+   "earpiece",
+   "exynos",
+   "galaxy a12",
+   "microphone",
+   "no audio",
+   "repair.wiki",
+   "trace repair"
+  ],
+  "confidence": "medium",
+  "caveats": "Specialist-level inner layer repair. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Audio traces",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxya12",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A127(exynos) Earpiece and Mic Not Working\", https://repair.wiki/w/Galaxy_A127(exynos)_Earpiece_and_Mic_Not_Working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A127(exynos)_Earpiece_and_Mic_Not_Working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

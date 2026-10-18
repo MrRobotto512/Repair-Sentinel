@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS with no touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_with_no_touch",
+   "kind": "web",
+   "title": "IPhone XS with no touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7444,
+   "last_edited_utc": "2025-06-07T17:15:48Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "U5600",
+   "LM3373A2YKA"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XS no touch is most commonly a top/bottom board disconnection; an OL at the touch FPC may instead be a nearby filter, so trace first.",
+    "evidence": "Solution and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Touch supplies: PP5V25_TOUCH_VDDH_CONN, PP3V5_RACER_CONN, PP1V1_RACER_CONN, PP1V8_TOUCH_RACER_CONN, PP10V0_RACER_CONN; missing ones mean U5600 (LM3373A2YKA).",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a known-good screen; inspect the touch connector.",
+   "Diode-check FPC; trace OL lines through filters.",
+   "Split; check ripped pads; iSocket test; reball bottom board.",
+   "Replace U5600 if supplies missing."
+  ],
+  "measurements": [],
+  "tools": [
+   "iSocket",
+   "ZXW",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone xs",
+   "no touch",
+   "racer",
+   "repair.wiki",
+   "sandwich",
+   "u5600"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Sandwich / U5600",
+  "part_numbers": [
+   "U5600",
+   "LM3373A2YKA"
+  ],
+  "readings": [],
+  "device_family": "iphonexs",
+  "error_codes": [
+   "U5600",
+   "LM3373A2YKA"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS with no touch\", https://repair.wiki/w/IPhone_XS_with_no_touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_with_no_touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

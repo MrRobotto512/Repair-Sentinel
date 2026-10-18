@@ -1,0 +1,110 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 14 That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_14_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 14 That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13784,
+   "last_edited_utc": "2026-01-27T00:13:46Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14",
+   "iPhone 14 Plus"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "0x400000",
+   "0x100000",
+   "0x500000",
+   "0x200000",
+   "0x600000",
+   "0x20000"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 14 / 14 Plus SMC panic Sensor Array: 0x400000 (4194304) = wireless charging flex on the back glass; 0x100000 (1048576) = charging port flex; 0x200000 (2097152) = proximity flex; 0x600000 = wireless charging + prox.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "0x500000 (5242880) is listed as battery communication (restart about every 3.5 min) or as Taptic Engine plus charge port flex.",
+    "evidence": "Code mapping lists both.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "0x20000 (131072) = logic board interposer disconnection; inspect board edges for layer gaps.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Codes are hex bit flags and can combine into values not listed.",
+    "evidence": "Guide note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the Sensor Array value; split it into flags.",
+   "Test each flagged flex with a known-good OEM part; diode-check FPCs.",
+   "For 0x500000 test a known-good battery and the Taptic/charge port flex.",
+   "For 0x20000 inspect and repair the interposer."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "0x100000",
+   "0x200000",
+   "0x400000",
+   "0x500000",
+   "interposer",
+   "iphone 14",
+   "iphone 14 plus",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "sensor array",
+   "wireless charging flex"
+  ],
+  "confidence": "medium",
+  "caveats": "0x500000 has two different explanations on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Back glass / charge port / prox flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone14",
+  "error_codes": [
+   "0x400000",
+   "0x100000",
+   "0x500000",
+   "0x200000",
+   "0x600000",
+   "0x20000"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 14 That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_14_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_14_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

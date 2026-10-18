@@ -1,0 +1,110 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Not Charging Battery Always Reporting 1 Percent Charge",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Not_Charging_Battery_Always_Reporting_1_Percent_Charge",
+   "kind": "web",
+   "title": "IPad Not Charging Battery Always Reporting 1 Percent Charge",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9848,
+   "last_edited_utc": "2025-08-03T20:35:15Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad (most models)"
+  ],
+  "symptoms": [
+   "stuck at 1%",
+   "not charging",
+   "random restarts"
+  ],
+  "codes": [
+   "TG0B",
+   "TG0V"
+  ],
+  "claims": [
+   {
+    "statement": "iPads stuck at 1%, not charging and restarting (TG0B/TG0V in panic logs) usually have a battery fault or poor battery-to-board connection.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A missing or wrong-length battery connector screw causes it; most iPads use a 1.8–2.3 mm Phillips screw; overtightening can lift the FPC side pins.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The battery FPC on the board is often damaged by tools pushed in to disconnect the battery; it is shared across groups: iPad Air/Air 2/iPad 5–9; iPad Air 3/Air 4/Pro 10.5/Pro 11 1st–3rd/Pro 12.9 1st, 3rd–6th (5-pin); Pro 9.7/Pro 12.9 2nd.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check panic logs for TG0B/TG0V.",
+   "Check the battery connector screw.",
+   "Inspect and probe the battery FPC.",
+   "Try a new battery.",
+   "Replace the FPC (low-melt solder, clean holes)."
+  ],
+  "measurements": [
+   {
+    "point": "Battery connector screw length",
+    "expect": "1.8-2.3",
+    "unit": "mm",
+    "mode": "length",
+    "context": "Phillips"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "soldering iron",
+   "low melt solder"
+  ],
+  "cautions": [
+   "SOURCE RISK: Overtightening the battery screw can bend the FPC and lift pins."
+  ],
+  "tags": [
+   "battery fpc",
+   "battery screw",
+   "ipad",
+   "not charging",
+   "repair.wiki",
+   "stuck at 1%",
+   "tg0b"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery connector",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Battery connector screw length",
+    "mode": "length",
+    "expect_lo": 1.8,
+    "expect_hi": 2.3,
+    "unit": "mm"
+   }
+  ],
+  "device_family": "ipad",
+  "error_codes": [
+   "TG0B",
+   "TG0V"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Not Charging Battery Always Reporting 1 Percent Charge\", https://repair.wiki/w/IPad_Not_Charging_Battery_Always_Reporting_1_Percent_Charge, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Not_Charging_Battery_Always_Reporting_1_Percent_Charge",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

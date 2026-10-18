@@ -1,0 +1,131 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Poco X3 Pro Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/Poco_X3_Pro_Not_Charging",
+   "kind": "web",
+   "title": "Poco X3 Pro Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8945,
+   "last_edited_utc": "2025-07-22T06:00:30Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Poco X3 Pro"
+  ],
+  "symptoms": [
+   "not charging",
+   "slow charging"
+  ],
+  "codes": [
+   "VBUS",
+   "OVP",
+   "VPH_OUT"
+  ],
+  "claims": [
+   {
+    "statement": "Poco X3 Pro charging: check 5 V VBUS arrives on the main board from the sub board (jumper if missing), then 5 V at OVP_IN and OVP_OUT (jumper across a burnt OVP), then VPH_OUT from the charging IC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The charging bootcap (not grounded) should show about 7–9 V on one side and 3–4 V on the VPH side; the same voltage on both sides means a faulty charging IC; a shorted/missing bootcap gives fake charging.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a known-good OEM battery for slow charging.",
+   "Check VBUS on main board.",
+   "Check OVP_IN/OVP_OUT.",
+   "Check VPH_OUT and shorts near charging IC.",
+   "Check bootcap voltages; replace charging IC."
+  ],
+  "measurements": [
+   {
+    "point": "VBUS / OVP in/out",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Bootcap high side",
+    "expect": "7-9",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Bootcap VPH side",
+    "expect": "3-4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "jumper wire",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootcap",
+   "charging ic",
+   "not charging",
+   "ovp",
+   "poco x3 pro",
+   "repair.wiki",
+   "vbus"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charging path",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "VBUS / OVP in/out",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bootcap high side",
+    "mode": "voltage",
+    "expect_lo": 7.0,
+    "expect_hi": 9.0,
+    "unit": "V"
+   },
+   {
+    "point": "Bootcap VPH side",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "pocox3pro",
+  "error_codes": [
+   "VBUS",
+   "OVP",
+   "VPH_OUT"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Poco X3 Pro Not Charging\", https://repair.wiki/w/Poco_X3_Pro_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Poco_X3_Pro_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

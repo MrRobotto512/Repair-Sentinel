@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix an iPad that will charge when powered off but not when powered on",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_an_iPad_that_will_charge_when_powered_off_but_not_when_powered_on",
+   "kind": "web",
+   "title": "How to fix an iPad that will charge when powered off but not when powered on",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2987,
+   "last_edited_utc": "2024-01-17T21:33:59Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air",
+   "iPad Air 2",
+   "iPad mini",
+   "iPad mini 2",
+   "iPad mini 3",
+   "iPad mini 4"
+  ],
+  "symptoms": [
+   "charges only when powered off",
+   "stops charging when booted",
+   "auto-boots on battery connect"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "These iPads can draw about 2.3 A on the charger while off, then drop to 0 A once booted; replugging also shows 0 A.",
+    "evidence": "Symptoms.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "This is almost always a faulty PMIC, and replacing it fixes most cases.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm the charge draw pattern on a USB meter (off vs booted).",
+   "Replace the PMIC."
+  ],
+  "measurements": [
+   {
+    "point": "Charge draw while powered off",
+    "expect": "2.3",
+    "unit": "A",
+    "mode": "current",
+    "context": "Drops to 0 A when booted"
+   }
+  ],
+  "tools": [
+   "USB power meter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad air",
+   "ipad mini",
+   "not charging when on",
+   "pmic",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PMIC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Charge draw while powered off",
+    "mode": "current",
+    "expect_lo": 2.3,
+    "expect_hi": 2.3,
+    "unit": "A"
+   }
+  ],
+  "device_family": "ipadair",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix an iPad that will charge when powered off but not when powered on\", https://repair.wiki/w/How_to_fix_an_iPad_that_will_charge_when_powered_off_but_not_when_powered_on, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_an_iPad_that_will_charge_when_powered_off_but_not_when_powered_on",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

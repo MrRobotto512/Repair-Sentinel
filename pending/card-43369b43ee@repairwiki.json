@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 4 Pulsing Blue Light of Death",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_4_Pulsing_Blue_Light_of_Death",
+   "kind": "web",
+   "title": "Playstation 4 Pulsing Blue Light of Death",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2523,
+   "last_edited_utc": "2024-01-14T15:47:59Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4",
+   "PlayStation 4 Slim",
+   "PlayStation 4 Pro"
+  ],
+  "symptoms": [
+   "pulsing blue light",
+   "stays on"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "PS4 pulsing BLOD causes: a bad hard drive (try booting to Safe Mode with it removed), failed APU solder balls (pressing on the back of the APU makes it boot—reflow/reball), or faulty RAM chips running hot.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Otherwise use UART fault finding.",
+    "evidence": "Other faults.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove the HDD and try Safe Mode.",
+   "Press on the APU area while powering on.",
+   "Thermal-check RAM chips.",
+   "Use UART for remaining cases."
+  ],
+  "measurements": [],
+  "tools": [
+   "thermal camera",
+   "BGA rework station"
+  ],
+  "cautions": [],
+  "tags": [
+   "apu",
+   "blod",
+   "hdd",
+   "ps4",
+   "pulsing blue",
+   "ram",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "HDD / APU / RAM",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 4 Pulsing Blue Light of Death\", https://repair.wiki/w/Playstation_4_Pulsing_Blue_Light_of_Death, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_4_Pulsing_Blue_Light_of_Death",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

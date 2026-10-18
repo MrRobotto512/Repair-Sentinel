@@ -1,0 +1,122 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Diagnosing iPhone “No IMEI / No Service” via RFFE Bus Analysis with ESP32",
+  "source": {
+   "url": "https://repair.wiki/w/Diagnosing_iPhone_%E2%80%9CNo_IMEI_/_No_Service%E2%80%9D_via_RFFE_Bus_Analysis_with_ESP32",
+   "kind": "web",
+   "title": "Diagnosing iPhone “No IMEI / No Service” via RFFE Bus Analysis with ESP32",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10228,
+   "last_edited_utc": "2025-08-16T01:08:37Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X",
+   "iPhone XS",
+   "iPhone XS Max",
+   "iPhone 11",
+   "iPhone 11 Pro",
+   "iPhone 11 Pro Max",
+   "iPhone 12",
+   "iPhone 12 mini",
+   "iPhone 12 Pro",
+   "iPhone 12 Pro Max",
+   "iPhone 13",
+   "iPhone 13 mini",
+   "iPhone 13 Pro",
+   "iPhone 13 Pro Max",
+   "iPhone 14",
+   "iPhone 14 Plus",
+   "iPhone 14 Pro",
+   "iPhone 14 Pro Max",
+   "iPhone 15",
+   "iPhone 15 Plus",
+   "iPhone 15 Pro",
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "no IMEI",
+   "no service",
+   "baseband not working"
+  ],
+  "codes": [
+   "*#06#"
+  ],
+  "claims": [
+   {
+    "statement": "A phone that boots normally but shows no IMEI on *#06# and no service, even after a clean restore, can be caused by an RF power amplifier not answering on the RFFE bus rather than by the baseband CPU or BBPMU.",
+    "evidence": "Guide describes RFFE scanning with an ESP32.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "An ESP32 flashed with an RFFE scanner can be wired to a bus (D22=SCL, D21=SDA, GND, 3V3 pin to the board's 1.8 V line) to list which PA addresses respond (1) or not (0).",
+    "evidence": "Example output marks address 0x3 as not responding.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPhone 12 / 12 Pro has 8 separate RFFE buses, so each bus must be scanned in turn.",
+    "evidence": "Test point maps per model are required.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A non-responding PA is usually a faulty PA module; sometimes the break is in the interposer (sandwich) signal path.",
+    "evidence": "Continuity test CPU to interposer to PA.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm no service with a known-good SIM and no IMEI on *#06#; restore to rule out software.",
+   "Inspect for prior interposer work, liquid near the RF section and PA modules.",
+   "Flash the ESP32 with the RFFE scanner firmware.",
+   "Solder SDA, SCL, 1.8 V and GND to the RFFE test points for one bus.",
+   "Scan; note any address returning 0; repeat for every bus.",
+   "Replace the non-responding PA or repair the interposer path; check continuity."
+  ],
+  "measurements": [],
+  "tools": [
+   "ESP32 dev board",
+   "RFFE scanner software",
+   "microscope",
+   "soldering iron",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband",
+   "esp32",
+   "interposer",
+   "iphone",
+   "no imei",
+   "no service",
+   "power amplifier",
+   "repair.wiki",
+   "rffe"
+  ],
+  "confidence": "medium",
+  "caveats": "Requires model-specific RFFE test point maps; downloads referenced by the guide are third-party. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "RF power amplifier",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonex",
+  "error_codes": [
+   "*#06#"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Diagnosing iPhone “No IMEI / No Service” via RFFE Bus Analysis with ESP32\", https://repair.wiki/w/Diagnosing_iPhone_%E2%80%9CNo_IMEI_/_No_Service%E2%80%9D_via_RFFE_Bus_Analysis_with_ESP32, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Diagnosing_iPhone_%E2%80%9CNo_IMEI_/_No_Service%E2%80%9D_via_RFFE_Bus_Analysis_with_ESP32",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

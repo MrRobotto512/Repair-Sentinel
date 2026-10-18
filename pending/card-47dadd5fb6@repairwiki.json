@@ -1,0 +1,92 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 7 With A Home Button That Will Rapid Click When You Press It",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_7_With_A_Home_Button_That_Will_Rapid_Click_When_You_Press_It",
+   "kind": "web",
+   "title": "How To Fix iPhone 7 With A Home Button That Will Rapid Click When You Press It",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3363,
+   "last_edited_utc": "2024-02-09T12:44:38Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus",
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "home button rapid clicking"
+  ],
+  "codes": [
+   "U10"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7/8 home buttons are paired; a rapid 'machine gun' click is usually a torn screen-side home button flex, a cracked fold-over flex in the button, or a chipped Turtle IC U10.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Turtle IC U10 on the button flex is not paired and can be replaced; cracked traces can be jumpered (ZXW 'Phone7P_Touch').",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Liquid corrosion inside the metal button shell is not practical to fix.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect the screen's home button flex for tears.",
+   "Test the button on another screen.",
+   "Inspect the button flex and fold-over flex; jumper broken traces.",
+   "Inspect/replace Turtle IC U10."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "jumper wire",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "home button",
+   "iphone 7",
+   "iphone 8",
+   "rapid click",
+   "repair.wiki",
+   "turtle ic",
+   "u10"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Home button flex",
+  "part_numbers": [
+   "U10"
+  ],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [
+   "U10"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 7 With A Home Button That Will Rapid Click When You Press It\", https://repair.wiki/w/How_To_Fix_iPhone_7_With_A_Home_Button_That_Will_Rapid_Click_When_You_Press_It, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_7_With_A_Home_Button_That_Will_Rapid_Click_When_You_Press_It",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

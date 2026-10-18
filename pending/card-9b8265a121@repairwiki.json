@@ -1,0 +1,78 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 9 No Backlight (LCD Problem)",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_9_No_Backlight_(LCD_Problem)",
+   "kind": "web",
+   "title": "IPad 9 No Backlight (LCD Problem)",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8881,
+   "last_edited_utc": "2025-07-20T20:47:30Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 9"
+  ],
+  "symptoms": [
+   "no backlight (LCD fault)"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The iPad 9 LCD has a known defect where its backlight cable tears inside the panel; it can be repaired by cutting a small access hole, scraping to expose the copper traces and jumpering them.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Use minimal flux—it can seep into the LCD and stain it.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove the sticker and metal plate.",
+   "Cut a small hole with a precision dremel (slowly, shallow).",
+   "Scrape to expose traces; jumper the break.",
+   "Cover with Kapton; test."
+  ],
+  "measurements": [],
+  "tools": [
+   "precision dremel",
+   "hobby blade",
+   "jumper wire",
+   "Kapton tape"
+  ],
+  "cautions": [
+   "SOURCE RISK: Cutting too deep damages the LCD; excess flux stains it."
+  ],
+  "tags": [
+   "backlight cable",
+   "ipad 9",
+   "lcd",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "LCD backlight cable",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipad9",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 9 No Backlight (LCD Problem)\", https://repair.wiki/w/IPad_9_No_Backlight_(LCD_Problem), CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_9_No_Backlight_(LCD_Problem)",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

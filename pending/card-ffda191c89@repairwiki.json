@@ -1,0 +1,68 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Wireless Controller \"We can't sign you in right now. Try again later.\" error when signing into Xbox/Xbox Accessories App Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Wireless_Controller_%22We_can%27t_sign_you_in_right_now._Try_again_later.%22_error_when_signing_into_Xbox/Xbox_Accessories_App_Repair",
+   "kind": "web",
+   "title": "Xbox Wireless Controller \"We can't sign you in right now. Try again later.\" error when signing into Xbox/Xbox Accessories App Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2974,
+   "last_edited_utc": "2024-01-17T17:57:17Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox controllers (all)"
+  ],
+  "symptoms": [
+   "'We can't sign you in right now' in Xbox Accessories app"
+  ],
+  "codes": [
+   "9WZDNCRD1HKW"
+  ],
+  "claims": [
+   {
+    "statement": "The Xbox Accessories app sign-in error is fixed by installing Xbox Identity Provider (Microsoft Store product 9WZDNCRD1HKW), which can only be opened via its direct store link.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Open ms-windows-store://pdp/?ProductId=9WZDNCRD1HKW and install Xbox Identity Provider."
+  ],
+  "measurements": [],
+  "tools": [
+   "Windows PC"
+  ],
+  "cautions": [],
+  "tags": [
+   "repair.wiki",
+   "sign in error",
+   "xbox accessories app",
+   "xbox controller",
+   "xbox identity provider"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Software",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxcontrollers",
+  "error_codes": [
+   "9WZDNCRD1HKW"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Wireless Controller \"We can't sign you in right now. Try again later.\" error when signing into Xbox/Xbox Accessories App Repair\", https://repair.wiki/w/Xbox_Wireless_Controller_%22We_can%27t_sign_you_in_right_now._Try_again_later.%22_error_when_signing_into_Xbox/Xbox_Accessories_App_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Wireless_Controller_%22We_can%27t_sign_you_in_right_now._Try_again_later.%22_error_when_signing_into_Xbox/Xbox_Accessories_App_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

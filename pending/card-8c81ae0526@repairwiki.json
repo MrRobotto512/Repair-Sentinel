@@ -1,0 +1,78 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Fault Finding Using UART",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_Fault_Finding_Using_UART",
+   "kind": "web",
+   "title": "PlayStation 5 Fault Finding Using UART",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12511,
+   "last_edited_utc": "2025-11-02T15:51:52Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "PlayStation 5 Slim",
+   "PlayStation 5 Pro"
+  ],
+  "symptoms": [
+   "need error logs"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "PS5 EMC (southbridge) UART is enabled by default (unlike PS4): solder RX, TX, GND (RX↔TX) and read logs with Console Service Tool > Sony > PlayStation 5, console plugged in but off.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Undocumented codes can be looked up on community databases such as uartcodes.com.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Solder RX/TX/GND per board image.",
+   "Connect USB-TTL; plug in AC, don't power on.",
+   "Console Service Tool > PS5 > Run.",
+   "Look up codes."
+  ],
+  "measurements": [],
+  "tools": [
+   "USB-TTL adapter",
+   "soldering iron",
+   "Console Service Tool"
+  ],
+  "cautions": [],
+  "tags": [
+   "console service tool",
+   "emc",
+   "error logs",
+   "ps5",
+   "repair.wiki",
+   "uart"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Southbridge EMC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 Fault Finding Using UART\", https://repair.wiki/w/PlayStation_5_Fault_Finding_Using_UART, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_Fault_Finding_Using_UART",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

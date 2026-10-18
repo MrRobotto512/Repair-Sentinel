@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 9.7 not displaying any image on the screen repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_9.7_not_displaying_any_image_on_the_screen_repair",
+   "kind": "web",
+   "title": "IPad Pro 9.7 not displaying any image on the screen repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13829,
+   "last_edited_utc": "2026-02-03T06:21:19Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 9.7"
+  ],
+  "symptoms": [
+   "no backlight",
+   "image visible with flashlight"
+  ],
+  "codes": [
+   "FL1728"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 9.7 with no backlight usually has blown backlight filter FL1728 (often from connecting a screen with the battery attached); a smashed FPC connector can also blow it.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm image with flashlight.",
+   "Continuity-test FL1728.",
+   "Replace FL1728 (and FPC connector if smashed)."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "fl1728",
+   "ipad pro 9.7",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "FL1728",
+  "part_numbers": [
+   "FL1728"
+  ],
+  "readings": [],
+  "device_family": "ipadpro97",
+  "error_codes": [
+   "FL1728"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 9.7 not displaying any image on the screen repair\", https://repair.wiki/w/IPad_Pro_9.7_not_displaying_any_image_on_the_screen_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_9.7_not_displaying_any_image_on_the_screen_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

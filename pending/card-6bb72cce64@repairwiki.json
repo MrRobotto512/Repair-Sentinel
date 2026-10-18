@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Console appears to have no power, but makes sounds when touch screen is tapped Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Console_appears_to_have_no_power,_but_makes_sounds_when_touch_screen_is_tapped_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Console appears to have no power, but makes sounds when touch screen is tapped Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2191,
+   "last_edited_utc": "2024-01-13T14:28:12Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "appears dead but makes sounds on touch"
+  ],
+  "codes": [
+   "83160722"
+  ],
+  "claims": [
+   {
+    "statement": "A Switch that seems dead but makes sounds when the touchscreen is tapped is a display path fault: check the LCD and backlight for damage or liquid, and check for shorts around the LCD driver left of the LCD connector (83160722).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect LCD, backlight ribbon and connector.",
+   "Check for shorts around the LCD driver."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "backlight",
+   "lcd driver",
+   "nintendo switch",
+   "no display",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "LCD / LCD driver",
+  "part_numbers": [
+   "83160722"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "83160722"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Console appears to have no power, but makes sounds when touch screen is tapped Repair\", https://repair.wiki/w/Nintendo_Switch_Console_appears_to_have_no_power,_but_makes_sounds_when_touch_screen_is_tapped_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Console_appears_to_have_no_power,_but_makes_sounds_when_touch_screen_is_tapped_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

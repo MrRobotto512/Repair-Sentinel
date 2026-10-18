@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 7 Not Turning On Error 4013 Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_7_Not_Turning_On_Error_4013_Repair",
+   "kind": "web",
+   "title": "IPad 7 Not Turning On Error 4013 Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13764,
+   "last_edited_utc": "2026-01-21T19:35:21Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 7"
+  ],
+  "symptoms": [
+   "no power",
+   "bootloop",
+   "restore fails with error 4013"
+  ],
+  "codes": [
+   "4013"
+  ],
+  "claims": [
+   {
+    "statement": "iPad 7 no power, bootloops or restore error 4013 (passing a Tristar tester) is commonly CPU solder joint failure from board flex; a CPU reball is the fix.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Success isn't guaranteed (CPU may be internally damaged) and re-failure rates are high.",
+    "evidence": "Notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm 4013 and rule out battery, charging IC and NAND.",
+   "Preheat, remove CPU, clean, reball, refit.",
+   "Restore and test."
+  ],
+  "measurements": [],
+  "tools": [
+   "preheater",
+   "hot air",
+   "stencil",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: CPU reballing is advanced work with a high re-failure rate."
+  ],
+  "tags": [
+   "bootloop",
+   "cpu reball",
+   "error 4013",
+   "ipad 7",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipad7",
+  "error_codes": [
+   "4013"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 7 Not Turning On Error 4013 Repair\", https://repair.wiki/w/IPad_7_Not_Turning_On_Error_4013_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_7_Not_Turning_On_Error_4013_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

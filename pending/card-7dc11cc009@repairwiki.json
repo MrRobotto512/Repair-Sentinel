@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone X With No Service or Always Searching",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_X_With_No_Service_or_Always_Searching",
+   "kind": "web",
+   "title": "How To Fix iPhone X With No Service or Always Searching",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3410,
+   "last_edited_utc": "2024-02-12T08:00:20Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "no service",
+   "searching",
+   "no IMEI"
+  ],
+  "codes": [
+   "*#06#"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone X baseband faults usually come from sandwich separation (check for ripped pads, test in iSocket, reball); a bottom board swap rules out the whole cellular circuit (move BB CPU, BB EEPROM and Wi-Fi).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A baseband CPU reball alone has a lower success rate; the fault may be BBPMU or elsewhere.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Test calls after reassembly: no call audio points at a bad sandwich reball.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Split sandwich; repair ripped pads; test in iSocket.",
+   "Reball sandwich and test calls.",
+   "Consider bottom board swap or BB CPU reball.",
+   "Update (not restore) if still searching."
+  ],
+  "measurements": [],
+  "tools": [
+   "iSocket jig",
+   "preheater",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband",
+   "bottom board swap",
+   "iphone x",
+   "no service",
+   "repair.wiki",
+   "sandwich separation"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Sandwich / baseband",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonex",
+  "error_codes": [
+   "*#06#"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone X With No Service or Always Searching\", https://repair.wiki/w/How_To_Fix_iPhone_X_With_No_Service_or_Always_Searching, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_X_With_No_Service_or_Always_Searching",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

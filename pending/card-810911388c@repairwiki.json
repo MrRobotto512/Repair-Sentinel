@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 10.2in 8th Gen Not turning on, drawing between 0-0.2A, tristar is functional repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_10.2in_8th_Gen_Not_turning_on,_drawing_between_0-0.2A,_tristar_is_functional_repair",
+   "kind": "web",
+   "title": "IPad 10.2in 8th Gen Not turning on, drawing between 0-0.2A, tristar is functional repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 5228,
+   "last_edited_utc": "2024-11-08T06:17:48Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 8 (10.2-inch)"
+  ],
+  "symptoms": [
+   "no power",
+   "draw cycles 0-0.3 A",
+   "screen flashes"
+  ],
+  "codes": [
+   "GPIO_PMU_TO_LCD_PWREN"
+  ],
+  "claims": [
+   {
+    "statement": "An iPad 8 cycling 0–0.3 A with a flashing screen and a working Tristar was caused by the PMIC not outputting GPIO_PMU_TO_LCD_PWREN; replacing the PMIC fixed it.",
+    "evidence": "Case write-up.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm Tristar OK and the cycling draw.",
+   "Check GPIO_PMU_TO_LCD_PWREN.",
+   "Replace the PMIC."
+  ],
+  "measurements": [
+   {
+    "point": "Cycling draw",
+    "expect": "0-0.3",
+    "unit": "A",
+    "mode": "current",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad 8",
+   "lcd_pwren",
+   "no power",
+   "pmic",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Single case. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PMIC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Cycling draw",
+    "mode": "current",
+    "expect_lo": 0.0,
+    "expect_hi": 0.3,
+    "unit": "A"
+   }
+  ],
+  "device_family": "ipad8",
+  "error_codes": [
+   "GPIO_PMU_TO_LCD_PWREN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 10.2in 8th Gen Not turning on, drawing between 0-0.2A, tristar is functional repair\", https://repair.wiki/w/IPad_10.2in_8th_Gen_Not_turning_on,_drawing_between_0-0.2A,_tristar_is_functional_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_10.2in_8th_Gen_Not_turning_on,_drawing_between_0-0.2A,_tristar_is_functional_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

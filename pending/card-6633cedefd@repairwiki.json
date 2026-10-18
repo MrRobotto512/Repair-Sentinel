@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to reprogram the CD32 ROM with Wylie SPI Programmer",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_reprogram_the_CD32_ROM_with_Wylie_SPI_Programmer",
+   "kind": "web",
+   "title": "How to reprogram the CD32 ROM with Wylie SPI Programmer",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13538,
+   "last_edited_utc": "2026-01-01T22:20:41Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 4th Gen",
+   "iPad Pro 12.9 5th Gen",
+   "iPad Pro 12.9 6th Gen",
+   "iPad Pro 11 2nd Gen",
+   "iPad Pro 11 3rd Gen",
+   "iPad Pro 11 4th Gen",
+   "iPad Air 4",
+   "iPad Air 5",
+   "iPad 10",
+   "iPad mini 6"
+  ],
+  "symptoms": [
+   "not charging",
+   "5 V only"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A cheap Wylie SPI programmer can read/write the CD3217 ACE ROM as an alternative to the JCID tool; the ROM must be removed and soldered to the programmer with pin 1 matched.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If Detect shows nothing, suspect a bad solder joint or a dead ROM.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Install Wylie drivers and software.",
+   "Desolder ROM and solder to programmer (pin 1 aligned).",
+   "Detect, select chip, open correct model dump, write.",
+   "Resolder the ROM to the board and test charging."
+  ],
+  "measurements": [],
+  "tools": [
+   "Wylie SPI programmer",
+   "soldering iron"
+  ],
+  "cautions": [
+   "SOURCE RISK: Soldering the ROM backwards can destroy it."
+  ],
+  "tags": [
+   "ace rom",
+   "cd3217",
+   "ipad",
+   "repair.wiki",
+   "spi programmer",
+   "wylie"
+  ],
+  "confidence": "medium",
+  "caveats": "Driver, software and ROM dumps are third-party file-sharing links on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "ACE ROM",
+  "part_numbers": [
+   "CD3217"
+  ],
+  "readings": [],
+  "device_family": "ipadpro1294thgen",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to reprogram the CD32 ROM with Wylie SPI Programmer\", https://repair.wiki/w/How_to_reprogram_the_CD32_ROM_with_Wylie_SPI_Programmer, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_reprogram_the_CD32_ROM_with_Wylie_SPI_Programmer",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

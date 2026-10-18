@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Video Output Issues: No Video or HDMI Output",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Video_Output_Issues:_No_Video_or_HDMI_Output",
+   "kind": "web",
+   "title": "Nintendo Switch Video Output Issues: No Video or HDMI Output",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7203,
+   "last_edited_utc": "2025-05-29T20:39:03Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no video out when docked"
+  ],
+  "codes": [
+   "PI3USB30532"
+  ],
+  "claims": [
+   {
+    "statement": "A Switch that charges but gives no dock video is most often blown chokes near PI3USB or a faulty PI3USB30532; the chokes should have continuity in parallel but not across.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Also check caps around M92T36 for shorts and compare USB-C port readings with a T-824.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a known-good dock.",
+   "Inspect port; read with T-824.",
+   "Check M92T36 caps.",
+   "Check PI3USB chokes and caps.",
+   "Replace chokes or PI3USB30532; test resolutions."
+  ],
+  "measurements": [],
+  "tools": [
+   "Mechanic T-824",
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "chokes",
+   "dock",
+   "m92t36",
+   "nintendo switch",
+   "no hdmi",
+   "pi3usb30532",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PI3USB / chokes",
+  "part_numbers": [
+   "PI3USB30532",
+   "M92T36"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "PI3USB30532"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Video Output Issues: No Video or HDMI Output\", https://repair.wiki/w/Nintendo_Switch_Video_Output_Issues:_No_Video_or_HDMI_Output, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Video_Output_Issues:_No_Video_or_HDMI_Output",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

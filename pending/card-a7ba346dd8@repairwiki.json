@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 6 Touch Not Working or Ghost Touching Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_6_Touch_Not_Working_or_Ghost_Touching_Repair",
+   "kind": "web",
+   "title": "IPad 6 Touch Not Working or Ghost Touching Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3082,
+   "last_edited_utc": "2024-01-20T02:00:25Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 6"
+  ],
+  "symptoms": [
+   "no touch",
+   "ghost touch"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPad 6 digitizer connectors are easily damaged; if they're fine, bending may have cracked touch IC solder balls—reflow, then replace.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If connectors and touch ICs are good, broken traces between them are not viably repairable.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect/replace digitizer connectors.",
+   "Reflow touch ICs; replace if needed."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "digitizer connector",
+   "ghost touch",
+   "ipad 6",
+   "no touch",
+   "repair.wiki",
+   "touch ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch ICs / connectors",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipad6",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 6 Touch Not Working or Ghost Touching Repair\", https://repair.wiki/w/IPad_6_Touch_Not_Working_or_Ghost_Touching_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_6_Touch_Not_Working_or_Ghost_Touching_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

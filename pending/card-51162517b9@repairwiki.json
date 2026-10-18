@@ -1,0 +1,104 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR Stuck in DFU, updates successfully but goes back to DFU",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_Stuck_in_DFU,_updates_successfully_but_goes_back_to_DFU",
+   "kind": "web",
+   "title": "IPhone XR Stuck in DFU, updates successfully but goes back to DFU",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13813,
+   "last_edited_utc": "2026-02-02T00:08:04Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "stuck in DFU after successful restore",
+   "no image",
+   "hangs at 45 mA"
+  ],
+  "codes": [
+   "R0601"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR that restores to 100% but returns to DFU (USB ~0.45 A, DCPS hangs ~45 mA) often has a cracked R0601 at the NAND corner, linking PP1V8_IO to SPI_AP_TO_S4E_MOSI_BOOT_CONFIG1; value 4.7 Ω.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clear underfill around R0601 and poke it.",
+   "Replace R0601 (4.7 Ω) if it breaks."
+  ],
+  "measurements": [
+   {
+    "point": "R0601",
+    "expect": "4.7",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": ""
+   },
+   {
+    "point": "Hung boot draw",
+    "expect": "45",
+    "unit": "mA",
+    "mode": "current",
+    "context": "DC supply"
+   }
+  ],
+  "tools": [
+   "microscope",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "boot config",
+   "dfu loop",
+   "iphone xr",
+   "r0601",
+   "repair.wiki"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "R0601",
+  "part_numbers": [
+   "R0601"
+  ],
+  "readings": [
+   {
+    "point": "R0601",
+    "mode": "resistance",
+    "expect_lo": 4.7,
+    "expect_hi": 4.7,
+    "unit": "Ω"
+   },
+   {
+    "point": "Hung boot draw",
+    "mode": "current",
+    "expect_lo": 45.0,
+    "expect_hi": 45.0,
+    "unit": "mA"
+   }
+  ],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "R0601"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR Stuck in DFU, updates successfully but goes back to DFU\", https://repair.wiki/w/IPhone_XR_Stuck_in_DFU,_updates_successfully_but_goes_back_to_DFU, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_Stuck_in_DFU,_updates_successfully_but_goes_back_to_DFU",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

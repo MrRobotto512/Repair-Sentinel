@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR not powering on & not charging",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_not_powering_on_%26_not_charging",
+   "kind": "web",
+   "title": "IPhone XR not powering on & not charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6566,
+   "last_edited_utc": "2025-05-13T08:06:12Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "no power",
+   "not charging",
+   "low draw on DC supply"
+  ],
+  "codes": [
+   "U3300"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR no power / no charge with low draw and no shorts on VDD_MAIN, VDD_BOOST or PP3V0_NAND is most often Yangtze U3300, under the bottom back shield with Iktara (wireless charging), baseband PMU and baseband CPU.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out shorts on main rails.",
+   "Remove the bottom back shield carefully (heat or snips).",
+   "Replace Yangtze U3300."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "tin snips"
+  ],
+  "cautions": [
+   "SOURCE RISK: Heavy heat or force on this shield can float parts or flex the board."
+  ],
+  "tags": [
+   "iktara",
+   "iphone xr",
+   "no power",
+   "not charging",
+   "repair.wiki",
+   "u3300",
+   "yangtze"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Yangtze U3300",
+  "part_numbers": [
+   "U3300"
+  ],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "U3300"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR not powering on & not charging\", https://repair.wiki/w/IPhone_XR_not_powering_on_%26_not_charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_not_powering_on_%26_not_charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

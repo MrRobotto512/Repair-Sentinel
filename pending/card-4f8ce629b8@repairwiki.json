@@ -1,0 +1,106 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 6 Plus Boots to recovery mode iTunes Error 9",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_6_Plus_Boots_to_recovery_mode_iTunes_Error_9",
+   "kind": "web",
+   "title": "IPhone 6 Plus Boots to recovery mode iTunes Error 9",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7378,
+   "last_edited_utc": "2025-06-05T20:06:07Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 6 Plus"
+  ],
+  "symptoms": [
+   "boots to recovery",
+   "error 9"
+  ],
+  "codes": [
+   "9",
+   "U0301",
+   "PP1V8_SDRAM"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 6 Plus booting to recovery with error 9 is usually a broken link between the CPU and EEPROM U0301; two resistors under the shield should each read about 0.484 in diode mode.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Repair (very difficult): scrape a small hole in the CPU's bottom-left corner to reach the two lines, jumper them to the resistors, check PP1V8_SDRAM for shorts, and UV-mask.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Open the shield over the EEPROM resistors.",
+   "Diode-check both resistors (~0.484).",
+   "Scrape into the CPU corner to expose the lines; mask around.",
+   "Jumper lines to the resistors; check PP1V8_SDRAM short; mask; restore."
+  ],
+  "measurements": [
+   {
+    "point": "U0301 EEPROM line resistors",
+    "expect": "0.484",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "Qianli DM360 or hobby knife",
+   "UV mask",
+   "jumper wire",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Practice on scrap boards first; scraping into the CPU can easily destroy it."
+  ],
+  "tags": [
+   "eeprom",
+   "error 9",
+   "iphone 6 plus",
+   "recovery",
+   "repair.wiki",
+   "u0301"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU-EEPROM lines",
+  "part_numbers": [
+   "U0301"
+  ],
+  "readings": [
+   {
+    "point": "U0301 EEPROM line resistors",
+    "mode": "diode",
+    "expect_lo": 0.484,
+    "expect_hi": 0.484,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone6plus",
+  "error_codes": [
+   "9",
+   "U0301",
+   "PP1V8_SDRAM"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 6 Plus Boots to recovery mode iTunes Error 9\", https://repair.wiki/w/IPhone_6_Plus_Boots_to_recovery_mode_iTunes_Error_9, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_6_Plus_Boots_to_recovery_mode_iTunes_Error_9",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

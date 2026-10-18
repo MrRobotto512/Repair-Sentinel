@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to use ODIN to flash firmware on Samsung devices",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_use_ODIN_to_flash_firmware_on_Samsung_devices",
+   "kind": "web",
+   "title": "How to use ODIN to flash firmware on Samsung devices",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13892,
+   "last_edited_utc": "2026-02-08T21:24:49Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Samsung Galaxy (most S, Note, A, Z and Tab models)"
+  ],
+  "symptoms": [
+   "bootloop",
+   "stuck on Samsung logo",
+   "corrupt firmware"
+  ],
+  "codes": [
+   "HOME_CSC"
+  ],
+  "claims": [
+   {
+    "statement": "Odin flashes Samsung stock firmware (BL, AP, CP, CSC) in Download Mode and can recover bootloops or logo hangs.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Use HOME_CSC to keep user data; the plain CSC file wipes the device.",
+    "evidence": "Step 4.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Read model, firmware version and CSC in Download Mode (e.g. SamKey 'Read Info D/L') and download the matching firmware (e.g. samfw.com).",
+    "evidence": "Steps 2–3.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If the device can't enter Download Mode, Odin can't help—suspect CPU or eMMC hardware failure.",
+    "evidence": "Step 2.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Enter Download Mode and connect USB.",
+   "Read model, version and CSC.",
+   "Download matching firmware.",
+   "Load BL, AP, CP and HOME_CSC (or CSC to wipe) into Odin.",
+   "Start; wait for PASS."
+  ],
+  "measurements": [],
+  "tools": [
+   "Odin",
+   "SamKey",
+   "PC"
+  ],
+  "cautions": [
+   "SOURCE RISK: Loading the plain CSC file erases user data."
+  ],
+  "tags": [
+   "bootloop",
+   "download mode",
+   "firmware flash",
+   "home_csc",
+   "odin",
+   "repair.wiki",
+   "samsung"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Firmware",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "samsunggalaxy",
+  "error_codes": [
+   "HOME_CSC"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to use ODIN to flash firmware on Samsung devices\", https://repair.wiki/w/How_to_use_ODIN_to_flash_firmware_on_Samsung_devices, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_use_ODIN_to_flash_firmware_on_Samsung_devices",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

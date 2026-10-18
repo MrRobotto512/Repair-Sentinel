@@ -1,0 +1,82 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 4S That Is Bootlooping With iTunes Error 29",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_4S_That_Is_Bootlooping_With_iTunes_Error_29",
+   "kind": "web",
+   "title": "How To Fix iPhone 4S That Is Bootlooping With iTunes Error 29",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 828,
+   "last_edited_utc": "2023-11-07T06:35:52Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 4S"
+  ],
+  "symptoms": [
+   "bootloop",
+   "flashing Apple logo",
+   "update fails"
+  ],
+  "codes": [
+   "29"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 4S bootlooping and failing updates with error 29 (iTunes ~60%, 3uTools at 80% 'Updating GasGauge') is often a low-quality replacement battery or a missing R61 near the battery connector (liquid damage).",
+    "evidence": "Diagnosis.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replace R61; a jumper across its pads works for data recovery only.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try an original battery.",
+   "Inspect near the battery connector for missing R61.",
+   "Replace R61 (or temporary jumper for data)."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "error 29",
+   "gas gauge",
+   "iphone 4s",
+   "r61",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "R61",
+  "part_numbers": [
+   "R61"
+  ],
+  "readings": [],
+  "device_family": "iphone4s",
+  "error_codes": [
+   "29"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 4S That Is Bootlooping With iTunes Error 29\", https://repair.wiki/w/How_To_Fix_iPhone_4S_That_Is_Bootlooping_With_iTunes_Error_29, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_4S_That_Is_Bootlooping_With_iTunes_Error_29",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

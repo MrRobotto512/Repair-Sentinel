@@ -1,0 +1,143 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 With No Image, Turns On But No Display",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_With_No_Image,_Turns_On_But_No_Display",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 With No Image, Turns On But No Display",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3147,
+   "last_edited_utc": "2024-01-22T08:50:15Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no image",
+   "turns on",
+   "vibrates",
+   "backlight on but no picture"
+  ],
+  "codes": [
+   "J4502",
+   "U3703"
+  ],
+  "claims": [
+   {
+    "statement": "Confirm a board fault with a known-good screen, about 1 A USB charge, sounds/vibration, a flashlight check for the logo and checking it is not in DFU mode.",
+    "evidence": "Initial checks.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Diode-check LCD connector J4502: good lines read about 200–700 mV; common shorts are PP5V7_LCM_AVDDH_CONN, PP5V7_MESON_AVDDH_CONN and PN5V7_LCM_MESON_AVDDN_CONN.",
+    "evidence": "LCD connector checks.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Inject only about 2–3 V (never above 5.7 V) to find those shorts so heat stays localised.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "OL on PP1V8_LCM_CONN usually means a damaged filter FL3906 (both sides should read the same).",
+    "evidence": "LCD connector checks.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If connector readings are fine, check Chestnut U3703 (image power IC): C3703 must not have continuity across it; look for corrosion under U3703 and replace it.",
+    "evidence": "Chestnut section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Rule out screen, DFU and backlight-only faults.",
+   "Diode-check J4502 for shorts/opens.",
+   "Inject 2–3 V into shorted LCM lines to find the cap.",
+   "Check FL3906 if PP1V8_LCM_CONN is OL.",
+   "Check C3703 and corrosion under U3703; replace U3703."
+  ],
+  "measurements": [
+   {
+    "point": "J4502 LCD connector lines (normal)",
+    "expect": "0.200-0.700",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Short-find injection on LCM lines",
+    "expect": "2-3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Do not exceed 5.7 V"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "chestnut",
+   "fl3906",
+   "iphone 7",
+   "j4502",
+   "lcm",
+   "no image",
+   "repair.wiki",
+   "u3703"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Chestnut U3703 / LCD connector",
+  "part_numbers": [
+   "U3703",
+   "FL3906",
+   "C3703",
+   "J4502"
+  ],
+  "readings": [
+   {
+    "point": "J4502 LCD connector lines (normal)",
+    "mode": "diode",
+    "expect_lo": 0.2,
+    "expect_hi": 0.7,
+    "unit": "V"
+   },
+   {
+    "point": "Short-find injection on LCM lines",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone7",
+  "error_codes": [
+   "J4502",
+   "U3703"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 With No Image, Turns On But No Display\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_With_No_Image,_Turns_On_But_No_Display, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_With_No_Image,_Turns_On_But_No_Display",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

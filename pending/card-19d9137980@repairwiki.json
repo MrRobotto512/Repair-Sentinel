@@ -1,0 +1,120 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A125 (Mediatek) Not Booting",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A125_(Mediatek)_Not_Booting",
+   "kind": "web",
+   "title": "Galaxy A125 (Mediatek) Not Booting",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7953,
+   "last_edited_utc": "2025-06-22T22:30:15Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A12 (A125, MediaTek)"
+  ],
+  "symptoms": [
+   "no boot",
+   "no response",
+   "no PC connection"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A dead Galaxy A125 (MediaTek) that only draws 0.030–0.050 A while the power key is held and drops to zero on release, with stable VPH_PWR but unstable buck voltages, can have a shorted VUSB_PMU line.",
+    "evidence": "Symptoms listed in guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Confirm by checking the VUSB_PMU_CAP diode value; it should not read 0.000.",
+    "evidence": "Diagnostic step.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Remove the MT6357CRV PMIC and check pad J14 (VUSB_PMU); if no longer shorted, replace the PMIC; if still shorted (internal CPU damage), isolate the pad with UV mask and refit the reballed PMIC.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check wall-charger draw (0.00–0.02 A) and VPH_PWR 3.6–4.2 V.",
+   "Check buck voltages with charged battery and charger.",
+   "Diode-test VUSB_PMU_CAP.",
+   "Lift MT6357CRV and check pad J14.",
+   "If J14 still shorted, cover with UV mask; reball and refit PMIC."
+  ],
+  "measurements": [
+   {
+    "point": "VPH_PWR",
+    "expect": "3.6-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Should be present and stable"
+   },
+   {
+    "point": "Power-key draw",
+    "expect": "0.030-0.050",
+    "unit": "A",
+    "mode": "current",
+    "context": "Faulty symptom"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "microscope",
+   "UV solder mask",
+   "reball stencil"
+  ],
+  "cautions": [],
+  "tags": [
+   "a125",
+   "galaxy a12",
+   "mediatek",
+   "mt6357",
+   "no boot",
+   "pmic",
+   "repair.wiki",
+   "vusb_pmu"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PMIC",
+  "part_numbers": [
+   "MT6357CRV"
+  ],
+  "readings": [
+   {
+    "point": "VPH_PWR",
+    "mode": "voltage",
+    "expect_lo": 3.6,
+    "expect_hi": 4.2,
+    "unit": "V"
+   },
+   {
+    "point": "Power-key draw",
+    "mode": "current",
+    "expect_lo": 0.03,
+    "expect_hi": 0.05,
+    "unit": "A"
+   }
+  ],
+  "device_family": "galaxya12",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A125 (Mediatek) Not Booting\", https://repair.wiki/w/Galaxy_A125_(Mediatek)_Not_Booting, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A125_(Mediatek)_Not_Booting",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

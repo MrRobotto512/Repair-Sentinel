@@ -1,0 +1,111 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 11in 1st Gen Not Recognized by PC in Recovery Mode or Charging Issues",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_11in_1st_Gen_Not_Recognized_by_PC_in_Recovery_Mode_or_Charging_Issues",
+   "kind": "web",
+   "title": "IPad Pro 11in 1st Gen Not Recognized by PC in Recovery Mode or Charging Issues",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9011,
+   "last_edited_utc": "2025-07-25T19:03:21Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 11 1st Gen"
+  ],
+  "symptoms": [
+   "not detected by PC in recovery/DFU",
+   "charges only on 15 V or only on 5 V",
+   "not charging"
+  ],
+  "codes": [
+   "CD3215",
+   "610A3C"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 11 (2018) charging/PC detection faults usually come from the charge port (not soldered, easy to swap), the CD3215 (handles USB-C PD 15 V) or the Tristar 610A3C (handles 5 V).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Charges on 5 V USB-A but won't negotiate 15 V = CD3215; charges at 15 V PD but not 5 V = Tristar 610A3C.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The 610A3C Tristar is unique to this model and iPad Pro 12.9 3rd gen and is not interchangeable with other Tristars; it sits under the shield above the screen FPCs.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Swap a known-good charge port.",
+   "Diode-check caps around CD3215; inject 1 V / 1 A to find cap vs IC.",
+   "Check around Tristar 610A3C (cut shield).",
+   "Replace the faulty IC; verify 15 V and 5 V charging and PC detection."
+  ],
+  "measurements": [
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "1 A limit"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "grinder"
+  ],
+  "cautions": [],
+  "tags": [
+   "610a3c",
+   "cd3215",
+   "ipad pro 11",
+   "not charging",
+   "not detected by pc",
+   "repair.wiki",
+   "tristar"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CD3215 / Tristar 610A3C",
+  "part_numbers": [
+   "CD3215",
+   "610A3C"
+  ],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipadpro111stgen",
+  "error_codes": [
+   "CD3215",
+   "610A3C"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 11in 1st Gen Not Recognized by PC in Recovery Mode or Charging Issues\", https://repair.wiki/w/IPad_Pro_11in_1st_Gen_Not_Recognized_by_PC_in_Recovery_Mode_or_Charging_Issues, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_11in_1st_Gen_Not_Recognized_by_PC_in_Recovery_Mode_or_Charging_Issues",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

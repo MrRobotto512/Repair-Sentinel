@@ -1,0 +1,75 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR Rear camera is not working",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_Rear_camera_is_not_working",
+   "kind": "web",
+   "title": "IPhone XR Rear camera is not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6715,
+   "last_edited_utc": "2025-05-14T19:10:38Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "rear camera black"
+  ],
+  "codes": [
+   "U1601"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR rear camera: try a known-good camera (flash an update if needed), diode-check the connector, then check camera LDO U1601; ZXW shows its pin 1 wrong, so match orientation to the actual board.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try known-good rear camera and update.",
+   "Diode-check the rear camera connector.",
+   "Inspect/replace LDO U1601 with correct orientation."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: ZXW boardview shows U1601 pin 1 incorrectly."
+  ],
+  "tags": [
+   "iphone xr",
+   "ldo",
+   "rear camera",
+   "repair.wiki",
+   "u1601"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Camera LDO U1601",
+  "part_numbers": [
+   "U1601"
+  ],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "U1601"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR Rear camera is not working\", https://repair.wiki/w/IPhone_XR_Rear_camera_is_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_Rear_camera_is_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

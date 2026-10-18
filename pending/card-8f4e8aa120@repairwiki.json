@@ -1,0 +1,133 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 4 Fault finding with UART",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_4_Fault_finding_with_UART",
+   "kind": "web",
+   "title": "Playstation 4 Fault finding with UART",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3783,
+   "last_edited_utc": "2024-04-26T10:47:45Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4",
+   "PlayStation 4 Slim",
+   "PlayStation 4 Pro"
+  ],
+  "symptoms": [
+   "pulsing blue light of death",
+   "no boot"
+  ],
+  "codes": [
+   "DCT",
+   "loadBios -8",
+   "sceSblSlLoadSelf",
+   "SAMU",
+   "EAP",
+   "IDPS",
+   "timer_mtk0"
+  ],
+  "claims": [
+   {
+    "statement": "PS4 UART output is blank unless the UART flag is enabled in the NOR: dump the NOR (WSON8 on CUH-12xx/Slim/Pro, 16-pin SOP on CUH-10xx/11xx) at least twice, verify matching dumps in PS4 Wee Tools, set the UART flag and write it back; keep the original dump safe as it holds per-console data.",
+    "evidence": "Dump and patch section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "'DCT[x/y] is disabled' means a RAM block (pairs 0/1, 2/3, 4/5, 6/7) failed—RAM or the APU connection.",
+    "evidence": "UART errors.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "'loadBios -8' / 'sceSblSlLoadSelf -8' means syscon isn't decrypting CoreOS: faulty RAM (enable the memory test flag; replace all RAM if it fails) or corrupted CoreOS (swap the CoreOS slot with a syscon flasher).",
+    "evidence": "UART errors.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Looping SAMU enter/leave points at the APU; 'EAP key not available' can be recovered in Wee Tools; IDPS error has no fix; last line 'timer_mtk0 ... on pci0' indicates a failed crystal oscillator.",
+    "evidence": "UART errors.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Dump NOR twice (in-circuit with 3.3 V external supply or removed); compare in Wee Tools.",
+   "Validate the NOR; enable the UART flag; write it.",
+   "Solder TX/RX/GND per board revision; use a 3.3 V USB-TTL.",
+   "Open Wee Tools terminal and power on.",
+   "Match the last/error line to the fault list."
+  ],
+  "measurements": [
+   {
+    "point": "UART logic level",
+    "expect": "3.3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Set adapter jumpers to 3.3 V"
+   }
+  ],
+  "tools": [
+   "USB-TTL 3.3 V",
+   "CH341A",
+   "WSON8 / SOP16 adapter",
+   "PS4 Wee Tools",
+   "NeoProgrammer"
+  ],
+  "cautions": [
+   "SOURCE RISK: Losing the original NOR dump permanently bricks the console—verify dumps first."
+  ],
+  "tags": [
+   "blod",
+   "coreos",
+   "dct disabled",
+   "loadbios",
+   "nor",
+   "ps4",
+   "ram",
+   "repair.wiki",
+   "samu",
+   "uart",
+   "wee tools"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "UART logic level",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [
+   "DCT",
+   "loadBios -8",
+   "sceSblSlLoadSelf",
+   "SAMU",
+   "EAP",
+   "IDPS",
+   "timer_mtk0"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 4 Fault finding with UART\", https://repair.wiki/w/Playstation_4_Fault_finding_with_UART, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_4_Fault_finding_with_UART",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

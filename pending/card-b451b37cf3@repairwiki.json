@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii SD Card does not read",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_SD_Card_does_not_read",
+   "kind": "web",
+   "title": "Nintendo Wii SD Card does not read",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13231,
+   "last_edited_utc": "2025-12-13T22:38:36Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "SD card not read"
+  ],
+  "codes": [
+   "FIL43"
+  ],
+  "claims": [
+   {
+    "statement": "Wii SD card not read: check FIL43 and continuity between the slot's CD and CD/WP pins with a card inserted; no continuity means a broken slot—jumper or replace it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check FIL43.",
+   "Check CD to CD/WP continuity with a card inserted.",
+   "Jumper or replace the slot."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "card detect",
+   "fil43",
+   "nintendo wii",
+   "repair.wiki",
+   "sd card"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "SD slot",
+  "part_numbers": [
+   "FIL43"
+  ],
+  "readings": [],
+  "device_family": "nintendowii",
+  "error_codes": [
+   "FIL43"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii SD Card does not read\", https://repair.wiki/w/Nintendo_Wii_SD_Card_does_not_read, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_SD_Card_does_not_read",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

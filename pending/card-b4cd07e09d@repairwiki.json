@@ -1,0 +1,65 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch CPU capacitors",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_CPU_capacitors",
+   "kind": "web",
+   "title": "Nintendo Switch CPU capacitors",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2184,
+   "last_edited_utc": "2024-01-13T14:19:18Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "CPU dead check"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch 'CPU capacitors'—one beside M92T36 and one beside the SOT-323-6 IC near MAX17050—are commonly associated with a dead CPU when shorted; check them before deeper work.",
+    "evidence": "Page content.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check the two CPU capacitors for shorts before starting a repair."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "cpu capacitors",
+   "dead cpu",
+   "m92t36",
+   "max17050",
+   "nintendo switch",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Capacitor locations are shown only in images. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch CPU capacitors\", https://repair.wiki/w/Nintendo_Switch_CPU_capacitors, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_CPU_capacitors",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

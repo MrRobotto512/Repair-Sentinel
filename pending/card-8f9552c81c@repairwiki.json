@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Not turning on, draws 200mA at 15V Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Not_turning_on,_draws_200mA_at_15V_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Not turning on, draws 200mA at 15V Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2202,
+   "last_edited_utc": "2024-01-13T14:37:22Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no power",
+   "0.2 A at 15 V",
+   "drops to 0.1 A when held off"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch drawing 0.2 A at 15 V that drops to 0.1 A when 'turned off' with the power button (and rises again when turned on) can be caused by PI3USB; replace it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm the draw pattern.",
+   "Replace PI3USB30532."
+  ],
+  "measurements": [
+   {
+    "point": "Charger draw",
+    "expect": "0.2",
+    "unit": "A",
+    "mode": "current",
+    "context": "At 15 V; 0.1 A when held off"
+   }
+  ],
+  "tools": [
+   "USB-C meter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "nintendo switch",
+   "no power",
+   "pi3usb",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Source cites pending. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PI3USB30532",
+  "part_numbers": [
+   "PI3USB30532"
+  ],
+  "readings": [
+   {
+    "point": "Charger draw",
+    "mode": "current",
+    "expect_lo": 0.2,
+    "expect_hi": 0.2,
+    "unit": "A"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Not turning on, draws 200mA at 15V Repair\", https://repair.wiki/w/Nintendo_Switch_Not_turning_on,_draws_200mA_at_15V_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Not_turning_on,_draws_200mA_at_15V_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

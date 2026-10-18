@@ -1,0 +1,84 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 5 \"FindFlashMediaAndKeepout\" error while booting repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_5_%22FindFlashMediaAndKeepout%22_error_while_booting_repair",
+   "kind": "web",
+   "title": "IPhone 5 \"FindFlashMediaAndKeepout\" error while booting repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3576,
+   "last_edited_utc": "2024-03-02T12:16:06Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 5"
+  ],
+  "symptoms": [
+   "FindFlashMediaAndKeepout error on boot",
+   "error 4013"
+  ],
+  "codes": [
+   "4013",
+   "U15"
+  ],
+  "claims": [
+   {
+    "statement": "The iPhone 5 FindFlashMediaAndKeepout boot error (and 4013 on restore) is mostly from liquid damage or bad flex connections; unplugging cameras, flash, proximity flex or the display can let it boot/restore.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If that fails, removing compass IC U15 (by the front camera connector) often allows boot; compass and rotation are lost until it's replaced.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug flexes one by one and retry.",
+   "Remove compass IC U15; test boot.",
+   "Fit a new U15 to restore compass."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "compass",
+   "error 4013",
+   "findflashmediaandkeepout",
+   "iphone 5",
+   "repair.wiki",
+   "u15",
+   "water damage"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Compass IC U15",
+  "part_numbers": [
+   "U15"
+  ],
+  "readings": [],
+  "device_family": "iphone5",
+  "error_codes": [
+   "4013",
+   "U15"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 5 \"FindFlashMediaAndKeepout\" error while booting repair\", https://repair.wiki/w/IPhone_5_%22FindFlashMediaAndKeepout%22_error_while_booting_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_5_%22FindFlashMediaAndKeepout%22_error_while_booting_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

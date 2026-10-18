@@ -1,0 +1,99 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 3 Fault Finding Using UART",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_3_Fault_Finding_Using_UART",
+   "kind": "web",
+   "title": "PlayStation 3 Fault Finding Using UART",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12555,
+   "last_edited_utc": "2025-11-02T20:59:35Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 3 (Fat, Slim, Super Slim)"
+  ],
+  "symptoms": [
+   "YLOD",
+   "no boot",
+   "need syscon error codes"
+  ],
+  "codes": [
+   "COK-00X",
+   "SEM-001",
+   "DIA-00X",
+   "VER-001",
+   "DYN-001"
+  ],
+  "claims": [
+   {
+    "statement": "PS3 syscon stores error logs readable over UART: solder RX, TX and GND (pad locations differ: COK-00X models A–E, SEM-001 model G, DIA-00X H–K, VER-001 L–Q, DYN-001 20xx, and Super Slim) to any USB-TTL adapter, crossing RX/TX.",
+    "evidence": "Connection section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Use SysconReader with the console plugged in but off; choose Mullion (CXR) or Sherwood (SW) syscon type, AUTH until success, then Get Error Codes; repeated AUTH failures mean wiring problems.",
+    "evidence": "Reading section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Decode codes with the PS3 Dev Wiki syscon error code list.",
+    "evidence": "What to do with codes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Solder RX/TX/GND for the board revision.",
+   "Connect USB-TTL (RX↔TX).",
+   "Plug in AC, don't power on.",
+   "SysconReader: select port and syscon type, Start, AUTH, Get Error Codes.",
+   "Look codes up on psdevwiki."
+  ],
+  "measurements": [],
+  "tools": [
+   "USB-TTL adapter",
+   "soldering iron",
+   "SysconReader"
+  ],
+  "cautions": [],
+  "tags": [
+   "error codes",
+   "mullion",
+   "ps3",
+   "repair.wiki",
+   "sherwood",
+   "syscon",
+   "uart",
+   "ylod"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Syscon",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation3",
+  "error_codes": [
+   "COK-00X",
+   "SEM-001",
+   "DIA-00X",
+   "VER-001",
+   "DYN-001"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 3 Fault Finding Using UART\", https://repair.wiki/w/PlayStation_3_Fault_Finding_Using_UART, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_3_Fault_Finding_Using_UART",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

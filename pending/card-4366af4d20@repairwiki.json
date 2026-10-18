@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy S10 No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_S10_No_Touch",
+   "kind": "web",
+   "title": "Galaxy S10 No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10238,
+   "last_edited_utc": "2025-08-16T21:52:36Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy S10"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "*#0*#"
+  ],
+  "claims": [
+   {
+    "statement": "Galaxy S10 touch needs VDD_TSP_1.8V and VDD_TSP_3.0V, which are only present with the phone powered on.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If both touch supplies are missing, the AP PMIC U12019 is the likely fault; it is not underfilled but storage and CPU sit on the opposite side, so limit heat.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A line reading far lower than expected (e.g. 0.1 or 0.0 instead of about 0.5) is a short, found by voltage injection with a thermal camera; OL means an open line to trace in boardview.",
+    "evidence": "General diode-reading guidance.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test a known-good display.",
+   "Inspect touch and LCD FPC connectors for physical or liquid damage.",
+   "Diode-check touch FPC pins against known values.",
+   "Measure VDD_TSP_1.8V and VDD_TSP_3.0V with the phone on.",
+   "Replace U12019 if both are missing; replace damaged FPC connectors.",
+   "Verify all functions via *#0*#."
+  ],
+  "measurements": [
+   {
+    "point": "VDD_TSP_1.8V",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Device powered on"
+   },
+   {
+    "point": "VDD_TSP_3.0V",
+    "expect": "3.0",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Device powered on"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "DC power supply",
+   "thermal camera",
+   "boardview"
+  ],
+  "cautions": [
+   "SOURCE RISK: Overheating the board near U12019 can damage the storage chip and CPU on the reverse side."
+  ],
+  "tags": [
+   "galaxy s10",
+   "no touch",
+   "pmic",
+   "repair.wiki",
+   "u12019",
+   "vdd_tsp"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "AP PMIC",
+  "part_numbers": [
+   "U12019"
+  ],
+  "readings": [
+   {
+    "point": "VDD_TSP_1.8V",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "VDD_TSP_3.0V",
+    "mode": "voltage",
+    "expect_lo": 3.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxys10",
+  "error_codes": [
+   "*#0*#"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy S10 No Touch\", https://repair.wiki/w/Galaxy_S10_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_S10_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,92 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Air 4 Not Reading Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Air_4_Not_Reading_Touch",
+   "kind": "web",
+   "title": "IPad Air 4 Not Reading Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7119,
+   "last_edited_utc": "2025-05-26T18:37:24Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air 4"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPad Air 4 no touch with a known-good screen: peel the tape over the middle shields to expose a J-shaped cutout and diode-check the caps there; one in the top-left/middle is usually shorted on a touch IC power rail.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Inject 1 V / 1 A; if heat comes from under the neighbouring shield, cut it open to reach a further bank of caps on the same rail. Shorted smoothing caps can be removed without replacement.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with a known-good screen that worked on another iPad.",
+   "Inspect the middle display FPC.",
+   "Diode-check caps in the J cutout.",
+   "Inject 1 V / 1 A; cut neighbouring shield if needed; remove hot cap."
+  ],
+  "measurements": [
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "1 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "grinder",
+   "snips"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad air 4",
+   "no touch",
+   "repair.wiki",
+   "shorted capacitor",
+   "touch ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch power rail capacitor",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipadair4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Air 4 Not Reading Touch\", https://repair.wiki/w/IPad_Air_4_Not_Reading_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Air_4_Not_Reading_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

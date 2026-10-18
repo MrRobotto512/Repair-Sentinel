@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 10 Makes Loud Screeching Noise From Lower Speaker",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_10_Makes_Loud_Screeching_Noise_From_Lower_Speaker",
+   "kind": "web",
+   "title": "IPad 10 Makes Loud Screeching Noise From Lower Speaker",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6106,
+   "last_edited_utc": "2025-04-03T01:27:31Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 10"
+  ],
+  "symptoms": [
+   "loud screeching from bottom speaker"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPad 10 that screeches through any speaker (speaker fine in another unit) has a failing audio IC beneath the main shield, right-hand side, beside the battery connector.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test a known-good speaker.",
+   "Inspect for liquid/pry damage.",
+   "Replace the audio IC beside the battery connector."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "audio ic",
+   "ipad 10",
+   "repair.wiki",
+   "screeching",
+   "speaker noise"
+  ],
+  "confidence": "medium",
+  "caveats": "IC designator only shown in image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Audio IC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipad10",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 10 Makes Loud Screeching Noise From Lower Speaker\", https://repair.wiki/w/IPad_10_Makes_Loud_Screeching_Noise_From_Lower_Speaker, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_10_Makes_Loud_Screeching_Noise_From_Lower_Speaker",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

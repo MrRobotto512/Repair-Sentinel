@@ -1,0 +1,122 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 9.7 Not Powering on, 2a or Higher Power Draw before Prompt to Boot",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_9.7_Not_Powering_on,_2a_or_Higher_Power_Draw_before_Prompt_to_Boot",
+   "kind": "web",
+   "title": "IPad Pro 9.7 Not Powering on, 2a or Higher Power Draw before Prompt to Boot",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8872,
+   "last_edited_utc": "2025-07-20T19:50:12Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 9.7"
+  ],
+  "symptoms": [
+   "no power",
+   "2 A draw before power-on"
+  ],
+  "codes": [
+   "PP_VCC_MAIN",
+   "U8500"
+  ],
+  "claims": [
+   {
+    "statement": "An iPad Pro 9.7 drawing current before power-on has a short, most often on PP_VCC_MAIN, otherwise PP_BATT_VCC, PPSTROBE_LX or PPVCC_HIGH.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With a VCC_MAIN short, U8500 also gets hot; don't assume it is the cause—look for other hot spots.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A healthy VCC_MAIN reads about 0.400–0.500 in diode mode after the short is removed.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for blown parts and liquid.",
+   "Find which line is shorted.",
+   "Inject 4 V / 2 A; locate the hot part (not just U8500).",
+   "Remove shorted decoupling cap or replace shorted chip; clean corrosion under ICs.",
+   "Confirm VCC_MAIN ~0.400–0.500."
+  ],
+  "measurements": [
+   {
+    "point": "VCC_MAIN (healthy)",
+    "expect": "0.400-0.500",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "freeze spray",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad pro 9.7",
+   "no power",
+   "repair.wiki",
+   "u8500",
+   "vcc_main short"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "VCC_MAIN short",
+  "part_numbers": [
+   "U8500"
+  ],
+  "readings": [
+   {
+    "point": "VCC_MAIN (healthy)",
+    "mode": "diode",
+    "expect_lo": 0.4,
+    "expect_hi": 0.5,
+    "unit": "V"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipadpro97",
+  "error_codes": [
+   "PP_VCC_MAIN",
+   "U8500"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 9.7 Not Powering on, 2a or Higher Power Draw before Prompt to Boot\", https://repair.wiki/w/IPad_Pro_9.7_Not_Powering_on,_2a_or_Higher_Power_Draw_before_Prompt_to_Boot, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_9.7_Not_Powering_on,_2a_or_Higher_Power_Draw_before_Prompt_to_Boot",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

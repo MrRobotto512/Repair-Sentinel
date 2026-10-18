@@ -1,0 +1,109 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 11 Not Powering on, 2A or Higher Power Draw After Prompt to Boot",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_11_Not_Powering_on,_2A_or_Higher_Power_Draw_After_Prompt_to_Boot",
+   "kind": "web",
+   "title": "IPhone 11 Not Powering on, 2A or Higher Power Draw After Prompt to Boot",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7665,
+   "last_edited_utc": "2025-06-14T00:20:43Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "no power",
+   "2 A or more draw"
+  ],
+  "codes": [
+   "PP_VDD_MAIN",
+   "U4400"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 11 drawing 2 A+: likely shorted cap on PP_VDD_MAIN or PP_VDD_BOOST; also a cracked U_NFC shorting in the bottom board, or rarely Rigel U4400.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Split the sandwich and power the top board alone to see whether the short is on the top or bottom board.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Yangtze heats instantly when injecting through the battery connector; usually a cap is the real short, rarely Yangtze itself.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for liquid.",
+   "Split; test top board alone for the short.",
+   "Inject 4 V / 2 A into the shorted board; remove hot cap.",
+   "Check U_NFC and Rigel U4400; check under Yangtze if suspected."
+  ],
+  "measurements": [
+   {
+    "point": "Short-find injection",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 11",
+   "no power",
+   "repair.wiki",
+   "rigel",
+   "u4400",
+   "u_nfc",
+   "vdd_main short",
+   "yangtze"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Shorted capacitor / U_NFC",
+  "part_numbers": [
+   "U4400"
+  ],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone11",
+  "error_codes": [
+   "PP_VDD_MAIN",
+   "U4400"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 11 Not Powering on, 2A or Higher Power Draw After Prompt to Boot\", https://repair.wiki/w/IPhone_11_Not_Powering_on,_2A_or_Higher_Power_Draw_After_Prompt_to_Boot, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_11_Not_Powering_on,_2A_or_Higher_Power_Draw_After_Prompt_to_Boot",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

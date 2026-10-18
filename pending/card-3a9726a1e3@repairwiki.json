@@ -1,0 +1,70 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS No Service, Always Searching For Cell Signal",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_No_Service,_Always_Searching_For_Cell_Signal",
+   "kind": "web",
+   "title": "IPhone XS No Service, Always Searching For Cell Signal",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7655,
+   "last_edited_utc": "2025-06-13T23:37:34Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "no service",
+   "no IMEI"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone XS / XS Max baseband faults: sandwich separation (iSocket test, reball), bottom board swap (move BB CPU, BB EEPROM and Wi-Fi) or BB CPU reball (lower success). Update, don't restore.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Split; repair ripped pads; iSocket test.",
+   "Bottom board swap or BB CPU reball.",
+   "Update and test calls."
+  ],
+  "measurements": [],
+  "tools": [
+   "iSocket",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband",
+   "bottom board swap",
+   "iphone xs",
+   "no service",
+   "repair.wiki",
+   "sandwich"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Sandwich / baseband",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexs",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS No Service, Always Searching For Cell Signal\", https://repair.wiki/w/IPhone_XS_No_Service,_Always_Searching_For_Cell_Signal, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_No_Service,_Always_Searching_For_Cell_Signal",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

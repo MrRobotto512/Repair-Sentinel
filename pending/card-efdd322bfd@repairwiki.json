@@ -1,0 +1,102 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Air 4 No Backlight",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Air_4_No_Backlight",
+   "kind": "web",
+   "title": "IPad Air 4 No Backlight",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12255,
+   "last_edited_utc": "2025-10-07T05:11:30Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air 4"
+  ],
+  "symptoms": [
+   "no backlight",
+   "faint image with light"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPad Air 4 no backlight: try a known-good display and press on the LCD FPC (bending its walls in can fix a loose connector).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Pins 11 and 13 on the LCD FPC are the usual suspects; the most common fault is the backlight filter on that line under a shield, which can burn through the board.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If the filter is good, find shorted smoothing caps with 1 V / 1 A injection and remove them; the large PMIC is a last resort and risks floating the CPU.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test known-good display; press on FPC.",
+   "Diode-check LCD FPC pins (focus 11 and 13).",
+   "Cut shield; check/replace backlight filter (jumper burnt traces).",
+   "Find and remove shorted caps.",
+   "Consider PMIC last."
+  ],
+  "measurements": [
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "1 A limit"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "grinder"
+  ],
+  "cautions": [
+   "SOURCE RISK: Replacing the PMIC risks floating the adjacent CPU."
+  ],
+  "tags": [
+   "backlight filter",
+   "ipad air 4",
+   "lcd fpc",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Reference diode values are in an image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight filter",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipadair4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Air 4 No Backlight\", https://repair.wiki/w/IPad_Air_4_No_Backlight, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Air_4_No_Backlight",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

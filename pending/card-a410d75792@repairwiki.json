@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5",
+   "kind": "web",
+   "title": "PlayStation 5",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13707,
+   "last_edited_utc": "2026-01-11T20:31:11Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "parts reference"
+  ],
+  "codes": [
+   "EDM-010",
+   "EDM-020",
+   "EDM-032",
+   "EDM-033",
+   "Erebus"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 (codename Erebus) parts: MN864739 HDMI encoder, CXD90061GG southbridge, CXD90062GG SSD controller, Dialog DA9081 SSD/NAND PMIC, Dialog DA9065 southbridge PMIC, 25Q16JVNIM BIOS IC, 0.1 µF X5R 0603 16 V cap behind the HDMI port.",
+    "evidence": "Parts table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Diode-mode reference images exist for EDM-020 USB, power/disc, M.2, LED, front USB, LAN, disc data and fan/drive power connectors, and for the HDMI port.",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "25q16jvnim",
+   "cxd90061gg",
+   "cxd90062gg",
+   "da9065",
+   "da9081",
+   "mn864739",
+   "parts list",
+   "ps5",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Reference diode readings are images, not transcribed. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "MN864739",
+   "CXD90061GG",
+   "CXD90062GG",
+   "DA9081",
+   "DA9065",
+   "25Q16JVNIM"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "EDM-010",
+   "EDM-020",
+   "EDM-032",
+   "EDM-033",
+   "Erebus"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5\", https://repair.wiki/w/PlayStation_5, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

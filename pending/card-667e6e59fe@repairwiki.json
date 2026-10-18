@@ -1,0 +1,75 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS Bootlooping, Fails Update with Error 4013",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_Bootlooping,_Fails_Update_with_Error_4013",
+   "kind": "web",
+   "title": "IPhone XS Bootlooping, Fails Update with Error 4013",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7661,
+   "last_edited_utc": "2025-06-14T00:11:44Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "bootloop",
+   "green flash",
+   "error 4013"
+  ],
+  "codes": [
+   "4013"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XS / XS Max 4013 bootloops: usually the earpiece flex (liquid on flood illuminator/ALS); otherwise liquid corrosion under the interposer on the bottom board (reflow or bottom board swap).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug all flexes; test known-good parts.",
+   "Repair earpiece flex keeping Face ID parts.",
+   "Split and test with known-good bottom board; reflow corrosion or swap."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "bottom board",
+   "earpiece flex",
+   "error 4013",
+   "iphone xs",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Earpiece flex / bottom board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexs",
+  "error_codes": [
+   "4013"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS Bootlooping, Fails Update with Error 4013\", https://repair.wiki/w/IPhone_XS_Bootlooping,_Fails_Update_with_Error_4013, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_Bootlooping,_Fails_Update_with_Error_4013",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

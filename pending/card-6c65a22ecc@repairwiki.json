@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 12 Pro that is not charging and touch not working",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_12_Pro_that_is_not_charging_and_touch_not_working",
+   "kind": "web",
+   "title": "How To Fix an iPhone 12 Pro that is not charging and touch not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11453,
+   "last_edited_utc": "2025-09-08T21:09:08Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12",
+   "iPhone 12 mini",
+   "iPhone 12 Pro",
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "not charging",
+   "no touch",
+   "not detected over USB"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 12-series no charge plus no touch is often a failed USB (Kraken) IC, commonly after poor chargers.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On a DC supply the phone may power but not see USB, with an irregular spike when prompted to boot.",
+    "evidence": "Symptoms.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: split the sandwich and replace the Kraken IC (reballed or new).",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test known-good charge port flex and battery.",
+   "Inspect the USB IC area for liquid or damage.",
+   "Check DCPS draw on power-up for irregular spikes.",
+   "Separate the sandwich and replace the Kraken IC; test charge and touch."
+  ],
+  "measurements": [],
+  "tools": [
+   "DC power supply",
+   "hot air",
+   "microscope",
+   "reball stencil"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 12",
+   "kraken",
+   "no touch",
+   "not charging",
+   "repair.wiki",
+   "usb ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "USB (Kraken) IC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone12",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 12 Pro that is not charging and touch not working\", https://repair.wiki/w/How_To_Fix_an_iPhone_12_Pro_that_is_not_charging_and_touch_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_12_Pro_that_is_not_charging_and_touch_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

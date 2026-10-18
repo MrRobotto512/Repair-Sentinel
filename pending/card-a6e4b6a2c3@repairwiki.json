@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to repair iPhone 12 pro to 14 pro max rear camera portrait mode not working",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_repair_iPhone_12_pro_to_14_pro_max_rear_camera_portrait_mode_not_working",
+   "kind": "web",
+   "title": "How to repair iPhone 12 pro to 14 pro max rear camera portrait mode not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10940,
+   "last_edited_utc": "2025-08-30T18:05:40Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12 Pro",
+   "iPhone 12 Pro Max",
+   "iPhone 13 Pro",
+   "iPhone 13 Pro Max",
+   "iPhone 14 Pro",
+   "iPhone 14 Pro Max"
+  ],
+  "symptoms": [
+   "portrait mode not working",
+   "Measure app not working",
+   "LiDAR missing"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On iPhone 12 Pro–14 Pro Max, LiDAR fails after drops, liquid, or when a tech doesn't transfer the paired LiDAR during a rear housing swap; portrait mode and Measure then fail.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: JC Repair Assistant 'Brushing' unbind with an IPSW flash (backs up LiDAR data to the cloud), then program a JCID programmable LiDAR sensor and install it.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm Measure and portrait mode fail; ask about rear housing swaps.",
+   "Remove faulty LiDAR.",
+   "Run Brushing unbind and flash in JC Repair Assistant (re-flash in 3uTools if stuck).",
+   "Program JCID LiDAR sensor; install and test."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC programmer",
+   "JC Repair Assistant",
+   "JCID LiDAR module",
+   "3uTools"
+  ],
+  "cautions": [
+   "SOURCE RISK: The unbind flash process erases the device."
+  ],
+  "tags": [
+   "iphone pro",
+   "jcid",
+   "lidar",
+   "measure app",
+   "portrait mode",
+   "repair.wiki",
+   "unbind"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "LiDAR sensor",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone12pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to repair iPhone 12 pro to 14 pro max rear camera portrait mode not working\", https://repair.wiki/w/How_to_repair_iPhone_12_pro_to_14_pro_max_rear_camera_portrait_mode_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_repair_iPhone_12_pro_to_14_pro_max_rear_camera_portrait_mode_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

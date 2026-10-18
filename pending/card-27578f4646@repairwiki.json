@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Elite Controller Series 2 issues with the analog sticks repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Elite_Controller_Series_2_issues_with_the_analog_sticks_repair",
+   "kind": "web",
+   "title": "Xbox Elite Controller Series 2 issues with the analog sticks repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2911,
+   "last_edited_utc": "2024-01-17T01:15:32Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Elite Wireless Controller Series 2"
+  ],
+  "symptoms": [
+   "stick drift",
+   "stick doesn't reach full range"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Elite Series 2 stick drift or short range: clean the four potentiometers (two per stick) and replace if worn; the stick mechanism is Elite 2-specific but the pots are the same as other Xbox controllers.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacement pots usually need rotating to centre before soldering; bend pins on non-plated holes, or shave the locating pegs in extreme cases.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clean the pots.",
+   "Replace worn pots, centring before soldering."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "potentiometer",
+   "repair.wiki",
+   "stick drift",
+   "xbox elite series 2"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Stick potentiometers",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxelitewirelesscontrollerseries2",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Elite Controller Series 2 issues with the analog sticks repair\", https://repair.wiki/w/Xbox_Elite_Controller_Series_2_issues_with_the_analog_sticks_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Elite_Controller_Series_2_issues_with_the_analog_sticks_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,138 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to Troubleshoot And Fix iPhone Random Restarts Using Panic Logs",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_Troubleshoot_And_Fix_iPhone_Random_Restarts_Using_Panic_Logs",
+   "kind": "web",
+   "title": "How to Troubleshoot And Fix iPhone Random Restarts Using Panic Logs",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13741,
+   "last_edited_utc": "2026-01-20T02:34:03Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "mic1",
+   "mic2",
+   "prs0",
+   "tg0b",
+   "ans2",
+   "0x20",
+   "0x40",
+   "0x41",
+   "0xa1",
+   "0xa9",
+   "0x400",
+   "0x800",
+   "0x1000",
+   "0x4000",
+   "0x20000",
+   "0x40000",
+   "0x80000",
+   "0x100000",
+   "0x200000",
+   "0x300000",
+   "0x400000",
+   "0x500000"
+  ],
+  "claims": [
+   {
+    "statement": "Start random-restart work by testing with known-good parts, then read the panic-full log's missing sensor / Sensor Array value and use the model-specific page.",
+    "evidence": "Summary.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPhone 12 and older Missing sensors: mic1 = charging port flex (SE 2020 may be the board), mic2 = power button flex, prs0 = charging port flex, tg0b = battery/connector/data line, ans2 = NAND related.",
+    "evidence": "Common panic messages.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Generic iPhone 13+ Sensor Array bits listed: 0x20 charging circuit, 0x40 gas gauge, 0x41 battery data, 0xa1 battery sensor, 0xa9 battery data variant, 0x400 gyro, 0x800 charge port, 0x1000 proximity, 0x4000 battery sensor, 0x20000 gyro (14 Pro+), 0x40000 charge port (14 Pro+), 0x80000 proximity (14–17), 0x100000 power button, 0x200000 front sensor / wireless coil, 0x300000 USB-C (Pro), 0x400000 wireless coil, 0x500000 battery.",
+    "evidence": "Universal codes table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Third-party analysers (iDevice Panic Log Analyzer, PanicFull.com) only suggest causes; there is no official Apple mapping.",
+    "evidence": "Summary note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with known-good parts.",
+   "Open newest panic-full log.",
+   "Look up the missing sensor or Sensor Array value on the model page.",
+   "Remember values combine as bit flags."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good parts"
+  ],
+  "cautions": [],
+  "tags": [
+   "ans2",
+   "iphone",
+   "mic1",
+   "mic2",
+   "missing sensors",
+   "panic log",
+   "prs0",
+   "random restart",
+   "repair.wiki",
+   "sensor array",
+   "tg0b"
+  ],
+  "confidence": "medium",
+  "caveats": "The 'universal' table conflicts with some model pages (e.g. 0x100000 is the charge port on iPhone 14 and prox on iPhone 15; this page also lists 0x10000 for the 14 Pro power button where the 14 Pro page says 0x100000). Prefer the model-specific card. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone",
+  "error_codes": [
+   "mic1",
+   "mic2",
+   "prs0",
+   "tg0b",
+   "ans2",
+   "0x20",
+   "0x40",
+   "0x41",
+   "0xa1",
+   "0xa9",
+   "0x400",
+   "0x800",
+   "0x1000",
+   "0x4000",
+   "0x20000",
+   "0x40000",
+   "0x80000",
+   "0x100000",
+   "0x200000",
+   "0x300000",
+   "0x400000",
+   "0x500000"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to Troubleshoot And Fix iPhone Random Restarts Using Panic Logs\", https://repair.wiki/w/How_to_Troubleshoot_And_Fix_iPhone_Random_Restarts_Using_Panic_Logs, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_Troubleshoot_And_Fix_iPhone_Random_Restarts_Using_Panic_Logs",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

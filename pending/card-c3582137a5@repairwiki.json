@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 17 Pro That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_17_Pro_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 17 Pro That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12168,
+   "last_edited_utc": "2025-09-28T15:21:39Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 17 Pro",
+   "iPhone 17 Pro Max"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "8388608",
+   "0x800000",
+   "6291456",
+   "0x600000"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 17 Pro / Pro Max Sensor Array 8388608 (0x800000) = wireless charging flex on the back glass.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "6291456 (0x600000) = charging port flex (also check the air pressure sensor is connected).",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read the Sensor Array value.",
+   "Test the flagged flex with a known-good OEM part; diode-check FPC."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "6291456",
+   "8388608",
+   "iphone 17 pro",
+   "panic log",
+   "random restart",
+   "repair.wiki",
+   "sensor array",
+   "wireless charging flex"
+  ],
+  "confidence": "medium",
+  "caveats": "0x600000 means a different fault on iPhone 14 / 15 Pro; always decode per model. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wireless flex / charge port flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone17pro",
+  "error_codes": [
+   "8388608",
+   "0x800000",
+   "6291456",
+   "0x600000"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 17 Pro That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_17_Pro_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_17_Pro_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

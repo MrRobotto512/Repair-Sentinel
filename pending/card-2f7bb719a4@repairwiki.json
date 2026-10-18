@@ -1,0 +1,211 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Diagnose & Fix an iPhone 7 That Does Not Charge, Takes 0.006A via USB",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Diagnose_%26_Fix_an_iPhone_7_That_Does_Not_Charge,_Takes_0.006A_via_USB",
+   "kind": "web",
+   "title": "How To Diagnose & Fix an iPhone 7 That Does Not Charge, Takes 0.006A via USB",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3116,
+   "last_edited_utc": "2024-01-20T21:20:57Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "not charging",
+   "0.006 A on USB meter",
+   "no charging icon"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone 7 / 7 Plus that turns on but draws only about 0.006–0.007 A from USB with known-good port and battery usually has a bad Tristar U4001 (610A3B).",
+    "evidence": "Problem description and step 1.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "No draw before power-on but a first boot step of about 0.150–0.250 A on a DC supply points to Tristar; draw before power-on means a board short instead.",
+    "evidence": "DC power supply boot test.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With only the charge flex connected and USB plugged in, about 3.7 V at battery connector J2201 is normal; under about 2 V (often 0.3–0.6 V) means bad Tristar.",
+    "evidence": "Battery connector voltage test.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After a good Tristar swap: USB charge around 1 A or more, first boot step about 0.045 A, about 3.7 V at J2201.",
+    "evidence": "After-repair checks.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Tristar is partly under a shield; remove and fit it at an angle rather than cutting the shield, which can later pierce the charging port.",
+    "evidence": "Repair caution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If still not charging, TRISTAR_BYPASS cap C4005 (1.0 µF 6.3 V 0201) may be shorted to ground.",
+    "evidence": "Other faults.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Tristar testers (Smartmod Pro, ICC Pro, JC) reliably flag a fail but a pass does not prove Tristar is good.",
+    "evidence": "Tester notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with known-good port flex and battery outside the housing; read the USB meter.",
+   "Optionally run a Tristar tester.",
+   "On DC supply check draw before and after power-on.",
+   "Optionally check Tristar heating with thermal camera/freeze spray.",
+   "Measure J2201 voltage with only the charge flex connected.",
+   "Replace Tristar 610A3B at an angle under the shield; re-run all checks.",
+   "If unresolved check C4005 and diode-mode Tristar pads against boardview."
+  ],
+  "measurements": [
+   {
+    "point": "USB meter charging draw (fault)",
+    "expect": "0.006",
+    "unit": "A",
+    "mode": "current",
+    "context": "Bad Tristar symptom"
+   },
+   {
+    "point": "First boot step after power-on (bad Tristar)",
+    "expect": "0.150-0.250",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC power supply"
+   },
+   {
+    "point": "First boot step after power-on (good)",
+    "expect": "0.045",
+    "unit": "A",
+    "mode": "current",
+    "context": "After repair"
+   },
+   {
+    "point": "J2201 battery connector, charge flex only",
+    "expect": "3.7",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Working charge circuit"
+   },
+   {
+    "point": "J2201 battery connector (bad Tristar)",
+    "expect": "0.3-0.6",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Under 2 V is bad"
+   },
+   {
+    "point": "C4005 TRISTAR_BYPASS",
+    "expect": "1.0",
+    "unit": "µF",
+    "mode": "capacitance",
+    "context": "6.3 V 0201"
+   }
+  ],
+  "tools": [
+   "USB power meter",
+   "DC power supply",
+   "Tristar tester",
+   "thermal camera",
+   "hot air",
+   "ZXW boardview"
+  ],
+  "cautions": [
+   "SOURCE RISK: Cutting the Tristar shield leaves sharp edges that can damage the charge port flex."
+  ],
+  "tags": [
+   "610a3b",
+   "c4005",
+   "iphone 7",
+   "iphone 7 plus",
+   "j2201",
+   "not charging",
+   "repair.wiki",
+   "tristar",
+   "u4001"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Tristar U4001",
+  "part_numbers": [
+   "610A3B",
+   "U4001",
+   "C4005",
+   "J2201"
+  ],
+  "readings": [
+   {
+    "point": "USB meter charging draw (fault)",
+    "mode": "current",
+    "expect_lo": 0.006,
+    "expect_hi": 0.006,
+    "unit": "A"
+   },
+   {
+    "point": "First boot step after power-on (bad Tristar)",
+    "mode": "current",
+    "expect_lo": 0.15,
+    "expect_hi": 0.25,
+    "unit": "A"
+   },
+   {
+    "point": "First boot step after power-on (good)",
+    "mode": "current",
+    "expect_lo": 0.045,
+    "expect_hi": 0.045,
+    "unit": "A"
+   },
+   {
+    "point": "J2201 battery connector, charge flex only",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 3.7,
+    "unit": "V"
+   },
+   {
+    "point": "J2201 battery connector (bad Tristar)",
+    "mode": "voltage",
+    "expect_lo": 0.3,
+    "expect_hi": 0.6,
+    "unit": "V"
+   },
+   {
+    "point": "C4005 TRISTAR_BYPASS",
+    "mode": "capacitance",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "µF"
+   }
+  ],
+  "device_family": "iphone7",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Diagnose & Fix an iPhone 7 That Does Not Charge, Takes 0.006A via USB\", https://repair.wiki/w/How_To_Diagnose_%26_Fix_an_iPhone_7_That_Does_Not_Charge,_Takes_0.006A_via_USB, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Diagnose_%26_Fix_an_iPhone_7_That_Does_Not_Charge,_Takes_0.006A_via_USB",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

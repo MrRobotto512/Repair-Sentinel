@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Steam Deck - Replace shoulder switch R1/L1",
+  "source": {
+   "url": "https://repair.wiki/w/Steam_Deck_-_Replace_shoulder_switch_R1/L1",
+   "kind": "web",
+   "title": "Steam Deck - Replace shoulder switch R1/L1",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13793,
+   "last_edited_utc": "2026-01-29T23:21:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Steam Deck LCD"
+  ],
+  "symptoms": [
+   "shoulder button R1/L1 broken"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Steam Deck LCD shoulder switches break off easily; replacements are sold as Steam Deck or Xbox 360 Bluetooth pair switches. A preheater helps as the board sinks heat.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Outer switch pins are ground; if the middle pad rips, wire it to the L1/R1 test point on the back of the controller board (location varies by rev. B/F/G).",
+    "evidence": "Damaged pad section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Preheat; swap the switch.",
+   "If middle pad ripped, run magnet wire to the L1/R1 test point."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron",
+   "preheater",
+   "magnet wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "l1",
+   "r1",
+   "repair.wiki",
+   "shoulder button",
+   "steam deck",
+   "switch"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Shoulder switch",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "steamdecklcd",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Steam Deck - Replace shoulder switch R1/L1\", https://repair.wiki/w/Steam_Deck_-_Replace_shoulder_switch_R1/L1, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Steam_Deck_-_Replace_shoulder_switch_R1/L1",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

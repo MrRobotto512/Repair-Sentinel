@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Mini 2 No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Mini_2_No_Touch",
+   "kind": "web",
+   "title": "IPad Mini 2 No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9094,
+   "last_edited_utc": "2025-07-27T21:21:04Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad mini 2"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPad mini 2 touch FPC is very easy to damage; check it and its diode readings first.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Missing PP5V25_GRAPE points to PMIC U8100; missing PP1V8_GRAPE points to U1700; otherwise the touch controller is inside the CPU, so a CPU reball is the last step.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new digitizer; inspect touch FPC.",
+   "Diode-check FPC.",
+   "Measure PP5V25_GRAPE and PP1V8_GRAPE powered.",
+   "Replace U8100 or U1700 as indicated; reball CPU last."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad mini 2",
+   "no touch",
+   "pp5v25_grape",
+   "repair.wiki",
+   "u1700",
+   "u8100"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch supplies",
+  "part_numbers": [
+   "U8100",
+   "U1700"
+  ],
+  "readings": [],
+  "device_family": "ipadmini2",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Mini 2 No Touch\", https://repair.wiki/w/IPad_Mini_2_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Mini_2_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

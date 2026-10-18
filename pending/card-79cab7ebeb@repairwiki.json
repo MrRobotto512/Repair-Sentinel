@@ -1,0 +1,128 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to Repair iPhone 12 Pro Max that does not detect battery and does not charge",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_Repair_iPhone_12_Pro_Max_that_does_not_detect_battery_and_does_not_charge",
+   "kind": "web",
+   "title": "How to Repair iPhone 12 Pro Max that does not detect battery and does not charge",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12106,
+   "last_edited_utc": "2025-09-26T02:35:04Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "battery not detected",
+   "not charging",
+   "no battery percentage"
+  ],
+  "codes": [
+   "U2470"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 12 Pro Max with normal BATT_VCC (3.7–4.0 V) and normal battery FPC diode readings but no battery detection had battery I2C SDA/SCL at about 0.2 V instead of 1.8 V, pulled low by level translator U2470.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacing U2470 restores ~1.8 V on the battery I2C lines and normal charging.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure BATT_VCC at the connector (3.7–4.0 V).",
+   "Diode-check battery FPC.",
+   "Measure I2C SDA/SCL voltage (expect ~1.8 V).",
+   "Replace U2470 if pulled low; re-measure."
+  ],
+  "measurements": [
+   {
+    "point": "BATT_VCC at battery connector",
+    "expect": "3.7-4.0",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Normal"
+   },
+   {
+    "point": "Battery I2C SDA/SCL",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Normal"
+   },
+   {
+    "point": "Battery I2C SDA/SCL (faulty)",
+    "expect": "0.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Pulled low by U2470"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery not detected",
+   "i2c",
+   "iphone 12 pro max",
+   "level translator",
+   "not charging",
+   "repair.wiki",
+   "u2470"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "U2470 level translator",
+  "part_numbers": [
+   "U2470"
+  ],
+  "readings": [
+   {
+    "point": "BATT_VCC at battery connector",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 4.0,
+    "unit": "V"
+   },
+   {
+    "point": "Battery I2C SDA/SCL",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "Battery I2C SDA/SCL (faulty)",
+    "mode": "voltage",
+    "expect_lo": 0.2,
+    "expect_hi": 0.2,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone12promax",
+  "error_codes": [
+   "U2470"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to Repair iPhone 12 Pro Max that does not detect battery and does not charge\", https://repair.wiki/w/How_to_Repair_iPhone_12_Pro_Max_that_does_not_detect_battery_and_does_not_charge, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_Repair_iPhone_12_Pro_Max_that_does_not_detect_battery_and_does_not_charge",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

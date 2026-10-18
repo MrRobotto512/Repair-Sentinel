@@ -1,0 +1,102 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 14 that is shows temperature warning and does not charge",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_14_that_is_shows_temperature_warning_and_does_not_charge",
+   "kind": "web",
+   "title": "How To Fix an iPhone 14 that is shows temperature warning and does not charge",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11469,
+   "last_edited_utc": "2025-09-08T22:23:30Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 14"
+  ],
+  "symptoms": [
+   "temperature warning on boot",
+   "charges only when off",
+   "overheats when on"
+  ],
+  "codes": [
+   "SPKRAMP_TOP_VBOOST"
+  ],
+  "claims": [
+   {
+    "statement": "An iPhone 14 showing a temperature warning, overheating when on and charging only when off, with about 1 A drawn on a DC supply before power-on, can have a shorted capacitor on the SPKRAMP_TOP_VBOOST rail.",
+    "evidence": "Symptoms and diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Locate it with a thermal camera, confirm low resistance on the rail after splitting the board, and remove the shorted cap.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "On DCPS confirm ~1 A draw before prompting boot.",
+   "Thermal-camera the board to find the hot part.",
+   "Split the sandwich and measure SPKRAMP_TOP_VBOOST resistance.",
+   "Remove the shorted capacitor and re-measure.",
+   "Retest pre-boot draw, charging and temperature under load."
+  ],
+  "measurements": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "expect": "1",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply, before prompting boot"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "hot air",
+   "microscope",
+   "boardview"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 14",
+   "not charging",
+   "overheating",
+   "repair.wiki",
+   "short",
+   "spkramp_top_vboost",
+   "temperature warning"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Speaker amp boost rail capacitor",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "mode": "current",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "A"
+   }
+  ],
+  "device_family": "iphone14",
+  "error_codes": [
+   "SPKRAMP_TOP_VBOOST"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 14 that is shows temperature warning and does not charge\", https://repair.wiki/w/How_To_Fix_an_iPhone_14_that_is_shows_temperature_warning_and_does_not_charge, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_14_that_is_shows_temperature_warning_and_does_not_charge",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

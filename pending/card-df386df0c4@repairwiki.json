@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS No Image on Screen",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_No_Image_on_Screen",
+   "kind": "web",
+   "title": "IPhone XS No Image on Screen",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7659,
+   "last_edited_utc": "2025-06-14T00:05:26Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "no image",
+   "black screen"
+  ],
+  "codes": [
+   "J5700",
+   "FL5783"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XS / XS Max (OLED, so not 'backlight') no image is most often blown PP3V0_DISPLAY_CONN filter FL5783 at J5700; otherwise pry-damaged chokes L5700/L5710/L5720/L5730/L5740 or long-screw damage near the battery connector.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test known-good screen.",
+   "Diode-check J5700.",
+   "Replace FL5783 or damaged chokes; check the screw hole."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "chokes",
+   "fl5783",
+   "iphone xs",
+   "j5700",
+   "no image",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "FL5783 / chokes",
+  "part_numbers": [
+   "FL5783",
+   "L5700",
+   "L5710",
+   "L5720",
+   "L5730",
+   "L5740"
+  ],
+  "readings": [],
+  "device_family": "iphonexs",
+  "error_codes": [
+   "J5700",
+   "FL5783"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS No Image on Screen\", https://repair.wiki/w/IPhone_XS_No_Image_on_Screen, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_No_Image_on_Screen",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

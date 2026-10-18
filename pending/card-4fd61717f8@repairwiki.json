@@ -1,0 +1,94 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS Max No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_Max_No_Touch",
+   "kind": "web",
+   "title": "IPhone XS Max No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10380,
+   "last_edited_utc": "2025-08-18T22:05:09Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "U5600",
+   "LM3373A2YKA"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XS Max no touch is most often a top-to-bottom board disconnection (cracked interposer joint or ripped pad); test in iSocket and reball.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Touch supplies (powered, display connected): PN6V7_RACER, PN3V5_RACER, PN10V0_RACER, PN1V8_TOUCH_RACER_S2, PN1V1_RACER, PN5V25_TOUCH_VDDH; most come from U5600 (LM3373A2YKA), shared with iPhone X/XS.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Ripped pads named RACER or Touch must be rebuilt; ground pads can be ignored.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test a new display; inspect the touch FPC.",
+   "Diode-check touch FPC.",
+   "Measure RACER/touch supplies.",
+   "Split; check ripped pads; test in iSocket; reball.",
+   "Replace U5600 if supplies missing."
+  ],
+  "measurements": [],
+  "tools": [
+   "iSocket",
+   "preheater",
+   "multimeter",
+   "ZXW"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone xs max",
+   "lm3373a2yka",
+   "no touch",
+   "racer",
+   "repair.wiki",
+   "sandwich",
+   "u5600"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Sandwich / touch power U5600",
+  "part_numbers": [
+   "U5600",
+   "LM3373A2YKA"
+  ],
+  "readings": [],
+  "device_family": "iphonexsmax",
+  "error_codes": [
+   "U5600",
+   "LM3373A2YKA"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS Max No Touch\", https://repair.wiki/w/IPhone_XS_Max_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_Max_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 Not turning on repair",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_Not_turning_on_repair",
+   "kind": "web",
+   "title": "PlayStation 5 Not turning on repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6873,
+   "last_edited_utc": "2025-05-16T23:05:49Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "no power"
+  ],
+  "codes": [
+   "CXD90061GG"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 no power: check 12 V from the PSU; check shorts behind southbridge CXD90061GG (not married, replaceable).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On a 12 V bench supply with no ~300 mA boot step, remove the BIOS IC for 10–20 minutes, resolder and retry; else reprogram with a working digital BIOS (disc drive will no longer work).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure 12 V at the PSU connector.",
+   "Check shorts behind the southbridge.",
+   "Bench-feed 12 V and watch for ~300 mA step.",
+   "Remove/reseat BIOS IC; reflash with digital BIOS if needed."
+  ],
+  "measurements": [
+   {
+    "point": "Bench boot step",
+    "expect": "300",
+    "unit": "mA",
+    "mode": "current",
+    "context": "At 12 V"
+   }
+  ],
+  "tools": [
+   "bench power supply",
+   "multimeter",
+   "CH341A"
+  ],
+  "cautions": [],
+  "tags": [
+   "12v",
+   "bios",
+   "no power",
+   "ps5",
+   "repair.wiki",
+   "southbridge"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PSU / southbridge / BIOS",
+  "part_numbers": [
+   "CXD90061GG"
+  ],
+  "readings": [
+   {
+    "point": "Bench boot step",
+    "mode": "current",
+    "expect_lo": 300.0,
+    "expect_hi": 300.0,
+    "unit": "mA"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "CXD90061GG"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 Not turning on repair\", https://repair.wiki/w/PlayStation_5_Not_turning_on_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_Not_turning_on_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

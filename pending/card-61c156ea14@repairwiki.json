@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch No fan spin and not charging joycons Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_No_fan_spin_and_not_charging_joycons_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch No fan spin and not charging joycons Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2193,
+   "last_edited_utc": "2024-01-13T14:29:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "fan doesn't spin",
+   "Joy-Cons not charging on rails"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The fan and Joy-Con rails share one MOSFET just north of M92T36; when it fails open the fan stops and Joy-Cons won't charge.",
+    "evidence": "Solution and linked method.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Try the voltage injection trick first; otherwise replace the MOSFET or a bad fan.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check the fan spins freely.",
+   "Try voltage injection on fan VCC.",
+   "Replace the MOSFET above M92T36."
+  ],
+  "measurements": [],
+  "tools": [
+   "DC power supply"
+  ],
+  "cautions": [],
+  "tags": [
+   "joy-con not charging",
+   "mosfet",
+   "nintendo switch",
+   "no fan",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Fan/Joy-Con MOSFET",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch No fan spin and not charging joycons Repair\", https://repair.wiki/w/Nintendo_Switch_No_fan_spin_and_not_charging_joycons_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_No_fan_spin_and_not_charging_joycons_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

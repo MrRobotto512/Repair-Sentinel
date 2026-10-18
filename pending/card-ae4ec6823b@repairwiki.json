@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 11 Pro and iPhone 11 Pro Max Not Powering on, 2a or Higher Power Draw After Prompt to Boot",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_11_Pro_and_iPhone_11_Pro_Max_Not_Powering_on,_2a_or_Higher_Power_Draw_After_Prompt_to_Boot",
+   "kind": "web",
+   "title": "IPhone 11 Pro and iPhone 11 Pro Max Not Powering on, 2a or Higher Power Draw After Prompt to Boot",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8634,
+   "last_edited_utc": "2025-07-08T20:20:16Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11 Pro",
+   "iPhone 11 Pro Max"
+  ],
+  "symptoms": [
+   "no power",
+   "2 A or more draw"
+  ],
+  "codes": [
+   "PP_VDD_MAIN"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 11 Pro / Pro Max drawing 2 A+: likely shorted cap on PP_VDD_MAIN or PP_VDD_BOOST, or a cracked U_NFC in the bottom board; split the sandwich to localise top vs bottom.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for liquid.",
+   "Split; test top board alone.",
+   "Inject 4 V / 2 A; remove the hot cap; check U_NFC."
+  ],
+  "measurements": [
+   {
+    "point": "Short-find injection",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 11 pro",
+   "no power",
+   "repair.wiki",
+   "u_nfc",
+   "vdd_main short",
+   "yangtze"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Shorted capacitor / U_NFC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone11pro",
+  "error_codes": [
+   "PP_VDD_MAIN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 11 Pro and iPhone 11 Pro Max Not Powering on, 2a or Higher Power Draw After Prompt to Boot\", https://repair.wiki/w/IPhone_11_Pro_and_iPhone_11_Pro_Max_Not_Powering_on,_2a_or_Higher_Power_Draw_After_Prompt_to_Boot, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_11_Pro_and_iPhone_11_Pro_Max_Not_Powering_on,_2a_or_Higher_Power_Draw_After_Prompt_to_Boot",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix iPhone X with No Display or No Image",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_iPhone_X_with_No_Display_or_No_Image",
+   "kind": "web",
+   "title": "How to fix iPhone X with No Display or No Image",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3835,
+   "last_edited_utc": "2024-05-22T06:41:49Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "no image",
+   "black screen"
+  ],
+  "codes": [
+   "J5700",
+   "FL5783"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone X no image is most often a blown PP3V0_DISPLAY_CONN filter FL5783 at display connector J5700.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Other causes: pry-damaged chokes L5700, L5710, L5720, L5730, L5740, or a long screw in the hole by the battery connector severing image lines.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check J5700 for shorts/OL.",
+   "Replace FL5783 if blown.",
+   "Inspect the five chokes and the screw hole near the battery connector."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: A long screw near the battery connector can cut image lines."
+  ],
+  "tags": [
+   "chokes",
+   "fl5783",
+   "iphone x",
+   "j5700",
+   "long screw damage",
+   "no image",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "FL5783 / display chokes",
+  "part_numbers": [
+   "FL5783",
+   "L5700",
+   "L5710",
+   "L5720",
+   "L5730",
+   "L5740"
+  ],
+  "readings": [],
+  "device_family": "iphonex",
+  "error_codes": [
+   "J5700",
+   "FL5783"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix iPhone X with No Display or No Image\", https://repair.wiki/w/How_to_fix_iPhone_X_with_No_Display_or_No_Image, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_iPhone_X_with_No_Display_or_No_Image",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

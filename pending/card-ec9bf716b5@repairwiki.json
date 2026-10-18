@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 That Restarts When You Make A Call",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Restarts_When_You_Make_A_Call",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 That Restarts When You Make A Call",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3217,
+   "last_edited_utc": "2024-01-25T06:42:08Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "restarts when making a call"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An iPhone 7 that reboots as a call starts usually has corrosion on the front camera flex's ALS/proximity sensor; unplug the front camera flex to confirm, then replace or clean it.",
+    "evidence": "Troubleshooting and explanation.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug the front camera flex and test a call.",
+   "Fit a new front camera flex, or clean corrosion with IPA."
+  ],
+  "measurements": [],
+  "tools": [
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "front camera flex",
+   "iphone 7",
+   "proximity sensor",
+   "repair.wiki",
+   "restart on call"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Front camera / proximity flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 That Restarts When You Make A Call\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Restarts_When_You_Make_A_Call, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_That_Restarts_When_You_Make_A_Call",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

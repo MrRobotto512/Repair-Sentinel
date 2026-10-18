@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR front camera not working",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_front_camera_not_working",
+   "kind": "web",
+   "title": "IPhone XR front camera not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6710,
+   "last_edited_utc": "2025-05-14T18:59:27Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "front camera black"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Replacing the whole XR front camera assembly loses Face ID; you can cut out just the front camera and keep the IR cam and dot projector. Flash an update after replacing or it won't work.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "An open filter on the front camera connector line can be replaced with a same-size backlight filter—never a jumper.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new front camera and update iOS.",
+   "Diode-check the front camera connector.",
+   "Replace open filters / remove shorts."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "grinder or snips"
+  ],
+  "cautions": [],
+  "tags": [
+   "face id",
+   "filter",
+   "front camera",
+   "iphone xr",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Front camera / filters",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR front camera not working\", https://repair.wiki/w/IPhone_XR_front_camera_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_front_camera_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

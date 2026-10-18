@@ -1,0 +1,111 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9 5th Gen not powering on due to long screw damage",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9_5th_Gen_not_powering_on_due_to_long_screw_damage",
+   "kind": "web",
+   "title": "IPad Pro 12.9 5th Gen not powering on due to long screw damage",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6882,
+   "last_edited_utc": "2025-05-17T07:20:35Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 5th Gen",
+   "iPad Pro 12.9 6th Gen"
+  ],
+  "symptoms": [
+   "no power after screen repair",
+   "0.014-0.025 A after power-on"
+  ],
+  "codes": [
+   "PP3V3_BSB",
+   "C8300"
+  ],
+  "claims": [
+   {
+    "statement": "On iPad Pro 12.9 (5th/6th gen) putting the long shield screw in the wrong standoff by the battery connector can break the PP3V3_BSB line or its via, leaving the iPad dead after a screen repair.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Symptoms: 0 A before power-on and only 0.014–0.025 A after on a DC supply; USB meter shows ~0.02 A, a jump to ~0.5 A, then near zero; pressing near the standoff may let it boot.",
+    "evidence": "Symptoms.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: remove the standoff, scrape to the via, and jumper from the line at C8300 to the via; clamping the standoff can allow a one-time data backup.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Look for long-screw damage at the standoff above the screen FPCs.",
+   "Remove the standoff; scrape carefully around it.",
+   "Check the PP3V3_BSB via/line from C8300.",
+   "Jumper C8300 line to the via; verify boot; conformal coat."
+  ],
+  "measurements": [
+   {
+    "point": "Boot draw after power-on (fault)",
+    "expect": "0.014-0.025",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply"
+   }
+  ],
+  "tools": [
+   "scalpel",
+   "jumper wire",
+   "hot air",
+   "DC power supply"
+  ],
+  "cautions": [
+   "SOURCE RISK: The longer shield screw in the wrong standoff causes this damage."
+  ],
+  "tags": [
+   "c8300",
+   "ipad pro 12.9",
+   "long screw damage",
+   "no power",
+   "pp3v3_bsb",
+   "repair.wiki"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PP3V3_BSB trace/via",
+  "part_numbers": [
+   "C8300"
+  ],
+  "readings": [
+   {
+    "point": "Boot draw after power-on (fault)",
+    "mode": "current",
+    "expect_lo": 0.014,
+    "expect_hi": 0.025,
+    "unit": "A"
+   }
+  ],
+  "device_family": "ipadpro1295thgen",
+  "error_codes": [
+   "PP3V3_BSB",
+   "C8300"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9 5th Gen not powering on due to long screw damage\", https://repair.wiki/w/IPad_Pro_12.9_5th_Gen_not_powering_on_due_to_long_screw_damage, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9_5th_Gen_not_powering_on_due_to_long_screw_damage",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,138 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone SE 2020 with No Touch and/or 3 Min Restart, Mic1 Problem",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_with_No_Touch_and/or_3_Min_Restart,_Mic1_Problem",
+   "kind": "web",
+   "title": "How To Fix an iPhone SE 2020 with No Touch and/or 3 Min Restart, Mic1 Problem",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 720,
+   "last_edited_utc": "2023-11-05T22:14:06Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone SE (2nd generation, 2020)"
+  ],
+  "symptoms": [
+   "no touch",
+   "intermittent touch",
+   "restart every 3 minutes"
+  ],
+  "codes": [
+   "Mic1",
+   "SPI_AP_TO_TOUCH_CS_CONN_L",
+   "I2C1_AP_SCL",
+   "I2C1_AP_SDA"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone SE 2020 has a design defect where three lines under the SIM tray break inside the PCB: SPI_AP_TO_TOUCH_CS_CONN_L (touch) and I2C1_AP_SCL / I2C1_AP_SDA (Mic1), causing no touch and/or 3-minute restarts.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Touch CS line reads about 0.366 and the I2C1 lines about 0.329 in diode mode; OL, or values that change when pressing on the SIM tray area, confirm the board fault.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix with three long jumpers: touch CS from C5770 at the LCD connector to the trace dug out between the SIM tray and U3600; SCL from R6610 to C6456; SDA from R6611 to C6466. Run all three every time.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test known-good screen and charge port flex.",
+   "Diode-check the three lines; press near the SIM tray to look for changes.",
+   "Run all three jumpers; UV-mask them.",
+   "Verify readings, then test touch and run a stopwatch past 3 minutes."
+  ],
+  "measurements": [
+   {
+    "point": "SPI_AP_TO_TOUCH_CS_CONN_L",
+    "expect": "0.366",
+    "unit": "V",
+    "mode": "diode",
+    "context": "At LCD connector, good"
+   },
+   {
+    "point": "I2C1_AP_SCL / I2C1_AP_SDA",
+    "expect": "0.329",
+    "unit": "V",
+    "mode": "diode",
+    "context": "At charge port connector, good"
+   }
+  ],
+  "tools": [
+   "insulated jumper wire",
+   "microscope",
+   "boardview",
+   "UV mask"
+  ],
+  "cautions": [],
+  "tags": [
+   "3 minute restart",
+   "c5770",
+   "c6456",
+   "c6466",
+   "iphone se 2020",
+   "jumper",
+   "mic1",
+   "no touch",
+   "r6610",
+   "r6611",
+   "repair.wiki",
+   "sim tray"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Inner-layer traces under SIM tray",
+  "part_numbers": [
+   "C5770",
+   "R6610",
+   "R6611",
+   "C6456",
+   "C6466",
+   "U3600"
+  ],
+  "readings": [
+   {
+    "point": "SPI_AP_TO_TOUCH_CS_CONN_L",
+    "mode": "diode",
+    "expect_lo": 0.366,
+    "expect_hi": 0.366,
+    "unit": "V"
+   },
+   {
+    "point": "I2C1_AP_SCL / I2C1_AP_SDA",
+    "mode": "diode",
+    "expect_lo": 0.329,
+    "expect_hi": 0.329,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphonese",
+  "error_codes": [
+   "Mic1",
+   "SPI_AP_TO_TOUCH_CS_CONN_L",
+   "I2C1_AP_SCL",
+   "I2C1_AP_SDA"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone SE 2020 with No Touch and/or 3 Min Restart, Mic1 Problem\", https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_with_No_Touch_and/or_3_Min_Restart,_Mic1_Problem, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_SE_2020_with_No_Touch_and/or_3_Min_Restart,_Mic1_Problem",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

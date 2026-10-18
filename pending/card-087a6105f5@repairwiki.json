@@ -1,0 +1,114 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Orange Screen On Bootup Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Orange_Screen_On_Bootup_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Orange Screen On Bootup Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2234,
+   "last_edited_utc": "2024-01-13T16:39:41Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "orange screen on boot"
+  ],
+  "codes": [
+   "BCM4356XKUBG"
+  ],
+  "claims": [
+   {
+    "statement": "The Switch orange screen is a hardware fault caused by the Broadcom BCM4356XKUBG Wi-Fi IC losing BGA contact, usually from drops or pocket bending.",
+    "evidence": "Causes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Try a 12 s power-off first; then reflow (preheat ~300 °C at 40 L/min, then 420–450 °C until flux bubbles, tap gently) with the board out and eMMC removed; a failed reflow can cause no power, requiring IC replacement.",
+    "evidence": "Solution and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Hold power 12 s and retest.",
+   "Remove board and eMMC, lift the EMI shield.",
+   "Preheat, then reflow the Wi-Fi IC; or replace it.",
+   "Clean flux; test Wi-Fi speed and full system."
+  ],
+  "measurements": [
+   {
+    "point": "Preheat",
+    "expect": "300",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": "40 L/min"
+   },
+   {
+    "point": "Reflow",
+    "expect": "420-450",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "hot air",
+   "flux",
+   "isopropyl alcohol"
+  ],
+  "cautions": [
+   "SOURCE RISK: Reflowing can leave the console with no power; don't reflow with the board in the case."
+  ],
+  "tags": [
+   "bcm4356",
+   "nintendo switch",
+   "orange screen",
+   "reflow",
+   "repair.wiki",
+   "wifi ic"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wi-Fi IC BCM4356XKUBG",
+  "part_numbers": [
+   "BCM4356XKUBG"
+  ],
+  "readings": [
+   {
+    "point": "Preheat",
+    "mode": "temperature",
+    "expect_lo": 300.0,
+    "expect_hi": 300.0,
+    "unit": "°C"
+   },
+   {
+    "point": "Reflow",
+    "mode": "temperature",
+    "expect_lo": 420.0,
+    "expect_hi": 450.0,
+    "unit": "°C"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "BCM4356XKUBG"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Orange Screen On Bootup Repair\", https://repair.wiki/w/Nintendo_Switch_Orange_Screen_On_Bootup_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Orange_Screen_On_Bootup_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

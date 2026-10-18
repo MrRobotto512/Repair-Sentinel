@@ -1,0 +1,104 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy A53 5G Network issue",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_A53_5G_Network_issue",
+   "kind": "web",
+   "title": "Samsung Galaxy A53 5G Network issue",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7594,
+   "last_edited_utc": "2025-06-12T21:19:02Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A53 5G"
+  ],
+  "symptoms": [
+   "no service",
+   "emergency calls only",
+   "signal bars only for emergency"
+  ],
+  "codes": [
+   "VPA_APT"
+  ],
+  "claims": [
+   {
+    "statement": "Galaxy A53 5G flipping between 'Emergency calls only' and 'No service' is usually a failed APT IC near the CPU disrupting the VPA_APT network supply.",
+    "evidence": "Root cause.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "VPA_APT coil output should be 2.0–4.2 V (tracks battery); 0 V or fluctuating means repair.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: replace the APT IC (183 °C paste), or remove the VPA_APT boost coil and jumper VPH_PWR to the VPA_APT output.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check for shorts around network ICs.",
+   "Measure VPA_APT coil output.",
+   "Replace APT IC, or jumper VPH_PWR to VPA_APT."
+  ],
+  "measurements": [
+   {
+    "point": "VPA_APT output",
+    "expect": "2.0-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Depends on battery"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "183C paste",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "apt ic",
+   "emergency calls only",
+   "galaxy a53 5g",
+   "no service",
+   "repair.wiki",
+   "vpa_apt"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "APT IC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "VPA_APT output",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 4.2,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxya535g",
+  "error_codes": [
+   "VPA_APT"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy A53 5G Network issue\", https://repair.wiki/w/Samsung_Galaxy_A53_5G_Network_issue, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_A53_5G_Network_issue",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to repair iPhone 11 Dead Not Charging",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_repair_iPhone_11_Dead_Not_Charging",
+   "kind": "web",
+   "title": "How to repair iPhone 11 Dead Not Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10915,
+   "last_edited_utc": "2025-08-30T10:54:34Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "no power",
+   "not charging",
+   "stuck at 0.140-0.150 A"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 11 that stalls at about 0.140–0.150 A after power-on and boots when the sandwich is split has cold solder under the CPU.",
+    "evidence": "Symptoms and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A CPU reball fixes it but removes factory underfill, so it is recommended for data recovery only; reliability afterwards is poor.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm the 0.140–0.150 A stall.",
+   "Split the board and see if it boots.",
+   "Reball the CPU and reassemble; recover data."
+  ],
+  "measurements": [
+   {
+    "point": "Stalled boot draw",
+    "expect": "0.140-0.150",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply after power-on"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "preheater",
+   "hot air",
+   "stencil"
+  ],
+  "cautions": [
+   "SOURCE RISK: After a CPU reball without underfill the board is fragile; do not guarantee long-term reliability."
+  ],
+  "tags": [
+   "cold solder",
+   "cpu reball",
+   "data recovery",
+   "iphone 11",
+   "no power",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Stalled boot draw",
+    "mode": "current",
+    "expect_lo": 0.14,
+    "expect_hi": 0.15,
+    "unit": "A"
+   }
+  ],
+  "device_family": "iphone11",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to repair iPhone 11 Dead Not Charging\", https://repair.wiki/w/How_to_repair_iPhone_11_Dead_Not_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_repair_iPhone_11_Dead_Not_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

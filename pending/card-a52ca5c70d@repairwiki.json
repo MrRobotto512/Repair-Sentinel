@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii The Picture is Noisy, Bad, Glitching, or Missing",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_The_Picture_is_Noisy,_Bad,_Glitching,_or_Missing",
+   "kind": "web",
+   "title": "Nintendo Wii The Picture is Noisy, Bad, Glitching, or Missing",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13229,
+   "last_edited_utc": "2025-12-13T22:37:37Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "noisy picture",
+   "glitching video",
+   "no picture"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Wii bad video: check the brick outputs 12 V DC, then check SMD electrolytic caps—compare composite video before and after the video filter cap; cheap Wii-to-HDMI adapters also cause it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure power brick (12 V).",
+   "Check SMD electrolytic caps, especially the video filter cap.",
+   "Test without HDMI adapters."
+  ],
+  "measurements": [
+   {
+    "point": "Power brick output",
+    "expect": "12",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "DC"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "oscilloscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "bad video",
+   "capacitors",
+   "nintendo wii",
+   "power brick",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Video filter capacitor",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Power brick output",
+    "mode": "voltage",
+    "expect_lo": 12.0,
+    "expect_hi": 12.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendowii",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii The Picture is Noisy, Bad, Glitching, or Missing\", https://repair.wiki/w/Nintendo_Wii_The_Picture_is_Noisy,_Bad,_Glitching,_or_Missing, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_The_Picture_is_Noisy,_Bad,_Glitching,_or_Missing",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

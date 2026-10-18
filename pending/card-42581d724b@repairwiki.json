@@ -1,0 +1,140 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 8 That Has No Power. Does Not Boot",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_8_That_Has_No_Power._Does_Not_Boot",
+   "kind": "web",
+   "title": "How To Fix an iPhone 8 That Has No Power. Does Not Boot",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3274,
+   "last_edited_utc": "2024-01-30T06:36:58Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 8",
+   "iPhone 8 Plus"
+  ],
+  "symptoms": [
+   "no power",
+   "no signs of life",
+   "does not charge"
+  ],
+  "codes": [
+   "PP_VDD_MAIN",
+   "TP0526"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 8 / 8 Plus drawing about 2 A before power-on: most likely shorted cap on PP_VDD_MAIN, then PP_VDD_BOOST, display backlight anodes, or PP_SPKRAMP_TOP_VBOOST; inject 4 V / 2 A to find it and remove it.",
+    "evidence": "Short before prompt to boot.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Liquid-damage hot spots for VDD_MAIN shorts: near BBPMU (C303_E), back top arm (C4190, C4191, C4195, C4196), near WLAN (C7608_W, C7609_W), above the CPU (C3790). A loose screw can short test point TP0526 by the SIM slot to ground.",
+    "evidence": "Liquid damage notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Tigris MOSFET Q3350 heats instantly when injecting through the battery connector but cannot itself be shorted.",
+    "evidence": "Caution note.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "No draw before power-on, then bouncing current after: check PP3V0_NAND, PP0V9_NAND and PP1V8_IO for a shorted cap; PMIC U2700 heats but is not the cause.",
+    "evidence": "Short after prompt to boot.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Same bouncing pattern with PP1V8_S2 or PP1V1_S2 shorted and heat above the CPU means a RAM short (advanced RAM replacement).",
+    "evidence": "Another cause.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for liquid damage and loose screws near TP0526.",
+   "Before-boot short: test VDD_MAIN, VDD_BOOST, BL anodes, SPKRAMP VBOOST; inject 4 V / 2 A and remove the hot cap.",
+   "After-boot bounce: test NAND rails and PP1V8_IO; then PP1V8_S2 / PP1V1_S2 for RAM short."
+  ],
+  "measurements": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "expect": "2",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "freeze spray",
+   "thermal camera",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 8",
+   "iphone 8 plus",
+   "nand short",
+   "no power",
+   "q3350",
+   "ram short",
+   "repair.wiki",
+   "tp0526",
+   "u2700",
+   "vdd_main short"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PP_VDD_MAIN capacitors",
+  "part_numbers": [
+   "Q3350",
+   "U2700"
+  ],
+  "readings": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "mode": "current",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "A"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone8",
+  "error_codes": [
+   "PP_VDD_MAIN",
+   "TP0526"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 8 That Has No Power. Does Not Boot\", https://repair.wiki/w/How_To_Fix_an_iPhone_8_That_Has_No_Power._Does_Not_Boot, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_8_That_Has_No_Power._Does_Not_Boot",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

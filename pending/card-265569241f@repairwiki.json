@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 4",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_4",
+   "kind": "web",
+   "title": "Playstation 4",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12534,
+   "last_edited_utc": "2025-11-02T20:38:16Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [
+   "reference"
+  ],
+  "codes": [
+   "SAA-001",
+   "SAB-001",
+   "SAC-001",
+   "ADP-240AR"
+  ],
+  "claims": [
+   {
+    "statement": "Original PS4 board revisions pictured: SAA-001, SAB-001, SAC-001; PSU is ADP-240AR.",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "adp-240ar",
+   "board revisions",
+   "ps4",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Mostly images; minimal text. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "ADP-240AR"
+  ],
+  "readings": [],
+  "device_family": "playstation4",
+  "error_codes": [
+   "SAA-001",
+   "SAB-001",
+   "SAC-001",
+   "ADP-240AR"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 4\", https://repair.wiki/w/Playstation_4, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_4",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

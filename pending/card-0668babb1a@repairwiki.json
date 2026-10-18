@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 6 Plus Touch Disease",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_6_Plus_Touch_Disease",
+   "kind": "web",
+   "title": "IPhone 6 Plus Touch Disease",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7811,
+   "last_edited_utc": "2025-06-19T13:27:46Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 6 Plus"
+  ],
+  "symptoms": [
+   "no touch",
+   "intermittent touch",
+   "grey flickering bar at top"
+  ],
+  "codes": [
+   "U2402",
+   "M1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 6 Plus 'touch disease' is a disconnection of touch IC U2402.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Remove U2402 and jumper pad M1 (commonly breaks) even if intact, then refit; removing underfill on nearby parts first avoids breaking front camera or earpiece connections.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove underfill near the work area.",
+   "Remove U2402 with limited heat (CPU on reverse).",
+   "Clean pads; jumper M1.",
+   "Refit reballed or new U2402; flex-test touch and check front camera/earpiece."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "007 blade",
+   "jumper wire",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Excess heat may disturb the CPU on the opposite side."
+  ],
+  "tags": [
+   "iphone 6 plus",
+   "m1 jumper",
+   "repair.wiki",
+   "touch disease",
+   "u2402"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch IC U2402",
+  "part_numbers": [
+   "U2402"
+  ],
+  "readings": [],
+  "device_family": "iphone6plus",
+  "error_codes": [
+   "U2402",
+   "M1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 6 Plus Touch Disease\", https://repair.wiki/w/IPhone_6_Plus_Touch_Disease, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_6_Plus_Touch_Disease",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

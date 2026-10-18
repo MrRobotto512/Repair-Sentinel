@@ -1,0 +1,113 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 11 That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_11_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 11 That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4855,
+   "last_edited_utc": "2024-09-12T11:01:45Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes",
+   "0% charging"
+  ],
+  "codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1",
+   "Mic2"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 11 Missing sensors TG0B/TG0V = battery or battery data lines; diode-check I2C2_SMC_SCL_CONN and I2C2_SMC_SDA_CONN.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If those battery data pins read OL, check resistors R3202 and R3201; otherwise the break may be under the CPU (reball). A short points to caps around the connector or an unfixable CPU fault.",
+    "evidence": "Battery data line diagnosis.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Prs0/Mic1 = charging port flex; also check R6822 (I2C1_AOP_SCL), R6823 (I2C1_AOP_SDA) and volume flex oxidation.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Mic2 = power button flex mic; an OL at the power button connector after a hard drop can mean sandwich separation needing a reball.",
+    "evidence": "Code mapping and sandwich note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read Missing sensors in the latest panic-full log.",
+   "TG0B/TG0V: battery swap; diode-check SMC I2C pins; check R3201/R3202.",
+   "Prs0/Mic1: known-good charge flex; check R6822/R6823; inspect volume flex.",
+   "Mic2: known-good power button flex; diode-check its connector; reball sandwich if OL."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "multimeter",
+   "boardview"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 11",
+   "mic2",
+   "panic log",
+   "prs0",
+   "r3201",
+   "r3202",
+   "r6822",
+   "r6823",
+   "random restart",
+   "repair.wiki",
+   "sandwich separation",
+   "tg0b"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery / charge port flex / power button flex",
+  "part_numbers": [
+   "R3201",
+   "R3202",
+   "R6822",
+   "R6823"
+  ],
+  "readings": [],
+  "device_family": "iphone11",
+  "error_codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1",
+   "Mic2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 11 That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_11_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_11_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

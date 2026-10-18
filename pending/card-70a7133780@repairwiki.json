@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 11 No Cellular Service, No IMEI Present",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_11_No_Cellular_Service,_No_IMEI_Present",
+   "kind": "web",
+   "title": "IPhone 11 No Cellular Service, No IMEI Present",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7670,
+   "last_edited_utc": "2025-06-14T00:41:23Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "no service",
+   "no IMEI",
+   "modem firmware blank"
+  ],
+  "codes": [
+   "5765",
+   "U_XCVR",
+   "PA_HB_K"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 11 baseband faults: sandwich separation (ripped pads; test in iSocket), a cracked transceiver U_XCVR (marked 5765), or a shorted PA_HB_K amplifier.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A bottom board swap rules out the cellular circuit (move BB CPU, BB EEPROM, Wi-Fi; NFC optional); BB CPU reball alone has lower success.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Split and inspect; test in iSocket.",
+   "Inspect U_XCVR (5765) for cracks.",
+   "Check PA_HB_K for shorts.",
+   "Bottom board swap or BB CPU reball.",
+   "Update (not restore) afterwards."
+  ],
+  "measurements": [],
+  "tools": [
+   "iSocket",
+   "preheater",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "5765",
+   "iphone 11",
+   "no imei",
+   "no service",
+   "pa_hb_k",
+   "repair.wiki",
+   "transceiver",
+   "u_xcvr"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband / transceiver",
+  "part_numbers": [
+   "5765"
+  ],
+  "readings": [],
+  "device_family": "iphone11",
+  "error_codes": [
+   "5765",
+   "U_XCVR",
+   "PA_HB_K"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 11 No Cellular Service, No IMEI Present\", https://repair.wiki/w/IPhone_11_No_Cellular_Service,_No_IMEI_Present, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_11_No_Cellular_Service,_No_IMEI_Present",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

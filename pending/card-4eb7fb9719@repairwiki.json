@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Poco X3 Pro No Light After 2 SecondS Of Powering ON",
+  "source": {
+   "url": "https://repair.wiki/w/Poco_X3_Pro_No_Light_After_2_SecondS_Of_Powering_ON",
+   "kind": "web",
+   "title": "Poco X3 Pro No Light After 2 SecondS Of Powering ON",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9021,
+   "last_edited_utc": "2025-07-26T00:57:07Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Poco X3 Pro"
+  ],
+  "symptoms": [
+   "backlight off 1-2 s after logo",
+   "image visible with light"
+  ],
+  "codes": [
+   "DISPLAY_CABC"
+  ],
+  "claims": [
+   {
+    "statement": "Poco X3 Pro losing backlight 1–2 s after the logo has a broken DISPLAY_CABC (PWM brightness) line; it should read about 0.610 in diode mode—high/OL confirms.",
+    "evidence": "Symptoms.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix by lifting the PMIC and jumpering the CABC pad under it to the display connector pin.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check DISPLAY_CABC at the connector (~0.610).",
+   "Remove PMIC; jumper CABC pad to the connector.",
+   "Refit PMIC and test."
+  ],
+  "measurements": [
+   {
+    "point": "DISPLAY_CABC",
+    "expect": "0.610",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Good"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "microscope",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "cabc",
+   "jumper",
+   "no backlight",
+   "poco x3 pro",
+   "pwm",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CABC line",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "DISPLAY_CABC",
+    "mode": "diode",
+    "expect_lo": 0.61,
+    "expect_hi": 0.61,
+    "unit": "V"
+   }
+  ],
+  "device_family": "pocox3pro",
+  "error_codes": [
+   "DISPLAY_CABC"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Poco X3 Pro No Light After 2 SecondS Of Powering ON\", https://repair.wiki/w/Poco_X3_Pro_No_Light_After_2_SecondS_Of_Powering_ON, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Poco_X3_Pro_No_Light_After_2_SecondS_Of_Powering_ON",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

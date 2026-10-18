@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox One Controller Analog stick drift or jumping around repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_One_Controller_Analog_stick_drift_or_jumping_around_repair",
+   "kind": "web",
+   "title": "Xbox One Controller Analog stick drift or jumping around repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2977,
+   "last_edited_utc": "2024-01-17T18:18:53Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox One Wireless Controller"
+  ],
+  "symptoms": [
+   "stick drift",
+   "stick jumping"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Xbox One controller drift: clean then replace the four pots; there are green (ALPS) and orange pot types that are only swappable like-for-like because of shaft size; centre replacements before soldering.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clean pots.",
+   "Replace with same colour/type pot, centred."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "alps",
+   "potentiometer",
+   "repair.wiki",
+   "stick drift",
+   "xbox one controller"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Stick potentiometers",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxonewirelesscontroller",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox One Controller Analog stick drift or jumping around repair\", https://repair.wiki/w/Xbox_One_Controller_Analog_stick_drift_or_jumping_around_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_One_Controller_Analog_stick_drift_or_jumping_around_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

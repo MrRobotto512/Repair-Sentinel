@@ -1,0 +1,113 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair iPhone 16 Pro Max Fake Temp Warning",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_iPhone_16_Pro_Max_Fake_Temp_Warning",
+   "kind": "web",
+   "title": "How To Repair iPhone 16 Pro Max Fake Temp Warning",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13412,
+   "last_edited_utc": "2025-12-27T19:16:24Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "false temperature warning",
+   "charging limited"
+  ],
+  "codes": [
+   "gpio_aop_from_baro_int_l",
+   "pp1v8_s2_dock_conn"
+  ],
+  "claims": [
+   {
+    "statement": "A false Temperature Too High warning on a cool iPhone 16 Pro, persisting after battery/port swaps and restore, shows about 0.8–0.9 V on gpio_aop_from_baro_int_l.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: pull that line up to 1.8 V from pp1v8_s2_dock_conn through a 1 kΩ resistor and fine jumper.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm the phone is cool and idle draw normal.",
+   "Measure gpio_aop_from_baro_int_l (~0.8–0.9 V = fault).",
+   "Fit 1 kΩ from pp1v8_s2_dock_conn to the affected dock FPC pad."
+  ],
+  "measurements": [
+   {
+    "point": "gpio_aop_from_baro_int_l (faulty)",
+    "expect": "0.8-0.9",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Pull-up resistor",
+    "expect": "1",
+    "unit": "kΩ",
+    "mode": "resistance",
+    "context": "From 1.8 V dock rail"
+   }
+  ],
+  "tools": [
+   "soldering iron",
+   "microscope",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "baro",
+   "barometer",
+   "iphone 16 pro",
+   "pull-up resistor",
+   "repair.wiki",
+   "temperature warning"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Barometer interrupt line",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "gpio_aop_from_baro_int_l (faulty)",
+    "mode": "voltage",
+    "expect_lo": 0.8,
+    "expect_hi": 0.9,
+    "unit": "V"
+   },
+   {
+    "point": "Pull-up resistor",
+    "mode": "resistance",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "kΩ"
+   }
+  ],
+  "device_family": "iphone16pro",
+  "error_codes": [
+   "gpio_aop_from_baro_int_l",
+   "pp1v8_s2_dock_conn"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair iPhone 16 Pro Max Fake Temp Warning\", https://repair.wiki/w/How_To_Repair_iPhone_16_Pro_Max_Fake_Temp_Warning, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_iPhone_16_Pro_Max_Fake_Temp_Warning",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

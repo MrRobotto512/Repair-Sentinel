@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair PS4 Overheating",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_PS4_Overheating",
+   "kind": "web",
+   "title": "How To Repair PS4 Overheating",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12927,
+   "last_edited_utc": "2025-11-30T05:24:44Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4",
+   "PlayStation 4 Slim",
+   "PlayStation 4 Pro"
+  ],
+  "symptoms": [
+   "overheating",
+   "loud fan",
+   "shuts down with too hot message",
+   "no fan spin"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Most PS4 overheating is a dust-packed heatsink, a failing fan, or dry thermal paste.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fans that click, hesitate or don't spin at boot have worn bearings or a fault; each model (Fat, Slim, Pro) uses a different fan connector.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After cleaning and repasting, tighten heatsink pressure screws in an X pattern and run a game 20–30 minutes to verify.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check vents and placement.",
+   "Watch fan at boot.",
+   "Disassemble, clean fan, vents and heatsink fins.",
+   "Replace thermal paste; reinstall heatsink in X pattern.",
+   "Replace fan if dead; stress test 20–30 minutes."
+  ],
+  "measurements": [],
+  "tools": [
+   "screwdrivers",
+   "compressed air",
+   "thermal paste",
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "fan",
+   "overheating",
+   "ps4",
+   "ps4 pro",
+   "ps4 slim",
+   "repair.wiki",
+   "thermal paste"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Cooling system",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair PS4 Overheating\", https://repair.wiki/w/How_To_Repair_PS4_Overheating, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_PS4_Overheating",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

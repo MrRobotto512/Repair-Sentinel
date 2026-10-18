@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix Important Display Message Even After Transferring Touch IC",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_Important_Display_Message_Even_After_Transferring_Touch_IC",
+   "kind": "web",
+   "title": "How To Fix Important Display Message Even After Transferring Touch IC",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11976,
+   "last_edited_utc": "2025-09-21T11:09:40Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12",
+   "iPhone 13",
+   "iPhone 14",
+   "iPhone 15",
+   "iPhone 16"
+  ],
+  "symptoms": [
+   "Important Display Message after screen replacement",
+   "non-genuine display warning"
+  ],
+  "codes": [
+   "MTSN"
+  ],
+  "claims": [
+   {
+    "statement": "On iPhone 12–16 screens, the non-genuine display message can remain even after transferring the touch IC, because the new panel lacks the original MTSN pairing data.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix before transfer: read the old display's MTSN data on a JC V1SE / V1S Pro and write it to the new display; or after transfer, use the programmer's Fix True Tone function with the phone connected.",
+    "evidence": "Repair methods.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Verify the touch IC transfer is sound.",
+   "Method 1: read old display data, write to new display, then transfer touch IC.",
+   "Method 2: with phone and new display connected, run Fix True Tone and choose original or third-party panel.",
+   "Reboot and confirm the message is gone."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC V1SE / V1S Pro programmer"
+  ],
+  "cautions": [],
+  "tags": [
+   "important display message",
+   "iphone 12",
+   "iphone 13",
+   "iphone 14",
+   "iphone 15",
+   "iphone 16",
+   "jcid",
+   "mtsn",
+   "repair.wiki",
+   "touch ic transfer"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display (MTSN data)",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone12",
+  "error_codes": [
+   "MTSN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix Important Display Message Even After Transferring Touch IC\", https://repair.wiki/w/How_To_Fix_Important_Display_Message_Even_After_Transferring_Touch_IC, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_Important_Display_Message_Even_After_Transferring_Touch_IC",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

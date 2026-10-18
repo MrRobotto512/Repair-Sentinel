@@ -1,0 +1,148 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 13 Pro and 13 Pro Max No Image Black Screen",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_13_Pro_and_13_Pro_Max_No_Image_Black_Screen",
+   "kind": "web",
+   "title": "IPhone 13 Pro and 13 Pro Max No Image Black Screen",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7759,
+   "last_edited_utc": "2025-06-16T06:12:04Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 13 Pro",
+   "iPhone 13 Pro Max"
+  ],
+  "symptoms": [
+   "no image",
+   "black screen",
+   "phone otherwise works"
+  ],
+  "codes": [
+   "PNVAR_DISPLAY_VGL",
+   "PNVAR_DISPLAY_VSSEL",
+   "U9100",
+   "338S00616"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 13 Pro / Pro Max no image: after a known-good screen, check the display FPC (often bowed out—gently bend back) and its diode readings.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Most common: PNVAR_DISPLAY_VGL (pin 1) shorted to ground when it should be OL—usually C9145 or C9146 by display PMIC U9100, or U9100 itself.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PNVAR_DISPLAY_VSSEL (pins 2, 4, 6) should also be OL; its caps are under the shield next to the NAND.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Display coils L9110, L9120, L9130, L9140 near the NAND can come loose; use low-temp solder to avoid floating the NAND.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "U9100 (338S00616, used on iPhone 12–16) can crack/short; severe failures can short VDD_MAIN via L9130 and burn pads.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test known-good screen; inspect/straighten FPC.",
+   "Diode-check FPC pins.",
+   "If VGL shorted, split and check C9145/C9146/U9100 with 1 V / 1 A.",
+   "Check VSSEL caps and wiggle-test L9110–L9140.",
+   "Replace U9100 and repair pads if needed."
+  ],
+  "measurements": [
+   {
+    "point": "PNVAR_DISPLAY_VGL (FPC pin 1)",
+    "expect": "OL",
+    "unit": "",
+    "mode": "diode",
+    "context": "Normal"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "1 A limit"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "grinder"
+  ],
+  "cautions": [
+   "SOURCE RISK: Hot air near the display coils can float the NAND."
+  ],
+  "tags": [
+   "338s00616",
+   "c9145",
+   "c9146",
+   "iphone 13 pro",
+   "l9130",
+   "no image",
+   "pnvar_display_vgl",
+   "repair.wiki",
+   "u9100",
+   "vssel"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display PMIC U9100",
+  "part_numbers": [
+   "U9100",
+   "338S00616",
+   "C9145",
+   "C9146",
+   "L9110",
+   "L9120",
+   "L9130",
+   "L9140",
+   "R11875"
+  ],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone13pro",
+  "error_codes": [
+   "PNVAR_DISPLAY_VGL",
+   "PNVAR_DISPLAY_VSSEL",
+   "U9100",
+   "338S00616"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 13 Pro and 13 Pro Max No Image Black Screen\", https://repair.wiki/w/IPhone_13_Pro_and_13_Pro_Max_No_Image_Black_Screen, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_13_Pro_and_13_Pro_Max_No_Image_Black_Screen",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

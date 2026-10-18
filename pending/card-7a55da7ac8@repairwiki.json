@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 5",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_5",
+   "kind": "web",
+   "title": "IPhone 5",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11417,
+   "last_edited_utc": "2025-09-07T16:08:46Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 5"
+  ],
+  "symptoms": [
+   "battery % misreporting",
+   "works only when plugged in"
+  ],
+  "codes": [
+   "A1428",
+   "A1429",
+   "A1442"
+  ],
+  "claims": [
+   {
+    "statement": "On iPhone 5, prying between the battery connector and the shield behind it can knock off tiny resistors, causing battery misreporting or the phone only working on the charger.",
+    "evidence": "Device page notice.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect around the battery connector for missing resistors; replace from donor."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Don't pry between the battery connector and the shield."
+  ],
+  "tags": [
+   "battery percentage",
+   "iphone 5",
+   "missing resistor",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery connector area",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone5",
+  "error_codes": [
+   "A1428",
+   "A1429",
+   "A1442"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 5\", https://repair.wiki/w/IPhone_5, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_5",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

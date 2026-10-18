@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung S23 Ultra CPU Swap Guide",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_S23_Ultra_CPU_Swap_Guide",
+   "kind": "web",
+   "title": "Samsung S23 Ultra CPU Swap Guide",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 5236,
+   "last_edited_utc": "2024-11-10T01:49:20Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy S23 Ultra"
+  ],
+  "symptoms": [
+   "data recovery from dead board"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "An S23 Ultra CPU swap for data needs four chips moved: CPU (hardware keys), UFS (encrypted data), RAM (not paired but stacked on the CPU) and a small EEPROM ('pin code IC') without which the PIN won't be accepted.",
+    "evidence": "Page content.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "There is no way to extract the data without the original CPU working with its UFS.",
+    "evidence": "Page content.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Move CPU, UFS, RAM and the EEPROM to a working donor board."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "stencils"
+  ],
+  "cautions": [],
+  "tags": [
+   "cpu swap",
+   "data recovery",
+   "eeprom",
+   "galaxy s23 ultra",
+   "repair.wiki",
+   "ufs"
+  ],
+  "confidence": "medium",
+  "caveats": "Author notes the EEPROM's name is unknown. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU + UFS + EEPROM",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxys23ultra",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung S23 Ultra CPU Swap Guide\", https://repair.wiki/w/Samsung_S23_Ultra_CPU_Swap_Guide, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_S23_Ultra_CPU_Swap_Guide",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

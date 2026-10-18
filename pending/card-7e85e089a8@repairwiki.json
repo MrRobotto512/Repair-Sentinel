@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Cant Draw Diagonal Lines After Screen Replacement",
+  "source": {
+   "url": "https://repair.wiki/w/Cant_Draw_Diagonal_Lines_After_Screen_Replacement",
+   "kind": "web",
+   "title": "Cant Draw Diagonal Lines After Screen Replacement",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11928,
+   "last_edited_utc": "2025-09-20T21:40:57Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 11 3rd Gen",
+   "iPad Pro 11 4th Gen",
+   "iPad Pro 12.9 3rd Gen",
+   "iPad Pro 12.9 4th Gen",
+   "iPad Pro 12.9 5th Gen",
+   "iPad Pro 12.9 6th Gen",
+   "iPad mini 6"
+  ],
+  "symptoms": [
+   "Apple Pencil diagonal lines wavy after screen replacement"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "After a screen swap on these iPads, Apple Pencil cannot draw straight diagonal lines until the original screen's calibration data is copied to the new screen.",
+    "evidence": "Fix uses a JCID V1SE / V1S Pro programmer with the iPad screen read/write adapter.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The original screen must be read while installed and powered, then the data written to the new screen while it is lit.",
+    "evidence": "Read on original screen, power off, swap screen, power on, write.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Fit the JCID iPad screen adapter flex for the model between the board and display.",
+   "Connect the ORIGINAL screen, power on, select the iPad model on the programmer and press Read.",
+   "Power off, connect the new screen, power on and press Write.",
+   "Power off, remove the adapter and connect the new screen normally.",
+   "Test diagonal lines with Apple Pencil in Notes."
+  ],
+  "measurements": [],
+  "tools": [
+   "JCID V1SE or V1S Pro",
+   "JCID iPad screen read/write adapter"
+  ],
+  "cautions": [],
+  "tags": [
+   "apple pencil",
+   "ipad mini 6",
+   "ipad pro",
+   "jcid",
+   "repair.wiki",
+   "screen calibration",
+   "wavy lines"
+  ],
+  "confidence": "medium",
+  "caveats": "Requires the original screen to still light up so its data can be read. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadpro113rdgen",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Cant Draw Diagonal Lines After Screen Replacement\", https://repair.wiki/w/Cant_Draw_Diagonal_Lines_After_Screen_Replacement, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Cant_Draw_Diagonal_Lines_After_Screen_Replacement",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,65 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Elite Wireless Controller",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Elite_Wireless_Controller",
+   "kind": "web",
+   "title": "Xbox Elite Wireless Controller",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2975,
+   "last_edited_utc": "2024-01-17T18:04:15Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox Elite Wireless Controller (Model 1698)"
+  ],
+  "symptoms": [
+   "identification"
+  ],
+  "codes": [
+   "1698",
+   "045E:02E3"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox Elite (Series 1) is Model 1698, USB ID 045E:02E3; Micro-USB, AA batteries, no native Bluetooth; superseded by Elite Series 2 (Model 1797).",
+    "evidence": "Device page.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "model 1698",
+   "repair.wiki",
+   "usb id",
+   "xbox elite controller"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxelitewirelesscontroller",
+  "error_codes": [
+   "1698",
+   "045E:02E3"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Elite Wireless Controller\", https://repair.wiki/w/Xbox_Elite_Wireless_Controller, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Elite_Wireless_Controller",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

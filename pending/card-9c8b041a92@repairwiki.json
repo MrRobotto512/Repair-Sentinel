@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9 No touch after screen replacement repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9_No_touch_after_screen_replacement_repair",
+   "kind": "web",
+   "title": "IPad Pro 12.9 No touch after screen replacement repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3035,
+   "last_edited_utc": "2024-01-18T01:25:45Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 1st Gen",
+   "iPad Pro 12.9 2nd Gen"
+  ],
+  "symptoms": [
+   "no touch after screen replacement"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPad Pro 12.9 (1st/2nd gen) losing touch after a screen job usually has a blown touch filter at the far end of one display connector from plugging in with the battery connected.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm with a known-good screen.",
+   "Find and replace the blown touch filter."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad pro 12.9",
+   "no touch",
+   "repair.wiki",
+   "touch filter"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch filter",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadpro1291stgen",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9 No touch after screen replacement repair\", https://repair.wiki/w/IPad_Pro_12.9_No_touch_after_screen_replacement_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9_No_touch_after_screen_replacement_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy S22 Ultra No Signal fix",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_S22_Ultra_No_Signal_fix",
+   "kind": "web",
+   "title": "Samsung Galaxy S22 Ultra No Signal fix",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 9553,
+   "last_edited_utc": "2025-07-31T00:08:29Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy S22 Ultra"
+  ],
+  "symptoms": [
+   "very low or no signal after drop"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Galaxy S22 Ultra losing signal after a drop—with baseband version present and SIM recognised—is usually the dock assembly or the GSM antenna cable and its top/bottom connectors, which can be cracked without looking broken.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm baseband version present and SIM detected.",
+   "Try a known-good dock assembly.",
+   "Try a known-good GSM antenna; replace doubtful connectors."
+  ],
+  "measurements": [],
+  "tools": [
+   "screwdrivers"
+  ],
+  "cautions": [],
+  "tags": [
+   "dock assembly",
+   "galaxy s22 ultra",
+   "gsm antenna",
+   "no signal",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "GSM antenna / connectors",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxys22ultra",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy S22 Ultra No Signal fix\", https://repair.wiki/w/Samsung_Galaxy_S22_Ultra_No_Signal_fix, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_S22_Ultra_No_Signal_fix",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

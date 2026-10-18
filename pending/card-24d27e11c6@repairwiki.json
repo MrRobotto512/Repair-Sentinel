@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Console turns on shows first logo and goes black Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Console_turns_on_shows_first_logo_and_goes_black_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Console turns on shows first logo and goes black Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2232,
+   "last_edited_utc": "2024-01-13T16:36:45Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "first logo then black"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch that shows the first logo then goes black: try a known-good battery and screen (a bad LCD can stop many Nintendo consoles booting), then a new M92T36.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try known-good battery.",
+   "Try known-good screen.",
+   "Replace M92T36."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "lcd",
+   "logo then black",
+   "m92t36",
+   "nintendo switch",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery / LCD / M92T36",
+  "part_numbers": [
+   "M92T36"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Console turns on shows first logo and goes black Repair\", https://repair.wiki/w/Nintendo_Switch_Console_turns_on_shows_first_logo_and_goes_black_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Console_turns_on_shows_first_logo_and_goes_black_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

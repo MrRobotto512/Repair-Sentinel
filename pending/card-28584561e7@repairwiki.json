@@ -1,0 +1,114 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair IPad 6 No Power",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_IPad_6_No_Power",
+   "kind": "web",
+   "title": "How To Repair IPad 6 No Power",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12943,
+   "last_edited_utc": "2025-11-30T18:32:05Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 6"
+  ],
+  "symptoms": [
+   "no power",
+   "no charging"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Normal iPad 6 boot draw climbs about 0.050 → 0.060 → 0.100 A and up toward 1 A.",
+    "evidence": "Note on boot sequence.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "An instant spike above 1 A suggests a short on VCC_MAIN, the Wi-Fi IC or PMIC; an instant 0.150 A that cycles suggests Tristar failure.",
+    "evidence": "Current behaviour table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A healthy battery reads 3.7–4.2 V; find shorts with thermal camera or rosin and replace the cap, Wi-Fi IC or Tristar/Hydra.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check battery voltage (3.7–4.2 V).",
+   "Boot on DCPS and note draw pattern.",
+   "Diode-check VCC_MAIN caps for shorts.",
+   "Locate hot component (thermal camera/rosin); replace cap, Wi-Fi IC or charging IC."
+  ],
+  "measurements": [
+   {
+    "point": "Battery",
+    "expect": "3.7-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Healthy"
+   },
+   {
+    "point": "Tristar fault draw",
+    "expect": "0.150",
+    "unit": "A",
+    "mode": "current",
+    "context": "Instant and cycling"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "rosin",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "ipad 6",
+   "no power",
+   "repair.wiki",
+   "tristar",
+   "vcc_main short",
+   "wifi ic"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "VCC_MAIN / Wi-Fi IC / Tristar",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Battery",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 4.2,
+    "unit": "V"
+   },
+   {
+    "point": "Tristar fault draw",
+    "mode": "current",
+    "expect_lo": 0.15,
+    "expect_hi": 0.15,
+    "unit": "A"
+   }
+  ],
+  "device_family": "ipad6",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair IPad 6 No Power\", https://repair.wiki/w/How_To_Repair_IPad_6_No_Power, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_IPad_6_No_Power",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

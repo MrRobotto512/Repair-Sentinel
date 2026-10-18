@@ -1,0 +1,134 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy A14 5g (A146B) No BackLight",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_A14_5g_(A146B)_No_BackLight",
+   "kind": "web",
+   "title": "Galaxy A14 5g (A146B) No BackLight",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11250,
+   "last_edited_utc": "2025-09-04T06:27:58Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A14 5G (A146B)"
+  ],
+  "symptoms": [
+   "no backlight"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On Galaxy A146B, a blown fusible coil in the LED_ANODE line leaves no diode reading on the display connector anode; it can be bypassed.",
+    "evidence": "Diagnostic notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The backlight diode should not beep and should not read the same both sides (LED_ANODE vs VPH_PWR).",
+    "evidence": "Diode check.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Expected voltages: VPH_PWR 3.7–4.2 V, LED_ANODE 3.7–4.2 V, LED cathode 0 V.",
+    "evidence": "Voltage check.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Most common fault: LED_ANODE line goes open under load though it reads normal at rest; a jumper from the anode side of the diode to the display connector anode fixes it.",
+    "evidence": "Direct solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Look for leaked components near the coils.",
+   "Check outputs for shorts; check/bypass the fusible coil.",
+   "Check the diode and coils (continuity).",
+   "Measure VPH_PWR, LED_ANODE and cathode.",
+   "If anode reading changes when pressing near the BL IC, jumper LED_ANODE from the diode to the connector and UV mask."
+  ],
+  "measurements": [
+   {
+    "point": "VPH_PWR / VDD_MAIN",
+    "expect": "3.7-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "LED_ANODE",
+    "expect": "3.7-4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "LED cathode",
+    "expect": "0",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "soldering iron",
+   "microscope",
+   "jumper wire"
+  ],
+  "cautions": [],
+  "tags": [
+   "a146b",
+   "galaxy a14",
+   "jumper",
+   "led_anode",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "VPH_PWR / VDD_MAIN",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 4.2,
+    "unit": "V"
+   },
+   {
+    "point": "LED_ANODE",
+    "mode": "voltage",
+    "expect_lo": 3.7,
+    "expect_hi": 4.2,
+    "unit": "V"
+   },
+   {
+    "point": "LED cathode",
+    "mode": "voltage",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxya145g",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy A14 5g (A146B) No BackLight\", https://repair.wiki/w/Galaxy_A14_5g_(A146B)_No_BackLight, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_A14_5g_(A146B)_No_BackLight",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

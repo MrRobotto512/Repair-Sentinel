@@ -1,0 +1,63 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR Compass/Gyroscope not working",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_Compass/Gyroscope_not_working",
+   "kind": "web",
+   "title": "IPhone XR Compass/Gyroscope not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6697,
+   "last_edited_utc": "2025-05-14T18:18:28Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "gyroscope/compass not working"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On iPhone XR a small cable from the wireless charging coil to the housing is needed for the gyroscope; if damaged during back cover or battery work, replace the wireless charging coil.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect the coil-to-housing cable.",
+   "Replace the wireless charging coil."
+  ],
+  "measurements": [],
+  "tools": [],
+  "cautions": [],
+  "tags": [
+   "compass",
+   "gyroscope",
+   "iphone xr",
+   "repair.wiki",
+   "wireless charging coil"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Wireless charging coil",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonexr",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR Compass/Gyroscope not working\", https://repair.wiki/w/IPhone_XR_Compass/Gyroscope_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_Compass/Gyroscope_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

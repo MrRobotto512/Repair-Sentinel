@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPad Air 3 With No Backlight",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPad_Air_3_With_No_Backlight",
+   "kind": "web",
+   "title": "How To Fix an iPad Air 3 With No Backlight",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 673,
+   "last_edited_utc": "2023-11-05T16:41:00Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air 3"
+  ],
+  "symptoms": [
+   "no backlight after screen repair",
+   "dim image"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPad Air 3 losing backlight after a screen job is usually caused by connecting the screen with the battery still attached, blowing backlight diodes.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A good diode reads OL one way and a value the other; continuity both ways means it is bad. Most iPad backlight diodes are interchangeable from donor boards.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If still dark after replacing diodes, replace all three backlight filters beside the connector even if they measure good.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with known-good and original screens.",
+   "Inspect for cracked/blown backlight diodes and diode-test them.",
+   "Diode-check display connectors for shorts/opens.",
+   "Replace blown diodes (correct orientation).",
+   "Replace the three backlight filters next to the connector."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "microscope",
+   "soldering iron"
+  ],
+  "cautions": [
+   "SOURCE RISK: Always disconnect the battery before plugging in a screen."
+  ],
+  "tags": [
+   "backlight diode",
+   "backlight filter",
+   "ipad air 3",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Filter locations are shown in an image on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadair3",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPad Air 3 With No Backlight\", https://repair.wiki/w/How_To_Fix_an_iPad_Air_3_With_No_Backlight, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPad_Air_3_With_No_Backlight",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

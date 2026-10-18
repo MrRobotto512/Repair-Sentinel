@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix an iPhone 15 Pro Pro Max camera which is not focusing",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_an_iPhone_15_Pro_Pro_Max_camera_which_is_not_focusing",
+   "kind": "web",
+   "title": "How to fix an iPhone 15 Pro Pro Max camera which is not focusing",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10426,
+   "last_edited_utc": "2025-08-20T08:27:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15 Pro",
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "camera will not focus",
+   "compass not working",
+   "after drop"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPhone 15 Pro / Pro Max with no autofocus and a dead compass after impact, unchanged by a known-good camera, often has a damaged gyroscope IC.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A gyroscope IC from an iPhone 14 Pro / Pro Max can serve as donor if no 15 Pro board is available.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm with a known-good rear camera and the Compass app.",
+   "Remove the damaged gyroscope IC, clean pads, reball donor IC (15 Pro or 14 Pro).",
+   "Reflow, reassemble, test focus and compass."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "hot air",
+   "soldering iron",
+   "reball stencil"
+  ],
+  "cautions": [],
+  "tags": [
+   "camera not focusing",
+   "compass",
+   "drop damage",
+   "gyroscope",
+   "iphone 15 pro",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Gyroscope IC",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone15pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix an iPhone 15 Pro Pro Max camera which is not focusing\", https://repair.wiki/w/How_to_fix_an_iPhone_15_Pro_Pro_Max_camera_which_is_not_focusing, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_an_iPhone_15_Pro_Pro_Max_camera_which_is_not_focusing",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

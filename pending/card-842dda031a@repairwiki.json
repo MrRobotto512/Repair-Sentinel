@@ -1,0 +1,123 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad 10 Backlight not working",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_10_Backlight_not_working",
+   "kind": "web",
+   "title": "IPad 10 Backlight not working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7187,
+   "last_edited_utc": "2025-05-28T18:22:14Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad 10"
+  ],
+  "symptoms": [
+   "no backlight",
+   "faint image with light"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "iPad 10 no backlight is most often the backlight filter (fuse) under the shield, blown by plugging/unplugging the LCD with the battery connected; an iPhone 6s backlight filter can substitute.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The four backlight pins on the LCD FPC read about 0.503 in diode mode; OL or very different readings suggest the filter, though a normal reading doesn't rule it out.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Also check the two glass backlight diodes (one-way conduction) and smoothing caps (find a short with 1 V / 1 A; a shorted smoothing cap can simply be removed); the PMIC rarely fails.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "New LCDs commonly come in bad batches; test several or use a known-good one.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with a known-good LCD.",
+   "Inspect the LCD FPC connector.",
+   "Diode-check the backlight pins (~0.503).",
+   "Open the shield; check filter continuity, diodes and caps.",
+   "Replace filter (jumper damaged pads), diodes or remove shorted cap; PMIC last."
+  ],
+  "measurements": [
+   {
+    "point": "LCD FPC backlight pins",
+    "expect": "0.503",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "1",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "1 A limit"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "grinder",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: Connecting or disconnecting the LCD with the battery attached blows the backlight filter."
+  ],
+  "tags": [
+   "backlight diode",
+   "backlight filter",
+   "ipad 10",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight filter",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "LCD FPC backlight pins",
+    "mode": "diode",
+    "expect_lo": 0.503,
+    "expect_hi": 0.503,
+    "unit": "V"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipad10",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad 10 Backlight not working\", https://repair.wiki/w/IPad_10_Backlight_not_working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_10_Backlight_not_working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

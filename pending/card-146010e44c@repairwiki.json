@@ -1,0 +1,109 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9 No backlight after screen replacement repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9_No_backlight_after_screen_replacement_repair",
+   "kind": "web",
+   "title": "IPad Pro 12.9 No backlight after screen replacement repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13889,
+   "last_edited_utc": "2026-02-08T21:11:21Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 1st Gen",
+   "iPad Pro 12.9 2nd Gen"
+  ],
+  "symptoms": [
+   "no backlight after screen replacement"
+  ],
+  "codes": [
+   "8566 5AR5",
+   "MPZ1005S121ETD25"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 12.9 (1st/2nd gen) losing backlight after a screen job usually has one or both backlight filters blown by plugging the screen with the battery connected.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replacement filter: 0402 120 Ω 1.5 A ferrite (e.g. MPZ1005S121ETD25); jumpering it is not recommended.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Backlight diodes are shared with iPad Air 1–3, Pro 9.7/10.5/11 1st/12.9 1st–2nd and iPad 5/6; the backlight controller (8566 5AR5) is shared with iPad 7 and iPad 9.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check both backlight filters for continuity.",
+   "Check decoupling caps for shorts.",
+   "Inspect diodes.",
+   "Replace filters, caps or diodes; then the backlight controller 8566."
+  ],
+  "measurements": [
+   {
+    "point": "Backlight filter replacement",
+    "expect": "120",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "0402 ferrite, 1.5 A"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: Jumpering a filter instead of replacing it leaves the circuit unprotected."
+  ],
+  "tags": [
+   "8566",
+   "backlight filter",
+   "ipad pro 12.9",
+   "mpz1005s121etd25",
+   "no backlight",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight filters",
+  "part_numbers": [
+   "MPZ1005S121ETD25",
+   "8566"
+  ],
+  "readings": [
+   {
+    "point": "Backlight filter replacement",
+    "mode": "resistance",
+    "expect_lo": 120.0,
+    "expect_hi": 120.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "ipadpro1291stgen",
+  "error_codes": [
+   "8566 5AR5",
+   "MPZ1005S121ETD25"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9 No backlight after screen replacement repair\", https://repair.wiki/w/IPad_Pro_12.9_No_backlight_after_screen_replacement_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9_No_backlight_after_screen_replacement_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

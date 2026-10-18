@@ -1,0 +1,122 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 12 Stuck In Recovery Mode After Water Damage Solution",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_12_Stuck_In_Recovery_Mode_After_Water_Damage_Solution",
+   "kind": "web",
+   "title": "IPhone 12 Stuck In Recovery Mode After Water Damage Solution",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 735,
+   "last_edited_utc": "2023-11-05T22:21:16Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12",
+   "iPhone 12 Pro",
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "stuck in recovery after water damage",
+   "stuck in diagnostics mode",
+   "update succeeds then back to recovery"
+  ],
+  "codes": [
+   "IO_BUTTON_SIDE_L_1V8_CONN"
+  ],
+  "claims": [
+   {
+    "statement": "Water near the iPhone 12 power button connector can damage the PMIC so it doesn't hold the button lines at 1.8 V; the phone thinks a button is held and boots into recovery or diagnostics.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Measure IO_BUTTON_SIDE_L_1V8_CONN and the volume lines with the phone on: 1.8 V is normal; around 0.6 V indicates the PMIC fault.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Data-recovery fix: jumper PP1V8_S2 to the stuck-low lines; permanent fix is PMIC replacement (split board). Don't restore if data matters.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clean corrosion at the power button connector.",
+   "Boot and measure side and volume button lines (1.8 V).",
+   "Jumper PP1V8_S2 to low lines for data, or replace PMIC."
+  ],
+  "measurements": [
+   {
+    "point": "IO_BUTTON_SIDE_L_1V8_CONN / VOL lines",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Phone booted"
+   },
+   {
+    "point": "Button lines (faulty)",
+    "expect": "0.6",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "multimeter",
+   "jumper wire"
+  ],
+  "cautions": [
+   "SOURCE RISK: Restoring will lose customer data; updates are safe."
+  ],
+  "tags": [
+   "button lines",
+   "diagnostics mode",
+   "iphone 12",
+   "pmic",
+   "recovery mode loop",
+   "repair.wiki",
+   "water damage"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PMIC button lines",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "IO_BUTTON_SIDE_L_1V8_CONN / VOL lines",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "Button lines (faulty)",
+    "mode": "voltage",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone12",
+  "error_codes": [
+   "IO_BUTTON_SIDE_L_1V8_CONN"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 12 Stuck In Recovery Mode After Water Damage Solution\", https://repair.wiki/w/IPhone_12_Stuck_In_Recovery_Mode_After_Water_Damage_Solution, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_12_Stuck_In_Recovery_Mode_After_Water_Damage_Solution",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

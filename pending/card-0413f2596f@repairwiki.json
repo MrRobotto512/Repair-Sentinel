@@ -1,0 +1,126 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 16 with NO IMEI due to shorted baseband",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_16_with_NO_IMEI_due_to_shorted_baseband",
+   "kind": "web",
+   "title": "How To Fix an iPhone 16 with NO IMEI due to shorted baseband",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12569,
+   "last_edited_utc": "2025-11-03T12:00:24Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16",
+   "iPhone 16 Plus",
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max",
+   "iPhone 16e"
+  ],
+  "symptoms": [
+   "no IMEI",
+   "modem firmware missing"
+  ],
+  "codes": [
+   "PP_3V1_LDO10"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 16-series with no IMEI / modem firmware missing can have PP_3V1_LDO10 shorted to ground (near 0 Ω) under the baseband CPU; the short clears when the BB CPU is lifted.",
+    "evidence": "Problem description and symptoms.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: remove the baseband CPU, insulate the PP_3V1_LDO10 pad on the board with UV mask or polyimide, then reball and refit the BB CPU.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Injecting 1–3 V with a current limit makes the baseband CPU area heat, confirming the location.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect the baseband area for rework or liquid.",
+   "Measure PP_3V1_LDO10 to ground near the BB CPU.",
+   "Inject 1–3 V and locate heat.",
+   "Remove underfill, preheat, lift BB CPU; recheck the short.",
+   "Mask the PP_3V1_LDO10 pad, reball and refit BB CPU.",
+   "Confirm IMEI and baseband version."
+  ],
+  "measurements": [
+   {
+    "point": "PP_3V1_LDO10 (faulty)",
+    "expect": "0",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "Hard short to ground"
+   },
+   {
+    "point": "Short-find injection",
+    "expect": "1-3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "With current limit"
+   }
+  ],
+  "tools": [
+   "board preheater",
+   "hot air",
+   "reball stencil",
+   "UV mask",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "baseband",
+   "iphone 16",
+   "modem firmware missing",
+   "no imei",
+   "pp_3v1_ldo10",
+   "repair.wiki",
+   "short"
+  ],
+  "confidence": "medium",
+  "caveats": "Specialist repair; baseband CPU is paired to the board. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Baseband CPU",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "PP_3V1_LDO10 (faulty)",
+    "mode": "resistance",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "Ω"
+   },
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 1.0,
+    "expect_hi": 3.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone16",
+  "error_codes": [
+   "PP_3V1_LDO10"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 16 with NO IMEI due to shorted baseband\", https://repair.wiki/w/How_To_Fix_an_iPhone_16_with_NO_IMEI_due_to_shorted_baseband, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_16_with_NO_IMEI_due_to_shorted_baseband",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

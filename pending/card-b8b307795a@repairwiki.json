@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 15 Series - No Touch/No Charging",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_15_Series_-_No_Touch/No_Charging",
+   "kind": "web",
+   "title": "IPhone 15 Series - No Touch/No Charging",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10095,
+   "last_edited_utc": "2025-08-07T19:35:50Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15",
+   "iPhone 15 Plus",
+   "iPhone 15 Pro",
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "not charging",
+   "no touch",
+   "after third-party USB-C accessory"
+  ],
+  "codes": [
+   "U9500",
+   "U9720"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 15 series losing charge (often plus touch) after cheap USB-C accessories usually has a damaged U9500 USB-C controller and/or its paired EEPROM U9720.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Replace both as a matched pair from a same-model donor; solder U9720 first, then U9500. Locations differ by model and US/international variant.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test with genuine Apple cable/adapter; inspect port.",
+   "Thermal/rosin check near U9500.",
+   "Rule out flex/battery on a known-good board.",
+   "Replace U9720 then U9500 from same-model donor."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "thermal camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 15",
+   "no touch",
+   "not charging",
+   "repair.wiki",
+   "u9500",
+   "u9720",
+   "usb-c accessory"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "U9500 + U9720",
+  "part_numbers": [
+   "U9500",
+   "U9720"
+  ],
+  "readings": [],
+  "device_family": "iphone15",
+  "error_codes": [
+   "U9500",
+   "U9720"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 15 Series - No Touch/No Charging\", https://repair.wiki/w/IPhone_15_Series_-_No_Touch/No_Charging, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_15_Series_-_No_Touch/No_Charging",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

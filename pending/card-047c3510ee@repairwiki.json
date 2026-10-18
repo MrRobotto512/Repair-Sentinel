@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9in and 11in No Face ID After Removing The Screen Repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9in_and_11in_No_Face_ID_After_Removing_The_Screen_Repair",
+   "kind": "web",
+   "title": "IPad Pro 12.9in and 11in No Face ID After Removing The Screen Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 731,
+   "last_edited_utc": "2023-11-05T22:18:56Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 3rd Gen",
+   "iPad Pro 12.9 4th Gen",
+   "iPad Pro 12.9 5th Gen",
+   "iPad Pro 11 1st Gen",
+   "iPad Pro 11 2nd Gen",
+   "iPad Pro 11 3rd Gen",
+   "iPad Pro 11 4th Gen"
+  ],
+  "symptoms": [
+   "Face ID not available after opening"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On Face ID iPad Pros, 'Face ID is not available' after opening is usually a damaged ambient light sensor on the top flex; the ALS sensors aren't part of Face ID but a damaged one breaks it.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The flood illuminator, dot projector and IR camera must be original; the whole top flex cannot be swapped.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Quick fix: cut the damaged ALS off the flex. Proper fix: desolder the ALS sub-flex (joints under a sticker mid-flex) and fit a new one; auto-brightness and True Tone keep working either way.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect the ALS sensors on the top flex for lifting/damage.",
+   "Cut off the damaged ALS, or desolder and replace the ALS sub-flex.",
+   "Test Face ID."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron",
+   "hot air",
+   "scissors"
+  ],
+  "cautions": [],
+  "tags": [
+   "als",
+   "ambient light sensor",
+   "face id",
+   "ipad pro",
+   "repair.wiki",
+   "top flex"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "ALS sub-flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadpro1293rdgen",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9in and 11in No Face ID After Removing The Screen Repair\", https://repair.wiki/w/IPad_Pro_12.9in_and_11in_No_Face_ID_After_Removing_The_Screen_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9in_and_11in_No_Face_ID_After_Removing_The_Screen_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

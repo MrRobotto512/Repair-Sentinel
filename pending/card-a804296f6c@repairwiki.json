@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Steam Deck - Flash MCU on controller board R rev. B",
+  "source": {
+   "url": "https://repair.wiki/w/Steam_Deck_-_Flash_MCU_on_controller_board_R_rev._B",
+   "kind": "web",
+   "title": "Steam Deck - Flash MCU on controller board R rev. B",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4952,
+   "last_edited_utc": "2024-10-03T16:49:01Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Steam Deck LCD (controller board R rev. B)"
+  ],
+  "symptoms": [
+   "controller board not detected",
+   "MCU replaced needs flashing"
+  ],
+  "codes": [
+   "R7FA4E10B2CFM",
+   "R7FA4E10D2CFM"
+  ],
+  "claims": [
+   {
+    "statement": "A replacement RA4E1 MCU (R7FA4E10B2CFM 256 KB or R7FA4E10D2CFM 512 KB) on the rev. B controller board can be programmed over USB from SteamOS.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Run rfp_cli_linux.sh boot_ra_Release.srec in the RA_bootloader_updater folder and hold R1 + R4 + right '...' when prompted (or ground the MD pin); success shows 'Valve Software Steam Controller Bootloader' in lsusb, then SteamOS flashes the app on next boot.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A brand-new MCU may not report serial numbers, so overlay updates fail (desktop mode updates work).",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Enter desktop mode or SSH.",
+   "cd to /usr/share/jupiter_controller_fw_updater/RA_bootloader_updater.",
+   "Run the flash script; hold the magic button combo.",
+   "Check lsusb for the bootloader, reboot, confirm controller works."
+  ],
+  "measurements": [],
+  "tools": [
+   "SteamOS desktop/SSH"
+  ],
+  "cautions": [],
+  "tags": [
+   "controller board",
+   "mcu flash",
+   "not detected",
+   "renesas",
+   "repair.wiki",
+   "rfp-cli",
+   "steam deck"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Controller MCU",
+  "part_numbers": [
+   "R7FA4E10B2CFM",
+   "R7FA4E10D2CFM"
+  ],
+  "readings": [],
+  "device_family": "steamdecklcd",
+  "error_codes": [
+   "R7FA4E10B2CFM",
+   "R7FA4E10D2CFM"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Steam Deck - Flash MCU on controller board R rev. B\", https://repair.wiki/w/Steam_Deck_-_Flash_MCU_on_controller_board_R_rev._B, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Steam_Deck_-_Flash_MCU_on_controller_board_R_rev._B",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

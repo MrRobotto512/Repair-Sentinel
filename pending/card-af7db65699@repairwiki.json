@@ -1,0 +1,78 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPad Air 4 boot looping after water damage using Panic Logs",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPad_Air_4_boot_looping_after_water_damage_using_Panic_Logs",
+   "kind": "web",
+   "title": "How To Fix an iPad Air 4 boot looping after water damage using Panic Logs",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11968,
+   "last_edited_utc": "2025-09-21T10:31:34Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Air 4"
+  ],
+  "symptoms": [
+   "restart loop after water damage",
+   "boots with ALS unplugged"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A water-damaged iPad Air 4 that loops restarts but boots normally with the ambient light sensor flex unplugged has a shorted or faulty ALS flex.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Running with the ALS disconnected works as a temporary workaround but disables auto-brightness and True Tone.",
+    "evidence": "Option 2.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect and clean the ALS flex and connector with IPA.",
+   "Boot with ALS connected then disconnected to confirm.",
+   "Disconnect battery; replace the ALS flex with OEM/high-quality part.",
+   "Test boot, auto-brightness and True Tone."
+  ],
+  "measurements": [],
+  "tools": [
+   "opening tools",
+   "screwdrivers",
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "als",
+   "ambient light sensor",
+   "ipad air 4",
+   "panic log",
+   "repair.wiki",
+   "restart loop",
+   "water damage"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Ambient light sensor flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadair4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPad Air 4 boot looping after water damage using Panic Logs\", https://repair.wiki/w/How_To_Fix_an_iPad_Air_4_boot_looping_after_water_damage_using_Panic_Logs, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPad_Air_4_boot_looping_after_water_damage_using_Panic_Logs",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

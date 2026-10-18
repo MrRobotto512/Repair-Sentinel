@@ -1,0 +1,86 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PlayStation 5 3 beeps when power is plugged in",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_3_beeps_when_power_is_plugged_in",
+   "kind": "web",
+   "title": "PlayStation 5 3 beeps when power is plugged in",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8758,
+   "last_edited_utc": "2025-07-14T21:18:29Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5"
+  ],
+  "symptoms": [
+   "3 beeps when AC is plugged in",
+   "won't power on"
+  ],
+  "codes": [
+   "25Q16JVNIM"
+  ],
+  "claims": [
+   {
+    "statement": "PS5 beeping 3 times on AC plug-in is a NOR/BIOS (25Q16JVNIM) problem; first try clearing the error log over UART ('errlog clear'), because a full DBI section can cause it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Otherwise remove the BIOS chip, dump it, and run it through PS5 NOR Editor (pre-configured board type, harvest all options) before writing it back.",
+    "evidence": "Steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Connect UART and clear error codes.",
+   "If unresolved, remove BIOS chip (next to southbridge) and dump it.",
+   "Repair the dump with PS5 NOR Editor harvest.",
+   "Write back, resolder, test PSN and a game."
+  ],
+  "measurements": [],
+  "tools": [
+   "UART adapter",
+   "CH341A",
+   "SOP8 adapter",
+   "PS5 NOR Editor",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "25q16jvnim",
+   "3 beeps",
+   "bios",
+   "errlog clear",
+   "nor",
+   "ps5",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "BIOS NOR",
+  "part_numbers": [
+   "25Q16JVNIM"
+  ],
+  "readings": [],
+  "device_family": "playstation5",
+  "error_codes": [
+   "25Q16JVNIM"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 3 beeps when power is plugged in\", https://repair.wiki/w/PlayStation_5_3_beeps_when_power_is_plugged_in, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_3_beeps_when_power_is_plugged_in",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

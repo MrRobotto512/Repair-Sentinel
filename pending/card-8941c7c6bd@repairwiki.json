@@ -1,0 +1,118 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone X image no centered and iphone restarting",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_X_image_no_centered_and_iphone_restarting",
+   "kind": "web",
+   "title": "IPhone X image no centered and iphone restarting",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8911,
+   "last_edited_utc": "2025-07-21T23:11:19Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "Apple logo off-centre",
+   "garbled graphics",
+   "restarting"
+  ],
+  "codes": [
+   "L2780",
+   "FL5780",
+   "BUCK8_LX0"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone X with the Apple logo shifted to the right is usually a cracked GPU coil L2780 (BUCK8_LX0) next to the CPU; spec 1 µH 20% 2.5 A 0.052 Ω.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Logo shifted to the lower part of the screen points to an open filter FL5780 on PP1V8_DISPLAY_CONN; spec 33 Ω 25% 1500 mA.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new screen; inspect FPC.",
+   "Logo right: split board, replace L2780, test in iSocket, reball.",
+   "Logo low: replace FL5780 near the LCD FPC."
+  ],
+  "measurements": [
+   {
+    "point": "L2780",
+    "expect": "1",
+    "unit": "µH",
+    "mode": "inductance",
+    "context": "2.5 A, 0.052 Ω"
+   },
+   {
+    "point": "FL5780",
+    "expect": "33",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "1500 mA"
+   }
+  ],
+  "tools": [
+   "microscope",
+   "hot air",
+   "iSocket"
+  ],
+  "cautions": [],
+  "tags": [
+   "fl5780",
+   "gpu coil",
+   "iphone x",
+   "l2780",
+   "logo not centered",
+   "repair.wiki"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "L2780 / FL5780",
+  "part_numbers": [
+   "L2780",
+   "FL5780"
+  ],
+  "readings": [
+   {
+    "point": "L2780",
+    "mode": "inductance",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "µH"
+   },
+   {
+    "point": "FL5780",
+    "mode": "resistance",
+    "expect_lo": 33.0,
+    "expect_hi": 33.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "iphonex",
+  "error_codes": [
+   "L2780",
+   "FL5780",
+   "BUCK8_LX0"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone X image no centered and iphone restarting\", https://repair.wiki/w/IPhone_X_image_no_centered_and_iphone_restarting, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_X_image_no_centered_and_iphone_restarting",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

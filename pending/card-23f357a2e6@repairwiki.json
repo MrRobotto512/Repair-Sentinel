@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone X - 12 Pro Max Fix A problem was detected with the TrueDepth camera",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_X_-_12_Pro_Max_Fix_A_problem_was_detected_with_the_TrueDepth_camera",
+   "kind": "web",
+   "title": "IPhone X - 12 Pro Max Fix A problem was detected with the TrueDepth camera",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7264,
+   "last_edited_utc": "2025-06-01T21:19:58Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X",
+   "iPhone XS",
+   "iPhone XS Max",
+   "iPhone XR",
+   "iPhone 11",
+   "iPhone 12"
+  ],
+  "symptoms": [
+   "A problem was detected with the TrueDepth camera",
+   "Face ID disabled"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "The 'problem was detected with the TrueDepth camera' message, common after liquid damage, is caused by the dot projector; a JC programmer's read test confirms it.",
+    "evidence": "Solution and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix with JC tag-on method: activate repair with the phone connected, then write data to a tag-on flex ('Write From AI') and fit it to the dot projector.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "JC Face ID boards with a USB-C port on top must be powered from a fast-charging brick.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove dot projector and test it on JC V1S/V1SE/V1S Pro.",
+   "Run Activate Repair with the phone connected.",
+   "Detect the tag-on flex and write data.",
+   "Fold and fit the flex; set up Face ID."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC V1S / V1SE / V1S Pro",
+   "JC Face ID tag-on flex",
+   "JC repair software"
+  ],
+  "cautions": [],
+  "tags": [
+   "dot projector",
+   "face id",
+   "iphone 11",
+   "iphone 12",
+   "iphone x",
+   "repair.wiki",
+   "tag-on",
+   "truedepth"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Dot projector",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonex",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone X - 12 Pro Max Fix A problem was detected with the TrueDepth camera\", https://repair.wiki/w/IPhone_X_-_12_Pro_Max_Fix_A_problem_was_detected_with_the_TrueDepth_camera, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_X_-_12_Pro_Max_Fix_A_problem_was_detected_with_the_TrueDepth_camera",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

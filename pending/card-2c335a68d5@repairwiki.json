@@ -1,0 +1,255 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "PS5 EMC error codes: SSD, PMIC, USB, Bluetooth, HDMI and southbridge",
+  "source": {
+   "url": "https://repair.wiki/w/PlayStation_5_EMC_Errlogs",
+   "kind": "web",
+   "title": "PlayStation 5 EMC Errlogs",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13468,
+   "last_edited_utc": "2026-01-01T17:34:12Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 5",
+   "PlayStation 5 Slim",
+   "PlayStation 5 Pro"
+  ],
+  "symptoms": [
+   "no boot",
+   "no image",
+   "USB/Bluetooth faults",
+   "UART error log"
+  ],
+  "codes": [
+   "808E0000",
+   "808F0001",
+   "808B00FF",
+   "808B0014",
+   "80802081",
+   "80871001",
+   "80894003",
+   "80918000",
+   "80912000",
+   "80910200",
+   "80910002",
+   "80910800",
+   "8091C000",
+   "C0160203",
+   "C0810002",
+   "808C0D91",
+   "808C2092",
+   "C0920002",
+   "80C00131",
+   "80C00133",
+   "80C00136",
+   "80D00402",
+   "80870003",
+   "80C0012C",
+   "80C00139",
+   "B0082108",
+   "E31223DE",
+   "E2E00F1D",
+   "E2000000",
+   "E1200000",
+   "80800014"
+  ],
+  "claims": [
+   {
+    "statement": "SSD/flash: 808E000x EAP fail (SSD controller); 808F000x SMCU SSD>EMC; 808B00FF SSD controller watchdog; 808B0014, 80871001/1055/1062, 80894003/40AE flash controller errors; 80802081 SSD controller to APU comms failure—check caps behind the controller.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "SSD PMIC (DA9081/RT5127) rails: 80918000 0.8V_FC_VDD; 80912000 2.5V_DDR4_VPP; 80910200 1.2V_FC_VDDQMIO; 80910002 1.8V_FC_AVDD; 80910800 1.2V_FC_VDDQFIO; C0160203 SSD PMIC access error—check fuse F7004 on Slim, F7502 on EDM-03x.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "C0810002 HDMI Tx access error: the encoder's 1.8V_HDMI line has failed.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "USB/BT: 808C0D91 and 808C2092 USB Type-C error; C0920002 Type-C redriver access error; 80C00131 USB over-current; 80C00133–80C00137 and 80D00402 USB-Bluetooth firmware/device errors; B0082108 possibly Wi-Fi chip.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "80870003 Titania boot failed reading chip revision—check fuse F7001; 80C0012C BD drive detached; 80C00139 BD eject delayed.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "E31223DE, E2E00F1D, E2000000, E1200000 relate to the southbridge—clean flux underneath or let it cool; 80800014 fatal shutdown possibly TPM-related.",
+    "evidence": "EMC errlog table.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Read EMC errlog over UART.",
+   "SSD PMIC codes: measure the named rail and its fuse.",
+   "USB/BT codes: check Type-C redriver, ports and BT module.",
+   "Southbridge E-codes: clean flux under southbridge after rework."
+  ],
+  "measurements": [
+   {
+    "point": "SSD PMIC 0.8V_FC_VDD",
+    "expect": "0.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "80918000"
+   },
+   {
+    "point": "SSD PMIC 2.5V_DDR4_VPP",
+    "expect": "2.5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "80912000"
+   },
+   {
+    "point": "SSD PMIC 1.2V_FC_VDDQMIO",
+    "expect": "1.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "80910200"
+   },
+   {
+    "point": "SSD PMIC 1.8V_FC_AVDD",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "80910002"
+   },
+   {
+    "point": "HDMI encoder 1.8V_HDMI",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "C0810002"
+   }
+  ],
+  "tools": [
+   "USB-TTL adapter",
+   "Console Service Tool",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "bluetooth",
+   "da9081",
+   "emc",
+   "errlog",
+   "f7001",
+   "f7004",
+   "f7502",
+   "hdmi",
+   "ps5",
+   "repair.wiki",
+   "rt5127",
+   "southbridge",
+   "ssd pmic",
+   "usb type-c"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-maintained code list; several entries are uncertain. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "DA9081",
+   "RT5127",
+   "F7001",
+   "F7004",
+   "F7502"
+  ],
+  "readings": [
+   {
+    "point": "SSD PMIC 0.8V_FC_VDD",
+    "mode": "voltage",
+    "expect_lo": 0.8,
+    "expect_hi": 0.8,
+    "unit": "V"
+   },
+   {
+    "point": "SSD PMIC 2.5V_DDR4_VPP",
+    "mode": "voltage",
+    "expect_lo": 2.5,
+    "expect_hi": 2.5,
+    "unit": "V"
+   },
+   {
+    "point": "SSD PMIC 1.2V_FC_VDDQMIO",
+    "mode": "voltage",
+    "expect_lo": 1.2,
+    "expect_hi": 1.2,
+    "unit": "V"
+   },
+   {
+    "point": "SSD PMIC 1.8V_FC_AVDD",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "HDMI encoder 1.8V_HDMI",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation5",
+  "error_codes": [
+   "808E0000",
+   "808F0001",
+   "808B00FF",
+   "808B0014",
+   "80802081",
+   "80871001",
+   "80894003",
+   "80918000",
+   "80912000",
+   "80910200",
+   "80910002",
+   "80910800",
+   "8091C000",
+   "C0160203",
+   "C0810002",
+   "808C0D91",
+   "808C2092",
+   "C0920002",
+   "80C00131",
+   "80C00133",
+   "80C00136",
+   "80D00402",
+   "80870003",
+   "80C0012C",
+   "80C00139",
+   "B0082108",
+   "E31223DE",
+   "E2E00F1D",
+   "E2000000",
+   "E1200000",
+   "80800014"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"PlayStation 5 EMC Errlogs\", https://repair.wiki/w/PlayStation_5_EMC_Errlogs, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/PlayStation_5_EMC_Errlogs",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

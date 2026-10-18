@@ -1,0 +1,105 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XS Not Powering On, Pulls 2A or More Before Promt to Boot",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XS_Not_Powering_On,_Pulls_2A_or_More_Before_Promt_to_Boot",
+   "kind": "web",
+   "title": "IPhone XS Not Powering On, Pulls 2A or More Before Promt to Boot",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7649,
+   "last_edited_utc": "2025-06-13T23:21:30Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XS",
+   "iPhone XS Max"
+  ],
+  "symptoms": [
+   "no power",
+   "2 A or more draw"
+  ],
+  "codes": [
+   "PP_VDD_MAIN",
+   "U4902",
+   "U5002"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XS drawing 2 A+ before power-on: shorted cap on PP_VDD_MAIN or PP_VDD_BOOST, or rarely speaker amp U4902/U5002; split to find which board holds the short.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Yangtze heats when injecting via the battery connector; usually not the fault.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect for liquid.",
+   "Split; power top board alone.",
+   "Inject 4 V / 2 A; remove hot cap or replace amp."
+  ],
+  "measurements": [
+   {
+    "point": "Short-find injection",
+    "expect": "4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "thermal camera",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone xs",
+   "no power",
+   "repair.wiki",
+   "speaker amp",
+   "u4902",
+   "u5002",
+   "vdd_main short"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Shorted capacitor",
+  "part_numbers": [
+   "U4902",
+   "U5002"
+  ],
+  "readings": [
+   {
+    "point": "Short-find injection",
+    "mode": "voltage",
+    "expect_lo": 4.0,
+    "expect_hi": 4.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphonexs",
+  "error_codes": [
+   "PP_VDD_MAIN",
+   "U4902",
+   "U5002"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XS Not Powering On, Pulls 2A or More Before Promt to Boot\", https://repair.wiki/w/IPhone_XS_Not_Powering_On,_Pulls_2A_or_More_Before_Promt_to_Boot, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XS_Not_Powering_On,_Pulls_2A_or_More_Before_Promt_to_Boot",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

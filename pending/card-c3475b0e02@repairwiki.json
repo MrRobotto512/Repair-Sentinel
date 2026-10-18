@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Joycons not charging or connecting Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Joycons_not_charging_or_connecting_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Joycons not charging or connecting Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2239,
+   "last_edited_utc": "2024-01-13T16:44:12Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "Joy-Cons not charging or pairing on rails",
+   "fan works"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "If the two Joy-Con DC-DC resistors read 18 kΩ each instead of 100 kΩ and 22 kΩ, a capacitor has failed even if it doesn't test shorted; pin 6 of the DC-DC should read 0 in diode mode (0.6 drop confirms).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If the resistors check out, the DC-DC converter may need replacing.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure both resistors (100 kΩ / 22 kΩ expected).",
+   "Diode-check DC-DC pin 6 (should be 0).",
+   "Replace the failed cap or DC-DC converter."
+  ],
+  "measurements": [
+   {
+    "point": "Joy-Con DC-DC resistors",
+    "expect": "100 / 22",
+    "unit": "kΩ",
+    "mode": "resistance",
+    "context": "Good values"
+   },
+   {
+    "point": "DC-DC pin 6",
+    "expect": "0",
+    "unit": "V",
+    "mode": "diode",
+    "context": "0.6 indicates cap failure"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "dc-dc",
+   "joy-con not charging",
+   "nintendo switch",
+   "rail",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Joy-Con DC-DC converter",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "DC-DC pin 6",
+    "mode": "diode",
+    "expect_lo": 0.0,
+    "expect_hi": 0.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Joycons not charging or connecting Repair\", https://repair.wiki/w/Nintendo_Switch_Joycons_not_charging_or_connecting_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Joycons_not_charging_or_connecting_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

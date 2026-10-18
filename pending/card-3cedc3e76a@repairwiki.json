@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair iPhone 12 Pro Max No Audio",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_iPhone_12_Pro_Max_No_Audio",
+   "kind": "web",
+   "title": "How To Repair iPhone 12 Pro Max No Audio",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12615,
+   "last_edited_utc": "2025-11-06T18:29:36Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "no bottom speaker",
+   "no vibration",
+   "earpiece works"
+  ],
+  "codes": [
+   "U8400"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 12 Pro Max with no bottom loudspeaker and no Taptic vibration, unchanged by new speaker, new Taptic and both new amp ICs, was fixed by replacing the Sakonnet IC U8400.",
+    "evidence": "Case write-up.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect around amps and U8400; check OEM speaker/Taptic.",
+   "Test known-good speaker and Taptic Engine.",
+   "Replace audio amps if corroded.",
+   "Replace U8400 (reballed donor); test speaker and haptics."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "reball stencil",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 12 pro max",
+   "no audio",
+   "no vibration",
+   "repair.wiki",
+   "sakonnet",
+   "taptic",
+   "u8400"
+  ],
+  "confidence": "medium",
+  "caveats": "Same U8400 designator is blamed for similar symptoms on iPhone 13. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Sakonnet U8400",
+  "part_numbers": [
+   "U8400"
+  ],
+  "readings": [],
+  "device_family": "iphone12promax",
+  "error_codes": [
+   "U8400"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair iPhone 12 Pro Max No Audio\", https://repair.wiki/w/How_To_Repair_iPhone_12_Pro_Max_No_Audio, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_iPhone_12_Pro_Max_No_Audio",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

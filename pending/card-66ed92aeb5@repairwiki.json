@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 6S No Image",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_6S_No_Image",
+   "kind": "web",
+   "title": "IPhone 6S No Image",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13180,
+   "last_edited_utc": "2025-12-10T22:08:33Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 6S"
+  ],
+  "symptoms": [
+   "no image"
+  ],
+  "codes": [
+   "C4002"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 6S image needs PP5V7_LCM_AVDDH_CONN, PN5V7_LCM_MESON_AVDDN_CONN, PP1V8_LCM_CONN and PP5V7_MESON_AVDDH_CONN (only present when on); these often short and their filters act as fuses.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "C4002 shorted is a fairly common cause (no continuity should exist across it).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If all voltages are present and MIPI filters test good, the fault is likely inside the CPU.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new display; inspect FPC.",
+   "Diode-check the LCD FPC.",
+   "Measure the four display supplies.",
+   "Check C4002; check MIPI filters."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "c4002",
+   "iphone 6s",
+   "lcm",
+   "mipi",
+   "no image",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display supplies / C4002",
+  "part_numbers": [
+   "C4002"
+  ],
+  "readings": [],
+  "device_family": "iphone6s",
+  "error_codes": [
+   "C4002"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 6S No Image\", https://repair.wiki/w/IPhone_6S_No_Image, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_6S_No_Image",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch No Backlight",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_No_Backlight",
+   "kind": "web",
+   "title": "Nintendo Switch No Backlight",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10447,
+   "last_edited_utc": "2025-08-20T20:24:59Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no backlight"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Test a Switch backlight by dry-fitting a known-good LCD's backlight ribbon (screen gets slightly brighter if the circuit works).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Three backlight test points opposite the backlight connector should match reference diode readings within about 0.2; low/short = check components near the backlight IC; OL = broken trace or corroded pad under the IC (leftmost point OL can also be a bad diode).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Liquid commonly corrodes pads under the backlight IC; fix by jumpering the pad and reballing the IC.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Dry-fit a known-good LCD/backlight ribbon.",
+   "Inspect the backlight connector.",
+   "Diode-check the three test points.",
+   "Fix shorts, or jumper broken pads and reball/replace the backlight IC."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: Bending a test LCD ribbon too far rips it."
+  ],
+  "tags": [
+   "backlight ic",
+   "corrosion",
+   "nintendo switch",
+   "no backlight",
+   "repair.wiki",
+   "test points"
+  ],
+  "confidence": "medium",
+  "caveats": "Reference diode values are only in images. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Backlight circuit",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch No Backlight\", https://repair.wiki/w/Nintendo_Switch_No_Backlight, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_No_Backlight",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

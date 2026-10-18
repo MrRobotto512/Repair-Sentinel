@@ -1,0 +1,110 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii Disc Drive Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_Disc_Drive_Repair",
+   "kind": "web",
+   "title": "Nintendo Wii Disc Drive Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13249,
+   "last_edited_utc": "2025-12-13T22:55:18Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "disc won't spin",
+   "won't read discs",
+   "won't read dual-layer discs",
+   "GameCube discs won't eject",
+   "drive dead",
+   "loud drive"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Wii laser pot should be about 600 Ω (especially for dual-layer discs); adjust very slowly—an eighth turn can move it 100 Ω or more.",
+    "evidence": "Repair actions.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "No red laser light = replace laser; laser not moving = replace stepper motor; a faulty laser can stop the spindle spinning.",
+    "evidence": "Repair actions.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "GameCube discs not seating/ejecting is usually a bent top drive cover or a seized mechanism.",
+    "evidence": "Repair actions.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A dead drive: check power/data connections, inspect the drive board for missing caps or corrosion, then replace the board.",
+    "evidence": "Repair actions.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check spin, laser light and laser travel.",
+   "Clean lens with 99% IPA.",
+   "Measure/adjust laser pot toward 600 Ω.",
+   "Replace laser, motor or drive board as indicated."
+  ],
+  "measurements": [
+   {
+    "point": "Laser pot",
+    "expect": "600",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "Ideal"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "isopropyl alcohol",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "disc drive",
+   "dual layer",
+   "gamecube disc",
+   "laser",
+   "laser pot",
+   "nintendo wii",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Disc drive / laser",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Laser pot",
+    "mode": "resistance",
+    "expect_lo": 600.0,
+    "expect_hi": 600.0,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "nintendowii",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii Disc Drive Repair\", https://repair.wiki/w/Nintendo_Wii_Disc_Drive_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_Disc_Drive_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

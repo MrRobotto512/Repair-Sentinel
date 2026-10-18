@@ -1,0 +1,126 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix Samsung S22 Ultra With Red Temperature Warning Symbol",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_Samsung_S22_Ultra_With_Red_Temperature_Warning_Symbol",
+   "kind": "web",
+   "title": "How To Fix Samsung S22 Ultra With Red Temperature Warning Symbol",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4970,
+   "last_edited_utc": "2024-10-07T07:06:52Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy S22 Ultra"
+  ],
+  "symptoms": [
+   "red temperature warning on charge",
+   "will not charge",
+   "says too hot or too cold"
+  ],
+  "codes": [
+   "USB_THM",
+   "U7002",
+   "PM8350"
+  ],
+  "claims": [
+   {
+    "statement": "Galaxy S22 Ultra showing a red exclamation / temperature warning on the charger is a board fault; unlike older models it does not need the wireless coil connected to charge.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check USB_THM, the 3rd pin from the top right of charge FPC connector SOC25000: about 0.717 in diode mode is good; around 0.003 is a short.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A shorted USB_THM requires replacing U7002 (Qualcomm PM8350) inside the sandwich, which is very hard; data can be recovered by booting from a DC supply or a fully charged battery.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check USB_THM on SOC25000 (~0.717 good).",
+   "If shorted, plan U7002 (PM8350) replacement inside the sandwich.",
+   "For data recovery, boot from DC supply or a fully charged battery."
+  ],
+  "measurements": [
+   {
+    "point": "USB_THM at SOC25000",
+    "expect": "0.717",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Good"
+   },
+   {
+    "point": "USB_THM (shorted)",
+    "expect": "0.003",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Fault"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "preheater"
+  ],
+  "cautions": [],
+  "tags": [
+   "galaxy s22 ultra",
+   "not charging",
+   "pm8350",
+   "repair.wiki",
+   "temperature warning",
+   "u7002",
+   "usb_thm"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PMIC U7002 (PM8350)",
+  "part_numbers": [
+   "PM8350",
+   "U7002",
+   "SOC25000"
+  ],
+  "readings": [
+   {
+    "point": "USB_THM at SOC25000",
+    "mode": "diode",
+    "expect_lo": 0.717,
+    "expect_hi": 0.717,
+    "unit": "V"
+   },
+   {
+    "point": "USB_THM (shorted)",
+    "mode": "diode",
+    "expect_lo": 0.003,
+    "expect_hi": 0.003,
+    "unit": "V"
+   }
+  ],
+  "device_family": "galaxys22ultra",
+  "error_codes": [
+   "USB_THM",
+   "U7002",
+   "PM8350"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix Samsung S22 Ultra With Red Temperature Warning Symbol\", https://repair.wiki/w/How_To_Fix_Samsung_S22_Ultra_With_Red_Temperature_Warning_Symbol, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_Samsung_S22_Ultra_With_Red_Temperature_Warning_Symbol",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

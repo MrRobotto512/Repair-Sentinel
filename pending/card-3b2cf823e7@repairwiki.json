@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 16 Pro Max No Image With Original Screen",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_16_Pro_Max_No_Image_With_Original_Screen",
+   "kind": "web",
+   "title": "How To Fix iPhone 16 Pro Max No Image With Original Screen",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12813,
+   "last_edited_utc": "2025-11-23T01:36:45Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "no image with original screen",
+   "aftermarket screen works"
+  ],
+  "codes": [
+   "PNVAR_DISPLAY_VGL",
+   "U9400"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 16 Pro / Pro Max that shows no image on an original OLED but works with a generic screen is missing the –10 V PNVAR_DISPLAY_VGL rail, which only original panels need.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PNVAR_DISPLAY_VGL reads about 220 mV forward and OL reverse in diode mode; with power on it should be –10 V.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If –10 V is missing and there is no short on the line, display PMIC U9400 is the usual failure and is replaced.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect display FPC area and VGL filters.",
+   "Diode-check PNVAR_DISPLAY_VGL (~220 mV / OL).",
+   "Measure –10 V with the display connected and phone on.",
+   "Replace U9400 if no short; confirm –10 V and image."
+  ],
+  "measurements": [
+   {
+    "point": "PNVAR_DISPLAY_VGL",
+    "expect": "0.220",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Forward reading; reverse OL"
+   },
+   {
+    "point": "PNVAR_DISPLAY_VGL",
+    "expect": "-10",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Display connected, powered on"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "reball stencil",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "display pmic",
+   "iphone 16 pro",
+   "no image",
+   "original screen",
+   "pnvar_display_vgl",
+   "repair.wiki",
+   "u9400"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display PMIC U9400",
+  "part_numbers": [
+   "U9400"
+  ],
+  "readings": [
+   {
+    "point": "PNVAR_DISPLAY_VGL",
+    "mode": "diode",
+    "expect_lo": 0.22,
+    "expect_hi": 0.22,
+    "unit": "V"
+   },
+   {
+    "point": "PNVAR_DISPLAY_VGL",
+    "mode": "voltage",
+    "expect_lo": -10.0,
+    "expect_hi": -10.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone16pro",
+  "error_codes": [
+   "PNVAR_DISPLAY_VGL",
+   "U9400"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 16 Pro Max No Image With Original Screen\", https://repair.wiki/w/How_To_Fix_iPhone_16_Pro_Max_No_Image_With_Original_Screen, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_16_Pro_Max_No_Image_With_Original_Screen",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

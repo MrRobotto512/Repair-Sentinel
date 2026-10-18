@@ -1,0 +1,143 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How to fix iPhone 7 that does not turn on, hangs at 0.020–0.030 A after you prompt to boot on DC Power Supply",
+  "source": {
+   "url": "https://repair.wiki/w/How_to_fix_iPhone_7_that_does_not_turn_on,_hangs_at_0.020%E2%80%930.030_A_after_you_prompt_to_boot_on_DC_Power_Supply",
+   "kind": "web",
+   "title": "How to fix iPhone 7 that does not turn on, hangs at 0.020–0.030 A after you prompt to boot on DC Power Supply",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 1802,
+   "last_edited_utc": "2024-01-09T18:08:02Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "no power",
+   "no DFU",
+   "hangs at 20-40 mA after power-on"
+  ],
+  "codes": [
+   "L1801",
+   "L1804",
+   "L3302"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 that draws nothing before power-on and hangs steadily at about 20–40 mA after usually has a cracked/loose coil above the CPU: L1801, L1804 or L3302.",
+    "evidence": "Problem description and solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Coil values: L1801 and L1804 are 1 µH 2.1 A 0.12 Ω; L3302 is 1.2 µH 3.0 A 0.080 Ω.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Underfill must be cleared before poking the coils; they sit against the CPU so careless hot air can float it.",
+    "evidence": "Note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clear underfill around L1801, L1804, L3302.",
+   "Poke each coil; replace any that break off with correct values."
+  ],
+  "measurements": [
+   {
+    "point": "Hung boot draw",
+    "expect": "0.020-0.040",
+    "unit": "A",
+    "mode": "current",
+    "context": "After power-on, steady"
+   },
+   {
+    "point": "L1801 / L1804",
+    "expect": "1",
+    "unit": "µH",
+    "mode": "inductance",
+    "context": "2.1 A, 0.12 Ω"
+   },
+   {
+    "point": "L3302",
+    "expect": "1.2",
+    "unit": "µH",
+    "mode": "inductance",
+    "context": "3.0 A, 0.080 Ω"
+   }
+  ],
+  "tools": [
+   "DC power supply",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [
+   "SOURCE RISK: Hot air near these coils can float the CPU."
+  ],
+  "tags": [
+   "20ma",
+   "broken coils",
+   "iphone 7",
+   "l1801",
+   "l1804",
+   "l3302",
+   "no power",
+   "repair.wiki"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU coils",
+  "part_numbers": [
+   "L1801",
+   "L1804",
+   "L3302"
+  ],
+  "readings": [
+   {
+    "point": "Hung boot draw",
+    "mode": "current",
+    "expect_lo": 0.02,
+    "expect_hi": 0.04,
+    "unit": "A"
+   },
+   {
+    "point": "L1801 / L1804",
+    "mode": "inductance",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "µH"
+   },
+   {
+    "point": "L3302",
+    "mode": "inductance",
+    "expect_lo": 1.2,
+    "expect_hi": 1.2,
+    "unit": "µH"
+   }
+  ],
+  "device_family": "iphone7",
+  "error_codes": [
+   "L1801",
+   "L1804",
+   "L3302"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How to fix iPhone 7 that does not turn on, hangs at 0.020–0.030 A after you prompt to boot on DC Power Supply\", https://repair.wiki/w/How_to_fix_iPhone_7_that_does_not_turn_on,_hangs_at_0.020%E2%80%930.030_A_after_you_prompt_to_boot_on_DC_Power_Supply, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_to_fix_iPhone_7_that_does_not_turn_on,_hangs_at_0.020%E2%80%930.030_A_after_you_prompt_to_boot_on_DC_Power_Supply",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

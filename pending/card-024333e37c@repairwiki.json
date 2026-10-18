@@ -1,0 +1,105 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo 3DS blue light turns on then turns off",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_3DS_blue_light_turns_on_then_turns_off",
+   "kind": "web",
+   "title": "Nintendo 3DS blue light turns on then turns off",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4807,
+   "last_edited_utc": "2024-09-06T16:48:41Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo 3DS",
+   "Nintendo 2DS"
+  ],
+  "symptoms": [
+   "blue light turns on then off",
+   "pop sound then off"
+  ],
+  "codes": [
+   "boot.firm",
+   "arm9loaderhax.bin"
+  ],
+  "claims": [
+   {
+    "statement": "On 3DS, if the power LED fades out slowly after fading in it's almost always software (e.g. softmod SD card missing files); if it cuts out instantly, often with a pop, it's hardware.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "If hinge position changes the behaviour, the top screen flex is damaged.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Hardware shutdown causes include open or shorted backlights, shorted display high-voltage rails (+10 V / -15 V), both screens' HV open (bad flex/connector), shorted camera flex data lines, or an open speaker/codec connection.",
+    "evidence": "Hardware steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Softmodded units need a FAT32 SD with boot.firm (b9s/fastboot3DS) or arm9loaderhax.bin.",
+    "evidence": "Software steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Eject cartridge and SD card.",
+   "Watch whether the LED fades or cuts out.",
+   "Software: check SD format and boot files.",
+   "Hardware: check display, backlight, camera flexes and connectors, speakers and liquid damage."
+  ],
+  "measurements": [
+   {
+    "point": "Display high-voltage rails",
+    "expect": "+10 / -15",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Shorted = emergency shutdown"
+   }
+  ],
+  "tools": [
+   "tri-wing screwdriver",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "2ds",
+   "blue light off",
+   "flex cable",
+   "nintendo 3ds",
+   "no boot",
+   "repair.wiki",
+   "sd card",
+   "softmod"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display flex / power",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendo3ds",
+  "error_codes": [
+   "boot.firm",
+   "arm9loaderhax.bin"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo 3DS blue light turns on then turns off\", https://repair.wiki/w/Nintendo_3DS_blue_light_turns_on_then_turns_off, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_3DS_blue_light_turns_on_then_turns_off",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

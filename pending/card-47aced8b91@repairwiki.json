@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii An Error Has Occurred... when entering or exiting system apps (such as Mii Channel)",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_An_Error_Has_Occurred..._when_entering_or_exiting_system_apps_(such_as_Mii_Channel)",
+   "kind": "web",
+   "title": "Nintendo Wii An Error Has Occurred... when entering or exiting system apps (such as Mii Channel)",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13237,
+   "last_edited_utc": "2025-12-13T22:42:07Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "An Error Has Occurred entering/exiting system apps"
+  ],
+  "codes": [
+   "IOS36",
+   "IOS58",
+   "IOS80"
+  ],
+  "claims": [
+   {
+    "statement": "Wii 'An Error Has Occurred' in system apps like the Mii Channel: disc drive disconnected/dead, or bad homebrew—reinstall default IOS36, IOS58 and IOS80 via NUS Downloader.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check disc drive connection.",
+   "Reinstall default IOS36/58/80."
+  ],
+  "measurements": [],
+  "tools": [
+   "NUS Downloader"
+  ],
+  "cautions": [],
+  "tags": [
+   "an error has occurred",
+   "disc drive",
+   "ios",
+   "nintendo wii",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Disc drive / IOS",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendowii",
+  "error_codes": [
+   "IOS36",
+   "IOS58",
+   "IOS80"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii An Error Has Occurred... when entering or exiting system apps (such as Mii Channel)\", https://repair.wiki/w/Nintendo_Wii_An_Error_Has_Occurred..._when_entering_or_exiting_system_apps_(such_as_Mii_Channel), CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_An_Error_Has_Occurred..._when_entering_or_exiting_system_apps_(such_as_Mii_Channel)",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

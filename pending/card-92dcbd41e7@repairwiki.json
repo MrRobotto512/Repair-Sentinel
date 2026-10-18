@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "USB to FPC adapter to test the Controller board(s)",
+  "source": {
+   "url": "https://repair.wiki/w/USB_to_FPC_adapter_to_test_the_Controller_board(s)",
+   "kind": "web",
+   "title": "USB to FPC adapter to test the Controller board(s)",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14153,
+   "last_edited_utc": "2026-03-01T09:50:10Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Steam Deck"
+  ],
+  "symptoms": [
+   "controls not working",
+   "controller board vs mainboard fault"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Steam Deck controller boards can be bench-tested on a PC via a USB-to-FPC adapter (8-pin 0.5 mm FPC test board): pin 1 or 2 = +5 V, pins 3/6/7 = GND, pin 4 = D-, pin 5 = D+.",
+    "evidence": "Assembly section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A good board shows up in lsusb and as 'Steam Deck Controller' in Steam; with touchpads/sticks unplugged the cursor may drift because it falls back to mouse mode.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Build adapter; verify +5 V lands on FPC pin 1/2 before connecting a board.",
+   "Connect the controller board; confirm ground.",
+   "Plug into PC; check lsusb and Steam controller test.",
+   "Swap D+/D- if not detected."
+  ],
+  "measurements": [
+   {
+    "point": "FPC pin 1/2",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "USB supply"
+   }
+  ],
+  "tools": [
+   "8-pin 0.5 mm FPC test board",
+   "FPC cable",
+   "USB cable",
+   "multimeter"
+  ],
+  "cautions": [
+   "SOURCE RISK: Putting +5 V on a data or key pin can fry the controller board."
+  ],
+  "tags": [
+   "bench test",
+   "controller board",
+   "repair.wiki",
+   "steam deck",
+   "usb fpc adapter"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Controller board",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "FPC pin 1/2",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "steamdeck",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"USB to FPC adapter to test the Controller board(s)\", https://repair.wiki/w/USB_to_FPC_adapter_to_test_the_Controller_board(s), CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/USB_to_FPC_adapter_to_test_the_Controller_board(s)",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

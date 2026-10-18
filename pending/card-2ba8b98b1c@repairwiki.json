@@ -1,0 +1,130 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 15 Pro Max Not Charging and no Touch",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_15_Pro_Max_Not_Charging_and_no_Touch",
+   "kind": "web",
+   "title": "IPhone 15 Pro Max Not Charging and no Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7131,
+   "last_edited_utc": "2025-05-27T17:42:14Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "not charging",
+   "no touch"
+  ],
+  "codes": [
+   "U9500",
+   "U9720"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 15 Pro Max no charge (often with no touch) is usually U9500, the chip that detects what's connected to USB-C; if wireless charging works, Tigris is fine.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "U9500 needs 5 V at its input with the port connected (board split).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "U9500 works with a paired ROM U9720; both must come together from an iPhone 15 Pro Max donor (not 15 or 15 Pro).",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A good fast charge reads about 9 V and 2 A+ on a meter.",
+    "evidence": "Final testing.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test new display and battery; try wireless charging.",
+   "Split the board; check 5 V at U9500 input.",
+   "Replace U9500 and U9720 as a pair from a 15 Pro Max donor.",
+   "Test on top board alone, then reball and rejoin.",
+   "Check 9 V fast charge, data and USB-C audio."
+  ],
+  "measurements": [
+   {
+    "point": "U9500 input",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Charger connected"
+   },
+   {
+    "point": "Fast charge",
+    "expect": "9",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "About 2 A+"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "USB-C meter",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 15 pro max",
+   "no touch",
+   "not charging",
+   "repair.wiki",
+   "u9500",
+   "u9720",
+   "usb-c"
+  ],
+  "confidence": "medium",
+  "caveats": "Source also mentions 'ROM IC U1030' once, likely a typo for U9720. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "U9500 + ROM U9720",
+  "part_numbers": [
+   "U9500",
+   "U9720"
+  ],
+  "readings": [
+   {
+    "point": "U9500 input",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "Fast charge",
+    "mode": "voltage",
+    "expect_lo": 9.0,
+    "expect_hi": 9.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone15promax",
+  "error_codes": [
+   "U9500",
+   "U9720"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 15 Pro Max Not Charging and no Touch\", https://repair.wiki/w/IPhone_15_Pro_Max_Not_Charging_and_no_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_15_Pro_Max_Not_Charging_and_no_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

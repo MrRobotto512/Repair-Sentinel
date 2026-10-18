@@ -1,0 +1,93 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone XR not powering on with heat above the CPU",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_XR_not_powering_on_with_heat_above_the_CPU",
+   "kind": "web",
+   "title": "IPhone XR not powering on with heat above the CPU",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6702,
+   "last_edited_utc": "2025-05-14T18:31:12Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone XR"
+  ],
+  "symptoms": [
+   "no power",
+   "1 A+ draw before power-on",
+   "heat above CPU"
+  ],
+  "codes": [
+   "U5002",
+   "PP_SPKAMP_TOP_VBOOST"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone XR drawing 1 A+ before power-on with heat above the CPU is usually traced to a cracked U5002 speaker amp or a shorted capacitor on PP_SPKAMP_TOP_VBOOST.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Thermal/freeze-spray to find the source.",
+   "Replace cracked U5002 or remove shorted cap; re-check the rail."
+  ],
+  "measurements": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "expect": "1",
+    "unit": "A",
+    "mode": "current",
+    "context": "DC supply"
+   }
+  ],
+  "tools": [
+   "thermal camera",
+   "freeze spray"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone xr",
+   "no power",
+   "repair.wiki",
+   "speaker amp",
+   "u5002",
+   "vboost"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Speaker amp U5002",
+  "part_numbers": [
+   "U5002"
+  ],
+  "readings": [
+   {
+    "point": "Pre-boot draw (fault)",
+    "mode": "current",
+    "expect_lo": 1.0,
+    "expect_hi": 1.0,
+    "unit": "A"
+   }
+  ],
+  "device_family": "iphonexr",
+  "error_codes": [
+   "U5002",
+   "PP_SPKAMP_TOP_VBOOST"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone XR not powering on with heat above the CPU\", https://repair.wiki/w/IPhone_XR_not_powering_on_with_heat_above_the_CPU, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_XR_not_powering_on_with_heat_above_the_CPU",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

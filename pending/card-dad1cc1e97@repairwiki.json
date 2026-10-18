@@ -1,0 +1,102 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair iPhone 12 Pro Max fake temperature warning",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_iPhone_12_Pro_Max_fake_temperature_warning",
+   "kind": "web",
+   "title": "How To Repair iPhone 12 Pro Max fake temperature warning",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13839,
+   "last_edited_utc": "2026-02-04T11:58:28Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 12 Pro Max"
+  ],
+  "symptoms": [
+   "Temperature Too High warning while cool",
+   "charging disabled"
+  ],
+  "codes": [
+   "NTC_RADIO_BB_SE",
+   "NTC_RADIO_PA_SE"
+  ],
+  "claims": [
+   {
+    "statement": "A false Temperature warning on iPhone 12 Pro Max is usually a faulty charge port flex, or cracked joints between the AP and RF sandwich layers breaking RF temperature sensor lines.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "For data recovery only, adding 10 kΩ to ground on interposer pin 487 (NTC_RADIO_BB_SE) and pin 489 (NTC_RADIO_PA_SE) forces valid readings long enough to back up.",
+    "evidence": "Fix 3, option B.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm phone is cool and idle draw normal.",
+   "Replace the charge port flex with OEM.",
+   "If persists, split and reball the RF layer.",
+   "For data only: bottom board in iSocket or 10 kΩ bypass resistors."
+  ],
+  "measurements": [
+   {
+    "point": "NTC bypass resistor",
+    "expect": "10",
+    "unit": "kΩ",
+    "mode": "resistance",
+    "context": "To ground on pins 487 and 489, data recovery only"
+   }
+  ],
+  "tools": [
+   "hot air",
+   "preheater",
+   "iSocket",
+   "10k resistors"
+  ],
+  "cautions": [
+   "SOURCE RISK: The resistor bypass is not a permanent repair."
+  ],
+  "tags": [
+   "charge port flex",
+   "iphone 12 pro max",
+   "ntc",
+   "repair.wiki",
+   "sandwich reball",
+   "temperature warning"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charge port flex / RF sandwich",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "NTC bypass resistor",
+    "mode": "resistance",
+    "expect_lo": 10.0,
+    "expect_hi": 10.0,
+    "unit": "kΩ"
+   }
+  ],
+  "device_family": "iphone12promax",
+  "error_codes": [
+   "NTC_RADIO_BB_SE",
+   "NTC_RADIO_PA_SE"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair iPhone 12 Pro Max fake temperature warning\", https://repair.wiki/w/How_To_Repair_iPhone_12_Pro_Max_fake_temperature_warning, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_iPhone_12_Pro_Max_fake_temperature_warning",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

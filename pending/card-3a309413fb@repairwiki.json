@@ -1,0 +1,67 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii Green light but no audio and black screen, red flash",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_Green_light_but_no_audio_and_black_screen,_red_flash",
+   "kind": "web",
+   "title": "Nintendo Wii Green light but no audio and black screen, red flash",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13232,
+   "last_edited_utc": "2025-12-13T22:38:46Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "green light, black screen, no audio",
+   "red flash"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A Wii that powers on to a black screen with no audio usually has the Bluetooth or Wi-Fi board disconnected or failed; reseat/inspect, then replace (Bluetooth first, then Wi-Fi).",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Reseat the Bluetooth board; inspect pins.",
+   "Replace Bluetooth board.",
+   "Repeat for Wi-Fi board."
+  ],
+  "measurements": [],
+  "tools": [
+   "tri-wing screwdriver"
+  ],
+  "cautions": [],
+  "tags": [
+   "black screen",
+   "bluetooth board",
+   "nintendo wii",
+   "repair.wiki",
+   "wifi board"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Bluetooth / Wi-Fi board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendowii",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii Green light but no audio and black screen, red flash\", https://repair.wiki/w/Nintendo_Wii_Green_light_but_no_audio_and_black_screen,_red_flash, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_Green_light_but_no_audio_and_black_screen,_red_flash",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox Fault Finding Using I2C",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_Fault_Finding_Using_I2C",
+   "kind": "web",
+   "title": "Xbox Fault Finding Using I2C",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 8553,
+   "last_edited_utc": "2025-07-06T21:41:13Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox One S",
+   "Xbox One X",
+   "Xbox Series S",
+   "Xbox Series X"
+  ],
+  "symptoms": [
+   "no boot",
+   "need POST/error code"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Xbox One S/X and Series S/X southbridge error codes can be read over I2C with a Raspberry Pi Pico running PicoDurangoPOST firmware and the XboxPostcodeMonitor app (console plugged in, then powered on after connecting).",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Look codes up in the Xbox POST error code database at errors.xboxresearch.com.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Flash PicoDurangoPOST to a Pico.",
+   "Solder the three I2C points to the Pico.",
+   "Run XboxPostcodeMonitor, pick COM port and model, Connect.",
+   "Power on and read codes; look them up."
+  ],
+  "measurements": [],
+  "tools": [
+   "Raspberry Pi Pico",
+   "PicoDurangoPOST",
+   "XboxPostcodeMonitor",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "i2c",
+   "pico",
+   "post codes",
+   "repair.wiki",
+   "xbox one s",
+   "xbox one x",
+   "xbox series s",
+   "xbox series x"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxones",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox Fault Finding Using I2C\", https://repair.wiki/w/Xbox_Fault_Finding_Using_I2C, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_Fault_Finding_Using_I2C",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

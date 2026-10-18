@@ -1,0 +1,108 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone 7 With Grayed Out Speaker Icon, Audio IC Repair",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_7_With_Grayed_Out_Speaker_Icon,_Audio_IC_Repair",
+   "kind": "web",
+   "title": "How To Fix iPhone 7 With Grayed Out Speaker Icon, Audio IC Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 14185,
+   "last_edited_utc": "2026-03-21T14:06:37Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "speaker icon greyed out in calls",
+   "voice memo will not record",
+   "no mic for Siri",
+   "7-minute Apple logo boot on older iOS"
+  ],
+  "codes": [
+   "U3101"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 'audio disease' is caused by pads C12 (and sometimes D12) breaking under audio IC U3101; the chip itself is usually fine and can be reballed and reused.",
+    "evidence": "Repair section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: reball U3101 and add jumpers—C12 to the trace toward R1103, D12 to G12; optionally F12→C3220, H12→R3103, J12→R3104.",
+    "evidence": "Jumper section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Quick tests: speaker button greyed out in a call, or voice memo failing to record (or distorting while gently twisting the frame). Bluetooth audio still works.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Excess heat during this repair can cause baseband no-service faults; replace (don't reball) an underfilled audio IC.",
+    "evidence": "Warnings.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Make a test call and check the speaker button; test Voice Memos.",
+   "Remove U3101 carefully.",
+   "Add C12 and D12 jumpers (plus others if pads ripped); UV-mask.",
+   "Reball and refit U3101 (replace if underfilled or damaged).",
+   "Test voice memo playback on both speakers and a call."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "jumper wire",
+   "UV mask"
+  ],
+  "cautions": [
+   "SOURCE RISK: Overheating during audio IC work can float the baseband CPU."
+  ],
+  "tags": [
+   "audio disease",
+   "audio ic",
+   "c12",
+   "d12",
+   "greyed out speaker",
+   "iphone 7",
+   "repair.wiki",
+   "u3101"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Audio IC U3101",
+  "part_numbers": [
+   "U3101",
+   "R1103",
+   "C3220",
+   "R3103",
+   "R3104"
+  ],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [
+   "U3101"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone 7 With Grayed Out Speaker Icon, Audio IC Repair\", https://repair.wiki/w/How_To_Fix_iPhone_7_With_Grayed_Out_Speaker_Icon,_Audio_IC_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_7_With_Grayed_Out_Speaker_Icon,_Audio_IC_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

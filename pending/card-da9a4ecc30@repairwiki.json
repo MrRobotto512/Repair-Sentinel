@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "3 min reboot iPhone 16 panic log - 524288",
+  "source": {
+   "url": "https://repair.wiki/w/3_min_reboot_iPhone_16_panic_log_-_524288",
+   "kind": "web",
+   "title": "3 min reboot iPhone 16 panic log - 524288",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7369,
+   "last_edited_utc": "2025-06-05T01:14:02Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16",
+   "iPhone 16 Plus"
+  ],
+  "symptoms": [
+   "random restarts",
+   "reboots every few minutes",
+   "no loudspeaker",
+   "not charging"
+  ],
+  "codes": [
+   "524288"
+  ],
+  "claims": [
+   {
+    "statement": "On iPhone 16 / 16 Plus, a 3-minute reboot whose panic-full log carries trigger code 524288 points to the charging port flex.",
+    "evidence": "Panic log trigger code mapped to the charging port flex on this model.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The air (barometric) sensor must be connected or the reboot continues; if it persists after the port flex swap, replace the air sensor.",
+    "evidence": "Guide lists air sensor as second suspect after the charge port flex.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A partially seated charging flex or debris/damage in its FPC connector can also trigger the reboot.",
+    "evidence": "Guide recommends inspecting the FPC connector pins for shorts.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm it is a timed restart (not a bootloop at the Apple logo).",
+   "Open Settings > Privacy & Security > Analytics > Analytics Data and open the newest panic-full log.",
+   "If the trigger code is 524288, replace the charging port flex with an original pulled part.",
+   "Make sure the air sensor is plugged in; replace it if the reboot persists.",
+   "Inspect the charge-flex FPC connector for debris, damage or shorts."
+  ],
+  "measurements": [],
+  "tools": [
+   "OEM pulled charging port flex"
+  ],
+  "cautions": [],
+  "tags": [
+   "3 minute reboot",
+   "524288",
+   "air sensor",
+   "charging port flex",
+   "iphone 16",
+   "panic log",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Code-to-part mapping is model-specific; verify against the panic log on the device in hand. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charging port flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone16",
+  "error_codes": [
+   "524288"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"3 min reboot iPhone 16 panic log - 524288\", https://repair.wiki/w/3_min_reboot_iPhone_16_panic_log_-_524288, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/3_min_reboot_iPhone_16_panic_log_-_524288",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

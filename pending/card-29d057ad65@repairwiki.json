@@ -1,0 +1,68 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch Console only charges from one side of the USB-C port Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_Console_only_charges_from_one_side_of_the_USB-C_port_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch Console only charges from one side of the USB-C port Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2286,
+   "last_edited_utc": "2024-01-13T20:30:04Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "charges from one cable orientation only"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "A Switch that charges from only one side of the USB-C plug points to the port, M92T36, PI3USB or diode packs; if the port is fine, change M92T36.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect port and its installation.",
+   "Replace M92T36 if the port is fine."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "m92t36",
+   "nintendo switch",
+   "one side charging",
+   "repair.wiki",
+   "usb-c"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "USB-C port / M92T36",
+  "part_numbers": [
+   "M92T36"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch Console only charges from one side of the USB-C port Repair\", https://repair.wiki/w/Nintendo_Switch_Console_only_charges_from_one_side_of_the_USB-C_port_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_Console_only_charges_from_one_side_of_the_USB-C_port_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

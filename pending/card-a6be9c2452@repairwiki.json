@@ -1,0 +1,128 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair an iPhone 11 that is bootlooping",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_an_iPhone_11_that_is_bootlooping",
+   "kind": "web",
+   "title": "How To Repair an iPhone 11 that is bootlooping",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12187,
+   "last_edited_utc": "2025-09-30T07:06:28Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "bootloop",
+   "restore fails"
+  ],
+  "codes": [
+   "I2C_AOP_SDA",
+   "U4700"
+  ],
+  "claims": [
+   {
+    "statement": "An iPhone 11 bootloop traced to I2C_AOP_SDA being pulled down by a faulty audio IC U4700: SDA read 0.060 instead of about 0.342 in diode mode at the front proximity FPC (SCL normal about 0.318).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Removing U4700 cleared the short and the phone booted without audio; fitting a new U4700 fixed it.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check I2C_AOP_SDA/SCL at the front prox FPC.",
+   "If SDA is low, remove U4700 and re-measure.",
+   "Fit replacement U4700; test audio."
+  ],
+  "measurements": [
+   {
+    "point": "I2C_AOP_SDA",
+    "expect": "0.342",
+    "unit": "V",
+    "mode": "diode",
+    "context": "At front prox FPC, normal"
+   },
+   {
+    "point": "I2C_AOP_SCL",
+    "expect": "0.318",
+    "unit": "V",
+    "mode": "diode",
+    "context": "At front prox FPC, normal"
+   },
+   {
+    "point": "I2C_AOP_SDA (faulty)",
+    "expect": "0.060",
+    "unit": "V",
+    "mode": "diode",
+    "context": "Pulled down by U4700"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air",
+   "DC power supply"
+  ],
+  "cautions": [],
+  "tags": [
+   "audio ic",
+   "bootloop",
+   "i2c_aop_sda",
+   "iphone 11",
+   "repair.wiki",
+   "u4700"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Audio IC U4700",
+  "part_numbers": [
+   "U4700"
+  ],
+  "readings": [
+   {
+    "point": "I2C_AOP_SDA",
+    "mode": "diode",
+    "expect_lo": 0.342,
+    "expect_hi": 0.342,
+    "unit": "V"
+   },
+   {
+    "point": "I2C_AOP_SCL",
+    "mode": "diode",
+    "expect_lo": 0.318,
+    "expect_hi": 0.318,
+    "unit": "V"
+   },
+   {
+    "point": "I2C_AOP_SDA (faulty)",
+    "mode": "diode",
+    "expect_lo": 0.06,
+    "expect_hi": 0.06,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone11",
+  "error_codes": [
+   "I2C_AOP_SDA",
+   "U4700"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair an iPhone 11 that is bootlooping\", https://repair.wiki/w/How_To_Repair_an_iPhone_11_that_is_bootlooping, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_an_iPhone_11_that_is_bootlooping",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

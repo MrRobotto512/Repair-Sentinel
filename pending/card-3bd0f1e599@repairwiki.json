@@ -1,0 +1,81 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 7 Stuck In DFU Mode. iTunes Error Code 4014",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_Stuck_In_DFU_Mode._iTunes_Error_Code_4014",
+   "kind": "web",
+   "title": "How To Fix an iPhone 7 Stuck In DFU Mode. iTunes Error Code 4014",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3219,
+   "last_edited_utc": "2024-01-25T06:45:35Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 7",
+   "iPhone 7 Plus"
+  ],
+  "symptoms": [
+   "stuck in DFU",
+   "no image",
+   "restore fails"
+  ],
+  "codes": [
+   "4014"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 7 stuck in DFU with restore error 4014 (3uTools flash failing around 19%) usually means NAND not detected.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check NAND-area capacitors for shorts first; otherwise pull the NAND and read it on a JC P7 programmer: unreadable = replace, readable = reball and refit.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check capacitors around NAND for shorts; remove a shorted cap and retest.",
+   "Pull NAND and test on JC P7.",
+   "Replace dead NAND, or reball and refit a readable one."
+  ],
+  "measurements": [],
+  "tools": [
+   "JC P7 NAND programmer",
+   "hot air",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "dfu",
+   "error 4014",
+   "iphone 7",
+   "nand",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone7",
+  "error_codes": [
+   "4014"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 7 Stuck In DFU Mode. iTunes Error Code 4014\", https://repair.wiki/w/How_To_Fix_an_iPhone_7_Stuck_In_DFU_Mode._iTunes_Error_Code_4014, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_7_Stuck_In_DFU_Mode._iTunes_Error_Code_4014",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,84 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 12.9 5th Gen Touch Screen Not Working",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_12.9_5th_Gen_Touch_Screen_Not_Working",
+   "kind": "web",
+   "title": "IPad Pro 12.9 5th Gen Touch Screen Not Working",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12484,
+   "last_edited_utc": "2025-10-31T19:19:41Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 12.9 5th Gen"
+  ],
+  "symptoms": [
+   "no touch"
+  ],
+  "codes": [
+   "BCM15957A0",
+   "PP15V0_TOUCH_FILT",
+   "PP15V0_TOUCH_LDO",
+   "PP15V0_TOUCH"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 12.9 (5th gen) no touch: check PP15V0_TOUCH_FILT, PP15V0_TOUCH_LDO and PP15V0_TOUCH for shorts near the two BCM15957A0 controllers above the lower display connectors.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A shorted capacitor can simply be removed; a shorted IC must be replaced.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check the three touch rails.",
+   "Find and remove the shorted cap, or replace the shorted IC."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "bcm15957a0",
+   "ipad pro 12.9",
+   "no touch",
+   "pp15v0_touch",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch rails",
+  "part_numbers": [
+   "BCM15957A0"
+  ],
+  "readings": [],
+  "device_family": "ipadpro1295thgen",
+  "error_codes": [
+   "BCM15957A0",
+   "PP15V0_TOUCH_FILT",
+   "PP15V0_TOUCH_LDO",
+   "PP15V0_TOUCH"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 12.9 5th Gen Touch Screen Not Working\", https://repair.wiki/w/IPad_Pro_12.9_5th_Gen_Touch_Screen_Not_Working, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_12.9_5th_Gen_Touch_Screen_Not_Working",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

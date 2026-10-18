@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 11 Not Powering on, After Prompt to Boot Current Jumps Back and Forth From 0 A to 320 mA, Then 0 A to 1.4 A, Then 0 A to 500 mA, and so on",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_11_Not_Powering_on,_After_Prompt_to_Boot_Current_Jumps_Back_and_Forth_From_0_A_to_320_mA,_Then_0_A_to_1.4_A,_Then_0_A_to_500_mA,_and_so_on",
+   "kind": "web",
+   "title": "IPhone 11 Not Powering on, After Prompt to Boot Current Jumps Back and Forth From 0 A to 320 mA, Then 0 A to 1.4 A, Then 0 A to 500 mA, and so on",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7668,
+   "last_edited_utc": "2025-06-14T00:28:47Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11"
+  ],
+  "symptoms": [
+   "no power",
+   "current bounces after power-on"
+  ],
+  "codes": [
+   "PP2V63_NAND",
+   "PP1V8_NAND",
+   "PP0V9_NAND"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 11 with no pre-boot draw and current bouncing after power-on usually has a shorted cap on PP2V63_NAND, PP1V8_NAND or PP0V9_NAND; PMIC heating during injection is not the cause.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check NAND rails for shorts.",
+   "Inject voltage; remove the shorted cap."
+  ],
+  "measurements": [],
+  "tools": [
+   "DC power supply",
+   "thermal camera"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 11",
+   "nand short",
+   "no power",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Source names PMIC U1801, which looks carried over from iPhone 7 guides. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "NAND rail capacitors",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone11",
+  "error_codes": [
+   "PP2V63_NAND",
+   "PP1V8_NAND",
+   "PP0V9_NAND"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 11 Not Powering on, After Prompt to Boot Current Jumps Back and Forth From 0 A to 320 mA, Then 0 A to 1.4 A, Then 0 A to 500 mA, and so on\", https://repair.wiki/w/IPhone_11_Not_Powering_on,_After_Prompt_to_Boot_Current_Jumps_Back_and_Forth_From_0_A_to_320_mA,_Then_0_A_to_1.4_A,_Then_0_A_to_500_mA,_and_so_on, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_11_Not_Powering_on,_After_Prompt_to_Boot_Current_Jumps_Back_and_Forth_From_0_A_to_320_mA,_Then_0_A_to_1.4_A,_Then_0_A_to_500_mA,_and_so_on",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

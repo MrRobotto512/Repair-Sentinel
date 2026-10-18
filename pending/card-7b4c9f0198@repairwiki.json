@@ -1,0 +1,68 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Huawei P30 Pro Does not recognize sim card (No sim out of nowhere) Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Huawei_P30_Pro_Does_not_recognize_sim_card_(No_sim_out_of_nowhere)_Repair",
+   "kind": "web",
+   "title": "Huawei P30 Pro Does not recognize sim card (No sim out of nowhere) Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2060,
+   "last_edited_utc": "2024-01-12T23:05:28Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Huawei P30 Pro"
+  ],
+  "symptoms": [
+   "no SIM detected"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "On Huawei P30 Pro the SIM tray daughterboard connects through the charging port flex; pins break off its connectors, causing sudden 'no SIM'. Replace the flex after clearing broken pin remnants from the connector.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect both flex connectors for broken pins.",
+   "Remove pin residue from the connector.",
+   "Replace the charging port flex."
+  ],
+  "measurements": [],
+  "tools": [
+   "screwdrivers",
+   "tweezers",
+   "soldering iron"
+  ],
+  "cautions": [],
+  "tags": [
+   "charging port flex",
+   "huawei p30 pro",
+   "no sim",
+   "repair.wiki",
+   "sim board"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charging port flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "huaweip30pro",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Huawei P30 Pro Does not recognize sim card (No sim out of nowhere) Repair\", https://repair.wiki/w/Huawei_P30_Pro_Does_not_recognize_sim_card_(No_sim_out_of_nowhere)_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Huawei_P30_Pro_Does_not_recognize_sim_card_(No_sim_out_of_nowhere)_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

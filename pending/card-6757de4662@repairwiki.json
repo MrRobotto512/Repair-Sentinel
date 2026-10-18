@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Read and Write iPhone 16 Pro SPI EEPROM using CH341A",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Read_and_Write_iPhone_16_Pro_SPI_EEPROM_using_CH341A",
+   "kind": "web",
+   "title": "How To Read and Write iPhone 16 Pro SPI EEPROM using CH341A",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13263,
+   "last_edited_utc": "2025-12-15T13:49:11Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 16 Pro",
+   "iPhone 16 Pro Max"
+  ],
+  "symptoms": [
+   "not charging",
+   "intermittent charge detection"
+  ],
+  "codes": [
+   "ACE"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 16 Pro charging faults can come from corrupted ACE charging-controller EEPROM data (after bad chargers or surges); replacing the ACE controller alone does not fix it.",
+    "evidence": "Description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The ACE SPI EEPROM can be read and rewritten in-circuit with a CH341A via jumper wires, avoiding a sandwich split and preserving data.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect around the ACE controller and ROM.",
+   "Check USB-C negotiation on a meter.",
+   "Remove power; jumper CH341A to the ACE SPI points.",
+   "Detect, read twice, save two copies and compare.",
+   "Program a good image and verify; remove jumpers, test charging."
+  ],
+  "measurements": [],
+  "tools": [
+   "CH341A programmer",
+   "jumper wire",
+   "soldering iron",
+   "USB-C power meter"
+  ],
+  "cautions": [],
+  "tags": [
+   "ace",
+   "ch341a",
+   "eeprom",
+   "iphone 16 pro",
+   "not charging",
+   "repair.wiki",
+   "spi"
+  ],
+  "confidence": "medium",
+  "caveats": "Source of a known-good EEPROM image is not specified. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "ACE controller EEPROM",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone16pro",
+  "error_codes": [
+   "ACE"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Read and Write iPhone 16 Pro SPI EEPROM using CH341A\", https://repair.wiki/w/How_To_Read_and_Write_iPhone_16_Pro_SPI_EEPROM_using_CH341A, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Read_and_Write_iPhone_16_Pro_SPI_EEPROM_using_CH341A",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

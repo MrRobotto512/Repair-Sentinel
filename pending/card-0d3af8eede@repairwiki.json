@@ -1,0 +1,104 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy S7 USB device not recognised. No data transfer.",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_S7_USB_device_not_recognised._No_data_transfer.",
+   "kind": "web",
+   "title": "Samsung Galaxy S7 USB device not recognised. No data transfer.",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 5586,
+   "last_edited_utc": "2025-01-28T15:59:29Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy S7",
+   "Galaxy S7 Edge"
+  ],
+  "symptoms": [
+   "USB device not recognised",
+   "no data transfer"
+  ],
+  "codes": [
+   "R8019",
+   "R8020",
+   "ZD8008",
+   "ZD8009"
+  ],
+  "claims": [
+   {
+    "statement": "After a known-good charge port, Galaxy S7 / S7 Edge data faults are in R8019, R8020 (2.2 Ω 0603, part 2007-008774) or diodes ZD8008, ZD8009 (part 0406-001690).",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Replace the charge port with a known-good one.",
+   "Test R8019/R8020 and ZD8008/ZD8009; replace faulty ones."
+  ],
+  "measurements": [
+   {
+    "point": "R8019 / R8020",
+    "expect": "2.2",
+    "unit": "Ω",
+    "mode": "resistance",
+    "context": "0603"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "galaxy s7",
+   "no data",
+   "r8019",
+   "r8020",
+   "repair.wiki",
+   "usb not recognised",
+   "zd8008",
+   "zd8009"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "USB data resistors/diodes",
+  "part_numbers": [
+   "R8019",
+   "R8020",
+   "ZD8008",
+   "ZD8009",
+   "2007-008774",
+   "0406-001690"
+  ],
+  "readings": [
+   {
+    "point": "R8019 / R8020",
+    "mode": "resistance",
+    "expect_lo": 2.2,
+    "expect_hi": 2.2,
+    "unit": "Ω"
+   }
+  ],
+  "device_family": "galaxys7",
+  "error_codes": [
+   "R8019",
+   "R8020",
+   "ZD8008",
+   "ZD8009"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy S7 USB device not recognised. No data transfer.\", https://repair.wiki/w/Samsung_Galaxy_S7_USB_device_not_recognised._No_data_transfer., CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_S7_USB_device_not_recognised._No_data_transfer.",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

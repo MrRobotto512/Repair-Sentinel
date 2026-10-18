@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 4 Unable to connect to charge/sync controller from USB ports repair",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_4_Unable_to_connect_to_charge/sync_controller_from_USB_ports_repair",
+   "kind": "web",
+   "title": "Playstation 4 Unable to connect to charge/sync controller from USB ports repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 6542,
+   "last_edited_utc": "2025-05-12T21:47:57Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4"
+  ],
+  "symptoms": [
+   "USB ports don't charge or sync controllers",
+   "USB drives not detected"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "PS4 USB ports dead: if 5 V is present at the ports, check 3.3 V on a specific cap; 0 V or about 2 V points to a regulator on the other side of the board, which commonly fails—gently heating it to see the voltage rise confirms it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure 5 V at USB ports.",
+   "Measure 3.3 V at the indicated cap.",
+   "Warm the regulator to confirm; replace it."
+  ],
+  "measurements": [
+   {
+    "point": "USB port supply",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "USB circuit rail",
+    "expect": "3.3",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "~2 V indicates bad regulator"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "controller won't charge",
+   "ps4",
+   "regulator",
+   "repair.wiki",
+   "usb"
+  ],
+  "confidence": "low",
+  "caveats": "Test point only shown in an image. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "USB 3.3 V regulator",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "USB port supply",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "USB circuit rail",
+    "mode": "voltage",
+    "expect_lo": 3.3,
+    "expect_hi": 3.3,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 4 Unable to connect to charge/sync controller from USB ports repair\", https://repair.wiki/w/Playstation_4_Unable_to_connect_to_charge/sync_controller_from_USB_ports_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_4_Unable_to_connect_to_charge/sync_controller_from_USB_ports_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

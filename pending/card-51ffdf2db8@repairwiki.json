@@ -1,0 +1,113 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 4 Slim Error CE-34335-8",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_4_Slim_Error_CE-34335-8",
+   "kind": "web",
+   "title": "Playstation 4 Slim Error CE-34335-8",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7069,
+   "last_edited_utc": "2025-05-24T22:56:24Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 4 Slim"
+  ],
+  "symptoms": [
+   "error CE-34335-8",
+   "HDD not detected"
+  ],
+  "codes": [
+   "CE-34335-8",
+   "TPS2001D"
+  ],
+  "claims": [
+   {
+    "statement": "PS4 Slim CE-34335-8 (HDD not detected) can be a bad drive or a failed TPS2001D load switch behind the SATA connector.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With the console on, TPS2001D needs 5 V in and more than 2 V on enable, and should output 5 V.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Try a new HDD/SSD.",
+   "Measure TPS2001D input, enable and output (console on).",
+   "Replace TPS2001D without melting the SATA connector."
+  ],
+  "measurements": [
+   {
+    "point": "TPS2001D input/output",
+    "expect": "5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Console on"
+   },
+   {
+    "point": "TPS2001D enable",
+    "expect": "2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Must exceed"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "ce-34335-8",
+   "hdd not detected",
+   "ps4 slim",
+   "repair.wiki",
+   "sata",
+   "tps2001d"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "TPS2001D",
+  "part_numbers": [
+   "TPS2001D"
+  ],
+  "readings": [
+   {
+    "point": "TPS2001D input/output",
+    "mode": "voltage",
+    "expect_lo": 5.0,
+    "expect_hi": 5.0,
+    "unit": "V"
+   },
+   {
+    "point": "TPS2001D enable",
+    "mode": "voltage",
+    "expect_lo": 2.0,
+    "expect_hi": 2.0,
+    "unit": "V"
+   }
+  ],
+  "device_family": "playstation4slim",
+  "error_codes": [
+   "CE-34335-8",
+   "TPS2001D"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 4 Slim Error CE-34335-8\", https://repair.wiki/w/Playstation_4_Slim_Error_CE-34335-8, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_4_Slim_Error_CE-34335-8",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

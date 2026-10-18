@@ -1,0 +1,112 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Which iPhones Will Boot With Top Board Only",
+  "source": {
+   "url": "https://repair.wiki/w/Which_iPhones_Will_Boot_With_Top_Board_Only",
+   "kind": "web",
+   "title": "Which iPhones Will Boot With Top Board Only",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3588,
+   "last_edited_utc": "2024-03-05T21:36:31Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X–iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "testing with top board only",
+   "data recovery from split board"
+  ],
+  "codes": [
+   "0x400",
+   "0x1000",
+   "0x800",
+   "0x20000",
+   "0x80000",
+   "0x40000"
+  ],
+  "claims": [
+   {
+    "statement": "Booting a top board alone or with a non-original bottom board brings up 'Swipe To Recover'; enter the passcode twice and let 'Attempting data recovery' finish (NFC reconfiguration).",
+    "evidence": "Summary.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Top board alone: iPhone X Intel boots only to DFU (flash and retain data in 3uTools, or jumper S41 to S48); X Qualcomm and XS/XS Max boot without touch unless in a socket jig; 11/11 Pro and 12 series boot with touch given charge port (and power button on 11) flexes; 12 Pro Max shows a false temperature warning (10 kΩ to ground on pins 487/489 bypasses it).",
+    "evidence": "Compatibility table.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "iPhone 13 mini top board restarts (0x400) without bottom-board gyro pads 207/208/502/503/504/527/528; 13/13 Pro/13 Pro Max boot fine with prox and charge flexes; 14/14 Plus and 15/15 Plus need both layers to boot; 14 Pro/15 Pro boot but restart without the bottom board.",
+    "evidence": "Compatibility table.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Connect required flexes (charge port, prox, power button as listed).",
+   "Boot top board alone or in an iSocket with a known-good bottom board.",
+   "Complete Swipe To Recover with the passcode."
+  ],
+  "measurements": [
+   {
+    "point": "NTC bypass (12 Pro Max)",
+    "expect": "10",
+    "unit": "kΩ",
+    "mode": "resistance",
+    "context": "Pins 487/489 to ground"
+   }
+  ],
+  "tools": [
+   "iSocket",
+   "3uTools"
+  ],
+  "cautions": [],
+  "tags": [
+   "data recovery",
+   "iphone",
+   "isocket",
+   "repair.wiki",
+   "sandwich",
+   "swipe to recover",
+   "top board only"
+  ],
+  "confidence": "medium",
+  "caveats": "14 Pro power button value listed here as 0x10000 conflicts with 0x100000 on the 14 Pro restart page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Logic board layers",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "NTC bypass (12 Pro Max)",
+    "mode": "resistance",
+    "expect_lo": 10.0,
+    "expect_hi": 10.0,
+    "unit": "kΩ"
+   }
+  ],
+  "device_family": "iphonexiphone15promax",
+  "error_codes": [
+   "0x400",
+   "0x1000",
+   "0x800",
+   "0x20000",
+   "0x80000",
+   "0x40000"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Which iPhones Will Boot With Top Board Only\", https://repair.wiki/w/Which_iPhones_Will_Boot_With_Top_Board_Only, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Which_iPhones_Will_Boot_With_Top_Board_Only",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

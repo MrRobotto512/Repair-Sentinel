@@ -1,0 +1,148 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox One X No Power",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_One_X_No_Power",
+   "kind": "web",
+   "title": "Xbox One X No Power",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11549,
+   "last_edited_utc": "2025-09-14T20:55:58Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox One X"
+  ],
+  "symptoms": [
+   "no power"
+  ],
+  "codes": [
+   "U54",
+   "U29",
+   "TPS56C215",
+   "TDP158"
+  ],
+  "claims": [
+   {
+    "statement": "Xbox One X no power: check 12 V, 5 V standby, then 1.1 V, 3.3 V and 1.8 V standby; with all present suspect the southbridge.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Missing 3.3 V standby = U54 (TPS56C215), which needs 1.8 V standby to start.",
+    "evidence": "Diagnostic and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A common pattern—3.3 V line at about 2.4 V and 1.8 V at about 0.44 V—is caused by HDMI retimer U29 (TDP158); removing it lets the console turn on briefly.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With the PSU removed, 12 V input reads about 0.400–0.500 in diode mode; 0.000 is a short.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Measure 12 V and standby rails.",
+   "Diode-check 12 V input with PSU removed.",
+   "Replace U54 if 3.3 V missing.",
+   "If 3.3 V ~2.4 V and 1.8 V ~0.44 V, replace retimer U29."
+  ],
+  "measurements": [
+   {
+    "point": "12 V input (PSU removed)",
+    "expect": "0.400-0.500",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "3.3 V line (retimer fault)",
+    "expect": "2.4",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "1.8 V line (retimer fault)",
+    "expect": "0.44",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "no power",
+   "repair.wiki",
+   "retimer",
+   "tdp158",
+   "tps56c215",
+   "u29",
+   "u54",
+   "xbox one x"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "U54 / retimer U29",
+  "part_numbers": [
+   "TPS56C215",
+   "TDP158",
+   "U54",
+   "U29"
+  ],
+  "readings": [
+   {
+    "point": "12 V input (PSU removed)",
+    "mode": "diode",
+    "expect_lo": 0.4,
+    "expect_hi": 0.5,
+    "unit": "V"
+   },
+   {
+    "point": "3.3 V line (retimer fault)",
+    "mode": "voltage",
+    "expect_lo": 2.4,
+    "expect_hi": 2.4,
+    "unit": "V"
+   },
+   {
+    "point": "1.8 V line (retimer fault)",
+    "mode": "voltage",
+    "expect_lo": 0.44,
+    "expect_hi": 0.44,
+    "unit": "V"
+   }
+  ],
+  "device_family": "xboxonex",
+  "error_codes": [
+   "U54",
+   "U29",
+   "TPS56C215",
+   "TDP158"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox One X No Power\", https://repair.wiki/w/Xbox_One_X_No_Power, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_One_X_No_Power",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

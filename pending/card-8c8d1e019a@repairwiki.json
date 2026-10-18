@@ -1,0 +1,65 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy Tab S3 Screen shows flickering horizontal lines on screen repair",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_Tab_S3_Screen_shows_flickering_horizontal_lines_on_screen_repair",
+   "kind": "web",
+   "title": "Samsung Galaxy Tab S3 Screen shows flickering horizontal lines on screen repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2070,
+   "last_edited_utc": "2024-01-12T23:15:04Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy Tab S3 (SM-P5210)"
+  ],
+  "symptoms": [
+   "flickering horizontal lines"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Galaxy Tab S3 flickering lines are often the ST1_LCD_FPCB ribbon connection; clean and reseat both ends, or replace the connector.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Open the front panel.",
+   "Clean and reseat the ST1_LCD_FPCB ribbon.",
+   "Replace the connector if needed."
+  ],
+  "measurements": [],
+  "tools": [
+   "pry tools"
+  ],
+  "cautions": [],
+  "tags": [
+   "flickering lines",
+   "galaxy tab s3",
+   "lcd ribbon",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "LCD ribbon",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxytabs3",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy Tab S3 Screen shows flickering horizontal lines on screen repair\", https://repair.wiki/w/Samsung_Galaxy_Tab_S3_Screen_shows_flickering_horizontal_lines_on_screen_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_Tab_S3_Screen_shows_flickering_horizontal_lines_on_screen_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,77 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair DualSense 5 Controller Stick Drift Issue",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_DualSense_5_Controller_Stick_Drift_Issue",
+   "kind": "web",
+   "title": "How To Repair DualSense 5 Controller Stick Drift Issue",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13910,
+   "last_edited_utc": "2026-02-09T07:08:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "DualSense (PS5 controller)"
+  ],
+  "symptoms": [
+   "stick drift"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "DualSense drift: slight or intermittent drift often means contamination; strong constant drift in one direction means a worn potentiometer; drift on both axes means module failure.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Reset (rear pin 5–10 s) and update firmware first; cleaning with 90%+ IPA is a temporary fix, replacing the joystick module (OEM or Hall-effect) is the permanent one.",
+    "evidence": "Repair options.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm drift in a tester (e.g. ds.daidr.me).",
+   "Reset controller and update firmware.",
+   "Clean the stick base with IPA for minor drift.",
+   "Desolder (add low-melt solder) and replace the joystick module."
+  ],
+  "measurements": [],
+  "tools": [
+   "soldering iron",
+   "low melt solder",
+   "hot air",
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "dualsense",
+   "hall effect",
+   "joystick module",
+   "ps5 controller",
+   "repair.wiki",
+   "stick drift"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Joystick module",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "dualsense",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair DualSense 5 Controller Stick Drift Issue\", https://repair.wiki/w/How_To_Repair_DualSense_5_Controller_Stick_Drift_Issue, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_DualSense_5_Controller_Stick_Drift_Issue",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,71 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch False Charging Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch_False_Charging_Repair",
+   "kind": "web",
+   "title": "Nintendo Switch False Charging Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2298,
+   "last_edited_utc": "2024-01-13T20:36:39Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "false charging",
+   "shows charging but drains"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Switch showing the charging icon while draining (back-feeding): check M92T36, PI3USB and BQ24193 and replace as needed.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check M92T36, PI3USB, BQ24193; replace faulty part."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bq24193",
+   "false charging",
+   "m92t36",
+   "nintendo switch",
+   "pi3usb",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Charging circuit",
+  "part_numbers": [
+   "M92T36",
+   "BQ24193",
+   "PI3USB30532"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch False Charging Repair\", https://repair.wiki/w/Nintendo_Switch_False_Charging_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch_False_Charging_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

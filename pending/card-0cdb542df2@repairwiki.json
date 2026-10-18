@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPad Pro 10.5 That Is Boot Looping or Stuck on the Apple Logo",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPad_Pro_10.5_That_Is_Boot_Looping_or_Stuck_on_the_Apple_Logo",
+   "kind": "web",
+   "title": "How To Fix an iPad Pro 10.5 That Is Boot Looping or Stuck on the Apple Logo",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13739,
+   "last_edited_utc": "2026-01-19T22:07:32Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 10.5"
+  ],
+  "symptoms": [
+   "bootloop at Apple logo",
+   "restore fails",
+   "error 4013"
+  ],
+  "codes": [
+   "4013"
+  ],
+  "claims": [
+   {
+    "statement": "An iPad Pro 10.5 stuck looping at the Apple logo, failing restores with error 4013, is usually hardware: a faulty headphone jack extension flex or loose/cracked coils on the logic board.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Disconnecting the headphone jack extension flex and booting normally confirms the flex as the cause.",
+    "evidence": "Step 1.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Loose coils can look intact; probe them gently with tweezers under a microscope for movement, lifted pads or cracked joints.",
+    "evidence": "Step 2.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Disconnect the headphone jack extension flex and try to boot.",
+   "If it boots, replace the flex.",
+   "Otherwise probe coils around the board under a microscope.",
+   "Replace loose coils with same value/size donor coils."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "tweezers",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bootloop",
+   "error 4013",
+   "headphone jack flex",
+   "ipad pro 10.5",
+   "loose coils",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Headphone jack extension flex / coils",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "ipadpro105",
+  "error_codes": [
+   "4013"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPad Pro 10.5 That Is Boot Looping or Stuck on the Apple Logo\", https://repair.wiki/w/How_To_Fix_an_iPad_Pro_10.5_That_Is_Boot_Looping_or_Stuck_on_the_Apple_Logo, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPad_Pro_10.5_That_Is_Boot_Looping_or_Stuck_on_the_Apple_Logo",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

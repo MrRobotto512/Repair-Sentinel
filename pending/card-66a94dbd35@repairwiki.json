@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii System won't insert/eject discs. System inserts/eject discs slowly",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_System_won%27t_insert/eject_discs._System_inserts/eject_discs_slowly",
+   "kind": "web",
+   "title": "Nintendo Wii System won't insert/eject discs. System inserts/eject discs slowly",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13247,
+   "last_edited_utc": "2025-12-13T22:48:38Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "won't insert/eject discs",
+   "slow insert/eject"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Wii insert/eject problems: disassemble, clean and inspect the drive, check cables, else replace the drive.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clean and inspect drive mechanism.",
+   "Check cables.",
+   "Replace drive."
+  ],
+  "measurements": [],
+  "tools": [
+   "tri-wing screwdriver"
+  ],
+  "cautions": [],
+  "tags": [
+   "disc drive",
+   "disc eject",
+   "nintendo wii",
+   "repair.wiki"
+  ],
+  "confidence": "low",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Disc drive",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendowii",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii System won't insert/eject discs. System inserts/eject discs slowly\", https://repair.wiki/w/Nintendo_Wii_System_won%27t_insert/eject_discs._System_inserts/eject_discs_slowly, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_System_won%27t_insert/eject_discs._System_inserts/eject_discs_slowly",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

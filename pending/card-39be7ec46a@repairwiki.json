@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 13 Rear Camera Not Focusing After A Drop",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_13_Rear_Camera_Not_Focusing_After_A_Drop",
+   "kind": "web",
+   "title": "How To Fix an iPhone 13 Rear Camera Not Focusing After A Drop",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12264,
+   "last_edited_utc": "2025-10-08T12:29:11Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 13"
+  ],
+  "symptoms": [
+   "rear camera will not focus after drop",
+   "new camera does not help"
+  ],
+  "codes": [
+   "I2C2"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 13 rear camera that cannot focus after a drop, unchanged by a new camera, is usually cracked inter-layer joints breaking the I2C2 lines between the camera PMU, strobe IC and camera.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The fix is to separate and reball the sandwich (interposer) rather than reflow it.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Confirm with a known-good rear camera.",
+   "Inspect the board near the rear camera for flex/delamination.",
+   "Separate top and bottom boards on a preheater; reball interposer with 148/158 paste.",
+   "Rejoin, check for shorts, test focus in all modes."
+  ],
+  "measurements": [],
+  "tools": [
+   "preheater",
+   "hot air",
+   "148/158 solder paste",
+   "microscope"
+  ],
+  "cautions": [],
+  "tags": [
+   "camera not focusing",
+   "drop damage",
+   "i2c2",
+   "interposer",
+   "iphone 13",
+   "repair.wiki",
+   "sandwich reball"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Interposer / I2C2 lines",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone13",
+  "error_codes": [
+   "I2C2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 13 Rear Camera Not Focusing After A Drop\", https://repair.wiki/w/How_To_Fix_an_iPhone_13_Rear_Camera_Not_Focusing_After_A_Drop, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_13_Rear_Camera_Not_Focusing_After_A_Drop",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,81 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPad Pro 11 Not turning on, drawing no current with little ticking noise repair",
+  "source": {
+   "url": "https://repair.wiki/w/IPad_Pro_11_Not_turning_on,_drawing_no_current_with_little_ticking_noise_repair",
+   "kind": "web",
+   "title": "IPad Pro 11 Not turning on, drawing no current with little ticking noise repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3311,
+   "last_edited_utc": "2024-02-04T14:07:31Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 11 1st Gen"
+  ],
+  "symptoms": [
+   "no power",
+   "ticking noise",
+   "0 A draw"
+  ],
+  "codes": [
+   "C3800"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 11 (2018) not powering with a ticking noise and no current was traced to shorted cap C3800 on a PMIC/CD3217 line.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The two middle battery pins (CLK and DAT0) can be damaged when the battery is lifted; a straight jumper from board to battery fixes it.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check for short at C3800; remove/replace.",
+   "Inspect the battery data pins; jumper if broken."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "battery data pins",
+   "c3800",
+   "ipad pro 11",
+   "no power",
+   "repair.wiki",
+   "ticking"
+  ],
+  "confidence": "low",
+  "caveats": "Single case. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "C3800",
+  "part_numbers": [
+   "C3800"
+  ],
+  "readings": [],
+  "device_family": "ipadpro111stgen",
+  "error_codes": [
+   "C3800"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPad Pro 11 Not turning on, drawing no current with little ticking noise repair\", https://repair.wiki/w/IPad_Pro_11_Not_turning_on,_drawing_no_current_with_little_ticking_noise_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPad_Pro_11_Not_turning_on,_drawing_no_current_with_little_ticking_noise_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

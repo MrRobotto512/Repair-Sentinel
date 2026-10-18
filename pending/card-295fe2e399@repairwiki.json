@@ -1,0 +1,178 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "IPhone 15 Pro Stuck at 1 Percent Charging and No Battery Data 0xa1 Panic Log Code",
+  "source": {
+   "url": "https://repair.wiki/w/IPhone_15_Pro_Stuck_at_1_Percent_Charging_and_No_Battery_Data_0xa1_Panic_Log_Code",
+   "kind": "web",
+   "title": "IPhone 15 Pro Stuck at 1 Percent Charging and No Battery Data 0xa1 Panic Log Code",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7350,
+   "last_edited_utc": "2025-06-04T21:18:23Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 15 Pro",
+   "iPhone 15 Pro Max"
+  ],
+  "symptoms": [
+   "stuck at 1%",
+   "not charging at 9 V",
+   "restarts every 3 minutes",
+   "0% on plug-in"
+  ],
+  "codes": [
+   "0xa1"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone 15 Pro stuck at 1%, showing 0% when plugged in and restarting every 3 minutes with panic 0xa1—even with new battery and port—is typically a PMIC fried by water.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Battery connector diode values (ZXW pins): pin 1 SDA 0.439, pin 2 SCL 0.548, pin 5 VCELL_NEG OL, pin 6 VCELL_POS 0.505.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "With only the charge flex and charger connected: pin 1 1.5 V, pin 2 1.8 V, pin 5 0.6 V, pin 6 0.6 V. Bad readings mean PMIC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test known-good battery and charge port.",
+   "Inspect battery connector pins.",
+   "Diode-check pins 1, 2, 5, 6.",
+   "Measure voltages with charger on charge flex only.",
+   "Replace PMIC if abnormal."
+  ],
+  "measurements": [
+   {
+    "point": "Battery conn pin 1 I2C2_SMC_CHARGER_BI_GG_SDA_1V8",
+    "expect": "0.439",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Battery conn pin 2 I2C2_SMC_CHARGER_TO_GG_SCL_1V8_CONN",
+    "expect": "0.548",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Battery conn pin 6 ANALOG_BATT_VCELL_POS_CONN",
+    "expect": "0.505",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "Battery conn pin 1 (charger on)",
+    "expect": "1.5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Battery conn pin 2 (charger on)",
+    "expect": "1.8",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   },
+   {
+    "point": "Battery conn pin 5/6 (charger on)",
+    "expect": "0.6",
+    "unit": "V",
+    "mode": "voltage",
+    "context": ""
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "ZXW",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "0xa1",
+   "battery data",
+   "iphone 15 pro",
+   "pmic",
+   "repair.wiki",
+   "stuck at 1%",
+   "water damage"
+  ],
+  "confidence": "high",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "PMIC",
+  "part_numbers": [],
+  "readings": [
+   {
+    "point": "Battery conn pin 1 I2C2_SMC_CHARGER_BI_GG_SDA_1V8",
+    "mode": "diode",
+    "expect_lo": 0.439,
+    "expect_hi": 0.439,
+    "unit": "V"
+   },
+   {
+    "point": "Battery conn pin 2 I2C2_SMC_CHARGER_TO_GG_SCL_1V8_CONN",
+    "mode": "diode",
+    "expect_lo": 0.548,
+    "expect_hi": 0.548,
+    "unit": "V"
+   },
+   {
+    "point": "Battery conn pin 6 ANALOG_BATT_VCELL_POS_CONN",
+    "mode": "diode",
+    "expect_lo": 0.505,
+    "expect_hi": 0.505,
+    "unit": "V"
+   },
+   {
+    "point": "Battery conn pin 1 (charger on)",
+    "mode": "voltage",
+    "expect_lo": 1.5,
+    "expect_hi": 1.5,
+    "unit": "V"
+   },
+   {
+    "point": "Battery conn pin 2 (charger on)",
+    "mode": "voltage",
+    "expect_lo": 1.8,
+    "expect_hi": 1.8,
+    "unit": "V"
+   },
+   {
+    "point": "Battery conn pin 5/6 (charger on)",
+    "mode": "voltage",
+    "expect_lo": 0.6,
+    "expect_hi": 0.6,
+    "unit": "V"
+   }
+  ],
+  "device_family": "iphone15pro",
+  "error_codes": [
+   "0xa1"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"IPhone 15 Pro Stuck at 1 Percent Charging and No Battery Data 0xa1 Panic Log Code\", https://repair.wiki/w/IPhone_15_Pro_Stuck_at_1_Percent_Charging_and_No_Battery_Data_0xa1_Panic_Log_Code, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/IPhone_15_Pro_Stuck_at_1_Percent_Charging_and_No_Battery_Data_0xa1_Panic_Log_Code",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,82 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Galaxy S7 No Image",
+  "source": {
+   "url": "https://repair.wiki/w/Galaxy_S7_No_Image",
+   "kind": "web",
+   "title": "Galaxy S7 No Image",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12566,
+   "last_edited_utc": "2025-11-03T00:04:24Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy S7"
+  ],
+  "symptoms": [
+   "no image",
+   "turns on"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Galaxy S7 no-image faults are either the screen or the board; after a known-good screen, look for shorts on components around the display PMIC.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The small display PMIC is MAX77838 (also used in Galaxy S8); a shorted or non-outputting PMIC is replaced (BGA, usually supplied reballed).",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Test a known-good display.",
+   "Microscope inspection near the display FPC for liquid, burn or ripped parts.",
+   "Diode-check components around the display PMIC for shorts; inject voltage to locate.",
+   "Check the two display supply voltages; replace MAX77838 if missing or shorted."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "hot air"
+  ],
+  "cautions": [
+   "SOURCE RISK: Too much heat when replacing the display FPC connector can bridge solder under the board."
+  ],
+  "tags": [
+   "display pmic",
+   "galaxy s7",
+   "max77838",
+   "no image",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "The two required voltages are not named in text on the source page. Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display PMIC",
+  "part_numbers": [
+   "MAX77838"
+  ],
+  "readings": [],
+  "device_family": "galaxys7",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Galaxy S7 No Image\", https://repair.wiki/w/Galaxy_S7_No_Image, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Galaxy_S7_No_Image",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

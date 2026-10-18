@@ -1,0 +1,233 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Diagnosing Power Draws on Nintendo Switch",
+  "source": {
+   "url": "https://repair.wiki/w/Diagnosing_Power_Draws_on_Nintendo_Switch",
+   "kind": "web",
+   "title": "Diagnosing Power Draws on Nintendo Switch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 4709,
+   "last_edited_utc": "2024-08-27T18:01:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch"
+  ],
+  "symptoms": [
+   "no display",
+   "no sound",
+   "incorrect power draw",
+   "no boot"
+  ],
+  "codes": [
+   "RCM",
+   "APX"
+  ],
+  "claims": [
+   {
+    "statement": "Bench-supply diagnosis without a battery: bypass the temp sensor with a 10k resistor at the battery test pads and feed 4.2 V at 2 A into the BQ24193 VBAT pad; less than 2 A will not reach second-stage boot.",
+    "evidence": "Setup described in the guide.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "First-stage check: 4.2 V at 1 A into VSYS (coil beside BQ24193); a maxed-out current means a short, otherwise check VCORE rails near MAX77620 and the 3.3 V regulator.",
+    "evidence": "Only time VSYS is used instead of VBAT.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "On power button press a healthy board draws about 195 mA; 100–130 mA points at MAX77621 or MAX77812; no draw points at MAX77620.",
+    "evidence": "First-stage boot draw guidance.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Working boot: about 100 mA, then 150 mA hold, then 500–800 mA with LCD (400–500 mA without LCD).",
+    "evidence": "Healthy boot profile.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A climb to 400–500 mA with the LCD connected but no picture suggests backlight or backlight driver TPS61163A.",
+    "evidence": "Backlight fault profile.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "M92T36 faults often show 400–800 mA dropping quickly to 200 mA in a loop; removing M92T36 and PI3USB and seeing a boot confirms one of them.",
+    "evidence": "M92T36 profile.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A steady 300 mA with no movement often means PI3USB30532 shorted the 3.3 V rail after USB-C damage sent 15 V into it.",
+    "evidence": "PI3USB profile.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Sitting at about 100 mA (sometimes creeping to 160 mA and back) points at MAX77621 or a damaged/missing MAX17050 fuel gauge circuit.",
+    "evidence": "MAX77621 / MAX17050 profiles.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "180–250 mA without reaching second-stage boot often indicates eMMC failure; audio and Wi-Fi IC faults can mimic this.",
+    "evidence": "eMMC profile; check RCM/APX with a payload injector and Hekate.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Remove battery; fit 10k resistor across the battery thermistor test pads.",
+   "Set bench supply 4.2 V / 1 A on VSYS for first-stage short check.",
+   "Move to VBAT on BQ24193 at 4.2 V / 2 A and press power; watch the draw pattern.",
+   "Match the draw to the profiles (195 mA ok first stage; 100 mA stall; 300 mA PI3USB; looping 400-800 mA M92T36; 180-250 mA eMMC).",
+   "For suspected eMMC, enter RCM, load Hekate, check fuel gauge and eMMC benchmark, ensure AutoRCM is off."
+  ],
+  "measurements": [
+   {
+    "point": "Bench supply into VBAT (BQ24193)",
+    "expect": "4.2",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "2 A limit required for second-stage boot"
+   },
+   {
+    "point": "First-stage boot draw",
+    "expect": "195",
+    "unit": "mA",
+    "mode": "current",
+    "context": "Healthy draw after pressing power"
+   },
+   {
+    "point": "Working boot with LCD",
+    "expect": "500-800",
+    "unit": "mA",
+    "mode": "current",
+    "context": "After 100 mA and 150 mA steps"
+   },
+   {
+    "point": "Working boot without LCD",
+    "expect": "400-500",
+    "unit": "mA",
+    "mode": "current",
+    "context": "After 100 mA and 150 mA steps"
+   },
+   {
+    "point": "PI3USB 3.3 V rail short",
+    "expect": "300",
+    "unit": "mA",
+    "mode": "current",
+    "context": "Stuck draw, no movement"
+   },
+   {
+    "point": "eMMC fault",
+    "expect": "180-250",
+    "unit": "mA",
+    "mode": "current",
+    "context": "Never reaches second-stage boot"
+   }
+  ],
+  "tools": [
+   "bench power supply",
+   "10k resistor",
+   "multimeter",
+   "thermal camera",
+   "payload injector",
+   "Hekate"
+  ],
+  "cautions": [],
+  "tags": [
+   "bench supply",
+   "bq24193",
+   "emmc",
+   "m92t36",
+   "max17050",
+   "max77620",
+   "max77621",
+   "max77812",
+   "nintendo switch",
+   "pi3usb30532",
+   "power draw",
+   "repair.wiki",
+   "tps61163a"
+  ],
+  "confidence": "high",
+  "caveats": "Draw figures assume the guide's bench setup (no battery, 4.2 V on VBAT). Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Power management",
+  "part_numbers": [
+   "BQ24193",
+   "MAX77620",
+   "MAX77621",
+   "MAX77812",
+   "M92T36",
+   "PI3USB30532",
+   "MAX17050",
+   "TPS61163A"
+  ],
+  "readings": [
+   {
+    "point": "Bench supply into VBAT (BQ24193)",
+    "mode": "voltage",
+    "expect_lo": 4.2,
+    "expect_hi": 4.2,
+    "unit": "V"
+   },
+   {
+    "point": "First-stage boot draw",
+    "mode": "current",
+    "expect_lo": 195.0,
+    "expect_hi": 195.0,
+    "unit": "mA"
+   },
+   {
+    "point": "Working boot with LCD",
+    "mode": "current",
+    "expect_lo": 500.0,
+    "expect_hi": 800.0,
+    "unit": "mA"
+   },
+   {
+    "point": "Working boot without LCD",
+    "mode": "current",
+    "expect_lo": 400.0,
+    "expect_hi": 500.0,
+    "unit": "mA"
+   },
+   {
+    "point": "PI3USB 3.3 V rail short",
+    "mode": "current",
+    "expect_lo": 300.0,
+    "expect_hi": 300.0,
+    "unit": "mA"
+   },
+   {
+    "point": "eMMC fault",
+    "mode": "current",
+    "expect_lo": 180.0,
+    "expect_hi": 250.0,
+    "unit": "mA"
+   }
+  ],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "RCM",
+   "APX"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Diagnosing Power Draws on Nintendo Switch\", https://repair.wiki/w/Diagnosing_Power_Draws_on_Nintendo_Switch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Diagnosing_Power_Draws_on_Nintendo_Switch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

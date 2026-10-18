@@ -1,0 +1,102 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Switch",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Switch",
+   "kind": "web",
+   "title": "Nintendo Switch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 10222,
+   "last_edited_utc": "2025-08-15T13:27:32Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Switch (HAC-001, HAC-001(-01))"
+  ],
+  "symptoms": [
+   "blue screen",
+   "general reference"
+  ],
+  "codes": [
+   "HAC-001"
+  ],
+  "claims": [
+   {
+    "statement": "Switch parts: M92T36 USB-C PMIC, PI3USB30532ZLEX audio/video switch, BQ24193 charger, MAX17050 fuel gauge, BCM4356XKUBG Wi-Fi, MAX77620AEWJ+T main PMIC, MAX77621AEWI+T CPU/RAM PMIC, P15123CT USB-C fuse, DX07BN24JA2R1300 USB-C connector, Molex 503300-5310 LCD FPC (not Lite).",
+    "evidence": "Parts list.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Diode packs (TPD2E1B06DRLR) on some revisions can be removed without affecting function.",
+    "evidence": "Device notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "A blue screen is traditionally eMMC failure but can be RAM or CPU, often with a bent unit; if pressing on the RAM chips gets it to the Nintendo logo, the RAM may need a reball.",
+    "evidence": "Device notes.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Check the known CPU capacitors for shorts first; if shorted, consensus is the CPU is dead.",
+    "evidence": "Device notes.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [],
+  "measurements": [],
+  "tools": [
+   "FlexBV boardview"
+  ],
+  "cautions": [],
+  "tags": [
+   "blue screen",
+   "bq24193",
+   "diode pack",
+   "emmc",
+   "m92t36",
+   "max77620",
+   "max77621",
+   "nintendo switch",
+   "parts list",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "",
+  "part_numbers": [
+   "M92T36",
+   "PI3USB30532ZLEX",
+   "BQ24193",
+   "MAX17050",
+   "BCM4356XKUBG",
+   "MAX77620AEWJ+T",
+   "MAX77621AEWI+T",
+   "P15123CT",
+   "TPD2E1B06DRLR",
+   "DX07BN24JA2R1300",
+   "503300-5310"
+  ],
+  "readings": [],
+  "device_family": "nintendoswitch",
+  "error_codes": [
+   "HAC-001"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Switch\", https://repair.wiki/w/Nintendo_Switch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Switch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

@@ -1,0 +1,128 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy A03s CPU Swap Step by Step Guide",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_A03s_CPU_Swap_Step_by_Step_Guide",
+   "kind": "web",
+   "title": "Samsung Galaxy A03s CPU Swap Step by Step Guide",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 5067,
+   "last_edited_utc": "2024-10-14T01:31:55Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A03s"
+  ],
+  "symptoms": [
+   "dead board",
+   "no power",
+   "water damaged beyond repair",
+   "data recovery needed"
+  ],
+  "codes": [
+   "MT6765V"
+  ],
+  "claims": [
+   {
+    "statement": "For data recovery from a dead Galaxy A03s, the paired CPU (MediaTek MT6765V, holds keys) and UFS (encrypted data) must both be moved intact to a working donor board; damage to either loses the data permanently.",
+    "evidence": "Problem description and repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Process outline: low-melt solder on the shield, lift at ~400 °C; clear underfill with a #11 scalpel; lift chips with a thinned spatula at 380–400 °C (max 2–3 min of heat at a time, never bend the chip); prep donor pads; reball with MT6765V stencil using dried XG-50 183 °C paste at ~320 °C / low air; install at ~320 °C, adding 20 °C steps if it won't settle.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "After a successful swap, charge should show 5 V/9 V at 1 A+; back up immediately (Smart Switch) as swaps can be unstable.",
+    "evidence": "Testing.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Practise on scrap boards first.",
+   "Remove shield; clear underfill; lift CPU and UFS without bending.",
+   "Prep donor board pads (remove all underfill, low-melt, wick flat).",
+   "Clean and reball customer chips.",
+   "Install CPU then UFS at low heat; test charge and boot; back up at once."
+  ],
+  "measurements": [
+   {
+    "point": "Chip removal hot air",
+    "expect": "380-400",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": ""
+   },
+   {
+    "point": "Reball/install hot air",
+    "expect": "320",
+    "unit": "°C",
+    "mode": "temperature",
+    "context": "Low airflow"
+   }
+  ],
+  "tools": [
+   "hot air (13 mm nozzle)",
+   "thinned spatula",
+   "#11 scalpel",
+   "MT6765V stencil",
+   "183C reball paste",
+   "138C low melt solder"
+  ],
+  "cautions": [
+   "SOURCE RISK: Damaging the CPU or UFS makes the data unrecoverable; specialist-only."
+  ],
+  "tags": [
+   "cpu swap",
+   "data recovery",
+   "galaxy a03s",
+   "mt6765v",
+   "reball",
+   "repair.wiki",
+   "ufs"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "CPU + UFS",
+  "part_numbers": [
+   "MT6765V"
+  ],
+  "readings": [
+   {
+    "point": "Chip removal hot air",
+    "mode": "temperature",
+    "expect_lo": 380.0,
+    "expect_hi": 400.0,
+    "unit": "°C"
+   },
+   {
+    "point": "Reball/install hot air",
+    "mode": "temperature",
+    "expect_lo": 320.0,
+    "expect_hi": 320.0,
+    "unit": "°C"
+   }
+  ],
+  "device_family": "galaxya03s",
+  "error_codes": [
+   "MT6765V"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy A03s CPU Swap Step by Step Guide\", https://repair.wiki/w/Samsung_Galaxy_A03s_CPU_Swap_Step_by_Step_Guide, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_A03s_CPU_Swap_Step_by_Step_Guide",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

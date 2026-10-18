@@ -1,0 +1,68 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Nintendo Wii System wont read discs",
+  "source": {
+   "url": "https://repair.wiki/w/Nintendo_Wii_System_wont_read_discs",
+   "kind": "web",
+   "title": "Nintendo Wii System wont read discs",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 13239,
+   "last_edited_utc": "2025-12-13T22:43:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Nintendo Wii"
+  ],
+  "symptoms": [
+   "won't read discs"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Wii laser pot: counter-clockwise lowers resistance and raises laser power; lower it only 50–100 Ω at a time—too low burns out the laser and burns rings into discs.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Check cables and spin.",
+   "Clean drive.",
+   "Replace spindle or laser motor as needed.",
+   "Measure pot, then lower 50–100 Ω; replace laser if no change."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter"
+  ],
+  "cautions": [
+   "SOURCE RISK: Lowering the pot too far burns out the laser and damages discs."
+  ],
+  "tags": [
+   "disc read",
+   "laser pot",
+   "nintendo wii",
+   "repair.wiki"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Laser",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "nintendowii",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Nintendo Wii System wont read discs\", https://repair.wiki/w/Nintendo_Wii_System_wont_read_discs, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Nintendo_Wii_System_wont_read_discs",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

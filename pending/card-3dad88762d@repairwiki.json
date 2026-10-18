@@ -1,0 +1,113 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix an iPhone 11 Pro That Randomly Restarts",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_an_iPhone_11_Pro_That_Randomly_Restarts",
+   "kind": "web",
+   "title": "How To Fix an iPhone 11 Pro That Randomly Restarts",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 736,
+   "last_edited_utc": "2023-11-05T22:22:06Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone 11 Pro",
+   "iPhone 11 Pro Max"
+  ],
+  "symptoms": [
+   "random restarts",
+   "restart every 3 minutes",
+   "0% charging"
+  ],
+  "codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1",
+   "Mic2"
+  ],
+  "claims": [
+   {
+    "statement": "On iPhone 11 Pro / Pro Max, check the panic-full log's Missing sensors list.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "TG0B or TG0V means battery: failed battery, damaged connector or missing battery data line (check the PMU_TO_BATTERY_SWI pin in diode mode).",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Prs0 or Mic1 means the charging port flex (also check resistors around its connector).",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Mic2 means the microphone on the power button flex, often damaged during back glass work.",
+    "evidence": "Code mapping.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The required flexes must be connected; unplugging a suspect flex does not help troubleshoot because the phone will restart without it.",
+    "evidence": "Repair note.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Open newest panic-full log and read Missing sensors.",
+   "TG0B/TG0V: known-good battery, inspect connector, diode-check PMU_TO_BATTERY_SWI.",
+   "Prs0/Mic1: known-good charging port flex, check nearby resistors.",
+   "Mic2: known-good power button flex, check components near its connector."
+  ],
+  "measurements": [],
+  "tools": [
+   "known-good flexes",
+   "known-good battery",
+   "multimeter"
+  ],
+  "cautions": [],
+  "tags": [
+   "iphone 11 pro",
+   "mic1",
+   "mic2",
+   "missing sensors",
+   "panic log",
+   "prs0",
+   "random restart",
+   "repair.wiki",
+   "tg0b",
+   "tg0v"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Battery / charge port flex / power button flex",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphone11pro",
+  "error_codes": [
+   "TG0B",
+   "TG0V",
+   "Prs0",
+   "Mic1",
+   "Mic2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix an iPhone 11 Pro That Randomly Restarts\", https://repair.wiki/w/How_To_Fix_an_iPhone_11_Pro_That_Randomly_Restarts, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_an_iPhone_11_Pro_That_Randomly_Restarts",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

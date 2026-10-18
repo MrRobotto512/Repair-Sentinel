@@ -1,0 +1,114 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Repair iPad Pro 11in No Touch",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Repair_iPad_Pro_11in_No_Touch",
+   "kind": "web",
+   "title": "How To Repair iPad Pro 11in No Touch",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 12662,
+   "last_edited_utc": "2025-11-12T15:13:53Z"
+  },
+  "device_class": "Tablet",
+  "models": [
+   "iPad Pro 11 2nd Gen"
+  ],
+  "symptoms": [
+   "no touch",
+   "display works"
+  ],
+  "codes": [
+   "PP1V5V0_TOUCH_LDO",
+   "BCM15957"
+  ],
+  "claims": [
+   {
+    "statement": "iPad Pro 11 (2020) no touch across multiple screens is often a faulty capacitor on PP1V5V0_TOUCH_LDO near the BCM15957 touch controller.",
+    "evidence": "Problem description.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "PP1V5V0_TOUCH_LDO reads about 0.450–0.500 in diode mode and about 1.5 V powered; near zero indicates the shorted/leaky cap.",
+    "evidence": "Diagnostic steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect near BCM15957.",
+   "Diode-check and measure PP1V5V0_TOUCH_LDO.",
+   "Inject ~1 V; find the warm cap; replace from donor."
+  ],
+  "measurements": [
+   {
+    "point": "PP1V5V0_TOUCH_LDO",
+    "expect": "0.450-0.500",
+    "unit": "V",
+    "mode": "diode",
+    "context": ""
+   },
+   {
+    "point": "PP1V5V0_TOUCH_LDO",
+    "expect": "1.5",
+    "unit": "V",
+    "mode": "voltage",
+    "context": "Powered"
+   }
+  ],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "thermal camera",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "bcm15957",
+   "ipad pro 11",
+   "no touch",
+   "repair.wiki",
+   "touch ldo"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Touch LDO capacitor",
+  "part_numbers": [
+   "BCM15957"
+  ],
+  "readings": [
+   {
+    "point": "PP1V5V0_TOUCH_LDO",
+    "mode": "diode",
+    "expect_lo": 0.45,
+    "expect_hi": 0.5,
+    "unit": "V"
+   },
+   {
+    "point": "PP1V5V0_TOUCH_LDO",
+    "mode": "voltage",
+    "expect_lo": 1.5,
+    "expect_hi": 1.5,
+    "unit": "V"
+   }
+  ],
+  "device_family": "ipadpro112ndgen",
+  "error_codes": [
+   "PP1V5V0_TOUCH_LDO",
+   "BCM15957"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Repair iPad Pro 11in No Touch\", https://repair.wiki/w/How_To_Repair_iPad_Pro_11in_No_Touch, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Repair_iPad_Pro_11in_No_Touch",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

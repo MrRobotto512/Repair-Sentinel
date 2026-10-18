@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "How To Fix iPhone X That Is Bootlooping Error 4013",
+  "source": {
+   "url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Is_Bootlooping_Error_4013",
+   "kind": "web",
+   "title": "How To Fix iPhone X That Is Bootlooping Error 4013",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 3840,
+   "last_edited_utc": "2024-05-22T06:48:54Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "iPhone X"
+  ],
+  "symptoms": [
+   "bootloop",
+   "Apple logo on and off",
+   "green flash",
+   "restore fails"
+  ],
+  "codes": [
+   "4013"
+  ],
+  "claims": [
+   {
+    "statement": "iPhone X bootlooping with error 4013 (3uTools fails ~19%) is almost always the earpiece flex with a liquid-damaged flood illuminator/ALS; unplug all flexes to confirm.",
+    "evidence": "Flex cables section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "The earpiece flex is paired for Face ID; to keep Face ID clean or move the components to a new flex.",
+    "evidence": "Flex cables section.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Otherwise liquid corrosion under the interposer on the bottom board; reflow may clear it, else bottom board swap.",
+    "evidence": "Sandwich issue section.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Unplug all flexes; test with known-good screen, battery, port.",
+   "Repair or replace the earpiece flex (preserve flood illuminator/ALS for Face ID).",
+   "If still looping, split and test with known-good bottom board; reflow corrosion or swap bottom board.",
+   "Exit recovery with 3uTools and retry the update."
+  ],
+  "measurements": [],
+  "tools": [
+   "hot air",
+   "microscope",
+   "known-good bottom board"
+  ],
+  "cautions": [],
+  "tags": [
+   "als",
+   "bootloop",
+   "earpiece flex",
+   "error 4013",
+   "flood illuminator",
+   "iphone x",
+   "repair.wiki",
+   "water damage"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Earpiece flex / bottom board",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "iphonex",
+  "error_codes": [
+   "4013"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"How To Fix iPhone X That Is Bootlooping Error 4013\", https://repair.wiki/w/How_To_Fix_iPhone_X_That_Is_Bootlooping_Error_4013, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/How_To_Fix_iPhone_X_That_Is_Bootlooping_Error_4013",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

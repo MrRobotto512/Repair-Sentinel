@@ -1,0 +1,83 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Playstation 3 Slim Blue Screen Of Death",
+  "source": {
+   "url": "https://repair.wiki/w/Playstation_3_Slim_Blue_Screen_Of_Death",
+   "kind": "web",
+   "title": "Playstation 3 Slim Blue Screen Of Death",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7790,
+   "last_edited_utc": "2025-06-18T22:12:02Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "PlayStation 3 Slim"
+  ],
+  "symptoms": [
+   "blue screen 'Settings information is corrupted'"
+  ],
+  "codes": [
+   "88E1118R-NNC2"
+  ],
+  "claims": [
+   {
+    "statement": "PS3 Slim showing 'Settings information is corrupted' a few seconds after boot is usually a LAN-section fault: damaged LAN port, Marvell LAN controller (88E1118R-NNC2) or a short in that circuit; shorts on several lines around the Marvell IC usually mean the chip is dead.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Match the replacement controller's markings; donors may be needed. A damaged LAN port can even be removed if unused.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Inspect the Ethernet port.",
+   "Check for shorts around the LAN controller behind the port.",
+   "Inject to find shorts; replace controller (same marking) or port.",
+   "Test a wired internet connection."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "DC power supply",
+   "hot air"
+  ],
+  "cautions": [],
+  "tags": [
+   "88e1118r",
+   "blue screen",
+   "lan controller",
+   "marvell",
+   "ps3 slim",
+   "repair.wiki",
+   "settings information is corrupted"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "LAN controller",
+  "part_numbers": [
+   "88E1118R-NNC2"
+  ],
+  "readings": [],
+  "device_family": "playstation3slim",
+  "error_codes": [
+   "88E1118R-NNC2"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Playstation 3 Slim Blue Screen Of Death\", https://repair.wiki/w/Playstation_3_Slim_Blue_Screen_Of_Death, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Playstation_3_Slim_Blue_Screen_Of_Death",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

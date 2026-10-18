@@ -1,0 +1,66 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Xbox One Controller Buttons are not responding to being pressed repair",
+  "source": {
+   "url": "https://repair.wiki/w/Xbox_One_Controller_Buttons_are_not_responding_to_being_pressed_repair",
+   "kind": "web",
+   "title": "Xbox One Controller Buttons are not responding to being pressed repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 2989,
+   "last_edited_utc": "2024-01-17T21:45:14Z"
+  },
+  "device_class": "Console",
+  "models": [
+   "Xbox One Wireless Controller"
+  ],
+  "symptoms": [
+   "buttons not responding"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Clean the PCB carbon tracks and membrane pads; if still dead, check continuity from the diode footprint to the IO expander test pad—early revisions can lose vias spontaneously.",
+    "evidence": "Solution.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Clean carbon tracks and pads.",
+   "Check continuity to the IO expander; repair broken vias."
+  ],
+  "measurements": [],
+  "tools": [
+   "multimeter",
+   "isopropyl alcohol"
+  ],
+  "cautions": [],
+  "tags": [
+   "buttons not working",
+   "carbon pads",
+   "repair.wiki",
+   "vias",
+   "xbox one controller"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Button contacts",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "xboxonewirelesscontroller",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Xbox One Controller Buttons are not responding to being pressed repair\", https://repair.wiki/w/Xbox_One_Controller_Buttons_are_not_responding_to_being_pressed_repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Xbox_One_Controller_Buttons_are_not_responding_to_being_pressed_repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

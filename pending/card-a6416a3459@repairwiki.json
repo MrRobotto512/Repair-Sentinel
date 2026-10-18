@@ -1,0 +1,69 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Pixel Fingerprint Calibration",
+  "source": {
+   "url": "https://repair.wiki/w/Pixel_Fingerprint_Calibration",
+   "kind": "web",
+   "title": "Pixel Fingerprint Calibration",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 11496,
+   "last_edited_utc": "2025-09-12T19:08:50Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Pixel 6 and later"
+  ],
+  "symptoms": [
+   "in-display fingerprint not working after screen replacement"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Pixel 6+ in-display fingerprint must be recalibrated after any screen swap (including donor screens) using Google's web tool at pixelrepair.withgoogle.com/udfps with the phone in Fastboot.",
+    "evidence": "Guide.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Install and test the display.",
+   "Power off 10 s; hold Volume Down + Power for Fastboot.",
+   "Open the UDFPS calibration page, connect, install software.",
+   "Manually restart after it reboots."
+  ],
+  "measurements": [],
+  "tools": [
+   "PC with Chrome",
+   "USB cable"
+  ],
+  "cautions": [],
+  "tags": [
+   "fastboot",
+   "fingerprint calibration",
+   "pixel",
+   "repair.wiki",
+   "screen replacement",
+   "udfps"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Display fingerprint sensor",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "pixel6andlater",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Pixel Fingerprint Calibration\", https://repair.wiki/w/Pixel_Fingerprint_Calibration, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Pixel_Fingerprint_Calibration",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}

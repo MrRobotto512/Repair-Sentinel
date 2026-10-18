@@ -1,0 +1,82 @@
+{
+ "schema_version": 2,
+ "kind": "knowledge_card",
+ "card": {
+  "schema_version": 2,
+  "title": "Samsung Galaxy a536 No Touch and Display Repair",
+  "source": {
+   "url": "https://repair.wiki/w/Samsung_Galaxy_a536_No_Touch_and_Display_Repair",
+   "kind": "web",
+   "title": "Samsung Galaxy a536 No Touch and Display Repair",
+   "ingested_utc": "2026-10-18T22:00:00Z",
+   "site": "Repair Wiki",
+   "revision": 7362,
+   "last_edited_utc": "2025-06-05T00:26:34Z"
+  },
+  "device_class": "Phone",
+  "models": [
+   "Galaxy A53 5G (A536)"
+  ],
+  "symptoms": [
+   "no touch",
+   "no display",
+   "after a drop"
+  ],
+  "codes": [],
+  "claims": [
+   {
+    "statement": "Galaxy A536 losing touch and/or display after drops, unchanged by new FPC and screen, has broken inner-layer traces near the front baseband/CPU shields; OL/high readings on specific display/touch pins confirm.",
+    "evidence": "Problem description and diagnostics.",
+    "quote": "",
+    "at": ""
+   },
+   {
+    "statement": "Fix: remove shields, scrape off the ground layer, expose the second layer and rebuild the traces with 0.007 mm wire, then UV mask.",
+    "evidence": "Repair steps.",
+    "quote": "",
+    "at": ""
+   }
+  ],
+  "procedure": [
+   "Diode-check the listed display/touch pins.",
+   "Remove the shields; locate damage.",
+   "Scrape to the second layer; jumper broken traces.",
+   "Test and UV mask."
+  ],
+  "measurements": [],
+  "tools": [
+   "microscope",
+   "#11 scalpel",
+   "0.007 mm jumper wire",
+   "UV mask"
+  ],
+  "cautions": [
+   "SOURCE RISK: Inexperienced work here can cause a dead board or no display."
+  ],
+  "tags": [
+   "a536",
+   "drop damage",
+   "galaxy a53",
+   "no display",
+   "no touch",
+   "repair.wiki",
+   "trace repair"
+  ],
+  "confidence": "medium",
+  "caveats": "Community-written Repair Wiki page, paraphrased; check the linked page (and its images) before acting on a reading.",
+  "component": "Inner-layer traces",
+  "part_numbers": [],
+  "readings": [],
+  "device_family": "galaxya535g",
+  "error_codes": [],
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Repair Wiki contributors, \"Samsung Galaxy a536 No Touch and Display Repair\", https://repair.wiki/w/Samsung_Galaxy_a536_No_Touch_and_Display_Repair, CC BY-SA 3.0",
+  "source_url": "https://repair.wiki/w/Samsung_Galaxy_a536_No_Touch_and_Display_Repair",
+  "provenance": "absorbed",
+  "quotes_stripped": true
+ },
+ "origin": {
+  "bench": "repairwiki"
+ },
+ "queued_utc": "2026-10-18T22:00:00Z"
+}
