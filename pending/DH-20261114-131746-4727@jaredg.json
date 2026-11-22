@@ -1,0 +1,94 @@
+{
+ "schema_version": 2,
+ "session": {
+  "schema_version": 2,
+  "session_id": "DH-20261114-131746-4727",
+  "started_utc": "2026-11-14T19:17:46Z",
+  "device_class": "Phone",
+  "device_model": "iPhone 16",
+  "tool": "ios_panic_diag",
+  "symptoms_user_input": [
+   "Random restarts (panic log)",
+   "3-minute restarts",
+   "battery communication issue"
+  ],
+  "telemetry": {
+   "reported_error_codes": [
+    "169",
+    "device:AppleSMCFirmware"
+   ],
+   "panic_source_file": "panic-full-1969-12-31-180021.0003.ips",
+   "panic_bug_type": "210",
+   "panic_string": "panic(cpu 0 caller 0xfffffff042995888): SMC PANIC - ASSERT: target/d47a/target.cpp:249: 0, SMC BSC failure, TB0T SBAP"
+  },
+  "observations": [
+   {
+    "id": "o1",
+    "key": "reported_error_codes",
+    "value": [
+     "169",
+     "device:AppleSMCFirmware"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-14T19:17:46Z"
+   },
+   {
+    "id": "o2",
+    "key": "panic_source_file",
+    "value": "panic-full-1969-12-31-180021.0003.ips",
+    "kind": "text",
+    "source": "tool",
+    "at": "2026-11-14T19:17:46Z"
+   },
+   {
+    "id": "o3",
+    "key": "panic_bug_type",
+    "value": "210",
+    "kind": "text",
+    "source": "tool",
+    "at": "2026-11-14T19:17:46Z"
+   },
+   {
+    "id": "o4",
+    "key": "panic_string",
+    "value": "panic(cpu 0 caller 0xfffffff042995888): SMC PANIC - ASSERT: target/d47a/target.cpp:249: 0, SMC BSC failure, TB0T SBAP",
+    "kind": "text",
+    "source": "tool",
+    "at": "2026-11-14T19:17:46Z"
+   }
+  ],
+  "ml_prediction": {
+   "predicted_fault": "Battery data variant",
+   "source": "rules",
+   "component_to_probe": "Battery data variant",
+   "all_parts": [
+    "Battery data variant",
+    "Replace or check the Charging Port (Dock Flex) assembly"
+   ],
+   "codes": [
+    "169",
+    "device:AppleSMCFirmware"
+   ],
+   "predicted_role": "Battery"
+  },
+  "technician_verification": {
+   "actual_fault_confirmed": true,
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": false
+  },
+  "notes": [
+   "Panic scan (panic-full-1969-12-31-180021.0003.ips): 169, device:AppleSMCFirmware -> Battery data variant; Replace or check the Charging Port (Dock Flex) assembly",
+   "[web] Panic scan (panic-full-1969-12-31-180021.0003.ips): 169, device:AppleSMCFirmware -> Battery data variant; Replace or check the Charging Port (Dock Flex) assembly",
+   "[web] Confirmed 3 minutes restarts and a battery communication issue. Swapping the battery and charge port did not solve the problem. Customer wanted to halt repair rather than attempt board level repairs."
+  ],
+  "saved_utc": "2026-11-22T19:28:12Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-11-22T19:28:12Z"
+}
