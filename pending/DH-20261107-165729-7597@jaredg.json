@@ -1,0 +1,94 @@
+{
+ "schema_version": 2,
+ "session": {
+  "schema_version": 2,
+  "session_id": "DH-20261107-165729-7597",
+  "started_utc": "2026-11-07T22:57:29Z",
+  "device_class": "Phone",
+  "device_model": "iPhone 14",
+  "tool": "ios_panic_diag",
+  "symptoms_user_input": [
+   "Random restarts (panic log)",
+   "3 minute restarts"
+  ],
+  "telemetry": {
+   "reported_error_codes": [
+    "4194304",
+    "device:AppleSMCFirmware"
+   ],
+   "panic_source_file": "panic-full-2026-11-07-165613.0002.ips",
+   "panic_bug_type": "210",
+   "panic_string": "panic(cpu 2 caller 0xfffffff0319d6c08): SMC PANIC - ASSERT: target/d27/target.cpp:321: 0, SMC BSC failure, TAOJ ----"
+  },
+  "observations": [
+   {
+    "id": "o1",
+    "key": "reported_error_codes",
+    "value": [
+     "4194304",
+     "device:AppleSMCFirmware"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-07T22:57:29Z"
+   },
+   {
+    "id": "o2",
+    "key": "panic_source_file",
+    "value": "panic-full-2026-11-07-165613.0002.ips",
+    "kind": "text",
+    "source": "tool",
+    "at": "2026-11-07T22:57:29Z"
+   },
+   {
+    "id": "o3",
+    "key": "panic_bug_type",
+    "value": "210",
+    "kind": "text",
+    "source": "tool",
+    "at": "2026-11-07T22:57:29Z"
+   },
+   {
+    "id": "o4",
+    "key": "panic_string",
+    "value": "panic(cpu 2 caller 0xfffffff0319d6c08): SMC PANIC - ASSERT: target/d27/target.cpp:321: 0, SMC BSC failure, TAOJ ----",
+    "kind": "text",
+    "source": "tool",
+    "at": "2026-11-07T22:57:29Z"
+   }
+  ],
+  "ml_prediction": {
+   "predicted_fault": "Wireless charging flex (back glass)",
+   "source": "rules",
+   "component_to_probe": "Wireless charging flex (back glass)",
+   "all_parts": [
+    "Wireless charging flex (back glass)",
+    "Replace or check the Charging Port (Dock Flex) assembly"
+   ],
+   "codes": [
+    "4194304",
+    "device:AppleSMCFirmware"
+   ]
+  },
+  "technician_verification": {
+   "input_source": "web",
+   "probed_component": "back glass panel",
+   "actual_fault_confirmed": true
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced the back glass panel"
+  },
+  "notes": [
+   "Panic scan (panic-full-2026-11-07-165613.0002.ips): 4194304, device:AppleSMCFirmware -> Wireless charging flex (back glass); Replace or check the Charging Port (Dock Flex) assembly",
+   "[web] Panic scan (panic-full-2026-11-07-165613.0002.ips): 4194304, device:AppleSMCFirmware -> Wireless charging flex (back glass); Replace or check the Charging Port (Dock Flex) assembly",
+   "[web] Replaced the back glass panel has resolved the 3 minute restarts"
+  ],
+  "saved_utc": "2026-11-22T16:24:16Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-11-22T16:24:16Z"
+}
