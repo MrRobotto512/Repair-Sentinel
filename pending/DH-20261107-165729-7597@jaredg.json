@@ -8,8 +8,8 @@
   "device_model": "iPhone 14",
   "tool": "ios_panic_diag",
   "symptoms_user_input": [
-   "Random restarts (panic log)",
-   "3 minute restarts"
+   "3 minute restarts",
+   "Random restarts (panic log)"
   ],
   "telemetry": {
    "reported_error_codes": [
@@ -81,14 +81,13 @@
   },
   "notes": [
    "Panic scan (panic-full-2026-11-07-165613.0002.ips): 4194304, device:AppleSMCFirmware -> Wireless charging flex (back glass); Replace or check the Charging Port (Dock Flex) assembly",
-   "[web] Panic scan (panic-full-2026-11-07-165613.0002.ips): 4194304, device:AppleSMCFirmware -> Wireless charging flex (back glass); Replace or check the Charging Port (Dock Flex) assembly",
-   "[web] Replaced the back glass panel has resolved the 3 minute restarts"
+   "[web] Panic scan (panic-full-2026-11-07-165613.0002.ips): 4194304, device:AppleSMCFirmware -> Wireless charging flex (back glass); Replace or check the Charging Port (Dock Flex) assembly"
   ],
-  "saved_utc": "2026-11-22T16:24:16Z",
+  "saved_utc": "2026-11-22T19:21:56Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-11-22T16:24:16Z"
+ "queued_utc": "2026-11-22T19:21:56Z"
 }
