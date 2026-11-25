@@ -1,0 +1,778 @@
+{
+ "schema_version": 2,
+ "session": {
+  "schema_version": 2,
+  "session_id": "DH-20261124-172047-0875",
+  "started_utc": "2026-11-24T23:20:47Z",
+  "device_class": "Console",
+  "device_model": "PlayStation 5",
+  "tool": "ps5_uart",
+  "symptoms_user_input": [
+   "Console fault (errlog present)",
+   "Fan not working"
+  ],
+  "telemetry": {
+   "errlog_codes": [
+    "80810001",
+    "80C00136",
+    "808B0027",
+    "80000009",
+    "C0020303",
+    "80000001",
+    "808D0000"
+   ],
+   "uart_syscon_error_code": "80810001"
+  },
+  "observations": [
+   {
+    "id": "o1",
+    "key": "errlog_codes",
+    "value": [
+     "80810001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:47Z"
+   },
+   {
+    "id": "o2",
+    "key": "uart_syscon_error_code",
+    "value": "80810001",
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:47Z"
+   },
+   {
+    "id": "o3",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:47Z"
+   },
+   {
+    "id": "o4",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:47Z"
+   },
+   {
+    "id": "o5",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:47Z"
+   },
+   {
+    "id": "o6",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:47Z"
+   },
+   {
+    "id": "o7",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:48Z"
+   },
+   {
+    "id": "o8",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:48Z"
+   },
+   {
+    "id": "o9",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:48Z"
+   },
+   {
+    "id": "o10",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:48Z"
+   },
+   {
+    "id": "o11",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:48Z"
+   },
+   {
+    "id": "o12",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:48Z"
+   },
+   {
+    "id": "o13",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:48Z"
+   },
+   {
+    "id": "o14",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:49Z"
+   },
+   {
+    "id": "o15",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:49Z"
+   },
+   {
+    "id": "o16",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:49Z"
+   },
+   {
+    "id": "o17",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:49Z"
+   },
+   {
+    "id": "o18",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:49Z"
+   },
+   {
+    "id": "o19",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:49Z"
+   },
+   {
+    "id": "o20",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:49Z"
+   },
+   {
+    "id": "o21",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:50Z"
+   },
+   {
+    "id": "o22",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:50Z"
+   },
+   {
+    "id": "o23",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:50Z"
+   },
+   {
+    "id": "o24",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:50Z"
+   },
+   {
+    "id": "o25",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:50Z"
+   },
+   {
+    "id": "o26",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:50Z"
+   },
+   {
+    "id": "o27",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:51Z"
+   },
+   {
+    "id": "o28",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:51Z"
+   },
+   {
+    "id": "o29",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:51Z"
+   },
+   {
+    "id": "o30",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:51Z"
+   },
+   {
+    "id": "o31",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:51Z"
+   },
+   {
+    "id": "o32",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:51Z"
+   },
+   {
+    "id": "o33",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-24T23:20:51Z"
+   },
+   {
+    "id": "o34",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:10Z"
+   },
+   {
+    "id": "o35",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:10Z"
+   },
+   {
+    "id": "o36",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:10Z"
+   },
+   {
+    "id": "o37",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:11Z"
+   },
+   {
+    "id": "o38",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:11Z"
+   },
+   {
+    "id": "o39",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:11Z"
+   },
+   {
+    "id": "o40",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:11Z"
+   },
+   {
+    "id": "o41",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:11Z"
+   },
+   {
+    "id": "o42",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:11Z"
+   },
+   {
+    "id": "o43",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:12Z"
+   },
+   {
+    "id": "o44",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:12Z"
+   },
+   {
+    "id": "o45",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:12Z"
+   },
+   {
+    "id": "o46",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:12Z"
+   },
+   {
+    "id": "o47",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:12Z"
+   },
+   {
+    "id": "o48",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:12Z"
+   },
+   {
+    "id": "o49",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:12Z"
+   },
+   {
+    "id": "o50",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:13Z"
+   },
+   {
+    "id": "o51",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:13Z"
+   },
+   {
+    "id": "o52",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:13Z"
+   },
+   {
+    "id": "o53",
+    "key": "errlog_codes",
+    "value": [
+     "80810001",
+     "80C00136",
+     "808B0027",
+     "80000009",
+     "C0020303",
+     "80000001",
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T00:17:13Z"
+   }
+  ],
+  "ml_prediction": {
+   "predicted_fault": "Dry/oxidized liquid metal spots on the APU, heatsink frame separation (common on EDM-020/030 boards), a completely stuck/unplugged cooling fan, or a missing/faulty APU thermal sensor trace.",
+   "source": "gemini",
+   "bench_steps": "1. Inspect the APU die and heatsink surface for dry spots, oxidized gallium-oxide patches, or uneven liquid metal coverage.\n2. Check if the heatsink mounting frame has separated from the copper base plate; resolder the frame using Sn42Bi58 low-temp paste at ~165°C peak if loose.\n3. Check the fan connector for 12V supply and inspect the thermistors and surrounding passive components near the APU ph",
+   "kb_used": false,
+   "predicted_role": "Fan/Thermal"
+  },
+  "technician_verification": {
+   "actual_fault_confirmed": true,
+   "input_source": "web",
+   "probed_component": "WiFi module capacitors"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced shorted caps from a donor device. Cleaned biohazard from around the fan connector and related components."
+  },
+  "notes": [
+   "[web] Shorted CAPS around Wifi Module. Fan not working."
+  ],
+  "saved_utc": "2026-11-25T16:56:50Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-11-25T16:56:50Z"
+}
