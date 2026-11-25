@@ -9,7 +9,8 @@
   "tool": "ps5_uart",
   "symptoms_user_input": [
    "Console fault (errlog present)",
-   "Fan not working"
+   "Fan not working",
+   "No Boot"
   ],
   "telemetry": {
    "errlog_codes": [
@@ -765,14 +766,12 @@
    "repaired": true,
    "fix": "Replaced shorted caps from a donor device. Cleaned biohazard from around the fan connector and related components."
   },
-  "notes": [
-   "[web] Shorted CAPS around Wifi Module. Fan not working."
-  ],
-  "saved_utc": "2026-11-25T16:56:50Z",
+  "notes": [],
+  "saved_utc": "2026-11-25T17:27:03Z",
   "share_requested": true
  },
  "origin": {
   "bench": "jaredg"
  },
- "queued_utc": "2026-11-25T16:56:50Z"
+ "queued_utc": "2026-11-25T17:27:03Z"
 }
