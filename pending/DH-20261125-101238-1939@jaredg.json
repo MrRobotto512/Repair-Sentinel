@@ -1,0 +1,453 @@
+{
+ "schema_version": 2,
+ "session": {
+  "schema_version": 2,
+  "session_id": "DH-20261125-101238-1939",
+  "started_utc": "2026-11-25T16:12:38Z",
+  "device_class": "Console",
+  "device_model": "PlayStation 5",
+  "tool": "ps5_uart",
+  "symptoms_user_input": [
+   "Console fault (errlog present)",
+   "No boot",
+   "Single beep on power attempt",
+   "No LED",
+   "No fan spin"
+  ],
+  "telemetry": {
+   "errlog_codes": [
+    "808D0000",
+    "C0020303",
+    "80000001"
+   ],
+   "uart_syscon_error_code": "808D0000",
+   "temp_soc_c": 110.48828125,
+   "temp_env_c": 0.0
+  },
+  "observations": [
+   {
+    "id": "o1",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:38Z"
+   },
+   {
+    "id": "o2",
+    "key": "uart_syscon_error_code",
+    "value": "808D0000",
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:38Z"
+   },
+   {
+    "id": "o3",
+    "key": "temp_soc_c",
+    "value": 110.48828125,
+    "kind": "measurement",
+    "source": "tool",
+    "at": "2026-11-25T16:12:38Z",
+    "unit": "°C"
+   },
+   {
+    "id": "o4",
+    "key": "temp_env_c",
+    "value": 0.0,
+    "kind": "measurement",
+    "source": "tool",
+    "at": "2026-11-25T16:12:38Z",
+    "unit": "°C"
+   },
+   {
+    "id": "o5",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:38Z"
+   },
+   {
+    "id": "o6",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:38Z"
+   },
+   {
+    "id": "o7",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:39Z"
+   },
+   {
+    "id": "o8",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:39Z"
+   },
+   {
+    "id": "o9",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:39Z"
+   },
+   {
+    "id": "o10",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:39Z"
+   },
+   {
+    "id": "o11",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:39Z"
+   },
+   {
+    "id": "o12",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:39Z"
+   },
+   {
+    "id": "o13",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:39Z"
+   },
+   {
+    "id": "o14",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:40Z"
+   },
+   {
+    "id": "o15",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:40Z"
+   },
+   {
+    "id": "o16",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:40Z"
+   },
+   {
+    "id": "o17",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:40Z"
+   },
+   {
+    "id": "o18",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:40Z"
+   },
+   {
+    "id": "o19",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:40Z"
+   },
+   {
+    "id": "o20",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:40Z"
+   },
+   {
+    "id": "o21",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:41Z"
+   },
+   {
+    "id": "o22",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:41Z"
+   },
+   {
+    "id": "o23",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:41Z"
+   },
+   {
+    "id": "o24",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:41Z"
+   },
+   {
+    "id": "o25",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:41Z"
+   },
+   {
+    "id": "o26",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:41Z"
+   },
+   {
+    "id": "o27",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:42Z"
+   },
+   {
+    "id": "o28",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:42Z"
+   },
+   {
+    "id": "o29",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:42Z"
+   },
+   {
+    "id": "o30",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:42Z"
+   },
+   {
+    "id": "o31",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:42Z"
+   },
+   {
+    "id": "o32",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:42Z"
+   },
+   {
+    "id": "o33",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:42Z"
+   },
+   {
+    "id": "o34",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:43Z"
+   },
+   {
+    "id": "o35",
+    "key": "errlog_codes",
+    "value": [
+     "808D0000",
+     "C0020303",
+     "80000001"
+    ],
+    "kind": "code",
+    "source": "tool",
+    "at": "2026-11-25T16:12:43Z"
+   }
+  ],
+  "ml_prediction": {},
+  "technician_verification": {
+   "input_source": "web"
+  },
+  "outcome": {
+   "repaired": true,
+   "fix": "Replaced shorted caps from a donor device. Cleaned biohazard from around the fan connector and related components."
+  },
+  "notes": [
+   "[web] No Boot, Single Beep on power attempt, No LED, No Fan Spin"
+  ],
+  "saved_utc": "2026-11-25T17:29:11Z",
+  "share_requested": true
+ },
+ "origin": {
+  "bench": "jaredg"
+ },
+ "queued_utc": "2026-11-25T17:29:11Z"
+}
